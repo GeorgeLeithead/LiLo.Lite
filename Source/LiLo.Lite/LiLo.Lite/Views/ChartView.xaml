@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	x:Class="LiLo.Lite.Views.ChartView"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:behaviours="clr-namespace:LiLo.Lite.Behaviors"
+	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:models="clr-namespace:LiLo.Lite.Models"
+	xmlns:template="clr-namespace:LiLo.Lite.Views.Templates"
+	xmlns:viewModel="clr-namespace:LiLo.Lite.ViewModels"
+	xmlns:viewModelBase="clr-namespace:LiLo.Lite.ViewModels.Base"
+	viewModelBase:ViewModelLocator.AutoWireViewModel="true"
+	mc:Ignorable="d">
+
+	<ContentPage.Content>
+		<Grid x:DataType="viewModel:ChartViewModel">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+			<!--  Title View  -->
+			<Label AutomationId="PageTitle" Style="{DynamicResource TitleStyle}" Text="{Binding Title, Mode=OneWay}" />
+			<!--  Markets List View  -->
+			<ListView Grid.Row="1" AutomationId="MarketsList" HeightRequest="{Binding MarketsList, Mode=OneWay, Converter={StaticResource VisibleItemsToHeightConverter}}" ItemsSource="{Binding MarketsList, Mode=OneWay}" Style="{DynamicResource MarketsListViewStyle}">
+				<ListView.ItemTemplate>
+					<DataTemplate x:DataType="models:Markets.MarketsModel">
+						<ViewCell>
+							<!--  View of each card item  -->
+							<template:MarketsListTemplate />
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+				<ListView.Behaviors>
+					<behaviours:EventToCommandBehavior Command="{Binding ListViewItemTappedCommand}" EventName="ItemTapped" />
+				</ListView.Behaviors>
+			</ListView>
+			<!--  Chart View  -->
+			<WebView Grid.Row="2" AutomationId="MarketWebView" MinimumHeightRequest="500" Navigating="WebView_Navigating" Source="{Binding MarketWebView}" />
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>

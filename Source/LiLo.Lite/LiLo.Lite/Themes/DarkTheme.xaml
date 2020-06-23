@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary x:Class="LiLo.Lite.Themes.DarkTheme" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+	<Color x:Key="PrimaryColor">#FFFFFF</Color>
+	<Color x:Key="PrimaryDarkColor">#000000</Color>
+	<Color x:Key="AccentColor">#179C52</Color>
+	<Color x:Key="WindowBackgroundColor">#202124</Color>
+
+	<!--  Markets Colors  -->
+	<Color x:Key="MarketUpTextColor">#7ed321</Color>
+	<Color x:Key="MarketUpBackgroundColor">#027e42</Color>
+	<Color x:Key="MarketDownTextColor">#ff4a4a</Color>
+	<Color x:Key="MarketDownBackgroundColor">#aa1221</Color>
+
+	<!--  Gray Colors  -->
+	<Color x:Key="Gray-900">#f6f7f8</Color>
+	<Color x:Key="Gray-700">#ced2d9</Color>
+	<Color x:Key="Gray-100">#333942</Color>
+	<Color x:Key="Gray-Black">#ffffff</Color>
+	<Color x:Key="Gray-White">#000000</Color>
+
+	<!--  Tab icons  -->
+	<x:String x:Key="HomeIcon">home_dark.png</x:String>
+	<x:String x:Key="ChartIcon">chart_dark.png</x:String>
+</ResourceDictionary>

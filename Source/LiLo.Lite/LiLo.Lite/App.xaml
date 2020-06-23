@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application
+	x:Class="LiLo.Lite.App"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
+	xmlns:converters="clr-namespace:LiLo.Lite.Converters;assembly=LiLo.Lite"
+	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d">
+	<Application.Resources>
+		<ResourceDictionary>
+			<Color x:Key="PrimaryColor">#000000</Color>
+			<Color x:Key="PrimaryDarkColor">#000000</Color>
+			<Color x:Key="AccentColor">#179C52</Color>
+			<Color x:Key="WindowBackgroundColor">#F5F5F5</Color>
+
+			<!--  Markets Colors  -->
+			<Color x:Key="MarketUpTextColor">#7ed321</Color>
+			<Color x:Key="MarketUpBackgroundColor">#027e42</Color>
+			<Color x:Key="MarketDownTextColor">#ff4a4a</Color>
+			<Color x:Key="MarketDownBackgroundColor">#aa1221</Color>
+
+			<!--  Gray Colors  -->
+			<Color x:Key="Gray-100">#f6f7f8</Color>
+			<Color x:Key="Gray-700">#606a7b</Color>
+			<Color x:Key="Gray-900">#333942</Color>
+			<Color x:Key="Gray-Black">#000000</Color>
+			<Color x:Key="Gray-White">#ffffff</Color>
+
+			<OnPlatform x:Key="FontIcons" x:TypeArguments="x:String">
+				<OnPlatform.Platforms>
+					<On Platform="Android" Value="UIFontIcons.ttf#UIFontIcons" />
+					<On Platform="iOS" Value="UIFontIcons" />
+					<On Platform="UWP, WinRT, WinPhone" Value="Assets/Fonts/UIFontIcons.ttf#UIFontIcons" />
+				</OnPlatform.Platforms>
+			</OnPlatform>
+
+			<OnPlatform x:Key="Montserrat-SemiBold" x:TypeArguments="x:String">
+				<OnPlatform.Platforms>
+					<On Platform="Android" Value="Montserrat-SemiBold.ttf#Montserrat-SemiBold" />
+					<On Platform="iOS" Value="Montserrat-SemiBold" />
+					<On Platform="UWP, WinRT, WinPhone" Value="Assets/Fonts/Montserrat-SemiBold.ttf#Montserrat-SemiBold" />
+				</OnPlatform.Platforms>
+			</OnPlatform>
+
+			<OnPlatform x:Key="Montserrat-Regular" x:TypeArguments="x:String">
+				<OnPlatform.Platforms>
+					<On Platform="Android" Value="Montserrat-Regular.ttf#Montserrat-Regular" />
+					<On Platform="iOS" Value="Montserrat-Regular" />
+					<On Platform="UWP, WinRT, WinPhone" Value="Assets/Fonts/Montserrat-Regular.ttf#Montserrat-Regular" />
+				</OnPlatform.Platforms>
+			</OnPlatform>
+
+			<OnPlatform x:Key="Montserrat-Medium" x:TypeArguments="x:String">
+				<OnPlatform.Platforms>
+					<On Platform="Android" Value="Montserrat-Medium.ttf#Montserrat-Medium" />
+					<On Platform="iOS" Value="Montserrat-Medium" />
+					<On Platform="UWP, WinRT, WinPhone" Value="Assets/Fonts/Montserrat-Medium.ttf#Montserrat-Medium" />
+				</OnPlatform.Platforms>
+			</OnPlatform>
+
+			<OnPlatform x:Key="Montserrat-Bold" x:TypeArguments="x:String">
+				<OnPlatform.Platforms>
+					<On Platform="Android" Value="Montserrat-Bold.ttf#Montserrat-Bold" />
+					<On Platform="iOS" Value="Montserrat-Bold" />
+					<On Platform="UWP, WinRT, WinPhone" Value="Assets/Fonts/Montserrat-Bold.ttf#Montserrat-Bold" />
+				</OnPlatform.Platforms>
+			</OnPlatform>
+
+			<!--  Global Styles  -->
+			<Style TargetType="{x:Type NavigationPage}">
+				<Setter Property="BackgroundColor" Value="{DynamicResource WindowBackgroundColor}" />
+				<Setter Property="Shell.BackgroundColor" Value="Red" />
+			</Style>
+			<Style TargetType="{x:Type Page}">
+				<Setter Property="BackgroundColor" Value="{DynamicResource WindowBackgroundColor}" />
+				<Setter Property="Shell.BackgroundColor" Value="Green" />
+			</Style>
+
+
+			<!--  Icon Styles  -->
+			<x:String x:Key="TradeIcon">&#x2194;</x:String>
+			<x:String x:Key="HighPriceIcon">&#x25b2;</x:String>
+			<x:String x:Key="LowPriceIcon">&#x25bc;</x:String>
+			<x:String x:Key="PercentIcon">&#x2052;</x:String>
+
+			<!--  Tab icons  -->
+			<x:String x:Key="HomeIcon">home.png</x:String>
+			<x:String x:Key="SettingsIcon">settings.png</x:String>
+			<x:String x:Key="ChartIcon">chart.png</x:String>
+
+			<Style TargetType="Label">
+				<Setter Property="TextColor" Value="{DynamicResource Gray-Black}" />
+			</Style>
+
+			<Style TargetType="Entry">
+				<Setter Property="TextColor" Value="{DynamicResource Gray-Black}" />
+			</Style>
+
+			<Style TargetType="Button">
+				<Setter Property="TextColor" Value="{DynamicResource Gray-Black}" />
+			</Style>
+
+			<Style TargetType="Editor">
+				<Setter Property="TextColor" Value="{DynamicResource Gray-Black}" />
+			</Style>
+
+			<!--  CUSTOM CONTROLS STYLE  -->
+			<!--  Markets List template style  -->
+
+			<Style x:Key="MarketsListViewStyle" TargetType="ListView">
+				<Setter Property="HasUnevenRows" Value="True" />
+				<Setter Property="SelectionMode" Value="None" />
+				<Setter Property="SeparatorVisibility" Value="None" />
+				<Setter Property="VerticalScrollBarVisibility" Value="Never" />
+				<Setter Property="Margin" Value="8,0" />
+			</Style>
+			<Style x:Key="MarketsLogoStyle" TargetType="{x:Type Image}">
+				<Setter Property="HeightRequest" Value="72" />
+				<Setter Property="WidthRequest" Value="72" />
+				<Setter Property="Margin" Value="4" />
+			</Style>
+
+			<Style x:Key="LastPriceStyle" TargetType="{x:Type controls:TickPriceView}">
+				<Setter Property="Margin" Value="2,0" />
+				<Setter Property="Padding" Value="0,2" />
+				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
+				<Setter Property="VerticalOptions" Value="FillAndExpand" />
+				<Setter Property="HorizontalTextAlignment" Value="Start" />
+				<Setter Property="VerticalTextAlignment" Value="Center" />
+				<Setter Property="FontFamily" Value="{StaticResource Montserrat-Bold}" />
+				<Setter Property="FontSize" Value="36" />
+				<Setter Property="LineHeight" Value="{OnPlatform Android=1.5, Default=-1}" />
+				<Setter Property="TextColor" Value="{DynamicResource Gray-900}" />
+				<Setter Property="DefaultBackgroundColor" Value="Transparent" />
+				<Setter Property="NegativeTickColor" Value="{DynamicResource MarketDownTextColor}" />
+				<Setter Property="NegativeTickBackgroundColor" Value="{DynamicResource MarketDownBackgroundColor}" />
+				<Setter Property="PositiveTickColor" Value="{DynamicResource MarketUpTextColor}" />
+				<Setter Property="PositiveTickBackgroundColor" Value="{DynamicResource MarketUpBackgroundColor}" />
+			</Style>
+			<Style x:Key="CurrencyPriceStyle" TargetType="{x:Type controls:TickPriceView}">
+				<Setter Property="Padding" Value="4,0" />
+				<Setter Property="HorizontalOptions" Value="Start" />
+				<Setter Property="VerticalOptions" Value="Start" />
+				<Setter Property="FontFamily" Value="{StaticResource Montserrat-Regular}" />
+				<Setter Property="FontSize" Value="14" />
+				<Setter Property="LineHeight" Value="{OnPlatform Android=1.5, Default=-1}" />
+				<Setter Property="TextColor" Value="{DynamicResource Gray-700}" />
+				<Setter Property="DefaultBackgroundColor" Value="Transparent" />
+				<Setter Property="NegativeTickColor" Value="{DynamicResource MarketDownTextColor}" />
+				<Setter Property="NegativeTickBackgroundColor" Value="{DynamicResource MarketDownBackgroundColor}" />
+				<Setter Property="PositiveTickColor" Value="{DynamicResource MarketUpTextColor}" />
+				<Setter Property="PositiveTickBackgroundColor" Value="{DynamicResource MarketUpBackgroundColor}" />
+			</Style>
+
+			<Style x:Key="PriceLabelStyle" TargetType="{x:Type Label}">
+				<Setter Property="FontFamily" Value="{StaticResource Montserrat-Bold}" />
+				<Setter Property="FontSize" Value="14" />
+				<Setter Property="LineHeight" Value="{OnPlatform Android=1.5, Default=-1}" />
+				<Setter Property="TextColor" Value="{DynamicResource Gray-700}" />
+				<Setter Property="HorizontalTextAlignment" Value="Start" />
+			</Style>
+
+			<Style x:Key="PriceLabelRegularStyle" BasedOn="{StaticResource PriceLabelStyle}" TargetType="{x:Type Label}">
+				<Setter Property="FontFamily" Value="{StaticResource Montserrat-Regular}" />
+				<Setter Property="Padding" Value="4,0" />
+			</Style>
+
+			<Style x:Key="MarketsColumnStyle" TargetType="StackLayout">
+				<Setter Property="Spacing" Value="0" />
+				<Setter Property="Orientation" Value="Vertical" />
+				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
+				<Setter Property="VerticalOptions" Value="FillAndExpand" />
+				<Setter Property="Margin" Value="2,0" />
+				<Setter Property="Padding" Value="0,2" />
+			</Style>
+
+			<Style x:Key="CustomShadowFrameStyle" TargetType="{x:Type controls:CustomShadowFrame}">
+				<Setter Property="BackgroundColor" Value="{DynamicResource Gray-White}" />
+				<Setter Property="BorderColor" Value="{DynamicResource Gray-Black}" />
+				<Setter Property="Margin" Value="0,2,0,16" />
+				<Setter Property="Padding" Value="0" />
+				<Setter Property="BorderWidth" Value="1" />
+				<Setter Property="CornerRadius" Value="4" />
+				<Setter Property="HasShadow" Value="True" />
+				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
+				<Setter Property="VerticalOptions" Value="FillAndExpand" />
+				<Setter Property="CustomBorderColor" Value="Red" />
+			</Style>
+
+			<Style x:Key="TitleStyle" TargetType="{x:Type Label}">
+				<Setter Property="BackgroundColor" Value="{DynamicResource Gray-White}" />
+				<Setter Property="TextColor" Value="{DynamicResource Gray-Black}" />
+				<Setter Property="FontFamily" Value="{StaticResource Montserrat-Medium}" />
+				<Setter Property="FontSize" Value="Large" />
+				<Setter Property="LineHeight" Value="{OnPlatform Android=1.5, Default=-1}" />
+				<Setter Property="Padding" Value="0,8" />
+				<Setter Property="HorizontalTextAlignment" Value="Center" />
+				<Setter Property="VerticalTextAlignment" Value="Center" />
+				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
+				<Setter Property="VerticalOptions" Value="Center" />
+			</Style>
+
+			<!--  Converters  -->
+			<converters:InverseBoolConverter x:Key="InverseBoolConverter" />
+			<converters:ItemsToHeightConverter x:Key="ItemsToHeightConverter" />
+			<converters:VisibleItemsToHeightConverter x:Key="VisibleItemsToHeightConverter" />
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>
