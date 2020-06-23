@@ -1,6 +1,6 @@
 ![LiLo](Screenshots/launcher_foreground.png "LiLo.Lite - logo")
 
-# LiLo (Public) 
+# LiLo.Lite 
 Open source repository for the LiLo.Lite (Ladder In Ladder Out) Mobile Application.
 
 ## Overview
@@ -29,7 +29,7 @@ We use GitHub issues [![GitHub issues](https://img.shields.io/github/issues/Geor
 NOTE: All of the screen shots are subject to change as the application evolves.
 
 ### Markets view
-<img alt="Home view - Light theme" src="Screenshots/10.png" width="240" /> <img alt="Home view - Dark theme" src="Screenshots/15.png" width="240" /> <img alt="Home view - live-update" src="Screenshots/16.png" width="240" />
+<img alt="Home view - Light theme" src="Screenshots/10.png" width="240" />
 
 ### Chart view
 <img alt="Chart view" src="Screenshots/20.png" width="240" />
