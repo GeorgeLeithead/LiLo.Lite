@@ -7,8 +7,19 @@ Open source repository for the LiLo.Lite (Ladder In Ladder Out) Mobile Applicati
 LiLo 'lite' is a light-weight version of LiLo, that includes live real-time market information and charting. (The fully featured version of LiLo can be accessed here: [LiLo](https://georgeleithead.github.io/LiLo_Public/)).
 
 ### Features
-- Real-time market information. Including positive and negative price change highlighting, market 24hr price highs and lows, 1hr and 24hr percentage changes along with trading volume.
+- Live real-time market information.
+- Price change highlighting.
+- Market 24hr price highs and lows.
+- 1hr and 24hr price percentage changes.
+- 24hr trading volume.
 - Real-time currency charting from [TradingView](https://uk.tradingview.com/).
+
+### Libraries used
+- [Xamarin.Forms](https://github.com/xamarin/Xamarin.Forms)
+- [Xamarin.Essentials](https://github.com/xamarin/Essentials)
+- [ResizetizerNT](https://github.com/Redth/ResizetizerNT)
+- [websocket-sharp](https://github.com/PingmanTools/websocket-sharp/)
+- [System.text.Json](https://github.com/dotnet/corefx)
 
 ## Supported Platforms: Android, iOS
 
@@ -16,7 +27,7 @@ The LiLo.Lite mobile application is currently available for these platforms:
 
 | Platform | Install | Build Status |
 | -------- | ------- | ------------ |
-| Android  | Alpha | N/A       |
+| Android  | Alpha | [![Build status](https://build.appcenter.ms/v0.1/apps/4a6daf54-3a40-41b5-b2b2-11f740b0b3c7/branches/master/badge)](https://appcenter.ms)       |
 | iOS      | Alpha | N/A       |
 
 ## Social
