@@ -4,7 +4,8 @@
 Open source repository for the LiLo.Lite (Ladder In Ladder Out) Mobile Application.
 
 ## Overview
-LiLo 'lite' is a light-weight version of LiLo, that includes live real-time market information and charting. (The fully featured version of LiLo can be accessed here: [LiLo](https://georgeleithead.github.io/LiLo_Public/)).
+LiLo 'lite' is a light-weight version of [LiLo](https://georgeleithead.github.io/LiLo_Public/).
+The mobile application is written using Xamarin.Forms and integrates with the [ByBit](https://www.bybit.com) WebSockets service to provide live real-time market information, and using a WebView to display charting information from [TradingView](https://uk.tradingview.com/).
 
 ### Features
 - Live real-time market information.
@@ -13,13 +14,17 @@ LiLo 'lite' is a light-weight version of LiLo, that includes live real-time mark
 - 1hr and 24hr price percentage changes.
 - 24hr trading volume.
 - Real-time currency charting from [TradingView](https://uk.tradingview.com/).
+- MVVM pattern (including view model locater).
+- Dependency injection.
+- WebSockets real-time information.
+- Custom converters, behaviors, controls, view extensions and data templates.
 
 ### Libraries used
 - [Xamarin.Forms](https://github.com/xamarin/Xamarin.Forms)
 - [Xamarin.Essentials](https://github.com/xamarin/Essentials)
 - [ResizetizerNT](https://github.com/Redth/ResizetizerNT)
 - [websocket-sharp](https://github.com/PingmanTools/websocket-sharp/)
-- [System.text.Json](https://github.com/dotnet/corefx)
+- [System.Text.Json](https://github.com/dotnet/corefx)
 
 ## Supported Platforms: Android, iOS
 
@@ -45,10 +50,6 @@ NOTE: All of the screen shots are subject to change as the application evolves.
 ### Chart view
 <img alt="Chart view" src="Screenshots/20.png" width="240" />
 
-## DISCLAIMER
-
-** IMPORTANT:** LiLo.Lite is currently in an **ALPHA** state. We are working toward making the application ready for production release. As such, you use the application **at your own risk**, functionality and availability will be subject to change.
-
-LiLo.Lite depends on services provided by ByBit for operation.  LiLo.Lite operates on the provision of these services and operates on a **BEST EFFORTS** basis.
-
-All the exchange services provided by ByBit can be found on [ByBit.com](https://www.bybit.com/).  Please give them your support, and if there are any issues not specifically related to LiLo.Lite, please engage them directly.
+## More information
+- Source code: https://github.com/GeorgeLeithead/LiLo.Lite
+- Author: [George Leithead](https://twitter.com/GeorgeLeithead/)
