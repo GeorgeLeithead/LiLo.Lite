@@ -4,6 +4,16 @@
 	<TargetFramework>netstandard2.0</TargetFramework>
 	<ProduceReferenceAssembly>true</ProduceReferenceAssembly>
 	  <LangVersion>8.0</LangVersion>
+	  <Description>LiLo 'lite' is a light-weight version of LiLo, that includes live real-time market information and charting.</Description>
+	  <Copyright>2020 George Leithead, InternetWideWorld.com</Copyright>
+	  <PackageProjectUrl>https://github.com/GeorgeLeithead/LiLo.Lite</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/GeorgeLeithead/LiLo.Lite</RepositoryUrl>
+	  <RepositoryType>GIT</RepositoryType>
+	  <PackageTags>ByBit, Crypto, BTC, ETH, EOS, XRP</PackageTags>
+	  <Company>InternetWideWorld.com</Company>
+	  <Authors>George Leithead</Authors>
+	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
+	  <PackageIcon>launcher_foreground.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -31,6 +41,14 @@
 		<None Remove="SharedImages\eos.svg" />
 		<None Remove="SharedImages\xrp.svg" />
 		<None Remove="SharedImages\twitter.svg" />
+		<None Include="..\..\..\LICENSE">
+		  <Pack>True</Pack>
+		  <PackagePath></PackagePath>
+		</None>
+		<None Include="..\..\..\Screenshots\launcher_foreground.png">
+		  <Pack>True</Pack>
+		  <PackagePath></PackagePath>
+		</None>
 	</ItemGroup>
 
 	<ItemGroup>

@@ -1,34 +1,28 @@
-﻿using System;
-
-using Android.App;
-using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Android.OS;
-
-namespace LiLo.Lite.Droid
+﻿namespace LiLo.Lite.Droid
 {
-    [Activity(Label = "LiLo.Lite", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
-    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
-    {
-        protected override void OnCreate(Bundle savedInstanceState)
-        {
-            TabLayoutResource = Resource.Layout.Tabbar;
-            ToolbarResource = Resource.Layout.Toolbar;
+	using Android.App;
+	using Android.Content.PM;
+	using Android.OS;
+	using Android.Runtime;
 
-            base.OnCreate(savedInstanceState);
+	[Activity(Label = "LiLo.Lite", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+	public class MainActivity : Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+	{
+		public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
+		{
+			Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+			base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+		}
 
-            global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
-            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            LoadApplication(new App());
-        }
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
-        {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-        }
-    }
+		protected override void OnCreate(Bundle savedInstanceState)
+		{
+			TabLayoutResource = Resource.Layout.Tabbar;
+			ToolbarResource = Resource.Layout.Toolbar;
+			base.OnCreate(savedInstanceState);
+			Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
+			Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+			Xamarin.Forms.Forms.Init(this, savedInstanceState);
+			LoadApplication(new App());
+		}
+	}
 }

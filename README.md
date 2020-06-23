@@ -27,7 +27,7 @@ The LiLo.Lite mobile application is currently available for these platforms:
 
 | Platform | Install | Build Status |
 | -------- | ------- | ------------ |
-| Android  | Alpha | [![Build status](https://build.appcenter.ms/v0.1/apps/4a6daf54-3a40-41b5-b2b2-11f740b0b3c7/branches/master/badge)](https://appcenter.ms)       |
+| Android  | [Alpha](https://install.appcenter.ms/users/george-internetwideworld.com/apps/LiLo.Lite.Android/releases/) | [![Build status](https://build.appcenter.ms/v0.1/apps/4a6daf54-3a40-41b5-b2b2-11f740b0b3c7/branches/master/badge)](https://appcenter.ms)       |
 | iOS      | Alpha | N/A       |
 
 ## Social
