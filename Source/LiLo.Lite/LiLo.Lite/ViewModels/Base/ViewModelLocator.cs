@@ -20,7 +20,6 @@ namespace LiLo.Lite.ViewModels.Base
 	using LiLo.Lite.Services.Dependency;
 	using LiLo.Lite.Services.Markets;
 	using LiLo.Lite.Services.Navigation;
-	using LiLo.Lite.Services.Settings;
 	using LiLo.Lite.Services.Sockets;
 	using TinyIoC;
 	using Xamarin.Forms;
@@ -32,13 +31,11 @@ namespace LiLo.Lite.ViewModels.Base
 		public static readonly BindableProperty AutoWireViewModelProperty = BindableProperty.CreateAttached("AutoWireViewModel", typeof(bool), typeof(ViewModelLocator), default(bool), propertyChanged: OnAutoWireViewModelChanged);
 
 		/// <summary>IOC container.</summary>
-		private static readonly TinyIoCContainer IocContainer;
+		private static readonly TinyIoCContainer IocContainer = new TinyIoCContainer();
 
 		/// <summary>Initialises static members of the <see cref="ViewModelLocator"/> class.</summary>
 		static ViewModelLocator()
 		{
-			IocContainer = new TinyIoCContainer();
-
 			// View models - by default, TinyIoC will register concrete classes as multi-instance.
 			IocContainer.Register<HomeViewModel>();
 			IocContainer.Register<ChartViewModel>();
@@ -47,7 +44,6 @@ namespace LiLo.Lite.ViewModels.Base
 			IocContainer.Register<INavigationService, NavigationService>();
 			IocContainer.Register<IDependencyService, Services.Dependency.DependencyService>();
 			IocContainer.Register<IMarketsService, MarketsService>();
-			IocContainer.Register<ISettingsService, SettingsService>();
 			IocContainer.Register<ISocketsService, SocketsService>();
 			IocContainer.Register<IBybitAuthenticationService, BybitAuthenticationService>();
 			IocContainer.Register<IMarketsHelperService, MarketsHelperService>();
@@ -95,14 +91,13 @@ namespace LiLo.Lite.ViewModels.Base
 			// Change injected dependencies
 			if (useMockServices)
 			{
+				// TODO: Add Mock services
 				UseMockService = true;
 				IocContainer.Register<IMarketsService, MarketsService>();
-				IocContainer.Register<ISettingsService, SettingsService>();
 			}
 			else
 			{
 				IocContainer.Register<IMarketsService, MarketsService>();
-				IocContainer.Register<ISettingsService, SettingsService>();
 				UseMockService = false;
 			}
 		}

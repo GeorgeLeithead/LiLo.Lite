@@ -4,16 +4,17 @@
 	xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
-	xmlns:converters="clr-namespace:LiLo.Lite.Converters;assembly=LiLo.Lite"
 	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
 	mc:Ignorable="d">
 	<Application.Resources>
 		<ResourceDictionary>
 			<Color x:Key="PrimaryColor">#000000</Color>
 			<Color x:Key="PrimaryDarkColor">#000000</Color>
 			<Color x:Key="AccentColor">#179C52</Color>
-			<Color x:Key="WindowBackgroundColor">#F5F5F5</Color>
+			<Color x:Key="WindowBackgroundColorLight">#CED2D9</Color>
+			<Color x:Key="WindowBackgroundColorDark">#606A7B</Color>
 
 			<!--  Markets Colors  -->
 			<Color x:Key="MarketUpTextColor">#7ed321</Color>
@@ -22,11 +23,12 @@
 			<Color x:Key="MarketDownBackgroundColor">#aa1221</Color>
 
 			<!--  Gray Colors  -->
-			<Color x:Key="Gray-100">#f6f7f8</Color>
-			<Color x:Key="Gray-700">#606a7b</Color>
+			<Color x:Key="Gray-100">#F6F7F8</Color>
+			<Color x:Key="Gray-300">#CED2D9</Color>
+			<Color x:Key="Gray-700">#606A7B</Color>
 			<Color x:Key="Gray-900">#333942</Color>
 			<Color x:Key="Gray-Black">#000000</Color>
-			<Color x:Key="Gray-White">#ffffff</Color>
+			<Color x:Key="Gray-White">#FFFFFF</Color>
 
 			<OnPlatform x:Key="FontIcons" x:TypeArguments="x:String">
 				<OnPlatform.Platforms>
@@ -69,15 +71,11 @@
 			</OnPlatform>
 
 			<!--  Global Styles  -->
-			<Style TargetType="{x:Type NavigationPage}">
-				<Setter Property="BackgroundColor" Value="{DynamicResource WindowBackgroundColor}" />
-				<Setter Property="Shell.BackgroundColor" Value="Red" />
+			<Style TargetType="NavigationPage">
+				<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource WindowBackgroundColorLight}, Dark={StaticResource WindowBackgroundColorDark}}" />
+				<Setter Property="BarBackgroundColor" Value="{AppThemeBinding Light={StaticResource WindowBackgroundColorLight}, Dark={StaticResource WindowBackgroundColorDark}}" />
+				<Setter Property="BarTextColor" Value="{AppThemeBinding Light={StaticResource Gray-White}, Dark={StaticResource Gray-Black}}" />
 			</Style>
-			<Style TargetType="{x:Type Page}">
-				<Setter Property="BackgroundColor" Value="{DynamicResource WindowBackgroundColor}" />
-				<Setter Property="Shell.BackgroundColor" Value="Green" />
-			</Style>
-
 
 			<!--  Icon Styles  -->
 			<x:String x:Key="TradeIcon">&#x2194;</x:String>
@@ -85,30 +83,11 @@
 			<x:String x:Key="LowPriceIcon">&#x25bc;</x:String>
 			<x:String x:Key="PercentIcon">&#x2052;</x:String>
 
-			<!--  Tab icons  -->
-			<x:String x:Key="HomeIcon">home.png</x:String>
-			<x:String x:Key="SettingsIcon">settings.png</x:String>
-			<x:String x:Key="ChartIcon">chart.png</x:String>
-
 			<Style TargetType="Label">
-				<Setter Property="TextColor" Value="{DynamicResource Gray-Black}" />
-			</Style>
-
-			<Style TargetType="Entry">
-				<Setter Property="TextColor" Value="{DynamicResource Gray-Black}" />
-			</Style>
-
-			<Style TargetType="Button">
-				<Setter Property="TextColor" Value="{DynamicResource Gray-Black}" />
-			</Style>
-
-			<Style TargetType="Editor">
-				<Setter Property="TextColor" Value="{DynamicResource Gray-Black}" />
+				<Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray-Black}, Dark={StaticResource Gray-White}}" />
 			</Style>
 
 			<!--  CUSTOM CONTROLS STYLE  -->
-			<!--  Markets List template style  -->
-
 			<Style x:Key="MarketsListViewStyle" TargetType="ListView">
 				<Setter Property="HasUnevenRows" Value="True" />
 				<Setter Property="SelectionMode" Value="None" />
@@ -116,6 +95,7 @@
 				<Setter Property="VerticalScrollBarVisibility" Value="Never" />
 				<Setter Property="Margin" Value="8,0" />
 			</Style>
+
 			<Style x:Key="MarketsLogoStyle" TargetType="{x:Type Image}">
 				<Setter Property="HeightRequest" Value="72" />
 				<Setter Property="WidthRequest" Value="72" />
@@ -132,7 +112,7 @@
 				<Setter Property="FontFamily" Value="{StaticResource Montserrat-Bold}" />
 				<Setter Property="FontSize" Value="36" />
 				<Setter Property="LineHeight" Value="{OnPlatform Android=1.5, Default=-1}" />
-				<Setter Property="TextColor" Value="{DynamicResource Gray-900}" />
+				<Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray-900}, Dark={StaticResource Gray-100}}" />
 				<Setter Property="DefaultBackgroundColor" Value="Transparent" />
 				<Setter Property="NegativeTickColor" Value="{DynamicResource MarketDownTextColor}" />
 				<Setter Property="NegativeTickBackgroundColor" Value="{DynamicResource MarketDownBackgroundColor}" />
@@ -146,7 +126,7 @@
 				<Setter Property="FontFamily" Value="{StaticResource Montserrat-Regular}" />
 				<Setter Property="FontSize" Value="14" />
 				<Setter Property="LineHeight" Value="{OnPlatform Android=1.5, Default=-1}" />
-				<Setter Property="TextColor" Value="{DynamicResource Gray-700}" />
+				<Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray-700}, Dark={StaticResource Gray-300}}" />
 				<Setter Property="DefaultBackgroundColor" Value="Transparent" />
 				<Setter Property="NegativeTickColor" Value="{DynamicResource MarketDownTextColor}" />
 				<Setter Property="NegativeTickBackgroundColor" Value="{DynamicResource MarketDownBackgroundColor}" />
@@ -158,7 +138,7 @@
 				<Setter Property="FontFamily" Value="{StaticResource Montserrat-Bold}" />
 				<Setter Property="FontSize" Value="14" />
 				<Setter Property="LineHeight" Value="{OnPlatform Android=1.5, Default=-1}" />
-				<Setter Property="TextColor" Value="{DynamicResource Gray-700}" />
+				<Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray-700}, Dark={StaticResource Gray-300}}" />
 				<Setter Property="HorizontalTextAlignment" Value="Start" />
 			</Style>
 
@@ -176,22 +156,9 @@
 				<Setter Property="Padding" Value="0,2" />
 			</Style>
 
-			<Style x:Key="CustomShadowFrameStyle" TargetType="{x:Type controls:CustomShadowFrame}">
-				<Setter Property="BackgroundColor" Value="{DynamicResource Gray-White}" />
-				<Setter Property="BorderColor" Value="{DynamicResource Gray-Black}" />
-				<Setter Property="Margin" Value="0,2,0,16" />
-				<Setter Property="Padding" Value="0" />
-				<Setter Property="BorderWidth" Value="1" />
-				<Setter Property="CornerRadius" Value="4" />
-				<Setter Property="HasShadow" Value="True" />
-				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
-				<Setter Property="VerticalOptions" Value="FillAndExpand" />
-				<Setter Property="CustomBorderColor" Value="Red" />
-			</Style>
-
 			<Style x:Key="TitleStyle" TargetType="{x:Type Label}">
-				<Setter Property="BackgroundColor" Value="{DynamicResource Gray-White}" />
-				<Setter Property="TextColor" Value="{DynamicResource Gray-Black}" />
+				<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Gray-White}, Dark={StaticResource Gray-Black}}" />
+				<Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray-Black}, Dark={StaticResource Gray-White}}" />
 				<Setter Property="FontFamily" Value="{StaticResource Montserrat-Medium}" />
 				<Setter Property="FontSize" Value="Large" />
 				<Setter Property="LineHeight" Value="{OnPlatform Android=1.5, Default=-1}" />
@@ -202,10 +169,25 @@
 				<Setter Property="VerticalOptions" Value="Center" />
 			</Style>
 
-			<!--  Converters  -->
-			<converters:InverseBoolConverter x:Key="InverseBoolConverter" />
-			<converters:ItemsToHeightConverter x:Key="ItemsToHeightConverter" />
-			<converters:VisibleItemsToHeightConverter x:Key="VisibleItemsToHeightConverter" />
+			<Style TargetType="Frame">
+				<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Gray-White}, Dark={StaticResource Gray-Black}}" />
+				<Setter Property="Margin" Value="4,0,4,4" />
+				<Setter Property="Padding" Value="5" />
+				<Setter Property="CornerRadius" Value="20" />
+				<Setter Property="HasShadow" Value="False" />
+				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
+				<Setter Property="IsClippedToBounds" Value="False" />
+				<Setter Property="VerticalOptions" Value="FillAndExpand" />
+			</Style>
+
+			<Style TargetType="pancake:PancakeView">
+				<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Gray-White}, Dark={StaticResource Gray-Black}}" />
+				<Setter Property="Margin" Value="0,0,0,16" />
+				<Setter Property="Padding" Value="4" />
+				<Setter Property="CornerRadius" Value="20" />
+				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
+				<Setter Property="VerticalOptions" Value="Start" />
+			</Style>
 		</ResourceDictionary>
 	</Application.Resources>
 </Application>
