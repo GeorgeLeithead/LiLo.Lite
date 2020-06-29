@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+	x:Class="LiLo.Lite.Controls.TitleBar"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d">
+
+	<Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+		<Image Margin="20" HeightRequest="40" HorizontalOptions="Start" Source="{AppThemeBinding Light='home.png', Dark='home_dark.png'}" VerticalOptions="Center">
+			<Image.GestureRecognizers>
+				<TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+			</Image.GestureRecognizers>
+		</Image>
+
+		<Image
+			Grid.Column="1"
+			Margin="20"
+			HeightRequest="40"
+			HorizontalOptions="End"
+			Source="{AppThemeBinding Light='settings.png',
+			                         Dark='settings_dark.png'}"
+			VerticalOptions="Center">
+			<Image.GestureRecognizers>
+				<TapGestureRecognizer Tapped="SettingsTapped" />
+			</Image.GestureRecognizers>
+		</Image>
+	</Grid>
+</ContentView>

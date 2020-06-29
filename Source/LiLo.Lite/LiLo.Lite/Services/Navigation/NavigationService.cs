@@ -19,6 +19,8 @@ namespace LiLo.Lite.Services.Navigation
 	using System.Threading.Tasks;
 	using LiLo.Lite.ViewModels;
 	using LiLo.Lite.ViewModels.Base;
+	using LiLo.Lite.Views;
+	using Plugin.SharedTransitions;
 	using Xamarin.Forms;
 
 	/// <summary>Navigation service.</summary>
@@ -41,7 +43,16 @@ namespace LiLo.Lite.Services.Navigation
 		/// <returns>Navigation task.</returns>
 		public Task NavigateToAsync<TViewModel>() where TViewModel : ViewModelBase
 		{
-			return InternalNavigateToAsync(typeof(TViewModel));
+			return InternalNavigateToAsync(typeof(TViewModel), null);
+		}
+
+		/// <summary>Navigate to a generic viewModel type.</summary>
+		/// <typeparam name="TViewModel">View Model</typeparam>
+		/// <param name="parameter">Optional navigational parameter.</param>
+		/// <returns>Navigation task.</returns>
+		public Task NavigateToAsync<TViewModel>(object parameter) where TViewModel : ViewModelBase
+		{
+			return InternalNavigateToAsync(typeof(TViewModel), parameter);
 		}
 
 		/// <summary>creates a new page</summary>
@@ -69,12 +80,23 @@ namespace LiLo.Lite.Services.Navigation
 
 		/// <summary>Perform navigation.</summary>
 		/// <param name="viewModelType">View model type.</param>
+		/// <param name="parameter">Optional navigation parameter.</param>
 		/// <returns>Navigation task.</returns>
-		private async Task InternalNavigateToAsync(Type viewModelType)
+		private async Task InternalNavigateToAsync(Type viewModelType, object parameter)
 		{
 			Page page = CreatePage(viewModelType);
-			Application.Current.MainPage = page;
-			await (page.BindingContext as ViewModelBase).InitializeAsync();
+			if (page is HomeView)
+			{
+				Application.Current.MainPage = new SharedTransitionNavigationPage(page);
+			}
+			else
+			{
+				SharedTransitionNavigationPage navigationPage = Application.Current.MainPage as SharedTransitionNavigationPage;
+				SharedTransitionNavigationPage.SetTransitionSelectedGroup(navigationPage, parameter as string);
+				await navigationPage.PushAsync(page);
+			}
+
+			await (page.BindingContext as ViewModelBase).InitializeAsync(parameter);
 		}
 	}
 }

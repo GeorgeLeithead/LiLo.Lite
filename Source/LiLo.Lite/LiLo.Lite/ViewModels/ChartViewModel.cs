@@ -14,10 +14,11 @@
 namespace LiLo.Lite.ViewModels
 {
 	using System;
+	using System.Collections.Generic;
 	using System.Collections.ObjectModel;
 	using System.Globalization;
+	using System.Linq;
 	using System.Threading.Tasks;
-	using System.Windows.Input;
 	using Lilo.Lite;
 	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.ViewModels.Base;
@@ -26,6 +27,9 @@ namespace LiLo.Lite.ViewModels
 	/// <summary>Chart view model.</summary>
 	public class ChartViewModel : ViewModelBase
 	{
+		/// <summary>Selected currency</summary>
+		private string selectedCurrency;
+
 		/// <summary>Observable list of markets.</summary>
 		private ObservableCollection<MarketsModel> marketsList;
 
@@ -36,9 +40,6 @@ namespace LiLo.Lite.ViewModels
 		public ChartViewModel()
 		{
 		}
-
-		/// <summary>Gets the command that will be executed when an item is selected.</summary>
-		public ICommand ListViewItemTappedCommand => new Command<ItemTappedEventArgs>(async (item) => await ListViewItemTappedCommandAsync(item));
 
 		/// <summary>Gets or sets a collection of values to be displayed in the markets view.</summary>
 		public ObservableCollection<MarketsModel> MarketsList
@@ -54,14 +55,13 @@ namespace LiLo.Lite.ViewModels
 			}
 		}
 
-		/// <summary>Gets a markets TradingView web view.</summary>
-		public HtmlWebViewSource MarketWebView
+		public string SelectedCurrency
 		{
-			get
+			get { return selectedCurrency; }
+			set
 			{
-				string htmlSource = GlobalSettings.TradingViewWebViewSource.Html.Replace("XX0XX", SettingsService.Symbol).Replace("XX1XX", TimeZoneInfo.Local.ToString()).Replace("XX2XX", SettingsService.ThemeOption.ToString().ToLowerInvariant()).Replace("XX3XX", CultureInfo.CurrentCulture.IetfLanguageTag.Substring(0, 2));
-				var htmlViewSource = new HtmlWebViewSource() { Html = htmlSource };
-				return htmlViewSource;
+				selectedCurrency = SelectedCurrency;
+				NotifyPropertyChanged(() => SelectedCurrency);
 			}
 		}
 
@@ -81,29 +81,24 @@ namespace LiLo.Lite.ViewModels
 
 		/// <summary>Initializes the view model.</summary>
 		/// <returns>Base results.</returns>
-		public override async Task InitializeAsync()
+		public override async Task InitializeAsync(object parameter)
 		{
 			IsBusy = true;
-			await base.InitializeAsync();
-			var data = new ObservableCollection<MarketsModel>(MarketsHelperService.MarketsList);
-			foreach (MarketsModel item in data)
+			string selectedMarket = parameter as string;
+			await base.InitializeAsync(parameter);
+			IEnumerable<MarketsModel> items = new ObservableCollection<MarketsModel>(MarketsHelperService.MarketsList).Where(m => m.CurrencyString != selectedMarket);
+			MarketsModel selectedItem = new ObservableCollection<MarketsModel>(MarketsHelperService.MarketsList).Where(m => m.CurrencyString == selectedMarket).First();
+			selectedCurrency = selectedItem.CurrencyString;
+			List<MarketsModel> markets = new List<MarketsModel>();
+			foreach(var item in items)
 			{
-				item.IsVisible = item.CurrencyString == SettingsService.Symbol;
+				markets.Add(item);
 			}
 
-			MarketsList = data;
-			IsBusy = false;
-		}
+			markets.Insert(0, selectedItem);
 
-		/// <summary>Changes the markets item selected and resets the order view if necessary.</summary>
-		/// <param name="e">List View item.</param>
-		/// <returns>Async task result.</returns>
-		private async Task ListViewItemTappedCommandAsync(ItemTappedEventArgs e)
-		{
-			// new market selected, so reset everything on the orders view.
-			MarketsModel selectedmarket = e.Item as MarketsModel;
-			SettingsService.Symbol = selectedmarket.CurrencyString;
-			await NavigationService.NavigateToAsync<HomeViewModel>();
+			MarketsList = new ObservableCollection<MarketsModel>(markets);
+			IsBusy = false;
 		}
 	}
 }

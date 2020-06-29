@@ -17,7 +17,6 @@ namespace LiLo.Lite.ViewModels.Base
 	using System.Threading.Tasks;
 	using LiLo.Lite.Services.Bybit;
 	using LiLo.Lite.Services.Navigation;
-	using LiLo.Lite.Services.Settings;
 	using LiLo.Lite.Services.Sockets;
 	using Xamarin.Forms.Internals;
 
@@ -32,9 +31,6 @@ namespace LiLo.Lite.ViewModels.Base
 		/// <summary>Navigation service.</summary>
 		protected readonly INavigationService NavigationService;
 
-		/// <summary>Settings service.</summary>
-		protected readonly ISettingsService SettingsService;
-
 		/// <summary>Sockets service.</summary>
 		protected readonly ISocketsService SocketsService;
 
@@ -47,7 +43,6 @@ namespace LiLo.Lite.ViewModels.Base
 			NavigationService = ViewModelLocator.Resolve<INavigationService>();
 			SocketsService = ViewModelLocator.Resolve<ISocketsService>();
 			MarketsHelperService = ViewModelLocator.Resolve<IMarketsHelperService>();
-			SettingsService = ViewModelLocator.Resolve<ISettingsService>();
 		}
 
 		/// <summary>Gets or sets a value indicating whether the view is busy.</summary>
@@ -62,8 +57,9 @@ namespace LiLo.Lite.ViewModels.Base
 		}
 
 		/// <summary>Initialises the view model.</summary>
+		/// <param name="parameter">Optional navigation parameter.</param>
 		/// <returns>Task result</returns>
-		public virtual Task InitializeAsync()
+		public virtual Task InitializeAsync(object parameter)
 		{
 			return Task.FromResult(false);
 		}
