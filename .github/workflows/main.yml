@@ -1,0 +1,44 @@
+name: CI on Push and Pull Request
+
+on: [push, pull_request]
+
+jobs:
+  Practice:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
+    - name: Show what's in the directory
+      run: |
+        ls
+    - name: Show what all is in the parent directory
+      run: |
+        cd ..
+        ls
+        
+  Android:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Android
+      run: |
+        cd source
+        cd LiLo.Lite
+        nuget restore
+        cd LiLo.Lite.Android
+        msbuild LiLo.Lite.Android.csproj /verbosity:normal /t:Rebuild /p:Configuration=Debug
+        
+  iOS:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: iOS
+      run: |
+        cd source
+        cd LiLo.Lite
+        nuget restore
+        cd LiLo.Lite.iOS
+        msbuild LiLo.Lite.iOS.csproj /verbosity:normal /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
