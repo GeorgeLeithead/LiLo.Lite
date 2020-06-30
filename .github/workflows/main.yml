@@ -7,8 +7,6 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo LiLo.Lite
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
@@ -27,6 +25,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Android
       run: |
+        cd source
         cd LiLo.Lite
         nuget restore
         cd LiLo.Lite.Android
@@ -38,6 +37,8 @@ jobs:
     - uses: actions/checkout@v1
     - name: iOS
       run: |
+        cd source
         cd LiLo.Lite
         nuget restore
-        msbuild LiLo.Lite.iOS/LiLo.Lite.iOS.csproj /verbosity:normal /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
+        cd LiLo.Lite.iOS
+        msbuild LiLo.Lite.iOS.csproj /verbosity:normal /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
