@@ -59,8 +59,11 @@ namespace LiLo.Lite.Views
 				await stackLayout.Children[1].ScaleTo(1, 500, Easing.CubicIn);
 				Grid gridlayout = stackLayout.Children[stackLayout.Children.Count -1] as Grid;
 				WebView webView = gridlayout.Children[gridlayout.Children.Count - 1] as WebView;
-				Label currensyString = stackLayout.Children[0] as Label;
-				webView.Source = WebViewSource(currensyString.Text);
+				if (webView.Source == null)
+				{
+					Label currensyString = stackLayout.Children[0] as Label;
+					webView.Source = WebViewSource(currensyString.Text);
+				}
 //			}
 		}
 
