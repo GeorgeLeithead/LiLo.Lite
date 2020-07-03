@@ -13,8 +13,8 @@
 			<Color x:Key="PrimaryColor">#000000</Color>
 			<Color x:Key="PrimaryDarkColor">#000000</Color>
 			<Color x:Key="AccentColor">#179C52</Color>
-			<Color x:Key="WindowBackgroundColorLight">#CED2D9</Color>
-			<Color x:Key="WindowBackgroundColorDark">#606A7B</Color>
+			<Color x:Key="WindowBackgroundColorLight">#F6F7F8</Color>
+			<Color x:Key="WindowBackgroundColorDark">#333942</Color>
 
 			<!--  Markets Colors  -->
 			<Color x:Key="MarketUpTextColor">#7ed321</Color>
