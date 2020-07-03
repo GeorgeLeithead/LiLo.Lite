@@ -21,6 +21,7 @@ namespace LiLo.Lite.Views
 	using Lilo.Lite;
 	using System;
 	using System.Globalization;
+	using System.Collections;
 
 	/// <summary>Chart View class.</summary>
 	[Preserve(AllMembers = true)]
@@ -54,16 +55,12 @@ namespace LiLo.Lite.Views
 //			if (view.SelectedIndex != 0)
 //			{
 				Frame frame = view.CurrentView as Frame;
-				StackLayout stackLayout = frame.Children[0] as StackLayout;
-				await stackLayout.Children[1].ScaleTo(1.1, 200, Easing.CubicInOut);
-				await stackLayout.Children[1].ScaleTo(1, 500, Easing.CubicIn);
-				Grid gridlayout = stackLayout.Children[stackLayout.Children.Count -1] as Grid;
-				WebView webView = gridlayout.Children[gridlayout.Children.Count - 1] as WebView;
-				if (webView.Source == null)
-				{
-					Label currensyString = stackLayout.Children[0] as Label;
-					webView.Source = WebViewSource(currensyString.Text);
-				}
+				StackLayout stackLayoutFrame = frame.Children[0] as StackLayout;
+				await stackLayoutFrame.Children[0].ScaleTo(1.1, 200, Easing.CubicInOut);
+				await stackLayoutFrame.Children[0].ScaleTo(1, 500, Easing.CubicIn);
+				StackLayout stackLayoutContainer = frame.Parent.Parent as StackLayout;
+				WebView webView = stackLayoutContainer.Children[stackLayoutContainer.Children.Count - 1] as WebView;
+				webView.Source = WebViewSource(frame.AutomationId);
 //			}
 		}
 
