@@ -22,7 +22,7 @@
 				<!--  Title View  -->
 				<Label AutomationId="PageTitle" Style="{StaticResource TitleStyle}" Text="{Binding Title, Mode=OneWay}" />
 				<!--  Markets List View  -->
-				<ListView Grid.Row="1" AutomationId="MarketsList" ItemsSource="{Binding MarketsList}" Style="{DynamicResource MarketsListViewStyle}" VerticalOptions="FillAndExpand">
+				<ListView Grid.Row="1" AutomationId="MarketsList" ItemsSource="{Binding MarketsList}" Style="{StaticResource MarketsListViewStyle}" VerticalOptions="FillAndExpand">
 					<ListView.ItemTemplate>
 						<DataTemplate>
 							<ViewCell>
@@ -36,35 +36,35 @@
 												sharedTransition:Transition.Name="SelectedItemImage"
 												Rotation="0"
 												Source="{Binding ItemImage}"
-												Style="{DynamicResource MarketsLogoStyle}" />
+												Style="{StaticResource MarketsLogoStyle}" />
 											<controls:TickPriceView
 												Grid.Row="0"
 												Grid.Column="1"
 												Grid.ColumnSpan="2"
 												Price="{Binding LastPrice}"
-												Style="{DynamicResource LastPriceStyle}"
+												Style="{StaticResource LastPriceStyle}"
 												Text="{Binding LastPriceString}"
 												Tick="{Binding LastTickDirection}" />
-											<StackLayout Grid.Row="1" Grid.Column="1" Style="{DynamicResource MarketsColumnStyle}">
-												<StackLayout Margin="0" HorizontalOptions="Fill" Orientation="Horizontal" Spacing="0" VerticalOptions="CenterAndExpand">
-													<Label Style="{DynamicResource PriceLabelStyle}" Text="{StaticResource HighPriceIcon}" />
-													<controls:TickPriceView Price="{Binding HighPrice24h}" Style="{DynamicResource CurrencyPriceStyle}" Text="{Binding HighPrice24hString}" Tick="" />
+											<StackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource MarketsColumnStyle}">
+												<StackLayout Style="{StaticResource StackLayoutStyle}">
+													<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource HighPriceIcon}" />
+													<controls:TickPriceView Price="{Binding HighPrice24h}" Style="{StaticResource CurrencyPriceStyle}" Text="{Binding HighPrice24hString}" Tick="" />
 												</StackLayout>
-												<StackLayout Margin="0" HorizontalOptions="Fill" Orientation="Horizontal" Spacing="0" VerticalOptions="CenterAndExpand">
-													<Label Style="{DynamicResource PriceLabelStyle}" Text="{StaticResource LowPriceIcon}" />
-													<controls:TickPriceView Price="{Binding LowPrice24h}" Style="{DynamicResource CurrencyPriceStyle}" Text="{Binding LowPrice24hString}" Tick="" />
+												<StackLayout Style="{StaticResource StackLayoutStyle}">
+													<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource LowPriceIcon}" />
+													<controls:TickPriceView Price="{Binding LowPrice24h}" Style="{StaticResource CurrencyPriceStyle}" Text="{Binding LowPrice24hString}" Tick="" />
 												</StackLayout>
 											</StackLayout>
-											<StackLayout Grid.Row="1" Grid.Column="2" Style="{DynamicResource MarketsColumnStyle}">
-												<StackLayout Margin="0" HorizontalOptions="Fill" Orientation="Horizontal" Spacing="0" VerticalOptions="CenterAndExpand">
-													<Label Style="{DynamicResource PriceLabelStyle}" Text="{StaticResource PercentIcon}" />
-													<controls:TickPriceView Price="{Binding Price1hPercent}" Style="{DynamicResource CurrencyPriceStyle}" Text="{Binding Price1hPercentString}" Tick="" />
-													<Label Style="{DynamicResource PriceLabelStyle}" Text="/" />
-													<controls:TickPriceView Price="{Binding Price24hPercent}" Style="{DynamicResource CurrencyPriceStyle}" Text="{Binding Price24hPercentString}" Tick="" />
+											<StackLayout Grid.Row="1" Grid.Column="2" Style="{StaticResource MarketsColumnStyle}">
+												<StackLayout Style="{StaticResource StackLayoutStyle}">
+													<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource PercentIcon}" />
+													<controls:TickPriceView Price="{Binding Price1hPercent}" Style="{StaticResource CurrencyPriceStyle}" Text="{Binding Price1hPercentString}" Tick="" />
+													<Label Style="{StaticResource PriceLabelStyle}" Text="/" />
+													<controls:TickPriceView Price="{Binding Price24hPercent}" Style="{StaticResource CurrencyPriceStyle}" Text="{Binding Price24hPercentString}" Tick="" />
 												</StackLayout>
-												<StackLayout Margin="0" HorizontalOptions="Fill" Orientation="Horizontal" Spacing="0" VerticalOptions="CenterAndExpand">
-													<Label Style="{DynamicResource PriceLabelStyle}" Text="{StaticResource TradeIcon}" />
-													<Label Style="{DynamicResource PriceLabelRegularStyle}" Text="{Binding Turnover}" />
+												<StackLayout Style="{StaticResource StackLayoutStyle}">
+													<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource TradeIcon}" />
+													<Label Style="{StaticResource PriceLabelRegularStyle}" Text="{Binding Turnover}" />
 												</StackLayout>
 											</StackLayout>
 										</Grid>

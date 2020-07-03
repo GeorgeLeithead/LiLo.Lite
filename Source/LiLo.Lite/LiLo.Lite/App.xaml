@@ -188,6 +188,15 @@
 				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
 				<Setter Property="VerticalOptions" Value="Start" />
 			</Style>
+
+			<Style x:Key="StackLayoutStyle" TargetType="StackLayout">
+				<Setter Property="Orientation" Value="Horizontal" />
+				<Setter Property="Spacing" Value="0" />
+				<Setter Property="HorizontalOptions" Value="Fill" />
+				<Setter Property="Margin" Value="0" />
+				<Setter Property="VerticalOptions" Value="CenterAndExpand" />
+			</Style>
+
 		</ResourceDictionary>
 	</Application.Resources>
 </Application>
