@@ -20,13 +20,7 @@
 	<ContentPage.Content>
 		<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 			<!--  title bar  -->
-			<Grid Margin="0,70,0,60">
-				<Grid.Margin>
-					<OnPlatform x:TypeArguments="Thickness">
-						<On Platform="iOS" Value="0,70,0,60" />
-						<On Platform="Android" Value="0,0,0,80" />
-					</OnPlatform>
-				</Grid.Margin>
+			<Grid>
 				<controls:TitleBar />
 			</Grid>
 
@@ -47,60 +41,26 @@
 				<cards:CoverFlowView.ItemTemplate>
 					<DataTemplate>
 						<Frame AutomationId="{Binding CurrencyString}">
-							<StackLayout IsClippedToBounds="False">
-								<StackLayout.Margin>
-									<OnPlatform x:TypeArguments="Thickness">
-										<On Platform="iOS" Value="0,0,0,0" />
-										<On Platform="Android" Value="0,-120,0,0" />
-									</OnPlatform>
-								</StackLayout.Margin>
+							<StackLayout Margin="0,-80,0,0" IsClippedToBounds="False">
 								<!--  overlap image  -->
 								<Image sharedTransition:Transition.Name="SelectedItemImage" HeightRequest="150" Source="{Binding ItemImage}" VerticalOptions="Start" />
 								<controls:TickPriceView Price="{Binding LastPrice}" Style="{StaticResource LastPriceStyle}" Text="{Binding LastPriceString}" Tick="{Binding LastTickDirection}" />
 								<Grid ColumnDefinitions="*,*" HorizontalOptions="FillAndExpand" RowDefinitions="Auto,Auto,*">
-									<StackLayout
-										Grid.Row="0"
-										Grid.Column="0"
-										Margin="0"
-										HorizontalOptions="Fill"
-										Orientation="Horizontal"
-										Spacing="0"
-										VerticalOptions="CenterAndExpand">
+									<StackLayout Grid.Row="0" Grid.Column="0" Style="{StaticResource StackLayoutStyle}">
 										<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource HighPriceIcon}" />
 										<controls:TickPriceView Price="{Binding HighPrice24h}" Style="{StaticResource CurrencyPriceStyle}" Text="{Binding HighPrice24hString}" Tick="" />
 									</StackLayout>
-									<StackLayout
-										Grid.Row="1"
-										Grid.Column="0"
-										Margin="0"
-										HorizontalOptions="Fill"
-										Orientation="Horizontal"
-										Spacing="0"
-										VerticalOptions="CenterAndExpand">
+									<StackLayout Grid.Row="1" Grid.Column="0" Style="{StaticResource StackLayoutStyle}">
 										<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource LowPriceIcon}" />
 										<controls:TickPriceView Price="{Binding LowPrice24h}" Style="{StaticResource CurrencyPriceStyle}" Text="{Binding LowPrice24hString}" Tick="" />
 									</StackLayout>
-									<StackLayout
-										Grid.Row="0"
-										Grid.Column="1"
-										Margin="0"
-										HorizontalOptions="Fill"
-										Orientation="Horizontal"
-										Spacing="0"
-										VerticalOptions="CenterAndExpand">
+									<StackLayout Grid.Row="0" Grid.Column="1" Style="{StaticResource StackLayoutStyle}">
 										<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource PercentIcon}" />
 										<controls:TickPriceView Price="{Binding Price1hPercent}" Style="{StaticResource CurrencyPriceStyle}" Text="{Binding Price1hPercentString}" Tick="" />
 										<Label Style="{StaticResource PriceLabelStyle}" Text="/" />
 										<controls:TickPriceView Price="{Binding Price24hPercent}" Style="{StaticResource CurrencyPriceStyle}" Text="{Binding Price24hPercentString}" Tick="" />
 									</StackLayout>
-									<StackLayout
-										Grid.Row="1"
-										Grid.Column="1"
-										Margin="0"
-										HorizontalOptions="Fill"
-										Orientation="Horizontal"
-										Spacing="0"
-										VerticalOptions="CenterAndExpand">
+									<StackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource StackLayoutStyle}">
 										<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource TradeIcon}" />
 										<Label Style="{StaticResource PriceLabelRegularStyle}" Text="{Binding Turnover}" />
 									</StackLayout>
