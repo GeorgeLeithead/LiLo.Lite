@@ -33,7 +33,6 @@ namespace LiLo.Lite
 		public App()
 		{
 			Xamarin.Forms.Device.SetFlags(new string[] { "AppTheme_Experimental" });
-			AppCenter.Start("android=4d413467-bf37-45b0-bf18-b8d15d98a182;", typeof(Analytics), typeof(Crashes), typeof(Distribute));
 			InitializeComponent();
 			Current.RequestedThemeChanged += (s, a) =>
 			{
@@ -64,6 +63,8 @@ namespace LiLo.Lite
 		/// <summary>Perform actions when the application starts.</summary>
 		protected override async void OnStart()
 		{
+			base.OnStart();
+			AppCenter.Start("android=4d413467-bf37-45b0-bf18-b8d15d98a182;", typeof(Analytics), typeof(Crashes), typeof(Distribute));
 			if (!DesignMode.IsDesignModeEnabled)
 			{
 				socketsService = ViewModelLocator.Resolve<ISocketsService>();
