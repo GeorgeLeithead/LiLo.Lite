@@ -32,10 +32,50 @@ namespace LiLo.Lite.Services.Markets
 		{
 			var marketsModel = new ObservableCollection<MarketsModel>
 			{
-				new MarketsModel { Currency = Definitions.CurrencyEnum.BTC, CurrencyString = Definitions.CurrencyEnum.BTC.ToString(), ItemImage = "btc.png", Symbol = Definitions.SymbolEnum.BTCUSD, SymbolString = Definitions.SymbolEnum.BTCUSD.ToString(), MinPrice = 0.5, MaxPrice = 999999.5, TickSize = 0.5, MaxQuantity = 1000000 },
-				new MarketsModel { Currency = Definitions.CurrencyEnum.ETH, CurrencyString = Definitions.CurrencyEnum.ETH.ToString(), ItemImage = "eth.png", Symbol = Definitions.SymbolEnum.ETHUSD, SymbolString = Definitions.SymbolEnum.ETHUSD.ToString(), MinPrice = 0.05, MaxPrice = 99999.95, TickSize = 0.05, MaxQuantity = 1000000 },
-				new MarketsModel { Currency = Definitions.CurrencyEnum.EOS, CurrencyString = Definitions.CurrencyEnum.EOS.ToString(), DecimalPlaces = 3, ItemImage = "eos.png", Symbol = Definitions.SymbolEnum.EOSUSD, SymbolString = Definitions.SymbolEnum.EOSUSD.ToString(), MinPrice = 0.001, MaxPrice = 1999.999, TickSize = 0.001, MaxQuantity = 1000000 },
-				new MarketsModel { Currency = Definitions.CurrencyEnum.XRP, CurrencyString = Definitions.CurrencyEnum.XRP.ToString(), DecimalPlaces = 4, ItemImage = "xrp.png", Symbol = Definitions.SymbolEnum.XRPUSD, SymbolString = Definitions.SymbolEnum.XRPUSD.ToString(), MinPrice = 0.0001, MaxPrice = 199.9999, TickSize = 0.0001, MaxQuantity = 1000000 }
+				new MarketsModel { DecimalPlaces = 5, ItemImage = "ada.png", SymbolString = Definitions.SymbolEnum.ADAUSDT.ToString() },
+
+				new MarketsModel { DecimalPlaces = 3, ItemImage = "algo.png", SymbolString = Definitions.SymbolEnum.ALGOUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 3, ItemImage = "atom.png", SymbolString = Definitions.SymbolEnum.ATOMUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 4, ItemImage = "bat.png", SymbolString = Definitions.SymbolEnum.BATUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 2, ItemImage = "bch.png", SymbolString = Definitions.SymbolEnum.BCHUSDT.ToString() },
+
+				new MarketsModel { DecimalPlaces = 3, ItemImage = "bnb.png", SymbolString = Definitions.SymbolEnum.BNBUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 2, ItemImage = "btc.png", SymbolString = Definitions.SymbolEnum.BTCUSDT.ToString() },
+
+
+				new MarketsModel { DecimalPlaces = 2, ItemImage = "comp.png", SymbolString = Definitions.SymbolEnum.COMPUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 2, ItemImage = "dash.png", SymbolString = Definitions.SymbolEnum.DASHUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 6, ItemImage = "doge.png", SymbolString = Definitions.SymbolEnum.DOGEUSDT.ToString() },
+
+				new MarketsModel { DecimalPlaces = 3, ItemImage = "eos.png", SymbolString = Definitions.SymbolEnum.EOSUSDT.ToString() },
+
+				new MarketsModel { DecimalPlaces = 3, ItemImage = "etc.png", SymbolString = Definitions.SymbolEnum.ETCUSDT.ToString() },
+
+				new MarketsModel { DecimalPlaces = 2, ItemImage = "eth.png", SymbolString = Definitions.SymbolEnum.ETHUSDT.ToString() },
+
+
+				new MarketsModel { DecimalPlaces = 6, ItemImage = "iost.png", SymbolString = Definitions.SymbolEnum.IOSTUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 4, ItemImage = "iota.png", SymbolString = Definitions.SymbolEnum.IOTAUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 5, ItemImage = "knc.png", SymbolString = Definitions.SymbolEnum.KNCUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 3, ItemImage = "link.png", SymbolString = Definitions.SymbolEnum.LINKUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 2, ItemImage = "ltc.png", SymbolString = Definitions.SymbolEnum.LTCUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 3, ItemImage = "neo.png", SymbolString = Definitions.SymbolEnum.NEOUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 4, ItemImage = "omg.png", SymbolString = Definitions.SymbolEnum.OMGUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 4, ItemImage = "ont.png", SymbolString = Definitions.SymbolEnum.ONTUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 3, ItemImage = "qtum.png", SymbolString = Definitions.SymbolEnum.QTUMUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 4, ItemImage = "sxp.png", SymbolString = Definitions.SymbolEnum.SXPUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 4, ItemImage = "theta.png", SymbolString = Definitions.SymbolEnum.THETAUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 5, ItemImage = "trx.png", SymbolString = Definitions.SymbolEnum.TRXUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 6, ItemImage = "vet.png", SymbolString = Definitions.SymbolEnum.VETUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 5, ItemImage = "xlm.png", SymbolString = Definitions.SymbolEnum.XLMUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 2, ItemImage = "xmr.png", SymbolString = Definitions.SymbolEnum.XMRUSDT.ToString() },
+
+				new MarketsModel { DecimalPlaces = 4, ItemImage = "xrp.png", SymbolString = Definitions.SymbolEnum.XRPUSDT.ToString() },
+
+				new MarketsModel { DecimalPlaces = 3, ItemImage = "xtz.png", SymbolString = Definitions.SymbolEnum.XTZUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 2, ItemImage = "zec.png", SymbolString = Definitions.SymbolEnum.ZECUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 5, ItemImage = "zil.png", SymbolString = Definitions.SymbolEnum.ZILUSDT.ToString() },
+				new MarketsModel { DecimalPlaces = 4, ItemImage = "zrx.png", SymbolString = Definitions.SymbolEnum.ZRXUSDT.ToString() },
 			};
 			return await Task.FromResult(marketsModel);
 		}

@@ -28,12 +28,6 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Format culture - set to US</summary>
 		private readonly CultureInfo formatCulture = CultureInfo.CreateSpecificCulture("en-US");
 
-		/// <summary>Currency ENUM</summary>
-		private CurrencyEnum currency;
-
-		/// <summary>Currency string</summary>
-		private string currencyString;
-
 		/// <summary>Number of decimal places</summary>
 		private int decimalPlaces;
 
@@ -112,36 +106,6 @@ namespace LiLo.Lite.Models.Markets
 			Turnover = "0";
 			LastTickDirection = string.Empty;
 			IsVisible = true;
-		}
-
-		/// <summary>Gets or sets the currency.</summary>
-		public CurrencyEnum Currency
-		{
-			get => currency;
-			set
-			{
-				if (Currency != value)
-				{
-					currency = value;
-					NotifyPropertyChanged(() => Currency);
-				}
-			}
-		}
-
-		/// <summary>Gets or sets the currency.</summary>
-		[DataMember(Name = "currency")]
-		public string CurrencyString
-		{
-			get => currencyString;
-			set
-			{
-				if (currencyString != value)
-				{
-					currencyString = value;
-					Currency = (CurrencyEnum)Enum.Parse(typeof(CurrencyEnum), value);
-					NotifyPropertyChanged(() => CurrencyString);
-				}
-			}
 		}
 
 		/// <summary>Gets or sets the number of decimal places to show for the currency.</summary>

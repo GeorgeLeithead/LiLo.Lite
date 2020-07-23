@@ -11,7 +11,7 @@
 // </summary>
 //-----------------------------------------------------------------------
 
-namespace LiLo.Lite.Services.Bybit
+namespace LiLo.Lite.Services.Markets
 {
 	using System.Collections.ObjectModel;
 	using System.ComponentModel;

@@ -15,7 +15,7 @@ namespace LiLo.Lite.ViewModels.Base
 {
 	using System.Runtime.Serialization;
 	using System.Threading.Tasks;
-	using LiLo.Lite.Services.Bybit;
+	using LiLo.Lite.Services.Markets;
 	using LiLo.Lite.Services.Navigation;
 	using LiLo.Lite.Services.Settings;
 	using LiLo.Lite.Services.Sockets;

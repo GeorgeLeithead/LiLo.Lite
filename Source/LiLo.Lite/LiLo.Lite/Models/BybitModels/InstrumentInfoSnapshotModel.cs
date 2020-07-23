@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="InstrumentInfoDeltaModel.cs" company="InternetWideWorld.com">
+// <copyright file="InstrumentInfoSnapshotModel.cs" company="InternetWideWorld.com">
 // Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
 //   THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
 //   OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
@@ -7,24 +7,24 @@
 //   FITNESS FOR A PARTICULAR PURPOSE.
 // </copyright>
 // <summary>
-//   ByBit instrument information delta model.
+//   ByBit Instrument information snapshot model.
 // </summary>
 //-----------------------------------------------------------------------
 
-namespace LiLo.Lite.Models.InstrumentInfo
+namespace LiLo.Lite.Models.BybitModels
 {
 	using System.Text.Json.Serialization;
 
-	/// <summary>ByBit instrument information delta model.</summary>
-	public class InstrumentInfoDeltaModel
+	/// <summary>ByBit Instrument information snapshot model.</summary>
+	public class InstrumentInfoSnapshotModel
 	{
-		/// <summary>Gets or sets Cross Sequence</summary>
+		/// <summary>Gets or sets Cross sequence</summary>
 		[JsonPropertyName("cross_seq")]
 		public int CrossSequence { get; set; }
 
-		/// <summary>Gets or sets Instrument Information Delta Data</summary>
+		/// <summary>Gets or sets Instrument information data</summary>
 		[JsonPropertyName("data")]
-		public InstrumentInfoDeltaDataModel Data { get; set; }
+		public InstrumentInfoDataModel Data { get; set; }
 
 		/// <summary>Gets or sets timestamp (E6 format)</summary>
 		[JsonPropertyName("timestamp_e6")]

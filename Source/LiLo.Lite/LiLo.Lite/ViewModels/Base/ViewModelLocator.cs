@@ -16,7 +16,6 @@ namespace LiLo.Lite.ViewModels.Base
 	using System;
 	using System.Globalization;
 	using System.Reflection;
-	using LiLo.Lite.Services.Bybit;
 	using LiLo.Lite.Services.Dependency;
 	using LiLo.Lite.Services.Markets;
 	using LiLo.Lite.Services.Navigation;
@@ -49,7 +48,6 @@ namespace LiLo.Lite.ViewModels.Base
 			IocContainer.Register<IMarketsService, MarketsService>();
 			IocContainer.Register<ISettingsService, SettingsService>();
 			IocContainer.Register<ISocketsService, SocketsService>();
-			IocContainer.Register<IBybitAuthenticationService, BybitAuthenticationService>();
 			IocContainer.Register<IMarketsHelperService, MarketsHelperService>();
 		}
 

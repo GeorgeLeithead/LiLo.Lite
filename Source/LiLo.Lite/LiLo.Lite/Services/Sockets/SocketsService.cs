@@ -18,16 +18,13 @@ namespace LiLo.Lite.Services.Sockets
 	using System.Threading.Tasks;
 	using Lilo.Lite;
 	using Lilo.Lite.Services;
-	using LiLo.Lite.Services.Bybit;
+	using LiLo.Lite.Services.Markets;
 	using WebSocketSharp;
 	using Xamarin.Forms;
 
 	/// <summary>Web Sockets Service interface.</summary>
 	public class SocketsService : NotifyPropertyChangedBase, ISocketsService
 	{
-		/// <summary>ByBit authentication interface.</summary>
-		private readonly IBybitAuthenticationService bybitAuthenticationService;
-
 		/// <summary>Markets helper interface.</summary>
 		private readonly IMarketsHelperService marketsHelper;
 
@@ -38,12 +35,10 @@ namespace LiLo.Lite.Services.Sockets
 		private WebSocket webSocket;
 
 		/// <summary>Initialises a new instance of the <see cref="SocketsService"/> class.</summary>
-		/// <param name="bybitAuthenticationServiceConstructor">ByBit authentication service constructor.</param>
 		/// <param name="marketsHelperServiceConstructor">Markets helper service constructor.</param>
-		public SocketsService(IBybitAuthenticationService bybitAuthenticationServiceConstructor, IMarketsHelperService marketsHelperServiceConstructor)
+		public SocketsService(IMarketsHelperService marketsHelperServiceConstructor)
 		{
 			marketsHelper = marketsHelperServiceConstructor;
-			bybitAuthenticationService = bybitAuthenticationServiceConstructor;
 		}
 
 		/// <summary>Raised when a public property of this object is set.</summary>
@@ -60,7 +55,7 @@ namespace LiLo.Lite.Services.Sockets
 		/// <returns>Task results of initialisation.</returns>
 		public Task InitAsync()
 		{
-			Uri bybitWssUrl = bybitAuthenticationService.WssEndPoint();
+			Uri bybitWssUrl = WssEndPoint();
 			webSocket = new WebSocket(bybitWssUrl.AbsoluteUri)
 			{
 				EmitOnPing = true
@@ -148,6 +143,14 @@ namespace LiLo.Lite.Services.Sockets
 			}
 
 			await Task.FromResult(true);
+		}
+
+		/// <summary>Generate the ByBit WSS endpoint.</summary>
+		/// <returns>WSS End Point</returns>
+		public Uri WssEndPoint()
+		{
+			Uri baseUri = GlobalSettings.MainNetWss;
+			return baseUri;
 		}
 
 		/// <summary>Handle when the sockets connection closes.</summary>

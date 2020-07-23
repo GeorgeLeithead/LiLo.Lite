@@ -89,7 +89,7 @@ namespace LiLo.Lite.ViewModels
 		{
 			// new market selected, so reset everything on the orders view.
 			MarketsModel selectedmarket = e.Item as MarketsModel;
-			SettingsService.Symbol = selectedmarket.CurrencyString;
+			SettingsService.SymbolString = selectedmarket.SymbolString;
 			await NavigationService.NavigateToAsync<ChartViewModel>();
 		}
 	}

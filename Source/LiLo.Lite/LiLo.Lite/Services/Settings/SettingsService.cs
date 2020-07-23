@@ -22,17 +22,8 @@ namespace LiLo.Lite.Services.Settings
 	/// <summary>Application settings service.</summary>
 	public class SettingsService : NotifyPropertyChangedBase, ISettingsService
 	{
-		/// <summary>Default network</summary>
-		private readonly bool defaultNetwork = true;
-
 		/// <summary>Default symbol.</summary>
-		private readonly string defaultSymbol = Enum.GetNames(typeof(CurrencyEnum))[0];
-
-		/// <summary>Sets the users last selected currency.</summary>
-		public CurrencyEnum Currency
-		{
-			set => Preferences.Set(nameof(Symbol), value.ToString());
-		}
+		private readonly string defaultSymbol = Enum.GetNames(typeof(SymbolEnum))[0];
 
 		/// <summary>Gets a value indicating whether the device has a default theme option for the appropriate device and version.</summary>
 		public bool HasDefaultThemeOption
@@ -53,51 +44,11 @@ namespace LiLo.Lite.Services.Settings
 			}
 		}
 
-		/// <summary>Gets a value indicating whether the user is network Authenticate-able.</summary>
-		public bool IsAuthenticatable => TestNet
-					? !string.IsNullOrEmpty(TestNetApi) && !string.IsNullOrEmpty(TestNetPrivate)
-					: !string.IsNullOrEmpty(MainNetApi) && !string.IsNullOrEmpty(MainNetPrivate);
-
-		/// <summary>Gets or sets the users MainNet API key.</summary>
-		public string MainNetApi
-		{
-			get => Preferences.Get(nameof(MainNetApi), string.Empty);
-			set => Preferences.Set(nameof(MainNetApi), value);
-		}
-
-		/// <summary>Gets or sets the users MainNet Private key.</summary>
-		public string MainNetPrivate
-		{
-			get => Preferences.Get(nameof(MainNetPrivate), string.Empty);
-			set => Preferences.Set(nameof(MainNetPrivate), value);
-		}
-
 		/// <summary>Gets or sets the users selected currency symbol.</summary>
-		public string Symbol
+		public string SymbolString
 		{
-			get => Preferences.Get(nameof(Symbol), defaultSymbol);
-			set => Preferences.Set(nameof(Symbol), value);
-		}
-
-		/// <summary>Gets or sets a value indicating whether the network is TestNet.</summary>
-		public bool TestNet
-		{
-			get => Preferences.Get("TestNet", defaultNetwork);
-			set => Preferences.Set(nameof(TestNet), value);
-		}
-
-		/// <summary>Gets or sets the users TestNet API key.</summary>
-		public string TestNetApi
-		{
-			get => Preferences.Get(nameof(TestNetApi), string.Empty);
-			set => Preferences.Set(nameof(TestNetApi), value);
-		}
-
-		/// <summary>Gets or sets the users TestNet private key.</summary>
-		public string TestNetPrivate
-		{
-			get => Preferences.Get(nameof(TestNetPrivate), string.Empty);
-			set => Preferences.Set(nameof(TestNetPrivate), value);
+			get => Preferences.Get(nameof(SymbolString), defaultSymbol);
+			set => Preferences.Set(nameof(SymbolString), value);
 		}
 
 		/// <summary>Gets or sets the users selected theme.</summary>

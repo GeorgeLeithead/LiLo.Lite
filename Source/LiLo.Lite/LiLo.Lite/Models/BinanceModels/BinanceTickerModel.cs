@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="IBybitAuthenticationService.cs" company="InternetWideWorld.com">
+// <copyright file="Ticker.cs" company="InternetWideWorld.com">
 // Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
 //   THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
 //   OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
@@ -7,19 +7,21 @@
 //   FITNESS FOR A PARTICULAR PURPOSE.
 // </copyright>
 // <summary>
-//   Trigger by price enumeration.
+//   Binance ticker symbol stream.
 // </summary>
 //-----------------------------------------------------------------------
 
-namespace LiLo.Lite.Services.Bybit
+namespace LiLo.Lite.Models.BinanceModels
 {
-	using System;
+	using System.Text.Json.Serialization;
 
-	/// <summary>ByBit authentication interface.</summary>
-	public interface IBybitAuthenticationService
+	/// <summary>Binance ticker symbol stream.</summary>
+	public class BinanceTickerModel
 	{
-		/// <summary>Secure WebSockets end point Uri</summary>
-		/// <returns>Uri address.</returns>
-		Uri WssEndPoint();
+		[JsonPropertyName("stream")]
+		public string Stream { get; set; }
+
+		[JsonPropertyName("data")]
+		public BinanceTickerDataModel Data { get; set; }
 	}
 }

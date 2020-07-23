@@ -11,17 +11,16 @@
 // </summary>
 //-----------------------------------------------------------------------
 
-namespace LiLo.Lite.Services.Bybit
+namespace LiLo.Lite.Services.Markets
 {
 	using System.Collections.ObjectModel;
 	using System.ComponentModel;
-	using System.Linq;
 	using System.Text.Json;
 	using System.Threading.Tasks;
 	using Lilo.Lite.Services;
-	using LiLo.Lite.Models.InstrumentInfo;
+	using LiLo.Lite.Models.BinanceModels;
+	using LiLo.Lite.Models.BybitModels;
 	using LiLo.Lite.Models.Markets;
-	using LiLo.Lite.Services.Markets;
 	using WebSocketSharp;
 
 	/// <summary>Markets helper service.</summary>
@@ -95,69 +94,20 @@ namespace LiLo.Lite.Services.Bybit
 					InstrumentInfoDeltaModel delta = JsonSerializer.Deserialize<InstrumentInfoDeltaModel>(message);
 					foreach (InstrumentInfoDataModel updateItem in delta.Data.Update)
 					{
-						await UpdateMarketList(updateItem);
+						await InstrumentInfoDataModel.UpdateMarketList(updateItem, MarketsList);
 					}
 				}
 
 				if (message.Contains("\"type\":\"snapshot\""))
 				{
 					InstrumentInfoSnapshotModel snapshot = JsonSerializer.Deserialize<InstrumentInfoSnapshotModel>(message);
-					await UpdateMarketList(snapshot.Data);
+					await InstrumentInfoDataModel.UpdateMarketList(snapshot.Data, MarketsList);
 				}
 			}
-
-			await Task.FromResult(true);
-		}
-
-		/// <summary>Update markets list.</summary>
-		/// <param name="instrumentData">Sockets message</param>
-		/// <returns>Task result</returns>
-		private async Task UpdateMarketList(InstrumentInfoDataModel instrumentData)
-		{
-			if (instrumentData is null)
+			if (message.Contains("\"stream\":"))
 			{
-				throw new System.ArgumentNullException(nameof(instrumentData));
-			}
-
-			MarketsModel clientItem = MarketsList.Single(nl => nl.SymbolString == instrumentData.SymbolString);
-			if (clientItem == null)
-			{
-				await Task.FromResult(true);
-			}
-
-			if (instrumentData.LastPrice != 0)
-			{
-				clientItem.LastPrice = instrumentData.LastPrice;
-			}
-
-			if (!string.IsNullOrEmpty(instrumentData.LastTickDirection))
-			{
-				clientItem.LastTickDirection = instrumentData.LastTickDirection;
-			}
-
-			if (instrumentData.Price24hPercent != 0)
-			{
-				clientItem.Price24hPercent = instrumentData.Price24hPercent;
-			}
-
-			if (instrumentData.LowPrice24h != 0)
-			{
-				clientItem.LowPrice24h = instrumentData.LowPrice24h;
-			}
-
-			if (instrumentData.HighPrice24h != 0)
-			{
-				clientItem.HighPrice24h = instrumentData.HighPrice24h;
-			}
-
-			if (instrumentData.Turnover24h != 0)
-			{
-				clientItem.Turnover24h = instrumentData.Turnover24h;
-			}
-
-			if (instrumentData.Price1hPercent != 0)
-			{
-				clientItem.Price1hPercent = instrumentData.Price1hPercent;
+				BinanceTickerModel binanceStream = JsonSerializer.Deserialize<BinanceTickerModel>(message);
+				await BinanceTickerDataModel.UpdateMarketList(binanceStream.Data, MarketsList);
 			}
 
 			await Task.FromResult(true);

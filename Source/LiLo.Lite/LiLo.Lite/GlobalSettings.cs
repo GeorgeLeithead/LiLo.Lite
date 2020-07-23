@@ -29,10 +29,11 @@ namespace Lilo.Lite
 		public static readonly Uri GetApp = new Uri("https://georgeleithead.github.io/LiLo.Lite/");
 
 		/// <summary>ByBit subscription for anonymous users.</summary>
-		public static readonly string InstrumentInfoAnonSubscription = "{\"op\":\"subscribe\",\"args\": [\"instrument_info.100ms.BTCUSD|ETHUSD|EOSUSD|XRPUSD\"]}";
+		public static readonly string InstrumentInfoAnonSubscription = "{\"method\":\"SUBSCRIBE\",\"id\": 1,\"params\": [\"adausdt@ticker\",\"algousdt@ticker\",\"atomusdt@ticker\",\"batusdt@ticker\",\"bchusdt@ticker\",\"bnbusdt@ticker\",\"btcusdt@ticker\",\"compusdt@ticker\",\"dashusdt@ticker\",\"dogeusdt@ticker\",\"eosusdt@ticker\",\"etcusdt@ticker\",\"ethusdt@ticker\",\"iostusdt@ticker\",\"iotausdt@ticker\",\"kncusdt@ticker\",\"linkusdt@ticker\",\"ltcusdt@ticker\",\"neousdt@ticker\",\"omgusdt@ticker\",\"ontusdt@ticker\",\"qtumusdt@ticker\",\"sxpusdt@ticker\",\"thetausdt@ticker\",\"trxusdt@ticker\",\"vetusdt@ticker\",\"xlmusdt@ticker\",\"xmrusdt@ticker\",\"xrpusdt@ticker\",\"xtzusdt@ticker\",\"zecusdt@ticker\",\"zilusdt@ticker\",\"zrxusdt@ticker\"]}";
 
 		/// <summary>ByBit WSS for MainNet Real-Time.</summary>
-		public static readonly Uri MainNetWss = new Uri("wss://stream.bybit.com/realtime");
+		//public static readonly Uri MainNetWss = new Uri("wss://stream.binance.com:9443");
+		public static readonly Uri MainNetWss = new Uri("wss://stream.binance.com:9443/stream?streams=adausdt@ticker/algousdt@ticker/atomusdt@ticker/batusdt@ticker/bchusdt@ticker/bnbusdt@ticker/btcusdt@ticker/compusdt@ticker/dashusdt@ticker/dogeusdt@ticker/eosusdt@ticker/etcusdt@ticker/ethusdt@ticker/iostusdt@ticker/iotausdt@ticker/kncusdt@ticker/linkusdt@ticker/ltcusdt@ticker/neousdt@ticker/omgusdt@ticker/ontusdt@ticker/qtumusdt@ticker/sxpusdt@ticker/thetausdt@ticker/trxusdt@ticker/vetusdt@ticker/xlmusdt@ticker/xmrusdt@ticker/xrpusdt@ticker/xtzusdt@ticker/zecusdt@ticker/zilusdt@ticker/zrxusdt@ticker");
 
 		/// <summary>Web view source.</summary>
 		public static readonly HtmlWebViewSource TradingViewWebViewSource = new HtmlWebViewSource() { Html = TradingViewString };
@@ -73,7 +74,7 @@ iframe.body {
 			new TradingView.widget(
 			{
 				autosize: true,
-				symbol: ""BYBIT:XX0XXUSD"",
+				symbol: ""BINANCE:XX0XX"",
 				interval: ""15"",
 				timezone: ""XX1XX"",
 				theme: ""XX2XX"",

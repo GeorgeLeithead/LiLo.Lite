@@ -13,6 +13,7 @@
 
 namespace LiLo.Lite.Services.Sockets
 {
+	using System;
 	using System.ComponentModel;
 	using System.Threading.Tasks;
 
@@ -44,5 +45,9 @@ namespace LiLo.Lite.Services.Sockets
 		/// <summary>Handle when the application goes into sleep.</summary>
 		/// <returns>Successful task</returns>
 		Task WebSocket_OnSleep();
+
+		/// <summary>Secure WebSockets end point Uri</summary>
+		/// <returns>Uri address.</returns>
+		Uri WssEndPoint();
 	}
 }

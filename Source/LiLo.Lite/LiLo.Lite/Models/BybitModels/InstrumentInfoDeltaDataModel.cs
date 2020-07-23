@@ -11,7 +11,7 @@
 // </summary>
 //-----------------------------------------------------------------------
 
-namespace LiLo.Lite.Models.InstrumentInfo
+namespace LiLo.Lite.Models.BybitModels
 {
 	using System.Text.Json.Serialization;
 

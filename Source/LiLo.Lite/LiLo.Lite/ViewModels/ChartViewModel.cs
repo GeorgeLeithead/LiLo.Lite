@@ -59,7 +59,7 @@ namespace LiLo.Lite.ViewModels
 		{
 			get
 			{
-				string htmlSource = GlobalSettings.TradingViewWebViewSource.Html.Replace("XX0XX", SettingsService.Symbol).Replace("XX1XX", TimeZoneInfo.Local.ToString()).Replace("XX2XX", SettingsService.ThemeOption.ToString().ToLowerInvariant()).Replace("XX3XX", CultureInfo.CurrentCulture.IetfLanguageTag.Substring(0, 2));
+				string htmlSource = GlobalSettings.TradingViewWebViewSource.Html.Replace("XX0XX", SettingsService.SymbolString).Replace("XX1XX", TimeZoneInfo.Local.ToString()).Replace("XX2XX", SettingsService.ThemeOption.ToString().ToLowerInvariant()).Replace("XX3XX", CultureInfo.CurrentCulture.IetfLanguageTag.Substring(0, 2));
 				var htmlViewSource = new HtmlWebViewSource() { Html = htmlSource };
 				return htmlViewSource;
 			}
@@ -88,7 +88,7 @@ namespace LiLo.Lite.ViewModels
 			var data = new ObservableCollection<MarketsModel>(MarketsHelperService.MarketsList);
 			foreach (MarketsModel item in data)
 			{
-				item.IsVisible = item.CurrencyString == SettingsService.Symbol;
+				item.IsVisible = item.SymbolString == SettingsService.SymbolString;
 			}
 
 			MarketsList = data;
@@ -102,7 +102,7 @@ namespace LiLo.Lite.ViewModels
 		{
 			// new market selected, so reset everything on the orders view.
 			MarketsModel selectedmarket = e.Item as MarketsModel;
-			SettingsService.Symbol = selectedmarket.CurrencyString;
+			SettingsService.SymbolString = selectedmarket.SymbolString;
 			await NavigationService.NavigateToAsync<HomeViewModel>();
 		}
 	}

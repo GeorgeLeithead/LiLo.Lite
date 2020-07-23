@@ -11,10 +11,14 @@
 // </summary>
 //-----------------------------------------------------------------------
 
-namespace LiLo.Lite.Models.InstrumentInfo
+namespace LiLo.Lite.Models.BybitModels
 {
 	using System;
+	using System.Collections.ObjectModel;
+	using System.Linq;
 	using System.Text.Json.Serialization;
+	using System.Threading.Tasks;
+	using LiLo.Lite.Models.Markets;
 
 	/// <summary>ByBit instrument information data model.</summary>
 	public class InstrumentInfoDataModel
@@ -160,5 +164,59 @@ namespace LiLo.Lite.Models.InstrumentInfo
 		/// <summary>Gets or sets 24HR volume</summary>
 		[JsonPropertyName("volume_24h")]
 		public double Volume24h { get; set; }
+
+		/// <summary>Update markets list.</summary>
+		/// <param name="instrumentData">Sockets message</param>
+		/// <returns>Task result</returns>
+		public static async Task UpdateMarketList(InstrumentInfoDataModel instrumentData, ObservableCollection<MarketsModel> marketsList)
+		{
+			if (instrumentData is null)
+			{
+				throw new ArgumentNullException(nameof(instrumentData));
+			}
+
+			MarketsModel clientItem = marketsList.Single(nl => nl.SymbolString == instrumentData.SymbolString);
+			if (clientItem == null)
+			{
+				await Task.FromResult(true);
+			}
+
+			if (instrumentData.LastPrice != 0)
+			{
+				clientItem.LastPrice = instrumentData.LastPrice;
+			}
+
+			if (!string.IsNullOrEmpty(instrumentData.LastTickDirection))
+			{
+				clientItem.LastTickDirection = instrumentData.LastTickDirection;
+			}
+
+			if (instrumentData.Price24hPercent != 0)
+			{
+				clientItem.Price24hPercent = instrumentData.Price24hPercent;
+			}
+
+			if (instrumentData.LowPrice24h != 0)
+			{
+				clientItem.LowPrice24h = instrumentData.LowPrice24h;
+			}
+
+			if (instrumentData.HighPrice24h != 0)
+			{
+				clientItem.HighPrice24h = instrumentData.HighPrice24h;
+			}
+
+			if (instrumentData.Turnover24h != 0)
+			{
+				clientItem.Turnover24h = instrumentData.Turnover24h;
+			}
+
+			if (instrumentData.Price1hPercent != 0)
+			{
+				clientItem.Price1hPercent = instrumentData.Price1hPercent;
+			}
+
+			await Task.FromResult(true);
+		}
 	}
 }

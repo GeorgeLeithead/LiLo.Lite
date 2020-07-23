@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Grid x:Class="LiLo.Lite.Views.Templates.MarketsListTemplate" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:LiLo.Lite.Controls">
-	<controls:CustomShadowFrame AutomationId="{Binding CurrencyString}" HasShadow="True" IsVisible="{Binding IsVisible}" Style="{DynamicResource CustomShadowFrameStyle}">
+	<controls:CustomShadowFrame AutomationId="{Binding SymbolString}" HasShadow="True" IsVisible="{Binding IsVisible}" Style="{DynamicResource CustomShadowFrameStyle}">
 		<Grid ColumnSpacing="0" RowSpacing="0">
 			<Grid.RowDefinitions>
 				<RowDefinition Height="*" />
