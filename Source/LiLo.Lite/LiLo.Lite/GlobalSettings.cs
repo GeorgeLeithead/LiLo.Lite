@@ -71,10 +71,11 @@ iframe.body {
   <script type=""text/javascript"" src=""https://s3.tradingview.com/tv.js""></script>
 </div>
 <script type=""text/javascript"">
+	function CreateChart(displaySymbol) {
 			new TradingView.widget(
 			{
 				autosize: true,
-				symbol: ""BINANCE:XX0XX"",
+				symbol: displaySymbol,
 				interval: ""15"",
 				timezone: ""XX1XX"",
 				theme: ""XX2XX"",
@@ -90,6 +91,8 @@ iframe.body {
 				],
 				container_id: ""tradingview_lilo""
 			});
+	}
+	CreateChart(""BINANCE:XX0XX"");
 </script>
 <!-- TradingView Widget END -->
 </body>

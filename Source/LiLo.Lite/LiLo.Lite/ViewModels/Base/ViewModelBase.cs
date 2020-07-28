@@ -15,6 +15,7 @@ namespace LiLo.Lite.ViewModels.Base
 {
 	using System.Runtime.Serialization;
 	using System.Threading.Tasks;
+	using LiLo.Lite.Services.Dialog;
 	using LiLo.Lite.Services.Markets;
 	using LiLo.Lite.Services.Navigation;
 	using LiLo.Lite.Services.Settings;
@@ -26,6 +27,9 @@ namespace LiLo.Lite.ViewModels.Base
 	[DataContract]
 	public abstract class ViewModelBase : ExtendedBindableObject
 	{
+		/// <summary>Dialog service.</summary>
+		protected readonly IDialogService DialogService;
+
 		/// <summary>Markets service.</summary>
 		protected readonly IMarketsHelperService MarketsHelperService;
 
@@ -48,6 +52,7 @@ namespace LiLo.Lite.ViewModels.Base
 			SocketsService = ViewModelLocator.Resolve<ISocketsService>();
 			MarketsHelperService = ViewModelLocator.Resolve<IMarketsHelperService>();
 			SettingsService = ViewModelLocator.Resolve<ISettingsService>();
+			DialogService = ViewModelLocator.Resolve<IDialogService>();
 		}
 
 		/// <summary>Gets or sets a value indicating whether the view is busy.</summary>
@@ -63,7 +68,7 @@ namespace LiLo.Lite.ViewModels.Base
 
 		/// <summary>Initialises the view model.</summary>
 		/// <returns>Task result</returns>
-		public virtual Task InitializeAsync()
+		public virtual Task InitializeAsync(object parameter)
 		{
 			return Task.FromResult(false);
 		}

@@ -13,6 +13,7 @@
 
 namespace LiLo.Lite.Services.Markets
 {
+	using System;
 	using System.Collections.ObjectModel;
 	using System.ComponentModel;
 	using System.Text.Json;
@@ -21,19 +22,25 @@ namespace LiLo.Lite.Services.Markets
 	using LiLo.Lite.Models.BinanceModels;
 	using LiLo.Lite.Models.BybitModels;
 	using LiLo.Lite.Models.Markets;
+	using LiLo.Lite.Services.Dialog;
 	using WebSocketSharp;
 
 	/// <summary>Markets helper service.</summary>
 	public class MarketsHelperService : NotifyPropertyChangedBase, IMarketsHelperService
 	{
+		/// <summary>Dialog service</summary>
+		private readonly IDialogService dialogService;
+
 		/// <summary>Markets service</summary>
 		private readonly IMarketsService marketService;
 
 		/// <summary>Initialises a new instance of the <see cref="MarketsHelperService" /> class.</summary>
 		/// <param name="marketServiceConstructor">Markets service constructor via dependency injection.</param>
-		public MarketsHelperService(IMarketsService marketServiceConstructor)
+		/// <param name="dialogueServiceConstructor">Dialog service constructor via dependency injection.</param>
+		public MarketsHelperService(IMarketsService marketServiceConstructor, IDialogService dialogueServiceConstructor)
 		{
 			marketService = marketServiceConstructor;
+			dialogService = dialogueServiceConstructor;
 			Task.Factory.StartNew(async () =>
 			{
 				MarketsList = await marketService.GetMarketsAsync().ConfigureAwait(true);
@@ -57,12 +64,12 @@ namespace LiLo.Lite.Services.Markets
 		{
 			if (sender is null)
 			{
-				throw new System.ArgumentNullException(nameof(sender));
+				throw new ArgumentNullException(nameof(sender));
 			}
 
 			if (e is null)
 			{
-				throw new System.ArgumentNullException(nameof(e));
+				throw new ArgumentNullException(nameof(e));
 			}
 
 			if (e.IsPing)
@@ -73,7 +80,14 @@ namespace LiLo.Lite.Services.Markets
 
 			if (e.IsText)
 			{
-				await GetMessageType(e.Data);
+				try
+				{
+					await GetMessageType(e.Data);
+				}
+				catch (Exception ex)
+				{
+					await dialogService.ShowToastAsync(ex.Message);
+				}
 			}
 		}
 
@@ -84,7 +98,7 @@ namespace LiLo.Lite.Services.Markets
 		{
 			if (string.IsNullOrEmpty(message))
 			{
-				throw new System.ArgumentException("message", nameof(message));
+				throw new ArgumentException("message", nameof(message));
 			}
 
 			if (message.Contains("\"topic\":\"instrument_info"))

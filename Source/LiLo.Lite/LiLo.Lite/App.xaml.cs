@@ -15,33 +15,35 @@ namespace LiLo.Lite
 {
 	using System.Threading.Tasks;
 	using LiLo.Lite.Services.Navigation;
-	using LiLo.Lite.Services.Settings;
 	using LiLo.Lite.Services.Sockets;
-	using LiLo.Lite.Themes;
 	using LiLo.Lite.ViewModels.Base;
+	using Microsoft.AppCenter;
+	using Microsoft.AppCenter.Analytics;
+	using Microsoft.AppCenter.Crashes;
+	using Microsoft.AppCenter.Distribute;
 	using Xamarin.Forms;
 
 	/// <summary>LiLo application class.</summary>
 	public partial class App : Application
 	{
-		/// <summary>Settings Service.</summary>
-		private ISettingsService settingsService;
-
 		/// <summary>Sockets Service.</summary>
 		private ISocketsService socketsService;
 
 		/// <summary>Initialises a new instance of the <see cref="App" /> class.</summary>summary>
 		public App()
 		{
+			Xamarin.Forms.Device.SetFlags(new string[] { "AppTheme_Experimental" });
 			InitializeComponent();
+			Current.RequestedThemeChanged += (s, a) =>
+			{
+				Current.UserAppTheme = Current.RequestedTheme;
+			};
 		}
 
 		/// <summary>Perform actions when the application resumes from a sleeping state.</summary>
 		protected override void OnResume()
 		{
 			base.OnResume();
-			ThemeHelper.Init(settingsService);
-			ThemeHelper.ChangeTheme(settingsService.ThemeOption, true);
 			if (!DesignMode.IsDesignModeEnabled)
 			{
 				socketsService.WebSocket_OnResume();
@@ -61,11 +63,16 @@ namespace LiLo.Lite
 		/// <summary>Perform actions when the application starts.</summary>
 		protected override async void OnStart()
 		{
-			await InitSettings();
-			await InitNavigation();
+			base.OnStart();
+			AppCenter.Start("android=4d413467-bf37-45b0-bf18-b8d15d98a182;", typeof(Analytics), typeof(Crashes), typeof(Distribute));
+			if (!DesignMode.IsDesignModeEnabled)
+			{
+				socketsService = ViewModelLocator.Resolve<ISocketsService>();
+				await socketsService.InitAsync();
+			}
 
-			ThemeHelper.Init(settingsService);
-			ThemeHelper.ChangeTheme(settingsService.ThemeOption, true);
+			Current.UserAppTheme = Current.RequestedTheme;
+			await InitNavigation();
 		}
 
 		/// <summary>Initialises the navigation service.</summary>
@@ -74,20 +81,6 @@ namespace LiLo.Lite
 		{
 			INavigationService navigationService = ViewModelLocator.Resolve<INavigationService>();
 			return navigationService.InitializeAsync();
-		}
-
-		/// <summary>Initialises the settings and sockets services.</summary>
-		/// <returns>Async Task result.</returns>
-		private Task InitSettings()
-		{
-			settingsService = ViewModelLocator.Resolve<ISettingsService>();
-			if (!DesignMode.IsDesignModeEnabled)
-			{
-				socketsService = ViewModelLocator.Resolve<ISocketsService>();
-				socketsService.InitAsync();
-			}
-
-			return Task.FromResult(true);
 		}
 	}
 }

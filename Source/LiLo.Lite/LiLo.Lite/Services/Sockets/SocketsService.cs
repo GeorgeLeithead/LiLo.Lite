@@ -18,6 +18,7 @@ namespace LiLo.Lite.Services.Sockets
 	using System.Threading.Tasks;
 	using Lilo.Lite;
 	using Lilo.Lite.Services;
+	using LiLo.Lite.Services.Dialog;
 	using LiLo.Lite.Services.Markets;
 	using WebSocketSharp;
 	using Xamarin.Forms;
@@ -28,6 +29,9 @@ namespace LiLo.Lite.Services.Sockets
 		/// <summary>Markets helper interface.</summary>
 		private readonly IMarketsHelperService marketsHelper;
 
+		/// <summary>Dialog service interface.</summary>
+		private readonly IDialogService dialogService;
+
 		/// <summary>Has the service been resumed.</summary>
 		private bool isResumed;
 
@@ -36,9 +40,10 @@ namespace LiLo.Lite.Services.Sockets
 
 		/// <summary>Initialises a new instance of the <see cref="SocketsService"/> class.</summary>
 		/// <param name="marketsHelperServiceConstructor">Markets helper service constructor.</param>
-		public SocketsService(IMarketsHelperService marketsHelperServiceConstructor)
+		public SocketsService(IMarketsHelperService marketsHelperServiceConstructor, IDialogService dialogServiceConstructor)
 		{
 			marketsHelper = marketsHelperServiceConstructor;
+			dialogService = dialogServiceConstructor;
 		}
 
 		/// <summary>Raised when a public property of this object is set.</summary>
@@ -173,7 +178,8 @@ namespace LiLo.Lite.Services.Sockets
 		/// <param name="e">Error event arguments</param>
 		private void WebSocket_OnError(object sender, ErrorEventArgs e)
 		{
-			throw new Exception(e.Message, e.Exception);
+			dialogService.ShowToastAsync(e.Message).ConfigureAwait(true);
+			//			throw new Exception(e.Message, e.Exception);
 		}
 
 		/// <summary>Handle when the sockets connection receives a message.</summary>

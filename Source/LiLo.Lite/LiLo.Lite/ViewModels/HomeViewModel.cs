@@ -34,9 +34,6 @@ namespace LiLo.Lite.ViewModels
 		{
 		}
 
-		/// <summary>Gets the command that will be executed when an item is selected.</summary>
-		public ICommand ListViewItemTappedCommand => new Command<ItemTappedEventArgs>(async (item) => await ListViewItemTappedCommandAsync(item));
-
 		/// <summary>Gets or sets a collection of values to be displayed in the markets view.</summary>
 		public ObservableCollection<MarketsModel> MarketsList
 		{
@@ -50,6 +47,9 @@ namespace LiLo.Lite.ViewModels
 				}
 			}
 		}
+
+		/// <summary>Gets the command that will be executed when an item is selected.</summary>
+		public ICommand TapGestureCommand => new Command<ItemTappedEventArgs>(async (item) => await TapGestureRecognizer_Tapped(item));
 
 		/// <summary>Gets or sets the page title.</summary>
 		public string Title
@@ -67,30 +67,23 @@ namespace LiLo.Lite.ViewModels
 
 		/// <summary>Initializes the view model.</summary>
 		/// <returns>Base results.</returns>
-		public override async Task InitializeAsync()
+		public override async Task InitializeAsync(object parameter)
 		{
 			IsBusy = true;
-			await base.InitializeAsync();
-			var data = new ObservableCollection<MarketsModel>(MarketsHelperService.MarketsList);
-			foreach (MarketsModel item in data)
-			{
-				item.IsVisible = true;
-			}
-
-			MarketsList = data;
+			await base.InitializeAsync(parameter);
+			MarketsList = new ObservableCollection<MarketsModel>(MarketsHelperService.MarketsList);
 			await SocketsService.WebSocket_OnResume();
 			IsBusy = false;
 		}
 
 		/// <summary>Changes the markets item selected and resets the order view if necessary.</summary>
-		/// <param name="e">List View item.</param>
+		/// <param name="e">Item tapped.</param>
 		/// <returns>Async task result.</returns>
-		private async Task ListViewItemTappedCommandAsync(ItemTappedEventArgs e)
+		private async Task TapGestureRecognizer_Tapped(ItemTappedEventArgs e)
 		{
 			// new market selected, so reset everything on the orders view.
 			MarketsModel selectedmarket = e.Item as MarketsModel;
-			SettingsService.SymbolString = selectedmarket.SymbolString;
-			await NavigationService.NavigateToAsync<ChartViewModel>();
+			await NavigationService.NavigateToAsync<ChartViewModel>(selectedmarket.SymbolString);
 		}
 	}
 }

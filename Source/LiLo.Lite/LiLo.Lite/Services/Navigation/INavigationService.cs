@@ -27,5 +27,11 @@ namespace LiLo.Lite.Services.Navigation
 		/// <typeparam name="TViewModel">View Model</typeparam>
 		/// <returns>Navigation task.</returns>
 		Task NavigateToAsync<TViewModel>() where TViewModel : ViewModelBase;
+
+		/// <summary>Navigate to a generic viewModel type.</summary>
+		/// <typeparam name="TViewModel">View Model</typeparam>
+		/// <param name="parameter">Optional navigation parameter.</param>
+		/// <returns>Navigation task.</returns>
+		Task NavigateToAsync<TViewModel>(object parameter) where TViewModel : ViewModelBase;
 	}
 }

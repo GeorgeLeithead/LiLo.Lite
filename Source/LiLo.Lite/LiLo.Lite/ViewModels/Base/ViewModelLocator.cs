@@ -17,6 +17,7 @@ namespace LiLo.Lite.ViewModels.Base
 	using System.Globalization;
 	using System.Reflection;
 	using LiLo.Lite.Services.Dependency;
+	using LiLo.Lite.Services.Dialog;
 	using LiLo.Lite.Services.Markets;
 	using LiLo.Lite.Services.Navigation;
 	using LiLo.Lite.Services.Settings;
@@ -49,6 +50,7 @@ namespace LiLo.Lite.ViewModels.Base
 			IocContainer.Register<ISettingsService, SettingsService>();
 			IocContainer.Register<ISocketsService, SocketsService>();
 			IocContainer.Register<IMarketsHelperService, MarketsHelperService>();
+			IocContainer.Register<IDialogService, DialogService>();
 		}
 
 		/// <summary>Gets or sets a value indicating whether to use the mock service.</summary>
