@@ -76,22 +76,26 @@ namespace LiLo.Lite.ViewModels
 		}
 
 		/// <summary>Initializes the view model.</summary>
+		/// <remarks>Re-orders the markets list, so that the swipe is in the correct order starting from the selected symbol!</remarks>
 		/// <returns>Base results.</returns>
 		public override async Task InitializeAsync(object parameter)
 		{
 			IsBusy = true;
-			string selectedMarket = parameter as string;
 			await base.InitializeAsync(parameter);
-			IEnumerable<MarketsModel> items = new ObservableCollection<MarketsModel>(MarketsHelperService.MarketsList).Where(m => m.SymbolString != selectedMarket);
+			List<MarketsModel> markets = new List<MarketsModel>();
+			string selectedMarket = parameter as string;
 			MarketsModel selectedItem = new ObservableCollection<MarketsModel>(MarketsHelperService.MarketsList).Where(m => m.SymbolString == selectedMarket).First();
 			selectedCurrency = selectedItem.SymbolString;
-			List<MarketsModel> markets = new List<MarketsModel>();
-			foreach (MarketsModel item in items)
+			int selectedMarketIndex = MarketsHelperService.MarketsList.IndexOf(selectedItem);
+			for(int mi = selectedMarketIndex; mi <= MarketsHelperService.MarketsList.Count-1; mi++)
 			{
-				markets.Add(item);
+				markets.Add(MarketsHelperService.MarketsList[mi]);
 			}
 
-			markets.Insert(0, selectedItem);
+			for (int mi = 0; mi < selectedMarketIndex; mi++)
+			{
+				markets.Add(MarketsHelperService.MarketsList[mi]);
+			}
 
 			MarketsList = new ObservableCollection<MarketsModel>(markets);
 			IsBusy = false;
