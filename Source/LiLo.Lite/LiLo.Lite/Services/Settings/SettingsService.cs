@@ -15,16 +15,12 @@ namespace LiLo.Lite.Services.Settings
 {
 	using System;
 	using Lilo.Lite.Services;
-	using LiLo.Lite.Definitions;
 	using LiLo.Lite.Models;
 	using Xamarin.Essentials;
 
 	/// <summary>Application settings service.</summary>
 	public class SettingsService : NotifyPropertyChangedBase, ISettingsService
 	{
-		/// <summary>Default symbol.</summary>
-		private readonly string defaultSymbol = Enum.GetNames(typeof(SymbolEnum))[0];
-
 		/// <summary>Gets a value indicating whether the device has a default theme option for the appropriate device and version.</summary>
 		public bool HasDefaultThemeOption
 		{
@@ -42,13 +38,6 @@ namespace LiLo.Lite.Services.Settings
 
 				return DeviceInfo.Version >= minDefaultVersion;
 			}
-		}
-
-		/// <summary>Gets or sets the users selected currency symbol.</summary>
-		public string SymbolString
-		{
-			get => Preferences.Get(nameof(SymbolString), defaultSymbol);
-			set => Preferences.Set(nameof(SymbolString), value);
 		}
 
 		/// <summary>Gets or sets the users selected theme.</summary>

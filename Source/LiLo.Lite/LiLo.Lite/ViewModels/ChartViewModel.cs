@@ -84,17 +84,18 @@ namespace LiLo.Lite.ViewModels
 			await base.InitializeAsync(parameter);
 			List<MarketsModel> markets = new List<MarketsModel>();
 			string selectedMarket = parameter as string;
-			MarketsModel selectedItem = new ObservableCollection<MarketsModel>(MarketsHelperService.MarketsList).Where(m => m.SymbolString == selectedMarket).First();
+			ObservableCollection<MarketsModel> ListOfMarkets = MarketsHelperService.MarketsList;
+			MarketsModel selectedItem = ListOfMarkets.Where(m => m.SymbolString == selectedMarket).First();
 			selectedCurrency = selectedItem.SymbolString;
-			int selectedMarketIndex = MarketsHelperService.MarketsList.IndexOf(selectedItem);
-			for(int mi = selectedMarketIndex; mi <= MarketsHelperService.MarketsList.Count-1; mi++)
+			int selectedMarketIndex = ListOfMarkets.IndexOf(selectedItem);
+			for(int mi = selectedMarketIndex; mi <= ListOfMarkets.Count-1; mi++)
 			{
-				markets.Add(MarketsHelperService.MarketsList[mi]);
+				markets.Add(ListOfMarkets[mi]);
 			}
 
 			for (int mi = 0; mi < selectedMarketIndex; mi++)
 			{
-				markets.Add(MarketsHelperService.MarketsList[mi]);
+				markets.Add(ListOfMarkets[mi]);
 			}
 
 			MarketsList = new ObservableCollection<MarketsModel>(markets);

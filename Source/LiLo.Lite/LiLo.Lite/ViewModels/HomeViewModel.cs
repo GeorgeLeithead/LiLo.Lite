@@ -14,9 +14,12 @@
 namespace LiLo.Lite.ViewModels
 {
 	using System.Collections.ObjectModel;
+	using System.Linq;
 	using System.Threading.Tasks;
 	using System.Windows.Input;
 	using LiLo.Lite.Models.Markets;
+	using LiLo.Lite.Models.Provider;
+	using LiLo.Lite.Services;
 	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.Forms;
 
@@ -26,8 +29,24 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Observable list of markets.</summary>
 		private ObservableCollection<MarketsModel> marketsList;
 
+		private ObservableCollection<ProvidersModel> providers;
+
+		public ObservableCollection<ProvidersModel> Providers {
+			get => providers;
+			set
+			{
+				if (providers != value)
+				{
+					providers = value;
+					NotifyPropertyChanged(() => Providers);
+				}
+			}
+		}
+
 		/// <summary>View title.</summary>
 		private string title = "Markets";
+
+		private string providerName = "";
 
 		/// <summary>Initializes a new instance of the <see cref="HomeViewModel"/> class.</summary>
 		public HomeViewModel()
@@ -65,14 +84,38 @@ namespace LiLo.Lite.ViewModels
 			}
 		}
 
+		public string ProviderName
+		{
+			get => providerName;
+			set
+			{
+				if (providerName != value && !string.IsNullOrEmpty(value))
+				{
+					providerName = value;
+					NotifyPropertyChanged(() => ProviderName);
+					Task.Factory.StartNew(async () =>
+					{
+						DataStore.SetFeed(value);
+						await MarketsHelperService.Init();
+						MarketsList = MarketsHelperService.MarketsList;
+						await SocketsService.WebSocket_OnSleep();
+						await SocketsService.Connect();
+						await SocketsService.WebSocket_OnResume();
+					});
+				}
+			}
+		}
+
 		/// <summary>Initializes the view model.</summary>
 		/// <returns>Base results.</returns>
 		public override async Task InitializeAsync(object parameter)
 		{
 			IsBusy = true;
 			await base.InitializeAsync(parameter);
-			MarketsList = new ObservableCollection<MarketsModel>(MarketsHelperService.MarketsList);
-			await SocketsService.WebSocket_OnResume();
+			MarketsList = MarketsHelperService.MarketsList;
+			Providers = new ObservableCollection<ProvidersModel>(DataStore.Providers);
+			ProviderName = (Providers.First(p => p.IsSelected)).Provider;
+			//await SocketsService.WebSocket_OnResume();
 			IsBusy = false;
 		}
 

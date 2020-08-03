@@ -18,11 +18,62 @@
 
 	<ContentPage.Content>
 		<ScrollView VerticalScrollBarVisibility="Never">
-			<Grid RowDefinitions="Auto,*">
+			<Grid RowDefinitions="Auto,Auto,*">
 				<!--  Title View  -->
 				<Label AutomationId="PageTitle" Style="{StaticResource TitleStyle}" Text="{Binding Title, Mode=OneWay}" />
+
+				<StackLayout Grid.Row="1">
+					<Label x:Name="ProviderName" IsVisible="False" Text="{Binding ProviderName, Mode=OneWayToSource}" />
+					<ScrollView HorizontalScrollBarVisibility="Never" Orientation="Horizontal">
+						<StackLayout x:Name="filterBox" Margin="15,0,0,0" BindableLayout.ItemsSource="{Binding Providers, Mode=TwoWay}" Orientation="Horizontal" Spacing="2">
+							<BindableLayout.ItemTemplate>
+								<DataTemplate>
+									<controls:CustomPancakeView
+										Margin="5,10,0,10"
+										AutomationId="{Binding Provider}"
+										BackgroundColor="{StaticResource Gray-700}"
+										BackgroundGradientEndPoint="1,1"
+										BackgroundGradientStartPoint="0,0"
+										CornerRadius="20"
+										IsSelected="{Binding IsSelected}">
+										<controls:CustomPancakeView.GestureRecognizers>
+											<TapGestureRecognizer Tapped="SelectProvider" />
+										</controls:CustomPancakeView.GestureRecognizers>
+										<controls:CustomPancakeView.BackgroundGradientStops>
+											<pancake:GradientStop Offset="0" Color="Green" />
+											<pancake:GradientStop Offset="0.5" Color="Green" />
+											<pancake:GradientStop Offset="1" Color="White" />
+										</controls:CustomPancakeView.BackgroundGradientStops>
+										<controls:CustomPancakeView.Triggers>
+											<Trigger TargetType="controls:CustomPancakeView" Property="IsSelected" Value="False">
+												<Setter Property="BackgroundGradientStops">
+													<Setter.Value>
+														<pancake:GradientStopCollection>
+															<pancake:GradientStop Offset="0" Color="Black" />
+															<pancake:GradientStop Offset="0.5" Color="Black" />
+															<pancake:GradientStop Offset="1" Color="#323144" />
+														</pancake:GradientStopCollection>
+													</Setter.Value>
+												</Setter>
+											</Trigger>
+										</controls:CustomPancakeView.Triggers>
+										<Label
+											x:Name="providerTitle"
+											Padding="20,10"
+											FontSize="16"
+											HorizontalOptions="Center"
+											Text="{Binding Title}"
+											TextColor="{AppThemeBinding Light={StaticResource Gray-White},
+											                            Dark={StaticResource Gray-Black}}" />
+									</controls:CustomPancakeView>
+								</DataTemplate>
+							</BindableLayout.ItemTemplate>
+						</StackLayout>
+					</ScrollView>
+				</StackLayout>
+
 				<!--  Markets List View  -->
-				<ListView Grid.Row="1" AutomationId="MarketsList" ItemsSource="{Binding MarketsList}" Style="{StaticResource MarketsListViewStyle}" VerticalOptions="FillAndExpand">
+				<ListView Grid.Row="2" AutomationId="MarketsList" ItemsSource="{Binding MarketsList}" Style="{StaticResource MarketsListViewStyle}" VerticalOptions="FillAndExpand">
 					<ListView.ItemTemplate>
 						<DataTemplate>
 							<ViewCell>
@@ -58,8 +109,15 @@
 											<StackLayout Grid.Row="1" Grid.Column="2" Style="{StaticResource MarketsColumnStyle}">
 												<StackLayout Style="{StaticResource StackLayoutStyle}">
 													<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource PercentIcon}" />
-													<controls:TickPriceView Price="{Binding Price1hPercent}" Style="{StaticResource CurrencyPriceStyle}" Text="{Binding Price1hPercentString}" Tick="" />
-													<Label Style="{StaticResource PriceLabelStyle}" Text="/" />
+													<controls:CustomStackLayout Orientation="Horizontal" Price1hrPercentSupported="{Binding Price1hPercent}">
+														<controls:TickPriceView Price="{Binding Price1hPercent}" Style="{StaticResource CurrencyPriceStyle}" Text="{Binding Price1hPercentString}" Tick="" />
+														<Label Style="{StaticResource PriceLabelStyle}" Text="/" />
+														<controls:CustomStackLayout.Triggers>
+															<Trigger TargetType="controls:CustomStackLayout" Property="Price1hrPercentSupported" Value="0.0">
+																<Setter Property="IsVisible" Value="False" />
+															</Trigger>
+														</controls:CustomStackLayout.Triggers>
+													</controls:CustomStackLayout>
 													<controls:TickPriceView Price="{Binding Price24hPercent}" Style="{StaticResource CurrencyPriceStyle}" Text="{Binding Price24hPercentString}" Tick="" />
 												</StackLayout>
 												<StackLayout Style="{StaticResource StackLayoutStyle}">

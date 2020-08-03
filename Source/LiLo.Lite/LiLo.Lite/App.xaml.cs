@@ -14,6 +14,7 @@
 namespace LiLo.Lite
 {
 	using System.Threading.Tasks;
+	using LiLo.Lite.Services.Markets;
 	using LiLo.Lite.Services.Navigation;
 	using LiLo.Lite.Services.Sockets;
 	using LiLo.Lite.ViewModels.Base;

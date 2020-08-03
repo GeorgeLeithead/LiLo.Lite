@@ -46,7 +46,6 @@ namespace LiLo.Lite.ViewModels.Base
 			// Services - by default, TinyIoC will register interface registrations as singletons.
 			IocContainer.Register<INavigationService, NavigationService>();
 			IocContainer.Register<IDependencyService, Services.Dependency.DependencyService>();
-			IocContainer.Register<IMarketsService, MarketsService>();
 			IocContainer.Register<ISettingsService, SettingsService>();
 			IocContainer.Register<ISocketsService, SocketsService>();
 			IocContainer.Register<IMarketsHelperService, MarketsHelperService>();
@@ -96,12 +95,10 @@ namespace LiLo.Lite.ViewModels.Base
 			if (useMockServices)
 			{
 				UseMockService = true;
-				IocContainer.Register<IMarketsService, MarketsService>();
 				IocContainer.Register<ISettingsService, SettingsService>();
 			}
 			else
 			{
-				IocContainer.Register<IMarketsService, MarketsService>();
 				IocContainer.Register<ISettingsService, SettingsService>();
 				UseMockService = false;
 			}

@@ -44,7 +44,7 @@ namespace Lilo.Lite
 		/// <summary>Trading View public Widget HTML string.</summary>
 		private const string TradingViewString = @"
 <html>
-<body class=""XX2XX"">
+<body class=""XX1XX"">
 <style type=""text/css"">
 body { margin: 0; }
 .dark {
@@ -77,9 +77,9 @@ iframe.body {
 				autosize: true,
 				symbol: displaySymbol,
 				interval: ""15"",
-				timezone: ""XX1XX"",
-				theme: ""XX2XX"",
-				locale: ""XX3XX"",
+				timezone: ""XX0XX"",
+				theme: ""XX1XX"",
+				locale: ""XX2XX"",
 				enable_publishing: false,
 				hide_legend: false,
 				save_image: false,
@@ -92,7 +92,8 @@ iframe.body {
 				container_id: ""tradingview_lilo""
 			});
 	}
-	CreateChart(""BINANCE:XX0XX"");
+
+	CreateChart('XX3XX');
 </script>
 <!-- TradingView Widget END -->
 </body>

@@ -13,7 +13,6 @@
 
 namespace LiLo.Lite.Services.Sockets
 {
-	using System;
 	using System.ComponentModel;
 	using System.Threading.Tasks;
 
@@ -46,8 +45,6 @@ namespace LiLo.Lite.Services.Sockets
 		/// <returns>Successful task</returns>
 		Task WebSocket_OnSleep();
 
-		/// <summary>Secure WebSockets end point Uri</summary>
-		/// <returns>Uri address.</returns>
-		Uri WssEndPoint();
+		Task Connect(bool isInit = false);
 	}
 }

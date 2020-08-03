@@ -13,7 +13,6 @@
 
 namespace LiLo.Lite.Services.Settings
 {
-	using LiLo.Lite.Definitions;
 	using LiLo.Lite.Models;
 
 	/// <summary>Application settings service interface.</summary>
@@ -21,9 +20,6 @@ namespace LiLo.Lite.Services.Settings
 	{
 		/// <summary>Gets a value indicating whether the device has a default theme option for the appropriate device and version.</summary>
 		bool HasDefaultThemeOption { get; }
-
-		/// <summary>Gets or sets the users selected currency symbol.</summary>
-		string SymbolString { get; set; }
 
 		/// <summary>Gets or sets the users selected theme.</summary>
 		ThemeModel ThemeOption { get; set; }

@@ -22,6 +22,7 @@ namespace LiLo.Lite.Services.Markets
 	using LiLo.Lite.Models.BinanceModels;
 	using LiLo.Lite.Models.BybitModels;
 	using LiLo.Lite.Models.Markets;
+	using LiLo.Lite.Models.Provider;
 	using LiLo.Lite.Services.Dialog;
 	using WebSocketSharp;
 
@@ -31,21 +32,22 @@ namespace LiLo.Lite.Services.Markets
 		/// <summary>Dialog service</summary>
 		private readonly IDialogService dialogService;
 
-		/// <summary>Markets service</summary>
-		private readonly IMarketsService marketService;
-
 		/// <summary>Initialises a new instance of the <see cref="MarketsHelperService" /> class.</summary>
 		/// <param name="marketServiceConstructor">Markets service constructor via dependency injection.</param>
 		/// <param name="dialogueServiceConstructor">Dialog service constructor via dependency injection.</param>
-		public MarketsHelperService(IMarketsService marketServiceConstructor, IDialogService dialogueServiceConstructor)
+		public MarketsHelperService(IDialogService dialogueServiceConstructor)
 		{
-			marketService = marketServiceConstructor;
 			dialogService = dialogueServiceConstructor;
-			Task.Factory.StartNew(async () =>
-			{
-				MarketsList = await marketService.GetMarketsAsync().ConfigureAwait(true);
-			});
 		}
+		/// <summary>Initialises task for the markets helper service.</summary>
+		/// <returns>Task results of initialisation.</returns>
+		public Task Init()
+		{
+			FeedsModel = DataStore.GetFeed();
+			MarketsList = new ObservableCollection<MarketsModel>(DataStore.GetMarketsForFeed());
+			return Task.FromResult(true);
+		}
+
 
 		/// <summary>Raised when a public property of this object is set.</summary>
 		public override event PropertyChangedEventHandler PropertyChanged
@@ -56,6 +58,8 @@ namespace LiLo.Lite.Services.Markets
 
 		/// <summary>Gets or sets an observable list of markets.</summary>
 		public ObservableCollection<MarketsModel> MarketsList { get; set; }
+
+		public ProvidersModel FeedsModel { get; set; }
 
 		/// <summary>WebSockets message handler.</summary>
 		/// <param name="sender">Sockets service</param>

@@ -13,6 +13,8 @@
 
 namespace LiLo.Lite.Views
 {
+	using System;
+	using LiLo.Lite.Controls;
 	using Xamarin.Forms;
 	using Xamarin.Forms.Internals;
 	using Xamarin.Forms.Xaml;
@@ -23,6 +25,30 @@ namespace LiLo.Lite.Views
 	public partial class HomeView : ContentPage
 	{
 		/// <summary>Initialises a new instance of the <see cref="HomeView" /> class.</summary>
-		public HomeView() => InitializeComponent();
+		public HomeView()
+		{
+			InitializeComponent();
+		}
+
+		private void SelectProvider(object sender, EventArgs args)
+		{
+			View view = sender as View;
+			StackLayout parent = view.Parent as StackLayout;
+			StackLayout parentParentParent = view.Parent.Parent.Parent as StackLayout;
+			Label providerName = parentParentParent.Children[0] as Label;
+			foreach (View child in parent.Children)
+			{
+				CustomPancakeView pancakeView = child as CustomPancakeView;
+				if (pancakeView.IsSelected)
+				{
+					pancakeView.IsSelected = false;
+					break;
+				}
+			}
+
+			CustomPancakeView selectedProvider = sender as CustomPancakeView;
+			selectedProvider.IsSelected = true;
+			providerName.Text = selectedProvider.AutomationId;
+		}
 	}
 }

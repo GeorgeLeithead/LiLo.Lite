@@ -16,7 +16,6 @@ namespace LiLo.Lite.Models.Markets
 	using System;
 	using System.Globalization;
 	using System.Runtime.Serialization;
-	using LiLo.Lite.Definitions;
 	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.Forms.Internals;
 
@@ -64,17 +63,14 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Mark price as string</summary>
 		private string markPriceString;
 
+		/// <summary>Maximum price</summary>
+		private double maxprice;
+
 		/// <summary>Maximum trading quantity</summary>
 		private int maxtradingqty;
 
 		/// <summary>Minimum price</summary>
 		private double minprice;
-
-		/// <summary>Maximum price</summary>
-		private double maxprice;
-
-		/// <summary>Tick size</summary>
-		private double ticksize;
 
 		/// <summary>1HR price percentage</summary>
 		private double price1hPercent;
@@ -90,6 +86,9 @@ namespace LiLo.Lite.Models.Markets
 
 		/// <summary>Currency symbol as string</summary>
 		private string symbolString;
+
+		/// <summary>Tick size</summary>
+		private double ticksize;
 
 		/// <summary>Currency turnover</summary>
 		private string turnover;
@@ -119,6 +118,9 @@ namespace LiLo.Lite.Models.Markets
 				NotifyPropertyChanged(() => DecimalPlaces);
 			}
 		}
+
+		/// <summary>Feed provider.</summary>
+		public string FeedProvider { get; set; }
 
 		/// <summary>Gets or sets the 24HR high price for the currency.</summary>
 		public double HighPrice24h
@@ -370,8 +372,8 @@ namespace LiLo.Lite.Models.Markets
 			}
 		}
 
-		/// <summary>Gets or sets the currency Symbol.</summary>
-		public SymbolEnum Symbol { get; set; }
+		/// <summary>Market ranking.</summary>
+		public int Rank { get; set; }
 
 		/// <summary>Gets or sets the currency Symbol as a string.</summary>
 		[DataMember(Name = "symbol")]
@@ -383,7 +385,6 @@ namespace LiLo.Lite.Models.Markets
 				if (symbolString != value)
 				{
 					symbolString = value;
-					Symbol = (SymbolEnum)Enum.Parse(typeof(SymbolEnum), value);
 					NotifyPropertyChanged(() => SymbolString);
 				}
 			}

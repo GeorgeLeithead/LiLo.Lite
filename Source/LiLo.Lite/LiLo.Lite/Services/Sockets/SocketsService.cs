@@ -16,7 +16,6 @@ namespace LiLo.Lite.Services.Sockets
 	using System;
 	using System.ComponentModel;
 	using System.Threading.Tasks;
-	using Lilo.Lite;
 	using Lilo.Lite.Services;
 	using LiLo.Lite.Services.Dialog;
 	using LiLo.Lite.Services.Markets;
@@ -60,7 +59,20 @@ namespace LiLo.Lite.Services.Sockets
 		/// <returns>Task results of initialisation.</returns>
 		public Task InitAsync()
 		{
-			Uri bybitWssUrl = WssEndPoint();
+			marketsHelper.Init();
+			Connect(true);
+
+			return Task.FromResult(true);
+		}
+
+		public Task Connect(bool isInit = false)
+		{
+			if (!isInit)
+			{
+				marketsHelper.FeedsModel = DataStore.GetFeed();
+			}
+
+			Uri bybitWssUrl = marketsHelper.FeedsModel.Wss;
 			webSocket = new WebSocket(bybitWssUrl.AbsoluteUri)
 			{
 				EmitOnPing = true
@@ -150,14 +162,6 @@ namespace LiLo.Lite.Services.Sockets
 			await Task.FromResult(true);
 		}
 
-		/// <summary>Generate the ByBit WSS endpoint.</summary>
-		/// <returns>WSS End Point</returns>
-		public Uri WssEndPoint()
-		{
-			Uri baseUri = GlobalSettings.MainNetWss;
-			return baseUri;
-		}
-
 		/// <summary>Handle when the sockets connection closes.</summary>
 		/// <param name="sender">Sender object</param>
 		/// <param name="e">Close event arguments</param>
@@ -205,7 +209,7 @@ namespace LiLo.Lite.Services.Sockets
 		{
 			await Task.Factory.StartNew(async () =>
 			{
-				webSocket.Send(GlobalSettings.InstrumentInfoAnonSubscription);
+				webSocket.Send(marketsHelper.FeedsModel.Subscription);
 				await Task.FromResult(true);
 			});
 		}
