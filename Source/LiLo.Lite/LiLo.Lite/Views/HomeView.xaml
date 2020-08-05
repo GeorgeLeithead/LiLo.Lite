@@ -31,7 +31,8 @@
 									<controls:CustomPancakeView
 										Margin="5,10,0,10"
 										AutomationId="{Binding Provider}"
-										BackgroundColor="{StaticResource Gray-700}"
+										BackgroundColor="{AppThemeBinding Light={StaticResource Gray-700},
+										                                  Dark={StaticResource Gray-300}}"
 										BackgroundGradientEndPoint="1,1"
 										BackgroundGradientStartPoint="0,0"
 										CornerRadius="20"
@@ -49,8 +50,8 @@
 												<Setter Property="BackgroundGradientStops">
 													<Setter.Value>
 														<pancake:GradientStopCollection>
-															<pancake:GradientStop Offset="0" Color="Black" />
-															<pancake:GradientStop Offset="0.5" Color="Black" />
+															<pancake:GradientStop Offset="0" Color="{AppThemeBinding Light={StaticResource Gray-White}, Dark={StaticResource Gray-Black}}" />
+															<pancake:GradientStop Offset="0.5" Color="{AppThemeBinding Light={StaticResource Gray-White}, Dark={StaticResource Gray-Black}}" />
 															<pancake:GradientStop Offset="1" Color="#323144" />
 														</pancake:GradientStopCollection>
 													</Setter.Value>
@@ -63,8 +64,8 @@
 											FontSize="16"
 											HorizontalOptions="Center"
 											Text="{Binding Title}"
-											TextColor="{AppThemeBinding Light={StaticResource Gray-White},
-											                            Dark={StaticResource Gray-Black}}" />
+											TextColor="{AppThemeBinding Light={StaticResource Gray-Black},
+											                            Dark={StaticResource Gray-White}}" />
 									</controls:CustomPancakeView>
 								</DataTemplate>
 							</BindableLayout.ItemTemplate>
