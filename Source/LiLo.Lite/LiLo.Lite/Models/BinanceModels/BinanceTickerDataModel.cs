@@ -87,28 +87,28 @@ namespace LiLo.Lite.Models.BinanceModels
 		public string OpenPrice { get; set; }
 
 		[JsonPropertyName("h")]
-		public string h { get; set; }
+		public string HighPrice { get; set; }
 
 		public double HighPrice24h
 		{
-			get => Convert.ToDouble(h);
+			get => Convert.ToDouble(HighPrice);
 		}
 
 		[JsonPropertyName("l")]
-		public string l { get; set; }
+		public string LowPrice { get; set; }
 
 		public double LowPrice24h
 		{
-			get => Convert.ToDouble(l);
+			get => Convert.ToDouble(LowPrice);
 		}
 
 		/// <summary>Total traded base asset volume</summary>
 		[JsonPropertyName("v")]
-		public string v { get; set; }
+		public string Volume { get; set; }
 
 		public long Volume24hr
 		{
-			get => Convert.ToInt32(v);
+			get => Convert.ToInt32(Volume);
 		}
 
 		[JsonPropertyName("q")]
@@ -128,7 +128,6 @@ namespace LiLo.Lite.Models.BinanceModels
 
 		[JsonPropertyName("n")]
 		public int NumberOftrades { get; set; }
-
 
 		public static async Task UpdateMarketList(BinanceTickerDataModel data, ObservableCollection<MarketsModel> marketsList)
 		{

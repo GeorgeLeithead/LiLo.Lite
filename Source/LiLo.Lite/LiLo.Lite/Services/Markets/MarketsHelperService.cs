@@ -20,6 +20,7 @@ namespace LiLo.Lite.Services.Markets
 	using System.Threading.Tasks;
 	using Lilo.Lite.Services;
 	using LiLo.Lite.Models.BinanceModels;
+	using LiLo.Lite.Models.BitMexModels;
 	using LiLo.Lite.Models.BybitModels;
 	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.Models.Provider;
@@ -122,10 +123,20 @@ namespace LiLo.Lite.Services.Markets
 					await InstrumentInfoDataModel.UpdateMarketList(snapshot.Data, MarketsList);
 				}
 			}
+
 			if (message.Contains("\"stream\":"))
 			{
 				BinanceTickerModel binanceStream = JsonSerializer.Deserialize<BinanceTickerModel>(message);
 				await BinanceTickerDataModel.UpdateMarketList(binanceStream.Data, MarketsList);
+			}
+
+			if (message.Contains("\"table\":\"instrument\""))
+			{
+				BitMexInstrumentPartialModel bitmexPartial = JsonSerializer.Deserialize<BitMexInstrumentPartialModel>(message);
+				foreach (BitMexDataModel updateItem in bitmexPartial.Data)
+				{
+					await BitMexDataModel.UpdateMarketList(updateItem, MarketsList);
+				}
 			}
 
 			await Task.FromResult(true);

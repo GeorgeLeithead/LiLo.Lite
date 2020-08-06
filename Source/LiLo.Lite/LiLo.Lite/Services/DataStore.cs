@@ -54,14 +54,21 @@ namespace LiLo.Lite.Services
 				// ByBit Perpetual
 				new MarketsModel { FeedProvider = "BYBIT", Rank = 1, DecimalPlaces = 2, ItemImage = "btc.png", SymbolString = "BTCUSD" },
 				new MarketsModel { FeedProvider = "BYBIT", Rank = 2, DecimalPlaces = 2, ItemImage = "eth.png", SymbolString = "ETHUSD" },
-				new MarketsModel { FeedProvider = "BYBIT", Rank = 11, DecimalPlaces = 3, ItemImage = "eos.png", SymbolString = "EOSUSD" },
 				new MarketsModel { FeedProvider = "BYBIT", Rank = 3, DecimalPlaces = 4, ItemImage = "xrp.png", SymbolString = "XRPUSD" },
+				new MarketsModel { FeedProvider = "BYBIT", Rank = 11, DecimalPlaces = 3, ItemImage = "eos.png", SymbolString = "EOSUSD" },
 
 				// ByBit (TestNet) Perpetual
 				new MarketsModel { FeedProvider = "BYBITTestNet", Rank = 1, DecimalPlaces = 2, ItemImage = "btc.png", SymbolString = "BTCUSD" },
 				new MarketsModel { FeedProvider = "BYBITTestNet", Rank = 2, DecimalPlaces = 2, ItemImage = "eth.png", SymbolString = "ETHUSD" },
 				new MarketsModel { FeedProvider = "BYBITTestNet", Rank = 11, DecimalPlaces = 3, ItemImage = "eos.png", SymbolString = "EOSUSD" },
 				new MarketsModel { FeedProvider = "BYBITTestNet", Rank = 3, DecimalPlaces = 4, ItemImage = "xrp.png", SymbolString = "XRPUSD" },
+
+				// BitMEX Perpetual
+				new MarketsModel { FeedProvider = "BitMEX", Rank = 1, DecimalPlaces = 2, ItemImage = "btc.png", SymbolString = "XBTUSD" },
+				new MarketsModel { FeedProvider = "BitMEX", Rank = 2, DecimalPlaces = 2, ItemImage = "eth.png", SymbolString = "ETHUSD" },
+				new MarketsModel { FeedProvider = "BitMEX", Rank = 3, DecimalPlaces = 4, ItemImage = "xrp.png", SymbolString = "XRPUSD" },
+				new MarketsModel { FeedProvider = "BitMEX", Rank = 5, DecimalPlaces = 2, ItemImage = "bch.png", SymbolString = "BCHUSD" },
+				new MarketsModel { FeedProvider = "BitMEX", Rank = 8, DecimalPlaces = 2, ItemImage = "ltc.png", SymbolString = "LTCUSD" },
 			};
 
 			Markets = new List<MarketsModel>(markets);
@@ -85,15 +92,25 @@ namespace LiLo.Lite.Services
 					Wss = new Uri("wss://stream.bybit.com/realtime"),
 					Subscription = "{\"op\":\"subscribe\",\"args\": [\"instrument_info.100ms.BTCUSD|ETHUSD|EOSUSD|XRPUSD\"]}"
 				},
-/*				new ProvidersModel {
-					Provider = "BYBITTestNet",
-					Title = "ByBit (TestNet)",
-					DisplayName = "ByBit (TestNet) Perpetual",
-					TradingView = "BYBIT",
-					Wss = new Uri("wss://stream-testnet.bybit.com/realtime"),
-					Subscription = "{\"op\":\"subscribe\",\"args\": [\"instrument_info.100ms.BTCUSD|ETHUSD|EOSUSD|XRPUSD\"]}"
+				/*
+				// FTX = pain in the subscription.  Think it's 1 subscription per market!!! URGH
+				new ProvidersModel {
+					Provider = "FTX",
+					Title = "FTX",
+					DisplayName = "FTX Futures",
+					TradingView = "FTX",
+					Wss = new Uri("wss://ftx.com/ws/"),
+					Subscription = "{\"op\":\"subscribe\",\"channel\": \"ticker\", \"market\": \"BTC-PERP\"}"
 				},
-*/
+				*/
+				new ProvidersModel {
+					Provider = "BitMEX",
+					Title = "BitMEX",
+					DisplayName = "BitMEX perpetual",
+					TradingView = "BITMEX",
+					Wss = new Uri("wss://www.bitmex.com/realtime?subscribe=instrument:XRPUSD,instrument:BCHUSD,instrument:XBTUSD,instrument:ETHUSD,instrument:LTCUSD"),
+					Subscription = "{\"op\":\"subscribe\",\"args\": [\"instrument:XRPUSD\", \"instrument:BCHUSD\", \"instrument:XBTUSD\", \"instrument:ETHUSD\", \"instrument:LTCUSD\"]}"
+				},
 			};
 
 			Providers = new List<ProvidersModel>(providers);
@@ -107,7 +124,7 @@ namespace LiLo.Lite.Services
 		internal static IEnumerable<MarketsModel> GetMarketsForFeed()
 		{
 			string obj = GetFeed().Provider;
-			return Markets.Where(n => n.FeedProvider.Equals(obj));
+			return Markets.Where(n => n.FeedProvider.Equals(obj)).OrderBy(n => n.Rank);
 		}
 
 		internal static void SetFeed(string providerName)
