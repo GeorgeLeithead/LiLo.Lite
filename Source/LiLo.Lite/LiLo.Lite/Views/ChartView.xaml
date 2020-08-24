@@ -43,7 +43,7 @@
 						<Frame AutomationId="{Binding SymbolString}">
 							<StackLayout Margin="0,-80,0,0" IsClippedToBounds="False">
 								<!--  overlap image  -->
-								<Image sharedTransition:Transition.Name="SelectedItemImage" HeightRequest="150" Source="{Binding ItemImage}" VerticalOptions="Start" />
+								<Image sharedTransition:Transition.Group="{Binding SymbolString}" sharedTransition:Transition.Name="SelectedItemImage" HeightRequest="150" Source="{Binding ItemImage}" VerticalOptions="Start" />
 								<controls:TickPriceView Price="{Binding LastPrice}" Style="{StaticResource LastPriceStyle}" Text="{Binding LastPriceString}" Tick="{Binding LastTickDirection}" />
 								<Grid ColumnDefinitions="*,*" HorizontalOptions="FillAndExpand" RowDefinitions="Auto,Auto,*">
 									<StackLayout Grid.Row="0" Grid.Column="0" Style="{StaticResource StackLayoutStyle}">
@@ -56,8 +56,15 @@
 									</StackLayout>
 									<StackLayout Grid.Row="0" Grid.Column="1" Style="{StaticResource StackLayoutStyle}">
 										<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource PercentIcon}" />
-										<controls:TickPriceView Price="{Binding Price1hPercent}" Style="{StaticResource CurrencyPriceStyle}" Text="{Binding Price1hPercentString}" Tick="" />
-										<Label Style="{StaticResource PriceLabelStyle}" Text="/" />
+										<controls:CustomStackLayout Orientation="Horizontal" Price1hrPercentSupported="{Binding Price1hPercent}">
+											<controls:TickPriceView Price="{Binding Price1hPercent}" Style="{StaticResource CurrencyPriceStyle}" Text="{Binding Price1hPercentString}" Tick="" />
+											<Label Style="{StaticResource PriceLabelStyle}" Text="/" />
+											<controls:CustomStackLayout.Triggers>
+												<Trigger TargetType="controls:CustomStackLayout" Property="Price1hrPercentSupported" Value="0.0">
+													<Setter Property="IsVisible" Value="False" />
+												</Trigger>
+											</controls:CustomStackLayout.Triggers>
+										</controls:CustomStackLayout>
 										<controls:TickPriceView Price="{Binding Price24hPercent}" Style="{StaticResource CurrencyPriceStyle}" Text="{Binding Price24hPercentString}" Tick="" />
 									</StackLayout>
 									<StackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource StackLayoutStyle}">
