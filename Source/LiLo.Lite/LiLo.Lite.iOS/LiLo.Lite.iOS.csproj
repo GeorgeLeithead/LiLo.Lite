@@ -135,27 +135,27 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Acr.UserDialogs">
-      <Version>7.1.0.446</Version>
+      <Version>7.1.0.462</Version>
     </PackageReference>
     <PackageReference Include="CardsView">
-      <Version>2.6.3</Version>
+      <Version>2.6.6</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.AppCenter.Analytics">
-      <Version>3.4.0</Version>
+      <Version>3.4.3</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.AppCenter.Crashes">
-      <Version>3.4.0</Version>
+      <Version>3.4.3</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.AppCenter.Distribute">
-      <Version>3.4.0</Version>
+      <Version>3.4.3</Version>
     </PackageReference>
     <PackageReference Include="Resizetizer.NT">
-      <Version>0.1.0</Version>
+      <Version>0.2.0</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1269" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1560" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
     <PackageReference Include="Xamarin.Forms.PancakeView">
-      <Version>2.1.0.714</Version>
+      <Version>2.3.0.759</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

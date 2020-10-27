@@ -578,7 +578,6 @@ namespace LiLo.Lite.Droid
 			global::Acr.UserDialogs.Resource.Color.abc_color_highlight_material = global::LiLo.Lite.Droid.Resource.Color.abc_color_highlight_material;
 			global::Acr.UserDialogs.Resource.Color.abc_hint_foreground_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_hint_foreground_material_dark;
 			global::Acr.UserDialogs.Resource.Color.abc_hint_foreground_material_light = global::LiLo.Lite.Droid.Resource.Color.abc_hint_foreground_material_light;
-			global::Acr.UserDialogs.Resource.Color.abc_input_method_navigation_guard = global::LiLo.Lite.Droid.Resource.Color.abc_input_method_navigation_guard;
 			global::Acr.UserDialogs.Resource.Color.abc_primary_text_disable_only_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
 			global::Acr.UserDialogs.Resource.Color.abc_primary_text_disable_only_material_light = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
 			global::Acr.UserDialogs.Resource.Color.abc_primary_text_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_material_dark;
@@ -3260,7 +3259,6 @@ namespace LiLo.Lite.Droid
 			global::PanCardView.Droid.Resource.Color.abc_color_highlight_material = global::LiLo.Lite.Droid.Resource.Color.abc_color_highlight_material;
 			global::PanCardView.Droid.Resource.Color.abc_hint_foreground_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_hint_foreground_material_dark;
 			global::PanCardView.Droid.Resource.Color.abc_hint_foreground_material_light = global::LiLo.Lite.Droid.Resource.Color.abc_hint_foreground_material_light;
-			global::PanCardView.Droid.Resource.Color.abc_input_method_navigation_guard = global::LiLo.Lite.Droid.Resource.Color.abc_input_method_navigation_guard;
 			global::PanCardView.Droid.Resource.Color.abc_primary_text_disable_only_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
 			global::PanCardView.Droid.Resource.Color.abc_primary_text_disable_only_material_light = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
 			global::PanCardView.Droid.Resource.Color.abc_primary_text_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_material_dark;
@@ -5306,10 +5304,42 @@ namespace LiLo.Lite.Droid
 			global::PanCardView.Droid.Resource.Styleable.View_paddingEnd = global::LiLo.Lite.Droid.Resource.Styleable.View_paddingEnd;
 			global::PanCardView.Droid.Resource.Styleable.View_paddingStart = global::LiLo.Lite.Droid.Resource.Styleable.View_paddingStart;
 			global::PanCardView.Droid.Resource.Styleable.View_theme = global::LiLo.Lite.Droid.Resource.Styleable.View_theme;
+			global::Plugin.SharedTransitions.Resource.Animation.abc_fade_in = global::LiLo.Lite.Droid.Resource.Animation.abc_fade_in;
+			global::Plugin.SharedTransitions.Resource.Animation.abc_fade_out = global::LiLo.Lite.Droid.Resource.Animation.abc_fade_out;
+			global::Plugin.SharedTransitions.Resource.Animation.abc_grow_fade_in_from_bottom = global::LiLo.Lite.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Plugin.SharedTransitions.Resource.Animation.abc_popup_enter = global::LiLo.Lite.Droid.Resource.Animation.abc_popup_enter;
+			global::Plugin.SharedTransitions.Resource.Animation.abc_popup_exit = global::LiLo.Lite.Droid.Resource.Animation.abc_popup_exit;
+			global::Plugin.SharedTransitions.Resource.Animation.abc_shrink_fade_out_from_bottom = global::LiLo.Lite.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Plugin.SharedTransitions.Resource.Animation.abc_slide_in_bottom = global::LiLo.Lite.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Plugin.SharedTransitions.Resource.Animation.abc_slide_in_top = global::LiLo.Lite.Droid.Resource.Animation.abc_slide_in_top;
+			global::Plugin.SharedTransitions.Resource.Animation.abc_slide_out_bottom = global::LiLo.Lite.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Plugin.SharedTransitions.Resource.Animation.abc_slide_out_top = global::LiLo.Lite.Droid.Resource.Animation.abc_slide_out_top;
+			global::Plugin.SharedTransitions.Resource.Animation.abc_tooltip_enter = global::LiLo.Lite.Droid.Resource.Animation.abc_tooltip_enter;
+			global::Plugin.SharedTransitions.Resource.Animation.abc_tooltip_exit = global::LiLo.Lite.Droid.Resource.Animation.abc_tooltip_exit;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation;
+			global::Plugin.SharedTransitions.Resource.Animation.design_bottom_sheet_slide_in = global::LiLo.Lite.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Plugin.SharedTransitions.Resource.Animation.design_bottom_sheet_slide_out = global::LiLo.Lite.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Plugin.SharedTransitions.Resource.Animation.design_snackbar_in = global::LiLo.Lite.Droid.Resource.Animation.design_snackbar_in;
+			global::Plugin.SharedTransitions.Resource.Animation.design_snackbar_out = global::LiLo.Lite.Droid.Resource.Animation.design_snackbar_out;
+			global::Plugin.SharedTransitions.Resource.Animation.EnterFromLeft = global::LiLo.Lite.Droid.Resource.Animation.EnterFromLeft;
+			global::Plugin.SharedTransitions.Resource.Animation.EnterFromRight = global::LiLo.Lite.Droid.Resource.Animation.EnterFromRight;
 			global::Plugin.SharedTransitions.Resource.Animation.enter_bottom = global::LiLo.Lite.Droid.Resource.Animation.enter_bottom;
 			global::Plugin.SharedTransitions.Resource.Animation.enter_left = global::LiLo.Lite.Droid.Resource.Animation.enter_left;
 			global::Plugin.SharedTransitions.Resource.Animation.enter_right = global::LiLo.Lite.Droid.Resource.Animation.enter_right;
 			global::Plugin.SharedTransitions.Resource.Animation.enter_top = global::LiLo.Lite.Droid.Resource.Animation.enter_top;
+			global::Plugin.SharedTransitions.Resource.Animation.ExitToLeft = global::LiLo.Lite.Droid.Resource.Animation.ExitToLeft;
+			global::Plugin.SharedTransitions.Resource.Animation.ExitToRight = global::LiLo.Lite.Droid.Resource.Animation.ExitToRight;
 			global::Plugin.SharedTransitions.Resource.Animation.exit_bottom = global::LiLo.Lite.Droid.Resource.Animation.exit_bottom;
 			global::Plugin.SharedTransitions.Resource.Animation.exit_left = global::LiLo.Lite.Droid.Resource.Animation.exit_left;
 			global::Plugin.SharedTransitions.Resource.Animation.exit_right = global::LiLo.Lite.Droid.Resource.Animation.exit_right;
@@ -5318,6 +5348,2672 @@ namespace LiLo.Lite.Droid
 			global::Plugin.SharedTransitions.Resource.Animation.fade_out = global::LiLo.Lite.Droid.Resource.Animation.fade_out;
 			global::Plugin.SharedTransitions.Resource.Animation.flip_in = global::LiLo.Lite.Droid.Resource.Animation.flip_in;
 			global::Plugin.SharedTransitions.Resource.Animation.flip_out = global::LiLo.Lite.Droid.Resource.Animation.flip_out;
+			global::Plugin.SharedTransitions.Resource.Animation.fragment_close_enter = global::LiLo.Lite.Droid.Resource.Animation.fragment_close_enter;
+			global::Plugin.SharedTransitions.Resource.Animation.fragment_close_exit = global::LiLo.Lite.Droid.Resource.Animation.fragment_close_exit;
+			global::Plugin.SharedTransitions.Resource.Animation.fragment_fade_enter = global::LiLo.Lite.Droid.Resource.Animation.fragment_fade_enter;
+			global::Plugin.SharedTransitions.Resource.Animation.fragment_fade_exit = global::LiLo.Lite.Droid.Resource.Animation.fragment_fade_exit;
+			global::Plugin.SharedTransitions.Resource.Animation.fragment_fast_out_extra_slow_in = global::LiLo.Lite.Droid.Resource.Animation.fragment_fast_out_extra_slow_in;
+			global::Plugin.SharedTransitions.Resource.Animation.fragment_open_enter = global::LiLo.Lite.Droid.Resource.Animation.fragment_open_enter;
+			global::Plugin.SharedTransitions.Resource.Animation.fragment_open_exit = global::LiLo.Lite.Droid.Resource.Animation.fragment_open_exit;
+			global::Plugin.SharedTransitions.Resource.Animator.design_appbar_state_list_animator = global::LiLo.Lite.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::Plugin.SharedTransitions.Resource.Animator.design_fab_hide_motion_spec = global::LiLo.Lite.Droid.Resource.Animator.design_fab_hide_motion_spec;
+			global::Plugin.SharedTransitions.Resource.Animator.design_fab_show_motion_spec = global::LiLo.Lite.Droid.Resource.Animator.design_fab_show_motion_spec;
+			global::Plugin.SharedTransitions.Resource.Animator.mtrl_btn_state_list_anim = global::LiLo.Lite.Droid.Resource.Animator.mtrl_btn_state_list_anim;
+			global::Plugin.SharedTransitions.Resource.Animator.mtrl_btn_unelevated_state_list_anim = global::LiLo.Lite.Droid.Resource.Animator.mtrl_btn_unelevated_state_list_anim;
+			global::Plugin.SharedTransitions.Resource.Animator.mtrl_chip_state_list_anim = global::LiLo.Lite.Droid.Resource.Animator.mtrl_chip_state_list_anim;
+			global::Plugin.SharedTransitions.Resource.Animator.mtrl_fab_hide_motion_spec = global::LiLo.Lite.Droid.Resource.Animator.mtrl_fab_hide_motion_spec;
+			global::Plugin.SharedTransitions.Resource.Animator.mtrl_fab_show_motion_spec = global::LiLo.Lite.Droid.Resource.Animator.mtrl_fab_show_motion_spec;
+			global::Plugin.SharedTransitions.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec = global::LiLo.Lite.Droid.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec;
+			global::Plugin.SharedTransitions.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec = global::LiLo.Lite.Droid.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionBarDivider = global::LiLo.Lite.Droid.Resource.Attribute.actionBarDivider;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionBarItemBackground = global::LiLo.Lite.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionBarPopupTheme = global::LiLo.Lite.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionBarSize = global::LiLo.Lite.Droid.Resource.Attribute.actionBarSize;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionBarSplitStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionBarStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionBarStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionBarTabBarStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionBarTabStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionBarTabTextStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionBarTheme = global::LiLo.Lite.Droid.Resource.Attribute.actionBarTheme;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionBarWidgetTheme = global::LiLo.Lite.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionDropDownStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionLayout = global::LiLo.Lite.Droid.Resource.Attribute.actionLayout;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionMenuTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionMenuTextColor = global::LiLo.Lite.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionModeBackground = global::LiLo.Lite.Droid.Resource.Attribute.actionModeBackground;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionModeCloseButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionModeCloseDrawable = global::LiLo.Lite.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionModeCopyDrawable = global::LiLo.Lite.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionModeCutDrawable = global::LiLo.Lite.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionModeFindDrawable = global::LiLo.Lite.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionModePasteDrawable = global::LiLo.Lite.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionModePopupWindowStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionModeSelectAllDrawable = global::LiLo.Lite.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionModeShareDrawable = global::LiLo.Lite.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionModeSplitBackground = global::LiLo.Lite.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionModeStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionModeStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionModeWebSearchDrawable = global::LiLo.Lite.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionOverflowButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionOverflowMenuStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionProviderClass = global::LiLo.Lite.Droid.Resource.Attribute.actionProviderClass;
+			global::Plugin.SharedTransitions.Resource.Attribute.actionViewClass = global::LiLo.Lite.Droid.Resource.Attribute.actionViewClass;
+			global::Plugin.SharedTransitions.Resource.Attribute.activityChooserViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.alertDialogButtonGroupStyle = global::LiLo.Lite.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.alertDialogCenterButtons = global::LiLo.Lite.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Plugin.SharedTransitions.Resource.Attribute.alertDialogStyle = global::LiLo.Lite.Droid.Resource.Attribute.alertDialogStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.alertDialogTheme = global::LiLo.Lite.Droid.Resource.Attribute.alertDialogTheme;
+			global::Plugin.SharedTransitions.Resource.Attribute.allowStacking = global::LiLo.Lite.Droid.Resource.Attribute.allowStacking;
+			global::Plugin.SharedTransitions.Resource.Attribute.alpha = global::LiLo.Lite.Droid.Resource.Attribute.alpha;
+			global::Plugin.SharedTransitions.Resource.Attribute.alphabeticModifiers = global::LiLo.Lite.Droid.Resource.Attribute.alphabeticModifiers;
+			global::Plugin.SharedTransitions.Resource.Attribute.arrowHeadLength = global::LiLo.Lite.Droid.Resource.Attribute.arrowHeadLength;
+			global::Plugin.SharedTransitions.Resource.Attribute.arrowShaftLength = global::LiLo.Lite.Droid.Resource.Attribute.arrowShaftLength;
+			global::Plugin.SharedTransitions.Resource.Attribute.autoCompleteTextViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.autoSizeMaxTextSize = global::LiLo.Lite.Droid.Resource.Attribute.autoSizeMaxTextSize;
+			global::Plugin.SharedTransitions.Resource.Attribute.autoSizeMinTextSize = global::LiLo.Lite.Droid.Resource.Attribute.autoSizeMinTextSize;
+			global::Plugin.SharedTransitions.Resource.Attribute.autoSizePresetSizes = global::LiLo.Lite.Droid.Resource.Attribute.autoSizePresetSizes;
+			global::Plugin.SharedTransitions.Resource.Attribute.autoSizeStepGranularity = global::LiLo.Lite.Droid.Resource.Attribute.autoSizeStepGranularity;
+			global::Plugin.SharedTransitions.Resource.Attribute.autoSizeTextType = global::LiLo.Lite.Droid.Resource.Attribute.autoSizeTextType;
+			global::Plugin.SharedTransitions.Resource.Attribute.background = global::LiLo.Lite.Droid.Resource.Attribute.background;
+			global::Plugin.SharedTransitions.Resource.Attribute.backgroundSplit = global::LiLo.Lite.Droid.Resource.Attribute.backgroundSplit;
+			global::Plugin.SharedTransitions.Resource.Attribute.backgroundStacked = global::LiLo.Lite.Droid.Resource.Attribute.backgroundStacked;
+			global::Plugin.SharedTransitions.Resource.Attribute.backgroundTint = global::LiLo.Lite.Droid.Resource.Attribute.backgroundTint;
+			global::Plugin.SharedTransitions.Resource.Attribute.backgroundTintMode = global::LiLo.Lite.Droid.Resource.Attribute.backgroundTintMode;
+			global::Plugin.SharedTransitions.Resource.Attribute.barLength = global::LiLo.Lite.Droid.Resource.Attribute.barLength;
+			global::Plugin.SharedTransitions.Resource.Attribute.behavior_autoHide = global::LiLo.Lite.Droid.Resource.Attribute.behavior_autoHide;
+			global::Plugin.SharedTransitions.Resource.Attribute.behavior_fitToContents = global::LiLo.Lite.Droid.Resource.Attribute.behavior_fitToContents;
+			global::Plugin.SharedTransitions.Resource.Attribute.behavior_hideable = global::LiLo.Lite.Droid.Resource.Attribute.behavior_hideable;
+			global::Plugin.SharedTransitions.Resource.Attribute.behavior_overlapTop = global::LiLo.Lite.Droid.Resource.Attribute.behavior_overlapTop;
+			global::Plugin.SharedTransitions.Resource.Attribute.behavior_peekHeight = global::LiLo.Lite.Droid.Resource.Attribute.behavior_peekHeight;
+			global::Plugin.SharedTransitions.Resource.Attribute.behavior_skipCollapsed = global::LiLo.Lite.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::Plugin.SharedTransitions.Resource.Attribute.borderlessButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.borderWidth = global::LiLo.Lite.Droid.Resource.Attribute.borderWidth;
+			global::Plugin.SharedTransitions.Resource.Attribute.bottomAppBarStyle = global::LiLo.Lite.Droid.Resource.Attribute.bottomAppBarStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.bottomNavigationStyle = global::LiLo.Lite.Droid.Resource.Attribute.bottomNavigationStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.bottomSheetDialogTheme = global::LiLo.Lite.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::Plugin.SharedTransitions.Resource.Attribute.bottomSheetStyle = global::LiLo.Lite.Droid.Resource.Attribute.bottomSheetStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.boxBackgroundColor = global::LiLo.Lite.Droid.Resource.Attribute.boxBackgroundColor;
+			global::Plugin.SharedTransitions.Resource.Attribute.boxBackgroundMode = global::LiLo.Lite.Droid.Resource.Attribute.boxBackgroundMode;
+			global::Plugin.SharedTransitions.Resource.Attribute.boxCollapsedPaddingTop = global::LiLo.Lite.Droid.Resource.Attribute.boxCollapsedPaddingTop;
+			global::Plugin.SharedTransitions.Resource.Attribute.boxCornerRadiusBottomEnd = global::LiLo.Lite.Droid.Resource.Attribute.boxCornerRadiusBottomEnd;
+			global::Plugin.SharedTransitions.Resource.Attribute.boxCornerRadiusBottomStart = global::LiLo.Lite.Droid.Resource.Attribute.boxCornerRadiusBottomStart;
+			global::Plugin.SharedTransitions.Resource.Attribute.boxCornerRadiusTopEnd = global::LiLo.Lite.Droid.Resource.Attribute.boxCornerRadiusTopEnd;
+			global::Plugin.SharedTransitions.Resource.Attribute.boxCornerRadiusTopStart = global::LiLo.Lite.Droid.Resource.Attribute.boxCornerRadiusTopStart;
+			global::Plugin.SharedTransitions.Resource.Attribute.boxStrokeColor = global::LiLo.Lite.Droid.Resource.Attribute.boxStrokeColor;
+			global::Plugin.SharedTransitions.Resource.Attribute.boxStrokeWidth = global::LiLo.Lite.Droid.Resource.Attribute.boxStrokeWidth;
+			global::Plugin.SharedTransitions.Resource.Attribute.buttonBarButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.buttonBarNegativeButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.buttonBarNeutralButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.buttonBarPositiveButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.buttonBarStyle = global::LiLo.Lite.Droid.Resource.Attribute.buttonBarStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.buttonCompat = global::LiLo.Lite.Droid.Resource.Attribute.buttonCompat;
+			global::Plugin.SharedTransitions.Resource.Attribute.buttonGravity = global::LiLo.Lite.Droid.Resource.Attribute.buttonGravity;
+			global::Plugin.SharedTransitions.Resource.Attribute.buttonIconDimen = global::LiLo.Lite.Droid.Resource.Attribute.buttonIconDimen;
+			global::Plugin.SharedTransitions.Resource.Attribute.buttonPanelSideLayout = global::LiLo.Lite.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Plugin.SharedTransitions.Resource.Attribute.buttonStyle = global::LiLo.Lite.Droid.Resource.Attribute.buttonStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.buttonStyleSmall = global::LiLo.Lite.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Plugin.SharedTransitions.Resource.Attribute.buttonTint = global::LiLo.Lite.Droid.Resource.Attribute.buttonTint;
+			global::Plugin.SharedTransitions.Resource.Attribute.buttonTintMode = global::LiLo.Lite.Droid.Resource.Attribute.buttonTintMode;
+			global::Plugin.SharedTransitions.Resource.Attribute.cardBackgroundColor = global::LiLo.Lite.Droid.Resource.Attribute.cardBackgroundColor;
+			global::Plugin.SharedTransitions.Resource.Attribute.cardCornerRadius = global::LiLo.Lite.Droid.Resource.Attribute.cardCornerRadius;
+			global::Plugin.SharedTransitions.Resource.Attribute.cardElevation = global::LiLo.Lite.Droid.Resource.Attribute.cardElevation;
+			global::Plugin.SharedTransitions.Resource.Attribute.cardMaxElevation = global::LiLo.Lite.Droid.Resource.Attribute.cardMaxElevation;
+			global::Plugin.SharedTransitions.Resource.Attribute.cardPreventCornerOverlap = global::LiLo.Lite.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::Plugin.SharedTransitions.Resource.Attribute.cardUseCompatPadding = global::LiLo.Lite.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.cardViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.cardViewStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.checkboxStyle = global::LiLo.Lite.Droid.Resource.Attribute.checkboxStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.checkedChip = global::LiLo.Lite.Droid.Resource.Attribute.checkedChip;
+			global::Plugin.SharedTransitions.Resource.Attribute.checkedIcon = global::LiLo.Lite.Droid.Resource.Attribute.checkedIcon;
+			global::Plugin.SharedTransitions.Resource.Attribute.checkedIconEnabled = global::LiLo.Lite.Droid.Resource.Attribute.checkedIconEnabled;
+			global::Plugin.SharedTransitions.Resource.Attribute.checkedIconVisible = global::LiLo.Lite.Droid.Resource.Attribute.checkedIconVisible;
+			global::Plugin.SharedTransitions.Resource.Attribute.checkedTextViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.chipBackgroundColor = global::LiLo.Lite.Droid.Resource.Attribute.chipBackgroundColor;
+			global::Plugin.SharedTransitions.Resource.Attribute.chipCornerRadius = global::LiLo.Lite.Droid.Resource.Attribute.chipCornerRadius;
+			global::Plugin.SharedTransitions.Resource.Attribute.chipEndPadding = global::LiLo.Lite.Droid.Resource.Attribute.chipEndPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.chipGroupStyle = global::LiLo.Lite.Droid.Resource.Attribute.chipGroupStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.chipIcon = global::LiLo.Lite.Droid.Resource.Attribute.chipIcon;
+			global::Plugin.SharedTransitions.Resource.Attribute.chipIconEnabled = global::LiLo.Lite.Droid.Resource.Attribute.chipIconEnabled;
+			global::Plugin.SharedTransitions.Resource.Attribute.chipIconSize = global::LiLo.Lite.Droid.Resource.Attribute.chipIconSize;
+			global::Plugin.SharedTransitions.Resource.Attribute.chipIconTint = global::LiLo.Lite.Droid.Resource.Attribute.chipIconTint;
+			global::Plugin.SharedTransitions.Resource.Attribute.chipIconVisible = global::LiLo.Lite.Droid.Resource.Attribute.chipIconVisible;
+			global::Plugin.SharedTransitions.Resource.Attribute.chipMinHeight = global::LiLo.Lite.Droid.Resource.Attribute.chipMinHeight;
+			global::Plugin.SharedTransitions.Resource.Attribute.chipSpacing = global::LiLo.Lite.Droid.Resource.Attribute.chipSpacing;
+			global::Plugin.SharedTransitions.Resource.Attribute.chipSpacingHorizontal = global::LiLo.Lite.Droid.Resource.Attribute.chipSpacingHorizontal;
+			global::Plugin.SharedTransitions.Resource.Attribute.chipSpacingVertical = global::LiLo.Lite.Droid.Resource.Attribute.chipSpacingVertical;
+			global::Plugin.SharedTransitions.Resource.Attribute.chipStandaloneStyle = global::LiLo.Lite.Droid.Resource.Attribute.chipStandaloneStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.chipStartPadding = global::LiLo.Lite.Droid.Resource.Attribute.chipStartPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.chipStrokeColor = global::LiLo.Lite.Droid.Resource.Attribute.chipStrokeColor;
+			global::Plugin.SharedTransitions.Resource.Attribute.chipStrokeWidth = global::LiLo.Lite.Droid.Resource.Attribute.chipStrokeWidth;
+			global::Plugin.SharedTransitions.Resource.Attribute.chipStyle = global::LiLo.Lite.Droid.Resource.Attribute.chipStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.closeIcon = global::LiLo.Lite.Droid.Resource.Attribute.closeIcon;
+			global::Plugin.SharedTransitions.Resource.Attribute.closeIconEnabled = global::LiLo.Lite.Droid.Resource.Attribute.closeIconEnabled;
+			global::Plugin.SharedTransitions.Resource.Attribute.closeIconEndPadding = global::LiLo.Lite.Droid.Resource.Attribute.closeIconEndPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.closeIconSize = global::LiLo.Lite.Droid.Resource.Attribute.closeIconSize;
+			global::Plugin.SharedTransitions.Resource.Attribute.closeIconStartPadding = global::LiLo.Lite.Droid.Resource.Attribute.closeIconStartPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.closeIconTint = global::LiLo.Lite.Droid.Resource.Attribute.closeIconTint;
+			global::Plugin.SharedTransitions.Resource.Attribute.closeIconVisible = global::LiLo.Lite.Droid.Resource.Attribute.closeIconVisible;
+			global::Plugin.SharedTransitions.Resource.Attribute.closeItemLayout = global::LiLo.Lite.Droid.Resource.Attribute.closeItemLayout;
+			global::Plugin.SharedTransitions.Resource.Attribute.collapseContentDescription = global::LiLo.Lite.Droid.Resource.Attribute.collapseContentDescription;
+			global::Plugin.SharedTransitions.Resource.Attribute.collapsedTitleGravity = global::LiLo.Lite.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::Plugin.SharedTransitions.Resource.Attribute.collapsedTitleTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Attribute.collapseIcon = global::LiLo.Lite.Droid.Resource.Attribute.collapseIcon;
+			global::Plugin.SharedTransitions.Resource.Attribute.color = global::LiLo.Lite.Droid.Resource.Attribute.color;
+			global::Plugin.SharedTransitions.Resource.Attribute.colorAccent = global::LiLo.Lite.Droid.Resource.Attribute.colorAccent;
+			global::Plugin.SharedTransitions.Resource.Attribute.colorBackgroundFloating = global::LiLo.Lite.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::Plugin.SharedTransitions.Resource.Attribute.colorButtonNormal = global::LiLo.Lite.Droid.Resource.Attribute.colorButtonNormal;
+			global::Plugin.SharedTransitions.Resource.Attribute.colorControlActivated = global::LiLo.Lite.Droid.Resource.Attribute.colorControlActivated;
+			global::Plugin.SharedTransitions.Resource.Attribute.colorControlHighlight = global::LiLo.Lite.Droid.Resource.Attribute.colorControlHighlight;
+			global::Plugin.SharedTransitions.Resource.Attribute.colorControlNormal = global::LiLo.Lite.Droid.Resource.Attribute.colorControlNormal;
+			global::Plugin.SharedTransitions.Resource.Attribute.colorError = global::LiLo.Lite.Droid.Resource.Attribute.colorError;
+			global::Plugin.SharedTransitions.Resource.Attribute.colorPrimary = global::LiLo.Lite.Droid.Resource.Attribute.colorPrimary;
+			global::Plugin.SharedTransitions.Resource.Attribute.colorPrimaryDark = global::LiLo.Lite.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Plugin.SharedTransitions.Resource.Attribute.colorSecondary = global::LiLo.Lite.Droid.Resource.Attribute.colorSecondary;
+			global::Plugin.SharedTransitions.Resource.Attribute.colorSwitchThumbNormal = global::LiLo.Lite.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Plugin.SharedTransitions.Resource.Attribute.commitIcon = global::LiLo.Lite.Droid.Resource.Attribute.commitIcon;
+			global::Plugin.SharedTransitions.Resource.Attribute.contentDescription = global::LiLo.Lite.Droid.Resource.Attribute.contentDescription;
+			global::Plugin.SharedTransitions.Resource.Attribute.contentInsetEnd = global::LiLo.Lite.Droid.Resource.Attribute.contentInsetEnd;
+			global::Plugin.SharedTransitions.Resource.Attribute.contentInsetEndWithActions = global::LiLo.Lite.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::Plugin.SharedTransitions.Resource.Attribute.contentInsetLeft = global::LiLo.Lite.Droid.Resource.Attribute.contentInsetLeft;
+			global::Plugin.SharedTransitions.Resource.Attribute.contentInsetRight = global::LiLo.Lite.Droid.Resource.Attribute.contentInsetRight;
+			global::Plugin.SharedTransitions.Resource.Attribute.contentInsetStart = global::LiLo.Lite.Droid.Resource.Attribute.contentInsetStart;
+			global::Plugin.SharedTransitions.Resource.Attribute.contentInsetStartWithNavigation = global::LiLo.Lite.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Plugin.SharedTransitions.Resource.Attribute.contentPadding = global::LiLo.Lite.Droid.Resource.Attribute.contentPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.contentPaddingBottom = global::LiLo.Lite.Droid.Resource.Attribute.contentPaddingBottom;
+			global::Plugin.SharedTransitions.Resource.Attribute.contentPaddingLeft = global::LiLo.Lite.Droid.Resource.Attribute.contentPaddingLeft;
+			global::Plugin.SharedTransitions.Resource.Attribute.contentPaddingRight = global::LiLo.Lite.Droid.Resource.Attribute.contentPaddingRight;
+			global::Plugin.SharedTransitions.Resource.Attribute.contentPaddingTop = global::LiLo.Lite.Droid.Resource.Attribute.contentPaddingTop;
+			global::Plugin.SharedTransitions.Resource.Attribute.contentScrim = global::LiLo.Lite.Droid.Resource.Attribute.contentScrim;
+			global::Plugin.SharedTransitions.Resource.Attribute.controlBackground = global::LiLo.Lite.Droid.Resource.Attribute.controlBackground;
+			global::Plugin.SharedTransitions.Resource.Attribute.coordinatorLayoutStyle = global::LiLo.Lite.Droid.Resource.Attribute.coordinatorLayoutStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.cornerRadius = global::LiLo.Lite.Droid.Resource.Attribute.cornerRadius;
+			global::Plugin.SharedTransitions.Resource.Attribute.counterEnabled = global::LiLo.Lite.Droid.Resource.Attribute.counterEnabled;
+			global::Plugin.SharedTransitions.Resource.Attribute.counterMaxLength = global::LiLo.Lite.Droid.Resource.Attribute.counterMaxLength;
+			global::Plugin.SharedTransitions.Resource.Attribute.counterOverflowTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Attribute.counterTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.counterTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Attribute.customNavigationLayout = global::LiLo.Lite.Droid.Resource.Attribute.customNavigationLayout;
+			global::Plugin.SharedTransitions.Resource.Attribute.defaultQueryHint = global::LiLo.Lite.Droid.Resource.Attribute.defaultQueryHint;
+			global::Plugin.SharedTransitions.Resource.Attribute.dialogCornerRadius = global::LiLo.Lite.Droid.Resource.Attribute.dialogCornerRadius;
+			global::Plugin.SharedTransitions.Resource.Attribute.dialogPreferredPadding = global::LiLo.Lite.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.dialogTheme = global::LiLo.Lite.Droid.Resource.Attribute.dialogTheme;
+			global::Plugin.SharedTransitions.Resource.Attribute.displayOptions = global::LiLo.Lite.Droid.Resource.Attribute.displayOptions;
+			global::Plugin.SharedTransitions.Resource.Attribute.divider = global::LiLo.Lite.Droid.Resource.Attribute.divider;
+			global::Plugin.SharedTransitions.Resource.Attribute.dividerHorizontal = global::LiLo.Lite.Droid.Resource.Attribute.dividerHorizontal;
+			global::Plugin.SharedTransitions.Resource.Attribute.dividerPadding = global::LiLo.Lite.Droid.Resource.Attribute.dividerPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.dividerVertical = global::LiLo.Lite.Droid.Resource.Attribute.dividerVertical;
+			global::Plugin.SharedTransitions.Resource.Attribute.drawableBottomCompat = global::LiLo.Lite.Droid.Resource.Attribute.drawableBottomCompat;
+			global::Plugin.SharedTransitions.Resource.Attribute.drawableEndCompat = global::LiLo.Lite.Droid.Resource.Attribute.drawableEndCompat;
+			global::Plugin.SharedTransitions.Resource.Attribute.drawableLeftCompat = global::LiLo.Lite.Droid.Resource.Attribute.drawableLeftCompat;
+			global::Plugin.SharedTransitions.Resource.Attribute.drawableRightCompat = global::LiLo.Lite.Droid.Resource.Attribute.drawableRightCompat;
+			global::Plugin.SharedTransitions.Resource.Attribute.drawableSize = global::LiLo.Lite.Droid.Resource.Attribute.drawableSize;
+			global::Plugin.SharedTransitions.Resource.Attribute.drawableStartCompat = global::LiLo.Lite.Droid.Resource.Attribute.drawableStartCompat;
+			global::Plugin.SharedTransitions.Resource.Attribute.drawableTint = global::LiLo.Lite.Droid.Resource.Attribute.drawableTint;
+			global::Plugin.SharedTransitions.Resource.Attribute.drawableTintMode = global::LiLo.Lite.Droid.Resource.Attribute.drawableTintMode;
+			global::Plugin.SharedTransitions.Resource.Attribute.drawableTopCompat = global::LiLo.Lite.Droid.Resource.Attribute.drawableTopCompat;
+			global::Plugin.SharedTransitions.Resource.Attribute.drawerArrowStyle = global::LiLo.Lite.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.dropdownListPreferredItemHeight = global::LiLo.Lite.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Plugin.SharedTransitions.Resource.Attribute.dropDownListViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.editTextBackground = global::LiLo.Lite.Droid.Resource.Attribute.editTextBackground;
+			global::Plugin.SharedTransitions.Resource.Attribute.editTextColor = global::LiLo.Lite.Droid.Resource.Attribute.editTextColor;
+			global::Plugin.SharedTransitions.Resource.Attribute.editTextStyle = global::LiLo.Lite.Droid.Resource.Attribute.editTextStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.elevation = global::LiLo.Lite.Droid.Resource.Attribute.elevation;
+			global::Plugin.SharedTransitions.Resource.Attribute.enforceMaterialTheme = global::LiLo.Lite.Droid.Resource.Attribute.enforceMaterialTheme;
+			global::Plugin.SharedTransitions.Resource.Attribute.enforceTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.enforceTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Attribute.errorEnabled = global::LiLo.Lite.Droid.Resource.Attribute.errorEnabled;
+			global::Plugin.SharedTransitions.Resource.Attribute.errorTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.errorTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Attribute.expandActivityOverflowButtonDrawable = global::LiLo.Lite.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Plugin.SharedTransitions.Resource.Attribute.expanded = global::LiLo.Lite.Droid.Resource.Attribute.expanded;
+			global::Plugin.SharedTransitions.Resource.Attribute.expandedTitleGravity = global::LiLo.Lite.Droid.Resource.Attribute.expandedTitleGravity;
+			global::Plugin.SharedTransitions.Resource.Attribute.expandedTitleMargin = global::LiLo.Lite.Droid.Resource.Attribute.expandedTitleMargin;
+			global::Plugin.SharedTransitions.Resource.Attribute.expandedTitleMarginBottom = global::LiLo.Lite.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::Plugin.SharedTransitions.Resource.Attribute.expandedTitleMarginEnd = global::LiLo.Lite.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::Plugin.SharedTransitions.Resource.Attribute.expandedTitleMarginStart = global::LiLo.Lite.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::Plugin.SharedTransitions.Resource.Attribute.expandedTitleMarginTop = global::LiLo.Lite.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::Plugin.SharedTransitions.Resource.Attribute.expandedTitleTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Attribute.fabAlignmentMode = global::LiLo.Lite.Droid.Resource.Attribute.fabAlignmentMode;
+			global::Plugin.SharedTransitions.Resource.Attribute.fabCradleMargin = global::LiLo.Lite.Droid.Resource.Attribute.fabCradleMargin;
+			global::Plugin.SharedTransitions.Resource.Attribute.fabCradleRoundedCornerRadius = global::LiLo.Lite.Droid.Resource.Attribute.fabCradleRoundedCornerRadius;
+			global::Plugin.SharedTransitions.Resource.Attribute.fabCradleVerticalOffset = global::LiLo.Lite.Droid.Resource.Attribute.fabCradleVerticalOffset;
+			global::Plugin.SharedTransitions.Resource.Attribute.fabCustomSize = global::LiLo.Lite.Droid.Resource.Attribute.fabCustomSize;
+			global::Plugin.SharedTransitions.Resource.Attribute.fabSize = global::LiLo.Lite.Droid.Resource.Attribute.fabSize;
+			global::Plugin.SharedTransitions.Resource.Attribute.fastScrollEnabled = global::LiLo.Lite.Droid.Resource.Attribute.fastScrollEnabled;
+			global::Plugin.SharedTransitions.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::LiLo.Lite.Droid.Resource.Attribute.fastScrollHorizontalThumbDrawable;
+			global::Plugin.SharedTransitions.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::LiLo.Lite.Droid.Resource.Attribute.fastScrollHorizontalTrackDrawable;
+			global::Plugin.SharedTransitions.Resource.Attribute.fastScrollVerticalThumbDrawable = global::LiLo.Lite.Droid.Resource.Attribute.fastScrollVerticalThumbDrawable;
+			global::Plugin.SharedTransitions.Resource.Attribute.fastScrollVerticalTrackDrawable = global::LiLo.Lite.Droid.Resource.Attribute.fastScrollVerticalTrackDrawable;
+			global::Plugin.SharedTransitions.Resource.Attribute.firstBaselineToTopHeight = global::LiLo.Lite.Droid.Resource.Attribute.firstBaselineToTopHeight;
+			global::Plugin.SharedTransitions.Resource.Attribute.floatingActionButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.floatingActionButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.font = global::LiLo.Lite.Droid.Resource.Attribute.font;
+			global::Plugin.SharedTransitions.Resource.Attribute.fontFamily = global::LiLo.Lite.Droid.Resource.Attribute.fontFamily;
+			global::Plugin.SharedTransitions.Resource.Attribute.fontProviderAuthority = global::LiLo.Lite.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Plugin.SharedTransitions.Resource.Attribute.fontProviderCerts = global::LiLo.Lite.Droid.Resource.Attribute.fontProviderCerts;
+			global::Plugin.SharedTransitions.Resource.Attribute.fontProviderFetchStrategy = global::LiLo.Lite.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Plugin.SharedTransitions.Resource.Attribute.fontProviderFetchTimeout = global::LiLo.Lite.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Plugin.SharedTransitions.Resource.Attribute.fontProviderPackage = global::LiLo.Lite.Droid.Resource.Attribute.fontProviderPackage;
+			global::Plugin.SharedTransitions.Resource.Attribute.fontProviderQuery = global::LiLo.Lite.Droid.Resource.Attribute.fontProviderQuery;
+			global::Plugin.SharedTransitions.Resource.Attribute.fontStyle = global::LiLo.Lite.Droid.Resource.Attribute.fontStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.fontVariationSettings = global::LiLo.Lite.Droid.Resource.Attribute.fontVariationSettings;
+			global::Plugin.SharedTransitions.Resource.Attribute.fontWeight = global::LiLo.Lite.Droid.Resource.Attribute.fontWeight;
+			global::Plugin.SharedTransitions.Resource.Attribute.foregroundInsidePadding = global::LiLo.Lite.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.gapBetweenBars = global::LiLo.Lite.Droid.Resource.Attribute.gapBetweenBars;
+			global::Plugin.SharedTransitions.Resource.Attribute.goIcon = global::LiLo.Lite.Droid.Resource.Attribute.goIcon;
+			global::Plugin.SharedTransitions.Resource.Attribute.headerLayout = global::LiLo.Lite.Droid.Resource.Attribute.headerLayout;
+			global::Plugin.SharedTransitions.Resource.Attribute.height = global::LiLo.Lite.Droid.Resource.Attribute.height;
+			global::Plugin.SharedTransitions.Resource.Attribute.helperText = global::LiLo.Lite.Droid.Resource.Attribute.helperText;
+			global::Plugin.SharedTransitions.Resource.Attribute.helperTextEnabled = global::LiLo.Lite.Droid.Resource.Attribute.helperTextEnabled;
+			global::Plugin.SharedTransitions.Resource.Attribute.helperTextTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.helperTextTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Attribute.hideMotionSpec = global::LiLo.Lite.Droid.Resource.Attribute.hideMotionSpec;
+			global::Plugin.SharedTransitions.Resource.Attribute.hideOnContentScroll = global::LiLo.Lite.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Plugin.SharedTransitions.Resource.Attribute.hideOnScroll = global::LiLo.Lite.Droid.Resource.Attribute.hideOnScroll;
+			global::Plugin.SharedTransitions.Resource.Attribute.hintAnimationEnabled = global::LiLo.Lite.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::Plugin.SharedTransitions.Resource.Attribute.hintEnabled = global::LiLo.Lite.Droid.Resource.Attribute.hintEnabled;
+			global::Plugin.SharedTransitions.Resource.Attribute.hintTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.hintTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Attribute.homeAsUpIndicator = global::LiLo.Lite.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Plugin.SharedTransitions.Resource.Attribute.homeLayout = global::LiLo.Lite.Droid.Resource.Attribute.homeLayout;
+			global::Plugin.SharedTransitions.Resource.Attribute.hoveredFocusedTranslationZ = global::LiLo.Lite.Droid.Resource.Attribute.hoveredFocusedTranslationZ;
+			global::Plugin.SharedTransitions.Resource.Attribute.icon = global::LiLo.Lite.Droid.Resource.Attribute.icon;
+			global::Plugin.SharedTransitions.Resource.Attribute.iconEndPadding = global::LiLo.Lite.Droid.Resource.Attribute.iconEndPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.iconGravity = global::LiLo.Lite.Droid.Resource.Attribute.iconGravity;
+			global::Plugin.SharedTransitions.Resource.Attribute.iconifiedByDefault = global::LiLo.Lite.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Plugin.SharedTransitions.Resource.Attribute.iconPadding = global::LiLo.Lite.Droid.Resource.Attribute.iconPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.iconSize = global::LiLo.Lite.Droid.Resource.Attribute.iconSize;
+			global::Plugin.SharedTransitions.Resource.Attribute.iconStartPadding = global::LiLo.Lite.Droid.Resource.Attribute.iconStartPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.iconTint = global::LiLo.Lite.Droid.Resource.Attribute.iconTint;
+			global::Plugin.SharedTransitions.Resource.Attribute.iconTintMode = global::LiLo.Lite.Droid.Resource.Attribute.iconTintMode;
+			global::Plugin.SharedTransitions.Resource.Attribute.imageButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.imageButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.indeterminateProgressStyle = global::LiLo.Lite.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.initialActivityCount = global::LiLo.Lite.Droid.Resource.Attribute.initialActivityCount;
+			global::Plugin.SharedTransitions.Resource.Attribute.insetForeground = global::LiLo.Lite.Droid.Resource.Attribute.insetForeground;
+			global::Plugin.SharedTransitions.Resource.Attribute.isLightTheme = global::LiLo.Lite.Droid.Resource.Attribute.isLightTheme;
+			global::Plugin.SharedTransitions.Resource.Attribute.itemBackground = global::LiLo.Lite.Droid.Resource.Attribute.itemBackground;
+			global::Plugin.SharedTransitions.Resource.Attribute.itemHorizontalPadding = global::LiLo.Lite.Droid.Resource.Attribute.itemHorizontalPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.itemHorizontalTranslationEnabled = global::LiLo.Lite.Droid.Resource.Attribute.itemHorizontalTranslationEnabled;
+			global::Plugin.SharedTransitions.Resource.Attribute.itemIconPadding = global::LiLo.Lite.Droid.Resource.Attribute.itemIconPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.itemIconSize = global::LiLo.Lite.Droid.Resource.Attribute.itemIconSize;
+			global::Plugin.SharedTransitions.Resource.Attribute.itemIconTint = global::LiLo.Lite.Droid.Resource.Attribute.itemIconTint;
+			global::Plugin.SharedTransitions.Resource.Attribute.itemPadding = global::LiLo.Lite.Droid.Resource.Attribute.itemPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.itemSpacing = global::LiLo.Lite.Droid.Resource.Attribute.itemSpacing;
+			global::Plugin.SharedTransitions.Resource.Attribute.itemTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.itemTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Attribute.itemTextAppearanceActive = global::LiLo.Lite.Droid.Resource.Attribute.itemTextAppearanceActive;
+			global::Plugin.SharedTransitions.Resource.Attribute.itemTextAppearanceInactive = global::LiLo.Lite.Droid.Resource.Attribute.itemTextAppearanceInactive;
+			global::Plugin.SharedTransitions.Resource.Attribute.itemTextColor = global::LiLo.Lite.Droid.Resource.Attribute.itemTextColor;
+			global::Plugin.SharedTransitions.Resource.Attribute.keylines = global::LiLo.Lite.Droid.Resource.Attribute.keylines;
+			global::Plugin.SharedTransitions.Resource.Attribute.labelVisibilityMode = global::LiLo.Lite.Droid.Resource.Attribute.labelVisibilityMode;
+			global::Plugin.SharedTransitions.Resource.Attribute.lastBaselineToBottomHeight = global::LiLo.Lite.Droid.Resource.Attribute.lastBaselineToBottomHeight;
+			global::Plugin.SharedTransitions.Resource.Attribute.layout = global::LiLo.Lite.Droid.Resource.Attribute.layout;
+			global::Plugin.SharedTransitions.Resource.Attribute.layoutManager = global::LiLo.Lite.Droid.Resource.Attribute.layoutManager;
+			global::Plugin.SharedTransitions.Resource.Attribute.layout_anchor = global::LiLo.Lite.Droid.Resource.Attribute.layout_anchor;
+			global::Plugin.SharedTransitions.Resource.Attribute.layout_anchorGravity = global::LiLo.Lite.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Plugin.SharedTransitions.Resource.Attribute.layout_behavior = global::LiLo.Lite.Droid.Resource.Attribute.layout_behavior;
+			global::Plugin.SharedTransitions.Resource.Attribute.layout_collapseMode = global::LiLo.Lite.Droid.Resource.Attribute.layout_collapseMode;
+			global::Plugin.SharedTransitions.Resource.Attribute.layout_collapseParallaxMultiplier = global::LiLo.Lite.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Plugin.SharedTransitions.Resource.Attribute.layout_dodgeInsetEdges = global::LiLo.Lite.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Plugin.SharedTransitions.Resource.Attribute.layout_insetEdge = global::LiLo.Lite.Droid.Resource.Attribute.layout_insetEdge;
+			global::Plugin.SharedTransitions.Resource.Attribute.layout_keyline = global::LiLo.Lite.Droid.Resource.Attribute.layout_keyline;
+			global::Plugin.SharedTransitions.Resource.Attribute.layout_scrollFlags = global::LiLo.Lite.Droid.Resource.Attribute.layout_scrollFlags;
+			global::Plugin.SharedTransitions.Resource.Attribute.layout_scrollInterpolator = global::LiLo.Lite.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::Plugin.SharedTransitions.Resource.Attribute.liftOnScroll = global::LiLo.Lite.Droid.Resource.Attribute.liftOnScroll;
+			global::Plugin.SharedTransitions.Resource.Attribute.lineHeight = global::LiLo.Lite.Droid.Resource.Attribute.lineHeight;
+			global::Plugin.SharedTransitions.Resource.Attribute.lineSpacing = global::LiLo.Lite.Droid.Resource.Attribute.lineSpacing;
+			global::Plugin.SharedTransitions.Resource.Attribute.listChoiceBackgroundIndicator = global::LiLo.Lite.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Plugin.SharedTransitions.Resource.Attribute.listChoiceIndicatorMultipleAnimated = global::LiLo.Lite.Droid.Resource.Attribute.listChoiceIndicatorMultipleAnimated;
+			global::Plugin.SharedTransitions.Resource.Attribute.listChoiceIndicatorSingleAnimated = global::LiLo.Lite.Droid.Resource.Attribute.listChoiceIndicatorSingleAnimated;
+			global::Plugin.SharedTransitions.Resource.Attribute.listDividerAlertDialog = global::LiLo.Lite.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Plugin.SharedTransitions.Resource.Attribute.listItemLayout = global::LiLo.Lite.Droid.Resource.Attribute.listItemLayout;
+			global::Plugin.SharedTransitions.Resource.Attribute.listLayout = global::LiLo.Lite.Droid.Resource.Attribute.listLayout;
+			global::Plugin.SharedTransitions.Resource.Attribute.listMenuViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.listMenuViewStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.listPopupWindowStyle = global::LiLo.Lite.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.listPreferredItemHeight = global::LiLo.Lite.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Plugin.SharedTransitions.Resource.Attribute.listPreferredItemHeightLarge = global::LiLo.Lite.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Plugin.SharedTransitions.Resource.Attribute.listPreferredItemHeightSmall = global::LiLo.Lite.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Plugin.SharedTransitions.Resource.Attribute.listPreferredItemPaddingEnd = global::LiLo.Lite.Droid.Resource.Attribute.listPreferredItemPaddingEnd;
+			global::Plugin.SharedTransitions.Resource.Attribute.listPreferredItemPaddingLeft = global::LiLo.Lite.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Plugin.SharedTransitions.Resource.Attribute.listPreferredItemPaddingRight = global::LiLo.Lite.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Plugin.SharedTransitions.Resource.Attribute.listPreferredItemPaddingStart = global::LiLo.Lite.Droid.Resource.Attribute.listPreferredItemPaddingStart;
+			global::Plugin.SharedTransitions.Resource.Attribute.logo = global::LiLo.Lite.Droid.Resource.Attribute.logo;
+			global::Plugin.SharedTransitions.Resource.Attribute.logoDescription = global::LiLo.Lite.Droid.Resource.Attribute.logoDescription;
+			global::Plugin.SharedTransitions.Resource.Attribute.materialButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.materialButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.materialCardViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.materialCardViewStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.maxActionInlineWidth = global::LiLo.Lite.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::Plugin.SharedTransitions.Resource.Attribute.maxButtonHeight = global::LiLo.Lite.Droid.Resource.Attribute.maxButtonHeight;
+			global::Plugin.SharedTransitions.Resource.Attribute.maxImageSize = global::LiLo.Lite.Droid.Resource.Attribute.maxImageSize;
+			global::Plugin.SharedTransitions.Resource.Attribute.measureWithLargestChild = global::LiLo.Lite.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Plugin.SharedTransitions.Resource.Attribute.menu = global::LiLo.Lite.Droid.Resource.Attribute.menu;
+			global::Plugin.SharedTransitions.Resource.Attribute.multiChoiceItemLayout = global::LiLo.Lite.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Plugin.SharedTransitions.Resource.Attribute.navigationContentDescription = global::LiLo.Lite.Droid.Resource.Attribute.navigationContentDescription;
+			global::Plugin.SharedTransitions.Resource.Attribute.navigationIcon = global::LiLo.Lite.Droid.Resource.Attribute.navigationIcon;
+			global::Plugin.SharedTransitions.Resource.Attribute.navigationMode = global::LiLo.Lite.Droid.Resource.Attribute.navigationMode;
+			global::Plugin.SharedTransitions.Resource.Attribute.navigationViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.navigationViewStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.numericModifiers = global::LiLo.Lite.Droid.Resource.Attribute.numericModifiers;
+			global::Plugin.SharedTransitions.Resource.Attribute.overlapAnchor = global::LiLo.Lite.Droid.Resource.Attribute.overlapAnchor;
+			global::Plugin.SharedTransitions.Resource.Attribute.paddingBottomNoButtons = global::LiLo.Lite.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::Plugin.SharedTransitions.Resource.Attribute.paddingEnd = global::LiLo.Lite.Droid.Resource.Attribute.paddingEnd;
+			global::Plugin.SharedTransitions.Resource.Attribute.paddingStart = global::LiLo.Lite.Droid.Resource.Attribute.paddingStart;
+			global::Plugin.SharedTransitions.Resource.Attribute.paddingTopNoTitle = global::LiLo.Lite.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::Plugin.SharedTransitions.Resource.Attribute.panelBackground = global::LiLo.Lite.Droid.Resource.Attribute.panelBackground;
+			global::Plugin.SharedTransitions.Resource.Attribute.panelMenuListTheme = global::LiLo.Lite.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Plugin.SharedTransitions.Resource.Attribute.panelMenuListWidth = global::LiLo.Lite.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Plugin.SharedTransitions.Resource.Attribute.passwordToggleContentDescription = global::LiLo.Lite.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::Plugin.SharedTransitions.Resource.Attribute.passwordToggleDrawable = global::LiLo.Lite.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::Plugin.SharedTransitions.Resource.Attribute.passwordToggleEnabled = global::LiLo.Lite.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::Plugin.SharedTransitions.Resource.Attribute.passwordToggleTint = global::LiLo.Lite.Droid.Resource.Attribute.passwordToggleTint;
+			global::Plugin.SharedTransitions.Resource.Attribute.passwordToggleTintMode = global::LiLo.Lite.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::Plugin.SharedTransitions.Resource.Attribute.popupMenuStyle = global::LiLo.Lite.Droid.Resource.Attribute.popupMenuStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.popupTheme = global::LiLo.Lite.Droid.Resource.Attribute.popupTheme;
+			global::Plugin.SharedTransitions.Resource.Attribute.popupWindowStyle = global::LiLo.Lite.Droid.Resource.Attribute.popupWindowStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.preserveIconSpacing = global::LiLo.Lite.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Plugin.SharedTransitions.Resource.Attribute.pressedTranslationZ = global::LiLo.Lite.Droid.Resource.Attribute.pressedTranslationZ;
+			global::Plugin.SharedTransitions.Resource.Attribute.progressBarPadding = global::LiLo.Lite.Droid.Resource.Attribute.progressBarPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.progressBarStyle = global::LiLo.Lite.Droid.Resource.Attribute.progressBarStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.queryBackground = global::LiLo.Lite.Droid.Resource.Attribute.queryBackground;
+			global::Plugin.SharedTransitions.Resource.Attribute.queryHint = global::LiLo.Lite.Droid.Resource.Attribute.queryHint;
+			global::Plugin.SharedTransitions.Resource.Attribute.radioButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.radioButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.ratingBarStyle = global::LiLo.Lite.Droid.Resource.Attribute.ratingBarStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.ratingBarStyleIndicator = global::LiLo.Lite.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Plugin.SharedTransitions.Resource.Attribute.ratingBarStyleSmall = global::LiLo.Lite.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Plugin.SharedTransitions.Resource.Attribute.recyclerViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.recyclerViewStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.reverseLayout = global::LiLo.Lite.Droid.Resource.Attribute.reverseLayout;
+			global::Plugin.SharedTransitions.Resource.Attribute.rippleColor = global::LiLo.Lite.Droid.Resource.Attribute.rippleColor;
+			global::Plugin.SharedTransitions.Resource.Attribute.scrimAnimationDuration = global::LiLo.Lite.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::Plugin.SharedTransitions.Resource.Attribute.scrimBackground = global::LiLo.Lite.Droid.Resource.Attribute.scrimBackground;
+			global::Plugin.SharedTransitions.Resource.Attribute.scrimVisibleHeightTrigger = global::LiLo.Lite.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Plugin.SharedTransitions.Resource.Attribute.searchHintIcon = global::LiLo.Lite.Droid.Resource.Attribute.searchHintIcon;
+			global::Plugin.SharedTransitions.Resource.Attribute.searchIcon = global::LiLo.Lite.Droid.Resource.Attribute.searchIcon;
+			global::Plugin.SharedTransitions.Resource.Attribute.searchViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.searchViewStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.seekBarStyle = global::LiLo.Lite.Droid.Resource.Attribute.seekBarStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.selectableItemBackground = global::LiLo.Lite.Droid.Resource.Attribute.selectableItemBackground;
+			global::Plugin.SharedTransitions.Resource.Attribute.selectableItemBackgroundBorderless = global::LiLo.Lite.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Plugin.SharedTransitions.Resource.Attribute.showAsAction = global::LiLo.Lite.Droid.Resource.Attribute.showAsAction;
+			global::Plugin.SharedTransitions.Resource.Attribute.showDividers = global::LiLo.Lite.Droid.Resource.Attribute.showDividers;
+			global::Plugin.SharedTransitions.Resource.Attribute.showMotionSpec = global::LiLo.Lite.Droid.Resource.Attribute.showMotionSpec;
+			global::Plugin.SharedTransitions.Resource.Attribute.showText = global::LiLo.Lite.Droid.Resource.Attribute.showText;
+			global::Plugin.SharedTransitions.Resource.Attribute.showTitle = global::LiLo.Lite.Droid.Resource.Attribute.showTitle;
+			global::Plugin.SharedTransitions.Resource.Attribute.singleChoiceItemLayout = global::LiLo.Lite.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Plugin.SharedTransitions.Resource.Attribute.singleLine = global::LiLo.Lite.Droid.Resource.Attribute.singleLine;
+			global::Plugin.SharedTransitions.Resource.Attribute.singleSelection = global::LiLo.Lite.Droid.Resource.Attribute.singleSelection;
+			global::Plugin.SharedTransitions.Resource.Attribute.snackbarButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.snackbarButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.snackbarStyle = global::LiLo.Lite.Droid.Resource.Attribute.snackbarStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.spanCount = global::LiLo.Lite.Droid.Resource.Attribute.spanCount;
+			global::Plugin.SharedTransitions.Resource.Attribute.spinBars = global::LiLo.Lite.Droid.Resource.Attribute.spinBars;
+			global::Plugin.SharedTransitions.Resource.Attribute.spinnerDropDownItemStyle = global::LiLo.Lite.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.spinnerStyle = global::LiLo.Lite.Droid.Resource.Attribute.spinnerStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.splitTrack = global::LiLo.Lite.Droid.Resource.Attribute.splitTrack;
+			global::Plugin.SharedTransitions.Resource.Attribute.srcCompat = global::LiLo.Lite.Droid.Resource.Attribute.srcCompat;
+			global::Plugin.SharedTransitions.Resource.Attribute.stackFromEnd = global::LiLo.Lite.Droid.Resource.Attribute.stackFromEnd;
+			global::Plugin.SharedTransitions.Resource.Attribute.state_above_anchor = global::LiLo.Lite.Droid.Resource.Attribute.state_above_anchor;
+			global::Plugin.SharedTransitions.Resource.Attribute.state_collapsed = global::LiLo.Lite.Droid.Resource.Attribute.state_collapsed;
+			global::Plugin.SharedTransitions.Resource.Attribute.state_collapsible = global::LiLo.Lite.Droid.Resource.Attribute.state_collapsible;
+			global::Plugin.SharedTransitions.Resource.Attribute.state_liftable = global::LiLo.Lite.Droid.Resource.Attribute.state_liftable;
+			global::Plugin.SharedTransitions.Resource.Attribute.state_lifted = global::LiLo.Lite.Droid.Resource.Attribute.state_lifted;
+			global::Plugin.SharedTransitions.Resource.Attribute.statusBarBackground = global::LiLo.Lite.Droid.Resource.Attribute.statusBarBackground;
+			global::Plugin.SharedTransitions.Resource.Attribute.statusBarScrim = global::LiLo.Lite.Droid.Resource.Attribute.statusBarScrim;
+			global::Plugin.SharedTransitions.Resource.Attribute.strokeColor = global::LiLo.Lite.Droid.Resource.Attribute.strokeColor;
+			global::Plugin.SharedTransitions.Resource.Attribute.strokeWidth = global::LiLo.Lite.Droid.Resource.Attribute.strokeWidth;
+			global::Plugin.SharedTransitions.Resource.Attribute.subMenuArrow = global::LiLo.Lite.Droid.Resource.Attribute.subMenuArrow;
+			global::Plugin.SharedTransitions.Resource.Attribute.submitBackground = global::LiLo.Lite.Droid.Resource.Attribute.submitBackground;
+			global::Plugin.SharedTransitions.Resource.Attribute.subtitle = global::LiLo.Lite.Droid.Resource.Attribute.subtitle;
+			global::Plugin.SharedTransitions.Resource.Attribute.subtitleTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Attribute.subtitleTextColor = global::LiLo.Lite.Droid.Resource.Attribute.subtitleTextColor;
+			global::Plugin.SharedTransitions.Resource.Attribute.subtitleTextStyle = global::LiLo.Lite.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.suggestionRowLayout = global::LiLo.Lite.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Plugin.SharedTransitions.Resource.Attribute.switchMinWidth = global::LiLo.Lite.Droid.Resource.Attribute.switchMinWidth;
+			global::Plugin.SharedTransitions.Resource.Attribute.switchPadding = global::LiLo.Lite.Droid.Resource.Attribute.switchPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.switchStyle = global::LiLo.Lite.Droid.Resource.Attribute.switchStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.switchTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.switchTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabBackground = global::LiLo.Lite.Droid.Resource.Attribute.tabBackground;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabContentStart = global::LiLo.Lite.Droid.Resource.Attribute.tabContentStart;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabGravity = global::LiLo.Lite.Droid.Resource.Attribute.tabGravity;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabIconTint = global::LiLo.Lite.Droid.Resource.Attribute.tabIconTint;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabIconTintMode = global::LiLo.Lite.Droid.Resource.Attribute.tabIconTintMode;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabIndicator = global::LiLo.Lite.Droid.Resource.Attribute.tabIndicator;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabIndicatorAnimationDuration = global::LiLo.Lite.Droid.Resource.Attribute.tabIndicatorAnimationDuration;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabIndicatorColor = global::LiLo.Lite.Droid.Resource.Attribute.tabIndicatorColor;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabIndicatorFullWidth = global::LiLo.Lite.Droid.Resource.Attribute.tabIndicatorFullWidth;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabIndicatorGravity = global::LiLo.Lite.Droid.Resource.Attribute.tabIndicatorGravity;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabIndicatorHeight = global::LiLo.Lite.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabInlineLabel = global::LiLo.Lite.Droid.Resource.Attribute.tabInlineLabel;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabMaxWidth = global::LiLo.Lite.Droid.Resource.Attribute.tabMaxWidth;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabMinWidth = global::LiLo.Lite.Droid.Resource.Attribute.tabMinWidth;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabMode = global::LiLo.Lite.Droid.Resource.Attribute.tabMode;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabPadding = global::LiLo.Lite.Droid.Resource.Attribute.tabPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabPaddingBottom = global::LiLo.Lite.Droid.Resource.Attribute.tabPaddingBottom;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabPaddingEnd = global::LiLo.Lite.Droid.Resource.Attribute.tabPaddingEnd;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabPaddingStart = global::LiLo.Lite.Droid.Resource.Attribute.tabPaddingStart;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabPaddingTop = global::LiLo.Lite.Droid.Resource.Attribute.tabPaddingTop;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabRippleColor = global::LiLo.Lite.Droid.Resource.Attribute.tabRippleColor;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabSelectedTextColor = global::LiLo.Lite.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabStyle = global::LiLo.Lite.Droid.Resource.Attribute.tabStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.tabTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabTextColor = global::LiLo.Lite.Droid.Resource.Attribute.tabTextColor;
+			global::Plugin.SharedTransitions.Resource.Attribute.tabUnboundedRipple = global::LiLo.Lite.Droid.Resource.Attribute.tabUnboundedRipple;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAllCaps = global::LiLo.Lite.Droid.Resource.Attribute.textAllCaps;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceBody1 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceBody1;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceBody2 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceBody2;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceButton = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceButton;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceCaption = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceCaption;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceHeadline1 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceHeadline1;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceHeadline2 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceHeadline2;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceHeadline3 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceHeadline3;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceHeadline4 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceHeadline4;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceHeadline5 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceHeadline5;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceHeadline6 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceHeadline6;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceLargePopupMenu = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceListItem = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceListItemSecondary = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceListItemSmall = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceOverline = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceOverline;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearancePopupMenuHeader = global::LiLo.Lite.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceSearchResultSubtitle = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceSearchResultTitle = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceSmallPopupMenu = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceSubtitle1 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceSubtitle1;
+			global::Plugin.SharedTransitions.Resource.Attribute.textAppearanceSubtitle2 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceSubtitle2;
+			global::Plugin.SharedTransitions.Resource.Attribute.textColorAlertDialogListItem = global::LiLo.Lite.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Plugin.SharedTransitions.Resource.Attribute.textColorSearchUrl = global::LiLo.Lite.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Plugin.SharedTransitions.Resource.Attribute.textEndPadding = global::LiLo.Lite.Droid.Resource.Attribute.textEndPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.textInputStyle = global::LiLo.Lite.Droid.Resource.Attribute.textInputStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.textLocale = global::LiLo.Lite.Droid.Resource.Attribute.textLocale;
+			global::Plugin.SharedTransitions.Resource.Attribute.textStartPadding = global::LiLo.Lite.Droid.Resource.Attribute.textStartPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.theme = global::LiLo.Lite.Droid.Resource.Attribute.theme;
+			global::Plugin.SharedTransitions.Resource.Attribute.thickness = global::LiLo.Lite.Droid.Resource.Attribute.thickness;
+			global::Plugin.SharedTransitions.Resource.Attribute.thumbTextPadding = global::LiLo.Lite.Droid.Resource.Attribute.thumbTextPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.thumbTint = global::LiLo.Lite.Droid.Resource.Attribute.thumbTint;
+			global::Plugin.SharedTransitions.Resource.Attribute.thumbTintMode = global::LiLo.Lite.Droid.Resource.Attribute.thumbTintMode;
+			global::Plugin.SharedTransitions.Resource.Attribute.tickMark = global::LiLo.Lite.Droid.Resource.Attribute.tickMark;
+			global::Plugin.SharedTransitions.Resource.Attribute.tickMarkTint = global::LiLo.Lite.Droid.Resource.Attribute.tickMarkTint;
+			global::Plugin.SharedTransitions.Resource.Attribute.tickMarkTintMode = global::LiLo.Lite.Droid.Resource.Attribute.tickMarkTintMode;
+			global::Plugin.SharedTransitions.Resource.Attribute.tint = global::LiLo.Lite.Droid.Resource.Attribute.tint;
+			global::Plugin.SharedTransitions.Resource.Attribute.tintMode = global::LiLo.Lite.Droid.Resource.Attribute.tintMode;
+			global::Plugin.SharedTransitions.Resource.Attribute.title = global::LiLo.Lite.Droid.Resource.Attribute.title;
+			global::Plugin.SharedTransitions.Resource.Attribute.titleEnabled = global::LiLo.Lite.Droid.Resource.Attribute.titleEnabled;
+			global::Plugin.SharedTransitions.Resource.Attribute.titleMargin = global::LiLo.Lite.Droid.Resource.Attribute.titleMargin;
+			global::Plugin.SharedTransitions.Resource.Attribute.titleMarginBottom = global::LiLo.Lite.Droid.Resource.Attribute.titleMarginBottom;
+			global::Plugin.SharedTransitions.Resource.Attribute.titleMarginEnd = global::LiLo.Lite.Droid.Resource.Attribute.titleMarginEnd;
+			global::Plugin.SharedTransitions.Resource.Attribute.titleMargins = global::LiLo.Lite.Droid.Resource.Attribute.titleMargins;
+			global::Plugin.SharedTransitions.Resource.Attribute.titleMarginStart = global::LiLo.Lite.Droid.Resource.Attribute.titleMarginStart;
+			global::Plugin.SharedTransitions.Resource.Attribute.titleMarginTop = global::LiLo.Lite.Droid.Resource.Attribute.titleMarginTop;
+			global::Plugin.SharedTransitions.Resource.Attribute.titleTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.titleTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Attribute.titleTextColor = global::LiLo.Lite.Droid.Resource.Attribute.titleTextColor;
+			global::Plugin.SharedTransitions.Resource.Attribute.titleTextStyle = global::LiLo.Lite.Droid.Resource.Attribute.titleTextStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.toolbarId = global::LiLo.Lite.Droid.Resource.Attribute.toolbarId;
+			global::Plugin.SharedTransitions.Resource.Attribute.toolbarNavigationButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.toolbarStyle = global::LiLo.Lite.Droid.Resource.Attribute.toolbarStyle;
+			global::Plugin.SharedTransitions.Resource.Attribute.tooltipForegroundColor = global::LiLo.Lite.Droid.Resource.Attribute.tooltipForegroundColor;
+			global::Plugin.SharedTransitions.Resource.Attribute.tooltipFrameBackground = global::LiLo.Lite.Droid.Resource.Attribute.tooltipFrameBackground;
+			global::Plugin.SharedTransitions.Resource.Attribute.tooltipText = global::LiLo.Lite.Droid.Resource.Attribute.tooltipText;
+			global::Plugin.SharedTransitions.Resource.Attribute.track = global::LiLo.Lite.Droid.Resource.Attribute.track;
+			global::Plugin.SharedTransitions.Resource.Attribute.trackTint = global::LiLo.Lite.Droid.Resource.Attribute.trackTint;
+			global::Plugin.SharedTransitions.Resource.Attribute.trackTintMode = global::LiLo.Lite.Droid.Resource.Attribute.trackTintMode;
+			global::Plugin.SharedTransitions.Resource.Attribute.ttcIndex = global::LiLo.Lite.Droid.Resource.Attribute.ttcIndex;
+			global::Plugin.SharedTransitions.Resource.Attribute.useCompatPadding = global::LiLo.Lite.Droid.Resource.Attribute.useCompatPadding;
+			global::Plugin.SharedTransitions.Resource.Attribute.viewInflaterClass = global::LiLo.Lite.Droid.Resource.Attribute.viewInflaterClass;
+			global::Plugin.SharedTransitions.Resource.Attribute.voiceIcon = global::LiLo.Lite.Droid.Resource.Attribute.voiceIcon;
+			global::Plugin.SharedTransitions.Resource.Attribute.windowActionBar = global::LiLo.Lite.Droid.Resource.Attribute.windowActionBar;
+			global::Plugin.SharedTransitions.Resource.Attribute.windowActionBarOverlay = global::LiLo.Lite.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Plugin.SharedTransitions.Resource.Attribute.windowActionModeOverlay = global::LiLo.Lite.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Plugin.SharedTransitions.Resource.Attribute.windowFixedHeightMajor = global::LiLo.Lite.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Plugin.SharedTransitions.Resource.Attribute.windowFixedHeightMinor = global::LiLo.Lite.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Plugin.SharedTransitions.Resource.Attribute.windowFixedWidthMajor = global::LiLo.Lite.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Plugin.SharedTransitions.Resource.Attribute.windowFixedWidthMinor = global::LiLo.Lite.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Plugin.SharedTransitions.Resource.Attribute.windowMinWidthMajor = global::LiLo.Lite.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Plugin.SharedTransitions.Resource.Attribute.windowMinWidthMinor = global::LiLo.Lite.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Plugin.SharedTransitions.Resource.Attribute.windowNoTitle = global::LiLo.Lite.Droid.Resource.Attribute.windowNoTitle;
+			global::Plugin.SharedTransitions.Resource.Boolean.abc_action_bar_embed_tabs = global::LiLo.Lite.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Plugin.SharedTransitions.Resource.Boolean.abc_allow_stacked_button_bar = global::LiLo.Lite.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Plugin.SharedTransitions.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::LiLo.Lite.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Plugin.SharedTransitions.Resource.Boolean.mtrl_btn_textappearance_all_caps = global::LiLo.Lite.Droid.Resource.Boolean.mtrl_btn_textappearance_all_caps;
+			global::Plugin.SharedTransitions.Resource.Color.abc_background_cache_hint_selector_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.abc_background_cache_hint_selector_material_light = global::LiLo.Lite.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.abc_btn_colored_borderless_text_material = global::LiLo.Lite.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Plugin.SharedTransitions.Resource.Color.abc_btn_colored_text_material = global::LiLo.Lite.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::Plugin.SharedTransitions.Resource.Color.abc_color_highlight_material = global::LiLo.Lite.Droid.Resource.Color.abc_color_highlight_material;
+			global::Plugin.SharedTransitions.Resource.Color.abc_hint_foreground_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.abc_hint_foreground_material_light = global::LiLo.Lite.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.abc_primary_text_disable_only_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.abc_primary_text_disable_only_material_light = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.abc_primary_text_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.abc_primary_text_material_light = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.abc_search_url_text = global::LiLo.Lite.Droid.Resource.Color.abc_search_url_text;
+			global::Plugin.SharedTransitions.Resource.Color.abc_search_url_text_normal = global::LiLo.Lite.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Plugin.SharedTransitions.Resource.Color.abc_search_url_text_pressed = global::LiLo.Lite.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Plugin.SharedTransitions.Resource.Color.abc_search_url_text_selected = global::LiLo.Lite.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Plugin.SharedTransitions.Resource.Color.abc_secondary_text_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.abc_secondary_text_material_light = global::LiLo.Lite.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.abc_tint_btn_checkable = global::LiLo.Lite.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::Plugin.SharedTransitions.Resource.Color.abc_tint_default = global::LiLo.Lite.Droid.Resource.Color.abc_tint_default;
+			global::Plugin.SharedTransitions.Resource.Color.abc_tint_edittext = global::LiLo.Lite.Droid.Resource.Color.abc_tint_edittext;
+			global::Plugin.SharedTransitions.Resource.Color.abc_tint_seek_thumb = global::LiLo.Lite.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Plugin.SharedTransitions.Resource.Color.abc_tint_spinner = global::LiLo.Lite.Droid.Resource.Color.abc_tint_spinner;
+			global::Plugin.SharedTransitions.Resource.Color.abc_tint_switch_track = global::LiLo.Lite.Droid.Resource.Color.abc_tint_switch_track;
+			global::Plugin.SharedTransitions.Resource.Color.accent_material_dark = global::LiLo.Lite.Droid.Resource.Color.accent_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.accent_material_light = global::LiLo.Lite.Droid.Resource.Color.accent_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.background_floating_material_dark = global::LiLo.Lite.Droid.Resource.Color.background_floating_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.background_floating_material_light = global::LiLo.Lite.Droid.Resource.Color.background_floating_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.background_material_dark = global::LiLo.Lite.Droid.Resource.Color.background_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.background_material_light = global::LiLo.Lite.Droid.Resource.Color.background_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.bright_foreground_disabled_material_dark = global::LiLo.Lite.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.bright_foreground_disabled_material_light = global::LiLo.Lite.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.bright_foreground_inverse_material_dark = global::LiLo.Lite.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.bright_foreground_inverse_material_light = global::LiLo.Lite.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.bright_foreground_material_dark = global::LiLo.Lite.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.bright_foreground_material_light = global::LiLo.Lite.Droid.Resource.Color.bright_foreground_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.browser_actions_bg_grey = global::LiLo.Lite.Droid.Resource.Color.browser_actions_bg_grey;
+			global::Plugin.SharedTransitions.Resource.Color.browser_actions_divider_color = global::LiLo.Lite.Droid.Resource.Color.browser_actions_divider_color;
+			global::Plugin.SharedTransitions.Resource.Color.browser_actions_text_color = global::LiLo.Lite.Droid.Resource.Color.browser_actions_text_color;
+			global::Plugin.SharedTransitions.Resource.Color.browser_actions_title_color = global::LiLo.Lite.Droid.Resource.Color.browser_actions_title_color;
+			global::Plugin.SharedTransitions.Resource.Color.button_material_dark = global::LiLo.Lite.Droid.Resource.Color.button_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.button_material_light = global::LiLo.Lite.Droid.Resource.Color.button_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.cardview_dark_background = global::LiLo.Lite.Droid.Resource.Color.cardview_dark_background;
+			global::Plugin.SharedTransitions.Resource.Color.cardview_light_background = global::LiLo.Lite.Droid.Resource.Color.cardview_light_background;
+			global::Plugin.SharedTransitions.Resource.Color.cardview_shadow_end_color = global::LiLo.Lite.Droid.Resource.Color.cardview_shadow_end_color;
+			global::Plugin.SharedTransitions.Resource.Color.cardview_shadow_start_color = global::LiLo.Lite.Droid.Resource.Color.cardview_shadow_start_color;
+			global::Plugin.SharedTransitions.Resource.Color.design_bottom_navigation_shadow_color = global::LiLo.Lite.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::Plugin.SharedTransitions.Resource.Color.design_default_color_primary = global::LiLo.Lite.Droid.Resource.Color.design_default_color_primary;
+			global::Plugin.SharedTransitions.Resource.Color.design_default_color_primary_dark = global::LiLo.Lite.Droid.Resource.Color.design_default_color_primary_dark;
+			global::Plugin.SharedTransitions.Resource.Color.design_error = global::LiLo.Lite.Droid.Resource.Color.design_error;
+			global::Plugin.SharedTransitions.Resource.Color.design_fab_shadow_end_color = global::LiLo.Lite.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::Plugin.SharedTransitions.Resource.Color.design_fab_shadow_mid_color = global::LiLo.Lite.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::Plugin.SharedTransitions.Resource.Color.design_fab_shadow_start_color = global::LiLo.Lite.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::Plugin.SharedTransitions.Resource.Color.design_fab_stroke_end_inner_color = global::LiLo.Lite.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Plugin.SharedTransitions.Resource.Color.design_fab_stroke_end_outer_color = global::LiLo.Lite.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Plugin.SharedTransitions.Resource.Color.design_fab_stroke_top_inner_color = global::LiLo.Lite.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Plugin.SharedTransitions.Resource.Color.design_fab_stroke_top_outer_color = global::LiLo.Lite.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Plugin.SharedTransitions.Resource.Color.design_snackbar_background_color = global::LiLo.Lite.Droid.Resource.Color.design_snackbar_background_color;
+			global::Plugin.SharedTransitions.Resource.Color.design_tint_password_toggle = global::LiLo.Lite.Droid.Resource.Color.design_tint_password_toggle;
+			global::Plugin.SharedTransitions.Resource.Color.dim_foreground_disabled_material_dark = global::LiLo.Lite.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.dim_foreground_disabled_material_light = global::LiLo.Lite.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.dim_foreground_material_dark = global::LiLo.Lite.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.dim_foreground_material_light = global::LiLo.Lite.Droid.Resource.Color.dim_foreground_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.error_color_material_dark = global::LiLo.Lite.Droid.Resource.Color.error_color_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.error_color_material_light = global::LiLo.Lite.Droid.Resource.Color.error_color_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.foreground_material_dark = global::LiLo.Lite.Droid.Resource.Color.foreground_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.foreground_material_light = global::LiLo.Lite.Droid.Resource.Color.foreground_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.highlighted_text_material_dark = global::LiLo.Lite.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.highlighted_text_material_light = global::LiLo.Lite.Droid.Resource.Color.highlighted_text_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.material_blue_grey_800 = global::LiLo.Lite.Droid.Resource.Color.material_blue_grey_800;
+			global::Plugin.SharedTransitions.Resource.Color.material_blue_grey_900 = global::LiLo.Lite.Droid.Resource.Color.material_blue_grey_900;
+			global::Plugin.SharedTransitions.Resource.Color.material_blue_grey_950 = global::LiLo.Lite.Droid.Resource.Color.material_blue_grey_950;
+			global::Plugin.SharedTransitions.Resource.Color.material_deep_teal_200 = global::LiLo.Lite.Droid.Resource.Color.material_deep_teal_200;
+			global::Plugin.SharedTransitions.Resource.Color.material_deep_teal_500 = global::LiLo.Lite.Droid.Resource.Color.material_deep_teal_500;
+			global::Plugin.SharedTransitions.Resource.Color.material_grey_100 = global::LiLo.Lite.Droid.Resource.Color.material_grey_100;
+			global::Plugin.SharedTransitions.Resource.Color.material_grey_300 = global::LiLo.Lite.Droid.Resource.Color.material_grey_300;
+			global::Plugin.SharedTransitions.Resource.Color.material_grey_50 = global::LiLo.Lite.Droid.Resource.Color.material_grey_50;
+			global::Plugin.SharedTransitions.Resource.Color.material_grey_600 = global::LiLo.Lite.Droid.Resource.Color.material_grey_600;
+			global::Plugin.SharedTransitions.Resource.Color.material_grey_800 = global::LiLo.Lite.Droid.Resource.Color.material_grey_800;
+			global::Plugin.SharedTransitions.Resource.Color.material_grey_850 = global::LiLo.Lite.Droid.Resource.Color.material_grey_850;
+			global::Plugin.SharedTransitions.Resource.Color.material_grey_900 = global::LiLo.Lite.Droid.Resource.Color.material_grey_900;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_bottom_nav_colored_item_tint = global::LiLo.Lite.Droid.Resource.Color.mtrl_bottom_nav_colored_item_tint;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_bottom_nav_item_tint = global::LiLo.Lite.Droid.Resource.Color.mtrl_bottom_nav_item_tint;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_btn_bg_color_disabled = global::LiLo.Lite.Droid.Resource.Color.mtrl_btn_bg_color_disabled;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_btn_bg_color_selector = global::LiLo.Lite.Droid.Resource.Color.mtrl_btn_bg_color_selector;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_btn_ripple_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_btn_ripple_color;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_btn_stroke_color_selector = global::LiLo.Lite.Droid.Resource.Color.mtrl_btn_stroke_color_selector;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_btn_text_btn_ripple_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_btn_text_btn_ripple_color;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_btn_text_color_disabled = global::LiLo.Lite.Droid.Resource.Color.mtrl_btn_text_color_disabled;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_btn_text_color_selector = global::LiLo.Lite.Droid.Resource.Color.mtrl_btn_text_color_selector;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_btn_transparent_bg_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_btn_transparent_bg_color;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_chip_background_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_chip_background_color;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_chip_close_icon_tint = global::LiLo.Lite.Droid.Resource.Color.mtrl_chip_close_icon_tint;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_chip_ripple_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_chip_ripple_color;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_chip_text_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_chip_text_color;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_fab_ripple_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_fab_ripple_color;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_scrim_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_scrim_color;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_tabs_colored_ripple_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_tabs_colored_ripple_color;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_tabs_icon_color_selector = global::LiLo.Lite.Droid.Resource.Color.mtrl_tabs_icon_color_selector;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_tabs_icon_color_selector_colored = global::LiLo.Lite.Droid.Resource.Color.mtrl_tabs_icon_color_selector_colored;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_tabs_legacy_text_color_selector = global::LiLo.Lite.Droid.Resource.Color.mtrl_tabs_legacy_text_color_selector;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_tabs_ripple_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_tabs_ripple_color;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_textinput_default_box_stroke_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_textinput_default_box_stroke_color;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_textinput_disabled_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_textinput_disabled_color;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_textinput_filled_box_default_background_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_textinput_filled_box_default_background_color;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_textinput_hovered_box_stroke_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_textinput_hovered_box_stroke_color;
+			global::Plugin.SharedTransitions.Resource.Color.mtrl_text_btn_text_color_selector = global::LiLo.Lite.Droid.Resource.Color.mtrl_text_btn_text_color_selector;
+			global::Plugin.SharedTransitions.Resource.Color.notification_action_color_filter = global::LiLo.Lite.Droid.Resource.Color.notification_action_color_filter;
+			global::Plugin.SharedTransitions.Resource.Color.notification_icon_bg_color = global::LiLo.Lite.Droid.Resource.Color.notification_icon_bg_color;
+			global::Plugin.SharedTransitions.Resource.Color.notification_material_background_media_default_color = global::LiLo.Lite.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::Plugin.SharedTransitions.Resource.Color.primary_dark_material_dark = global::LiLo.Lite.Droid.Resource.Color.primary_dark_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.primary_dark_material_light = global::LiLo.Lite.Droid.Resource.Color.primary_dark_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.primary_material_dark = global::LiLo.Lite.Droid.Resource.Color.primary_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.primary_material_light = global::LiLo.Lite.Droid.Resource.Color.primary_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.primary_text_default_material_dark = global::LiLo.Lite.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.primary_text_default_material_light = global::LiLo.Lite.Droid.Resource.Color.primary_text_default_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.primary_text_disabled_material_dark = global::LiLo.Lite.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.primary_text_disabled_material_light = global::LiLo.Lite.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.ripple_material_dark = global::LiLo.Lite.Droid.Resource.Color.ripple_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.ripple_material_light = global::LiLo.Lite.Droid.Resource.Color.ripple_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.secondary_text_default_material_dark = global::LiLo.Lite.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.secondary_text_default_material_light = global::LiLo.Lite.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.secondary_text_disabled_material_dark = global::LiLo.Lite.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.secondary_text_disabled_material_light = global::LiLo.Lite.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.switch_thumb_disabled_material_dark = global::LiLo.Lite.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.switch_thumb_disabled_material_light = global::LiLo.Lite.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.switch_thumb_material_dark = global::LiLo.Lite.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.switch_thumb_material_light = global::LiLo.Lite.Droid.Resource.Color.switch_thumb_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.switch_thumb_normal_material_dark = global::LiLo.Lite.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Plugin.SharedTransitions.Resource.Color.switch_thumb_normal_material_light = global::LiLo.Lite.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Plugin.SharedTransitions.Resource.Color.tooltip_background_dark = global::LiLo.Lite.Droid.Resource.Color.tooltip_background_dark;
+			global::Plugin.SharedTransitions.Resource.Color.tooltip_background_light = global::LiLo.Lite.Droid.Resource.Color.tooltip_background_light;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_action_bar_content_inset_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_action_bar_default_height_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_action_bar_default_padding_end_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_action_bar_default_padding_start_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_action_bar_elevation_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_action_bar_stacked_max_height = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_action_button_min_height_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_action_button_min_width_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_action_button_min_width_overflow_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_alert_dialog_button_bar_height = global::LiLo.Lite.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_alert_dialog_button_dimen = global::LiLo.Lite.Droid.Resource.Dimension.abc_alert_dialog_button_dimen;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_button_inset_horizontal_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_button_inset_vertical_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_button_padding_horizontal_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_button_padding_vertical_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::LiLo.Lite.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_config_prefDialogWidth = global::LiLo.Lite.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_control_corner_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_control_inset_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_control_padding_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_dialog_corner_radius_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_corner_radius_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_dialog_fixed_height_major = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_dialog_fixed_height_minor = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_dialog_fixed_width_major = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_dialog_fixed_width_minor = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_dialog_min_width_major = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_dialog_min_width_minor = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_dialog_padding_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_dialog_padding_top_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_dialog_title_divider_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_disabled_alpha_material_dark = global::LiLo.Lite.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_disabled_alpha_material_light = global::LiLo.Lite.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_dropdownitem_icon_width = global::LiLo.Lite.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_dropdownitem_text_padding_left = global::LiLo.Lite.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_dropdownitem_text_padding_right = global::LiLo.Lite.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_edit_text_inset_bottom_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_edit_text_inset_top_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_floating_window_z = global::LiLo.Lite.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_list_item_height_large_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_list_item_height_large_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_list_item_height_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_list_item_height_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_list_item_height_small_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_list_item_height_small_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_list_item_padding_horizontal_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_panel_menu_list_width = global::LiLo.Lite.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_progress_bar_height_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_search_view_preferred_height = global::LiLo.Lite.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_search_view_preferred_width = global::LiLo.Lite.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_seekbar_track_background_height_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_seekbar_track_progress_height_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_select_dialog_padding_start_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_switch_padding = global::LiLo.Lite.Droid.Resource.Dimension.abc_switch_padding;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_text_size_body_1_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_text_size_body_2_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_text_size_button_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_text_size_caption_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_text_size_display_1_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_text_size_display_2_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_text_size_display_3_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_text_size_display_4_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_text_size_headline_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_text_size_large_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_text_size_medium_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_text_size_menu_header_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_text_size_menu_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_text_size_small_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_text_size_subhead_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_text_size_title_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.abc_text_size_title_material_toolbar = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Plugin.SharedTransitions.Resource.Dimension.browser_actions_context_menu_max_width = global::LiLo.Lite.Droid.Resource.Dimension.browser_actions_context_menu_max_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.browser_actions_context_menu_min_padding = global::LiLo.Lite.Droid.Resource.Dimension.browser_actions_context_menu_min_padding;
+			global::Plugin.SharedTransitions.Resource.Dimension.cardview_compat_inset_shadow = global::LiLo.Lite.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Plugin.SharedTransitions.Resource.Dimension.cardview_default_elevation = global::LiLo.Lite.Droid.Resource.Dimension.cardview_default_elevation;
+			global::Plugin.SharedTransitions.Resource.Dimension.cardview_default_radius = global::LiLo.Lite.Droid.Resource.Dimension.cardview_default_radius;
+			global::Plugin.SharedTransitions.Resource.Dimension.compat_button_inset_horizontal_material = global::LiLo.Lite.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.compat_button_inset_vertical_material = global::LiLo.Lite.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.compat_button_padding_horizontal_material = global::LiLo.Lite.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.compat_button_padding_vertical_material = global::LiLo.Lite.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.compat_control_corner_material = global::LiLo.Lite.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Plugin.SharedTransitions.Resource.Dimension.compat_notification_large_icon_max_height = global::LiLo.Lite.Droid.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::Plugin.SharedTransitions.Resource.Dimension.compat_notification_large_icon_max_width = global::LiLo.Lite.Droid.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_appbar_elevation = global::LiLo.Lite.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_bottom_navigation_active_item_min_width = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_active_item_min_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_bottom_navigation_active_text_size = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_bottom_navigation_elevation = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_bottom_navigation_height = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_bottom_navigation_icon_size = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_icon_size;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_bottom_navigation_item_max_width = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_bottom_navigation_item_min_width = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_bottom_navigation_margin = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_bottom_navigation_shadow_height = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_bottom_navigation_text_size = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_bottom_sheet_modal_elevation = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_bottom_sheet_peek_height_min = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_fab_border_width = global::LiLo.Lite.Droid.Resource.Dimension.design_fab_border_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_fab_elevation = global::LiLo.Lite.Droid.Resource.Dimension.design_fab_elevation;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_fab_image_size = global::LiLo.Lite.Droid.Resource.Dimension.design_fab_image_size;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_fab_size_mini = global::LiLo.Lite.Droid.Resource.Dimension.design_fab_size_mini;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_fab_size_normal = global::LiLo.Lite.Droid.Resource.Dimension.design_fab_size_normal;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_fab_translation_z_hovered_focused = global::LiLo.Lite.Droid.Resource.Dimension.design_fab_translation_z_hovered_focused;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_fab_translation_z_pressed = global::LiLo.Lite.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_navigation_elevation = global::LiLo.Lite.Droid.Resource.Dimension.design_navigation_elevation;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_navigation_icon_padding = global::LiLo.Lite.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_navigation_icon_size = global::LiLo.Lite.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_navigation_item_horizontal_padding = global::LiLo.Lite.Droid.Resource.Dimension.design_navigation_item_horizontal_padding;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_navigation_item_icon_padding = global::LiLo.Lite.Droid.Resource.Dimension.design_navigation_item_icon_padding;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_navigation_max_width = global::LiLo.Lite.Droid.Resource.Dimension.design_navigation_max_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_navigation_padding_bottom = global::LiLo.Lite.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_navigation_separator_vertical_padding = global::LiLo.Lite.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_snackbar_action_inline_max_width = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_snackbar_background_corner_radius = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_snackbar_elevation = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_snackbar_max_width = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_snackbar_min_width = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_snackbar_padding_horizontal = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_snackbar_padding_vertical = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_snackbar_text_size = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_tab_max_width = global::LiLo.Lite.Droid.Resource.Dimension.design_tab_max_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_tab_scrollable_min_width = global::LiLo.Lite.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_tab_text_size = global::LiLo.Lite.Droid.Resource.Dimension.design_tab_text_size;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_tab_text_size_2line = global::LiLo.Lite.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::Plugin.SharedTransitions.Resource.Dimension.design_textinput_caption_translate_y = global::LiLo.Lite.Droid.Resource.Dimension.design_textinput_caption_translate_y;
+			global::Plugin.SharedTransitions.Resource.Dimension.disabled_alpha_material_dark = global::LiLo.Lite.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Plugin.SharedTransitions.Resource.Dimension.disabled_alpha_material_light = global::LiLo.Lite.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Plugin.SharedTransitions.Resource.Dimension.fastscroll_default_thickness = global::LiLo.Lite.Droid.Resource.Dimension.fastscroll_default_thickness;
+			global::Plugin.SharedTransitions.Resource.Dimension.fastscroll_margin = global::LiLo.Lite.Droid.Resource.Dimension.fastscroll_margin;
+			global::Plugin.SharedTransitions.Resource.Dimension.fastscroll_minimum_range = global::LiLo.Lite.Droid.Resource.Dimension.fastscroll_minimum_range;
+			global::Plugin.SharedTransitions.Resource.Dimension.highlight_alpha_material_colored = global::LiLo.Lite.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Plugin.SharedTransitions.Resource.Dimension.highlight_alpha_material_dark = global::LiLo.Lite.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Plugin.SharedTransitions.Resource.Dimension.highlight_alpha_material_light = global::LiLo.Lite.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Plugin.SharedTransitions.Resource.Dimension.hint_alpha_material_dark = global::LiLo.Lite.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::Plugin.SharedTransitions.Resource.Dimension.hint_alpha_material_light = global::LiLo.Lite.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::Plugin.SharedTransitions.Resource.Dimension.hint_pressed_alpha_material_dark = global::LiLo.Lite.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Plugin.SharedTransitions.Resource.Dimension.hint_pressed_alpha_material_light = global::LiLo.Lite.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Plugin.SharedTransitions.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::LiLo.Lite.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Plugin.SharedTransitions.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::LiLo.Lite.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Plugin.SharedTransitions.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::LiLo.Lite.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_bottomappbar_height = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_bottomappbar_height;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_corner_radius = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_corner_radius;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_dialog_btn_min_width = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_dialog_btn_min_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_disabled_elevation = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_disabled_elevation;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_disabled_z = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_disabled_z;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_elevation = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_elevation;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_focused_z = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_focused_z;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_hovered_z = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_hovered_z;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_icon_btn_padding_left = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_icon_btn_padding_left;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_icon_padding = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_icon_padding;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_inset = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_inset;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_letter_spacing = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_letter_spacing;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_padding_bottom = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_padding_bottom;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_padding_left = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_padding_left;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_padding_right = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_padding_right;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_padding_top = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_padding_top;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_pressed_z = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_pressed_z;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_stroke_size = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_stroke_size;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_text_btn_icon_padding = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_text_btn_icon_padding;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_text_btn_padding_left = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_left;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_text_btn_padding_right = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_right;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_text_size = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_text_size;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_btn_z = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_z;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_card_elevation = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_card_elevation;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_card_spacing = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_card_spacing;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_chip_pressed_translation_z = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_chip_pressed_translation_z;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_chip_text_size = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_chip_text_size;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_fab_elevation = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_fab_elevation;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_fab_translation_z_hovered_focused = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_fab_translation_z_hovered_focused;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_fab_translation_z_pressed = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_fab_translation_z_pressed;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_navigation_elevation = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_navigation_elevation;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_navigation_item_horizontal_padding = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_navigation_item_horizontal_padding;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_navigation_item_icon_padding = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_navigation_item_icon_padding;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_snackbar_background_corner_radius = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_snackbar_background_corner_radius;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_snackbar_margin = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_snackbar_margin;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_textinput_box_bottom_offset = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_textinput_box_bottom_offset;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_textinput_box_corner_radius_medium = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_medium;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_textinput_box_corner_radius_small = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_small;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_textinput_box_label_cutout_padding = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_textinput_box_label_cutout_padding;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_textinput_box_padding_end = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_textinput_box_padding_end;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_textinput_box_stroke_width_default = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_default;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_textinput_box_stroke_width_focused = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_focused;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding;
+			global::Plugin.SharedTransitions.Resource.Dimension.mtrl_toolbar_default_height = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_toolbar_default_height;
+			global::Plugin.SharedTransitions.Resource.Dimension.notification_action_icon_size = global::LiLo.Lite.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Plugin.SharedTransitions.Resource.Dimension.notification_action_text_size = global::LiLo.Lite.Droid.Resource.Dimension.notification_action_text_size;
+			global::Plugin.SharedTransitions.Resource.Dimension.notification_big_circle_margin = global::LiLo.Lite.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Plugin.SharedTransitions.Resource.Dimension.notification_content_margin_start = global::LiLo.Lite.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Plugin.SharedTransitions.Resource.Dimension.notification_large_icon_height = global::LiLo.Lite.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Plugin.SharedTransitions.Resource.Dimension.notification_large_icon_width = global::LiLo.Lite.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.notification_main_column_padding_top = global::LiLo.Lite.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Plugin.SharedTransitions.Resource.Dimension.notification_media_narrow_margin = global::LiLo.Lite.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Plugin.SharedTransitions.Resource.Dimension.notification_right_icon_size = global::LiLo.Lite.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Plugin.SharedTransitions.Resource.Dimension.notification_right_side_padding_top = global::LiLo.Lite.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Plugin.SharedTransitions.Resource.Dimension.notification_small_icon_background_padding = global::LiLo.Lite.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Plugin.SharedTransitions.Resource.Dimension.notification_small_icon_size_as_large = global::LiLo.Lite.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Plugin.SharedTransitions.Resource.Dimension.notification_subtext_size = global::LiLo.Lite.Droid.Resource.Dimension.notification_subtext_size;
+			global::Plugin.SharedTransitions.Resource.Dimension.notification_top_pad = global::LiLo.Lite.Droid.Resource.Dimension.notification_top_pad;
+			global::Plugin.SharedTransitions.Resource.Dimension.notification_top_pad_large_text = global::LiLo.Lite.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Plugin.SharedTransitions.Resource.Dimension.subtitle_corner_radius = global::LiLo.Lite.Droid.Resource.Dimension.subtitle_corner_radius;
+			global::Plugin.SharedTransitions.Resource.Dimension.subtitle_outline_width = global::LiLo.Lite.Droid.Resource.Dimension.subtitle_outline_width;
+			global::Plugin.SharedTransitions.Resource.Dimension.subtitle_shadow_offset = global::LiLo.Lite.Droid.Resource.Dimension.subtitle_shadow_offset;
+			global::Plugin.SharedTransitions.Resource.Dimension.subtitle_shadow_radius = global::LiLo.Lite.Droid.Resource.Dimension.subtitle_shadow_radius;
+			global::Plugin.SharedTransitions.Resource.Dimension.tooltip_corner_radius = global::LiLo.Lite.Droid.Resource.Dimension.tooltip_corner_radius;
+			global::Plugin.SharedTransitions.Resource.Dimension.tooltip_horizontal_padding = global::LiLo.Lite.Droid.Resource.Dimension.tooltip_horizontal_padding;
+			global::Plugin.SharedTransitions.Resource.Dimension.tooltip_margin = global::LiLo.Lite.Droid.Resource.Dimension.tooltip_margin;
+			global::Plugin.SharedTransitions.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::LiLo.Lite.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::Plugin.SharedTransitions.Resource.Dimension.tooltip_precise_anchor_threshold = global::LiLo.Lite.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::Plugin.SharedTransitions.Resource.Dimension.tooltip_vertical_padding = global::LiLo.Lite.Droid.Resource.Dimension.tooltip_vertical_padding;
+			global::Plugin.SharedTransitions.Resource.Dimension.tooltip_y_offset_non_touch = global::LiLo.Lite.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::Plugin.SharedTransitions.Resource.Dimension.tooltip_y_offset_touch = global::LiLo.Lite.Droid.Resource.Dimension.tooltip_y_offset_touch;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_action_bar_item_background_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_borderless_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_check_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_check_material_anim = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_check_material_anim;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_colored_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_default_mtrl_shape = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_radio_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_radio_material_anim = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_radio_material_anim;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_cab_background_internal_bg = global::LiLo.Lite.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_cab_background_top_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_control_background_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_control_background_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_dialog_material_background = global::LiLo.Lite.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_edit_text_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_ab_back_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_clear_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_go_search_api_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_menu_overflow_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_search_api_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_star_black_16dp = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_star_black_36dp = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_star_black_48dp = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_star_half_black_16dp = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_star_half_black_36dp = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_star_half_black_48dp = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ic_voice_search_api_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_item_background_holo_dark = global::LiLo.Lite.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_item_background_holo_light = global::LiLo.Lite.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_list_divider_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_divider_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_list_divider_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_list_focused_holo = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_list_longpressed_holo = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_list_pressed_holo_dark = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_list_pressed_holo_light = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_list_selector_disabled_holo_light = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_list_selector_holo_dark = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_list_selector_holo_light = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::LiLo.Lite.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_popup_background_mtrl_mult = global::LiLo.Lite.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ratingbar_indicator_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ratingbar_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_ratingbar_small_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::LiLo.Lite.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::LiLo.Lite.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_seekbar_thumb_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_seekbar_tick_mark_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_seekbar_track_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_spinner_textfield_background_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_switch_thumb_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_switch_track_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_tab_indicator_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_textfield_search_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_text_cursor_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::LiLo.Lite.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::LiLo.Lite.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::LiLo.Lite.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::LiLo.Lite.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::LiLo.Lite.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::LiLo.Lite.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Plugin.SharedTransitions.Resource.Drawable.abc_vector_test = global::LiLo.Lite.Droid.Resource.Drawable.abc_vector_test;
+			global::Plugin.SharedTransitions.Resource.Drawable.avd_hide_password = global::LiLo.Lite.Droid.Resource.Drawable.avd_hide_password;
+			global::Plugin.SharedTransitions.Resource.Drawable.avd_show_password = global::LiLo.Lite.Droid.Resource.Drawable.avd_show_password;
+			global::Plugin.SharedTransitions.Resource.Drawable.btn_checkbox_checked_mtrl = global::LiLo.Lite.Droid.Resource.Drawable.btn_checkbox_checked_mtrl;
+			global::Plugin.SharedTransitions.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::LiLo.Lite.Droid.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
+			global::Plugin.SharedTransitions.Resource.Drawable.btn_checkbox_unchecked_mtrl = global::LiLo.Lite.Droid.Resource.Drawable.btn_checkbox_unchecked_mtrl;
+			global::Plugin.SharedTransitions.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation = global::LiLo.Lite.Droid.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation;
+			global::Plugin.SharedTransitions.Resource.Drawable.btn_radio_off_mtrl = global::LiLo.Lite.Droid.Resource.Drawable.btn_radio_off_mtrl;
+			global::Plugin.SharedTransitions.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::LiLo.Lite.Droid.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
+			global::Plugin.SharedTransitions.Resource.Drawable.btn_radio_on_mtrl = global::LiLo.Lite.Droid.Resource.Drawable.btn_radio_on_mtrl;
+			global::Plugin.SharedTransitions.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::LiLo.Lite.Droid.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
+			global::Plugin.SharedTransitions.Resource.Drawable.design_bottom_navigation_item_background = global::LiLo.Lite.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::Plugin.SharedTransitions.Resource.Drawable.design_fab_background = global::LiLo.Lite.Droid.Resource.Drawable.design_fab_background;
+			global::Plugin.SharedTransitions.Resource.Drawable.design_ic_visibility = global::LiLo.Lite.Droid.Resource.Drawable.design_ic_visibility;
+			global::Plugin.SharedTransitions.Resource.Drawable.design_ic_visibility_off = global::LiLo.Lite.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::Plugin.SharedTransitions.Resource.Drawable.design_password_eye = global::LiLo.Lite.Droid.Resource.Drawable.design_password_eye;
+			global::Plugin.SharedTransitions.Resource.Drawable.design_snackbar_background = global::LiLo.Lite.Droid.Resource.Drawable.design_snackbar_background;
+			global::Plugin.SharedTransitions.Resource.Drawable.ic_mtrl_chip_checked_black = global::LiLo.Lite.Droid.Resource.Drawable.ic_mtrl_chip_checked_black;
+			global::Plugin.SharedTransitions.Resource.Drawable.ic_mtrl_chip_checked_circle = global::LiLo.Lite.Droid.Resource.Drawable.ic_mtrl_chip_checked_circle;
+			global::Plugin.SharedTransitions.Resource.Drawable.ic_mtrl_chip_close_circle = global::LiLo.Lite.Droid.Resource.Drawable.ic_mtrl_chip_close_circle;
+			global::Plugin.SharedTransitions.Resource.Drawable.mtrl_snackbar_background = global::LiLo.Lite.Droid.Resource.Drawable.mtrl_snackbar_background;
+			global::Plugin.SharedTransitions.Resource.Drawable.mtrl_tabs_default_indicator = global::LiLo.Lite.Droid.Resource.Drawable.mtrl_tabs_default_indicator;
+			global::Plugin.SharedTransitions.Resource.Drawable.navigation_empty_icon = global::LiLo.Lite.Droid.Resource.Drawable.navigation_empty_icon;
+			global::Plugin.SharedTransitions.Resource.Drawable.notification_action_background = global::LiLo.Lite.Droid.Resource.Drawable.notification_action_background;
+			global::Plugin.SharedTransitions.Resource.Drawable.notification_bg = global::LiLo.Lite.Droid.Resource.Drawable.notification_bg;
+			global::Plugin.SharedTransitions.Resource.Drawable.notification_bg_low = global::LiLo.Lite.Droid.Resource.Drawable.notification_bg_low;
+			global::Plugin.SharedTransitions.Resource.Drawable.notification_bg_low_normal = global::LiLo.Lite.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Plugin.SharedTransitions.Resource.Drawable.notification_bg_low_pressed = global::LiLo.Lite.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Plugin.SharedTransitions.Resource.Drawable.notification_bg_normal = global::LiLo.Lite.Droid.Resource.Drawable.notification_bg_normal;
+			global::Plugin.SharedTransitions.Resource.Drawable.notification_bg_normal_pressed = global::LiLo.Lite.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Plugin.SharedTransitions.Resource.Drawable.notification_icon_background = global::LiLo.Lite.Droid.Resource.Drawable.notification_icon_background;
+			global::Plugin.SharedTransitions.Resource.Drawable.notification_template_icon_bg = global::LiLo.Lite.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Plugin.SharedTransitions.Resource.Drawable.notification_template_icon_low_bg = global::LiLo.Lite.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Plugin.SharedTransitions.Resource.Drawable.notification_tile_bg = global::LiLo.Lite.Droid.Resource.Drawable.notification_tile_bg;
+			global::Plugin.SharedTransitions.Resource.Drawable.notify_panel_notification_icon_bg = global::LiLo.Lite.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Plugin.SharedTransitions.Resource.Drawable.tooltip_frame_dark = global::LiLo.Lite.Droid.Resource.Drawable.tooltip_frame_dark;
+			global::Plugin.SharedTransitions.Resource.Drawable.tooltip_frame_light = global::LiLo.Lite.Droid.Resource.Drawable.tooltip_frame_light;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_action_clickable_span = global::LiLo.Lite.Droid.Resource.Id.accessibility_action_clickable_span;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_0 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_0;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_1 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_1;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_10 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_10;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_11 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_11;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_12 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_12;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_13 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_13;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_14 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_14;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_15 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_15;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_16 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_16;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_17 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_17;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_18 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_18;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_19 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_19;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_2 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_2;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_20 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_20;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_21 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_21;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_22 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_22;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_23 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_23;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_24 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_24;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_25 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_25;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_26 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_26;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_27 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_27;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_28 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_28;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_29 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_29;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_3 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_3;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_30 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_30;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_31 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_31;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_4 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_4;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_5 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_5;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_6 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_6;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_7 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_7;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_8 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_8;
+			global::Plugin.SharedTransitions.Resource.Id.accessibility_custom_action_9 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_9;
+			global::Plugin.SharedTransitions.Resource.Id.action0 = global::LiLo.Lite.Droid.Resource.Id.action0;
+			global::Plugin.SharedTransitions.Resource.Id.actions = global::LiLo.Lite.Droid.Resource.Id.actions;
+			global::Plugin.SharedTransitions.Resource.Id.action_bar = global::LiLo.Lite.Droid.Resource.Id.action_bar;
+			global::Plugin.SharedTransitions.Resource.Id.action_bar_activity_content = global::LiLo.Lite.Droid.Resource.Id.action_bar_activity_content;
+			global::Plugin.SharedTransitions.Resource.Id.action_bar_container = global::LiLo.Lite.Droid.Resource.Id.action_bar_container;
+			global::Plugin.SharedTransitions.Resource.Id.action_bar_root = global::LiLo.Lite.Droid.Resource.Id.action_bar_root;
+			global::Plugin.SharedTransitions.Resource.Id.action_bar_spinner = global::LiLo.Lite.Droid.Resource.Id.action_bar_spinner;
+			global::Plugin.SharedTransitions.Resource.Id.action_bar_subtitle = global::LiLo.Lite.Droid.Resource.Id.action_bar_subtitle;
+			global::Plugin.SharedTransitions.Resource.Id.action_bar_title = global::LiLo.Lite.Droid.Resource.Id.action_bar_title;
+			global::Plugin.SharedTransitions.Resource.Id.action_container = global::LiLo.Lite.Droid.Resource.Id.action_container;
+			global::Plugin.SharedTransitions.Resource.Id.action_context_bar = global::LiLo.Lite.Droid.Resource.Id.action_context_bar;
+			global::Plugin.SharedTransitions.Resource.Id.action_divider = global::LiLo.Lite.Droid.Resource.Id.action_divider;
+			global::Plugin.SharedTransitions.Resource.Id.action_image = global::LiLo.Lite.Droid.Resource.Id.action_image;
+			global::Plugin.SharedTransitions.Resource.Id.action_menu_divider = global::LiLo.Lite.Droid.Resource.Id.action_menu_divider;
+			global::Plugin.SharedTransitions.Resource.Id.action_menu_presenter = global::LiLo.Lite.Droid.Resource.Id.action_menu_presenter;
+			global::Plugin.SharedTransitions.Resource.Id.action_mode_bar = global::LiLo.Lite.Droid.Resource.Id.action_mode_bar;
+			global::Plugin.SharedTransitions.Resource.Id.action_mode_bar_stub = global::LiLo.Lite.Droid.Resource.Id.action_mode_bar_stub;
+			global::Plugin.SharedTransitions.Resource.Id.action_mode_close_button = global::LiLo.Lite.Droid.Resource.Id.action_mode_close_button;
+			global::Plugin.SharedTransitions.Resource.Id.action_text = global::LiLo.Lite.Droid.Resource.Id.action_text;
+			global::Plugin.SharedTransitions.Resource.Id.activity_chooser_view_content = global::LiLo.Lite.Droid.Resource.Id.activity_chooser_view_content;
+			global::Plugin.SharedTransitions.Resource.Id.add = global::LiLo.Lite.Droid.Resource.Id.add;
+			global::Plugin.SharedTransitions.Resource.Id.alertTitle = global::LiLo.Lite.Droid.Resource.Id.alertTitle;
+			global::Plugin.SharedTransitions.Resource.Id.all = global::LiLo.Lite.Droid.Resource.Id.all;
+			global::Plugin.SharedTransitions.Resource.Id.ALT = global::LiLo.Lite.Droid.Resource.Id.ALT;
+			global::Plugin.SharedTransitions.Resource.Id.always = global::LiLo.Lite.Droid.Resource.Id.always;
+			global::Plugin.SharedTransitions.Resource.Id.async = global::LiLo.Lite.Droid.Resource.Id.async;
+			global::Plugin.SharedTransitions.Resource.Id.auto = global::LiLo.Lite.Droid.Resource.Id.auto;
+			global::Plugin.SharedTransitions.Resource.Id.beginning = global::LiLo.Lite.Droid.Resource.Id.beginning;
+			global::Plugin.SharedTransitions.Resource.Id.blocking = global::LiLo.Lite.Droid.Resource.Id.blocking;
+			global::Plugin.SharedTransitions.Resource.Id.bottom = global::LiLo.Lite.Droid.Resource.Id.bottom;
+			global::Plugin.SharedTransitions.Resource.Id.bottomtab_navarea = global::LiLo.Lite.Droid.Resource.Id.bottomtab_navarea;
+			global::Plugin.SharedTransitions.Resource.Id.bottomtab_tabbar = global::LiLo.Lite.Droid.Resource.Id.bottomtab_tabbar;
+			global::Plugin.SharedTransitions.Resource.Id.browser_actions_header_text = global::LiLo.Lite.Droid.Resource.Id.browser_actions_header_text;
+			global::Plugin.SharedTransitions.Resource.Id.browser_actions_menu_items = global::LiLo.Lite.Droid.Resource.Id.browser_actions_menu_items;
+			global::Plugin.SharedTransitions.Resource.Id.browser_actions_menu_item_icon = global::LiLo.Lite.Droid.Resource.Id.browser_actions_menu_item_icon;
+			global::Plugin.SharedTransitions.Resource.Id.browser_actions_menu_item_text = global::LiLo.Lite.Droid.Resource.Id.browser_actions_menu_item_text;
+			global::Plugin.SharedTransitions.Resource.Id.browser_actions_menu_view = global::LiLo.Lite.Droid.Resource.Id.browser_actions_menu_view;
+			global::Plugin.SharedTransitions.Resource.Id.buttonPanel = global::LiLo.Lite.Droid.Resource.Id.buttonPanel;
+			global::Plugin.SharedTransitions.Resource.Id.cancel_action = global::LiLo.Lite.Droid.Resource.Id.cancel_action;
+			global::Plugin.SharedTransitions.Resource.Id.center = global::LiLo.Lite.Droid.Resource.Id.center;
+			global::Plugin.SharedTransitions.Resource.Id.center_horizontal = global::LiLo.Lite.Droid.Resource.Id.center_horizontal;
+			global::Plugin.SharedTransitions.Resource.Id.center_vertical = global::LiLo.Lite.Droid.Resource.Id.center_vertical;
+			global::Plugin.SharedTransitions.Resource.Id.checkbox = global::LiLo.Lite.Droid.Resource.Id.checkbox;
+			global::Plugin.SharedTransitions.Resource.Id.@checked = global::LiLo.Lite.Droid.Resource.Id.@checked;
+			global::Plugin.SharedTransitions.Resource.Id.chronometer = global::LiLo.Lite.Droid.Resource.Id.chronometer;
+			global::Plugin.SharedTransitions.Resource.Id.clip_horizontal = global::LiLo.Lite.Droid.Resource.Id.clip_horizontal;
+			global::Plugin.SharedTransitions.Resource.Id.clip_vertical = global::LiLo.Lite.Droid.Resource.Id.clip_vertical;
+			global::Plugin.SharedTransitions.Resource.Id.collapseActionView = global::LiLo.Lite.Droid.Resource.Id.collapseActionView;
+			global::Plugin.SharedTransitions.Resource.Id.container = global::LiLo.Lite.Droid.Resource.Id.container;
+			global::Plugin.SharedTransitions.Resource.Id.content = global::LiLo.Lite.Droid.Resource.Id.content;
+			global::Plugin.SharedTransitions.Resource.Id.contentPanel = global::LiLo.Lite.Droid.Resource.Id.contentPanel;
+			global::Plugin.SharedTransitions.Resource.Id.coordinator = global::LiLo.Lite.Droid.Resource.Id.coordinator;
+			global::Plugin.SharedTransitions.Resource.Id.CTRL = global::LiLo.Lite.Droid.Resource.Id.CTRL;
+			global::Plugin.SharedTransitions.Resource.Id.custom = global::LiLo.Lite.Droid.Resource.Id.custom;
+			global::Plugin.SharedTransitions.Resource.Id.customPanel = global::LiLo.Lite.Droid.Resource.Id.customPanel;
+			global::Plugin.SharedTransitions.Resource.Id.decor_content_parent = global::LiLo.Lite.Droid.Resource.Id.decor_content_parent;
+			global::Plugin.SharedTransitions.Resource.Id.default_activity_button = global::LiLo.Lite.Droid.Resource.Id.default_activity_button;
+			global::Plugin.SharedTransitions.Resource.Id.design_bottom_sheet = global::LiLo.Lite.Droid.Resource.Id.design_bottom_sheet;
+			global::Plugin.SharedTransitions.Resource.Id.design_menu_item_action_area = global::LiLo.Lite.Droid.Resource.Id.design_menu_item_action_area;
+			global::Plugin.SharedTransitions.Resource.Id.design_menu_item_action_area_stub = global::LiLo.Lite.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::Plugin.SharedTransitions.Resource.Id.design_menu_item_text = global::LiLo.Lite.Droid.Resource.Id.design_menu_item_text;
+			global::Plugin.SharedTransitions.Resource.Id.design_navigation_view = global::LiLo.Lite.Droid.Resource.Id.design_navigation_view;
+			global::Plugin.SharedTransitions.Resource.Id.dialog_button = global::LiLo.Lite.Droid.Resource.Id.dialog_button;
+			global::Plugin.SharedTransitions.Resource.Id.disableHome = global::LiLo.Lite.Droid.Resource.Id.disableHome;
+			global::Plugin.SharedTransitions.Resource.Id.edit_query = global::LiLo.Lite.Droid.Resource.Id.edit_query;
+			global::Plugin.SharedTransitions.Resource.Id.end = global::LiLo.Lite.Droid.Resource.Id.end;
+			global::Plugin.SharedTransitions.Resource.Id.end_padder = global::LiLo.Lite.Droid.Resource.Id.end_padder;
+			global::Plugin.SharedTransitions.Resource.Id.enterAlways = global::LiLo.Lite.Droid.Resource.Id.enterAlways;
+			global::Plugin.SharedTransitions.Resource.Id.enterAlwaysCollapsed = global::LiLo.Lite.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::Plugin.SharedTransitions.Resource.Id.exitUntilCollapsed = global::LiLo.Lite.Droid.Resource.Id.exitUntilCollapsed;
+			global::Plugin.SharedTransitions.Resource.Id.expanded_menu = global::LiLo.Lite.Droid.Resource.Id.expanded_menu;
+			global::Plugin.SharedTransitions.Resource.Id.expand_activities_button = global::LiLo.Lite.Droid.Resource.Id.expand_activities_button;
+			global::Plugin.SharedTransitions.Resource.Id.fill = global::LiLo.Lite.Droid.Resource.Id.fill;
+			global::Plugin.SharedTransitions.Resource.Id.filled = global::LiLo.Lite.Droid.Resource.Id.filled;
+			global::Plugin.SharedTransitions.Resource.Id.fill_horizontal = global::LiLo.Lite.Droid.Resource.Id.fill_horizontal;
+			global::Plugin.SharedTransitions.Resource.Id.fill_vertical = global::LiLo.Lite.Droid.Resource.Id.fill_vertical;
+			global::Plugin.SharedTransitions.Resource.Id.@fixed = global::LiLo.Lite.Droid.Resource.Id.@fixed;
+			global::Plugin.SharedTransitions.Resource.Id.flyoutcontent_appbar = global::LiLo.Lite.Droid.Resource.Id.flyoutcontent_appbar;
+			global::Plugin.SharedTransitions.Resource.Id.flyoutcontent_recycler = global::LiLo.Lite.Droid.Resource.Id.flyoutcontent_recycler;
+			global::Plugin.SharedTransitions.Resource.Id.forever = global::LiLo.Lite.Droid.Resource.Id.forever;
+			global::Plugin.SharedTransitions.Resource.Id.fragment_container_view_tag = global::LiLo.Lite.Droid.Resource.Id.fragment_container_view_tag;
+			global::Plugin.SharedTransitions.Resource.Id.FUNCTION = global::LiLo.Lite.Droid.Resource.Id.FUNCTION;
+			global::Plugin.SharedTransitions.Resource.Id.ghost_view = global::LiLo.Lite.Droid.Resource.Id.ghost_view;
+			global::Plugin.SharedTransitions.Resource.Id.ghost_view_holder = global::LiLo.Lite.Droid.Resource.Id.ghost_view_holder;
+			global::Plugin.SharedTransitions.Resource.Id.group_divider = global::LiLo.Lite.Droid.Resource.Id.group_divider;
+			global::Plugin.SharedTransitions.Resource.Id.home = global::LiLo.Lite.Droid.Resource.Id.home;
+			global::Plugin.SharedTransitions.Resource.Id.homeAsUp = global::LiLo.Lite.Droid.Resource.Id.homeAsUp;
+			global::Plugin.SharedTransitions.Resource.Id.icon = global::LiLo.Lite.Droid.Resource.Id.icon;
+			global::Plugin.SharedTransitions.Resource.Id.icon_group = global::LiLo.Lite.Droid.Resource.Id.icon_group;
+			global::Plugin.SharedTransitions.Resource.Id.ifRoom = global::LiLo.Lite.Droid.Resource.Id.ifRoom;
+			global::Plugin.SharedTransitions.Resource.Id.image = global::LiLo.Lite.Droid.Resource.Id.image;
+			global::Plugin.SharedTransitions.Resource.Id.info = global::LiLo.Lite.Droid.Resource.Id.info;
+			global::Plugin.SharedTransitions.Resource.Id.italic = global::LiLo.Lite.Droid.Resource.Id.italic;
+			global::Plugin.SharedTransitions.Resource.Id.item_touch_helper_previous_elevation = global::LiLo.Lite.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Plugin.SharedTransitions.Resource.Id.labeled = global::LiLo.Lite.Droid.Resource.Id.labeled;
+			global::Plugin.SharedTransitions.Resource.Id.largeLabel = global::LiLo.Lite.Droid.Resource.Id.largeLabel;
+			global::Plugin.SharedTransitions.Resource.Id.left = global::LiLo.Lite.Droid.Resource.Id.left;
+			global::Plugin.SharedTransitions.Resource.Id.line1 = global::LiLo.Lite.Droid.Resource.Id.line1;
+			global::Plugin.SharedTransitions.Resource.Id.line3 = global::LiLo.Lite.Droid.Resource.Id.line3;
+			global::Plugin.SharedTransitions.Resource.Id.listMode = global::LiLo.Lite.Droid.Resource.Id.listMode;
+			global::Plugin.SharedTransitions.Resource.Id.list_item = global::LiLo.Lite.Droid.Resource.Id.list_item;
+			global::Plugin.SharedTransitions.Resource.Id.main_appbar = global::LiLo.Lite.Droid.Resource.Id.main_appbar;
+			global::Plugin.SharedTransitions.Resource.Id.main_tablayout = global::LiLo.Lite.Droid.Resource.Id.main_tablayout;
+			global::Plugin.SharedTransitions.Resource.Id.main_toolbar = global::LiLo.Lite.Droid.Resource.Id.main_toolbar;
+			global::Plugin.SharedTransitions.Resource.Id.main_viewpager = global::LiLo.Lite.Droid.Resource.Id.main_viewpager;
+			global::Plugin.SharedTransitions.Resource.Id.masked = global::LiLo.Lite.Droid.Resource.Id.masked;
+			global::Plugin.SharedTransitions.Resource.Id.media_actions = global::LiLo.Lite.Droid.Resource.Id.media_actions;
+			global::Plugin.SharedTransitions.Resource.Id.message = global::LiLo.Lite.Droid.Resource.Id.message;
+			global::Plugin.SharedTransitions.Resource.Id.META = global::LiLo.Lite.Droid.Resource.Id.META;
+			global::Plugin.SharedTransitions.Resource.Id.middle = global::LiLo.Lite.Droid.Resource.Id.middle;
+			global::Plugin.SharedTransitions.Resource.Id.mini = global::LiLo.Lite.Droid.Resource.Id.mini;
+			global::Plugin.SharedTransitions.Resource.Id.mtrl_child_content_container = global::LiLo.Lite.Droid.Resource.Id.mtrl_child_content_container;
+			global::Plugin.SharedTransitions.Resource.Id.mtrl_internal_children_alpha_tag = global::LiLo.Lite.Droid.Resource.Id.mtrl_internal_children_alpha_tag;
+			global::Plugin.SharedTransitions.Resource.Id.multiply = global::LiLo.Lite.Droid.Resource.Id.multiply;
+			global::Plugin.SharedTransitions.Resource.Id.navigation_header_container = global::LiLo.Lite.Droid.Resource.Id.navigation_header_container;
+			global::Plugin.SharedTransitions.Resource.Id.never = global::LiLo.Lite.Droid.Resource.Id.never;
+			global::Plugin.SharedTransitions.Resource.Id.none = global::LiLo.Lite.Droid.Resource.Id.none;
+			global::Plugin.SharedTransitions.Resource.Id.normal = global::LiLo.Lite.Droid.Resource.Id.normal;
+			global::Plugin.SharedTransitions.Resource.Id.notification_background = global::LiLo.Lite.Droid.Resource.Id.notification_background;
+			global::Plugin.SharedTransitions.Resource.Id.notification_main_column = global::LiLo.Lite.Droid.Resource.Id.notification_main_column;
+			global::Plugin.SharedTransitions.Resource.Id.notification_main_column_container = global::LiLo.Lite.Droid.Resource.Id.notification_main_column_container;
+			global::Plugin.SharedTransitions.Resource.Id.off = global::LiLo.Lite.Droid.Resource.Id.off;
+			global::Plugin.SharedTransitions.Resource.Id.on = global::LiLo.Lite.Droid.Resource.Id.on;
+			global::Plugin.SharedTransitions.Resource.Id.outline = global::LiLo.Lite.Droid.Resource.Id.outline;
+			global::Plugin.SharedTransitions.Resource.Id.parallax = global::LiLo.Lite.Droid.Resource.Id.parallax;
+			global::Plugin.SharedTransitions.Resource.Id.parentPanel = global::LiLo.Lite.Droid.Resource.Id.parentPanel;
+			global::Plugin.SharedTransitions.Resource.Id.parent_matrix = global::LiLo.Lite.Droid.Resource.Id.parent_matrix;
+			global::Plugin.SharedTransitions.Resource.Id.pin = global::LiLo.Lite.Droid.Resource.Id.pin;
+			global::Plugin.SharedTransitions.Resource.Id.progress_circular = global::LiLo.Lite.Droid.Resource.Id.progress_circular;
+			global::Plugin.SharedTransitions.Resource.Id.progress_horizontal = global::LiLo.Lite.Droid.Resource.Id.progress_horizontal;
+			global::Plugin.SharedTransitions.Resource.Id.radio = global::LiLo.Lite.Droid.Resource.Id.radio;
+			global::Plugin.SharedTransitions.Resource.Id.right = global::LiLo.Lite.Droid.Resource.Id.right;
+			global::Plugin.SharedTransitions.Resource.Id.right_icon = global::LiLo.Lite.Droid.Resource.Id.right_icon;
+			global::Plugin.SharedTransitions.Resource.Id.right_side = global::LiLo.Lite.Droid.Resource.Id.right_side;
+			global::Plugin.SharedTransitions.Resource.Id.save_non_transition_alpha = global::LiLo.Lite.Droid.Resource.Id.save_non_transition_alpha;
+			global::Plugin.SharedTransitions.Resource.Id.save_overlay_view = global::LiLo.Lite.Droid.Resource.Id.save_overlay_view;
+			global::Plugin.SharedTransitions.Resource.Id.screen = global::LiLo.Lite.Droid.Resource.Id.screen;
+			global::Plugin.SharedTransitions.Resource.Id.scroll = global::LiLo.Lite.Droid.Resource.Id.scroll;
+			global::Plugin.SharedTransitions.Resource.Id.scrollable = global::LiLo.Lite.Droid.Resource.Id.scrollable;
+			global::Plugin.SharedTransitions.Resource.Id.scrollIndicatorDown = global::LiLo.Lite.Droid.Resource.Id.scrollIndicatorDown;
+			global::Plugin.SharedTransitions.Resource.Id.scrollIndicatorUp = global::LiLo.Lite.Droid.Resource.Id.scrollIndicatorUp;
+			global::Plugin.SharedTransitions.Resource.Id.scrollView = global::LiLo.Lite.Droid.Resource.Id.scrollView;
+			global::Plugin.SharedTransitions.Resource.Id.search_badge = global::LiLo.Lite.Droid.Resource.Id.search_badge;
+			global::Plugin.SharedTransitions.Resource.Id.search_bar = global::LiLo.Lite.Droid.Resource.Id.search_bar;
+			global::Plugin.SharedTransitions.Resource.Id.search_button = global::LiLo.Lite.Droid.Resource.Id.search_button;
+			global::Plugin.SharedTransitions.Resource.Id.search_close_btn = global::LiLo.Lite.Droid.Resource.Id.search_close_btn;
+			global::Plugin.SharedTransitions.Resource.Id.search_edit_frame = global::LiLo.Lite.Droid.Resource.Id.search_edit_frame;
+			global::Plugin.SharedTransitions.Resource.Id.search_go_btn = global::LiLo.Lite.Droid.Resource.Id.search_go_btn;
+			global::Plugin.SharedTransitions.Resource.Id.search_mag_icon = global::LiLo.Lite.Droid.Resource.Id.search_mag_icon;
+			global::Plugin.SharedTransitions.Resource.Id.search_plate = global::LiLo.Lite.Droid.Resource.Id.search_plate;
+			global::Plugin.SharedTransitions.Resource.Id.search_src_text = global::LiLo.Lite.Droid.Resource.Id.search_src_text;
+			global::Plugin.SharedTransitions.Resource.Id.search_voice_btn = global::LiLo.Lite.Droid.Resource.Id.search_voice_btn;
+			global::Plugin.SharedTransitions.Resource.Id.selected = global::LiLo.Lite.Droid.Resource.Id.selected;
+			global::Plugin.SharedTransitions.Resource.Id.select_dialog_listview = global::LiLo.Lite.Droid.Resource.Id.select_dialog_listview;
+			global::Plugin.SharedTransitions.Resource.Id.shellcontent_appbar = global::LiLo.Lite.Droid.Resource.Id.shellcontent_appbar;
+			global::Plugin.SharedTransitions.Resource.Id.shellcontent_toolbar = global::LiLo.Lite.Droid.Resource.Id.shellcontent_toolbar;
+			global::Plugin.SharedTransitions.Resource.Id.SHIFT = global::LiLo.Lite.Droid.Resource.Id.SHIFT;
+			global::Plugin.SharedTransitions.Resource.Id.shortcut = global::LiLo.Lite.Droid.Resource.Id.shortcut;
+			global::Plugin.SharedTransitions.Resource.Id.showCustom = global::LiLo.Lite.Droid.Resource.Id.showCustom;
+			global::Plugin.SharedTransitions.Resource.Id.showHome = global::LiLo.Lite.Droid.Resource.Id.showHome;
+			global::Plugin.SharedTransitions.Resource.Id.showTitle = global::LiLo.Lite.Droid.Resource.Id.showTitle;
+			global::Plugin.SharedTransitions.Resource.Id.sliding_tabs = global::LiLo.Lite.Droid.Resource.Id.sliding_tabs;
+			global::Plugin.SharedTransitions.Resource.Id.smallLabel = global::LiLo.Lite.Droid.Resource.Id.smallLabel;
+			global::Plugin.SharedTransitions.Resource.Id.snackbar_action = global::LiLo.Lite.Droid.Resource.Id.snackbar_action;
+			global::Plugin.SharedTransitions.Resource.Id.snackbar_text = global::LiLo.Lite.Droid.Resource.Id.snackbar_text;
+			global::Plugin.SharedTransitions.Resource.Id.snap = global::LiLo.Lite.Droid.Resource.Id.snap;
+			global::Plugin.SharedTransitions.Resource.Id.snapMargins = global::LiLo.Lite.Droid.Resource.Id.snapMargins;
+			global::Plugin.SharedTransitions.Resource.Id.spacer = global::LiLo.Lite.Droid.Resource.Id.spacer;
+			global::Plugin.SharedTransitions.Resource.Id.split_action_bar = global::LiLo.Lite.Droid.Resource.Id.split_action_bar;
+			global::Plugin.SharedTransitions.Resource.Id.src_atop = global::LiLo.Lite.Droid.Resource.Id.src_atop;
+			global::Plugin.SharedTransitions.Resource.Id.src_in = global::LiLo.Lite.Droid.Resource.Id.src_in;
+			global::Plugin.SharedTransitions.Resource.Id.src_over = global::LiLo.Lite.Droid.Resource.Id.src_over;
+			global::Plugin.SharedTransitions.Resource.Id.start = global::LiLo.Lite.Droid.Resource.Id.start;
+			global::Plugin.SharedTransitions.Resource.Id.status_bar_latest_event_content = global::LiLo.Lite.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Plugin.SharedTransitions.Resource.Id.stretch = global::LiLo.Lite.Droid.Resource.Id.stretch;
+			global::Plugin.SharedTransitions.Resource.Id.submenuarrow = global::LiLo.Lite.Droid.Resource.Id.submenuarrow;
+			global::Plugin.SharedTransitions.Resource.Id.submit_area = global::LiLo.Lite.Droid.Resource.Id.submit_area;
+			global::Plugin.SharedTransitions.Resource.Id.SYM = global::LiLo.Lite.Droid.Resource.Id.SYM;
+			global::Plugin.SharedTransitions.Resource.Id.tabMode = global::LiLo.Lite.Droid.Resource.Id.tabMode;
+			global::Plugin.SharedTransitions.Resource.Id.tag_accessibility_actions = global::LiLo.Lite.Droid.Resource.Id.tag_accessibility_actions;
+			global::Plugin.SharedTransitions.Resource.Id.tag_accessibility_clickable_spans = global::LiLo.Lite.Droid.Resource.Id.tag_accessibility_clickable_spans;
+			global::Plugin.SharedTransitions.Resource.Id.tag_accessibility_heading = global::LiLo.Lite.Droid.Resource.Id.tag_accessibility_heading;
+			global::Plugin.SharedTransitions.Resource.Id.tag_accessibility_pane_title = global::LiLo.Lite.Droid.Resource.Id.tag_accessibility_pane_title;
+			global::Plugin.SharedTransitions.Resource.Id.tag_screen_reader_focusable = global::LiLo.Lite.Droid.Resource.Id.tag_screen_reader_focusable;
+			global::Plugin.SharedTransitions.Resource.Id.tag_transition_group = global::LiLo.Lite.Droid.Resource.Id.tag_transition_group;
+			global::Plugin.SharedTransitions.Resource.Id.tag_unhandled_key_event_manager = global::LiLo.Lite.Droid.Resource.Id.tag_unhandled_key_event_manager;
+			global::Plugin.SharedTransitions.Resource.Id.tag_unhandled_key_listeners = global::LiLo.Lite.Droid.Resource.Id.tag_unhandled_key_listeners;
+			global::Plugin.SharedTransitions.Resource.Id.text = global::LiLo.Lite.Droid.Resource.Id.text;
+			global::Plugin.SharedTransitions.Resource.Id.text2 = global::LiLo.Lite.Droid.Resource.Id.text2;
+			global::Plugin.SharedTransitions.Resource.Id.textinput_counter = global::LiLo.Lite.Droid.Resource.Id.textinput_counter;
+			global::Plugin.SharedTransitions.Resource.Id.textinput_error = global::LiLo.Lite.Droid.Resource.Id.textinput_error;
+			global::Plugin.SharedTransitions.Resource.Id.textinput_helper_text = global::LiLo.Lite.Droid.Resource.Id.textinput_helper_text;
+			global::Plugin.SharedTransitions.Resource.Id.textSpacerNoButtons = global::LiLo.Lite.Droid.Resource.Id.textSpacerNoButtons;
+			global::Plugin.SharedTransitions.Resource.Id.textSpacerNoTitle = global::LiLo.Lite.Droid.Resource.Id.textSpacerNoTitle;
+			global::Plugin.SharedTransitions.Resource.Id.textStart = global::LiLo.Lite.Droid.Resource.Id.textStart;
+			global::Plugin.SharedTransitions.Resource.Id.text_input_password_toggle = global::LiLo.Lite.Droid.Resource.Id.text_input_password_toggle;
+			global::Plugin.SharedTransitions.Resource.Id.time = global::LiLo.Lite.Droid.Resource.Id.time;
+			global::Plugin.SharedTransitions.Resource.Id.title = global::LiLo.Lite.Droid.Resource.Id.title;
+			global::Plugin.SharedTransitions.Resource.Id.titleDividerNoCustom = global::LiLo.Lite.Droid.Resource.Id.titleDividerNoCustom;
+			global::Plugin.SharedTransitions.Resource.Id.title_template = global::LiLo.Lite.Droid.Resource.Id.title_template;
+			global::Plugin.SharedTransitions.Resource.Id.toolbar = global::LiLo.Lite.Droid.Resource.Id.toolbar;
+			global::Plugin.SharedTransitions.Resource.Id.top = global::LiLo.Lite.Droid.Resource.Id.top;
+			global::Plugin.SharedTransitions.Resource.Id.topPanel = global::LiLo.Lite.Droid.Resource.Id.topPanel;
+			global::Plugin.SharedTransitions.Resource.Id.touch_outside = global::LiLo.Lite.Droid.Resource.Id.touch_outside;
+			global::Plugin.SharedTransitions.Resource.Id.transition_current_scene = global::LiLo.Lite.Droid.Resource.Id.transition_current_scene;
+			global::Plugin.SharedTransitions.Resource.Id.transition_layout_save = global::LiLo.Lite.Droid.Resource.Id.transition_layout_save;
+			global::Plugin.SharedTransitions.Resource.Id.transition_position = global::LiLo.Lite.Droid.Resource.Id.transition_position;
+			global::Plugin.SharedTransitions.Resource.Id.transition_scene_layoutid_cache = global::LiLo.Lite.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::Plugin.SharedTransitions.Resource.Id.transition_transform = global::LiLo.Lite.Droid.Resource.Id.transition_transform;
+			global::Plugin.SharedTransitions.Resource.Id.@unchecked = global::LiLo.Lite.Droid.Resource.Id.@unchecked;
+			global::Plugin.SharedTransitions.Resource.Id.uniform = global::LiLo.Lite.Droid.Resource.Id.uniform;
+			global::Plugin.SharedTransitions.Resource.Id.unlabeled = global::LiLo.Lite.Droid.Resource.Id.unlabeled;
+			global::Plugin.SharedTransitions.Resource.Id.up = global::LiLo.Lite.Droid.Resource.Id.up;
+			global::Plugin.SharedTransitions.Resource.Id.useLogo = global::LiLo.Lite.Droid.Resource.Id.useLogo;
+			global::Plugin.SharedTransitions.Resource.Id.view_offset_helper = global::LiLo.Lite.Droid.Resource.Id.view_offset_helper;
+			global::Plugin.SharedTransitions.Resource.Id.visible = global::LiLo.Lite.Droid.Resource.Id.visible;
+			global::Plugin.SharedTransitions.Resource.Id.visible_removing_fragment_view_tag = global::LiLo.Lite.Droid.Resource.Id.visible_removing_fragment_view_tag;
+			global::Plugin.SharedTransitions.Resource.Id.withText = global::LiLo.Lite.Droid.Resource.Id.withText;
+			global::Plugin.SharedTransitions.Resource.Id.wrap_content = global::LiLo.Lite.Droid.Resource.Id.wrap_content;
+			global::Plugin.SharedTransitions.Resource.Integer.abc_config_activityDefaultDur = global::LiLo.Lite.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Plugin.SharedTransitions.Resource.Integer.abc_config_activityShortDur = global::LiLo.Lite.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Plugin.SharedTransitions.Resource.Integer.app_bar_elevation_anim_duration = global::LiLo.Lite.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::Plugin.SharedTransitions.Resource.Integer.bottom_sheet_slide_duration = global::LiLo.Lite.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::Plugin.SharedTransitions.Resource.Integer.cancel_button_image_alpha = global::LiLo.Lite.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Plugin.SharedTransitions.Resource.Integer.config_tooltipAnimTime = global::LiLo.Lite.Droid.Resource.Integer.config_tooltipAnimTime;
+			global::Plugin.SharedTransitions.Resource.Integer.design_snackbar_text_max_lines = global::LiLo.Lite.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::Plugin.SharedTransitions.Resource.Integer.design_tab_indicator_anim_duration_ms = global::LiLo.Lite.Droid.Resource.Integer.design_tab_indicator_anim_duration_ms;
+			global::Plugin.SharedTransitions.Resource.Integer.hide_password_duration = global::LiLo.Lite.Droid.Resource.Integer.hide_password_duration;
+			global::Plugin.SharedTransitions.Resource.Integer.mtrl_btn_anim_delay_ms = global::LiLo.Lite.Droid.Resource.Integer.mtrl_btn_anim_delay_ms;
+			global::Plugin.SharedTransitions.Resource.Integer.mtrl_btn_anim_duration_ms = global::LiLo.Lite.Droid.Resource.Integer.mtrl_btn_anim_duration_ms;
+			global::Plugin.SharedTransitions.Resource.Integer.mtrl_chip_anim_duration = global::LiLo.Lite.Droid.Resource.Integer.mtrl_chip_anim_duration;
+			global::Plugin.SharedTransitions.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::LiLo.Lite.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
+			global::Plugin.SharedTransitions.Resource.Integer.show_password_duration = global::LiLo.Lite.Droid.Resource.Integer.show_password_duration;
+			global::Plugin.SharedTransitions.Resource.Integer.status_bar_notification_info_maxnum = global::LiLo.Lite.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Plugin.SharedTransitions.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::LiLo.Lite.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
+			global::Plugin.SharedTransitions.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::LiLo.Lite.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
+			global::Plugin.SharedTransitions.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0 = global::LiLo.Lite.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0;
+			global::Plugin.SharedTransitions.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1 = global::LiLo.Lite.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1;
+			global::Plugin.SharedTransitions.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0 = global::LiLo.Lite.Droid.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0;
+			global::Plugin.SharedTransitions.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0 = global::LiLo.Lite.Droid.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0;
+			global::Plugin.SharedTransitions.Resource.Interpolator.fast_out_slow_in = global::LiLo.Lite.Droid.Resource.Interpolator.fast_out_slow_in;
+			global::Plugin.SharedTransitions.Resource.Interpolator.mtrl_fast_out_linear_in = global::LiLo.Lite.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
+			global::Plugin.SharedTransitions.Resource.Interpolator.mtrl_fast_out_slow_in = global::LiLo.Lite.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
+			global::Plugin.SharedTransitions.Resource.Interpolator.mtrl_linear = global::LiLo.Lite.Droid.Resource.Interpolator.mtrl_linear;
+			global::Plugin.SharedTransitions.Resource.Interpolator.mtrl_linear_out_slow_in = global::LiLo.Lite.Droid.Resource.Interpolator.mtrl_linear_out_slow_in;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_action_bar_title_item = global::LiLo.Lite.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_action_bar_up_container = global::LiLo.Lite.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_action_menu_item_layout = global::LiLo.Lite.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_action_menu_layout = global::LiLo.Lite.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_action_mode_bar = global::LiLo.Lite.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_action_mode_close_item_material = global::LiLo.Lite.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_activity_chooser_view = global::LiLo.Lite.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_activity_chooser_view_list_item = global::LiLo.Lite.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_alert_dialog_button_bar_material = global::LiLo.Lite.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_alert_dialog_material = global::LiLo.Lite.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_alert_dialog_title_material = global::LiLo.Lite.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_cascading_menu_item_layout = global::LiLo.Lite.Droid.Resource.Layout.abc_cascading_menu_item_layout;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_dialog_title_material = global::LiLo.Lite.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_expanded_menu_layout = global::LiLo.Lite.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_list_menu_item_checkbox = global::LiLo.Lite.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_list_menu_item_icon = global::LiLo.Lite.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_list_menu_item_layout = global::LiLo.Lite.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_list_menu_item_radio = global::LiLo.Lite.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_popup_menu_header_item_layout = global::LiLo.Lite.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_popup_menu_item_layout = global::LiLo.Lite.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_screen_content_include = global::LiLo.Lite.Droid.Resource.Layout.abc_screen_content_include;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_screen_simple = global::LiLo.Lite.Droid.Resource.Layout.abc_screen_simple;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_screen_simple_overlay_action_mode = global::LiLo.Lite.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_screen_toolbar = global::LiLo.Lite.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_search_dropdown_item_icons_2line = global::LiLo.Lite.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_search_view = global::LiLo.Lite.Droid.Resource.Layout.abc_search_view;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_select_dialog_material = global::LiLo.Lite.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Plugin.SharedTransitions.Resource.Layout.abc_tooltip = global::LiLo.Lite.Droid.Resource.Layout.abc_tooltip;
+			global::Plugin.SharedTransitions.Resource.Layout.BottomTabLayout = global::LiLo.Lite.Droid.Resource.Layout.BottomTabLayout;
+			global::Plugin.SharedTransitions.Resource.Layout.browser_actions_context_menu_page = global::LiLo.Lite.Droid.Resource.Layout.browser_actions_context_menu_page;
+			global::Plugin.SharedTransitions.Resource.Layout.browser_actions_context_menu_row = global::LiLo.Lite.Droid.Resource.Layout.browser_actions_context_menu_row;
+			global::Plugin.SharedTransitions.Resource.Layout.custom_dialog = global::LiLo.Lite.Droid.Resource.Layout.custom_dialog;
+			global::Plugin.SharedTransitions.Resource.Layout.design_bottom_navigation_item = global::LiLo.Lite.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::Plugin.SharedTransitions.Resource.Layout.design_bottom_sheet_dialog = global::LiLo.Lite.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::Plugin.SharedTransitions.Resource.Layout.design_layout_snackbar = global::LiLo.Lite.Droid.Resource.Layout.design_layout_snackbar;
+			global::Plugin.SharedTransitions.Resource.Layout.design_layout_snackbar_include = global::LiLo.Lite.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::Plugin.SharedTransitions.Resource.Layout.design_layout_tab_icon = global::LiLo.Lite.Droid.Resource.Layout.design_layout_tab_icon;
+			global::Plugin.SharedTransitions.Resource.Layout.design_layout_tab_text = global::LiLo.Lite.Droid.Resource.Layout.design_layout_tab_text;
+			global::Plugin.SharedTransitions.Resource.Layout.design_menu_item_action_area = global::LiLo.Lite.Droid.Resource.Layout.design_menu_item_action_area;
+			global::Plugin.SharedTransitions.Resource.Layout.design_navigation_item = global::LiLo.Lite.Droid.Resource.Layout.design_navigation_item;
+			global::Plugin.SharedTransitions.Resource.Layout.design_navigation_item_header = global::LiLo.Lite.Droid.Resource.Layout.design_navigation_item_header;
+			global::Plugin.SharedTransitions.Resource.Layout.design_navigation_item_separator = global::LiLo.Lite.Droid.Resource.Layout.design_navigation_item_separator;
+			global::Plugin.SharedTransitions.Resource.Layout.design_navigation_item_subheader = global::LiLo.Lite.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::Plugin.SharedTransitions.Resource.Layout.design_navigation_menu = global::LiLo.Lite.Droid.Resource.Layout.design_navigation_menu;
+			global::Plugin.SharedTransitions.Resource.Layout.design_navigation_menu_item = global::LiLo.Lite.Droid.Resource.Layout.design_navigation_menu_item;
+			global::Plugin.SharedTransitions.Resource.Layout.design_text_input_password_icon = global::LiLo.Lite.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Plugin.SharedTransitions.Resource.Layout.FallbackTabbarDoNotUse = global::LiLo.Lite.Droid.Resource.Layout.FallbackTabbarDoNotUse;
+			global::Plugin.SharedTransitions.Resource.Layout.FallbackToolbarDoNotUse = global::LiLo.Lite.Droid.Resource.Layout.FallbackToolbarDoNotUse;
+			global::Plugin.SharedTransitions.Resource.Layout.FlyoutContent = global::LiLo.Lite.Droid.Resource.Layout.FlyoutContent;
+			global::Plugin.SharedTransitions.Resource.Layout.mtrl_layout_snackbar = global::LiLo.Lite.Droid.Resource.Layout.mtrl_layout_snackbar;
+			global::Plugin.SharedTransitions.Resource.Layout.mtrl_layout_snackbar_include = global::LiLo.Lite.Droid.Resource.Layout.mtrl_layout_snackbar_include;
+			global::Plugin.SharedTransitions.Resource.Layout.notification_action = global::LiLo.Lite.Droid.Resource.Layout.notification_action;
+			global::Plugin.SharedTransitions.Resource.Layout.notification_action_tombstone = global::LiLo.Lite.Droid.Resource.Layout.notification_action_tombstone;
+			global::Plugin.SharedTransitions.Resource.Layout.notification_media_action = global::LiLo.Lite.Droid.Resource.Layout.notification_media_action;
+			global::Plugin.SharedTransitions.Resource.Layout.notification_media_cancel_action = global::LiLo.Lite.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Plugin.SharedTransitions.Resource.Layout.notification_template_big_media = global::LiLo.Lite.Droid.Resource.Layout.notification_template_big_media;
+			global::Plugin.SharedTransitions.Resource.Layout.notification_template_big_media_custom = global::LiLo.Lite.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::Plugin.SharedTransitions.Resource.Layout.notification_template_big_media_narrow = global::LiLo.Lite.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Plugin.SharedTransitions.Resource.Layout.notification_template_big_media_narrow_custom = global::LiLo.Lite.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Plugin.SharedTransitions.Resource.Layout.notification_template_custom_big = global::LiLo.Lite.Droid.Resource.Layout.notification_template_custom_big;
+			global::Plugin.SharedTransitions.Resource.Layout.notification_template_icon_group = global::LiLo.Lite.Droid.Resource.Layout.notification_template_icon_group;
+			global::Plugin.SharedTransitions.Resource.Layout.notification_template_lines_media = global::LiLo.Lite.Droid.Resource.Layout.notification_template_lines_media;
+			global::Plugin.SharedTransitions.Resource.Layout.notification_template_media = global::LiLo.Lite.Droid.Resource.Layout.notification_template_media;
+			global::Plugin.SharedTransitions.Resource.Layout.notification_template_media_custom = global::LiLo.Lite.Droid.Resource.Layout.notification_template_media_custom;
+			global::Plugin.SharedTransitions.Resource.Layout.notification_template_part_chronometer = global::LiLo.Lite.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Plugin.SharedTransitions.Resource.Layout.notification_template_part_time = global::LiLo.Lite.Droid.Resource.Layout.notification_template_part_time;
+			global::Plugin.SharedTransitions.Resource.Layout.RootLayout = global::LiLo.Lite.Droid.Resource.Layout.RootLayout;
+			global::Plugin.SharedTransitions.Resource.Layout.select_dialog_item_material = global::LiLo.Lite.Droid.Resource.Layout.select_dialog_item_material;
+			global::Plugin.SharedTransitions.Resource.Layout.select_dialog_multichoice_material = global::LiLo.Lite.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Plugin.SharedTransitions.Resource.Layout.select_dialog_singlechoice_material = global::LiLo.Lite.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Plugin.SharedTransitions.Resource.Layout.ShellContent = global::LiLo.Lite.Droid.Resource.Layout.ShellContent;
+			global::Plugin.SharedTransitions.Resource.Layout.support_simple_spinner_dropdown_item = global::LiLo.Lite.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Plugin.SharedTransitions.Resource.Layout.Tabbar = global::LiLo.Lite.Droid.Resource.Layout.Tabbar;
+			global::Plugin.SharedTransitions.Resource.Layout.Toolbar = global::LiLo.Lite.Droid.Resource.Layout.Toolbar;
+			global::Plugin.SharedTransitions.Resource.String.abc_action_bar_home_description = global::LiLo.Lite.Droid.Resource.String.abc_action_bar_home_description;
+			global::Plugin.SharedTransitions.Resource.String.abc_action_bar_up_description = global::LiLo.Lite.Droid.Resource.String.abc_action_bar_up_description;
+			global::Plugin.SharedTransitions.Resource.String.abc_action_menu_overflow_description = global::LiLo.Lite.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Plugin.SharedTransitions.Resource.String.abc_action_mode_done = global::LiLo.Lite.Droid.Resource.String.abc_action_mode_done;
+			global::Plugin.SharedTransitions.Resource.String.abc_activitychooserview_choose_application = global::LiLo.Lite.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Plugin.SharedTransitions.Resource.String.abc_activity_chooser_view_see_all = global::LiLo.Lite.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Plugin.SharedTransitions.Resource.String.abc_capital_off = global::LiLo.Lite.Droid.Resource.String.abc_capital_off;
+			global::Plugin.SharedTransitions.Resource.String.abc_capital_on = global::LiLo.Lite.Droid.Resource.String.abc_capital_on;
+			global::Plugin.SharedTransitions.Resource.String.abc_menu_alt_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_menu_alt_shortcut_label;
+			global::Plugin.SharedTransitions.Resource.String.abc_menu_ctrl_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_menu_ctrl_shortcut_label;
+			global::Plugin.SharedTransitions.Resource.String.abc_menu_delete_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_menu_delete_shortcut_label;
+			global::Plugin.SharedTransitions.Resource.String.abc_menu_enter_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_menu_enter_shortcut_label;
+			global::Plugin.SharedTransitions.Resource.String.abc_menu_function_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_menu_function_shortcut_label;
+			global::Plugin.SharedTransitions.Resource.String.abc_menu_meta_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_menu_meta_shortcut_label;
+			global::Plugin.SharedTransitions.Resource.String.abc_menu_shift_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_menu_shift_shortcut_label;
+			global::Plugin.SharedTransitions.Resource.String.abc_menu_space_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_menu_space_shortcut_label;
+			global::Plugin.SharedTransitions.Resource.String.abc_menu_sym_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_menu_sym_shortcut_label;
+			global::Plugin.SharedTransitions.Resource.String.abc_prepend_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_prepend_shortcut_label;
+			global::Plugin.SharedTransitions.Resource.String.abc_searchview_description_clear = global::LiLo.Lite.Droid.Resource.String.abc_searchview_description_clear;
+			global::Plugin.SharedTransitions.Resource.String.abc_searchview_description_query = global::LiLo.Lite.Droid.Resource.String.abc_searchview_description_query;
+			global::Plugin.SharedTransitions.Resource.String.abc_searchview_description_search = global::LiLo.Lite.Droid.Resource.String.abc_searchview_description_search;
+			global::Plugin.SharedTransitions.Resource.String.abc_searchview_description_submit = global::LiLo.Lite.Droid.Resource.String.abc_searchview_description_submit;
+			global::Plugin.SharedTransitions.Resource.String.abc_searchview_description_voice = global::LiLo.Lite.Droid.Resource.String.abc_searchview_description_voice;
+			global::Plugin.SharedTransitions.Resource.String.abc_search_hint = global::LiLo.Lite.Droid.Resource.String.abc_search_hint;
+			global::Plugin.SharedTransitions.Resource.String.abc_shareactionprovider_share_with = global::LiLo.Lite.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Plugin.SharedTransitions.Resource.String.abc_shareactionprovider_share_with_application = global::LiLo.Lite.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Plugin.SharedTransitions.Resource.String.abc_toolbar_collapse_description = global::LiLo.Lite.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Plugin.SharedTransitions.Resource.String.appbar_scrolling_view_behavior = global::LiLo.Lite.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Plugin.SharedTransitions.Resource.String.bottom_sheet_behavior = global::LiLo.Lite.Droid.Resource.String.bottom_sheet_behavior;
+			global::Plugin.SharedTransitions.Resource.String.character_counter_content_description = global::LiLo.Lite.Droid.Resource.String.character_counter_content_description;
+			global::Plugin.SharedTransitions.Resource.String.character_counter_pattern = global::LiLo.Lite.Droid.Resource.String.character_counter_pattern;
+			global::Plugin.SharedTransitions.Resource.String.fab_transformation_scrim_behavior = global::LiLo.Lite.Droid.Resource.String.fab_transformation_scrim_behavior;
+			global::Plugin.SharedTransitions.Resource.String.fab_transformation_sheet_behavior = global::LiLo.Lite.Droid.Resource.String.fab_transformation_sheet_behavior;
+			global::Plugin.SharedTransitions.Resource.String.hide_bottom_view_on_scroll_behavior = global::LiLo.Lite.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
+			global::Plugin.SharedTransitions.Resource.String.mtrl_chip_close_icon_content_description = global::LiLo.Lite.Droid.Resource.String.mtrl_chip_close_icon_content_description;
+			global::Plugin.SharedTransitions.Resource.String.password_toggle_content_description = global::LiLo.Lite.Droid.Resource.String.password_toggle_content_description;
+			global::Plugin.SharedTransitions.Resource.String.path_password_eye = global::LiLo.Lite.Droid.Resource.String.path_password_eye;
+			global::Plugin.SharedTransitions.Resource.String.path_password_eye_mask_strike_through = global::LiLo.Lite.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::Plugin.SharedTransitions.Resource.String.path_password_eye_mask_visible = global::LiLo.Lite.Droid.Resource.String.path_password_eye_mask_visible;
+			global::Plugin.SharedTransitions.Resource.String.path_password_strike_through = global::LiLo.Lite.Droid.Resource.String.path_password_strike_through;
+			global::Plugin.SharedTransitions.Resource.String.search_menu_title = global::LiLo.Lite.Droid.Resource.String.search_menu_title;
+			global::Plugin.SharedTransitions.Resource.String.status_bar_notification_info_overflow = global::LiLo.Lite.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Plugin.SharedTransitions.Resource.Style.AlertDialog_AppCompat = global::LiLo.Lite.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.AlertDialog_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Animation_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Animation_AppCompat_DropDownUp = global::LiLo.Lite.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Plugin.SharedTransitions.Resource.Style.Animation_AppCompat_Tooltip = global::LiLo.Lite.Droid.Resource.Style.Animation_AppCompat_Tooltip;
+			global::Plugin.SharedTransitions.Resource.Style.Animation_Design_BottomSheetDialog = global::LiLo.Lite.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_AlertDialog_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.Base_AlertDialog_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Animation_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::LiLo.Lite.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Animation_AppCompat_Tooltip = global::LiLo.Lite.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::Plugin.SharedTransitions.Resource.Style.Base_CardView = global::LiLo.Lite.Droid.Resource.Style.Base_CardView;
+			global::Plugin.SharedTransitions.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.Base_DialogWindowTitle_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Button = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Large = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Small = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Title = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Plugin.SharedTransitions.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Plugin.SharedTransitions.Resource.Style.Base_ThemeOverlay_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::LiLo.Lite.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Plugin.SharedTransitions.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Plugin.SharedTransitions.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_MaterialComponents = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_MaterialComponents_Bridge = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_MaterialComponents_CompactMenu = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_MaterialComponents_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_MaterialComponents_Light = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V14_Theme_MaterialComponents = global::LiLo.Lite.Droid.Resource.Style.Base_V14_Theme_MaterialComponents;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge = global::LiLo.Lite.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V14_Theme_MaterialComponents_Light = global::LiLo.Lite.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge = global::LiLo.Lite.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::LiLo.Lite.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V21_Theme_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V21_Theme_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V22_Theme_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V22_Theme_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V23_Theme_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V23_Theme_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V26_Theme_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_V26_Theme_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V26_Theme_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::LiLo.Lite.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V28_Theme_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_V28_Theme_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V28_Theme_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Base_V28_Theme_AppCompat_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V7_Theme_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V7_Theme_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::LiLo.Lite.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::LiLo.Lite.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Plugin.SharedTransitions.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::LiLo.Lite.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ActionButton = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ActionMode = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Button = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Button_Small = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_EditText = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ImageButton = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ListView = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_RatingBar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_SearchView = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_SeekBar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Spinner = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_TextView = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_TextView;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Toolbar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_Design_TabLayout = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_MaterialComponents_Chip = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_MaterialComponents_Chip;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText;
+			global::Plugin.SharedTransitions.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout;
+			global::Plugin.SharedTransitions.Resource.Style.CardView = global::LiLo.Lite.Droid.Resource.Style.CardView;
+			global::Plugin.SharedTransitions.Resource.Style.CardView_Dark = global::LiLo.Lite.Droid.Resource.Style.CardView_Dark;
+			global::Plugin.SharedTransitions.Resource.Style.CardView_Light = global::LiLo.Lite.Droid.Resource.Style.CardView_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Platform_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Platform_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.Platform_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Platform_MaterialComponents = global::LiLo.Lite.Droid.Resource.Style.Platform_MaterialComponents;
+			global::Plugin.SharedTransitions.Resource.Style.Platform_MaterialComponents_Dialog = global::LiLo.Lite.Droid.Resource.Style.Platform_MaterialComponents_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Platform_MaterialComponents_Light = global::LiLo.Lite.Droid.Resource.Style.Platform_MaterialComponents_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Platform_MaterialComponents_Light_Dialog = global::LiLo.Lite.Droid.Resource.Style.Platform_MaterialComponents_Light_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Platform_ThemeOverlay_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::LiLo.Lite.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Plugin.SharedTransitions.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Platform_V21_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.Platform_V21_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Platform_V25_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.Platform_V25_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Platform_Widget_AppCompat_Spinner = global::LiLo.Lite.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Plugin.SharedTransitions.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Plugin.SharedTransitions.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Plugin.SharedTransitions.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Plugin.SharedTransitions.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Plugin.SharedTransitions.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut;
+			global::Plugin.SharedTransitions.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow;
+			global::Plugin.SharedTransitions.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Plugin.SharedTransitions.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title;
+			global::Plugin.SharedTransitions.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Plugin.SharedTransitions.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Plugin.SharedTransitions.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Plugin.SharedTransitions.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Plugin.SharedTransitions.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Plugin.SharedTransitions.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Plugin.SharedTransitions.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::LiLo.Lite.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Plugin.SharedTransitions.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::LiLo.Lite.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Body1 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Body2 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Button = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Caption = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Display1 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Display2 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Display3 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Display4 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Headline = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Large = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Medium = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Menu = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Small = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Subhead = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Title = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Tooltip = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Compat_Notification = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Compat_Notification_Info = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Compat_Notification_Media = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Compat_Notification_Time = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Compat_Notification_Title = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Design_Counter = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Design_Counter_Overflow = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Design_Error = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Design_HelperText = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Design_HelperText;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Design_Hint = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Design_Snackbar_Message = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Design_Tab = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_MaterialComponents_Body1 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Body1;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_MaterialComponents_Body2 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Body2;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_MaterialComponents_Button = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Button;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_MaterialComponents_Caption = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Caption;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_MaterialComponents_Chip = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Chip;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_MaterialComponents_Headline1 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline1;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_MaterialComponents_Headline2 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline2;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_MaterialComponents_Headline3 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline3;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_MaterialComponents_Headline4 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline4;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_MaterialComponents_Headline5 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline5;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_MaterialComponents_Headline6 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline6;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_MaterialComponents_Overline = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Overline;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_MaterialComponents_Subtitle1 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle1;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_MaterialComponents_Subtitle2 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle2;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_MaterialComponents_Tab = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Tab;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Plugin.SharedTransitions.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_AppCompat = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_AppCompat_Dark = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_AppCompat_DayNight = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_MaterialComponents = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_MaterialComponents_Dark = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_MaterialComponents_Dialog = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_MaterialComponents_Light = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Light;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox;
+			global::Plugin.SharedTransitions.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_CompactMenu = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_DayNight = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_Light_Dialog = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_AppCompat_NoActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_Design = global::LiLo.Lite.Droid.Resource.Style.Theme_Design;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_Design_BottomSheetDialog = global::LiLo.Lite.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_Design_Light = global::LiLo.Lite.Droid.Resource.Style.Theme_Design_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::LiLo.Lite.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_Design_Light_NoActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_Design_NoActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_BottomSheetDialog = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_Bridge = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Bridge;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_CompactMenu = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_Dialog = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_DialogWhenLarge = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_Light = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_Light_Bridge = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_Light_Dialog = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_Light_NoActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_NoActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ActionButton = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ActionMode = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ActivityChooserView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Button = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ButtonBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Button_Borderless = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Button_Colored = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Button_Small = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_EditText = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ImageButton = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_ActionButton = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_SearchView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ListMenuView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ListPopupWindow = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ListView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ListView_DropDown = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ListView_Menu = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_PopupMenu = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_PopupWindow = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ProgressBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_RatingBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_RatingBar_Small = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_SearchView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_SeekBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Spinner = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_TextView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_TextView;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Toolbar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_Compat_NotificationActionContainer = global::LiLo.Lite.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_Compat_NotificationActionText = global::LiLo.Lite.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_Design_AppBarLayout = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_Design_BottomNavigationView = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_Design_BottomSheet_Modal = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_Design_CollapsingToolbar = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_Design_FloatingActionButton = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_Design_NavigationView = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_Design_Snackbar = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_Design_TabLayout = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_Design_TextInputLayout = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_BottomAppBar = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_BottomNavigationView = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_Button = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_Button_Icon = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button_Icon;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_Button_TextButton = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_CardView = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_CardView;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_ChipGroup = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_Chip_Action = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Chip_Action;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_Chip_Choice = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Chip_Choice;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_Chip_Entry = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Chip_Entry;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_Chip_Filter = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Chip_Filter;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_FloatingActionButton = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_FloatingActionButton;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_NavigationView = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_NavigationView;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_Snackbar = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Snackbar;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_TabLayout = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TabLayout;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_TabLayout_Colored = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TabLayout_Colored;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_MaterialComponents_Toolbar = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Toolbar;
+			global::Plugin.SharedTransitions.Resource.Style.Widget_Support_CoordinatorLayout = global::LiLo.Lite.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBarLayout = global::LiLo.Lite.Droid.Resource.Styleable.ActionBarLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::LiLo.Lite.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_background = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_background;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_backgroundSplit = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_backgroundStacked = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_contentInsetEnd = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_contentInsetLeft = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_contentInsetRight = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_contentInsetStart = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_customNavigationLayout = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_displayOptions = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_divider = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_divider;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_elevation = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_height = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_height;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_hideOnContentScroll = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_homeAsUpIndicator = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_homeLayout = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_icon = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_icon;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_itemPadding = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_logo = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_logo;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_navigationMode = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_popupTheme = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_progressBarPadding = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_progressBarStyle = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_subtitle = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_subtitleTextStyle = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_title = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_title;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionBar_titleTextStyle = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionMenuItemView = global::LiLo.Lite.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionMenuItemView_android_minWidth = global::LiLo.Lite.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionMenuView = global::LiLo.Lite.Droid.Resource.Styleable.ActionMenuView;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionMode = global::LiLo.Lite.Droid.Resource.Styleable.ActionMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionMode_background = global::LiLo.Lite.Droid.Resource.Styleable.ActionMode_background;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionMode_backgroundSplit = global::LiLo.Lite.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionMode_closeItemLayout = global::LiLo.Lite.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionMode_height = global::LiLo.Lite.Droid.Resource.Styleable.ActionMode_height;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionMode_subtitleTextStyle = global::LiLo.Lite.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActionMode_titleTextStyle = global::LiLo.Lite.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActivityChooserView = global::LiLo.Lite.Droid.Resource.Styleable.ActivityChooserView;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::LiLo.Lite.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Plugin.SharedTransitions.Resource.Styleable.ActivityChooserView_initialActivityCount = global::LiLo.Lite.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Plugin.SharedTransitions.Resource.Styleable.AlertDialog = global::LiLo.Lite.Droid.Resource.Styleable.AlertDialog;
+			global::Plugin.SharedTransitions.Resource.Styleable.AlertDialog_android_layout = global::LiLo.Lite.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Plugin.SharedTransitions.Resource.Styleable.AlertDialog_buttonIconDimen = global::LiLo.Lite.Droid.Resource.Styleable.AlertDialog_buttonIconDimen;
+			global::Plugin.SharedTransitions.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::LiLo.Lite.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.AlertDialog_listItemLayout = global::LiLo.Lite.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.AlertDialog_listLayout = global::LiLo.Lite.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::LiLo.Lite.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.AlertDialog_showTitle = global::LiLo.Lite.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::LiLo.Lite.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.AnimatedStateListDrawableCompat = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableCompat;
+			global::Plugin.SharedTransitions.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize;
+			global::Plugin.SharedTransitions.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither;
+			global::Plugin.SharedTransitions.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration;
+			global::Plugin.SharedTransitions.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration;
+			global::Plugin.SharedTransitions.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible;
+			global::Plugin.SharedTransitions.Resource.Styleable.AnimatedStateListDrawableItem = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableItem;
+			global::Plugin.SharedTransitions.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable;
+			global::Plugin.SharedTransitions.Resource.Styleable.AnimatedStateListDrawableItem_android_id = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_id;
+			global::Plugin.SharedTransitions.Resource.Styleable.AnimatedStateListDrawableTransition = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableTransition;
+			global::Plugin.SharedTransitions.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable;
+			global::Plugin.SharedTransitions.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId;
+			global::Plugin.SharedTransitions.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible;
+			global::Plugin.SharedTransitions.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppBarLayout = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppBarLayoutStates = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppBarLayoutStates_state_liftable = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayoutStates_state_liftable;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppBarLayoutStates_state_lifted = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayoutStates_state_lifted;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppBarLayout_android_background = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppBarLayout_elevation = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppBarLayout_expanded = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppBarLayout_Layout = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppBarLayout_liftOnScroll = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout_liftOnScroll;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatImageView = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatImageView;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatImageView_android_src = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatImageView_srcCompat = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatImageView_tint = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatImageView_tintMode = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatSeekBar = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatSeekBar_android_thumb = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatSeekBar_tickMark = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextHelper = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_android_textAppearance = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_drawableBottomCompat = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_drawableBottomCompat;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_drawableEndCompat = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_drawableEndCompat;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_drawableLeftCompat = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_drawableLeftCompat;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_drawableRightCompat = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_drawableRightCompat;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_drawableStartCompat = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_drawableStartCompat;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_drawableTint = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_drawableTint;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_drawableTintMode = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_drawableTintMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_drawableTopCompat = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_drawableTopCompat;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_fontFamily = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_fontVariationSettings = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_fontVariationSettings;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_lineHeight = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_textAllCaps = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTextView_textLocale = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_textLocale;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionBarDivider = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionBarSize = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionBarStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionBarTheme = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionModeBackground = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionModeStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_buttonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_checkboxStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_colorAccent = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_colorControlActivated = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_colorControlNormal = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_colorError = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorError;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_colorPrimary = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_controlBackground = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_dialogCornerRadius = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_dialogCornerRadius;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_dialogTheme = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_dividerVertical = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_editTextBackground = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_editTextColor = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_editTextStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_panelBackground = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_searchViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_seekBarStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_spinnerStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_switchStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_toolbarStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_viewInflaterClass = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_viewInflaterClass;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_windowActionBar = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Plugin.SharedTransitions.Resource.Styleable.AppCompatTheme_windowNoTitle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomAppBar = global::LiLo.Lite.Droid.Resource.Styleable.BottomAppBar;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomAppBar_backgroundTint = global::LiLo.Lite.Droid.Resource.Styleable.BottomAppBar_backgroundTint;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomAppBar_fabAlignmentMode = global::LiLo.Lite.Droid.Resource.Styleable.BottomAppBar_fabAlignmentMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomAppBar_fabCradleMargin = global::LiLo.Lite.Droid.Resource.Styleable.BottomAppBar_fabCradleMargin;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius = global::LiLo.Lite.Droid.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset = global::LiLo.Lite.Droid.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomAppBar_hideOnScroll = global::LiLo.Lite.Droid.Resource.Styleable.BottomAppBar_hideOnScroll;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomNavigationView = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomNavigationView_elevation = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomNavigationView_itemBackground = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomNavigationView_itemIconSize = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_itemIconSize;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomNavigationView_itemIconTint = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomNavigationView_itemTextColor = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomNavigationView_labelVisibilityMode = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_labelVisibilityMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomNavigationView_menu = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomSheetBehavior_Layout = global::LiLo.Lite.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents = global::LiLo.Lite.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::LiLo.Lite.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::LiLo.Lite.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::Plugin.SharedTransitions.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::LiLo.Lite.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::Plugin.SharedTransitions.Resource.Styleable.ButtonBarLayout = global::LiLo.Lite.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.ButtonBarLayout_allowStacking = global::LiLo.Lite.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Plugin.SharedTransitions.Resource.Styleable.CardView = global::LiLo.Lite.Droid.Resource.Styleable.CardView;
+			global::Plugin.SharedTransitions.Resource.Styleable.CardView_android_minHeight = global::LiLo.Lite.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::Plugin.SharedTransitions.Resource.Styleable.CardView_android_minWidth = global::LiLo.Lite.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::Plugin.SharedTransitions.Resource.Styleable.CardView_cardBackgroundColor = global::LiLo.Lite.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.CardView_cardCornerRadius = global::LiLo.Lite.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::Plugin.SharedTransitions.Resource.Styleable.CardView_cardElevation = global::LiLo.Lite.Droid.Resource.Styleable.CardView_cardElevation;
+			global::Plugin.SharedTransitions.Resource.Styleable.CardView_cardMaxElevation = global::LiLo.Lite.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::Plugin.SharedTransitions.Resource.Styleable.CardView_cardPreventCornerOverlap = global::LiLo.Lite.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Plugin.SharedTransitions.Resource.Styleable.CardView_cardUseCompatPadding = global::LiLo.Lite.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.CardView_contentPadding = global::LiLo.Lite.Droid.Resource.Styleable.CardView_contentPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.CardView_contentPaddingBottom = global::LiLo.Lite.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Plugin.SharedTransitions.Resource.Styleable.CardView_contentPaddingLeft = global::LiLo.Lite.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Plugin.SharedTransitions.Resource.Styleable.CardView_contentPaddingRight = global::LiLo.Lite.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::Plugin.SharedTransitions.Resource.Styleable.CardView_contentPaddingTop = global::LiLo.Lite.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip = global::LiLo.Lite.Droid.Resource.Styleable.Chip;
+			global::Plugin.SharedTransitions.Resource.Styleable.ChipGroup = global::LiLo.Lite.Droid.Resource.Styleable.ChipGroup;
+			global::Plugin.SharedTransitions.Resource.Styleable.ChipGroup_checkedChip = global::LiLo.Lite.Droid.Resource.Styleable.ChipGroup_checkedChip;
+			global::Plugin.SharedTransitions.Resource.Styleable.ChipGroup_chipSpacing = global::LiLo.Lite.Droid.Resource.Styleable.ChipGroup_chipSpacing;
+			global::Plugin.SharedTransitions.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::LiLo.Lite.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
+			global::Plugin.SharedTransitions.Resource.Styleable.ChipGroup_chipSpacingVertical = global::LiLo.Lite.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical;
+			global::Plugin.SharedTransitions.Resource.Styleable.ChipGroup_singleLine = global::LiLo.Lite.Droid.Resource.Styleable.ChipGroup_singleLine;
+			global::Plugin.SharedTransitions.Resource.Styleable.ChipGroup_singleSelection = global::LiLo.Lite.Droid.Resource.Styleable.ChipGroup_singleSelection;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_android_checkable = global::LiLo.Lite.Droid.Resource.Styleable.Chip_android_checkable;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_android_ellipsize = global::LiLo.Lite.Droid.Resource.Styleable.Chip_android_ellipsize;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_android_maxWidth = global::LiLo.Lite.Droid.Resource.Styleable.Chip_android_maxWidth;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_android_text = global::LiLo.Lite.Droid.Resource.Styleable.Chip_android_text;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_android_textAppearance = global::LiLo.Lite.Droid.Resource.Styleable.Chip_android_textAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_checkedIcon = global::LiLo.Lite.Droid.Resource.Styleable.Chip_checkedIcon;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_checkedIconEnabled = global::LiLo.Lite.Droid.Resource.Styleable.Chip_checkedIconEnabled;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_checkedIconVisible = global::LiLo.Lite.Droid.Resource.Styleable.Chip_checkedIconVisible;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_chipBackgroundColor = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipBackgroundColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_chipCornerRadius = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipCornerRadius;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_chipEndPadding = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipEndPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_chipIcon = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipIcon;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_chipIconEnabled = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipIconEnabled;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_chipIconSize = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipIconSize;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_chipIconTint = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipIconTint;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_chipIconVisible = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipIconVisible;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_chipMinHeight = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipMinHeight;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_chipStartPadding = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipStartPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_chipStrokeColor = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipStrokeColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_chipStrokeWidth = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipStrokeWidth;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_closeIcon = global::LiLo.Lite.Droid.Resource.Styleable.Chip_closeIcon;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_closeIconEnabled = global::LiLo.Lite.Droid.Resource.Styleable.Chip_closeIconEnabled;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_closeIconEndPadding = global::LiLo.Lite.Droid.Resource.Styleable.Chip_closeIconEndPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_closeIconSize = global::LiLo.Lite.Droid.Resource.Styleable.Chip_closeIconSize;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_closeIconStartPadding = global::LiLo.Lite.Droid.Resource.Styleable.Chip_closeIconStartPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_closeIconTint = global::LiLo.Lite.Droid.Resource.Styleable.Chip_closeIconTint;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_closeIconVisible = global::LiLo.Lite.Droid.Resource.Styleable.Chip_closeIconVisible;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_hideMotionSpec = global::LiLo.Lite.Droid.Resource.Styleable.Chip_hideMotionSpec;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_iconEndPadding = global::LiLo.Lite.Droid.Resource.Styleable.Chip_iconEndPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_iconStartPadding = global::LiLo.Lite.Droid.Resource.Styleable.Chip_iconStartPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_rippleColor = global::LiLo.Lite.Droid.Resource.Styleable.Chip_rippleColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_showMotionSpec = global::LiLo.Lite.Droid.Resource.Styleable.Chip_showMotionSpec;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_textEndPadding = global::LiLo.Lite.Droid.Resource.Styleable.Chip_textEndPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.Chip_textStartPadding = global::LiLo.Lite.Droid.Resource.Styleable.Chip_textStartPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_Layout = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_title = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Plugin.SharedTransitions.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Plugin.SharedTransitions.Resource.Styleable.ColorStateListItem = global::LiLo.Lite.Droid.Resource.Styleable.ColorStateListItem;
+			global::Plugin.SharedTransitions.Resource.Styleable.ColorStateListItem_alpha = global::LiLo.Lite.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Plugin.SharedTransitions.Resource.Styleable.ColorStateListItem_android_alpha = global::LiLo.Lite.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Plugin.SharedTransitions.Resource.Styleable.ColorStateListItem_android_color = global::LiLo.Lite.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Plugin.SharedTransitions.Resource.Styleable.CompoundButton = global::LiLo.Lite.Droid.Resource.Styleable.CompoundButton;
+			global::Plugin.SharedTransitions.Resource.Styleable.CompoundButton_android_button = global::LiLo.Lite.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Plugin.SharedTransitions.Resource.Styleable.CompoundButton_buttonCompat = global::LiLo.Lite.Droid.Resource.Styleable.CompoundButton_buttonCompat;
+			global::Plugin.SharedTransitions.Resource.Styleable.CompoundButton_buttonTint = global::LiLo.Lite.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Plugin.SharedTransitions.Resource.Styleable.CompoundButton_buttonTintMode = global::LiLo.Lite.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.CoordinatorLayout = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.CoordinatorLayout_keylines = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Plugin.SharedTransitions.Resource.Styleable.CoordinatorLayout_Layout = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Plugin.SharedTransitions.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Plugin.SharedTransitions.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Plugin.SharedTransitions.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Plugin.SharedTransitions.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Plugin.SharedTransitions.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Plugin.SharedTransitions.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Plugin.SharedTransitions.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Plugin.SharedTransitions.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.DesignTheme = global::LiLo.Lite.Droid.Resource.Styleable.DesignTheme;
+			global::Plugin.SharedTransitions.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::LiLo.Lite.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Plugin.SharedTransitions.Resource.Styleable.DesignTheme_bottomSheetStyle = global::LiLo.Lite.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.DrawerArrowToggle = global::LiLo.Lite.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Plugin.SharedTransitions.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::LiLo.Lite.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Plugin.SharedTransitions.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::LiLo.Lite.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Plugin.SharedTransitions.Resource.Styleable.DrawerArrowToggle_barLength = global::LiLo.Lite.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Plugin.SharedTransitions.Resource.Styleable.DrawerArrowToggle_color = global::LiLo.Lite.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Plugin.SharedTransitions.Resource.Styleable.DrawerArrowToggle_drawableSize = global::LiLo.Lite.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Plugin.SharedTransitions.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::LiLo.Lite.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Plugin.SharedTransitions.Resource.Styleable.DrawerArrowToggle_spinBars = global::LiLo.Lite.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Plugin.SharedTransitions.Resource.Styleable.DrawerArrowToggle_thickness = global::LiLo.Lite.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Plugin.SharedTransitions.Resource.Styleable.FloatingActionButton = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton;
+			global::Plugin.SharedTransitions.Resource.Styleable.FloatingActionButton_backgroundTint = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Plugin.SharedTransitions.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Plugin.SharedTransitions.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::Plugin.SharedTransitions.Resource.Styleable.FloatingActionButton_borderWidth = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Plugin.SharedTransitions.Resource.Styleable.FloatingActionButton_elevation = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::Plugin.SharedTransitions.Resource.Styleable.FloatingActionButton_fabCustomSize = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_fabCustomSize;
+			global::Plugin.SharedTransitions.Resource.Styleable.FloatingActionButton_fabSize = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Plugin.SharedTransitions.Resource.Styleable.FloatingActionButton_hideMotionSpec = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_hideMotionSpec;
+			global::Plugin.SharedTransitions.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ;
+			global::Plugin.SharedTransitions.Resource.Styleable.FloatingActionButton_maxImageSize = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_maxImageSize;
+			global::Plugin.SharedTransitions.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Plugin.SharedTransitions.Resource.Styleable.FloatingActionButton_rippleColor = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.FloatingActionButton_showMotionSpec = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_showMotionSpec;
+			global::Plugin.SharedTransitions.Resource.Styleable.FloatingActionButton_useCompatPadding = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.FlowLayout = global::LiLo.Lite.Droid.Resource.Styleable.FlowLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.FlowLayout_itemSpacing = global::LiLo.Lite.Droid.Resource.Styleable.FlowLayout_itemSpacing;
+			global::Plugin.SharedTransitions.Resource.Styleable.FlowLayout_lineSpacing = global::LiLo.Lite.Droid.Resource.Styleable.FlowLayout_lineSpacing;
+			global::Plugin.SharedTransitions.Resource.Styleable.FontFamily = global::LiLo.Lite.Droid.Resource.Styleable.FontFamily;
+			global::Plugin.SharedTransitions.Resource.Styleable.FontFamilyFont = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont;
+			global::Plugin.SharedTransitions.Resource.Styleable.FontFamilyFont_android_font = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Plugin.SharedTransitions.Resource.Styleable.FontFamilyFont_android_fontStyle = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::Plugin.SharedTransitions.Resource.Styleable.FontFamilyFont_android_fontWeight = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Plugin.SharedTransitions.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::Plugin.SharedTransitions.Resource.Styleable.FontFamilyFont_font = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Plugin.SharedTransitions.Resource.Styleable.FontFamilyFont_fontStyle = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::Plugin.SharedTransitions.Resource.Styleable.FontFamilyFont_fontWeight = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Plugin.SharedTransitions.Resource.Styleable.FontFamilyFont_ttcIndex = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Plugin.SharedTransitions.Resource.Styleable.FontFamily_fontProviderAuthority = global::LiLo.Lite.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Plugin.SharedTransitions.Resource.Styleable.FontFamily_fontProviderCerts = global::LiLo.Lite.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Plugin.SharedTransitions.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::LiLo.Lite.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Plugin.SharedTransitions.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::LiLo.Lite.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Plugin.SharedTransitions.Resource.Styleable.FontFamily_fontProviderPackage = global::LiLo.Lite.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Plugin.SharedTransitions.Resource.Styleable.FontFamily_fontProviderQuery = global::LiLo.Lite.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Plugin.SharedTransitions.Resource.Styleable.ForegroundLinearLayout = global::LiLo.Lite.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::LiLo.Lite.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Plugin.SharedTransitions.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::LiLo.Lite.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Plugin.SharedTransitions.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::LiLo.Lite.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.Fragment = global::LiLo.Lite.Droid.Resource.Styleable.Fragment;
+			global::Plugin.SharedTransitions.Resource.Styleable.FragmentContainerView = global::LiLo.Lite.Droid.Resource.Styleable.FragmentContainerView;
+			global::Plugin.SharedTransitions.Resource.Styleable.FragmentContainerView_android_name = global::LiLo.Lite.Droid.Resource.Styleable.FragmentContainerView_android_name;
+			global::Plugin.SharedTransitions.Resource.Styleable.FragmentContainerView_android_tag = global::LiLo.Lite.Droid.Resource.Styleable.FragmentContainerView_android_tag;
+			global::Plugin.SharedTransitions.Resource.Styleable.Fragment_android_id = global::LiLo.Lite.Droid.Resource.Styleable.Fragment_android_id;
+			global::Plugin.SharedTransitions.Resource.Styleable.Fragment_android_name = global::LiLo.Lite.Droid.Resource.Styleable.Fragment_android_name;
+			global::Plugin.SharedTransitions.Resource.Styleable.Fragment_android_tag = global::LiLo.Lite.Droid.Resource.Styleable.Fragment_android_tag;
+			global::Plugin.SharedTransitions.Resource.Styleable.GradientColor = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.GradientColorItem = global::LiLo.Lite.Droid.Resource.Styleable.GradientColorItem;
+			global::Plugin.SharedTransitions.Resource.Styleable.GradientColorItem_android_color = global::LiLo.Lite.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::Plugin.SharedTransitions.Resource.Styleable.GradientColorItem_android_offset = global::LiLo.Lite.Droid.Resource.Styleable.GradientColorItem_android_offset;
+			global::Plugin.SharedTransitions.Resource.Styleable.GradientColor_android_centerColor = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_centerColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.GradientColor_android_centerX = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_centerX;
+			global::Plugin.SharedTransitions.Resource.Styleable.GradientColor_android_centerY = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_centerY;
+			global::Plugin.SharedTransitions.Resource.Styleable.GradientColor_android_endColor = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_endColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.GradientColor_android_endX = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_endX;
+			global::Plugin.SharedTransitions.Resource.Styleable.GradientColor_android_endY = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_endY;
+			global::Plugin.SharedTransitions.Resource.Styleable.GradientColor_android_gradientRadius = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::Plugin.SharedTransitions.Resource.Styleable.GradientColor_android_startColor = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_startColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.GradientColor_android_startX = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_startX;
+			global::Plugin.SharedTransitions.Resource.Styleable.GradientColor_android_startY = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_startY;
+			global::Plugin.SharedTransitions.Resource.Styleable.GradientColor_android_tileMode = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_tileMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.GradientColor_android_type = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_type;
+			global::Plugin.SharedTransitions.Resource.Styleable.LinearLayoutCompat = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Plugin.SharedTransitions.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Plugin.SharedTransitions.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Plugin.SharedTransitions.Resource.Styleable.LinearLayoutCompat_android_gravity = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Plugin.SharedTransitions.Resource.Styleable.LinearLayoutCompat_android_orientation = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Plugin.SharedTransitions.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Plugin.SharedTransitions.Resource.Styleable.LinearLayoutCompat_divider = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Plugin.SharedTransitions.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.LinearLayoutCompat_Layout = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Plugin.SharedTransitions.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Plugin.SharedTransitions.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Plugin.SharedTransitions.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Plugin.SharedTransitions.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Plugin.SharedTransitions.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Plugin.SharedTransitions.Resource.Styleable.LinearLayoutCompat_showDividers = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Plugin.SharedTransitions.Resource.Styleable.ListPopupWindow = global::LiLo.Lite.Droid.Resource.Styleable.ListPopupWindow;
+			global::Plugin.SharedTransitions.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::LiLo.Lite.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Plugin.SharedTransitions.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::LiLo.Lite.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialButton = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialButton_android_insetBottom = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_android_insetBottom;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialButton_android_insetLeft = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_android_insetLeft;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialButton_android_insetRight = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_android_insetRight;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialButton_android_insetTop = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_android_insetTop;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialButton_backgroundTint = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_backgroundTint;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialButton_backgroundTintMode = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_backgroundTintMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialButton_cornerRadius = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_cornerRadius;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialButton_icon = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_icon;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialButton_iconGravity = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_iconGravity;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialButton_iconPadding = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_iconPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialButton_iconSize = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_iconSize;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialButton_iconTint = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_iconTint;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialButton_iconTintMode = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_iconTintMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialButton_rippleColor = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_rippleColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialButton_strokeColor = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_strokeColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialButton_strokeWidth = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_strokeWidth;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialCardView = global::LiLo.Lite.Droid.Resource.Styleable.MaterialCardView;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialCardView_strokeColor = global::LiLo.Lite.Droid.Resource.Styleable.MaterialCardView_strokeColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialCardView_strokeWidth = global::LiLo.Lite.Droid.Resource.Styleable.MaterialCardView_strokeWidth;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_bottomSheetDialogTheme = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetDialogTheme;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_bottomSheetStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_chipGroupStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_chipGroupStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_chipStandaloneStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_chipStandaloneStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_chipStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_chipStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_colorAccent = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_colorAccent;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_colorBackgroundFloating = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_colorBackgroundFloating;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_colorPrimary = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimary;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_colorPrimaryDark = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimaryDark;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_colorSecondary = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_colorSecondary;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_editTextStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_editTextStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_floatingActionButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_floatingActionButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_materialButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_materialButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_materialCardViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_materialCardViewStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_navigationViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_navigationViewStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_scrimBackground = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_scrimBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_snackbarButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_snackbarButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_tabStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_tabStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody1 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody1;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody2 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody2;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_textAppearanceButton = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceButton;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_textAppearanceCaption = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceCaption;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline1 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline1;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline2 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline2;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline3 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline3;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline4 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline4;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline5 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline5;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline6 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline6;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_textAppearanceOverline = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceOverline;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2;
+			global::Plugin.SharedTransitions.Resource.Styleable.MaterialComponentsTheme_textInputStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textInputStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuGroup = global::LiLo.Lite.Droid.Resource.Styleable.MenuGroup;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuGroup_android_checkableBehavior = global::LiLo.Lite.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuGroup_android_enabled = global::LiLo.Lite.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuGroup_android_id = global::LiLo.Lite.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuGroup_android_menuCategory = global::LiLo.Lite.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuGroup_android_orderInCategory = global::LiLo.Lite.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuGroup_android_visible = global::LiLo.Lite.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_actionLayout = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_actionProviderClass = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_actionViewClass = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_alphabeticModifiers = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_android_checkable = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_android_checked = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_android_enabled = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_android_icon = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_android_id = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_android_menuCategory = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_android_numericShortcut = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_android_onClick = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_android_orderInCategory = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_android_title = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_android_titleCondensed = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_android_visible = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_contentDescription = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_contentDescription;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_iconTint = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_iconTint;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_iconTintMode = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_iconTintMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_numericModifiers = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_numericModifiers;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_showAsAction = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuItem_tooltipText = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_tooltipText;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuView = global::LiLo.Lite.Droid.Resource.Styleable.MenuView;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuView_android_headerBackground = global::LiLo.Lite.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuView_android_horizontalDivider = global::LiLo.Lite.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuView_android_itemBackground = global::LiLo.Lite.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::LiLo.Lite.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuView_android_itemTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuView_android_verticalDivider = global::LiLo.Lite.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuView_android_windowAnimationStyle = global::LiLo.Lite.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuView_preserveIconSpacing = global::LiLo.Lite.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Plugin.SharedTransitions.Resource.Styleable.MenuView_subMenuArrow = global::LiLo.Lite.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::Plugin.SharedTransitions.Resource.Styleable.NavigationView = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView;
+			global::Plugin.SharedTransitions.Resource.Styleable.NavigationView_android_background = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_android_background;
+			global::Plugin.SharedTransitions.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Plugin.SharedTransitions.Resource.Styleable.NavigationView_android_maxWidth = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Plugin.SharedTransitions.Resource.Styleable.NavigationView_elevation = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_elevation;
+			global::Plugin.SharedTransitions.Resource.Styleable.NavigationView_headerLayout = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.NavigationView_itemBackground = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.NavigationView_itemHorizontalPadding = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_itemHorizontalPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.NavigationView_itemIconPadding = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_itemIconPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.NavigationView_itemIconTint = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::Plugin.SharedTransitions.Resource.Styleable.NavigationView_itemTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.NavigationView_itemTextColor = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.NavigationView_menu = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_menu;
+			global::Plugin.SharedTransitions.Resource.Styleable.PopupWindow = global::LiLo.Lite.Droid.Resource.Styleable.PopupWindow;
+			global::Plugin.SharedTransitions.Resource.Styleable.PopupWindowBackgroundState = global::LiLo.Lite.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Plugin.SharedTransitions.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::LiLo.Lite.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Plugin.SharedTransitions.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::LiLo.Lite.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.PopupWindow_android_popupBackground = global::LiLo.Lite.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.PopupWindow_overlapAnchor = global::LiLo.Lite.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Plugin.SharedTransitions.Resource.Styleable.RecycleListView = global::LiLo.Lite.Droid.Resource.Styleable.RecycleListView;
+			global::Plugin.SharedTransitions.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::LiLo.Lite.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Plugin.SharedTransitions.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::LiLo.Lite.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Plugin.SharedTransitions.Resource.Styleable.RecyclerView = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView;
+			global::Plugin.SharedTransitions.Resource.Styleable.RecyclerView_android_clipToPadding = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_android_clipToPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.RecyclerView_android_descendantFocusability = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Plugin.SharedTransitions.Resource.Styleable.RecyclerView_android_orientation = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Plugin.SharedTransitions.Resource.Styleable.RecyclerView_fastScrollEnabled = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
+			global::Plugin.SharedTransitions.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
+			global::Plugin.SharedTransitions.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
+			global::Plugin.SharedTransitions.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
+			global::Plugin.SharedTransitions.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
+			global::Plugin.SharedTransitions.Resource.Styleable.RecyclerView_layoutManager = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Plugin.SharedTransitions.Resource.Styleable.RecyclerView_reverseLayout = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.RecyclerView_spanCount = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Plugin.SharedTransitions.Resource.Styleable.RecyclerView_stackFromEnd = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Plugin.SharedTransitions.Resource.Styleable.ScrimInsetsFrameLayout = global::LiLo.Lite.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::LiLo.Lite.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Plugin.SharedTransitions.Resource.Styleable.ScrollingViewBehavior_Layout = global::LiLo.Lite.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::Plugin.SharedTransitions.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::LiLo.Lite.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Plugin.SharedTransitions.Resource.Styleable.SearchView = global::LiLo.Lite.Droid.Resource.Styleable.SearchView;
+			global::Plugin.SharedTransitions.Resource.Styleable.SearchView_android_focusable = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Plugin.SharedTransitions.Resource.Styleable.SearchView_android_imeOptions = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Plugin.SharedTransitions.Resource.Styleable.SearchView_android_inputType = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Plugin.SharedTransitions.Resource.Styleable.SearchView_android_maxWidth = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Plugin.SharedTransitions.Resource.Styleable.SearchView_closeIcon = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Plugin.SharedTransitions.Resource.Styleable.SearchView_commitIcon = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Plugin.SharedTransitions.Resource.Styleable.SearchView_defaultQueryHint = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Plugin.SharedTransitions.Resource.Styleable.SearchView_goIcon = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Plugin.SharedTransitions.Resource.Styleable.SearchView_iconifiedByDefault = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Plugin.SharedTransitions.Resource.Styleable.SearchView_layout = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_layout;
+			global::Plugin.SharedTransitions.Resource.Styleable.SearchView_queryBackground = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.SearchView_queryHint = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Plugin.SharedTransitions.Resource.Styleable.SearchView_searchHintIcon = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Plugin.SharedTransitions.Resource.Styleable.SearchView_searchIcon = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Plugin.SharedTransitions.Resource.Styleable.SearchView_submitBackground = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.SearchView_suggestionRowLayout = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.SearchView_voiceIcon = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Plugin.SharedTransitions.Resource.Styleable.Snackbar = global::LiLo.Lite.Droid.Resource.Styleable.Snackbar;
+			global::Plugin.SharedTransitions.Resource.Styleable.SnackbarLayout = global::LiLo.Lite.Droid.Resource.Styleable.SnackbarLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.SnackbarLayout_android_maxWidth = global::LiLo.Lite.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Plugin.SharedTransitions.Resource.Styleable.SnackbarLayout_elevation = global::LiLo.Lite.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::Plugin.SharedTransitions.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::LiLo.Lite.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Plugin.SharedTransitions.Resource.Styleable.Snackbar_snackbarButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.Snackbar_snackbarStyle = global::LiLo.Lite.Droid.Resource.Styleable.Snackbar_snackbarStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.Spinner = global::LiLo.Lite.Droid.Resource.Styleable.Spinner;
+			global::Plugin.SharedTransitions.Resource.Styleable.Spinner_android_dropDownWidth = global::LiLo.Lite.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Plugin.SharedTransitions.Resource.Styleable.Spinner_android_entries = global::LiLo.Lite.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Plugin.SharedTransitions.Resource.Styleable.Spinner_android_popupBackground = global::LiLo.Lite.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.Spinner_android_prompt = global::LiLo.Lite.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Plugin.SharedTransitions.Resource.Styleable.Spinner_popupTheme = global::LiLo.Lite.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Plugin.SharedTransitions.Resource.Styleable.StateListDrawable = global::LiLo.Lite.Droid.Resource.Styleable.StateListDrawable;
+			global::Plugin.SharedTransitions.Resource.Styleable.StateListDrawableItem = global::LiLo.Lite.Droid.Resource.Styleable.StateListDrawableItem;
+			global::Plugin.SharedTransitions.Resource.Styleable.StateListDrawableItem_android_drawable = global::LiLo.Lite.Droid.Resource.Styleable.StateListDrawableItem_android_drawable;
+			global::Plugin.SharedTransitions.Resource.Styleable.StateListDrawable_android_constantSize = global::LiLo.Lite.Droid.Resource.Styleable.StateListDrawable_android_constantSize;
+			global::Plugin.SharedTransitions.Resource.Styleable.StateListDrawable_android_dither = global::LiLo.Lite.Droid.Resource.Styleable.StateListDrawable_android_dither;
+			global::Plugin.SharedTransitions.Resource.Styleable.StateListDrawable_android_enterFadeDuration = global::LiLo.Lite.Droid.Resource.Styleable.StateListDrawable_android_enterFadeDuration;
+			global::Plugin.SharedTransitions.Resource.Styleable.StateListDrawable_android_exitFadeDuration = global::LiLo.Lite.Droid.Resource.Styleable.StateListDrawable_android_exitFadeDuration;
+			global::Plugin.SharedTransitions.Resource.Styleable.StateListDrawable_android_variablePadding = global::LiLo.Lite.Droid.Resource.Styleable.StateListDrawable_android_variablePadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.StateListDrawable_android_visible = global::LiLo.Lite.Droid.Resource.Styleable.StateListDrawable_android_visible;
+			global::Plugin.SharedTransitions.Resource.Styleable.SwitchCompat = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat;
+			global::Plugin.SharedTransitions.Resource.Styleable.SwitchCompat_android_textOff = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Plugin.SharedTransitions.Resource.Styleable.SwitchCompat_android_textOn = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Plugin.SharedTransitions.Resource.Styleable.SwitchCompat_android_thumb = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Plugin.SharedTransitions.Resource.Styleable.SwitchCompat_showText = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Plugin.SharedTransitions.Resource.Styleable.SwitchCompat_splitTrack = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Plugin.SharedTransitions.Resource.Styleable.SwitchCompat_switchMinWidth = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Plugin.SharedTransitions.Resource.Styleable.SwitchCompat_switchPadding = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.SwitchCompat_switchTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.SwitchCompat_thumbTextPadding = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.SwitchCompat_thumbTint = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Plugin.SharedTransitions.Resource.Styleable.SwitchCompat_thumbTintMode = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.SwitchCompat_track = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Plugin.SharedTransitions.Resource.Styleable.SwitchCompat_trackTint = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::Plugin.SharedTransitions.Resource.Styleable.SwitchCompat_trackTintMode = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabItem = global::LiLo.Lite.Droid.Resource.Styleable.TabItem;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabItem_android_icon = global::LiLo.Lite.Droid.Resource.Styleable.TabItem_android_icon;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabItem_android_layout = global::LiLo.Lite.Droid.Resource.Styleable.TabItem_android_layout;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabItem_android_text = global::LiLo.Lite.Droid.Resource.Styleable.TabItem_android_text;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabBackground = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabContentStart = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabGravity = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabIconTint = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabIconTint;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabIconTintMode = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabIconTintMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabIndicator = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabIndicator;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabIndicatorColor = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabIndicatorFullWidth = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabIndicatorFullWidth;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabIndicatorGravity = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabIndicatorGravity;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabIndicatorHeight = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabInlineLabel = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabInlineLabel;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabMaxWidth = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabMinWidth = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabMode = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabPadding = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabPaddingBottom = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabPaddingEnd = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabPaddingStart = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabPaddingTop = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabRippleColor = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabRippleColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabSelectedTextColor = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabTextColor = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.TabLayout_tabUnboundedRipple = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabUnboundedRipple;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_fontFamily = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_shadowColor = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_shadowDx = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_shadowDy = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_shadowRadius = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_textColor = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_textColorHint = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_textColorLink = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_textFontWeight = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_textFontWeight;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_textSize = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_textStyle = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_android_typeface = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_fontFamily = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_fontVariationSettings = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_fontVariationSettings;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_textAllCaps = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextAppearance_textLocale = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_textLocale;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_android_hint = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_android_textColorHint = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_boxBackgroundColor = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_boxBackgroundColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_boxBackgroundMode = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_boxBackgroundMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_boxStrokeColor = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_boxStrokeColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_boxStrokeWidth = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_boxStrokeWidth;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_counterEnabled = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_counterMaxLength = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_counterTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_errorEnabled = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_errorTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_helperText = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_helperText;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_helperTextEnabled = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_helperTextEnabled;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_helperTextTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_helperTextTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_hintEnabled = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_hintTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_passwordToggleTint = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::Plugin.SharedTransitions.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.ThemeEnforcement = global::LiLo.Lite.Droid.Resource.Styleable.ThemeEnforcement;
+			global::Plugin.SharedTransitions.Resource.Styleable.ThemeEnforcement_android_textAppearance = global::LiLo.Lite.Droid.Resource.Styleable.ThemeEnforcement_android_textAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme = global::LiLo.Lite.Droid.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme;
+			global::Plugin.SharedTransitions.Resource.Styleable.ThemeEnforcement_enforceTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.ThemeEnforcement_enforceTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_android_gravity = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_android_minHeight = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_buttonGravity = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_collapseContentDescription = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_collapseIcon = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_contentInsetEnd = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_contentInsetLeft = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_contentInsetRight = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_contentInsetStart = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_logo = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_logo;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_logoDescription = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_maxButtonHeight = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_menu = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_menu;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_navigationContentDescription = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_navigationIcon = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_popupTheme = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_subtitle = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_subtitleTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_subtitleTextColor = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_title = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_title;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_titleMargin = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_titleMarginBottom = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_titleMarginEnd = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_titleMargins = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_titleMarginStart = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_titleMarginTop = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_titleTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Plugin.SharedTransitions.Resource.Styleable.Toolbar_titleTextColor = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Plugin.SharedTransitions.Resource.Styleable.View = global::LiLo.Lite.Droid.Resource.Styleable.View;
+			global::Plugin.SharedTransitions.Resource.Styleable.ViewBackgroundHelper = global::LiLo.Lite.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Plugin.SharedTransitions.Resource.Styleable.ViewBackgroundHelper_android_background = global::LiLo.Lite.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Plugin.SharedTransitions.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::LiLo.Lite.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Plugin.SharedTransitions.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::LiLo.Lite.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Plugin.SharedTransitions.Resource.Styleable.ViewStubCompat = global::LiLo.Lite.Droid.Resource.Styleable.ViewStubCompat;
+			global::Plugin.SharedTransitions.Resource.Styleable.ViewStubCompat_android_id = global::LiLo.Lite.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Plugin.SharedTransitions.Resource.Styleable.ViewStubCompat_android_inflatedId = global::LiLo.Lite.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Plugin.SharedTransitions.Resource.Styleable.ViewStubCompat_android_layout = global::LiLo.Lite.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Plugin.SharedTransitions.Resource.Styleable.View_android_focusable = global::LiLo.Lite.Droid.Resource.Styleable.View_android_focusable;
+			global::Plugin.SharedTransitions.Resource.Styleable.View_android_theme = global::LiLo.Lite.Droid.Resource.Styleable.View_android_theme;
+			global::Plugin.SharedTransitions.Resource.Styleable.View_paddingEnd = global::LiLo.Lite.Droid.Resource.Styleable.View_paddingEnd;
+			global::Plugin.SharedTransitions.Resource.Styleable.View_paddingStart = global::LiLo.Lite.Droid.Resource.Styleable.View_paddingStart;
+			global::Plugin.SharedTransitions.Resource.Styleable.View_theme = global::LiLo.Lite.Droid.Resource.Styleable.View_theme;
 			global::Plugin.SharedTransitions.Resource.Transition.navigation_transition = global::LiLo.Lite.Droid.Resource.Transition.navigation_transition;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::LiLo.Lite.Droid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.coordinatorLayoutStyle = global::LiLo.Lite.Droid.Resource.Attribute.coordinatorLayoutStyle;
@@ -5541,6 +8237,2723 @@ namespace LiLo.Lite.Droid
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_tileMode = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_tileMode;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_type = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_type;
 			global::Xamarin.Essentials.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::LiLo.Lite.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.abc_fade_in = global::LiLo.Lite.Droid.Resource.Animation.abc_fade_in;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.abc_fade_out = global::LiLo.Lite.Droid.Resource.Animation.abc_fade_out;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.abc_grow_fade_in_from_bottom = global::LiLo.Lite.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.abc_popup_enter = global::LiLo.Lite.Droid.Resource.Animation.abc_popup_enter;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.abc_popup_exit = global::LiLo.Lite.Droid.Resource.Animation.abc_popup_exit;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.abc_shrink_fade_out_from_bottom = global::LiLo.Lite.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.abc_slide_in_bottom = global::LiLo.Lite.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.abc_slide_in_top = global::LiLo.Lite.Droid.Resource.Animation.abc_slide_in_top;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.abc_slide_out_bottom = global::LiLo.Lite.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.abc_slide_out_top = global::LiLo.Lite.Droid.Resource.Animation.abc_slide_out_top;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.abc_tooltip_enter = global::LiLo.Lite.Droid.Resource.Animation.abc_tooltip_enter;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.abc_tooltip_exit = global::LiLo.Lite.Droid.Resource.Animation.abc_tooltip_exit;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_radio_to_off_mtrl_dot_group_animation;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_animation;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_radio_to_off_mtrl_ring_outer_path_animation;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_radio_to_on_mtrl_dot_group_animation;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_animation;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation = global::LiLo.Lite.Droid.Resource.Animation.btn_radio_to_on_mtrl_ring_outer_path_animation;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.design_bottom_sheet_slide_in = global::LiLo.Lite.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.design_bottom_sheet_slide_out = global::LiLo.Lite.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.design_snackbar_in = global::LiLo.Lite.Droid.Resource.Animation.design_snackbar_in;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.design_snackbar_out = global::LiLo.Lite.Droid.Resource.Animation.design_snackbar_out;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.EnterFromLeft = global::LiLo.Lite.Droid.Resource.Animation.EnterFromLeft;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.EnterFromRight = global::LiLo.Lite.Droid.Resource.Animation.EnterFromRight;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.ExitToLeft = global::LiLo.Lite.Droid.Resource.Animation.ExitToLeft;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.ExitToRight = global::LiLo.Lite.Droid.Resource.Animation.ExitToRight;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.fragment_close_enter = global::LiLo.Lite.Droid.Resource.Animation.fragment_close_enter;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.fragment_close_exit = global::LiLo.Lite.Droid.Resource.Animation.fragment_close_exit;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.fragment_fade_enter = global::LiLo.Lite.Droid.Resource.Animation.fragment_fade_enter;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.fragment_fade_exit = global::LiLo.Lite.Droid.Resource.Animation.fragment_fade_exit;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.fragment_fast_out_extra_slow_in = global::LiLo.Lite.Droid.Resource.Animation.fragment_fast_out_extra_slow_in;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.fragment_open_enter = global::LiLo.Lite.Droid.Resource.Animation.fragment_open_enter;
+			global::Xamarin.Forms.PancakeView.Resource.Animation.fragment_open_exit = global::LiLo.Lite.Droid.Resource.Animation.fragment_open_exit;
+			global::Xamarin.Forms.PancakeView.Resource.Animator.design_appbar_state_list_animator = global::LiLo.Lite.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::Xamarin.Forms.PancakeView.Resource.Animator.design_fab_hide_motion_spec = global::LiLo.Lite.Droid.Resource.Animator.design_fab_hide_motion_spec;
+			global::Xamarin.Forms.PancakeView.Resource.Animator.design_fab_show_motion_spec = global::LiLo.Lite.Droid.Resource.Animator.design_fab_show_motion_spec;
+			global::Xamarin.Forms.PancakeView.Resource.Animator.mtrl_btn_state_list_anim = global::LiLo.Lite.Droid.Resource.Animator.mtrl_btn_state_list_anim;
+			global::Xamarin.Forms.PancakeView.Resource.Animator.mtrl_btn_unelevated_state_list_anim = global::LiLo.Lite.Droid.Resource.Animator.mtrl_btn_unelevated_state_list_anim;
+			global::Xamarin.Forms.PancakeView.Resource.Animator.mtrl_chip_state_list_anim = global::LiLo.Lite.Droid.Resource.Animator.mtrl_chip_state_list_anim;
+			global::Xamarin.Forms.PancakeView.Resource.Animator.mtrl_fab_hide_motion_spec = global::LiLo.Lite.Droid.Resource.Animator.mtrl_fab_hide_motion_spec;
+			global::Xamarin.Forms.PancakeView.Resource.Animator.mtrl_fab_show_motion_spec = global::LiLo.Lite.Droid.Resource.Animator.mtrl_fab_show_motion_spec;
+			global::Xamarin.Forms.PancakeView.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec = global::LiLo.Lite.Droid.Resource.Animator.mtrl_fab_transformation_sheet_collapse_spec;
+			global::Xamarin.Forms.PancakeView.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec = global::LiLo.Lite.Droid.Resource.Animator.mtrl_fab_transformation_sheet_expand_spec;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionBarDivider = global::LiLo.Lite.Droid.Resource.Attribute.actionBarDivider;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionBarItemBackground = global::LiLo.Lite.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionBarPopupTheme = global::LiLo.Lite.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionBarSize = global::LiLo.Lite.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionBarSplitStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionBarStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionBarStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionBarTabBarStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionBarTabStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionBarTabTextStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionBarTheme = global::LiLo.Lite.Droid.Resource.Attribute.actionBarTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionBarWidgetTheme = global::LiLo.Lite.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionDropDownStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionLayout = global::LiLo.Lite.Droid.Resource.Attribute.actionLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionMenuTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionMenuTextColor = global::LiLo.Lite.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionModeBackground = global::LiLo.Lite.Droid.Resource.Attribute.actionModeBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionModeCloseButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionModeCloseDrawable = global::LiLo.Lite.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionModeCopyDrawable = global::LiLo.Lite.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionModeCutDrawable = global::LiLo.Lite.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionModeFindDrawable = global::LiLo.Lite.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionModePasteDrawable = global::LiLo.Lite.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionModePopupWindowStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionModeSelectAllDrawable = global::LiLo.Lite.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionModeShareDrawable = global::LiLo.Lite.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionModeSplitBackground = global::LiLo.Lite.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionModeStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionModeStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionModeWebSearchDrawable = global::LiLo.Lite.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionOverflowButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionOverflowMenuStyle = global::LiLo.Lite.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionProviderClass = global::LiLo.Lite.Droid.Resource.Attribute.actionProviderClass;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.actionViewClass = global::LiLo.Lite.Droid.Resource.Attribute.actionViewClass;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.activityChooserViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.alertDialogButtonGroupStyle = global::LiLo.Lite.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.alertDialogCenterButtons = global::LiLo.Lite.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.alertDialogStyle = global::LiLo.Lite.Droid.Resource.Attribute.alertDialogStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.alertDialogTheme = global::LiLo.Lite.Droid.Resource.Attribute.alertDialogTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.allowStacking = global::LiLo.Lite.Droid.Resource.Attribute.allowStacking;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.alpha = global::LiLo.Lite.Droid.Resource.Attribute.alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.alphabeticModifiers = global::LiLo.Lite.Droid.Resource.Attribute.alphabeticModifiers;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.arrowHeadLength = global::LiLo.Lite.Droid.Resource.Attribute.arrowHeadLength;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.arrowShaftLength = global::LiLo.Lite.Droid.Resource.Attribute.arrowShaftLength;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.autoCompleteTextViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.autoSizeMaxTextSize = global::LiLo.Lite.Droid.Resource.Attribute.autoSizeMaxTextSize;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.autoSizeMinTextSize = global::LiLo.Lite.Droid.Resource.Attribute.autoSizeMinTextSize;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.autoSizePresetSizes = global::LiLo.Lite.Droid.Resource.Attribute.autoSizePresetSizes;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.autoSizeStepGranularity = global::LiLo.Lite.Droid.Resource.Attribute.autoSizeStepGranularity;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.autoSizeTextType = global::LiLo.Lite.Droid.Resource.Attribute.autoSizeTextType;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.background = global::LiLo.Lite.Droid.Resource.Attribute.background;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.backgroundSplit = global::LiLo.Lite.Droid.Resource.Attribute.backgroundSplit;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.backgroundStacked = global::LiLo.Lite.Droid.Resource.Attribute.backgroundStacked;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.backgroundTint = global::LiLo.Lite.Droid.Resource.Attribute.backgroundTint;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.backgroundTintMode = global::LiLo.Lite.Droid.Resource.Attribute.backgroundTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.barLength = global::LiLo.Lite.Droid.Resource.Attribute.barLength;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.behavior_autoHide = global::LiLo.Lite.Droid.Resource.Attribute.behavior_autoHide;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.behavior_fitToContents = global::LiLo.Lite.Droid.Resource.Attribute.behavior_fitToContents;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.behavior_hideable = global::LiLo.Lite.Droid.Resource.Attribute.behavior_hideable;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.behavior_overlapTop = global::LiLo.Lite.Droid.Resource.Attribute.behavior_overlapTop;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.behavior_peekHeight = global::LiLo.Lite.Droid.Resource.Attribute.behavior_peekHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.behavior_skipCollapsed = global::LiLo.Lite.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.borderlessButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.borderWidth = global::LiLo.Lite.Droid.Resource.Attribute.borderWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.bottomAppBarStyle = global::LiLo.Lite.Droid.Resource.Attribute.bottomAppBarStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.bottomNavigationStyle = global::LiLo.Lite.Droid.Resource.Attribute.bottomNavigationStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.bottomSheetDialogTheme = global::LiLo.Lite.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.bottomSheetStyle = global::LiLo.Lite.Droid.Resource.Attribute.bottomSheetStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.boxBackgroundColor = global::LiLo.Lite.Droid.Resource.Attribute.boxBackgroundColor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.boxBackgroundMode = global::LiLo.Lite.Droid.Resource.Attribute.boxBackgroundMode;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.boxCollapsedPaddingTop = global::LiLo.Lite.Droid.Resource.Attribute.boxCollapsedPaddingTop;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.boxCornerRadiusBottomEnd = global::LiLo.Lite.Droid.Resource.Attribute.boxCornerRadiusBottomEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.boxCornerRadiusBottomStart = global::LiLo.Lite.Droid.Resource.Attribute.boxCornerRadiusBottomStart;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.boxCornerRadiusTopEnd = global::LiLo.Lite.Droid.Resource.Attribute.boxCornerRadiusTopEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.boxCornerRadiusTopStart = global::LiLo.Lite.Droid.Resource.Attribute.boxCornerRadiusTopStart;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.boxStrokeColor = global::LiLo.Lite.Droid.Resource.Attribute.boxStrokeColor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.boxStrokeWidth = global::LiLo.Lite.Droid.Resource.Attribute.boxStrokeWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.buttonBarButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.buttonBarNegativeButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.buttonBarNeutralButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.buttonBarPositiveButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.buttonBarStyle = global::LiLo.Lite.Droid.Resource.Attribute.buttonBarStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.buttonCompat = global::LiLo.Lite.Droid.Resource.Attribute.buttonCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.buttonGravity = global::LiLo.Lite.Droid.Resource.Attribute.buttonGravity;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.buttonIconDimen = global::LiLo.Lite.Droid.Resource.Attribute.buttonIconDimen;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.buttonPanelSideLayout = global::LiLo.Lite.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.buttonStyle = global::LiLo.Lite.Droid.Resource.Attribute.buttonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.buttonStyleSmall = global::LiLo.Lite.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.buttonTint = global::LiLo.Lite.Droid.Resource.Attribute.buttonTint;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.buttonTintMode = global::LiLo.Lite.Droid.Resource.Attribute.buttonTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.cardBackgroundColor = global::LiLo.Lite.Droid.Resource.Attribute.cardBackgroundColor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.cardCornerRadius = global::LiLo.Lite.Droid.Resource.Attribute.cardCornerRadius;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.cardElevation = global::LiLo.Lite.Droid.Resource.Attribute.cardElevation;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.cardMaxElevation = global::LiLo.Lite.Droid.Resource.Attribute.cardMaxElevation;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.cardPreventCornerOverlap = global::LiLo.Lite.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.cardUseCompatPadding = global::LiLo.Lite.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.cardViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.cardViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.checkboxStyle = global::LiLo.Lite.Droid.Resource.Attribute.checkboxStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.checkedChip = global::LiLo.Lite.Droid.Resource.Attribute.checkedChip;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.checkedIcon = global::LiLo.Lite.Droid.Resource.Attribute.checkedIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.checkedIconEnabled = global::LiLo.Lite.Droid.Resource.Attribute.checkedIconEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.checkedIconVisible = global::LiLo.Lite.Droid.Resource.Attribute.checkedIconVisible;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.checkedTextViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.chipBackgroundColor = global::LiLo.Lite.Droid.Resource.Attribute.chipBackgroundColor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.chipCornerRadius = global::LiLo.Lite.Droid.Resource.Attribute.chipCornerRadius;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.chipEndPadding = global::LiLo.Lite.Droid.Resource.Attribute.chipEndPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.chipGroupStyle = global::LiLo.Lite.Droid.Resource.Attribute.chipGroupStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.chipIcon = global::LiLo.Lite.Droid.Resource.Attribute.chipIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.chipIconEnabled = global::LiLo.Lite.Droid.Resource.Attribute.chipIconEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.chipIconSize = global::LiLo.Lite.Droid.Resource.Attribute.chipIconSize;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.chipIconTint = global::LiLo.Lite.Droid.Resource.Attribute.chipIconTint;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.chipIconVisible = global::LiLo.Lite.Droid.Resource.Attribute.chipIconVisible;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.chipMinHeight = global::LiLo.Lite.Droid.Resource.Attribute.chipMinHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.chipSpacing = global::LiLo.Lite.Droid.Resource.Attribute.chipSpacing;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.chipSpacingHorizontal = global::LiLo.Lite.Droid.Resource.Attribute.chipSpacingHorizontal;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.chipSpacingVertical = global::LiLo.Lite.Droid.Resource.Attribute.chipSpacingVertical;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.chipStandaloneStyle = global::LiLo.Lite.Droid.Resource.Attribute.chipStandaloneStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.chipStartPadding = global::LiLo.Lite.Droid.Resource.Attribute.chipStartPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.chipStrokeColor = global::LiLo.Lite.Droid.Resource.Attribute.chipStrokeColor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.chipStrokeWidth = global::LiLo.Lite.Droid.Resource.Attribute.chipStrokeWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.chipStyle = global::LiLo.Lite.Droid.Resource.Attribute.chipStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.closeIcon = global::LiLo.Lite.Droid.Resource.Attribute.closeIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.closeIconEnabled = global::LiLo.Lite.Droid.Resource.Attribute.closeIconEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.closeIconEndPadding = global::LiLo.Lite.Droid.Resource.Attribute.closeIconEndPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.closeIconSize = global::LiLo.Lite.Droid.Resource.Attribute.closeIconSize;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.closeIconStartPadding = global::LiLo.Lite.Droid.Resource.Attribute.closeIconStartPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.closeIconTint = global::LiLo.Lite.Droid.Resource.Attribute.closeIconTint;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.closeIconVisible = global::LiLo.Lite.Droid.Resource.Attribute.closeIconVisible;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.closeItemLayout = global::LiLo.Lite.Droid.Resource.Attribute.closeItemLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.collapseContentDescription = global::LiLo.Lite.Droid.Resource.Attribute.collapseContentDescription;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.collapsedTitleGravity = global::LiLo.Lite.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.collapsedTitleTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.collapseIcon = global::LiLo.Lite.Droid.Resource.Attribute.collapseIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.collectionViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.collectionViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.color = global::LiLo.Lite.Droid.Resource.Attribute.color;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.colorAccent = global::LiLo.Lite.Droid.Resource.Attribute.colorAccent;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.colorBackgroundFloating = global::LiLo.Lite.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.colorButtonNormal = global::LiLo.Lite.Droid.Resource.Attribute.colorButtonNormal;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.colorControlActivated = global::LiLo.Lite.Droid.Resource.Attribute.colorControlActivated;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.colorControlHighlight = global::LiLo.Lite.Droid.Resource.Attribute.colorControlHighlight;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.colorControlNormal = global::LiLo.Lite.Droid.Resource.Attribute.colorControlNormal;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.colorError = global::LiLo.Lite.Droid.Resource.Attribute.colorError;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.colorPrimary = global::LiLo.Lite.Droid.Resource.Attribute.colorPrimary;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.colorPrimaryDark = global::LiLo.Lite.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.colorSecondary = global::LiLo.Lite.Droid.Resource.Attribute.colorSecondary;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.colorSwitchThumbNormal = global::LiLo.Lite.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.commitIcon = global::LiLo.Lite.Droid.Resource.Attribute.commitIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.contentDescription = global::LiLo.Lite.Droid.Resource.Attribute.contentDescription;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.contentInsetEnd = global::LiLo.Lite.Droid.Resource.Attribute.contentInsetEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.contentInsetEndWithActions = global::LiLo.Lite.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.contentInsetLeft = global::LiLo.Lite.Droid.Resource.Attribute.contentInsetLeft;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.contentInsetRight = global::LiLo.Lite.Droid.Resource.Attribute.contentInsetRight;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.contentInsetStart = global::LiLo.Lite.Droid.Resource.Attribute.contentInsetStart;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.contentInsetStartWithNavigation = global::LiLo.Lite.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.contentPadding = global::LiLo.Lite.Droid.Resource.Attribute.contentPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.contentPaddingBottom = global::LiLo.Lite.Droid.Resource.Attribute.contentPaddingBottom;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.contentPaddingLeft = global::LiLo.Lite.Droid.Resource.Attribute.contentPaddingLeft;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.contentPaddingRight = global::LiLo.Lite.Droid.Resource.Attribute.contentPaddingRight;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.contentPaddingTop = global::LiLo.Lite.Droid.Resource.Attribute.contentPaddingTop;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.contentScrim = global::LiLo.Lite.Droid.Resource.Attribute.contentScrim;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.controlBackground = global::LiLo.Lite.Droid.Resource.Attribute.controlBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.coordinatorLayoutStyle = global::LiLo.Lite.Droid.Resource.Attribute.coordinatorLayoutStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.cornerRadius = global::LiLo.Lite.Droid.Resource.Attribute.cornerRadius;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.counterEnabled = global::LiLo.Lite.Droid.Resource.Attribute.counterEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.counterMaxLength = global::LiLo.Lite.Droid.Resource.Attribute.counterMaxLength;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.counterOverflowTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.counterTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.counterTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.customNavigationLayout = global::LiLo.Lite.Droid.Resource.Attribute.customNavigationLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.defaultQueryHint = global::LiLo.Lite.Droid.Resource.Attribute.defaultQueryHint;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.dialogCornerRadius = global::LiLo.Lite.Droid.Resource.Attribute.dialogCornerRadius;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.dialogPreferredPadding = global::LiLo.Lite.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.dialogTheme = global::LiLo.Lite.Droid.Resource.Attribute.dialogTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.displayOptions = global::LiLo.Lite.Droid.Resource.Attribute.displayOptions;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.divider = global::LiLo.Lite.Droid.Resource.Attribute.divider;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.dividerHorizontal = global::LiLo.Lite.Droid.Resource.Attribute.dividerHorizontal;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.dividerPadding = global::LiLo.Lite.Droid.Resource.Attribute.dividerPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.dividerVertical = global::LiLo.Lite.Droid.Resource.Attribute.dividerVertical;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.drawableBottomCompat = global::LiLo.Lite.Droid.Resource.Attribute.drawableBottomCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.drawableEndCompat = global::LiLo.Lite.Droid.Resource.Attribute.drawableEndCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.drawableLeftCompat = global::LiLo.Lite.Droid.Resource.Attribute.drawableLeftCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.drawableRightCompat = global::LiLo.Lite.Droid.Resource.Attribute.drawableRightCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.drawableSize = global::LiLo.Lite.Droid.Resource.Attribute.drawableSize;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.drawableStartCompat = global::LiLo.Lite.Droid.Resource.Attribute.drawableStartCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.drawableTint = global::LiLo.Lite.Droid.Resource.Attribute.drawableTint;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.drawableTintMode = global::LiLo.Lite.Droid.Resource.Attribute.drawableTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.drawableTopCompat = global::LiLo.Lite.Droid.Resource.Attribute.drawableTopCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.drawerArrowStyle = global::LiLo.Lite.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.dropdownListPreferredItemHeight = global::LiLo.Lite.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.dropDownListViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.editTextBackground = global::LiLo.Lite.Droid.Resource.Attribute.editTextBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.editTextColor = global::LiLo.Lite.Droid.Resource.Attribute.editTextColor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.editTextStyle = global::LiLo.Lite.Droid.Resource.Attribute.editTextStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.elevation = global::LiLo.Lite.Droid.Resource.Attribute.elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.enforceMaterialTheme = global::LiLo.Lite.Droid.Resource.Attribute.enforceMaterialTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.enforceTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.enforceTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.errorEnabled = global::LiLo.Lite.Droid.Resource.Attribute.errorEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.errorTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.errorTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.expandActivityOverflowButtonDrawable = global::LiLo.Lite.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.expanded = global::LiLo.Lite.Droid.Resource.Attribute.expanded;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.expandedTitleGravity = global::LiLo.Lite.Droid.Resource.Attribute.expandedTitleGravity;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.expandedTitleMargin = global::LiLo.Lite.Droid.Resource.Attribute.expandedTitleMargin;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.expandedTitleMarginBottom = global::LiLo.Lite.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.expandedTitleMarginEnd = global::LiLo.Lite.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.expandedTitleMarginStart = global::LiLo.Lite.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.expandedTitleMarginTop = global::LiLo.Lite.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.expandedTitleTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fabAlignmentMode = global::LiLo.Lite.Droid.Resource.Attribute.fabAlignmentMode;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fabCradleMargin = global::LiLo.Lite.Droid.Resource.Attribute.fabCradleMargin;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fabCradleRoundedCornerRadius = global::LiLo.Lite.Droid.Resource.Attribute.fabCradleRoundedCornerRadius;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fabCradleVerticalOffset = global::LiLo.Lite.Droid.Resource.Attribute.fabCradleVerticalOffset;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fabCustomSize = global::LiLo.Lite.Droid.Resource.Attribute.fabCustomSize;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fabSize = global::LiLo.Lite.Droid.Resource.Attribute.fabSize;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fastScrollEnabled = global::LiLo.Lite.Droid.Resource.Attribute.fastScrollEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::LiLo.Lite.Droid.Resource.Attribute.fastScrollHorizontalThumbDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::LiLo.Lite.Droid.Resource.Attribute.fastScrollHorizontalTrackDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fastScrollVerticalThumbDrawable = global::LiLo.Lite.Droid.Resource.Attribute.fastScrollVerticalThumbDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fastScrollVerticalTrackDrawable = global::LiLo.Lite.Droid.Resource.Attribute.fastScrollVerticalTrackDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.firstBaselineToTopHeight = global::LiLo.Lite.Droid.Resource.Attribute.firstBaselineToTopHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.floatingActionButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.floatingActionButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.font = global::LiLo.Lite.Droid.Resource.Attribute.font;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fontFamily = global::LiLo.Lite.Droid.Resource.Attribute.fontFamily;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fontProviderAuthority = global::LiLo.Lite.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fontProviderCerts = global::LiLo.Lite.Droid.Resource.Attribute.fontProviderCerts;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fontProviderFetchStrategy = global::LiLo.Lite.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fontProviderFetchTimeout = global::LiLo.Lite.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fontProviderPackage = global::LiLo.Lite.Droid.Resource.Attribute.fontProviderPackage;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fontProviderQuery = global::LiLo.Lite.Droid.Resource.Attribute.fontProviderQuery;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fontStyle = global::LiLo.Lite.Droid.Resource.Attribute.fontStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fontVariationSettings = global::LiLo.Lite.Droid.Resource.Attribute.fontVariationSettings;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.fontWeight = global::LiLo.Lite.Droid.Resource.Attribute.fontWeight;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.foregroundInsidePadding = global::LiLo.Lite.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.gapBetweenBars = global::LiLo.Lite.Droid.Resource.Attribute.gapBetweenBars;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.goIcon = global::LiLo.Lite.Droid.Resource.Attribute.goIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.headerLayout = global::LiLo.Lite.Droid.Resource.Attribute.headerLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.height = global::LiLo.Lite.Droid.Resource.Attribute.height;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.helperText = global::LiLo.Lite.Droid.Resource.Attribute.helperText;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.helperTextEnabled = global::LiLo.Lite.Droid.Resource.Attribute.helperTextEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.helperTextTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.helperTextTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.hideMotionSpec = global::LiLo.Lite.Droid.Resource.Attribute.hideMotionSpec;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.hideOnContentScroll = global::LiLo.Lite.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.hideOnScroll = global::LiLo.Lite.Droid.Resource.Attribute.hideOnScroll;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.hintAnimationEnabled = global::LiLo.Lite.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.hintEnabled = global::LiLo.Lite.Droid.Resource.Attribute.hintEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.hintTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.hintTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.homeAsUpIndicator = global::LiLo.Lite.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.homeLayout = global::LiLo.Lite.Droid.Resource.Attribute.homeLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.hoveredFocusedTranslationZ = global::LiLo.Lite.Droid.Resource.Attribute.hoveredFocusedTranslationZ;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.icon = global::LiLo.Lite.Droid.Resource.Attribute.icon;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.iconEndPadding = global::LiLo.Lite.Droid.Resource.Attribute.iconEndPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.iconGravity = global::LiLo.Lite.Droid.Resource.Attribute.iconGravity;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.iconifiedByDefault = global::LiLo.Lite.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.iconPadding = global::LiLo.Lite.Droid.Resource.Attribute.iconPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.iconSize = global::LiLo.Lite.Droid.Resource.Attribute.iconSize;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.iconStartPadding = global::LiLo.Lite.Droid.Resource.Attribute.iconStartPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.iconTint = global::LiLo.Lite.Droid.Resource.Attribute.iconTint;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.iconTintMode = global::LiLo.Lite.Droid.Resource.Attribute.iconTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.imageButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.imageButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.indeterminateProgressStyle = global::LiLo.Lite.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.initialActivityCount = global::LiLo.Lite.Droid.Resource.Attribute.initialActivityCount;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.insetForeground = global::LiLo.Lite.Droid.Resource.Attribute.insetForeground;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.isLightTheme = global::LiLo.Lite.Droid.Resource.Attribute.isLightTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.itemBackground = global::LiLo.Lite.Droid.Resource.Attribute.itemBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.itemHorizontalPadding = global::LiLo.Lite.Droid.Resource.Attribute.itemHorizontalPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.itemHorizontalTranslationEnabled = global::LiLo.Lite.Droid.Resource.Attribute.itemHorizontalTranslationEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.itemIconPadding = global::LiLo.Lite.Droid.Resource.Attribute.itemIconPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.itemIconSize = global::LiLo.Lite.Droid.Resource.Attribute.itemIconSize;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.itemIconTint = global::LiLo.Lite.Droid.Resource.Attribute.itemIconTint;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.itemPadding = global::LiLo.Lite.Droid.Resource.Attribute.itemPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.itemSpacing = global::LiLo.Lite.Droid.Resource.Attribute.itemSpacing;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.itemTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.itemTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.itemTextAppearanceActive = global::LiLo.Lite.Droid.Resource.Attribute.itemTextAppearanceActive;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.itemTextAppearanceInactive = global::LiLo.Lite.Droid.Resource.Attribute.itemTextAppearanceInactive;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.itemTextColor = global::LiLo.Lite.Droid.Resource.Attribute.itemTextColor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.keylines = global::LiLo.Lite.Droid.Resource.Attribute.keylines;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.labelVisibilityMode = global::LiLo.Lite.Droid.Resource.Attribute.labelVisibilityMode;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.lastBaselineToBottomHeight = global::LiLo.Lite.Droid.Resource.Attribute.lastBaselineToBottomHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.layout = global::LiLo.Lite.Droid.Resource.Attribute.layout;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.layoutManager = global::LiLo.Lite.Droid.Resource.Attribute.layoutManager;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.layout_anchor = global::LiLo.Lite.Droid.Resource.Attribute.layout_anchor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.layout_anchorGravity = global::LiLo.Lite.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.layout_behavior = global::LiLo.Lite.Droid.Resource.Attribute.layout_behavior;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.layout_collapseMode = global::LiLo.Lite.Droid.Resource.Attribute.layout_collapseMode;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.layout_collapseParallaxMultiplier = global::LiLo.Lite.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.layout_dodgeInsetEdges = global::LiLo.Lite.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.layout_insetEdge = global::LiLo.Lite.Droid.Resource.Attribute.layout_insetEdge;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.layout_keyline = global::LiLo.Lite.Droid.Resource.Attribute.layout_keyline;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.layout_scrollFlags = global::LiLo.Lite.Droid.Resource.Attribute.layout_scrollFlags;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.layout_scrollInterpolator = global::LiLo.Lite.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.liftOnScroll = global::LiLo.Lite.Droid.Resource.Attribute.liftOnScroll;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.lineHeight = global::LiLo.Lite.Droid.Resource.Attribute.lineHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.lineSpacing = global::LiLo.Lite.Droid.Resource.Attribute.lineSpacing;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.listChoiceBackgroundIndicator = global::LiLo.Lite.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.listChoiceIndicatorMultipleAnimated = global::LiLo.Lite.Droid.Resource.Attribute.listChoiceIndicatorMultipleAnimated;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.listChoiceIndicatorSingleAnimated = global::LiLo.Lite.Droid.Resource.Attribute.listChoiceIndicatorSingleAnimated;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.listDividerAlertDialog = global::LiLo.Lite.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.listItemLayout = global::LiLo.Lite.Droid.Resource.Attribute.listItemLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.listLayout = global::LiLo.Lite.Droid.Resource.Attribute.listLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.listMenuViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.listMenuViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.listPopupWindowStyle = global::LiLo.Lite.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.listPreferredItemHeight = global::LiLo.Lite.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.listPreferredItemHeightLarge = global::LiLo.Lite.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.listPreferredItemHeightSmall = global::LiLo.Lite.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.listPreferredItemPaddingEnd = global::LiLo.Lite.Droid.Resource.Attribute.listPreferredItemPaddingEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.listPreferredItemPaddingLeft = global::LiLo.Lite.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.listPreferredItemPaddingRight = global::LiLo.Lite.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.listPreferredItemPaddingStart = global::LiLo.Lite.Droid.Resource.Attribute.listPreferredItemPaddingStart;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.logo = global::LiLo.Lite.Droid.Resource.Attribute.logo;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.logoDescription = global::LiLo.Lite.Droid.Resource.Attribute.logoDescription;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.materialButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.materialButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.materialCardViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.materialCardViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.maxActionInlineWidth = global::LiLo.Lite.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.maxButtonHeight = global::LiLo.Lite.Droid.Resource.Attribute.maxButtonHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.maxImageSize = global::LiLo.Lite.Droid.Resource.Attribute.maxImageSize;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.measureWithLargestChild = global::LiLo.Lite.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.menu = global::LiLo.Lite.Droid.Resource.Attribute.menu;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.multiChoiceItemLayout = global::LiLo.Lite.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.navigationContentDescription = global::LiLo.Lite.Droid.Resource.Attribute.navigationContentDescription;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.navigationIcon = global::LiLo.Lite.Droid.Resource.Attribute.navigationIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.navigationMode = global::LiLo.Lite.Droid.Resource.Attribute.navigationMode;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.navigationViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.navigationViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.numericModifiers = global::LiLo.Lite.Droid.Resource.Attribute.numericModifiers;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.overlapAnchor = global::LiLo.Lite.Droid.Resource.Attribute.overlapAnchor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.paddingBottomNoButtons = global::LiLo.Lite.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.paddingEnd = global::LiLo.Lite.Droid.Resource.Attribute.paddingEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.paddingStart = global::LiLo.Lite.Droid.Resource.Attribute.paddingStart;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.paddingTopNoTitle = global::LiLo.Lite.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.panelBackground = global::LiLo.Lite.Droid.Resource.Attribute.panelBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.panelMenuListTheme = global::LiLo.Lite.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.panelMenuListWidth = global::LiLo.Lite.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.passwordToggleContentDescription = global::LiLo.Lite.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.passwordToggleDrawable = global::LiLo.Lite.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.passwordToggleEnabled = global::LiLo.Lite.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.passwordToggleTint = global::LiLo.Lite.Droid.Resource.Attribute.passwordToggleTint;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.passwordToggleTintMode = global::LiLo.Lite.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.popupMenuStyle = global::LiLo.Lite.Droid.Resource.Attribute.popupMenuStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.popupTheme = global::LiLo.Lite.Droid.Resource.Attribute.popupTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.popupWindowStyle = global::LiLo.Lite.Droid.Resource.Attribute.popupWindowStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.preserveIconSpacing = global::LiLo.Lite.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.pressedTranslationZ = global::LiLo.Lite.Droid.Resource.Attribute.pressedTranslationZ;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.progressBarPadding = global::LiLo.Lite.Droid.Resource.Attribute.progressBarPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.progressBarStyle = global::LiLo.Lite.Droid.Resource.Attribute.progressBarStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.queryBackground = global::LiLo.Lite.Droid.Resource.Attribute.queryBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.queryHint = global::LiLo.Lite.Droid.Resource.Attribute.queryHint;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.radioButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.radioButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.ratingBarStyle = global::LiLo.Lite.Droid.Resource.Attribute.ratingBarStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.ratingBarStyleIndicator = global::LiLo.Lite.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.ratingBarStyleSmall = global::LiLo.Lite.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.recyclerViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.recyclerViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.reverseLayout = global::LiLo.Lite.Droid.Resource.Attribute.reverseLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.rippleColor = global::LiLo.Lite.Droid.Resource.Attribute.rippleColor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.scrimAnimationDuration = global::LiLo.Lite.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.scrimBackground = global::LiLo.Lite.Droid.Resource.Attribute.scrimBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.scrimVisibleHeightTrigger = global::LiLo.Lite.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.scrollViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.scrollViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.searchHintIcon = global::LiLo.Lite.Droid.Resource.Attribute.searchHintIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.searchIcon = global::LiLo.Lite.Droid.Resource.Attribute.searchIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.searchViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.searchViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.seekBarStyle = global::LiLo.Lite.Droid.Resource.Attribute.seekBarStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.selectableItemBackground = global::LiLo.Lite.Droid.Resource.Attribute.selectableItemBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.selectableItemBackgroundBorderless = global::LiLo.Lite.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.showAsAction = global::LiLo.Lite.Droid.Resource.Attribute.showAsAction;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.showDividers = global::LiLo.Lite.Droid.Resource.Attribute.showDividers;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.showMotionSpec = global::LiLo.Lite.Droid.Resource.Attribute.showMotionSpec;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.showText = global::LiLo.Lite.Droid.Resource.Attribute.showText;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.showTitle = global::LiLo.Lite.Droid.Resource.Attribute.showTitle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.singleChoiceItemLayout = global::LiLo.Lite.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.singleLine = global::LiLo.Lite.Droid.Resource.Attribute.singleLine;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.singleSelection = global::LiLo.Lite.Droid.Resource.Attribute.singleSelection;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.snackbarButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.snackbarButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.snackbarStyle = global::LiLo.Lite.Droid.Resource.Attribute.snackbarStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.spanCount = global::LiLo.Lite.Droid.Resource.Attribute.spanCount;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.spinBars = global::LiLo.Lite.Droid.Resource.Attribute.spinBars;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.spinnerDropDownItemStyle = global::LiLo.Lite.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.spinnerStyle = global::LiLo.Lite.Droid.Resource.Attribute.spinnerStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.splitTrack = global::LiLo.Lite.Droid.Resource.Attribute.splitTrack;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.srcCompat = global::LiLo.Lite.Droid.Resource.Attribute.srcCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.stackFromEnd = global::LiLo.Lite.Droid.Resource.Attribute.stackFromEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.state_above_anchor = global::LiLo.Lite.Droid.Resource.Attribute.state_above_anchor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.state_collapsed = global::LiLo.Lite.Droid.Resource.Attribute.state_collapsed;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.state_collapsible = global::LiLo.Lite.Droid.Resource.Attribute.state_collapsible;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.state_liftable = global::LiLo.Lite.Droid.Resource.Attribute.state_liftable;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.state_lifted = global::LiLo.Lite.Droid.Resource.Attribute.state_lifted;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.statusBarBackground = global::LiLo.Lite.Droid.Resource.Attribute.statusBarBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.statusBarScrim = global::LiLo.Lite.Droid.Resource.Attribute.statusBarScrim;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.strokeColor = global::LiLo.Lite.Droid.Resource.Attribute.strokeColor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.strokeWidth = global::LiLo.Lite.Droid.Resource.Attribute.strokeWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.subMenuArrow = global::LiLo.Lite.Droid.Resource.Attribute.subMenuArrow;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.submitBackground = global::LiLo.Lite.Droid.Resource.Attribute.submitBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.subtitle = global::LiLo.Lite.Droid.Resource.Attribute.subtitle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.subtitleTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.subtitleTextColor = global::LiLo.Lite.Droid.Resource.Attribute.subtitleTextColor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.subtitleTextStyle = global::LiLo.Lite.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.suggestionRowLayout = global::LiLo.Lite.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.switchMinWidth = global::LiLo.Lite.Droid.Resource.Attribute.switchMinWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.switchPadding = global::LiLo.Lite.Droid.Resource.Attribute.switchPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.switchStyle = global::LiLo.Lite.Droid.Resource.Attribute.switchStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.switchTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.switchTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabBackground = global::LiLo.Lite.Droid.Resource.Attribute.tabBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabContentStart = global::LiLo.Lite.Droid.Resource.Attribute.tabContentStart;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabGravity = global::LiLo.Lite.Droid.Resource.Attribute.tabGravity;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabIconTint = global::LiLo.Lite.Droid.Resource.Attribute.tabIconTint;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabIconTintMode = global::LiLo.Lite.Droid.Resource.Attribute.tabIconTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabIndicator = global::LiLo.Lite.Droid.Resource.Attribute.tabIndicator;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabIndicatorAnimationDuration = global::LiLo.Lite.Droid.Resource.Attribute.tabIndicatorAnimationDuration;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabIndicatorColor = global::LiLo.Lite.Droid.Resource.Attribute.tabIndicatorColor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabIndicatorFullWidth = global::LiLo.Lite.Droid.Resource.Attribute.tabIndicatorFullWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabIndicatorGravity = global::LiLo.Lite.Droid.Resource.Attribute.tabIndicatorGravity;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabIndicatorHeight = global::LiLo.Lite.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabInlineLabel = global::LiLo.Lite.Droid.Resource.Attribute.tabInlineLabel;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabMaxWidth = global::LiLo.Lite.Droid.Resource.Attribute.tabMaxWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabMinWidth = global::LiLo.Lite.Droid.Resource.Attribute.tabMinWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabMode = global::LiLo.Lite.Droid.Resource.Attribute.tabMode;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabPadding = global::LiLo.Lite.Droid.Resource.Attribute.tabPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabPaddingBottom = global::LiLo.Lite.Droid.Resource.Attribute.tabPaddingBottom;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabPaddingEnd = global::LiLo.Lite.Droid.Resource.Attribute.tabPaddingEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabPaddingStart = global::LiLo.Lite.Droid.Resource.Attribute.tabPaddingStart;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabPaddingTop = global::LiLo.Lite.Droid.Resource.Attribute.tabPaddingTop;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabRippleColor = global::LiLo.Lite.Droid.Resource.Attribute.tabRippleColor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabSelectedTextColor = global::LiLo.Lite.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabStyle = global::LiLo.Lite.Droid.Resource.Attribute.tabStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.tabTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabTextColor = global::LiLo.Lite.Droid.Resource.Attribute.tabTextColor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tabUnboundedRipple = global::LiLo.Lite.Droid.Resource.Attribute.tabUnboundedRipple;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAllCaps = global::LiLo.Lite.Droid.Resource.Attribute.textAllCaps;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceBody1 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceBody1;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceBody2 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceBody2;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceButton = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceButton;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceCaption = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceCaption;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceHeadline1 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceHeadline1;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceHeadline2 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceHeadline2;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceHeadline3 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceHeadline3;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceHeadline4 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceHeadline4;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceHeadline5 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceHeadline5;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceHeadline6 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceHeadline6;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceLargePopupMenu = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceListItem = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceListItemSecondary = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceListItemSmall = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceOverline = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceOverline;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearancePopupMenuHeader = global::LiLo.Lite.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceSearchResultSubtitle = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceSearchResultTitle = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceSmallPopupMenu = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceSubtitle1 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceSubtitle1;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textAppearanceSubtitle2 = global::LiLo.Lite.Droid.Resource.Attribute.textAppearanceSubtitle2;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textColorAlertDialogListItem = global::LiLo.Lite.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textColorSearchUrl = global::LiLo.Lite.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textEndPadding = global::LiLo.Lite.Droid.Resource.Attribute.textEndPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textInputStyle = global::LiLo.Lite.Droid.Resource.Attribute.textInputStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textLocale = global::LiLo.Lite.Droid.Resource.Attribute.textLocale;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.textStartPadding = global::LiLo.Lite.Droid.Resource.Attribute.textStartPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.theme = global::LiLo.Lite.Droid.Resource.Attribute.theme;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.thickness = global::LiLo.Lite.Droid.Resource.Attribute.thickness;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.thumbTextPadding = global::LiLo.Lite.Droid.Resource.Attribute.thumbTextPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.thumbTint = global::LiLo.Lite.Droid.Resource.Attribute.thumbTint;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.thumbTintMode = global::LiLo.Lite.Droid.Resource.Attribute.thumbTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tickMark = global::LiLo.Lite.Droid.Resource.Attribute.tickMark;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tickMarkTint = global::LiLo.Lite.Droid.Resource.Attribute.tickMarkTint;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tickMarkTintMode = global::LiLo.Lite.Droid.Resource.Attribute.tickMarkTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tint = global::LiLo.Lite.Droid.Resource.Attribute.tint;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tintMode = global::LiLo.Lite.Droid.Resource.Attribute.tintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.title = global::LiLo.Lite.Droid.Resource.Attribute.title;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.titleEnabled = global::LiLo.Lite.Droid.Resource.Attribute.titleEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.titleMargin = global::LiLo.Lite.Droid.Resource.Attribute.titleMargin;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.titleMarginBottom = global::LiLo.Lite.Droid.Resource.Attribute.titleMarginBottom;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.titleMarginEnd = global::LiLo.Lite.Droid.Resource.Attribute.titleMarginEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.titleMargins = global::LiLo.Lite.Droid.Resource.Attribute.titleMargins;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.titleMarginStart = global::LiLo.Lite.Droid.Resource.Attribute.titleMarginStart;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.titleMarginTop = global::LiLo.Lite.Droid.Resource.Attribute.titleMarginTop;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.titleTextAppearance = global::LiLo.Lite.Droid.Resource.Attribute.titleTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.titleTextColor = global::LiLo.Lite.Droid.Resource.Attribute.titleTextColor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.titleTextStyle = global::LiLo.Lite.Droid.Resource.Attribute.titleTextStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.toolbarId = global::LiLo.Lite.Droid.Resource.Attribute.toolbarId;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.toolbarNavigationButtonStyle = global::LiLo.Lite.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.toolbarStyle = global::LiLo.Lite.Droid.Resource.Attribute.toolbarStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tooltipForegroundColor = global::LiLo.Lite.Droid.Resource.Attribute.tooltipForegroundColor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tooltipFrameBackground = global::LiLo.Lite.Droid.Resource.Attribute.tooltipFrameBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.tooltipText = global::LiLo.Lite.Droid.Resource.Attribute.tooltipText;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.track = global::LiLo.Lite.Droid.Resource.Attribute.track;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.trackTint = global::LiLo.Lite.Droid.Resource.Attribute.trackTint;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.trackTintMode = global::LiLo.Lite.Droid.Resource.Attribute.trackTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.ttcIndex = global::LiLo.Lite.Droid.Resource.Attribute.ttcIndex;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.useCompatPadding = global::LiLo.Lite.Droid.Resource.Attribute.useCompatPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.viewInflaterClass = global::LiLo.Lite.Droid.Resource.Attribute.viewInflaterClass;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.voiceIcon = global::LiLo.Lite.Droid.Resource.Attribute.voiceIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.windowActionBar = global::LiLo.Lite.Droid.Resource.Attribute.windowActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.windowActionBarOverlay = global::LiLo.Lite.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.windowActionModeOverlay = global::LiLo.Lite.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.windowFixedHeightMajor = global::LiLo.Lite.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.windowFixedHeightMinor = global::LiLo.Lite.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.windowFixedWidthMajor = global::LiLo.Lite.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.windowFixedWidthMinor = global::LiLo.Lite.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.windowMinWidthMajor = global::LiLo.Lite.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.windowMinWidthMinor = global::LiLo.Lite.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Xamarin.Forms.PancakeView.Resource.Attribute.windowNoTitle = global::LiLo.Lite.Droid.Resource.Attribute.windowNoTitle;
+			global::Xamarin.Forms.PancakeView.Resource.Boolean.abc_action_bar_embed_tabs = global::LiLo.Lite.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Xamarin.Forms.PancakeView.Resource.Boolean.abc_allow_stacked_button_bar = global::LiLo.Lite.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Xamarin.Forms.PancakeView.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::LiLo.Lite.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Xamarin.Forms.PancakeView.Resource.Boolean.mtrl_btn_textappearance_all_caps = global::LiLo.Lite.Droid.Resource.Boolean.mtrl_btn_textappearance_all_caps;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_background_cache_hint_selector_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_background_cache_hint_selector_material_light = global::LiLo.Lite.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_btn_colored_borderless_text_material = global::LiLo.Lite.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_btn_colored_text_material = global::LiLo.Lite.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_color_highlight_material = global::LiLo.Lite.Droid.Resource.Color.abc_color_highlight_material;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_decor_view_status_guard = global::LiLo.Lite.Droid.Resource.Color.abc_decor_view_status_guard;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_decor_view_status_guard_light = global::LiLo.Lite.Droid.Resource.Color.abc_decor_view_status_guard_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_hint_foreground_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_hint_foreground_material_light = global::LiLo.Lite.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_primary_text_disable_only_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_primary_text_disable_only_material_light = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_primary_text_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_primary_text_material_light = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_search_url_text = global::LiLo.Lite.Droid.Resource.Color.abc_search_url_text;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_search_url_text_normal = global::LiLo.Lite.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_search_url_text_pressed = global::LiLo.Lite.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_search_url_text_selected = global::LiLo.Lite.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_secondary_text_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_secondary_text_material_light = global::LiLo.Lite.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_tint_btn_checkable = global::LiLo.Lite.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_tint_default = global::LiLo.Lite.Droid.Resource.Color.abc_tint_default;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_tint_edittext = global::LiLo.Lite.Droid.Resource.Color.abc_tint_edittext;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_tint_seek_thumb = global::LiLo.Lite.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_tint_spinner = global::LiLo.Lite.Droid.Resource.Color.abc_tint_spinner;
+			global::Xamarin.Forms.PancakeView.Resource.Color.abc_tint_switch_track = global::LiLo.Lite.Droid.Resource.Color.abc_tint_switch_track;
+			global::Xamarin.Forms.PancakeView.Resource.Color.accent_material_dark = global::LiLo.Lite.Droid.Resource.Color.accent_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.accent_material_light = global::LiLo.Lite.Droid.Resource.Color.accent_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.androidx_core_ripple_material_light = global::LiLo.Lite.Droid.Resource.Color.androidx_core_ripple_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.androidx_core_secondary_text_default_material_light = global::LiLo.Lite.Droid.Resource.Color.androidx_core_secondary_text_default_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.background_floating_material_dark = global::LiLo.Lite.Droid.Resource.Color.background_floating_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.background_floating_material_light = global::LiLo.Lite.Droid.Resource.Color.background_floating_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.background_material_dark = global::LiLo.Lite.Droid.Resource.Color.background_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.background_material_light = global::LiLo.Lite.Droid.Resource.Color.background_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.bright_foreground_disabled_material_dark = global::LiLo.Lite.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.bright_foreground_disabled_material_light = global::LiLo.Lite.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.bright_foreground_inverse_material_dark = global::LiLo.Lite.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.bright_foreground_inverse_material_light = global::LiLo.Lite.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.bright_foreground_material_dark = global::LiLo.Lite.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.bright_foreground_material_light = global::LiLo.Lite.Droid.Resource.Color.bright_foreground_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.browser_actions_bg_grey = global::LiLo.Lite.Droid.Resource.Color.browser_actions_bg_grey;
+			global::Xamarin.Forms.PancakeView.Resource.Color.browser_actions_divider_color = global::LiLo.Lite.Droid.Resource.Color.browser_actions_divider_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.browser_actions_text_color = global::LiLo.Lite.Droid.Resource.Color.browser_actions_text_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.browser_actions_title_color = global::LiLo.Lite.Droid.Resource.Color.browser_actions_title_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.button_material_dark = global::LiLo.Lite.Droid.Resource.Color.button_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.button_material_light = global::LiLo.Lite.Droid.Resource.Color.button_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.cardview_dark_background = global::LiLo.Lite.Droid.Resource.Color.cardview_dark_background;
+			global::Xamarin.Forms.PancakeView.Resource.Color.cardview_light_background = global::LiLo.Lite.Droid.Resource.Color.cardview_light_background;
+			global::Xamarin.Forms.PancakeView.Resource.Color.cardview_shadow_end_color = global::LiLo.Lite.Droid.Resource.Color.cardview_shadow_end_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.cardview_shadow_start_color = global::LiLo.Lite.Droid.Resource.Color.cardview_shadow_start_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.design_bottom_navigation_shadow_color = global::LiLo.Lite.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.design_default_color_primary = global::LiLo.Lite.Droid.Resource.Color.design_default_color_primary;
+			global::Xamarin.Forms.PancakeView.Resource.Color.design_default_color_primary_dark = global::LiLo.Lite.Droid.Resource.Color.design_default_color_primary_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.design_error = global::LiLo.Lite.Droid.Resource.Color.design_error;
+			global::Xamarin.Forms.PancakeView.Resource.Color.design_fab_shadow_end_color = global::LiLo.Lite.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.design_fab_shadow_mid_color = global::LiLo.Lite.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.design_fab_shadow_start_color = global::LiLo.Lite.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.design_fab_stroke_end_inner_color = global::LiLo.Lite.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.design_fab_stroke_end_outer_color = global::LiLo.Lite.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.design_fab_stroke_top_inner_color = global::LiLo.Lite.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.design_fab_stroke_top_outer_color = global::LiLo.Lite.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.design_snackbar_background_color = global::LiLo.Lite.Droid.Resource.Color.design_snackbar_background_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.design_tint_password_toggle = global::LiLo.Lite.Droid.Resource.Color.design_tint_password_toggle;
+			global::Xamarin.Forms.PancakeView.Resource.Color.dim_foreground_disabled_material_dark = global::LiLo.Lite.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.dim_foreground_disabled_material_light = global::LiLo.Lite.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.dim_foreground_material_dark = global::LiLo.Lite.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.dim_foreground_material_light = global::LiLo.Lite.Droid.Resource.Color.dim_foreground_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.error_color_material_dark = global::LiLo.Lite.Droid.Resource.Color.error_color_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.error_color_material_light = global::LiLo.Lite.Droid.Resource.Color.error_color_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.foreground_material_dark = global::LiLo.Lite.Droid.Resource.Color.foreground_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.foreground_material_light = global::LiLo.Lite.Droid.Resource.Color.foreground_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.highlighted_text_material_dark = global::LiLo.Lite.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.highlighted_text_material_light = global::LiLo.Lite.Droid.Resource.Color.highlighted_text_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.material_blue_grey_800 = global::LiLo.Lite.Droid.Resource.Color.material_blue_grey_800;
+			global::Xamarin.Forms.PancakeView.Resource.Color.material_blue_grey_900 = global::LiLo.Lite.Droid.Resource.Color.material_blue_grey_900;
+			global::Xamarin.Forms.PancakeView.Resource.Color.material_blue_grey_950 = global::LiLo.Lite.Droid.Resource.Color.material_blue_grey_950;
+			global::Xamarin.Forms.PancakeView.Resource.Color.material_deep_teal_200 = global::LiLo.Lite.Droid.Resource.Color.material_deep_teal_200;
+			global::Xamarin.Forms.PancakeView.Resource.Color.material_deep_teal_500 = global::LiLo.Lite.Droid.Resource.Color.material_deep_teal_500;
+			global::Xamarin.Forms.PancakeView.Resource.Color.material_grey_100 = global::LiLo.Lite.Droid.Resource.Color.material_grey_100;
+			global::Xamarin.Forms.PancakeView.Resource.Color.material_grey_300 = global::LiLo.Lite.Droid.Resource.Color.material_grey_300;
+			global::Xamarin.Forms.PancakeView.Resource.Color.material_grey_50 = global::LiLo.Lite.Droid.Resource.Color.material_grey_50;
+			global::Xamarin.Forms.PancakeView.Resource.Color.material_grey_600 = global::LiLo.Lite.Droid.Resource.Color.material_grey_600;
+			global::Xamarin.Forms.PancakeView.Resource.Color.material_grey_800 = global::LiLo.Lite.Droid.Resource.Color.material_grey_800;
+			global::Xamarin.Forms.PancakeView.Resource.Color.material_grey_850 = global::LiLo.Lite.Droid.Resource.Color.material_grey_850;
+			global::Xamarin.Forms.PancakeView.Resource.Color.material_grey_900 = global::LiLo.Lite.Droid.Resource.Color.material_grey_900;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_bottom_nav_colored_item_tint = global::LiLo.Lite.Droid.Resource.Color.mtrl_bottom_nav_colored_item_tint;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_bottom_nav_item_tint = global::LiLo.Lite.Droid.Resource.Color.mtrl_bottom_nav_item_tint;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_btn_bg_color_disabled = global::LiLo.Lite.Droid.Resource.Color.mtrl_btn_bg_color_disabled;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_btn_bg_color_selector = global::LiLo.Lite.Droid.Resource.Color.mtrl_btn_bg_color_selector;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_btn_ripple_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_btn_ripple_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_btn_stroke_color_selector = global::LiLo.Lite.Droid.Resource.Color.mtrl_btn_stroke_color_selector;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_btn_text_btn_ripple_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_btn_text_btn_ripple_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_btn_text_color_disabled = global::LiLo.Lite.Droid.Resource.Color.mtrl_btn_text_color_disabled;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_btn_text_color_selector = global::LiLo.Lite.Droid.Resource.Color.mtrl_btn_text_color_selector;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_btn_transparent_bg_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_btn_transparent_bg_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_chip_background_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_chip_background_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_chip_close_icon_tint = global::LiLo.Lite.Droid.Resource.Color.mtrl_chip_close_icon_tint;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_chip_ripple_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_chip_ripple_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_chip_text_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_chip_text_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_fab_ripple_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_fab_ripple_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_scrim_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_scrim_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_tabs_colored_ripple_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_tabs_colored_ripple_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_tabs_icon_color_selector = global::LiLo.Lite.Droid.Resource.Color.mtrl_tabs_icon_color_selector;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_tabs_icon_color_selector_colored = global::LiLo.Lite.Droid.Resource.Color.mtrl_tabs_icon_color_selector_colored;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_tabs_legacy_text_color_selector = global::LiLo.Lite.Droid.Resource.Color.mtrl_tabs_legacy_text_color_selector;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_tabs_ripple_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_tabs_ripple_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_textinput_default_box_stroke_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_textinput_default_box_stroke_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_textinput_disabled_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_textinput_disabled_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_textinput_filled_box_default_background_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_textinput_filled_box_default_background_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_textinput_hovered_box_stroke_color = global::LiLo.Lite.Droid.Resource.Color.mtrl_textinput_hovered_box_stroke_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.mtrl_text_btn_text_color_selector = global::LiLo.Lite.Droid.Resource.Color.mtrl_text_btn_text_color_selector;
+			global::Xamarin.Forms.PancakeView.Resource.Color.notification_action_color_filter = global::LiLo.Lite.Droid.Resource.Color.notification_action_color_filter;
+			global::Xamarin.Forms.PancakeView.Resource.Color.notification_icon_bg_color = global::LiLo.Lite.Droid.Resource.Color.notification_icon_bg_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.notification_material_background_media_default_color = global::LiLo.Lite.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::Xamarin.Forms.PancakeView.Resource.Color.primary_dark_material_dark = global::LiLo.Lite.Droid.Resource.Color.primary_dark_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.primary_dark_material_light = global::LiLo.Lite.Droid.Resource.Color.primary_dark_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.primary_material_dark = global::LiLo.Lite.Droid.Resource.Color.primary_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.primary_material_light = global::LiLo.Lite.Droid.Resource.Color.primary_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.primary_text_default_material_dark = global::LiLo.Lite.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.primary_text_default_material_light = global::LiLo.Lite.Droid.Resource.Color.primary_text_default_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.primary_text_disabled_material_dark = global::LiLo.Lite.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.primary_text_disabled_material_light = global::LiLo.Lite.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.ripple_material_dark = global::LiLo.Lite.Droid.Resource.Color.ripple_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.ripple_material_light = global::LiLo.Lite.Droid.Resource.Color.ripple_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.secondary_text_default_material_dark = global::LiLo.Lite.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.secondary_text_default_material_light = global::LiLo.Lite.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.secondary_text_disabled_material_dark = global::LiLo.Lite.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.secondary_text_disabled_material_light = global::LiLo.Lite.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.switch_thumb_disabled_material_dark = global::LiLo.Lite.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.switch_thumb_disabled_material_light = global::LiLo.Lite.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.switch_thumb_material_dark = global::LiLo.Lite.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.switch_thumb_material_light = global::LiLo.Lite.Droid.Resource.Color.switch_thumb_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.switch_thumb_normal_material_dark = global::LiLo.Lite.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.switch_thumb_normal_material_light = global::LiLo.Lite.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Color.tooltip_background_dark = global::LiLo.Lite.Droid.Resource.Color.tooltip_background_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Color.tooltip_background_light = global::LiLo.Lite.Droid.Resource.Color.tooltip_background_light;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_action_bar_content_inset_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_action_bar_default_height_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_action_bar_default_padding_end_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_action_bar_default_padding_start_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_action_bar_elevation_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_action_bar_stacked_max_height = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_action_button_min_height_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_action_button_min_width_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_action_button_min_width_overflow_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_alert_dialog_button_bar_height = global::LiLo.Lite.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_alert_dialog_button_dimen = global::LiLo.Lite.Droid.Resource.Dimension.abc_alert_dialog_button_dimen;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_button_inset_horizontal_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_button_inset_vertical_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_button_padding_horizontal_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_button_padding_vertical_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::LiLo.Lite.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_config_prefDialogWidth = global::LiLo.Lite.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_control_corner_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_control_inset_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_control_padding_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_dialog_corner_radius_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_corner_radius_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_dialog_fixed_height_major = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_dialog_fixed_height_minor = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_dialog_fixed_width_major = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_dialog_fixed_width_minor = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_dialog_min_width_major = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_dialog_min_width_minor = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_dialog_padding_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_dialog_padding_top_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_dialog_title_divider_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_disabled_alpha_material_dark = global::LiLo.Lite.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_disabled_alpha_material_light = global::LiLo.Lite.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_dropdownitem_icon_width = global::LiLo.Lite.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_dropdownitem_text_padding_left = global::LiLo.Lite.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_dropdownitem_text_padding_right = global::LiLo.Lite.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_edit_text_inset_bottom_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_edit_text_inset_top_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_floating_window_z = global::LiLo.Lite.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_list_item_height_large_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_list_item_height_large_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_list_item_height_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_list_item_height_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_list_item_height_small_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_list_item_height_small_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_list_item_padding_horizontal_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_panel_menu_list_width = global::LiLo.Lite.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_progress_bar_height_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_search_view_preferred_height = global::LiLo.Lite.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_search_view_preferred_width = global::LiLo.Lite.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_seekbar_track_background_height_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_seekbar_track_progress_height_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_select_dialog_padding_start_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_switch_padding = global::LiLo.Lite.Droid.Resource.Dimension.abc_switch_padding;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_text_size_body_1_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_text_size_body_2_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_text_size_button_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_text_size_caption_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_text_size_display_1_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_text_size_display_2_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_text_size_display_3_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_text_size_display_4_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_text_size_headline_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_text_size_large_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_text_size_medium_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_text_size_menu_header_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_text_size_menu_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_text_size_small_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_text_size_subhead_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_text_size_title_material = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.abc_text_size_title_material_toolbar = global::LiLo.Lite.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.browser_actions_context_menu_max_width = global::LiLo.Lite.Droid.Resource.Dimension.browser_actions_context_menu_max_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.browser_actions_context_menu_min_padding = global::LiLo.Lite.Droid.Resource.Dimension.browser_actions_context_menu_min_padding;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.cardview_compat_inset_shadow = global::LiLo.Lite.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.cardview_default_elevation = global::LiLo.Lite.Droid.Resource.Dimension.cardview_default_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.cardview_default_radius = global::LiLo.Lite.Droid.Resource.Dimension.cardview_default_radius;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.compat_button_inset_horizontal_material = global::LiLo.Lite.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.compat_button_inset_vertical_material = global::LiLo.Lite.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.compat_button_padding_horizontal_material = global::LiLo.Lite.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.compat_button_padding_vertical_material = global::LiLo.Lite.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.compat_control_corner_material = global::LiLo.Lite.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.compat_notification_large_icon_max_height = global::LiLo.Lite.Droid.Resource.Dimension.compat_notification_large_icon_max_height;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.compat_notification_large_icon_max_width = global::LiLo.Lite.Droid.Resource.Dimension.compat_notification_large_icon_max_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_appbar_elevation = global::LiLo.Lite.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_bottom_navigation_active_item_min_width = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_active_item_min_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_bottom_navigation_active_text_size = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_bottom_navigation_elevation = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_bottom_navigation_height = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_bottom_navigation_icon_size = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_icon_size;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_bottom_navigation_item_max_width = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_bottom_navigation_item_min_width = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_bottom_navigation_margin = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_bottom_navigation_shadow_height = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_bottom_navigation_text_size = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_bottom_sheet_modal_elevation = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_bottom_sheet_peek_height_min = global::LiLo.Lite.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_fab_border_width = global::LiLo.Lite.Droid.Resource.Dimension.design_fab_border_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_fab_elevation = global::LiLo.Lite.Droid.Resource.Dimension.design_fab_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_fab_image_size = global::LiLo.Lite.Droid.Resource.Dimension.design_fab_image_size;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_fab_size_mini = global::LiLo.Lite.Droid.Resource.Dimension.design_fab_size_mini;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_fab_size_normal = global::LiLo.Lite.Droid.Resource.Dimension.design_fab_size_normal;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_fab_translation_z_hovered_focused = global::LiLo.Lite.Droid.Resource.Dimension.design_fab_translation_z_hovered_focused;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_fab_translation_z_pressed = global::LiLo.Lite.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_navigation_elevation = global::LiLo.Lite.Droid.Resource.Dimension.design_navigation_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_navigation_icon_padding = global::LiLo.Lite.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_navigation_icon_size = global::LiLo.Lite.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_navigation_item_horizontal_padding = global::LiLo.Lite.Droid.Resource.Dimension.design_navigation_item_horizontal_padding;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_navigation_item_icon_padding = global::LiLo.Lite.Droid.Resource.Dimension.design_navigation_item_icon_padding;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_navigation_max_width = global::LiLo.Lite.Droid.Resource.Dimension.design_navigation_max_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_navigation_padding_bottom = global::LiLo.Lite.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_navigation_separator_vertical_padding = global::LiLo.Lite.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_snackbar_action_inline_max_width = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_snackbar_background_corner_radius = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_snackbar_elevation = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_snackbar_max_width = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_snackbar_min_width = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_snackbar_padding_horizontal = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_snackbar_padding_vertical = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_snackbar_text_size = global::LiLo.Lite.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_tab_max_width = global::LiLo.Lite.Droid.Resource.Dimension.design_tab_max_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_tab_scrollable_min_width = global::LiLo.Lite.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_tab_text_size = global::LiLo.Lite.Droid.Resource.Dimension.design_tab_text_size;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_tab_text_size_2line = global::LiLo.Lite.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.design_textinput_caption_translate_y = global::LiLo.Lite.Droid.Resource.Dimension.design_textinput_caption_translate_y;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.disabled_alpha_material_dark = global::LiLo.Lite.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.disabled_alpha_material_light = global::LiLo.Lite.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.fastscroll_default_thickness = global::LiLo.Lite.Droid.Resource.Dimension.fastscroll_default_thickness;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.fastscroll_margin = global::LiLo.Lite.Droid.Resource.Dimension.fastscroll_margin;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.fastscroll_minimum_range = global::LiLo.Lite.Droid.Resource.Dimension.fastscroll_minimum_range;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.highlight_alpha_material_colored = global::LiLo.Lite.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.highlight_alpha_material_dark = global::LiLo.Lite.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.highlight_alpha_material_light = global::LiLo.Lite.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.hint_alpha_material_dark = global::LiLo.Lite.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.hint_alpha_material_light = global::LiLo.Lite.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.hint_pressed_alpha_material_dark = global::LiLo.Lite.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.hint_pressed_alpha_material_light = global::LiLo.Lite.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::LiLo.Lite.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::LiLo.Lite.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::LiLo.Lite.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_bottomappbar_fabOffsetEndMode;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_margin;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_rounded_corner_radius;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_bottomappbar_fab_cradle_vertical_offset;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_bottomappbar_height = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_bottomappbar_height;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_corner_radius = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_corner_radius;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_dialog_btn_min_width = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_dialog_btn_min_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_disabled_elevation = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_disabled_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_disabled_z = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_disabled_z;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_elevation = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_focused_z = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_focused_z;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_hovered_z = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_hovered_z;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_icon_btn_padding_left = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_icon_btn_padding_left;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_icon_padding = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_icon_padding;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_inset = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_inset;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_letter_spacing = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_letter_spacing;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_padding_bottom = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_padding_bottom;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_padding_left = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_padding_left;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_padding_right = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_padding_right;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_padding_top = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_padding_top;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_pressed_z = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_pressed_z;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_stroke_size = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_stroke_size;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_text_btn_icon_padding = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_text_btn_icon_padding;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_text_btn_padding_left = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_left;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_text_btn_padding_right = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_text_btn_padding_right;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_text_size = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_text_size;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_btn_z = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_btn_z;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_card_elevation = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_card_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_card_spacing = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_card_spacing;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_chip_pressed_translation_z = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_chip_pressed_translation_z;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_chip_text_size = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_chip_text_size;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_fab_elevation = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_fab_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_fab_translation_z_hovered_focused = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_fab_translation_z_hovered_focused;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_fab_translation_z_pressed = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_fab_translation_z_pressed;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_navigation_elevation = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_navigation_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_navigation_item_horizontal_padding = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_navigation_item_horizontal_padding;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_navigation_item_icon_padding = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_navigation_item_icon_padding;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_snackbar_background_corner_radius = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_snackbar_background_corner_radius;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_snackbar_margin = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_snackbar_margin;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_textinput_box_bottom_offset = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_textinput_box_bottom_offset;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_textinput_box_corner_radius_medium = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_medium;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_textinput_box_corner_radius_small = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_textinput_box_corner_radius_small;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_textinput_box_label_cutout_padding = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_textinput_box_label_cutout_padding;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_textinput_box_padding_end = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_textinput_box_padding_end;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_textinput_box_stroke_width_default = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_default;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_textinput_box_stroke_width_focused = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_textinput_box_stroke_width_focused;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_textinput_outline_box_expanded_padding;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.mtrl_toolbar_default_height = global::LiLo.Lite.Droid.Resource.Dimension.mtrl_toolbar_default_height;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.notification_action_icon_size = global::LiLo.Lite.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.notification_action_text_size = global::LiLo.Lite.Droid.Resource.Dimension.notification_action_text_size;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.notification_big_circle_margin = global::LiLo.Lite.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.notification_content_margin_start = global::LiLo.Lite.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.notification_large_icon_height = global::LiLo.Lite.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.notification_large_icon_width = global::LiLo.Lite.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.notification_main_column_padding_top = global::LiLo.Lite.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.notification_media_narrow_margin = global::LiLo.Lite.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.notification_right_icon_size = global::LiLo.Lite.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.notification_right_side_padding_top = global::LiLo.Lite.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.notification_small_icon_background_padding = global::LiLo.Lite.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.notification_small_icon_size_as_large = global::LiLo.Lite.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.notification_subtext_size = global::LiLo.Lite.Droid.Resource.Dimension.notification_subtext_size;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.notification_top_pad = global::LiLo.Lite.Droid.Resource.Dimension.notification_top_pad;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.notification_top_pad_large_text = global::LiLo.Lite.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.subtitle_corner_radius = global::LiLo.Lite.Droid.Resource.Dimension.subtitle_corner_radius;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.subtitle_outline_width = global::LiLo.Lite.Droid.Resource.Dimension.subtitle_outline_width;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.subtitle_shadow_offset = global::LiLo.Lite.Droid.Resource.Dimension.subtitle_shadow_offset;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.subtitle_shadow_radius = global::LiLo.Lite.Droid.Resource.Dimension.subtitle_shadow_radius;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.tooltip_corner_radius = global::LiLo.Lite.Droid.Resource.Dimension.tooltip_corner_radius;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.tooltip_horizontal_padding = global::LiLo.Lite.Droid.Resource.Dimension.tooltip_horizontal_padding;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.tooltip_margin = global::LiLo.Lite.Droid.Resource.Dimension.tooltip_margin;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::LiLo.Lite.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.tooltip_precise_anchor_threshold = global::LiLo.Lite.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.tooltip_vertical_padding = global::LiLo.Lite.Droid.Resource.Dimension.tooltip_vertical_padding;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.tooltip_y_offset_non_touch = global::LiLo.Lite.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::Xamarin.Forms.PancakeView.Resource.Dimension.tooltip_y_offset_touch = global::LiLo.Lite.Droid.Resource.Dimension.tooltip_y_offset_touch;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_action_bar_item_background_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_btn_borderless_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_btn_check_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_btn_check_material_anim = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_check_material_anim;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_btn_colored_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_btn_default_mtrl_shape = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_btn_radio_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_btn_radio_material_anim = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_radio_material_anim;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::LiLo.Lite.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_cab_background_internal_bg = global::LiLo.Lite.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_cab_background_top_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_control_background_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_control_background_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_dialog_material_background = global::LiLo.Lite.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_edit_text_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_ab_back_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_clear_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_go_search_api_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_menu_overflow_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_search_api_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_star_black_16dp = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_star_black_36dp = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_star_black_48dp = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_star_half_black_16dp = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_star_half_black_36dp = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_star_half_black_48dp = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ic_voice_search_api_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_item_background_holo_dark = global::LiLo.Lite.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_item_background_holo_light = global::LiLo.Lite.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_list_divider_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_divider_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_list_divider_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_list_focused_holo = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_list_longpressed_holo = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_list_pressed_holo_dark = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_list_pressed_holo_light = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_list_selector_disabled_holo_light = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_list_selector_holo_dark = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_list_selector_holo_light = global::LiLo.Lite.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::LiLo.Lite.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_popup_background_mtrl_mult = global::LiLo.Lite.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ratingbar_indicator_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ratingbar_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_ratingbar_small_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::LiLo.Lite.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::LiLo.Lite.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_seekbar_thumb_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_seekbar_tick_mark_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_seekbar_track_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_spinner_textfield_background_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_switch_thumb_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_switch_track_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_tab_indicator_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::LiLo.Lite.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_textfield_search_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_text_cursor_material = global::LiLo.Lite.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::LiLo.Lite.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::LiLo.Lite.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::LiLo.Lite.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::LiLo.Lite.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::LiLo.Lite.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::LiLo.Lite.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.abc_vector_test = global::LiLo.Lite.Droid.Resource.Drawable.abc_vector_test;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.avd_hide_password = global::LiLo.Lite.Droid.Resource.Drawable.avd_hide_password;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.avd_show_password = global::LiLo.Lite.Droid.Resource.Drawable.avd_show_password;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.btn_checkbox_checked_mtrl = global::LiLo.Lite.Droid.Resource.Drawable.btn_checkbox_checked_mtrl;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation = global::LiLo.Lite.Droid.Resource.Drawable.btn_checkbox_checked_to_unchecked_mtrl_animation;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.btn_checkbox_unchecked_mtrl = global::LiLo.Lite.Droid.Resource.Drawable.btn_checkbox_unchecked_mtrl;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation = global::LiLo.Lite.Droid.Resource.Drawable.btn_checkbox_unchecked_to_checked_mtrl_animation;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.btn_radio_off_mtrl = global::LiLo.Lite.Droid.Resource.Drawable.btn_radio_off_mtrl;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.btn_radio_off_to_on_mtrl_animation = global::LiLo.Lite.Droid.Resource.Drawable.btn_radio_off_to_on_mtrl_animation;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.btn_radio_on_mtrl = global::LiLo.Lite.Droid.Resource.Drawable.btn_radio_on_mtrl;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.btn_radio_on_to_off_mtrl_animation = global::LiLo.Lite.Droid.Resource.Drawable.btn_radio_on_to_off_mtrl_animation;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.design_bottom_navigation_item_background = global::LiLo.Lite.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.design_fab_background = global::LiLo.Lite.Droid.Resource.Drawable.design_fab_background;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.design_ic_visibility = global::LiLo.Lite.Droid.Resource.Drawable.design_ic_visibility;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.design_ic_visibility_off = global::LiLo.Lite.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.design_password_eye = global::LiLo.Lite.Droid.Resource.Drawable.design_password_eye;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.design_snackbar_background = global::LiLo.Lite.Droid.Resource.Drawable.design_snackbar_background;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.ic_mtrl_chip_checked_black = global::LiLo.Lite.Droid.Resource.Drawable.ic_mtrl_chip_checked_black;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.ic_mtrl_chip_checked_circle = global::LiLo.Lite.Droid.Resource.Drawable.ic_mtrl_chip_checked_circle;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.ic_mtrl_chip_close_circle = global::LiLo.Lite.Droid.Resource.Drawable.ic_mtrl_chip_close_circle;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.mtrl_snackbar_background = global::LiLo.Lite.Droid.Resource.Drawable.mtrl_snackbar_background;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.mtrl_tabs_default_indicator = global::LiLo.Lite.Droid.Resource.Drawable.mtrl_tabs_default_indicator;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.navigation_empty_icon = global::LiLo.Lite.Droid.Resource.Drawable.navigation_empty_icon;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.notification_action_background = global::LiLo.Lite.Droid.Resource.Drawable.notification_action_background;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.notification_bg = global::LiLo.Lite.Droid.Resource.Drawable.notification_bg;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.notification_bg_low = global::LiLo.Lite.Droid.Resource.Drawable.notification_bg_low;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.notification_bg_low_normal = global::LiLo.Lite.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.notification_bg_low_pressed = global::LiLo.Lite.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.notification_bg_normal = global::LiLo.Lite.Droid.Resource.Drawable.notification_bg_normal;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.notification_bg_normal_pressed = global::LiLo.Lite.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.notification_icon_background = global::LiLo.Lite.Droid.Resource.Drawable.notification_icon_background;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.notification_template_icon_bg = global::LiLo.Lite.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.notification_template_icon_low_bg = global::LiLo.Lite.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.notification_tile_bg = global::LiLo.Lite.Droid.Resource.Drawable.notification_tile_bg;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.notify_panel_notification_icon_bg = global::LiLo.Lite.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.tooltip_frame_dark = global::LiLo.Lite.Droid.Resource.Drawable.tooltip_frame_dark;
+			global::Xamarin.Forms.PancakeView.Resource.Drawable.tooltip_frame_light = global::LiLo.Lite.Droid.Resource.Drawable.tooltip_frame_light;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_action_clickable_span = global::LiLo.Lite.Droid.Resource.Id.accessibility_action_clickable_span;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_0 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_0;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_1 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_1;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_10 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_10;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_11 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_11;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_12 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_12;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_13 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_13;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_14 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_14;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_15 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_15;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_16 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_16;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_17 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_17;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_18 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_18;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_19 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_19;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_2 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_2;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_20 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_20;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_21 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_21;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_22 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_22;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_23 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_23;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_24 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_24;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_25 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_25;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_26 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_26;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_27 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_27;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_28 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_28;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_29 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_29;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_3 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_3;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_30 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_30;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_31 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_31;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_4 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_4;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_5 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_5;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_6 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_6;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_7 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_7;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_8 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_8;
+			global::Xamarin.Forms.PancakeView.Resource.Id.accessibility_custom_action_9 = global::LiLo.Lite.Droid.Resource.Id.accessibility_custom_action_9;
+			global::Xamarin.Forms.PancakeView.Resource.Id.action0 = global::LiLo.Lite.Droid.Resource.Id.action0;
+			global::Xamarin.Forms.PancakeView.Resource.Id.actions = global::LiLo.Lite.Droid.Resource.Id.actions;
+			global::Xamarin.Forms.PancakeView.Resource.Id.action_bar = global::LiLo.Lite.Droid.Resource.Id.action_bar;
+			global::Xamarin.Forms.PancakeView.Resource.Id.action_bar_activity_content = global::LiLo.Lite.Droid.Resource.Id.action_bar_activity_content;
+			global::Xamarin.Forms.PancakeView.Resource.Id.action_bar_container = global::LiLo.Lite.Droid.Resource.Id.action_bar_container;
+			global::Xamarin.Forms.PancakeView.Resource.Id.action_bar_root = global::LiLo.Lite.Droid.Resource.Id.action_bar_root;
+			global::Xamarin.Forms.PancakeView.Resource.Id.action_bar_spinner = global::LiLo.Lite.Droid.Resource.Id.action_bar_spinner;
+			global::Xamarin.Forms.PancakeView.Resource.Id.action_bar_subtitle = global::LiLo.Lite.Droid.Resource.Id.action_bar_subtitle;
+			global::Xamarin.Forms.PancakeView.Resource.Id.action_bar_title = global::LiLo.Lite.Droid.Resource.Id.action_bar_title;
+			global::Xamarin.Forms.PancakeView.Resource.Id.action_container = global::LiLo.Lite.Droid.Resource.Id.action_container;
+			global::Xamarin.Forms.PancakeView.Resource.Id.action_context_bar = global::LiLo.Lite.Droid.Resource.Id.action_context_bar;
+			global::Xamarin.Forms.PancakeView.Resource.Id.action_divider = global::LiLo.Lite.Droid.Resource.Id.action_divider;
+			global::Xamarin.Forms.PancakeView.Resource.Id.action_image = global::LiLo.Lite.Droid.Resource.Id.action_image;
+			global::Xamarin.Forms.PancakeView.Resource.Id.action_menu_divider = global::LiLo.Lite.Droid.Resource.Id.action_menu_divider;
+			global::Xamarin.Forms.PancakeView.Resource.Id.action_menu_presenter = global::LiLo.Lite.Droid.Resource.Id.action_menu_presenter;
+			global::Xamarin.Forms.PancakeView.Resource.Id.action_mode_bar = global::LiLo.Lite.Droid.Resource.Id.action_mode_bar;
+			global::Xamarin.Forms.PancakeView.Resource.Id.action_mode_bar_stub = global::LiLo.Lite.Droid.Resource.Id.action_mode_bar_stub;
+			global::Xamarin.Forms.PancakeView.Resource.Id.action_mode_close_button = global::LiLo.Lite.Droid.Resource.Id.action_mode_close_button;
+			global::Xamarin.Forms.PancakeView.Resource.Id.action_text = global::LiLo.Lite.Droid.Resource.Id.action_text;
+			global::Xamarin.Forms.PancakeView.Resource.Id.activity_chooser_view_content = global::LiLo.Lite.Droid.Resource.Id.activity_chooser_view_content;
+			global::Xamarin.Forms.PancakeView.Resource.Id.add = global::LiLo.Lite.Droid.Resource.Id.add;
+			global::Xamarin.Forms.PancakeView.Resource.Id.alertTitle = global::LiLo.Lite.Droid.Resource.Id.alertTitle;
+			global::Xamarin.Forms.PancakeView.Resource.Id.all = global::LiLo.Lite.Droid.Resource.Id.all;
+			global::Xamarin.Forms.PancakeView.Resource.Id.ALT = global::LiLo.Lite.Droid.Resource.Id.ALT;
+			global::Xamarin.Forms.PancakeView.Resource.Id.always = global::LiLo.Lite.Droid.Resource.Id.always;
+			global::Xamarin.Forms.PancakeView.Resource.Id.async = global::LiLo.Lite.Droid.Resource.Id.async;
+			global::Xamarin.Forms.PancakeView.Resource.Id.auto = global::LiLo.Lite.Droid.Resource.Id.auto;
+			global::Xamarin.Forms.PancakeView.Resource.Id.beginning = global::LiLo.Lite.Droid.Resource.Id.beginning;
+			global::Xamarin.Forms.PancakeView.Resource.Id.blocking = global::LiLo.Lite.Droid.Resource.Id.blocking;
+			global::Xamarin.Forms.PancakeView.Resource.Id.bottom = global::LiLo.Lite.Droid.Resource.Id.bottom;
+			global::Xamarin.Forms.PancakeView.Resource.Id.bottomtab_navarea = global::LiLo.Lite.Droid.Resource.Id.bottomtab_navarea;
+			global::Xamarin.Forms.PancakeView.Resource.Id.bottomtab_tabbar = global::LiLo.Lite.Droid.Resource.Id.bottomtab_tabbar;
+			global::Xamarin.Forms.PancakeView.Resource.Id.browser_actions_header_text = global::LiLo.Lite.Droid.Resource.Id.browser_actions_header_text;
+			global::Xamarin.Forms.PancakeView.Resource.Id.browser_actions_menu_items = global::LiLo.Lite.Droid.Resource.Id.browser_actions_menu_items;
+			global::Xamarin.Forms.PancakeView.Resource.Id.browser_actions_menu_item_icon = global::LiLo.Lite.Droid.Resource.Id.browser_actions_menu_item_icon;
+			global::Xamarin.Forms.PancakeView.Resource.Id.browser_actions_menu_item_text = global::LiLo.Lite.Droid.Resource.Id.browser_actions_menu_item_text;
+			global::Xamarin.Forms.PancakeView.Resource.Id.browser_actions_menu_view = global::LiLo.Lite.Droid.Resource.Id.browser_actions_menu_view;
+			global::Xamarin.Forms.PancakeView.Resource.Id.buttonPanel = global::LiLo.Lite.Droid.Resource.Id.buttonPanel;
+			global::Xamarin.Forms.PancakeView.Resource.Id.cancel_action = global::LiLo.Lite.Droid.Resource.Id.cancel_action;
+			global::Xamarin.Forms.PancakeView.Resource.Id.center = global::LiLo.Lite.Droid.Resource.Id.center;
+			global::Xamarin.Forms.PancakeView.Resource.Id.center_horizontal = global::LiLo.Lite.Droid.Resource.Id.center_horizontal;
+			global::Xamarin.Forms.PancakeView.Resource.Id.center_vertical = global::LiLo.Lite.Droid.Resource.Id.center_vertical;
+			global::Xamarin.Forms.PancakeView.Resource.Id.checkbox = global::LiLo.Lite.Droid.Resource.Id.checkbox;
+			global::Xamarin.Forms.PancakeView.Resource.Id.@checked = global::LiLo.Lite.Droid.Resource.Id.@checked;
+			global::Xamarin.Forms.PancakeView.Resource.Id.chronometer = global::LiLo.Lite.Droid.Resource.Id.chronometer;
+			global::Xamarin.Forms.PancakeView.Resource.Id.clip_horizontal = global::LiLo.Lite.Droid.Resource.Id.clip_horizontal;
+			global::Xamarin.Forms.PancakeView.Resource.Id.clip_vertical = global::LiLo.Lite.Droid.Resource.Id.clip_vertical;
+			global::Xamarin.Forms.PancakeView.Resource.Id.collapseActionView = global::LiLo.Lite.Droid.Resource.Id.collapseActionView;
+			global::Xamarin.Forms.PancakeView.Resource.Id.container = global::LiLo.Lite.Droid.Resource.Id.container;
+			global::Xamarin.Forms.PancakeView.Resource.Id.content = global::LiLo.Lite.Droid.Resource.Id.content;
+			global::Xamarin.Forms.PancakeView.Resource.Id.contentPanel = global::LiLo.Lite.Droid.Resource.Id.contentPanel;
+			global::Xamarin.Forms.PancakeView.Resource.Id.coordinator = global::LiLo.Lite.Droid.Resource.Id.coordinator;
+			global::Xamarin.Forms.PancakeView.Resource.Id.CTRL = global::LiLo.Lite.Droid.Resource.Id.CTRL;
+			global::Xamarin.Forms.PancakeView.Resource.Id.custom = global::LiLo.Lite.Droid.Resource.Id.custom;
+			global::Xamarin.Forms.PancakeView.Resource.Id.customPanel = global::LiLo.Lite.Droid.Resource.Id.customPanel;
+			global::Xamarin.Forms.PancakeView.Resource.Id.decor_content_parent = global::LiLo.Lite.Droid.Resource.Id.decor_content_parent;
+			global::Xamarin.Forms.PancakeView.Resource.Id.default_activity_button = global::LiLo.Lite.Droid.Resource.Id.default_activity_button;
+			global::Xamarin.Forms.PancakeView.Resource.Id.design_bottom_sheet = global::LiLo.Lite.Droid.Resource.Id.design_bottom_sheet;
+			global::Xamarin.Forms.PancakeView.Resource.Id.design_menu_item_action_area = global::LiLo.Lite.Droid.Resource.Id.design_menu_item_action_area;
+			global::Xamarin.Forms.PancakeView.Resource.Id.design_menu_item_action_area_stub = global::LiLo.Lite.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::Xamarin.Forms.PancakeView.Resource.Id.design_menu_item_text = global::LiLo.Lite.Droid.Resource.Id.design_menu_item_text;
+			global::Xamarin.Forms.PancakeView.Resource.Id.design_navigation_view = global::LiLo.Lite.Droid.Resource.Id.design_navigation_view;
+			global::Xamarin.Forms.PancakeView.Resource.Id.dialog_button = global::LiLo.Lite.Droid.Resource.Id.dialog_button;
+			global::Xamarin.Forms.PancakeView.Resource.Id.disableHome = global::LiLo.Lite.Droid.Resource.Id.disableHome;
+			global::Xamarin.Forms.PancakeView.Resource.Id.edit_query = global::LiLo.Lite.Droid.Resource.Id.edit_query;
+			global::Xamarin.Forms.PancakeView.Resource.Id.end = global::LiLo.Lite.Droid.Resource.Id.end;
+			global::Xamarin.Forms.PancakeView.Resource.Id.end_padder = global::LiLo.Lite.Droid.Resource.Id.end_padder;
+			global::Xamarin.Forms.PancakeView.Resource.Id.enterAlways = global::LiLo.Lite.Droid.Resource.Id.enterAlways;
+			global::Xamarin.Forms.PancakeView.Resource.Id.enterAlwaysCollapsed = global::LiLo.Lite.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::Xamarin.Forms.PancakeView.Resource.Id.exitUntilCollapsed = global::LiLo.Lite.Droid.Resource.Id.exitUntilCollapsed;
+			global::Xamarin.Forms.PancakeView.Resource.Id.expanded_menu = global::LiLo.Lite.Droid.Resource.Id.expanded_menu;
+			global::Xamarin.Forms.PancakeView.Resource.Id.expand_activities_button = global::LiLo.Lite.Droid.Resource.Id.expand_activities_button;
+			global::Xamarin.Forms.PancakeView.Resource.Id.fill = global::LiLo.Lite.Droid.Resource.Id.fill;
+			global::Xamarin.Forms.PancakeView.Resource.Id.filled = global::LiLo.Lite.Droid.Resource.Id.filled;
+			global::Xamarin.Forms.PancakeView.Resource.Id.fill_horizontal = global::LiLo.Lite.Droid.Resource.Id.fill_horizontal;
+			global::Xamarin.Forms.PancakeView.Resource.Id.fill_vertical = global::LiLo.Lite.Droid.Resource.Id.fill_vertical;
+			global::Xamarin.Forms.PancakeView.Resource.Id.@fixed = global::LiLo.Lite.Droid.Resource.Id.@fixed;
+			global::Xamarin.Forms.PancakeView.Resource.Id.flyoutcontent_appbar = global::LiLo.Lite.Droid.Resource.Id.flyoutcontent_appbar;
+			global::Xamarin.Forms.PancakeView.Resource.Id.flyoutcontent_recycler = global::LiLo.Lite.Droid.Resource.Id.flyoutcontent_recycler;
+			global::Xamarin.Forms.PancakeView.Resource.Id.forever = global::LiLo.Lite.Droid.Resource.Id.forever;
+			global::Xamarin.Forms.PancakeView.Resource.Id.fragment_container_view_tag = global::LiLo.Lite.Droid.Resource.Id.fragment_container_view_tag;
+			global::Xamarin.Forms.PancakeView.Resource.Id.FUNCTION = global::LiLo.Lite.Droid.Resource.Id.FUNCTION;
+			global::Xamarin.Forms.PancakeView.Resource.Id.ghost_view = global::LiLo.Lite.Droid.Resource.Id.ghost_view;
+			global::Xamarin.Forms.PancakeView.Resource.Id.ghost_view_holder = global::LiLo.Lite.Droid.Resource.Id.ghost_view_holder;
+			global::Xamarin.Forms.PancakeView.Resource.Id.group_divider = global::LiLo.Lite.Droid.Resource.Id.group_divider;
+			global::Xamarin.Forms.PancakeView.Resource.Id.home = global::LiLo.Lite.Droid.Resource.Id.home;
+			global::Xamarin.Forms.PancakeView.Resource.Id.homeAsUp = global::LiLo.Lite.Droid.Resource.Id.homeAsUp;
+			global::Xamarin.Forms.PancakeView.Resource.Id.icon = global::LiLo.Lite.Droid.Resource.Id.icon;
+			global::Xamarin.Forms.PancakeView.Resource.Id.icon_group = global::LiLo.Lite.Droid.Resource.Id.icon_group;
+			global::Xamarin.Forms.PancakeView.Resource.Id.ifRoom = global::LiLo.Lite.Droid.Resource.Id.ifRoom;
+			global::Xamarin.Forms.PancakeView.Resource.Id.image = global::LiLo.Lite.Droid.Resource.Id.image;
+			global::Xamarin.Forms.PancakeView.Resource.Id.info = global::LiLo.Lite.Droid.Resource.Id.info;
+			global::Xamarin.Forms.PancakeView.Resource.Id.italic = global::LiLo.Lite.Droid.Resource.Id.italic;
+			global::Xamarin.Forms.PancakeView.Resource.Id.item_touch_helper_previous_elevation = global::LiLo.Lite.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Id.labeled = global::LiLo.Lite.Droid.Resource.Id.labeled;
+			global::Xamarin.Forms.PancakeView.Resource.Id.largeLabel = global::LiLo.Lite.Droid.Resource.Id.largeLabel;
+			global::Xamarin.Forms.PancakeView.Resource.Id.left = global::LiLo.Lite.Droid.Resource.Id.left;
+			global::Xamarin.Forms.PancakeView.Resource.Id.line1 = global::LiLo.Lite.Droid.Resource.Id.line1;
+			global::Xamarin.Forms.PancakeView.Resource.Id.line3 = global::LiLo.Lite.Droid.Resource.Id.line3;
+			global::Xamarin.Forms.PancakeView.Resource.Id.listMode = global::LiLo.Lite.Droid.Resource.Id.listMode;
+			global::Xamarin.Forms.PancakeView.Resource.Id.list_item = global::LiLo.Lite.Droid.Resource.Id.list_item;
+			global::Xamarin.Forms.PancakeView.Resource.Id.main_appbar = global::LiLo.Lite.Droid.Resource.Id.main_appbar;
+			global::Xamarin.Forms.PancakeView.Resource.Id.main_tablayout = global::LiLo.Lite.Droid.Resource.Id.main_tablayout;
+			global::Xamarin.Forms.PancakeView.Resource.Id.main_toolbar = global::LiLo.Lite.Droid.Resource.Id.main_toolbar;
+			global::Xamarin.Forms.PancakeView.Resource.Id.main_viewpager = global::LiLo.Lite.Droid.Resource.Id.main_viewpager;
+			global::Xamarin.Forms.PancakeView.Resource.Id.masked = global::LiLo.Lite.Droid.Resource.Id.masked;
+			global::Xamarin.Forms.PancakeView.Resource.Id.media_actions = global::LiLo.Lite.Droid.Resource.Id.media_actions;
+			global::Xamarin.Forms.PancakeView.Resource.Id.message = global::LiLo.Lite.Droid.Resource.Id.message;
+			global::Xamarin.Forms.PancakeView.Resource.Id.META = global::LiLo.Lite.Droid.Resource.Id.META;
+			global::Xamarin.Forms.PancakeView.Resource.Id.middle = global::LiLo.Lite.Droid.Resource.Id.middle;
+			global::Xamarin.Forms.PancakeView.Resource.Id.mini = global::LiLo.Lite.Droid.Resource.Id.mini;
+			global::Xamarin.Forms.PancakeView.Resource.Id.mtrl_child_content_container = global::LiLo.Lite.Droid.Resource.Id.mtrl_child_content_container;
+			global::Xamarin.Forms.PancakeView.Resource.Id.mtrl_internal_children_alpha_tag = global::LiLo.Lite.Droid.Resource.Id.mtrl_internal_children_alpha_tag;
+			global::Xamarin.Forms.PancakeView.Resource.Id.multiply = global::LiLo.Lite.Droid.Resource.Id.multiply;
+			global::Xamarin.Forms.PancakeView.Resource.Id.navigation_header_container = global::LiLo.Lite.Droid.Resource.Id.navigation_header_container;
+			global::Xamarin.Forms.PancakeView.Resource.Id.never = global::LiLo.Lite.Droid.Resource.Id.never;
+			global::Xamarin.Forms.PancakeView.Resource.Id.none = global::LiLo.Lite.Droid.Resource.Id.none;
+			global::Xamarin.Forms.PancakeView.Resource.Id.normal = global::LiLo.Lite.Droid.Resource.Id.normal;
+			global::Xamarin.Forms.PancakeView.Resource.Id.notification_background = global::LiLo.Lite.Droid.Resource.Id.notification_background;
+			global::Xamarin.Forms.PancakeView.Resource.Id.notification_main_column = global::LiLo.Lite.Droid.Resource.Id.notification_main_column;
+			global::Xamarin.Forms.PancakeView.Resource.Id.notification_main_column_container = global::LiLo.Lite.Droid.Resource.Id.notification_main_column_container;
+			global::Xamarin.Forms.PancakeView.Resource.Id.off = global::LiLo.Lite.Droid.Resource.Id.off;
+			global::Xamarin.Forms.PancakeView.Resource.Id.on = global::LiLo.Lite.Droid.Resource.Id.on;
+			global::Xamarin.Forms.PancakeView.Resource.Id.outline = global::LiLo.Lite.Droid.Resource.Id.outline;
+			global::Xamarin.Forms.PancakeView.Resource.Id.parallax = global::LiLo.Lite.Droid.Resource.Id.parallax;
+			global::Xamarin.Forms.PancakeView.Resource.Id.parentPanel = global::LiLo.Lite.Droid.Resource.Id.parentPanel;
+			global::Xamarin.Forms.PancakeView.Resource.Id.parent_matrix = global::LiLo.Lite.Droid.Resource.Id.parent_matrix;
+			global::Xamarin.Forms.PancakeView.Resource.Id.pin = global::LiLo.Lite.Droid.Resource.Id.pin;
+			global::Xamarin.Forms.PancakeView.Resource.Id.progress_circular = global::LiLo.Lite.Droid.Resource.Id.progress_circular;
+			global::Xamarin.Forms.PancakeView.Resource.Id.progress_horizontal = global::LiLo.Lite.Droid.Resource.Id.progress_horizontal;
+			global::Xamarin.Forms.PancakeView.Resource.Id.radio = global::LiLo.Lite.Droid.Resource.Id.radio;
+			global::Xamarin.Forms.PancakeView.Resource.Id.right = global::LiLo.Lite.Droid.Resource.Id.right;
+			global::Xamarin.Forms.PancakeView.Resource.Id.right_icon = global::LiLo.Lite.Droid.Resource.Id.right_icon;
+			global::Xamarin.Forms.PancakeView.Resource.Id.right_side = global::LiLo.Lite.Droid.Resource.Id.right_side;
+			global::Xamarin.Forms.PancakeView.Resource.Id.save_non_transition_alpha = global::LiLo.Lite.Droid.Resource.Id.save_non_transition_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Id.save_overlay_view = global::LiLo.Lite.Droid.Resource.Id.save_overlay_view;
+			global::Xamarin.Forms.PancakeView.Resource.Id.screen = global::LiLo.Lite.Droid.Resource.Id.screen;
+			global::Xamarin.Forms.PancakeView.Resource.Id.scroll = global::LiLo.Lite.Droid.Resource.Id.scroll;
+			global::Xamarin.Forms.PancakeView.Resource.Id.scrollable = global::LiLo.Lite.Droid.Resource.Id.scrollable;
+			global::Xamarin.Forms.PancakeView.Resource.Id.scrollIndicatorDown = global::LiLo.Lite.Droid.Resource.Id.scrollIndicatorDown;
+			global::Xamarin.Forms.PancakeView.Resource.Id.scrollIndicatorUp = global::LiLo.Lite.Droid.Resource.Id.scrollIndicatorUp;
+			global::Xamarin.Forms.PancakeView.Resource.Id.scrollView = global::LiLo.Lite.Droid.Resource.Id.scrollView;
+			global::Xamarin.Forms.PancakeView.Resource.Id.search_badge = global::LiLo.Lite.Droid.Resource.Id.search_badge;
+			global::Xamarin.Forms.PancakeView.Resource.Id.search_bar = global::LiLo.Lite.Droid.Resource.Id.search_bar;
+			global::Xamarin.Forms.PancakeView.Resource.Id.search_button = global::LiLo.Lite.Droid.Resource.Id.search_button;
+			global::Xamarin.Forms.PancakeView.Resource.Id.search_close_btn = global::LiLo.Lite.Droid.Resource.Id.search_close_btn;
+			global::Xamarin.Forms.PancakeView.Resource.Id.search_edit_frame = global::LiLo.Lite.Droid.Resource.Id.search_edit_frame;
+			global::Xamarin.Forms.PancakeView.Resource.Id.search_go_btn = global::LiLo.Lite.Droid.Resource.Id.search_go_btn;
+			global::Xamarin.Forms.PancakeView.Resource.Id.search_mag_icon = global::LiLo.Lite.Droid.Resource.Id.search_mag_icon;
+			global::Xamarin.Forms.PancakeView.Resource.Id.search_plate = global::LiLo.Lite.Droid.Resource.Id.search_plate;
+			global::Xamarin.Forms.PancakeView.Resource.Id.search_src_text = global::LiLo.Lite.Droid.Resource.Id.search_src_text;
+			global::Xamarin.Forms.PancakeView.Resource.Id.search_voice_btn = global::LiLo.Lite.Droid.Resource.Id.search_voice_btn;
+			global::Xamarin.Forms.PancakeView.Resource.Id.selected = global::LiLo.Lite.Droid.Resource.Id.selected;
+			global::Xamarin.Forms.PancakeView.Resource.Id.select_dialog_listview = global::LiLo.Lite.Droid.Resource.Id.select_dialog_listview;
+			global::Xamarin.Forms.PancakeView.Resource.Id.shellcontent_appbar = global::LiLo.Lite.Droid.Resource.Id.shellcontent_appbar;
+			global::Xamarin.Forms.PancakeView.Resource.Id.shellcontent_toolbar = global::LiLo.Lite.Droid.Resource.Id.shellcontent_toolbar;
+			global::Xamarin.Forms.PancakeView.Resource.Id.SHIFT = global::LiLo.Lite.Droid.Resource.Id.SHIFT;
+			global::Xamarin.Forms.PancakeView.Resource.Id.shortcut = global::LiLo.Lite.Droid.Resource.Id.shortcut;
+			global::Xamarin.Forms.PancakeView.Resource.Id.showCustom = global::LiLo.Lite.Droid.Resource.Id.showCustom;
+			global::Xamarin.Forms.PancakeView.Resource.Id.showHome = global::LiLo.Lite.Droid.Resource.Id.showHome;
+			global::Xamarin.Forms.PancakeView.Resource.Id.showTitle = global::LiLo.Lite.Droid.Resource.Id.showTitle;
+			global::Xamarin.Forms.PancakeView.Resource.Id.sliding_tabs = global::LiLo.Lite.Droid.Resource.Id.sliding_tabs;
+			global::Xamarin.Forms.PancakeView.Resource.Id.smallLabel = global::LiLo.Lite.Droid.Resource.Id.smallLabel;
+			global::Xamarin.Forms.PancakeView.Resource.Id.snackbar_action = global::LiLo.Lite.Droid.Resource.Id.snackbar_action;
+			global::Xamarin.Forms.PancakeView.Resource.Id.snackbar_text = global::LiLo.Lite.Droid.Resource.Id.snackbar_text;
+			global::Xamarin.Forms.PancakeView.Resource.Id.snap = global::LiLo.Lite.Droid.Resource.Id.snap;
+			global::Xamarin.Forms.PancakeView.Resource.Id.snapMargins = global::LiLo.Lite.Droid.Resource.Id.snapMargins;
+			global::Xamarin.Forms.PancakeView.Resource.Id.spacer = global::LiLo.Lite.Droid.Resource.Id.spacer;
+			global::Xamarin.Forms.PancakeView.Resource.Id.split_action_bar = global::LiLo.Lite.Droid.Resource.Id.split_action_bar;
+			global::Xamarin.Forms.PancakeView.Resource.Id.src_atop = global::LiLo.Lite.Droid.Resource.Id.src_atop;
+			global::Xamarin.Forms.PancakeView.Resource.Id.src_in = global::LiLo.Lite.Droid.Resource.Id.src_in;
+			global::Xamarin.Forms.PancakeView.Resource.Id.src_over = global::LiLo.Lite.Droid.Resource.Id.src_over;
+			global::Xamarin.Forms.PancakeView.Resource.Id.start = global::LiLo.Lite.Droid.Resource.Id.start;
+			global::Xamarin.Forms.PancakeView.Resource.Id.status_bar_latest_event_content = global::LiLo.Lite.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Xamarin.Forms.PancakeView.Resource.Id.stretch = global::LiLo.Lite.Droid.Resource.Id.stretch;
+			global::Xamarin.Forms.PancakeView.Resource.Id.submenuarrow = global::LiLo.Lite.Droid.Resource.Id.submenuarrow;
+			global::Xamarin.Forms.PancakeView.Resource.Id.submit_area = global::LiLo.Lite.Droid.Resource.Id.submit_area;
+			global::Xamarin.Forms.PancakeView.Resource.Id.SYM = global::LiLo.Lite.Droid.Resource.Id.SYM;
+			global::Xamarin.Forms.PancakeView.Resource.Id.tabMode = global::LiLo.Lite.Droid.Resource.Id.tabMode;
+			global::Xamarin.Forms.PancakeView.Resource.Id.tag_accessibility_actions = global::LiLo.Lite.Droid.Resource.Id.tag_accessibility_actions;
+			global::Xamarin.Forms.PancakeView.Resource.Id.tag_accessibility_clickable_spans = global::LiLo.Lite.Droid.Resource.Id.tag_accessibility_clickable_spans;
+			global::Xamarin.Forms.PancakeView.Resource.Id.tag_accessibility_heading = global::LiLo.Lite.Droid.Resource.Id.tag_accessibility_heading;
+			global::Xamarin.Forms.PancakeView.Resource.Id.tag_accessibility_pane_title = global::LiLo.Lite.Droid.Resource.Id.tag_accessibility_pane_title;
+			global::Xamarin.Forms.PancakeView.Resource.Id.tag_screen_reader_focusable = global::LiLo.Lite.Droid.Resource.Id.tag_screen_reader_focusable;
+			global::Xamarin.Forms.PancakeView.Resource.Id.tag_transition_group = global::LiLo.Lite.Droid.Resource.Id.tag_transition_group;
+			global::Xamarin.Forms.PancakeView.Resource.Id.tag_unhandled_key_event_manager = global::LiLo.Lite.Droid.Resource.Id.tag_unhandled_key_event_manager;
+			global::Xamarin.Forms.PancakeView.Resource.Id.tag_unhandled_key_listeners = global::LiLo.Lite.Droid.Resource.Id.tag_unhandled_key_listeners;
+			global::Xamarin.Forms.PancakeView.Resource.Id.text = global::LiLo.Lite.Droid.Resource.Id.text;
+			global::Xamarin.Forms.PancakeView.Resource.Id.text2 = global::LiLo.Lite.Droid.Resource.Id.text2;
+			global::Xamarin.Forms.PancakeView.Resource.Id.textinput_counter = global::LiLo.Lite.Droid.Resource.Id.textinput_counter;
+			global::Xamarin.Forms.PancakeView.Resource.Id.textinput_error = global::LiLo.Lite.Droid.Resource.Id.textinput_error;
+			global::Xamarin.Forms.PancakeView.Resource.Id.textinput_helper_text = global::LiLo.Lite.Droid.Resource.Id.textinput_helper_text;
+			global::Xamarin.Forms.PancakeView.Resource.Id.textSpacerNoButtons = global::LiLo.Lite.Droid.Resource.Id.textSpacerNoButtons;
+			global::Xamarin.Forms.PancakeView.Resource.Id.textSpacerNoTitle = global::LiLo.Lite.Droid.Resource.Id.textSpacerNoTitle;
+			global::Xamarin.Forms.PancakeView.Resource.Id.textStart = global::LiLo.Lite.Droid.Resource.Id.textStart;
+			global::Xamarin.Forms.PancakeView.Resource.Id.text_input_password_toggle = global::LiLo.Lite.Droid.Resource.Id.text_input_password_toggle;
+			global::Xamarin.Forms.PancakeView.Resource.Id.time = global::LiLo.Lite.Droid.Resource.Id.time;
+			global::Xamarin.Forms.PancakeView.Resource.Id.title = global::LiLo.Lite.Droid.Resource.Id.title;
+			global::Xamarin.Forms.PancakeView.Resource.Id.titleDividerNoCustom = global::LiLo.Lite.Droid.Resource.Id.titleDividerNoCustom;
+			global::Xamarin.Forms.PancakeView.Resource.Id.title_template = global::LiLo.Lite.Droid.Resource.Id.title_template;
+			global::Xamarin.Forms.PancakeView.Resource.Id.toolbar = global::LiLo.Lite.Droid.Resource.Id.toolbar;
+			global::Xamarin.Forms.PancakeView.Resource.Id.top = global::LiLo.Lite.Droid.Resource.Id.top;
+			global::Xamarin.Forms.PancakeView.Resource.Id.topPanel = global::LiLo.Lite.Droid.Resource.Id.topPanel;
+			global::Xamarin.Forms.PancakeView.Resource.Id.touch_outside = global::LiLo.Lite.Droid.Resource.Id.touch_outside;
+			global::Xamarin.Forms.PancakeView.Resource.Id.transition_current_scene = global::LiLo.Lite.Droid.Resource.Id.transition_current_scene;
+			global::Xamarin.Forms.PancakeView.Resource.Id.transition_layout_save = global::LiLo.Lite.Droid.Resource.Id.transition_layout_save;
+			global::Xamarin.Forms.PancakeView.Resource.Id.transition_position = global::LiLo.Lite.Droid.Resource.Id.transition_position;
+			global::Xamarin.Forms.PancakeView.Resource.Id.transition_scene_layoutid_cache = global::LiLo.Lite.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::Xamarin.Forms.PancakeView.Resource.Id.transition_transform = global::LiLo.Lite.Droid.Resource.Id.transition_transform;
+			global::Xamarin.Forms.PancakeView.Resource.Id.@unchecked = global::LiLo.Lite.Droid.Resource.Id.@unchecked;
+			global::Xamarin.Forms.PancakeView.Resource.Id.uniform = global::LiLo.Lite.Droid.Resource.Id.uniform;
+			global::Xamarin.Forms.PancakeView.Resource.Id.unlabeled = global::LiLo.Lite.Droid.Resource.Id.unlabeled;
+			global::Xamarin.Forms.PancakeView.Resource.Id.up = global::LiLo.Lite.Droid.Resource.Id.up;
+			global::Xamarin.Forms.PancakeView.Resource.Id.useLogo = global::LiLo.Lite.Droid.Resource.Id.useLogo;
+			global::Xamarin.Forms.PancakeView.Resource.Id.view_offset_helper = global::LiLo.Lite.Droid.Resource.Id.view_offset_helper;
+			global::Xamarin.Forms.PancakeView.Resource.Id.view_tree_saved_state_registry_owner = global::LiLo.Lite.Droid.Resource.Id.view_tree_saved_state_registry_owner;
+			global::Xamarin.Forms.PancakeView.Resource.Id.visible = global::LiLo.Lite.Droid.Resource.Id.visible;
+			global::Xamarin.Forms.PancakeView.Resource.Id.visible_removing_fragment_view_tag = global::LiLo.Lite.Droid.Resource.Id.visible_removing_fragment_view_tag;
+			global::Xamarin.Forms.PancakeView.Resource.Id.withText = global::LiLo.Lite.Droid.Resource.Id.withText;
+			global::Xamarin.Forms.PancakeView.Resource.Id.wrap_content = global::LiLo.Lite.Droid.Resource.Id.wrap_content;
+			global::Xamarin.Forms.PancakeView.Resource.Integer.abc_config_activityDefaultDur = global::LiLo.Lite.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Xamarin.Forms.PancakeView.Resource.Integer.abc_config_activityShortDur = global::LiLo.Lite.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Xamarin.Forms.PancakeView.Resource.Integer.app_bar_elevation_anim_duration = global::LiLo.Lite.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::Xamarin.Forms.PancakeView.Resource.Integer.bottom_sheet_slide_duration = global::LiLo.Lite.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::Xamarin.Forms.PancakeView.Resource.Integer.cancel_button_image_alpha = global::LiLo.Lite.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Integer.config_tooltipAnimTime = global::LiLo.Lite.Droid.Resource.Integer.config_tooltipAnimTime;
+			global::Xamarin.Forms.PancakeView.Resource.Integer.design_snackbar_text_max_lines = global::LiLo.Lite.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::Xamarin.Forms.PancakeView.Resource.Integer.design_tab_indicator_anim_duration_ms = global::LiLo.Lite.Droid.Resource.Integer.design_tab_indicator_anim_duration_ms;
+			global::Xamarin.Forms.PancakeView.Resource.Integer.hide_password_duration = global::LiLo.Lite.Droid.Resource.Integer.hide_password_duration;
+			global::Xamarin.Forms.PancakeView.Resource.Integer.mtrl_btn_anim_delay_ms = global::LiLo.Lite.Droid.Resource.Integer.mtrl_btn_anim_delay_ms;
+			global::Xamarin.Forms.PancakeView.Resource.Integer.mtrl_btn_anim_duration_ms = global::LiLo.Lite.Droid.Resource.Integer.mtrl_btn_anim_duration_ms;
+			global::Xamarin.Forms.PancakeView.Resource.Integer.mtrl_chip_anim_duration = global::LiLo.Lite.Droid.Resource.Integer.mtrl_chip_anim_duration;
+			global::Xamarin.Forms.PancakeView.Resource.Integer.mtrl_tab_indicator_anim_duration_ms = global::LiLo.Lite.Droid.Resource.Integer.mtrl_tab_indicator_anim_duration_ms;
+			global::Xamarin.Forms.PancakeView.Resource.Integer.show_password_duration = global::LiLo.Lite.Droid.Resource.Integer.show_password_duration;
+			global::Xamarin.Forms.PancakeView.Resource.Integer.status_bar_notification_info_maxnum = global::LiLo.Lite.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Xamarin.Forms.PancakeView.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0 = global::LiLo.Lite.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.PancakeView.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1 = global::LiLo.Lite.Droid.Resource.Interpolator.btn_checkbox_checked_mtrl_animation_interpolator_1;
+			global::Xamarin.Forms.PancakeView.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0 = global::LiLo.Lite.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.PancakeView.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1 = global::LiLo.Lite.Droid.Resource.Interpolator.btn_checkbox_unchecked_mtrl_animation_interpolator_1;
+			global::Xamarin.Forms.PancakeView.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0 = global::LiLo.Lite.Droid.Resource.Interpolator.btn_radio_to_off_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.PancakeView.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0 = global::LiLo.Lite.Droid.Resource.Interpolator.btn_radio_to_on_mtrl_animation_interpolator_0;
+			global::Xamarin.Forms.PancakeView.Resource.Interpolator.fast_out_slow_in = global::LiLo.Lite.Droid.Resource.Interpolator.fast_out_slow_in;
+			global::Xamarin.Forms.PancakeView.Resource.Interpolator.mtrl_fast_out_linear_in = global::LiLo.Lite.Droid.Resource.Interpolator.mtrl_fast_out_linear_in;
+			global::Xamarin.Forms.PancakeView.Resource.Interpolator.mtrl_fast_out_slow_in = global::LiLo.Lite.Droid.Resource.Interpolator.mtrl_fast_out_slow_in;
+			global::Xamarin.Forms.PancakeView.Resource.Interpolator.mtrl_linear = global::LiLo.Lite.Droid.Resource.Interpolator.mtrl_linear;
+			global::Xamarin.Forms.PancakeView.Resource.Interpolator.mtrl_linear_out_slow_in = global::LiLo.Lite.Droid.Resource.Interpolator.mtrl_linear_out_slow_in;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_action_bar_title_item = global::LiLo.Lite.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_action_bar_up_container = global::LiLo.Lite.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_action_menu_item_layout = global::LiLo.Lite.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_action_menu_layout = global::LiLo.Lite.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_action_mode_bar = global::LiLo.Lite.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_action_mode_close_item_material = global::LiLo.Lite.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_activity_chooser_view = global::LiLo.Lite.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_activity_chooser_view_list_item = global::LiLo.Lite.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_alert_dialog_button_bar_material = global::LiLo.Lite.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_alert_dialog_material = global::LiLo.Lite.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_alert_dialog_title_material = global::LiLo.Lite.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_cascading_menu_item_layout = global::LiLo.Lite.Droid.Resource.Layout.abc_cascading_menu_item_layout;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_dialog_title_material = global::LiLo.Lite.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_expanded_menu_layout = global::LiLo.Lite.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_list_menu_item_checkbox = global::LiLo.Lite.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_list_menu_item_icon = global::LiLo.Lite.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_list_menu_item_layout = global::LiLo.Lite.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_list_menu_item_radio = global::LiLo.Lite.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_popup_menu_header_item_layout = global::LiLo.Lite.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_popup_menu_item_layout = global::LiLo.Lite.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_screen_content_include = global::LiLo.Lite.Droid.Resource.Layout.abc_screen_content_include;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_screen_simple = global::LiLo.Lite.Droid.Resource.Layout.abc_screen_simple;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_screen_simple_overlay_action_mode = global::LiLo.Lite.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_screen_toolbar = global::LiLo.Lite.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_search_dropdown_item_icons_2line = global::LiLo.Lite.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_search_view = global::LiLo.Lite.Droid.Resource.Layout.abc_search_view;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_select_dialog_material = global::LiLo.Lite.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.abc_tooltip = global::LiLo.Lite.Droid.Resource.Layout.abc_tooltip;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.BottomTabLayout = global::LiLo.Lite.Droid.Resource.Layout.BottomTabLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.browser_actions_context_menu_page = global::LiLo.Lite.Droid.Resource.Layout.browser_actions_context_menu_page;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.browser_actions_context_menu_row = global::LiLo.Lite.Droid.Resource.Layout.browser_actions_context_menu_row;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.custom_dialog = global::LiLo.Lite.Droid.Resource.Layout.custom_dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.design_bottom_navigation_item = global::LiLo.Lite.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.design_bottom_sheet_dialog = global::LiLo.Lite.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.design_layout_snackbar = global::LiLo.Lite.Droid.Resource.Layout.design_layout_snackbar;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.design_layout_snackbar_include = global::LiLo.Lite.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.design_layout_tab_icon = global::LiLo.Lite.Droid.Resource.Layout.design_layout_tab_icon;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.design_layout_tab_text = global::LiLo.Lite.Droid.Resource.Layout.design_layout_tab_text;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.design_menu_item_action_area = global::LiLo.Lite.Droid.Resource.Layout.design_menu_item_action_area;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.design_navigation_item = global::LiLo.Lite.Droid.Resource.Layout.design_navigation_item;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.design_navigation_item_header = global::LiLo.Lite.Droid.Resource.Layout.design_navigation_item_header;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.design_navigation_item_separator = global::LiLo.Lite.Droid.Resource.Layout.design_navigation_item_separator;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.design_navigation_item_subheader = global::LiLo.Lite.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.design_navigation_menu = global::LiLo.Lite.Droid.Resource.Layout.design_navigation_menu;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.design_navigation_menu_item = global::LiLo.Lite.Droid.Resource.Layout.design_navigation_menu_item;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.design_text_input_password_icon = global::LiLo.Lite.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.FallbackTabbarDoNotUse = global::LiLo.Lite.Droid.Resource.Layout.FallbackTabbarDoNotUse;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.FallbackToolbarDoNotUse = global::LiLo.Lite.Droid.Resource.Layout.FallbackToolbarDoNotUse;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.FlyoutContent = global::LiLo.Lite.Droid.Resource.Layout.FlyoutContent;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.mtrl_layout_snackbar = global::LiLo.Lite.Droid.Resource.Layout.mtrl_layout_snackbar;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.mtrl_layout_snackbar_include = global::LiLo.Lite.Droid.Resource.Layout.mtrl_layout_snackbar_include;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.notification_action = global::LiLo.Lite.Droid.Resource.Layout.notification_action;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.notification_action_tombstone = global::LiLo.Lite.Droid.Resource.Layout.notification_action_tombstone;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.notification_media_action = global::LiLo.Lite.Droid.Resource.Layout.notification_media_action;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.notification_media_cancel_action = global::LiLo.Lite.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.notification_template_big_media = global::LiLo.Lite.Droid.Resource.Layout.notification_template_big_media;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.notification_template_big_media_custom = global::LiLo.Lite.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.notification_template_big_media_narrow = global::LiLo.Lite.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.notification_template_big_media_narrow_custom = global::LiLo.Lite.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.notification_template_custom_big = global::LiLo.Lite.Droid.Resource.Layout.notification_template_custom_big;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.notification_template_icon_group = global::LiLo.Lite.Droid.Resource.Layout.notification_template_icon_group;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.notification_template_lines_media = global::LiLo.Lite.Droid.Resource.Layout.notification_template_lines_media;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.notification_template_media = global::LiLo.Lite.Droid.Resource.Layout.notification_template_media;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.notification_template_media_custom = global::LiLo.Lite.Droid.Resource.Layout.notification_template_media_custom;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.notification_template_part_chronometer = global::LiLo.Lite.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.notification_template_part_time = global::LiLo.Lite.Droid.Resource.Layout.notification_template_part_time;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.RootLayout = global::LiLo.Lite.Droid.Resource.Layout.RootLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.select_dialog_item_material = global::LiLo.Lite.Droid.Resource.Layout.select_dialog_item_material;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.select_dialog_multichoice_material = global::LiLo.Lite.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.select_dialog_singlechoice_material = global::LiLo.Lite.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.ShellContent = global::LiLo.Lite.Droid.Resource.Layout.ShellContent;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.support_simple_spinner_dropdown_item = global::LiLo.Lite.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.Tabbar = global::LiLo.Lite.Droid.Resource.Layout.Tabbar;
+			global::Xamarin.Forms.PancakeView.Resource.Layout.Toolbar = global::LiLo.Lite.Droid.Resource.Layout.Toolbar;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_action_bar_home_description = global::LiLo.Lite.Droid.Resource.String.abc_action_bar_home_description;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_action_bar_up_description = global::LiLo.Lite.Droid.Resource.String.abc_action_bar_up_description;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_action_menu_overflow_description = global::LiLo.Lite.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_action_mode_done = global::LiLo.Lite.Droid.Resource.String.abc_action_mode_done;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_activitychooserview_choose_application = global::LiLo.Lite.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_activity_chooser_view_see_all = global::LiLo.Lite.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_capital_off = global::LiLo.Lite.Droid.Resource.String.abc_capital_off;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_capital_on = global::LiLo.Lite.Droid.Resource.String.abc_capital_on;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_menu_alt_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_menu_alt_shortcut_label;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_menu_ctrl_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_menu_ctrl_shortcut_label;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_menu_delete_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_menu_delete_shortcut_label;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_menu_enter_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_menu_enter_shortcut_label;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_menu_function_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_menu_function_shortcut_label;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_menu_meta_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_menu_meta_shortcut_label;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_menu_shift_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_menu_shift_shortcut_label;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_menu_space_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_menu_space_shortcut_label;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_menu_sym_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_menu_sym_shortcut_label;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_prepend_shortcut_label = global::LiLo.Lite.Droid.Resource.String.abc_prepend_shortcut_label;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_searchview_description_clear = global::LiLo.Lite.Droid.Resource.String.abc_searchview_description_clear;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_searchview_description_query = global::LiLo.Lite.Droid.Resource.String.abc_searchview_description_query;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_searchview_description_search = global::LiLo.Lite.Droid.Resource.String.abc_searchview_description_search;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_searchview_description_submit = global::LiLo.Lite.Droid.Resource.String.abc_searchview_description_submit;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_searchview_description_voice = global::LiLo.Lite.Droid.Resource.String.abc_searchview_description_voice;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_search_hint = global::LiLo.Lite.Droid.Resource.String.abc_search_hint;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_shareactionprovider_share_with = global::LiLo.Lite.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_shareactionprovider_share_with_application = global::LiLo.Lite.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Xamarin.Forms.PancakeView.Resource.String.abc_toolbar_collapse_description = global::LiLo.Lite.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Xamarin.Forms.PancakeView.Resource.String.appbar_scrolling_view_behavior = global::LiLo.Lite.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Xamarin.Forms.PancakeView.Resource.String.bottom_sheet_behavior = global::LiLo.Lite.Droid.Resource.String.bottom_sheet_behavior;
+			global::Xamarin.Forms.PancakeView.Resource.String.character_counter_content_description = global::LiLo.Lite.Droid.Resource.String.character_counter_content_description;
+			global::Xamarin.Forms.PancakeView.Resource.String.character_counter_pattern = global::LiLo.Lite.Droid.Resource.String.character_counter_pattern;
+			global::Xamarin.Forms.PancakeView.Resource.String.fab_transformation_scrim_behavior = global::LiLo.Lite.Droid.Resource.String.fab_transformation_scrim_behavior;
+			global::Xamarin.Forms.PancakeView.Resource.String.fab_transformation_sheet_behavior = global::LiLo.Lite.Droid.Resource.String.fab_transformation_sheet_behavior;
+			global::Xamarin.Forms.PancakeView.Resource.String.hide_bottom_view_on_scroll_behavior = global::LiLo.Lite.Droid.Resource.String.hide_bottom_view_on_scroll_behavior;
+			global::Xamarin.Forms.PancakeView.Resource.String.mtrl_chip_close_icon_content_description = global::LiLo.Lite.Droid.Resource.String.mtrl_chip_close_icon_content_description;
+			global::Xamarin.Forms.PancakeView.Resource.String.overflow_tab_title = global::LiLo.Lite.Droid.Resource.String.overflow_tab_title;
+			global::Xamarin.Forms.PancakeView.Resource.String.password_toggle_content_description = global::LiLo.Lite.Droid.Resource.String.password_toggle_content_description;
+			global::Xamarin.Forms.PancakeView.Resource.String.path_password_eye = global::LiLo.Lite.Droid.Resource.String.path_password_eye;
+			global::Xamarin.Forms.PancakeView.Resource.String.path_password_eye_mask_strike_through = global::LiLo.Lite.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::Xamarin.Forms.PancakeView.Resource.String.path_password_eye_mask_visible = global::LiLo.Lite.Droid.Resource.String.path_password_eye_mask_visible;
+			global::Xamarin.Forms.PancakeView.Resource.String.path_password_strike_through = global::LiLo.Lite.Droid.Resource.String.path_password_strike_through;
+			global::Xamarin.Forms.PancakeView.Resource.String.search_menu_title = global::LiLo.Lite.Droid.Resource.String.search_menu_title;
+			global::Xamarin.Forms.PancakeView.Resource.String.status_bar_notification_info_overflow = global::LiLo.Lite.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Xamarin.Forms.PancakeView.Resource.Style.AlertDialog_AppCompat = global::LiLo.Lite.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.AlertDialog_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Animation_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Animation_AppCompat_DropDownUp = global::LiLo.Lite.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Animation_AppCompat_Tooltip = global::LiLo.Lite.Droid.Resource.Style.Animation_AppCompat_Tooltip;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Animation_Design_BottomSheetDialog = global::LiLo.Lite.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.AppCompatDialogStyle = global::LiLo.Lite.Droid.Resource.Style.AppCompatDialogStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_AlertDialog_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_AlertDialog_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Animation_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::LiLo.Lite.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Animation_AppCompat_Tooltip = global::LiLo.Lite.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_CardView = global::LiLo.Lite.Droid.Resource.Style.Base_CardView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_DialogWindowTitle_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Button = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Large = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Small = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Title = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::LiLo.Lite.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_ThemeOverlay_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::LiLo.Lite.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Base_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_MaterialComponents = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_MaterialComponents_Bridge = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Bridge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_MaterialComponents_CompactMenu = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_CompactMenu;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_MaterialComponents_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_DialogWhenLarge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_Alert;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_FixedSize;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Dialog_MinWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_MaterialComponents_Light = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Bridge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_Alert;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_FixedSize;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth = global::LiLo.Lite.Droid.Resource.Style.Base_Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V14_Theme_MaterialComponents = global::LiLo.Lite.Droid.Resource.Style.Base_V14_Theme_MaterialComponents;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge = global::LiLo.Lite.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Bridge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V14_Theme_MaterialComponents_Light = global::LiLo.Lite.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge = global::LiLo.Lite.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Bridge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::LiLo.Lite.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_V14_Theme_MaterialComponents_Light_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V21_Theme_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V21_Theme_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V22_Theme_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V22_Theme_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V23_Theme_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V23_Theme_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V26_Theme_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_V26_Theme_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V26_Theme_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::LiLo.Lite.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V28_Theme_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_V28_Theme_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V28_Theme_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Base_V28_Theme_AppCompat_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V7_Theme_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V7_Theme_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::LiLo.Lite.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::LiLo.Lite.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::LiLo.Lite.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::LiLo.Lite.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ActionButton = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ActionMode = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_Button = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_Button_Small = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_EditText = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ImageButton = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ListView = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_RatingBar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_SearchView = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_SeekBar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_Spinner = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_TextView = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_TextView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_Toolbar = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_Design_TabLayout = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_MaterialComponents_Chip = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_MaterialComponents_Chip;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputEditText;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout = global::LiLo.Lite.Droid.Resource.Style.Base_Widget_MaterialComponents_TextInputLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Style.CardView = global::LiLo.Lite.Droid.Resource.Style.CardView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.CardView_Dark = global::LiLo.Lite.Droid.Resource.Style.CardView_Dark;
+			global::Xamarin.Forms.PancakeView.Resource.Style.CardView_Light = global::LiLo.Lite.Droid.Resource.Style.CardView_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.collectionViewTheme = global::LiLo.Lite.Droid.Resource.Style.collectionViewTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Style.MainTheme = global::LiLo.Lite.Droid.Resource.Style.MainTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Style.MainTheme_Base = global::LiLo.Lite.Droid.Resource.Style.MainTheme_Base;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Platform_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Platform_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Platform_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Platform_MaterialComponents = global::LiLo.Lite.Droid.Resource.Style.Platform_MaterialComponents;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Platform_MaterialComponents_Dialog = global::LiLo.Lite.Droid.Resource.Style.Platform_MaterialComponents_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Platform_MaterialComponents_Light = global::LiLo.Lite.Droid.Resource.Style.Platform_MaterialComponents_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Platform_MaterialComponents_Light_Dialog = global::LiLo.Lite.Droid.Resource.Style.Platform_MaterialComponents_Light_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Platform_ThemeOverlay_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::LiLo.Lite.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Platform_V21_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Platform_V21_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Platform_V25_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Platform_V25_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Platform_Widget_AppCompat_Spinner = global::LiLo.Lite.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Xamarin.Forms.PancakeView.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Xamarin.Forms.PancakeView.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Xamarin.Forms.PancakeView.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Xamarin.Forms.PancakeView.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Xamarin.Forms.PancakeView.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Shortcut;
+			global::Xamarin.Forms.PancakeView.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_SubmenuArrow;
+			global::Xamarin.Forms.PancakeView.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Xamarin.Forms.PancakeView.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Title;
+			global::Xamarin.Forms.PancakeView.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Xamarin.Forms.PancakeView.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Xamarin.Forms.PancakeView.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Xamarin.Forms.PancakeView.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Xamarin.Forms.PancakeView.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Xamarin.Forms.PancakeView.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::LiLo.Lite.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Xamarin.Forms.PancakeView.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::LiLo.Lite.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.PancakeView.Resource.Style.scrollViewScrollBars = global::LiLo.Lite.Droid.Resource.Style.scrollViewScrollBars;
+			global::Xamarin.Forms.PancakeView.Resource.Style.scrollViewTheme = global::LiLo.Lite.Droid.Resource.Style.scrollViewTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Body1 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Body2 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Button = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Caption = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Display1 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Display2 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Display3 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Display4 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Headline = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Large = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Medium = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Menu = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Small = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Subhead = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Title = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Tooltip = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Compat_Notification = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Compat_Notification_Info = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Compat_Notification_Media = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Compat_Notification_Time = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Compat_Notification_Title = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Design_Counter = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Design_Counter_Overflow = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Design_Error = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Design_HelperText = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Design_HelperText;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Design_Hint = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Design_Snackbar_Message = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Design_Tab = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_MaterialComponents_Body1 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Body1;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_MaterialComponents_Body2 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Body2;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_MaterialComponents_Button = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Button;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_MaterialComponents_Caption = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Caption;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_MaterialComponents_Chip = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Chip;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_MaterialComponents_Headline1 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline1;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_MaterialComponents_Headline2 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline2;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_MaterialComponents_Headline3 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline3;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_MaterialComponents_Headline4 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline4;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_MaterialComponents_Headline5 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline5;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_MaterialComponents_Headline6 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Headline6;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_MaterialComponents_Overline = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Overline;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_MaterialComponents_Subtitle1 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle1;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_MaterialComponents_Subtitle2 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Subtitle2;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_MaterialComponents_Tab = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_MaterialComponents_Tab;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Xamarin.Forms.PancakeView.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_AppCompat = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_AppCompat_Dark = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_AppCompat_DayNight = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_AppCompat_DayNight_ActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_MaterialComponents = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_ActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_MaterialComponents_Dark = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dark_ActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_MaterialComponents_Dialog = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Dialog_Alert;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_MaterialComponents_Light = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox;
+			global::Xamarin.Forms.PancakeView.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::LiLo.Lite.Droid.Resource.Style.ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_CompactMenu = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_DayNight = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_Dialog = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_Empty = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Empty;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_Light = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_Light_Dialog = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_AppCompat_NoActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_Design = global::LiLo.Lite.Droid.Resource.Style.Theme_Design;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_Design_BottomSheetDialog = global::LiLo.Lite.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_Design_Light = global::LiLo.Lite.Droid.Resource.Style.Theme_Design_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::LiLo.Lite.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_Design_Light_NoActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_Design_NoActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_BottomSheetDialog = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_BottomSheetDialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_Bridge = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Bridge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_CompactMenu = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_CompactMenu;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_Dialog = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_DialogWhenLarge = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_DialogWhenLarge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Dialog_Alert;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Dialog_MinWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_Light = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_BottomSheetDialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_Light_Bridge = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_Bridge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_DarkActionBar_Bridge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_Light_Dialog = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_DialogWhenLarge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_Alert;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_Light_NoActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_Light_NoActionBar_Bridge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_NoActionBar = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge = global::LiLo.Lite.Droid.Resource.Style.Theme_MaterialComponents_NoActionBar_Bridge;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ActionButton = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ActionMode = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ActivityChooserView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Button = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ButtonBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Button_Borderless = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Button_Colored = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Button_Small = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_EditText = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ImageButton = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_ActionButton = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_SearchView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ListMenuView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ListPopupWindow = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ListView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ListView_DropDown = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ListView_Menu = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_PopupMenu = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_PopupWindow = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ProgressBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_RatingBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_RatingBar_Small = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_SearchView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_SeekBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Spinner = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_TextView = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_TextView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Toolbar = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::LiLo.Lite.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_Compat_NotificationActionContainer = global::LiLo.Lite.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_Compat_NotificationActionText = global::LiLo.Lite.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_Design_AppBarLayout = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_Design_BottomNavigationView = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_Design_BottomSheet_Modal = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_Design_CollapsingToolbar = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_Design_FloatingActionButton = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_Design_NavigationView = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_Design_Snackbar = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_Design_TabLayout = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_Design_TextInputLayout = global::LiLo.Lite.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_BottomAppBar = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_BottomAppBar_Colored;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_BottomNavigationView = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_BottomNavigationView_Colored;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_BottomSheet_Modal;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_Button = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_Button_Icon = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button_Icon;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button_OutlinedButton_Icon;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_Button_TextButton = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Dialog_Icon;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button_TextButton_Icon;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Button_UnelevatedButton_Icon;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_CardView = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_CardView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_ChipGroup = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_ChipGroup;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_Chip_Action = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Chip_Action;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_Chip_Choice = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Chip_Choice;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_Chip_Entry = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Chip_Entry;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_Chip_Filter = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Chip_Filter;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_FloatingActionButton = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_FloatingActionButton;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_NavigationView = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_NavigationView;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_Snackbar = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Snackbar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Snackbar_FullWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_TabLayout = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TabLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_TabLayout_Colored = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TabLayout_Colored;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_FilledBox_Dense;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_FilledBox_Dense;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_MaterialComponents_Toolbar = global::LiLo.Lite.Droid.Resource.Style.Widget_MaterialComponents_Toolbar;
+			global::Xamarin.Forms.PancakeView.Resource.Style.Widget_Support_CoordinatorLayout = global::LiLo.Lite.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBarLayout = global::LiLo.Lite.Droid.Resource.Styleable.ActionBarLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::LiLo.Lite.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_background = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_background;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_backgroundSplit = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_backgroundStacked = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_contentInsetEnd = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_contentInsetLeft = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_contentInsetRight = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_contentInsetStart = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_customNavigationLayout = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_displayOptions = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_divider = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_divider;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_elevation = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_height = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_height;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_hideOnContentScroll = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_homeAsUpIndicator = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_homeLayout = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_icon = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_icon;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_itemPadding = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_logo = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_logo;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_navigationMode = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_popupTheme = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_progressBarPadding = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_progressBarStyle = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_subtitle = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_subtitleTextStyle = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_title = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_title;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionBar_titleTextStyle = global::LiLo.Lite.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionMenuItemView = global::LiLo.Lite.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionMenuItemView_android_minWidth = global::LiLo.Lite.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionMenuView = global::LiLo.Lite.Droid.Resource.Styleable.ActionMenuView;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionMode = global::LiLo.Lite.Droid.Resource.Styleable.ActionMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionMode_background = global::LiLo.Lite.Droid.Resource.Styleable.ActionMode_background;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionMode_backgroundSplit = global::LiLo.Lite.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionMode_closeItemLayout = global::LiLo.Lite.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionMode_height = global::LiLo.Lite.Droid.Resource.Styleable.ActionMode_height;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionMode_subtitleTextStyle = global::LiLo.Lite.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActionMode_titleTextStyle = global::LiLo.Lite.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActivityChooserView = global::LiLo.Lite.Droid.Resource.Styleable.ActivityChooserView;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::LiLo.Lite.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ActivityChooserView_initialActivityCount = global::LiLo.Lite.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AlertDialog = global::LiLo.Lite.Droid.Resource.Styleable.AlertDialog;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AlertDialog_android_layout = global::LiLo.Lite.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AlertDialog_buttonIconDimen = global::LiLo.Lite.Droid.Resource.Styleable.AlertDialog_buttonIconDimen;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::LiLo.Lite.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AlertDialog_listItemLayout = global::LiLo.Lite.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AlertDialog_listLayout = global::LiLo.Lite.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::LiLo.Lite.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AlertDialog_showTitle = global::LiLo.Lite.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::LiLo.Lite.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AnimatedStateListDrawableCompat = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_constantSize;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_dither;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_enterFadeDuration;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_exitFadeDuration;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_variablePadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableCompat_android_visible;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AnimatedStateListDrawableItem = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableItem;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_drawable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AnimatedStateListDrawableItem_android_id = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableItem_android_id;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AnimatedStateListDrawableTransition = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableTransition;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_drawable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_fromId;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_reversible;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId = global::LiLo.Lite.Droid.Resource.Styleable.AnimatedStateListDrawableTransition_android_toId;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppBarLayout = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppBarLayoutStates = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppBarLayoutStates_state_liftable = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayoutStates_state_liftable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppBarLayoutStates_state_lifted = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayoutStates_state_lifted;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppBarLayout_android_background = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppBarLayout_elevation = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppBarLayout_expanded = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppBarLayout_Layout = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppBarLayout_liftOnScroll = global::LiLo.Lite.Droid.Resource.Styleable.AppBarLayout_liftOnScroll;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatImageView = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatImageView;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatImageView_android_src = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatImageView_srcCompat = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatImageView_tint = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatImageView_tintMode = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatSeekBar = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatSeekBar_android_thumb = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatSeekBar_tickMark = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextHelper = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_android_textAppearance = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_drawableBottomCompat = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_drawableBottomCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_drawableEndCompat = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_drawableEndCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_drawableLeftCompat = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_drawableLeftCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_drawableRightCompat = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_drawableRightCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_drawableStartCompat = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_drawableStartCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_drawableTint = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_drawableTint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_drawableTintMode = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_drawableTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_drawableTopCompat = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_drawableTopCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_firstBaselineToTopHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_fontFamily = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_fontVariationSettings = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_fontVariationSettings;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_lastBaselineToBottomHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_lineHeight = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_lineHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_textAllCaps = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTextView_textLocale = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTextView_textLocale;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionBarDivider = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionBarSize = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionBarStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionBarTheme = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionModeBackground = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionModeStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_buttonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_checkboxStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_colorAccent = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_colorControlActivated = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_colorControlNormal = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_colorError = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorError;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_colorPrimary = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_controlBackground = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_dialogCornerRadius = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_dialogCornerRadius;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_dialogTheme = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_dividerVertical = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_editTextBackground = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_editTextColor = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_editTextStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorMultipleAnimated;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listChoiceIndicatorSingleAnimated;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingStart;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_panelBackground = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_searchViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_seekBarStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_spinnerStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_switchStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_toolbarStyle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_viewInflaterClass = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_viewInflaterClass;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_windowActionBar = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.AppCompatTheme_windowNoTitle = global::LiLo.Lite.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomAppBar = global::LiLo.Lite.Droid.Resource.Styleable.BottomAppBar;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomAppBar_backgroundTint = global::LiLo.Lite.Droid.Resource.Styleable.BottomAppBar_backgroundTint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomAppBar_fabAlignmentMode = global::LiLo.Lite.Droid.Resource.Styleable.BottomAppBar_fabAlignmentMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomAppBar_fabCradleMargin = global::LiLo.Lite.Droid.Resource.Styleable.BottomAppBar_fabCradleMargin;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius = global::LiLo.Lite.Droid.Resource.Styleable.BottomAppBar_fabCradleRoundedCornerRadius;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset = global::LiLo.Lite.Droid.Resource.Styleable.BottomAppBar_fabCradleVerticalOffset;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomAppBar_hideOnScroll = global::LiLo.Lite.Droid.Resource.Styleable.BottomAppBar_hideOnScroll;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomNavigationView = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomNavigationView_elevation = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomNavigationView_itemBackground = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_itemHorizontalTranslationEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomNavigationView_itemIconSize = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_itemIconSize;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomNavigationView_itemIconTint = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceActive;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_itemTextAppearanceInactive;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomNavigationView_itemTextColor = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomNavigationView_labelVisibilityMode = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_labelVisibilityMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomNavigationView_menu = global::LiLo.Lite.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomSheetBehavior_Layout = global::LiLo.Lite.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents = global::LiLo.Lite.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_fitToContents;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::LiLo.Lite.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::LiLo.Lite.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::LiLo.Lite.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ButtonBarLayout = global::LiLo.Lite.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ButtonBarLayout_allowStacking = global::LiLo.Lite.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CardView = global::LiLo.Lite.Droid.Resource.Styleable.CardView;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CardView_android_minHeight = global::LiLo.Lite.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CardView_android_minWidth = global::LiLo.Lite.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CardView_cardBackgroundColor = global::LiLo.Lite.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CardView_cardCornerRadius = global::LiLo.Lite.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CardView_cardElevation = global::LiLo.Lite.Droid.Resource.Styleable.CardView_cardElevation;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CardView_cardMaxElevation = global::LiLo.Lite.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CardView_cardPreventCornerOverlap = global::LiLo.Lite.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CardView_cardUseCompatPadding = global::LiLo.Lite.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CardView_contentPadding = global::LiLo.Lite.Droid.Resource.Styleable.CardView_contentPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CardView_contentPaddingBottom = global::LiLo.Lite.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CardView_contentPaddingLeft = global::LiLo.Lite.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CardView_contentPaddingRight = global::LiLo.Lite.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CardView_contentPaddingTop = global::LiLo.Lite.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip = global::LiLo.Lite.Droid.Resource.Styleable.Chip;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ChipGroup = global::LiLo.Lite.Droid.Resource.Styleable.ChipGroup;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ChipGroup_checkedChip = global::LiLo.Lite.Droid.Resource.Styleable.ChipGroup_checkedChip;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ChipGroup_chipSpacing = global::LiLo.Lite.Droid.Resource.Styleable.ChipGroup_chipSpacing;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ChipGroup_chipSpacingHorizontal = global::LiLo.Lite.Droid.Resource.Styleable.ChipGroup_chipSpacingHorizontal;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ChipGroup_chipSpacingVertical = global::LiLo.Lite.Droid.Resource.Styleable.ChipGroup_chipSpacingVertical;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ChipGroup_singleLine = global::LiLo.Lite.Droid.Resource.Styleable.ChipGroup_singleLine;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ChipGroup_singleSelection = global::LiLo.Lite.Droid.Resource.Styleable.ChipGroup_singleSelection;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_android_checkable = global::LiLo.Lite.Droid.Resource.Styleable.Chip_android_checkable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_android_ellipsize = global::LiLo.Lite.Droid.Resource.Styleable.Chip_android_ellipsize;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_android_maxWidth = global::LiLo.Lite.Droid.Resource.Styleable.Chip_android_maxWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_android_text = global::LiLo.Lite.Droid.Resource.Styleable.Chip_android_text;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_android_textAppearance = global::LiLo.Lite.Droid.Resource.Styleable.Chip_android_textAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_checkedIcon = global::LiLo.Lite.Droid.Resource.Styleable.Chip_checkedIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_checkedIconEnabled = global::LiLo.Lite.Droid.Resource.Styleable.Chip_checkedIconEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_checkedIconVisible = global::LiLo.Lite.Droid.Resource.Styleable.Chip_checkedIconVisible;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_chipBackgroundColor = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipBackgroundColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_chipCornerRadius = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipCornerRadius;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_chipEndPadding = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipEndPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_chipIcon = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_chipIconEnabled = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipIconEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_chipIconSize = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipIconSize;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_chipIconTint = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipIconTint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_chipIconVisible = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipIconVisible;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_chipMinHeight = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipMinHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_chipStartPadding = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipStartPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_chipStrokeColor = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipStrokeColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_chipStrokeWidth = global::LiLo.Lite.Droid.Resource.Styleable.Chip_chipStrokeWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_closeIcon = global::LiLo.Lite.Droid.Resource.Styleable.Chip_closeIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_closeIconEnabled = global::LiLo.Lite.Droid.Resource.Styleable.Chip_closeIconEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_closeIconEndPadding = global::LiLo.Lite.Droid.Resource.Styleable.Chip_closeIconEndPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_closeIconSize = global::LiLo.Lite.Droid.Resource.Styleable.Chip_closeIconSize;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_closeIconStartPadding = global::LiLo.Lite.Droid.Resource.Styleable.Chip_closeIconStartPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_closeIconTint = global::LiLo.Lite.Droid.Resource.Styleable.Chip_closeIconTint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_closeIconVisible = global::LiLo.Lite.Droid.Resource.Styleable.Chip_closeIconVisible;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_hideMotionSpec = global::LiLo.Lite.Droid.Resource.Styleable.Chip_hideMotionSpec;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_iconEndPadding = global::LiLo.Lite.Droid.Resource.Styleable.Chip_iconEndPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_iconStartPadding = global::LiLo.Lite.Droid.Resource.Styleable.Chip_iconStartPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_rippleColor = global::LiLo.Lite.Droid.Resource.Styleable.Chip_rippleColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_showMotionSpec = global::LiLo.Lite.Droid.Resource.Styleable.Chip_showMotionSpec;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_textEndPadding = global::LiLo.Lite.Droid.Resource.Styleable.Chip_textEndPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Chip_textStartPadding = global::LiLo.Lite.Droid.Resource.Styleable.Chip_textStartPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_Layout = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_title = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::LiLo.Lite.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ColorStateListItem = global::LiLo.Lite.Droid.Resource.Styleable.ColorStateListItem;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ColorStateListItem_alpha = global::LiLo.Lite.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ColorStateListItem_android_alpha = global::LiLo.Lite.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ColorStateListItem_android_color = global::LiLo.Lite.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CompoundButton = global::LiLo.Lite.Droid.Resource.Styleable.CompoundButton;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CompoundButton_android_button = global::LiLo.Lite.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CompoundButton_buttonCompat = global::LiLo.Lite.Droid.Resource.Styleable.CompoundButton_buttonCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CompoundButton_buttonTint = global::LiLo.Lite.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CompoundButton_buttonTintMode = global::LiLo.Lite.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CoordinatorLayout = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CoordinatorLayout_keylines = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CoordinatorLayout_Layout = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::LiLo.Lite.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.DesignTheme = global::LiLo.Lite.Droid.Resource.Styleable.DesignTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::LiLo.Lite.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.DesignTheme_bottomSheetStyle = global::LiLo.Lite.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.DrawerArrowToggle = global::LiLo.Lite.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::LiLo.Lite.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::LiLo.Lite.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.DrawerArrowToggle_barLength = global::LiLo.Lite.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.DrawerArrowToggle_color = global::LiLo.Lite.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.DrawerArrowToggle_drawableSize = global::LiLo.Lite.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::LiLo.Lite.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.DrawerArrowToggle_spinBars = global::LiLo.Lite.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.DrawerArrowToggle_thickness = global::LiLo.Lite.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FloatingActionButton = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FloatingActionButton_backgroundTint = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FloatingActionButton_borderWidth = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FloatingActionButton_elevation = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FloatingActionButton_fabCustomSize = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_fabCustomSize;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FloatingActionButton_fabSize = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FloatingActionButton_hideMotionSpec = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_hideMotionSpec;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_hoveredFocusedTranslationZ;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FloatingActionButton_maxImageSize = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_maxImageSize;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FloatingActionButton_rippleColor = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FloatingActionButton_showMotionSpec = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_showMotionSpec;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FloatingActionButton_useCompatPadding = global::LiLo.Lite.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FlowLayout = global::LiLo.Lite.Droid.Resource.Styleable.FlowLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FlowLayout_itemSpacing = global::LiLo.Lite.Droid.Resource.Styleable.FlowLayout_itemSpacing;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FlowLayout_lineSpacing = global::LiLo.Lite.Droid.Resource.Styleable.FlowLayout_lineSpacing;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FontFamily = global::LiLo.Lite.Droid.Resource.Styleable.FontFamily;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FontFamilyFont = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FontFamilyFont_android_font = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FontFamilyFont_android_fontStyle = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FontFamilyFont_android_fontVariationSettings = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_android_fontVariationSettings;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FontFamilyFont_android_fontWeight = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FontFamilyFont_android_ttcIndex = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_android_ttcIndex;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FontFamilyFont_font = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FontFamilyFont_fontStyle = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FontFamilyFont_fontWeight = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FontFamilyFont_ttcIndex = global::LiLo.Lite.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FontFamily_fontProviderAuthority = global::LiLo.Lite.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FontFamily_fontProviderCerts = global::LiLo.Lite.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::LiLo.Lite.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::LiLo.Lite.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FontFamily_fontProviderPackage = global::LiLo.Lite.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FontFamily_fontProviderQuery = global::LiLo.Lite.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ForegroundLinearLayout = global::LiLo.Lite.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::LiLo.Lite.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::LiLo.Lite.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::LiLo.Lite.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Fragment = global::LiLo.Lite.Droid.Resource.Styleable.Fragment;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FragmentContainerView = global::LiLo.Lite.Droid.Resource.Styleable.FragmentContainerView;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FragmentContainerView_android_name = global::LiLo.Lite.Droid.Resource.Styleable.FragmentContainerView_android_name;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.FragmentContainerView_android_tag = global::LiLo.Lite.Droid.Resource.Styleable.FragmentContainerView_android_tag;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Fragment_android_id = global::LiLo.Lite.Droid.Resource.Styleable.Fragment_android_id;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Fragment_android_name = global::LiLo.Lite.Droid.Resource.Styleable.Fragment_android_name;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Fragment_android_tag = global::LiLo.Lite.Droid.Resource.Styleable.Fragment_android_tag;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.GradientColor = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.GradientColorItem = global::LiLo.Lite.Droid.Resource.Styleable.GradientColorItem;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.GradientColorItem_android_color = global::LiLo.Lite.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.GradientColorItem_android_offset = global::LiLo.Lite.Droid.Resource.Styleable.GradientColorItem_android_offset;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.GradientColor_android_centerColor = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_centerColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.GradientColor_android_centerX = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_centerX;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.GradientColor_android_centerY = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_centerY;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.GradientColor_android_endColor = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_endColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.GradientColor_android_endX = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_endX;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.GradientColor_android_endY = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_endY;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.GradientColor_android_gradientRadius = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_gradientRadius;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.GradientColor_android_startColor = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_startColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.GradientColor_android_startX = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_startX;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.GradientColor_android_startY = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_startY;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.GradientColor_android_tileMode = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_tileMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.GradientColor_android_type = global::LiLo.Lite.Droid.Resource.Styleable.GradientColor_android_type;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ItemsViewRendererTheme = global::LiLo.Lite.Droid.Resource.Styleable.ItemsViewRendererTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ItemsViewRendererTheme_collectionViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.ItemsViewRendererTheme_collectionViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.LinearLayoutCompat = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.LinearLayoutCompat_android_gravity = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.LinearLayoutCompat_android_orientation = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.LinearLayoutCompat_divider = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.LinearLayoutCompat_Layout = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.LinearLayoutCompat_showDividers = global::LiLo.Lite.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ListPopupWindow = global::LiLo.Lite.Droid.Resource.Styleable.ListPopupWindow;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::LiLo.Lite.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::LiLo.Lite.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialButton = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialButton_android_insetBottom = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_android_insetBottom;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialButton_android_insetLeft = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_android_insetLeft;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialButton_android_insetRight = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_android_insetRight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialButton_android_insetTop = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_android_insetTop;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialButton_backgroundTint = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_backgroundTint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialButton_backgroundTintMode = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_backgroundTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialButton_cornerRadius = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_cornerRadius;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialButton_icon = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_icon;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialButton_iconGravity = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_iconGravity;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialButton_iconPadding = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_iconPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialButton_iconSize = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_iconSize;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialButton_iconTint = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_iconTint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialButton_iconTintMode = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_iconTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialButton_rippleColor = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_rippleColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialButton_strokeColor = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_strokeColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialButton_strokeWidth = global::LiLo.Lite.Droid.Resource.Styleable.MaterialButton_strokeWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialCardView = global::LiLo.Lite.Droid.Resource.Styleable.MaterialCardView;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialCardView_strokeColor = global::LiLo.Lite.Droid.Resource.Styleable.MaterialCardView_strokeColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialCardView_strokeWidth = global::LiLo.Lite.Droid.Resource.Styleable.MaterialCardView_strokeWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_bottomSheetDialogTheme = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetDialogTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_bottomSheetStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_bottomSheetStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_chipGroupStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_chipGroupStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_chipStandaloneStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_chipStandaloneStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_chipStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_chipStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_colorAccent = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_colorAccent;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_colorBackgroundFloating = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_colorBackgroundFloating;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_colorPrimary = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimary;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_colorPrimaryDark = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_colorPrimaryDark;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_colorSecondary = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_colorSecondary;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_editTextStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_editTextStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_floatingActionButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_floatingActionButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_materialButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_materialButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_materialCardViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_materialCardViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_navigationViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_navigationViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_scrimBackground = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_scrimBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_snackbarButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_snackbarButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_tabStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_tabStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody1 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody1;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody2 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceBody2;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_textAppearanceButton = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceButton;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_textAppearanceCaption = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceCaption;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline1 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline1;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline2 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline2;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline3 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline3;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline4 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline4;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline5 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline5;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline6 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceHeadline6;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_textAppearanceOverline = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceOverline;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle1;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2 = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textAppearanceSubtitle2;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MaterialComponentsTheme_textInputStyle = global::LiLo.Lite.Droid.Resource.Styleable.MaterialComponentsTheme_textInputStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuGroup = global::LiLo.Lite.Droid.Resource.Styleable.MenuGroup;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuGroup_android_checkableBehavior = global::LiLo.Lite.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuGroup_android_enabled = global::LiLo.Lite.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuGroup_android_id = global::LiLo.Lite.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuGroup_android_menuCategory = global::LiLo.Lite.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuGroup_android_orderInCategory = global::LiLo.Lite.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuGroup_android_visible = global::LiLo.Lite.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_actionLayout = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_actionProviderClass = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_actionViewClass = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_alphabeticModifiers = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_android_checkable = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_android_checked = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_android_enabled = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_android_icon = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_android_id = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_android_menuCategory = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_android_numericShortcut = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_android_onClick = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_android_orderInCategory = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_android_title = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_android_titleCondensed = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_android_visible = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_contentDescription = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_contentDescription;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_iconTint = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_iconTint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_iconTintMode = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_iconTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_numericModifiers = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_numericModifiers;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_showAsAction = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuItem_tooltipText = global::LiLo.Lite.Droid.Resource.Styleable.MenuItem_tooltipText;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuView = global::LiLo.Lite.Droid.Resource.Styleable.MenuView;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuView_android_headerBackground = global::LiLo.Lite.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuView_android_horizontalDivider = global::LiLo.Lite.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuView_android_itemBackground = global::LiLo.Lite.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::LiLo.Lite.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuView_android_itemTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuView_android_verticalDivider = global::LiLo.Lite.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuView_android_windowAnimationStyle = global::LiLo.Lite.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuView_preserveIconSpacing = global::LiLo.Lite.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.MenuView_subMenuArrow = global::LiLo.Lite.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.NavigationView = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.NavigationView_android_background = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_android_background;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.NavigationView_android_maxWidth = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.NavigationView_elevation = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.NavigationView_headerLayout = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.NavigationView_itemBackground = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.NavigationView_itemHorizontalPadding = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_itemHorizontalPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.NavigationView_itemIconPadding = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_itemIconPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.NavigationView_itemIconTint = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.NavigationView_itemTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.NavigationView_itemTextColor = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.NavigationView_menu = global::LiLo.Lite.Droid.Resource.Styleable.NavigationView_menu;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.PopupWindow = global::LiLo.Lite.Droid.Resource.Styleable.PopupWindow;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.PopupWindowBackgroundState = global::LiLo.Lite.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::LiLo.Lite.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::LiLo.Lite.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.PopupWindow_android_popupBackground = global::LiLo.Lite.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.PopupWindow_overlapAnchor = global::LiLo.Lite.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.RecycleListView = global::LiLo.Lite.Droid.Resource.Styleable.RecycleListView;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::LiLo.Lite.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::LiLo.Lite.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.RecyclerView = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.RecyclerView_android_clipToPadding = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_android_clipToPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.RecyclerView_android_descendantFocusability = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.RecyclerView_android_orientation = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.RecyclerView_fastScrollEnabled = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.RecyclerView_layoutManager = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.RecyclerView_reverseLayout = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.RecyclerView_spanCount = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.RecyclerView_stackFromEnd = global::LiLo.Lite.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ScrimInsetsFrameLayout = global::LiLo.Lite.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::LiLo.Lite.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ScrollingViewBehavior_Layout = global::LiLo.Lite.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::LiLo.Lite.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ScrollViewRendererTheme = global::LiLo.Lite.Droid.Resource.Styleable.ScrollViewRendererTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ScrollViewRendererTheme_scrollViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.ScrollViewRendererTheme_scrollViewStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SearchView = global::LiLo.Lite.Droid.Resource.Styleable.SearchView;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SearchView_android_focusable = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SearchView_android_imeOptions = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SearchView_android_inputType = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SearchView_android_maxWidth = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SearchView_closeIcon = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SearchView_commitIcon = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SearchView_defaultQueryHint = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SearchView_goIcon = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SearchView_iconifiedByDefault = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SearchView_layout = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_layout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SearchView_queryBackground = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SearchView_queryHint = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SearchView_searchHintIcon = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SearchView_searchIcon = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SearchView_submitBackground = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SearchView_suggestionRowLayout = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SearchView_voiceIcon = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Snackbar = global::LiLo.Lite.Droid.Resource.Styleable.Snackbar;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SnackbarLayout = global::LiLo.Lite.Droid.Resource.Styleable.SnackbarLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SnackbarLayout_android_maxWidth = global::LiLo.Lite.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SnackbarLayout_elevation = global::LiLo.Lite.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::LiLo.Lite.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Snackbar_snackbarButtonStyle = global::LiLo.Lite.Droid.Resource.Styleable.Snackbar_snackbarButtonStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Snackbar_snackbarStyle = global::LiLo.Lite.Droid.Resource.Styleable.Snackbar_snackbarStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Spinner = global::LiLo.Lite.Droid.Resource.Styleable.Spinner;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Spinner_android_dropDownWidth = global::LiLo.Lite.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Spinner_android_entries = global::LiLo.Lite.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Spinner_android_popupBackground = global::LiLo.Lite.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Spinner_android_prompt = global::LiLo.Lite.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Spinner_popupTheme = global::LiLo.Lite.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.StateListDrawable = global::LiLo.Lite.Droid.Resource.Styleable.StateListDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.StateListDrawableItem = global::LiLo.Lite.Droid.Resource.Styleable.StateListDrawableItem;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.StateListDrawableItem_android_drawable = global::LiLo.Lite.Droid.Resource.Styleable.StateListDrawableItem_android_drawable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.StateListDrawable_android_constantSize = global::LiLo.Lite.Droid.Resource.Styleable.StateListDrawable_android_constantSize;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.StateListDrawable_android_dither = global::LiLo.Lite.Droid.Resource.Styleable.StateListDrawable_android_dither;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.StateListDrawable_android_enterFadeDuration = global::LiLo.Lite.Droid.Resource.Styleable.StateListDrawable_android_enterFadeDuration;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.StateListDrawable_android_exitFadeDuration = global::LiLo.Lite.Droid.Resource.Styleable.StateListDrawable_android_exitFadeDuration;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.StateListDrawable_android_variablePadding = global::LiLo.Lite.Droid.Resource.Styleable.StateListDrawable_android_variablePadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.StateListDrawable_android_visible = global::LiLo.Lite.Droid.Resource.Styleable.StateListDrawable_android_visible;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SwitchCompat = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SwitchCompat_android_textOff = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SwitchCompat_android_textOn = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SwitchCompat_android_thumb = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SwitchCompat_showText = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SwitchCompat_splitTrack = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SwitchCompat_switchMinWidth = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SwitchCompat_switchPadding = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SwitchCompat_switchTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SwitchCompat_thumbTextPadding = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SwitchCompat_thumbTint = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SwitchCompat_thumbTintMode = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SwitchCompat_track = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SwitchCompat_trackTint = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.SwitchCompat_trackTintMode = global::LiLo.Lite.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabItem = global::LiLo.Lite.Droid.Resource.Styleable.TabItem;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabItem_android_icon = global::LiLo.Lite.Droid.Resource.Styleable.TabItem_android_icon;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabItem_android_layout = global::LiLo.Lite.Droid.Resource.Styleable.TabItem_android_layout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabItem_android_text = global::LiLo.Lite.Droid.Resource.Styleable.TabItem_android_text;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabBackground = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabContentStart = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabGravity = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabIconTint = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabIconTint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabIconTintMode = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabIconTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabIndicator = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabIndicator;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabIndicatorAnimationDuration;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabIndicatorColor = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabIndicatorFullWidth = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabIndicatorFullWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabIndicatorGravity = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabIndicatorGravity;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabIndicatorHeight = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabInlineLabel = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabInlineLabel;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabMaxWidth = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabMinWidth = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabMode = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabPadding = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabPaddingBottom = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabPaddingEnd = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabPaddingStart = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabPaddingTop = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabRippleColor = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabRippleColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabSelectedTextColor = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabTextColor = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TabLayout_tabUnboundedRipple = global::LiLo.Lite.Droid.Resource.Styleable.TabLayout_tabUnboundedRipple;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextAppearance_android_fontFamily = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextAppearance_android_shadowColor = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextAppearance_android_shadowDx = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextAppearance_android_shadowDy = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextAppearance_android_shadowRadius = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextAppearance_android_textColor = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextAppearance_android_textColorHint = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextAppearance_android_textColorLink = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextAppearance_android_textFontWeight = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_textFontWeight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextAppearance_android_textSize = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextAppearance_android_textStyle = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextAppearance_android_typeface = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextAppearance_fontFamily = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextAppearance_fontVariationSettings = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_fontVariationSettings;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextAppearance_textAllCaps = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextAppearance_textLocale = global::LiLo.Lite.Droid.Resource.Styleable.TextAppearance_textLocale;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_android_hint = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_android_textColorHint = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_boxBackgroundColor = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_boxBackgroundColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_boxBackgroundMode = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_boxBackgroundMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_boxCollapsedPaddingTop;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusBottomStart;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_boxCornerRadiusTopStart;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_boxStrokeColor = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_boxStrokeColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_boxStrokeWidth = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_boxStrokeWidth;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_counterEnabled = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_counterMaxLength = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_counterTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_errorEnabled = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_errorTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_helperText = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_helperText;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_helperTextEnabled = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_helperTextEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_helperTextTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_helperTextTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_hintEnabled = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_hintTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_passwordToggleTint = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::LiLo.Lite.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ThemeEnforcement = global::LiLo.Lite.Droid.Resource.Styleable.ThemeEnforcement;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ThemeEnforcement_android_textAppearance = global::LiLo.Lite.Droid.Resource.Styleable.ThemeEnforcement_android_textAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme = global::LiLo.Lite.Droid.Resource.Styleable.ThemeEnforcement_enforceMaterialTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ThemeEnforcement_enforceTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.ThemeEnforcement_enforceTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_android_gravity = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_android_minHeight = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_buttonGravity = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_collapseContentDescription = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_collapseIcon = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_contentInsetEnd = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_contentInsetLeft = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_contentInsetRight = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_contentInsetStart = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_logo = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_logo;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_logoDescription = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_maxButtonHeight = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_menu = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_menu;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_navigationContentDescription = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_navigationIcon = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_popupTheme = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_subtitle = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_subtitleTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_subtitleTextColor = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_title = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_title;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_titleMargin = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_titleMarginBottom = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_titleMarginEnd = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_titleMargins = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_titleMarginStart = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_titleMarginTop = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_titleTextAppearance = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.Toolbar_titleTextColor = global::LiLo.Lite.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.View = global::LiLo.Lite.Droid.Resource.Styleable.View;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ViewBackgroundHelper = global::LiLo.Lite.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ViewBackgroundHelper_android_background = global::LiLo.Lite.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::LiLo.Lite.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::LiLo.Lite.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ViewStubCompat = global::LiLo.Lite.Droid.Resource.Styleable.ViewStubCompat;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ViewStubCompat_android_id = global::LiLo.Lite.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ViewStubCompat_android_inflatedId = global::LiLo.Lite.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.ViewStubCompat_android_layout = global::LiLo.Lite.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.View_android_focusable = global::LiLo.Lite.Droid.Resource.Styleable.View_android_focusable;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.View_android_theme = global::LiLo.Lite.Droid.Resource.Styleable.View_android_theme;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.View_paddingEnd = global::LiLo.Lite.Droid.Resource.Styleable.View_paddingEnd;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.View_paddingStart = global::LiLo.Lite.Droid.Resource.Styleable.View_paddingStart;
+			global::Xamarin.Forms.PancakeView.Resource.Styleable.View_theme = global::LiLo.Lite.Droid.Resource.Styleable.View_theme;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_in = global::LiLo.Lite.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_out = global::LiLo.Lite.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::LiLo.Lite.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -5935,6 +11348,7 @@ namespace LiLo.Lite.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrimAnimationDuration = global::LiLo.Lite.Droid.Resource.Attribute.scrimAnimationDuration;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrimBackground = global::LiLo.Lite.Droid.Resource.Attribute.scrimBackground;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrimVisibleHeightTrigger = global::LiLo.Lite.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrollViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.scrollViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchHintIcon = global::LiLo.Lite.Droid.Resource.Attribute.searchHintIcon;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchIcon = global::LiLo.Lite.Droid.Resource.Attribute.searchIcon;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.searchViewStyle;
@@ -6087,7 +11501,6 @@ namespace LiLo.Lite.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_color_highlight_material = global::LiLo.Lite.Droid.Resource.Color.abc_color_highlight_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_hint_foreground_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_hint_foreground_material_dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_hint_foreground_material_light = global::LiLo.Lite.Droid.Resource.Color.abc_hint_foreground_material_light;
-			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_input_method_navigation_guard = global::LiLo.Lite.Droid.Resource.Color.abc_input_method_navigation_guard;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
 			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_material_dark;
@@ -7137,7 +12550,6 @@ namespace LiLo.Lite.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView = global::LiLo.Lite.Droid.Resource.Style.CardView;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Dark = global::LiLo.Lite.Droid.Resource.Style.CardView_Dark;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Light = global::LiLo.Lite.Droid.Resource.Style.CardView_Light;
-			global::Xamarin.Forms.Platform.Android.Resource.Style.collectionViewScrollBars = global::LiLo.Lite.Droid.Resource.Style.collectionViewScrollBars;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.collectionViewTheme = global::LiLo.Lite.Droid.Resource.Style.collectionViewTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.MainTheme = global::LiLo.Lite.Droid.Resource.Style.MainTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.MainTheme_Base = global::LiLo.Lite.Droid.Resource.Style.MainTheme_Base;
@@ -7172,6 +12584,8 @@ namespace LiLo.Lite.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::LiLo.Lite.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::LiLo.Lite.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.scrollViewScrollBars = global::LiLo.Lite.Droid.Resource.Style.scrollViewScrollBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.scrollViewTheme = global::LiLo.Lite.Droid.Resource.Style.scrollViewTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
 			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
@@ -8040,6 +13454,8 @@ namespace LiLo.Lite.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::LiLo.Lite.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrollingViewBehavior_Layout = global::LiLo.Lite.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::LiLo.Lite.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrollViewRendererTheme = global::LiLo.Lite.Droid.Resource.Styleable.ScrollViewRendererTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrollViewRendererTheme_scrollViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.ScrollViewRendererTheme_scrollViewStyle;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView = global::LiLo.Lite.Droid.Resource.Styleable.SearchView;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_focusable = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_android_focusable;
 			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_imeOptions = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_android_imeOptions;
@@ -8614,6 +14030,7 @@ namespace LiLo.Lite.Droid
 			global::Xamarin.Forms.Platform.Resource.Attribute.scrimAnimationDuration = global::LiLo.Lite.Droid.Resource.Attribute.scrimAnimationDuration;
 			global::Xamarin.Forms.Platform.Resource.Attribute.scrimBackground = global::LiLo.Lite.Droid.Resource.Attribute.scrimBackground;
 			global::Xamarin.Forms.Platform.Resource.Attribute.scrimVisibleHeightTrigger = global::LiLo.Lite.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Xamarin.Forms.Platform.Resource.Attribute.scrollViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.scrollViewStyle;
 			global::Xamarin.Forms.Platform.Resource.Attribute.searchHintIcon = global::LiLo.Lite.Droid.Resource.Attribute.searchHintIcon;
 			global::Xamarin.Forms.Platform.Resource.Attribute.searchIcon = global::LiLo.Lite.Droid.Resource.Attribute.searchIcon;
 			global::Xamarin.Forms.Platform.Resource.Attribute.searchViewStyle = global::LiLo.Lite.Droid.Resource.Attribute.searchViewStyle;
@@ -8766,7 +14183,6 @@ namespace LiLo.Lite.Droid
 			global::Xamarin.Forms.Platform.Resource.Color.abc_color_highlight_material = global::LiLo.Lite.Droid.Resource.Color.abc_color_highlight_material;
 			global::Xamarin.Forms.Platform.Resource.Color.abc_hint_foreground_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_hint_foreground_material_dark;
 			global::Xamarin.Forms.Platform.Resource.Color.abc_hint_foreground_material_light = global::LiLo.Lite.Droid.Resource.Color.abc_hint_foreground_material_light;
-			global::Xamarin.Forms.Platform.Resource.Color.abc_input_method_navigation_guard = global::LiLo.Lite.Droid.Resource.Color.abc_input_method_navigation_guard;
 			global::Xamarin.Forms.Platform.Resource.Color.abc_primary_text_disable_only_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
 			global::Xamarin.Forms.Platform.Resource.Color.abc_primary_text_disable_only_material_light = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
 			global::Xamarin.Forms.Platform.Resource.Color.abc_primary_text_material_dark = global::LiLo.Lite.Droid.Resource.Color.abc_primary_text_material_dark;
@@ -9816,7 +15232,6 @@ namespace LiLo.Lite.Droid
 			global::Xamarin.Forms.Platform.Resource.Style.CardView = global::LiLo.Lite.Droid.Resource.Style.CardView;
 			global::Xamarin.Forms.Platform.Resource.Style.CardView_Dark = global::LiLo.Lite.Droid.Resource.Style.CardView_Dark;
 			global::Xamarin.Forms.Platform.Resource.Style.CardView_Light = global::LiLo.Lite.Droid.Resource.Style.CardView_Light;
-			global::Xamarin.Forms.Platform.Resource.Style.collectionViewScrollBars = global::LiLo.Lite.Droid.Resource.Style.collectionViewScrollBars;
 			global::Xamarin.Forms.Platform.Resource.Style.collectionViewTheme = global::LiLo.Lite.Droid.Resource.Style.collectionViewTheme;
 			global::Xamarin.Forms.Platform.Resource.Style.MainTheme = global::LiLo.Lite.Droid.Resource.Style.MainTheme;
 			global::Xamarin.Forms.Platform.Resource.Style.MainTheme_Base = global::LiLo.Lite.Droid.Resource.Style.MainTheme_Base;
@@ -9851,6 +15266,8 @@ namespace LiLo.Lite.Droid
 			global::Xamarin.Forms.Platform.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::LiLo.Lite.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
 			global::Xamarin.Forms.Platform.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::LiLo.Lite.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
 			global::Xamarin.Forms.Platform.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::LiLo.Lite.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Resource.Style.scrollViewScrollBars = global::LiLo.Lite.Droid.Resource.Style.scrollViewScrollBars;
+			global::Xamarin.Forms.Platform.Resource.Style.scrollViewTheme = global::LiLo.Lite.Droid.Resource.Style.scrollViewTheme;
 			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat;
 			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Body1 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
 			global::Xamarin.Forms.Platform.Resource.Style.TextAppearance_AppCompat_Body2 = global::LiLo.Lite.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
@@ -10719,6 +16136,8 @@ namespace LiLo.Lite.Droid
 			global::Xamarin.Forms.Platform.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::LiLo.Lite.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
 			global::Xamarin.Forms.Platform.Resource.Styleable.ScrollingViewBehavior_Layout = global::LiLo.Lite.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
 			global::Xamarin.Forms.Platform.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::LiLo.Lite.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Xamarin.Forms.Platform.Resource.Styleable.ScrollViewRendererTheme = global::LiLo.Lite.Droid.Resource.Styleable.ScrollViewRendererTheme;
+			global::Xamarin.Forms.Platform.Resource.Styleable.ScrollViewRendererTheme_scrollViewStyle = global::LiLo.Lite.Droid.Resource.Styleable.ScrollViewRendererTheme_scrollViewStyle;
 			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView = global::LiLo.Lite.Droid.Resource.Styleable.SearchView;
 			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_android_focusable = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_android_focusable;
 			global::Xamarin.Forms.Platform.Resource.Styleable.SearchView_android_imeOptions = global::LiLo.Lite.Droid.Resource.Styleable.SearchView_android_imeOptions;
@@ -12206,427 +17625,430 @@ namespace LiLo.Lite.Droid
 			public const int scrimVisibleHeightTrigger = 2130903403;
 			
 			// aapt resource value: 0x7F03016C
-			public const int searchHintIcon = 2130903404;
+			public const int scrollViewStyle = 2130903404;
 			
 			// aapt resource value: 0x7F03016D
-			public const int searchIcon = 2130903405;
+			public const int searchHintIcon = 2130903405;
 			
 			// aapt resource value: 0x7F03016E
-			public const int searchViewStyle = 2130903406;
+			public const int searchIcon = 2130903406;
 			
 			// aapt resource value: 0x7F03016F
-			public const int seekBarStyle = 2130903407;
+			public const int searchViewStyle = 2130903407;
 			
 			// aapt resource value: 0x7F030170
-			public const int selectableItemBackground = 2130903408;
+			public const int seekBarStyle = 2130903408;
 			
 			// aapt resource value: 0x7F030171
-			public const int selectableItemBackgroundBorderless = 2130903409;
+			public const int selectableItemBackground = 2130903409;
 			
 			// aapt resource value: 0x7F030172
-			public const int showAsAction = 2130903410;
+			public const int selectableItemBackgroundBorderless = 2130903410;
 			
 			// aapt resource value: 0x7F030173
-			public const int showDividers = 2130903411;
+			public const int showAsAction = 2130903411;
 			
 			// aapt resource value: 0x7F030174
-			public const int showMotionSpec = 2130903412;
+			public const int showDividers = 2130903412;
 			
 			// aapt resource value: 0x7F030175
-			public const int showText = 2130903413;
+			public const int showMotionSpec = 2130903413;
 			
 			// aapt resource value: 0x7F030176
-			public const int showTitle = 2130903414;
+			public const int showText = 2130903414;
 			
 			// aapt resource value: 0x7F030177
-			public const int singleChoiceItemLayout = 2130903415;
+			public const int showTitle = 2130903415;
 			
 			// aapt resource value: 0x7F030178
-			public const int singleLine = 2130903416;
+			public const int singleChoiceItemLayout = 2130903416;
 			
 			// aapt resource value: 0x7F030179
-			public const int singleSelection = 2130903417;
+			public const int singleLine = 2130903417;
 			
 			// aapt resource value: 0x7F03017A
-			public const int snackbarButtonStyle = 2130903418;
+			public const int singleSelection = 2130903418;
 			
 			// aapt resource value: 0x7F03017B
-			public const int snackbarStyle = 2130903419;
+			public const int snackbarButtonStyle = 2130903419;
 			
 			// aapt resource value: 0x7F03017C
-			public const int spanCount = 2130903420;
+			public const int snackbarStyle = 2130903420;
 			
 			// aapt resource value: 0x7F03017D
-			public const int spinBars = 2130903421;
+			public const int spanCount = 2130903421;
 			
 			// aapt resource value: 0x7F03017E
-			public const int spinnerDropDownItemStyle = 2130903422;
+			public const int spinBars = 2130903422;
 			
 			// aapt resource value: 0x7F03017F
-			public const int spinnerStyle = 2130903423;
+			public const int spinnerDropDownItemStyle = 2130903423;
 			
 			// aapt resource value: 0x7F030180
-			public const int splitTrack = 2130903424;
+			public const int spinnerStyle = 2130903424;
 			
 			// aapt resource value: 0x7F030181
-			public const int srcCompat = 2130903425;
+			public const int splitTrack = 2130903425;
 			
 			// aapt resource value: 0x7F030182
-			public const int stackFromEnd = 2130903426;
+			public const int srcCompat = 2130903426;
 			
 			// aapt resource value: 0x7F030183
-			public const int state_above_anchor = 2130903427;
+			public const int stackFromEnd = 2130903427;
 			
 			// aapt resource value: 0x7F030184
-			public const int state_collapsed = 2130903428;
+			public const int state_above_anchor = 2130903428;
 			
 			// aapt resource value: 0x7F030185
-			public const int state_collapsible = 2130903429;
+			public const int state_collapsed = 2130903429;
 			
 			// aapt resource value: 0x7F030186
-			public const int state_liftable = 2130903430;
+			public const int state_collapsible = 2130903430;
 			
 			// aapt resource value: 0x7F030187
-			public const int state_lifted = 2130903431;
+			public const int state_liftable = 2130903431;
 			
 			// aapt resource value: 0x7F030188
-			public const int statusBarBackground = 2130903432;
+			public const int state_lifted = 2130903432;
 			
 			// aapt resource value: 0x7F030189
-			public const int statusBarScrim = 2130903433;
+			public const int statusBarBackground = 2130903433;
 			
 			// aapt resource value: 0x7F03018A
-			public const int strokeColor = 2130903434;
+			public const int statusBarScrim = 2130903434;
 			
 			// aapt resource value: 0x7F03018B
-			public const int strokeWidth = 2130903435;
+			public const int strokeColor = 2130903435;
 			
 			// aapt resource value: 0x7F03018C
-			public const int subMenuArrow = 2130903436;
+			public const int strokeWidth = 2130903436;
 			
 			// aapt resource value: 0x7F03018D
-			public const int submitBackground = 2130903437;
+			public const int subMenuArrow = 2130903437;
 			
 			// aapt resource value: 0x7F03018E
-			public const int subtitle = 2130903438;
+			public const int submitBackground = 2130903438;
 			
 			// aapt resource value: 0x7F03018F
-			public const int subtitleTextAppearance = 2130903439;
+			public const int subtitle = 2130903439;
 			
 			// aapt resource value: 0x7F030190
-			public const int subtitleTextColor = 2130903440;
+			public const int subtitleTextAppearance = 2130903440;
 			
 			// aapt resource value: 0x7F030191
-			public const int subtitleTextStyle = 2130903441;
+			public const int subtitleTextColor = 2130903441;
 			
 			// aapt resource value: 0x7F030192
-			public const int suggestionRowLayout = 2130903442;
+			public const int subtitleTextStyle = 2130903442;
 			
 			// aapt resource value: 0x7F030193
-			public const int switchMinWidth = 2130903443;
+			public const int suggestionRowLayout = 2130903443;
 			
 			// aapt resource value: 0x7F030194
-			public const int switchPadding = 2130903444;
+			public const int switchMinWidth = 2130903444;
 			
 			// aapt resource value: 0x7F030195
-			public const int switchStyle = 2130903445;
+			public const int switchPadding = 2130903445;
 			
 			// aapt resource value: 0x7F030196
-			public const int switchTextAppearance = 2130903446;
+			public const int switchStyle = 2130903446;
 			
 			// aapt resource value: 0x7F030197
-			public const int tabBackground = 2130903447;
+			public const int switchTextAppearance = 2130903447;
 			
 			// aapt resource value: 0x7F030198
-			public const int tabContentStart = 2130903448;
+			public const int tabBackground = 2130903448;
 			
 			// aapt resource value: 0x7F030199
-			public const int tabGravity = 2130903449;
+			public const int tabContentStart = 2130903449;
 			
 			// aapt resource value: 0x7F03019A
-			public const int tabIconTint = 2130903450;
+			public const int tabGravity = 2130903450;
 			
 			// aapt resource value: 0x7F03019B
-			public const int tabIconTintMode = 2130903451;
+			public const int tabIconTint = 2130903451;
 			
 			// aapt resource value: 0x7F03019C
-			public const int tabIndicator = 2130903452;
+			public const int tabIconTintMode = 2130903452;
 			
 			// aapt resource value: 0x7F03019D
-			public const int tabIndicatorAnimationDuration = 2130903453;
+			public const int tabIndicator = 2130903453;
 			
 			// aapt resource value: 0x7F03019E
-			public const int tabIndicatorColor = 2130903454;
+			public const int tabIndicatorAnimationDuration = 2130903454;
 			
 			// aapt resource value: 0x7F03019F
-			public const int tabIndicatorFullWidth = 2130903455;
+			public const int tabIndicatorColor = 2130903455;
 			
 			// aapt resource value: 0x7F0301A0
-			public const int tabIndicatorGravity = 2130903456;
+			public const int tabIndicatorFullWidth = 2130903456;
 			
 			// aapt resource value: 0x7F0301A1
-			public const int tabIndicatorHeight = 2130903457;
+			public const int tabIndicatorGravity = 2130903457;
 			
 			// aapt resource value: 0x7F0301A2
-			public const int tabInlineLabel = 2130903458;
+			public const int tabIndicatorHeight = 2130903458;
 			
 			// aapt resource value: 0x7F0301A3
-			public const int tabMaxWidth = 2130903459;
+			public const int tabInlineLabel = 2130903459;
 			
 			// aapt resource value: 0x7F0301A4
-			public const int tabMinWidth = 2130903460;
+			public const int tabMaxWidth = 2130903460;
 			
 			// aapt resource value: 0x7F0301A5
-			public const int tabMode = 2130903461;
+			public const int tabMinWidth = 2130903461;
 			
 			// aapt resource value: 0x7F0301A6
-			public const int tabPadding = 2130903462;
+			public const int tabMode = 2130903462;
 			
 			// aapt resource value: 0x7F0301A7
-			public const int tabPaddingBottom = 2130903463;
+			public const int tabPadding = 2130903463;
 			
 			// aapt resource value: 0x7F0301A8
-			public const int tabPaddingEnd = 2130903464;
+			public const int tabPaddingBottom = 2130903464;
 			
 			// aapt resource value: 0x7F0301A9
-			public const int tabPaddingStart = 2130903465;
+			public const int tabPaddingEnd = 2130903465;
 			
 			// aapt resource value: 0x7F0301AA
-			public const int tabPaddingTop = 2130903466;
+			public const int tabPaddingStart = 2130903466;
 			
 			// aapt resource value: 0x7F0301AB
-			public const int tabRippleColor = 2130903467;
+			public const int tabPaddingTop = 2130903467;
 			
 			// aapt resource value: 0x7F0301AC
-			public const int tabSelectedTextColor = 2130903468;
+			public const int tabRippleColor = 2130903468;
 			
 			// aapt resource value: 0x7F0301AD
-			public const int tabStyle = 2130903469;
+			public const int tabSelectedTextColor = 2130903469;
 			
 			// aapt resource value: 0x7F0301AE
-			public const int tabTextAppearance = 2130903470;
+			public const int tabStyle = 2130903470;
 			
 			// aapt resource value: 0x7F0301AF
-			public const int tabTextColor = 2130903471;
+			public const int tabTextAppearance = 2130903471;
 			
 			// aapt resource value: 0x7F0301B0
-			public const int tabUnboundedRipple = 2130903472;
+			public const int tabTextColor = 2130903472;
 			
 			// aapt resource value: 0x7F0301B1
-			public const int textAllCaps = 2130903473;
+			public const int tabUnboundedRipple = 2130903473;
 			
 			// aapt resource value: 0x7F0301B2
-			public const int textAppearanceBody1 = 2130903474;
+			public const int textAllCaps = 2130903474;
 			
 			// aapt resource value: 0x7F0301B3
-			public const int textAppearanceBody2 = 2130903475;
+			public const int textAppearanceBody1 = 2130903475;
 			
 			// aapt resource value: 0x7F0301B4
-			public const int textAppearanceButton = 2130903476;
+			public const int textAppearanceBody2 = 2130903476;
 			
 			// aapt resource value: 0x7F0301B5
-			public const int textAppearanceCaption = 2130903477;
+			public const int textAppearanceButton = 2130903477;
 			
 			// aapt resource value: 0x7F0301B6
-			public const int textAppearanceHeadline1 = 2130903478;
+			public const int textAppearanceCaption = 2130903478;
 			
 			// aapt resource value: 0x7F0301B7
-			public const int textAppearanceHeadline2 = 2130903479;
+			public const int textAppearanceHeadline1 = 2130903479;
 			
 			// aapt resource value: 0x7F0301B8
-			public const int textAppearanceHeadline3 = 2130903480;
+			public const int textAppearanceHeadline2 = 2130903480;
 			
 			// aapt resource value: 0x7F0301B9
-			public const int textAppearanceHeadline4 = 2130903481;
+			public const int textAppearanceHeadline3 = 2130903481;
 			
 			// aapt resource value: 0x7F0301BA
-			public const int textAppearanceHeadline5 = 2130903482;
+			public const int textAppearanceHeadline4 = 2130903482;
 			
 			// aapt resource value: 0x7F0301BB
-			public const int textAppearanceHeadline6 = 2130903483;
+			public const int textAppearanceHeadline5 = 2130903483;
 			
 			// aapt resource value: 0x7F0301BC
-			public const int textAppearanceLargePopupMenu = 2130903484;
+			public const int textAppearanceHeadline6 = 2130903484;
 			
 			// aapt resource value: 0x7F0301BD
-			public const int textAppearanceListItem = 2130903485;
+			public const int textAppearanceLargePopupMenu = 2130903485;
 			
 			// aapt resource value: 0x7F0301BE
-			public const int textAppearanceListItemSecondary = 2130903486;
+			public const int textAppearanceListItem = 2130903486;
 			
 			// aapt resource value: 0x7F0301BF
-			public const int textAppearanceListItemSmall = 2130903487;
+			public const int textAppearanceListItemSecondary = 2130903487;
 			
 			// aapt resource value: 0x7F0301C0
-			public const int textAppearanceOverline = 2130903488;
+			public const int textAppearanceListItemSmall = 2130903488;
 			
 			// aapt resource value: 0x7F0301C1
-			public const int textAppearancePopupMenuHeader = 2130903489;
+			public const int textAppearanceOverline = 2130903489;
 			
 			// aapt resource value: 0x7F0301C2
-			public const int textAppearanceSearchResultSubtitle = 2130903490;
+			public const int textAppearancePopupMenuHeader = 2130903490;
 			
 			// aapt resource value: 0x7F0301C3
-			public const int textAppearanceSearchResultTitle = 2130903491;
+			public const int textAppearanceSearchResultSubtitle = 2130903491;
 			
 			// aapt resource value: 0x7F0301C4
-			public const int textAppearanceSmallPopupMenu = 2130903492;
+			public const int textAppearanceSearchResultTitle = 2130903492;
 			
 			// aapt resource value: 0x7F0301C5
-			public const int textAppearanceSubtitle1 = 2130903493;
+			public const int textAppearanceSmallPopupMenu = 2130903493;
 			
 			// aapt resource value: 0x7F0301C6
-			public const int textAppearanceSubtitle2 = 2130903494;
+			public const int textAppearanceSubtitle1 = 2130903494;
 			
 			// aapt resource value: 0x7F0301C7
-			public const int textColorAlertDialogListItem = 2130903495;
+			public const int textAppearanceSubtitle2 = 2130903495;
 			
 			// aapt resource value: 0x7F0301C8
-			public const int textColorSearchUrl = 2130903496;
+			public const int textColorAlertDialogListItem = 2130903496;
 			
 			// aapt resource value: 0x7F0301C9
-			public const int textEndPadding = 2130903497;
+			public const int textColorSearchUrl = 2130903497;
 			
 			// aapt resource value: 0x7F0301CA
-			public const int textInputStyle = 2130903498;
+			public const int textEndPadding = 2130903498;
 			
 			// aapt resource value: 0x7F0301CB
-			public const int textLocale = 2130903499;
+			public const int textInputStyle = 2130903499;
 			
 			// aapt resource value: 0x7F0301CC
-			public const int textStartPadding = 2130903500;
+			public const int textLocale = 2130903500;
 			
 			// aapt resource value: 0x7F0301CD
-			public const int theme = 2130903501;
+			public const int textStartPadding = 2130903501;
 			
 			// aapt resource value: 0x7F0301CE
-			public const int thickness = 2130903502;
+			public const int theme = 2130903502;
 			
 			// aapt resource value: 0x7F0301CF
-			public const int thumbTextPadding = 2130903503;
+			public const int thickness = 2130903503;
 			
 			// aapt resource value: 0x7F0301D0
-			public const int thumbTint = 2130903504;
+			public const int thumbTextPadding = 2130903504;
 			
 			// aapt resource value: 0x7F0301D1
-			public const int thumbTintMode = 2130903505;
+			public const int thumbTint = 2130903505;
 			
 			// aapt resource value: 0x7F0301D2
-			public const int tickMark = 2130903506;
+			public const int thumbTintMode = 2130903506;
 			
 			// aapt resource value: 0x7F0301D3
-			public const int tickMarkTint = 2130903507;
+			public const int tickMark = 2130903507;
 			
 			// aapt resource value: 0x7F0301D4
-			public const int tickMarkTintMode = 2130903508;
+			public const int tickMarkTint = 2130903508;
 			
 			// aapt resource value: 0x7F0301D5
-			public const int tint = 2130903509;
+			public const int tickMarkTintMode = 2130903509;
 			
 			// aapt resource value: 0x7F0301D6
-			public const int tintMode = 2130903510;
+			public const int tint = 2130903510;
 			
 			// aapt resource value: 0x7F0301D7
-			public const int title = 2130903511;
+			public const int tintMode = 2130903511;
 			
 			// aapt resource value: 0x7F0301D8
-			public const int titleEnabled = 2130903512;
+			public const int title = 2130903512;
 			
 			// aapt resource value: 0x7F0301D9
-			public const int titleMargin = 2130903513;
+			public const int titleEnabled = 2130903513;
 			
 			// aapt resource value: 0x7F0301DA
-			public const int titleMarginBottom = 2130903514;
+			public const int titleMargin = 2130903514;
 			
 			// aapt resource value: 0x7F0301DB
-			public const int titleMarginEnd = 2130903515;
-			
-			// aapt resource value: 0x7F0301DE
-			public const int titleMargins = 2130903518;
+			public const int titleMarginBottom = 2130903515;
 			
 			// aapt resource value: 0x7F0301DC
-			public const int titleMarginStart = 2130903516;
-			
-			// aapt resource value: 0x7F0301DD
-			public const int titleMarginTop = 2130903517;
+			public const int titleMarginEnd = 2130903516;
 			
 			// aapt resource value: 0x7F0301DF
-			public const int titleTextAppearance = 2130903519;
+			public const int titleMargins = 2130903519;
+			
+			// aapt resource value: 0x7F0301DD
+			public const int titleMarginStart = 2130903517;
+			
+			// aapt resource value: 0x7F0301DE
+			public const int titleMarginTop = 2130903518;
 			
 			// aapt resource value: 0x7F0301E0
-			public const int titleTextColor = 2130903520;
+			public const int titleTextAppearance = 2130903520;
 			
 			// aapt resource value: 0x7F0301E1
-			public const int titleTextStyle = 2130903521;
+			public const int titleTextColor = 2130903521;
 			
 			// aapt resource value: 0x7F0301E2
-			public const int toolbarId = 2130903522;
+			public const int titleTextStyle = 2130903522;
 			
 			// aapt resource value: 0x7F0301E3
-			public const int toolbarNavigationButtonStyle = 2130903523;
+			public const int toolbarId = 2130903523;
 			
 			// aapt resource value: 0x7F0301E4
-			public const int toolbarStyle = 2130903524;
+			public const int toolbarNavigationButtonStyle = 2130903524;
 			
 			// aapt resource value: 0x7F0301E5
-			public const int tooltipForegroundColor = 2130903525;
+			public const int toolbarStyle = 2130903525;
 			
 			// aapt resource value: 0x7F0301E6
-			public const int tooltipFrameBackground = 2130903526;
+			public const int tooltipForegroundColor = 2130903526;
 			
 			// aapt resource value: 0x7F0301E7
-			public const int tooltipText = 2130903527;
+			public const int tooltipFrameBackground = 2130903527;
 			
 			// aapt resource value: 0x7F0301E8
-			public const int track = 2130903528;
+			public const int tooltipText = 2130903528;
 			
 			// aapt resource value: 0x7F0301E9
-			public const int trackTint = 2130903529;
+			public const int track = 2130903529;
 			
 			// aapt resource value: 0x7F0301EA
-			public const int trackTintMode = 2130903530;
+			public const int trackTint = 2130903530;
 			
 			// aapt resource value: 0x7F0301EB
-			public const int ttcIndex = 2130903531;
+			public const int trackTintMode = 2130903531;
 			
 			// aapt resource value: 0x7F0301EC
-			public const int useCompatPadding = 2130903532;
+			public const int ttcIndex = 2130903532;
 			
 			// aapt resource value: 0x7F0301ED
-			public const int viewInflaterClass = 2130903533;
+			public const int useCompatPadding = 2130903533;
 			
 			// aapt resource value: 0x7F0301EE
-			public const int voiceIcon = 2130903534;
+			public const int viewInflaterClass = 2130903534;
 			
 			// aapt resource value: 0x7F0301EF
-			public const int windowActionBar = 2130903535;
+			public const int voiceIcon = 2130903535;
 			
 			// aapt resource value: 0x7F0301F0
-			public const int windowActionBarOverlay = 2130903536;
+			public const int windowActionBar = 2130903536;
 			
 			// aapt resource value: 0x7F0301F1
-			public const int windowActionModeOverlay = 2130903537;
+			public const int windowActionBarOverlay = 2130903537;
 			
 			// aapt resource value: 0x7F0301F2
-			public const int windowFixedHeightMajor = 2130903538;
+			public const int windowActionModeOverlay = 2130903538;
 			
 			// aapt resource value: 0x7F0301F3
-			public const int windowFixedHeightMinor = 2130903539;
+			public const int windowFixedHeightMajor = 2130903539;
 			
 			// aapt resource value: 0x7F0301F4
-			public const int windowFixedWidthMajor = 2130903540;
+			public const int windowFixedHeightMinor = 2130903540;
 			
 			// aapt resource value: 0x7F0301F5
-			public const int windowFixedWidthMinor = 2130903541;
+			public const int windowFixedWidthMajor = 2130903541;
 			
 			// aapt resource value: 0x7F0301F6
-			public const int windowMinWidthMajor = 2130903542;
+			public const int windowFixedWidthMinor = 2130903542;
 			
 			// aapt resource value: 0x7F0301F7
-			public const int windowMinWidthMinor = 2130903543;
+			public const int windowMinWidthMajor = 2130903543;
 			
 			// aapt resource value: 0x7F0301F8
-			public const int windowNoTitle = 2130903544;
+			public const int windowMinWidthMinor = 2130903544;
+			
+			// aapt resource value: 0x7F0301F9
+			public const int windowNoTitle = 2130903545;
 			
 			static Attribute()
 			{
@@ -12682,397 +18104,406 @@ namespace LiLo.Lite.Droid
 			public const int abc_color_highlight_material = 2131034116;
 			
 			// aapt resource value: 0x7F050005
-			public const int abc_hint_foreground_material_dark = 2131034117;
+			public const int abc_decor_view_status_guard = 2131034117;
 			
 			// aapt resource value: 0x7F050006
-			public const int abc_hint_foreground_material_light = 2131034118;
+			public const int abc_decor_view_status_guard_light = 2131034118;
 			
 			// aapt resource value: 0x7F050007
-			public const int abc_input_method_navigation_guard = 2131034119;
+			public const int abc_hint_foreground_material_dark = 2131034119;
 			
 			// aapt resource value: 0x7F050008
-			public const int abc_primary_text_disable_only_material_dark = 2131034120;
+			public const int abc_hint_foreground_material_light = 2131034120;
 			
 			// aapt resource value: 0x7F050009
-			public const int abc_primary_text_disable_only_material_light = 2131034121;
+			public const int abc_primary_text_disable_only_material_dark = 2131034121;
 			
 			// aapt resource value: 0x7F05000A
-			public const int abc_primary_text_material_dark = 2131034122;
+			public const int abc_primary_text_disable_only_material_light = 2131034122;
 			
 			// aapt resource value: 0x7F05000B
-			public const int abc_primary_text_material_light = 2131034123;
+			public const int abc_primary_text_material_dark = 2131034123;
 			
 			// aapt resource value: 0x7F05000C
-			public const int abc_search_url_text = 2131034124;
+			public const int abc_primary_text_material_light = 2131034124;
 			
 			// aapt resource value: 0x7F05000D
-			public const int abc_search_url_text_normal = 2131034125;
+			public const int abc_search_url_text = 2131034125;
 			
 			// aapt resource value: 0x7F05000E
-			public const int abc_search_url_text_pressed = 2131034126;
+			public const int abc_search_url_text_normal = 2131034126;
 			
 			// aapt resource value: 0x7F05000F
-			public const int abc_search_url_text_selected = 2131034127;
+			public const int abc_search_url_text_pressed = 2131034127;
 			
 			// aapt resource value: 0x7F050010
-			public const int abc_secondary_text_material_dark = 2131034128;
+			public const int abc_search_url_text_selected = 2131034128;
 			
 			// aapt resource value: 0x7F050011
-			public const int abc_secondary_text_material_light = 2131034129;
+			public const int abc_secondary_text_material_dark = 2131034129;
 			
 			// aapt resource value: 0x7F050012
-			public const int abc_tint_btn_checkable = 2131034130;
+			public const int abc_secondary_text_material_light = 2131034130;
 			
 			// aapt resource value: 0x7F050013
-			public const int abc_tint_default = 2131034131;
+			public const int abc_tint_btn_checkable = 2131034131;
 			
 			// aapt resource value: 0x7F050014
-			public const int abc_tint_edittext = 2131034132;
+			public const int abc_tint_default = 2131034132;
 			
 			// aapt resource value: 0x7F050015
-			public const int abc_tint_seek_thumb = 2131034133;
+			public const int abc_tint_edittext = 2131034133;
 			
 			// aapt resource value: 0x7F050016
-			public const int abc_tint_spinner = 2131034134;
+			public const int abc_tint_seek_thumb = 2131034134;
 			
 			// aapt resource value: 0x7F050017
-			public const int abc_tint_switch_track = 2131034135;
+			public const int abc_tint_spinner = 2131034135;
 			
 			// aapt resource value: 0x7F050018
-			public const int accent_material_dark = 2131034136;
+			public const int abc_tint_switch_track = 2131034136;
 			
 			// aapt resource value: 0x7F050019
-			public const int accent_material_light = 2131034137;
+			public const int accent_material_dark = 2131034137;
 			
 			// aapt resource value: 0x7F05001A
-			public const int background_floating_material_dark = 2131034138;
+			public const int accent_material_light = 2131034138;
 			
 			// aapt resource value: 0x7F05001B
-			public const int background_floating_material_light = 2131034139;
+			public const int androidx_core_ripple_material_light = 2131034139;
 			
 			// aapt resource value: 0x7F05001C
-			public const int background_material_dark = 2131034140;
+			public const int androidx_core_secondary_text_default_material_light = 2131034140;
 			
 			// aapt resource value: 0x7F05001D
-			public const int background_material_light = 2131034141;
+			public const int background_floating_material_dark = 2131034141;
 			
 			// aapt resource value: 0x7F05001E
-			public const int bright_foreground_disabled_material_dark = 2131034142;
+			public const int background_floating_material_light = 2131034142;
 			
 			// aapt resource value: 0x7F05001F
-			public const int bright_foreground_disabled_material_light = 2131034143;
+			public const int background_material_dark = 2131034143;
 			
 			// aapt resource value: 0x7F050020
-			public const int bright_foreground_inverse_material_dark = 2131034144;
+			public const int background_material_light = 2131034144;
 			
 			// aapt resource value: 0x7F050021
-			public const int bright_foreground_inverse_material_light = 2131034145;
+			public const int bright_foreground_disabled_material_dark = 2131034145;
 			
 			// aapt resource value: 0x7F050022
-			public const int bright_foreground_material_dark = 2131034146;
+			public const int bright_foreground_disabled_material_light = 2131034146;
 			
 			// aapt resource value: 0x7F050023
-			public const int bright_foreground_material_light = 2131034147;
+			public const int bright_foreground_inverse_material_dark = 2131034147;
 			
 			// aapt resource value: 0x7F050024
-			public const int browser_actions_bg_grey = 2131034148;
+			public const int bright_foreground_inverse_material_light = 2131034148;
 			
 			// aapt resource value: 0x7F050025
-			public const int browser_actions_divider_color = 2131034149;
+			public const int bright_foreground_material_dark = 2131034149;
 			
 			// aapt resource value: 0x7F050026
-			public const int browser_actions_text_color = 2131034150;
+			public const int bright_foreground_material_light = 2131034150;
 			
 			// aapt resource value: 0x7F050027
-			public const int browser_actions_title_color = 2131034151;
+			public const int browser_actions_bg_grey = 2131034151;
 			
 			// aapt resource value: 0x7F050028
-			public const int button_material_dark = 2131034152;
+			public const int browser_actions_divider_color = 2131034152;
 			
 			// aapt resource value: 0x7F050029
-			public const int button_material_light = 2131034153;
+			public const int browser_actions_text_color = 2131034153;
 			
 			// aapt resource value: 0x7F05002A
-			public const int cardview_dark_background = 2131034154;
+			public const int browser_actions_title_color = 2131034154;
 			
 			// aapt resource value: 0x7F05002B
-			public const int cardview_light_background = 2131034155;
+			public const int button_material_dark = 2131034155;
 			
 			// aapt resource value: 0x7F05002C
-			public const int cardview_shadow_end_color = 2131034156;
+			public const int button_material_light = 2131034156;
 			
 			// aapt resource value: 0x7F05002D
-			public const int cardview_shadow_start_color = 2131034157;
+			public const int cardview_dark_background = 2131034157;
 			
 			// aapt resource value: 0x7F05002E
-			public const int colorAccent = 2131034158;
+			public const int cardview_light_background = 2131034158;
 			
 			// aapt resource value: 0x7F05002F
-			public const int colorPrimary = 2131034159;
+			public const int cardview_shadow_end_color = 2131034159;
 			
 			// aapt resource value: 0x7F050030
-			public const int colorPrimaryDark = 2131034160;
+			public const int cardview_shadow_start_color = 2131034160;
 			
 			// aapt resource value: 0x7F050031
-			public const int design_bottom_navigation_shadow_color = 2131034161;
+			public const int colorAccent = 2131034161;
 			
 			// aapt resource value: 0x7F050032
-			public const int design_default_color_primary = 2131034162;
+			public const int colorPrimary = 2131034162;
 			
 			// aapt resource value: 0x7F050033
-			public const int design_default_color_primary_dark = 2131034163;
+			public const int colorPrimaryDark = 2131034163;
 			
 			// aapt resource value: 0x7F050034
-			public const int design_error = 2131034164;
+			public const int design_bottom_navigation_shadow_color = 2131034164;
 			
 			// aapt resource value: 0x7F050035
-			public const int design_fab_shadow_end_color = 2131034165;
+			public const int design_default_color_primary = 2131034165;
 			
 			// aapt resource value: 0x7F050036
-			public const int design_fab_shadow_mid_color = 2131034166;
+			public const int design_default_color_primary_dark = 2131034166;
 			
 			// aapt resource value: 0x7F050037
-			public const int design_fab_shadow_start_color = 2131034167;
+			public const int design_error = 2131034167;
 			
 			// aapt resource value: 0x7F050038
-			public const int design_fab_stroke_end_inner_color = 2131034168;
+			public const int design_fab_shadow_end_color = 2131034168;
 			
 			// aapt resource value: 0x7F050039
-			public const int design_fab_stroke_end_outer_color = 2131034169;
+			public const int design_fab_shadow_mid_color = 2131034169;
 			
 			// aapt resource value: 0x7F05003A
-			public const int design_fab_stroke_top_inner_color = 2131034170;
+			public const int design_fab_shadow_start_color = 2131034170;
 			
 			// aapt resource value: 0x7F05003B
-			public const int design_fab_stroke_top_outer_color = 2131034171;
+			public const int design_fab_stroke_end_inner_color = 2131034171;
 			
 			// aapt resource value: 0x7F05003C
-			public const int design_snackbar_background_color = 2131034172;
+			public const int design_fab_stroke_end_outer_color = 2131034172;
 			
 			// aapt resource value: 0x7F05003D
-			public const int design_tint_password_toggle = 2131034173;
+			public const int design_fab_stroke_top_inner_color = 2131034173;
 			
 			// aapt resource value: 0x7F05003E
-			public const int dim_foreground_disabled_material_dark = 2131034174;
+			public const int design_fab_stroke_top_outer_color = 2131034174;
 			
 			// aapt resource value: 0x7F05003F
-			public const int dim_foreground_disabled_material_light = 2131034175;
+			public const int design_snackbar_background_color = 2131034175;
 			
 			// aapt resource value: 0x7F050040
-			public const int dim_foreground_material_dark = 2131034176;
+			public const int design_tint_password_toggle = 2131034176;
 			
 			// aapt resource value: 0x7F050041
-			public const int dim_foreground_material_light = 2131034177;
+			public const int dim_foreground_disabled_material_dark = 2131034177;
 			
 			// aapt resource value: 0x7F050042
-			public const int error_color_material_dark = 2131034178;
+			public const int dim_foreground_disabled_material_light = 2131034178;
 			
 			// aapt resource value: 0x7F050043
-			public const int error_color_material_light = 2131034179;
+			public const int dim_foreground_material_dark = 2131034179;
 			
 			// aapt resource value: 0x7F050044
-			public const int foreground_material_dark = 2131034180;
+			public const int dim_foreground_material_light = 2131034180;
 			
 			// aapt resource value: 0x7F050045
-			public const int foreground_material_light = 2131034181;
+			public const int error_color_material_dark = 2131034181;
 			
 			// aapt resource value: 0x7F050046
-			public const int highlighted_text_material_dark = 2131034182;
+			public const int error_color_material_light = 2131034182;
 			
 			// aapt resource value: 0x7F050047
-			public const int highlighted_text_material_light = 2131034183;
+			public const int foreground_material_dark = 2131034183;
 			
 			// aapt resource value: 0x7F050048
-			public const int launcher_background = 2131034184;
+			public const int foreground_material_light = 2131034184;
 			
 			// aapt resource value: 0x7F050049
-			public const int material_blue_grey_800 = 2131034185;
+			public const int highlighted_text_material_dark = 2131034185;
 			
 			// aapt resource value: 0x7F05004A
-			public const int material_blue_grey_900 = 2131034186;
+			public const int highlighted_text_material_light = 2131034186;
 			
 			// aapt resource value: 0x7F05004B
-			public const int material_blue_grey_950 = 2131034187;
+			public const int launcher_background = 2131034187;
 			
 			// aapt resource value: 0x7F05004C
-			public const int material_deep_teal_200 = 2131034188;
+			public const int material_blue_grey_800 = 2131034188;
 			
 			// aapt resource value: 0x7F05004D
-			public const int material_deep_teal_500 = 2131034189;
+			public const int material_blue_grey_900 = 2131034189;
 			
 			// aapt resource value: 0x7F05004E
-			public const int material_grey_100 = 2131034190;
+			public const int material_blue_grey_950 = 2131034190;
 			
 			// aapt resource value: 0x7F05004F
-			public const int material_grey_300 = 2131034191;
+			public const int material_deep_teal_200 = 2131034191;
 			
 			// aapt resource value: 0x7F050050
-			public const int material_grey_50 = 2131034192;
+			public const int material_deep_teal_500 = 2131034192;
 			
 			// aapt resource value: 0x7F050051
-			public const int material_grey_600 = 2131034193;
+			public const int material_grey_100 = 2131034193;
 			
 			// aapt resource value: 0x7F050052
-			public const int material_grey_800 = 2131034194;
+			public const int material_grey_300 = 2131034194;
 			
 			// aapt resource value: 0x7F050053
-			public const int material_grey_850 = 2131034195;
+			public const int material_grey_50 = 2131034195;
 			
 			// aapt resource value: 0x7F050054
-			public const int material_grey_900 = 2131034196;
+			public const int material_grey_600 = 2131034196;
 			
 			// aapt resource value: 0x7F050055
-			public const int mtrl_bottom_nav_colored_item_tint = 2131034197;
+			public const int material_grey_800 = 2131034197;
 			
 			// aapt resource value: 0x7F050056
-			public const int mtrl_bottom_nav_item_tint = 2131034198;
+			public const int material_grey_850 = 2131034198;
 			
 			// aapt resource value: 0x7F050057
-			public const int mtrl_btn_bg_color_disabled = 2131034199;
+			public const int material_grey_900 = 2131034199;
 			
 			// aapt resource value: 0x7F050058
-			public const int mtrl_btn_bg_color_selector = 2131034200;
+			public const int mtrl_bottom_nav_colored_item_tint = 2131034200;
 			
 			// aapt resource value: 0x7F050059
-			public const int mtrl_btn_ripple_color = 2131034201;
+			public const int mtrl_bottom_nav_item_tint = 2131034201;
 			
 			// aapt resource value: 0x7F05005A
-			public const int mtrl_btn_stroke_color_selector = 2131034202;
+			public const int mtrl_btn_bg_color_disabled = 2131034202;
 			
 			// aapt resource value: 0x7F05005B
-			public const int mtrl_btn_text_btn_ripple_color = 2131034203;
+			public const int mtrl_btn_bg_color_selector = 2131034203;
 			
 			// aapt resource value: 0x7F05005C
-			public const int mtrl_btn_text_color_disabled = 2131034204;
+			public const int mtrl_btn_ripple_color = 2131034204;
 			
 			// aapt resource value: 0x7F05005D
-			public const int mtrl_btn_text_color_selector = 2131034205;
+			public const int mtrl_btn_stroke_color_selector = 2131034205;
 			
 			// aapt resource value: 0x7F05005E
-			public const int mtrl_btn_transparent_bg_color = 2131034206;
+			public const int mtrl_btn_text_btn_ripple_color = 2131034206;
 			
 			// aapt resource value: 0x7F05005F
-			public const int mtrl_chip_background_color = 2131034207;
+			public const int mtrl_btn_text_color_disabled = 2131034207;
 			
 			// aapt resource value: 0x7F050060
-			public const int mtrl_chip_close_icon_tint = 2131034208;
+			public const int mtrl_btn_text_color_selector = 2131034208;
 			
 			// aapt resource value: 0x7F050061
-			public const int mtrl_chip_ripple_color = 2131034209;
+			public const int mtrl_btn_transparent_bg_color = 2131034209;
 			
 			// aapt resource value: 0x7F050062
-			public const int mtrl_chip_text_color = 2131034210;
+			public const int mtrl_chip_background_color = 2131034210;
 			
 			// aapt resource value: 0x7F050063
-			public const int mtrl_fab_ripple_color = 2131034211;
+			public const int mtrl_chip_close_icon_tint = 2131034211;
 			
 			// aapt resource value: 0x7F050064
-			public const int mtrl_scrim_color = 2131034212;
+			public const int mtrl_chip_ripple_color = 2131034212;
 			
 			// aapt resource value: 0x7F050065
-			public const int mtrl_tabs_colored_ripple_color = 2131034213;
+			public const int mtrl_chip_text_color = 2131034213;
 			
 			// aapt resource value: 0x7F050066
-			public const int mtrl_tabs_icon_color_selector = 2131034214;
+			public const int mtrl_fab_ripple_color = 2131034214;
 			
 			// aapt resource value: 0x7F050067
-			public const int mtrl_tabs_icon_color_selector_colored = 2131034215;
+			public const int mtrl_scrim_color = 2131034215;
 			
 			// aapt resource value: 0x7F050068
-			public const int mtrl_tabs_legacy_text_color_selector = 2131034216;
+			public const int mtrl_tabs_colored_ripple_color = 2131034216;
 			
 			// aapt resource value: 0x7F050069
-			public const int mtrl_tabs_ripple_color = 2131034217;
-			
-			// aapt resource value: 0x7F05006B
-			public const int mtrl_textinput_default_box_stroke_color = 2131034219;
-			
-			// aapt resource value: 0x7F05006C
-			public const int mtrl_textinput_disabled_color = 2131034220;
-			
-			// aapt resource value: 0x7F05006D
-			public const int mtrl_textinput_filled_box_default_background_color = 2131034221;
-			
-			// aapt resource value: 0x7F05006E
-			public const int mtrl_textinput_hovered_box_stroke_color = 2131034222;
+			public const int mtrl_tabs_icon_color_selector = 2131034217;
 			
 			// aapt resource value: 0x7F05006A
-			public const int mtrl_text_btn_text_color_selector = 2131034218;
+			public const int mtrl_tabs_icon_color_selector_colored = 2131034218;
+			
+			// aapt resource value: 0x7F05006B
+			public const int mtrl_tabs_legacy_text_color_selector = 2131034219;
+			
+			// aapt resource value: 0x7F05006C
+			public const int mtrl_tabs_ripple_color = 2131034220;
+			
+			// aapt resource value: 0x7F05006E
+			public const int mtrl_textinput_default_box_stroke_color = 2131034222;
 			
 			// aapt resource value: 0x7F05006F
-			public const int notification_action_color_filter = 2131034223;
+			public const int mtrl_textinput_disabled_color = 2131034223;
 			
 			// aapt resource value: 0x7F050070
-			public const int notification_icon_bg_color = 2131034224;
+			public const int mtrl_textinput_filled_box_default_background_color = 2131034224;
 			
 			// aapt resource value: 0x7F050071
-			public const int notification_material_background_media_default_color = 2131034225;
+			public const int mtrl_textinput_hovered_box_stroke_color = 2131034225;
+			
+			// aapt resource value: 0x7F05006D
+			public const int mtrl_text_btn_text_color_selector = 2131034221;
 			
 			// aapt resource value: 0x7F050072
-			public const int primary_dark_material_dark = 2131034226;
+			public const int notification_action_color_filter = 2131034226;
 			
 			// aapt resource value: 0x7F050073
-			public const int primary_dark_material_light = 2131034227;
+			public const int notification_icon_bg_color = 2131034227;
 			
 			// aapt resource value: 0x7F050074
-			public const int primary_material_dark = 2131034228;
+			public const int notification_material_background_media_default_color = 2131034228;
 			
 			// aapt resource value: 0x7F050075
-			public const int primary_material_light = 2131034229;
+			public const int primary_dark_material_dark = 2131034229;
 			
 			// aapt resource value: 0x7F050076
-			public const int primary_text_default_material_dark = 2131034230;
+			public const int primary_dark_material_light = 2131034230;
 			
 			// aapt resource value: 0x7F050077
-			public const int primary_text_default_material_light = 2131034231;
+			public const int primary_material_dark = 2131034231;
 			
 			// aapt resource value: 0x7F050078
-			public const int primary_text_disabled_material_dark = 2131034232;
+			public const int primary_material_light = 2131034232;
 			
 			// aapt resource value: 0x7F050079
-			public const int primary_text_disabled_material_light = 2131034233;
+			public const int primary_text_default_material_dark = 2131034233;
 			
 			// aapt resource value: 0x7F05007A
-			public const int ripple_material_dark = 2131034234;
+			public const int primary_text_default_material_light = 2131034234;
 			
 			// aapt resource value: 0x7F05007B
-			public const int ripple_material_light = 2131034235;
+			public const int primary_text_disabled_material_dark = 2131034235;
 			
 			// aapt resource value: 0x7F05007C
-			public const int secondary_text_default_material_dark = 2131034236;
+			public const int primary_text_disabled_material_light = 2131034236;
 			
 			// aapt resource value: 0x7F05007D
-			public const int secondary_text_default_material_light = 2131034237;
+			public const int ripple_material_dark = 2131034237;
 			
 			// aapt resource value: 0x7F05007E
-			public const int secondary_text_disabled_material_dark = 2131034238;
+			public const int ripple_material_light = 2131034238;
 			
 			// aapt resource value: 0x7F05007F
-			public const int secondary_text_disabled_material_light = 2131034239;
+			public const int secondary_text_default_material_dark = 2131034239;
 			
 			// aapt resource value: 0x7F050080
-			public const int switch_thumb_disabled_material_dark = 2131034240;
+			public const int secondary_text_default_material_light = 2131034240;
 			
 			// aapt resource value: 0x7F050081
-			public const int switch_thumb_disabled_material_light = 2131034241;
+			public const int secondary_text_disabled_material_dark = 2131034241;
 			
 			// aapt resource value: 0x7F050082
-			public const int switch_thumb_material_dark = 2131034242;
+			public const int secondary_text_disabled_material_light = 2131034242;
 			
 			// aapt resource value: 0x7F050083
-			public const int switch_thumb_material_light = 2131034243;
+			public const int switch_thumb_disabled_material_dark = 2131034243;
 			
 			// aapt resource value: 0x7F050084
-			public const int switch_thumb_normal_material_dark = 2131034244;
+			public const int switch_thumb_disabled_material_light = 2131034244;
 			
 			// aapt resource value: 0x7F050085
-			public const int switch_thumb_normal_material_light = 2131034245;
+			public const int switch_thumb_material_dark = 2131034245;
 			
 			// aapt resource value: 0x7F050086
-			public const int tooltip_background_dark = 2131034246;
+			public const int switch_thumb_material_light = 2131034246;
 			
 			// aapt resource value: 0x7F050087
-			public const int tooltip_background_light = 2131034247;
+			public const int switch_thumb_normal_material_dark = 2131034247;
+			
+			// aapt resource value: 0x7F050088
+			public const int switch_thumb_normal_material_light = 2131034248;
+			
+			// aapt resource value: 0x7F050089
+			public const int tooltip_background_dark = 2131034249;
+			
+			// aapt resource value: 0x7F05008A
+			public const int tooltip_background_light = 2131034250;
 			
 			static Color()
 			{
@@ -15034,16 +20465,19 @@ namespace LiLo.Lite.Droid
 			public const int view_offset_helper = 2131230971;
 			
 			// aapt resource value: 0x7F0800FC
-			public const int visible = 2131230972;
+			public const int view_tree_saved_state_registry_owner = 2131230972;
 			
 			// aapt resource value: 0x7F0800FD
-			public const int visible_removing_fragment_view_tag = 2131230973;
+			public const int visible = 2131230973;
 			
 			// aapt resource value: 0x7F0800FE
-			public const int withText = 2131230974;
+			public const int visible_removing_fragment_view_tag = 2131230974;
 			
 			// aapt resource value: 0x7F0800FF
-			public const int wrap_content = 2131230975;
+			public const int withText = 2131230975;
+			
+			// aapt resource value: 0x7F080100
+			public const int wrap_content = 2131230976;
 			
 			static Id()
 			{
@@ -16230,9 +21664,6 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 0x7F0E00C6
 			public const int CardView_Light = 2131624134;
 			
-			// aapt resource value: 0x7F0E01FB
-			public const int collectionViewScrollBars = 2131624443;
-			
 			// aapt resource value: 0x7F0E01FC
 			public const int collectionViewTheme = 2131624444;
 			
@@ -16334,6 +21765,12 @@ namespace LiLo.Lite.Droid
 			
 			// aapt resource value: 0x7F0E00E7
 			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131624167;
+			
+			// aapt resource value: 0x7F0E01FD
+			public const int scrollViewScrollBars = 2131624445;
+			
+			// aapt resource value: 0x7F0E01FE
+			public const int scrollViewTheme = 2131624446;
 			
 			// aapt resource value: 0x7F0E00E8
 			public const int TextAppearance_AppCompat = 2131624168;
@@ -16587,68 +22024,68 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 0x7F0E013B
 			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131624251;
 			
-			// aapt resource value: 0x7F0E016C
-			public const int ThemeOverlay_AppCompat = 2131624300;
-			
 			// aapt resource value: 0x7F0E016D
-			public const int ThemeOverlay_AppCompat_ActionBar = 2131624301;
+			public const int ThemeOverlay_AppCompat = 2131624301;
 			
 			// aapt resource value: 0x7F0E016E
-			public const int ThemeOverlay_AppCompat_Dark = 2131624302;
+			public const int ThemeOverlay_AppCompat_ActionBar = 2131624302;
 			
 			// aapt resource value: 0x7F0E016F
-			public const int ThemeOverlay_AppCompat_Dark_ActionBar = 2131624303;
+			public const int ThemeOverlay_AppCompat_Dark = 2131624303;
 			
 			// aapt resource value: 0x7F0E0170
-			public const int ThemeOverlay_AppCompat_DayNight = 2131624304;
+			public const int ThemeOverlay_AppCompat_Dark_ActionBar = 2131624304;
 			
 			// aapt resource value: 0x7F0E0171
-			public const int ThemeOverlay_AppCompat_DayNight_ActionBar = 2131624305;
+			public const int ThemeOverlay_AppCompat_DayNight = 2131624305;
 			
 			// aapt resource value: 0x7F0E0172
-			public const int ThemeOverlay_AppCompat_Dialog = 2131624306;
+			public const int ThemeOverlay_AppCompat_DayNight_ActionBar = 2131624306;
 			
 			// aapt resource value: 0x7F0E0173
-			public const int ThemeOverlay_AppCompat_Dialog_Alert = 2131624307;
+			public const int ThemeOverlay_AppCompat_Dialog = 2131624307;
 			
 			// aapt resource value: 0x7F0E0174
-			public const int ThemeOverlay_AppCompat_Light = 2131624308;
+			public const int ThemeOverlay_AppCompat_Dialog_Alert = 2131624308;
 			
 			// aapt resource value: 0x7F0E0175
-			public const int ThemeOverlay_MaterialComponents = 2131624309;
+			public const int ThemeOverlay_AppCompat_Light = 2131624309;
 			
 			// aapt resource value: 0x7F0E0176
-			public const int ThemeOverlay_MaterialComponents_ActionBar = 2131624310;
+			public const int ThemeOverlay_MaterialComponents = 2131624310;
 			
 			// aapt resource value: 0x7F0E0177
-			public const int ThemeOverlay_MaterialComponents_Dark = 2131624311;
+			public const int ThemeOverlay_MaterialComponents_ActionBar = 2131624311;
 			
 			// aapt resource value: 0x7F0E0178
-			public const int ThemeOverlay_MaterialComponents_Dark_ActionBar = 2131624312;
+			public const int ThemeOverlay_MaterialComponents_Dark = 2131624312;
 			
 			// aapt resource value: 0x7F0E0179
-			public const int ThemeOverlay_MaterialComponents_Dialog = 2131624313;
+			public const int ThemeOverlay_MaterialComponents_Dark_ActionBar = 2131624313;
 			
 			// aapt resource value: 0x7F0E017A
-			public const int ThemeOverlay_MaterialComponents_Dialog_Alert = 2131624314;
+			public const int ThemeOverlay_MaterialComponents_Dialog = 2131624314;
 			
 			// aapt resource value: 0x7F0E017B
-			public const int ThemeOverlay_MaterialComponents_Light = 2131624315;
+			public const int ThemeOverlay_MaterialComponents_Dialog_Alert = 2131624315;
 			
 			// aapt resource value: 0x7F0E017C
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText = 2131624316;
+			public const int ThemeOverlay_MaterialComponents_Light = 2131624316;
 			
 			// aapt resource value: 0x7F0E017D
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = 2131624317;
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText = 2131624317;
 			
 			// aapt resource value: 0x7F0E017E
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131624318;
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = 2131624318;
 			
 			// aapt resource value: 0x7F0E017F
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = 2131624319;
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131624319;
 			
 			// aapt resource value: 0x7F0E0180
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131624320;
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = 2131624320;
+			
+			// aapt resource value: 0x7F0E0181
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131624321;
 			
 			// aapt resource value: 0x7F0E013C
 			public const int Theme_AppCompat = 2131624252;
@@ -16690,475 +22127,478 @@ namespace LiLo.Lite.Droid
 			public const int Theme_AppCompat_Dialog_MinWidth = 2131624263;
 			
 			// aapt resource value: 0x7F0E0149
-			public const int Theme_AppCompat_Light = 2131624265;
+			public const int Theme_AppCompat_Empty = 2131624265;
 			
 			// aapt resource value: 0x7F0E014A
-			public const int Theme_AppCompat_Light_DarkActionBar = 2131624266;
+			public const int Theme_AppCompat_Light = 2131624266;
 			
 			// aapt resource value: 0x7F0E014B
-			public const int Theme_AppCompat_Light_Dialog = 2131624267;
-			
-			// aapt resource value: 0x7F0E014E
-			public const int Theme_AppCompat_Light_DialogWhenLarge = 2131624270;
+			public const int Theme_AppCompat_Light_DarkActionBar = 2131624267;
 			
 			// aapt resource value: 0x7F0E014C
-			public const int Theme_AppCompat_Light_Dialog_Alert = 2131624268;
-			
-			// aapt resource value: 0x7F0E014D
-			public const int Theme_AppCompat_Light_Dialog_MinWidth = 2131624269;
+			public const int Theme_AppCompat_Light_Dialog = 2131624268;
 			
 			// aapt resource value: 0x7F0E014F
-			public const int Theme_AppCompat_Light_NoActionBar = 2131624271;
+			public const int Theme_AppCompat_Light_DialogWhenLarge = 2131624271;
+			
+			// aapt resource value: 0x7F0E014D
+			public const int Theme_AppCompat_Light_Dialog_Alert = 2131624269;
+			
+			// aapt resource value: 0x7F0E014E
+			public const int Theme_AppCompat_Light_Dialog_MinWidth = 2131624270;
 			
 			// aapt resource value: 0x7F0E0150
-			public const int Theme_AppCompat_NoActionBar = 2131624272;
+			public const int Theme_AppCompat_Light_NoActionBar = 2131624272;
 			
 			// aapt resource value: 0x7F0E0151
-			public const int Theme_Design = 2131624273;
+			public const int Theme_AppCompat_NoActionBar = 2131624273;
 			
 			// aapt resource value: 0x7F0E0152
-			public const int Theme_Design_BottomSheetDialog = 2131624274;
+			public const int Theme_Design = 2131624274;
 			
 			// aapt resource value: 0x7F0E0153
-			public const int Theme_Design_Light = 2131624275;
+			public const int Theme_Design_BottomSheetDialog = 2131624275;
 			
 			// aapt resource value: 0x7F0E0154
-			public const int Theme_Design_Light_BottomSheetDialog = 2131624276;
+			public const int Theme_Design_Light = 2131624276;
 			
 			// aapt resource value: 0x7F0E0155
-			public const int Theme_Design_Light_NoActionBar = 2131624277;
+			public const int Theme_Design_Light_BottomSheetDialog = 2131624277;
 			
 			// aapt resource value: 0x7F0E0156
-			public const int Theme_Design_NoActionBar = 2131624278;
+			public const int Theme_Design_Light_NoActionBar = 2131624278;
 			
 			// aapt resource value: 0x7F0E0157
-			public const int Theme_MaterialComponents = 2131624279;
+			public const int Theme_Design_NoActionBar = 2131624279;
 			
 			// aapt resource value: 0x7F0E0158
-			public const int Theme_MaterialComponents_BottomSheetDialog = 2131624280;
+			public const int Theme_MaterialComponents = 2131624280;
 			
 			// aapt resource value: 0x7F0E0159
-			public const int Theme_MaterialComponents_Bridge = 2131624281;
+			public const int Theme_MaterialComponents_BottomSheetDialog = 2131624281;
 			
 			// aapt resource value: 0x7F0E015A
-			public const int Theme_MaterialComponents_CompactMenu = 2131624282;
+			public const int Theme_MaterialComponents_Bridge = 2131624282;
 			
 			// aapt resource value: 0x7F0E015B
-			public const int Theme_MaterialComponents_Dialog = 2131624283;
-			
-			// aapt resource value: 0x7F0E015E
-			public const int Theme_MaterialComponents_DialogWhenLarge = 2131624286;
+			public const int Theme_MaterialComponents_CompactMenu = 2131624283;
 			
 			// aapt resource value: 0x7F0E015C
-			public const int Theme_MaterialComponents_Dialog_Alert = 2131624284;
-			
-			// aapt resource value: 0x7F0E015D
-			public const int Theme_MaterialComponents_Dialog_MinWidth = 2131624285;
+			public const int Theme_MaterialComponents_Dialog = 2131624284;
 			
 			// aapt resource value: 0x7F0E015F
-			public const int Theme_MaterialComponents_Light = 2131624287;
+			public const int Theme_MaterialComponents_DialogWhenLarge = 2131624287;
+			
+			// aapt resource value: 0x7F0E015D
+			public const int Theme_MaterialComponents_Dialog_Alert = 2131624285;
+			
+			// aapt resource value: 0x7F0E015E
+			public const int Theme_MaterialComponents_Dialog_MinWidth = 2131624286;
 			
 			// aapt resource value: 0x7F0E0160
-			public const int Theme_MaterialComponents_Light_BottomSheetDialog = 2131624288;
+			public const int Theme_MaterialComponents_Light = 2131624288;
 			
 			// aapt resource value: 0x7F0E0161
-			public const int Theme_MaterialComponents_Light_Bridge = 2131624289;
+			public const int Theme_MaterialComponents_Light_BottomSheetDialog = 2131624289;
 			
 			// aapt resource value: 0x7F0E0162
-			public const int Theme_MaterialComponents_Light_DarkActionBar = 2131624290;
+			public const int Theme_MaterialComponents_Light_Bridge = 2131624290;
 			
 			// aapt resource value: 0x7F0E0163
-			public const int Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131624291;
+			public const int Theme_MaterialComponents_Light_DarkActionBar = 2131624291;
 			
 			// aapt resource value: 0x7F0E0164
-			public const int Theme_MaterialComponents_Light_Dialog = 2131624292;
-			
-			// aapt resource value: 0x7F0E0167
-			public const int Theme_MaterialComponents_Light_DialogWhenLarge = 2131624295;
+			public const int Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131624292;
 			
 			// aapt resource value: 0x7F0E0165
-			public const int Theme_MaterialComponents_Light_Dialog_Alert = 2131624293;
-			
-			// aapt resource value: 0x7F0E0166
-			public const int Theme_MaterialComponents_Light_Dialog_MinWidth = 2131624294;
+			public const int Theme_MaterialComponents_Light_Dialog = 2131624293;
 			
 			// aapt resource value: 0x7F0E0168
-			public const int Theme_MaterialComponents_Light_NoActionBar = 2131624296;
+			public const int Theme_MaterialComponents_Light_DialogWhenLarge = 2131624296;
+			
+			// aapt resource value: 0x7F0E0166
+			public const int Theme_MaterialComponents_Light_Dialog_Alert = 2131624294;
+			
+			// aapt resource value: 0x7F0E0167
+			public const int Theme_MaterialComponents_Light_Dialog_MinWidth = 2131624295;
 			
 			// aapt resource value: 0x7F0E0169
-			public const int Theme_MaterialComponents_Light_NoActionBar_Bridge = 2131624297;
+			public const int Theme_MaterialComponents_Light_NoActionBar = 2131624297;
 			
 			// aapt resource value: 0x7F0E016A
-			public const int Theme_MaterialComponents_NoActionBar = 2131624298;
+			public const int Theme_MaterialComponents_Light_NoActionBar_Bridge = 2131624298;
 			
 			// aapt resource value: 0x7F0E016B
-			public const int Theme_MaterialComponents_NoActionBar_Bridge = 2131624299;
+			public const int Theme_MaterialComponents_NoActionBar = 2131624299;
 			
-			// aapt resource value: 0x7F0E0181
-			public const int Widget_AppCompat_ActionBar = 2131624321;
+			// aapt resource value: 0x7F0E016C
+			public const int Theme_MaterialComponents_NoActionBar_Bridge = 2131624300;
 			
 			// aapt resource value: 0x7F0E0182
-			public const int Widget_AppCompat_ActionBar_Solid = 2131624322;
+			public const int Widget_AppCompat_ActionBar = 2131624322;
 			
 			// aapt resource value: 0x7F0E0183
-			public const int Widget_AppCompat_ActionBar_TabBar = 2131624323;
+			public const int Widget_AppCompat_ActionBar_Solid = 2131624323;
 			
 			// aapt resource value: 0x7F0E0184
-			public const int Widget_AppCompat_ActionBar_TabText = 2131624324;
+			public const int Widget_AppCompat_ActionBar_TabBar = 2131624324;
 			
 			// aapt resource value: 0x7F0E0185
-			public const int Widget_AppCompat_ActionBar_TabView = 2131624325;
+			public const int Widget_AppCompat_ActionBar_TabText = 2131624325;
 			
 			// aapt resource value: 0x7F0E0186
-			public const int Widget_AppCompat_ActionButton = 2131624326;
+			public const int Widget_AppCompat_ActionBar_TabView = 2131624326;
 			
 			// aapt resource value: 0x7F0E0187
-			public const int Widget_AppCompat_ActionButton_CloseMode = 2131624327;
+			public const int Widget_AppCompat_ActionButton = 2131624327;
 			
 			// aapt resource value: 0x7F0E0188
-			public const int Widget_AppCompat_ActionButton_Overflow = 2131624328;
+			public const int Widget_AppCompat_ActionButton_CloseMode = 2131624328;
 			
 			// aapt resource value: 0x7F0E0189
-			public const int Widget_AppCompat_ActionMode = 2131624329;
+			public const int Widget_AppCompat_ActionButton_Overflow = 2131624329;
 			
 			// aapt resource value: 0x7F0E018A
-			public const int Widget_AppCompat_ActivityChooserView = 2131624330;
+			public const int Widget_AppCompat_ActionMode = 2131624330;
 			
 			// aapt resource value: 0x7F0E018B
-			public const int Widget_AppCompat_AutoCompleteTextView = 2131624331;
+			public const int Widget_AppCompat_ActivityChooserView = 2131624331;
 			
 			// aapt resource value: 0x7F0E018C
-			public const int Widget_AppCompat_Button = 2131624332;
-			
-			// aapt resource value: 0x7F0E0192
-			public const int Widget_AppCompat_ButtonBar = 2131624338;
-			
-			// aapt resource value: 0x7F0E0193
-			public const int Widget_AppCompat_ButtonBar_AlertDialog = 2131624339;
+			public const int Widget_AppCompat_AutoCompleteTextView = 2131624332;
 			
 			// aapt resource value: 0x7F0E018D
-			public const int Widget_AppCompat_Button_Borderless = 2131624333;
+			public const int Widget_AppCompat_Button = 2131624333;
 			
-			// aapt resource value: 0x7F0E018E
-			public const int Widget_AppCompat_Button_Borderless_Colored = 2131624334;
-			
-			// aapt resource value: 0x7F0E018F
-			public const int Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131624335;
-			
-			// aapt resource value: 0x7F0E0190
-			public const int Widget_AppCompat_Button_Colored = 2131624336;
-			
-			// aapt resource value: 0x7F0E0191
-			public const int Widget_AppCompat_Button_Small = 2131624337;
+			// aapt resource value: 0x7F0E0193
+			public const int Widget_AppCompat_ButtonBar = 2131624339;
 			
 			// aapt resource value: 0x7F0E0194
-			public const int Widget_AppCompat_CompoundButton_CheckBox = 2131624340;
+			public const int Widget_AppCompat_ButtonBar_AlertDialog = 2131624340;
+			
+			// aapt resource value: 0x7F0E018E
+			public const int Widget_AppCompat_Button_Borderless = 2131624334;
+			
+			// aapt resource value: 0x7F0E018F
+			public const int Widget_AppCompat_Button_Borderless_Colored = 2131624335;
+			
+			// aapt resource value: 0x7F0E0190
+			public const int Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131624336;
+			
+			// aapt resource value: 0x7F0E0191
+			public const int Widget_AppCompat_Button_Colored = 2131624337;
+			
+			// aapt resource value: 0x7F0E0192
+			public const int Widget_AppCompat_Button_Small = 2131624338;
 			
 			// aapt resource value: 0x7F0E0195
-			public const int Widget_AppCompat_CompoundButton_RadioButton = 2131624341;
+			public const int Widget_AppCompat_CompoundButton_CheckBox = 2131624341;
 			
 			// aapt resource value: 0x7F0E0196
-			public const int Widget_AppCompat_CompoundButton_Switch = 2131624342;
+			public const int Widget_AppCompat_CompoundButton_RadioButton = 2131624342;
 			
 			// aapt resource value: 0x7F0E0197
-			public const int Widget_AppCompat_DrawerArrowToggle = 2131624343;
+			public const int Widget_AppCompat_CompoundButton_Switch = 2131624343;
 			
 			// aapt resource value: 0x7F0E0198
-			public const int Widget_AppCompat_DropDownItem_Spinner = 2131624344;
+			public const int Widget_AppCompat_DrawerArrowToggle = 2131624344;
 			
 			// aapt resource value: 0x7F0E0199
-			public const int Widget_AppCompat_EditText = 2131624345;
+			public const int Widget_AppCompat_DropDownItem_Spinner = 2131624345;
 			
 			// aapt resource value: 0x7F0E019A
-			public const int Widget_AppCompat_ImageButton = 2131624346;
+			public const int Widget_AppCompat_EditText = 2131624346;
 			
 			// aapt resource value: 0x7F0E019B
-			public const int Widget_AppCompat_Light_ActionBar = 2131624347;
+			public const int Widget_AppCompat_ImageButton = 2131624347;
 			
 			// aapt resource value: 0x7F0E019C
-			public const int Widget_AppCompat_Light_ActionBar_Solid = 2131624348;
+			public const int Widget_AppCompat_Light_ActionBar = 2131624348;
 			
 			// aapt resource value: 0x7F0E019D
-			public const int Widget_AppCompat_Light_ActionBar_Solid_Inverse = 2131624349;
+			public const int Widget_AppCompat_Light_ActionBar_Solid = 2131624349;
 			
 			// aapt resource value: 0x7F0E019E
-			public const int Widget_AppCompat_Light_ActionBar_TabBar = 2131624350;
+			public const int Widget_AppCompat_Light_ActionBar_Solid_Inverse = 2131624350;
 			
 			// aapt resource value: 0x7F0E019F
-			public const int Widget_AppCompat_Light_ActionBar_TabBar_Inverse = 2131624351;
+			public const int Widget_AppCompat_Light_ActionBar_TabBar = 2131624351;
 			
 			// aapt resource value: 0x7F0E01A0
-			public const int Widget_AppCompat_Light_ActionBar_TabText = 2131624352;
+			public const int Widget_AppCompat_Light_ActionBar_TabBar_Inverse = 2131624352;
 			
 			// aapt resource value: 0x7F0E01A1
-			public const int Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131624353;
+			public const int Widget_AppCompat_Light_ActionBar_TabText = 2131624353;
 			
 			// aapt resource value: 0x7F0E01A2
-			public const int Widget_AppCompat_Light_ActionBar_TabView = 2131624354;
+			public const int Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131624354;
 			
 			// aapt resource value: 0x7F0E01A3
-			public const int Widget_AppCompat_Light_ActionBar_TabView_Inverse = 2131624355;
+			public const int Widget_AppCompat_Light_ActionBar_TabView = 2131624355;
 			
 			// aapt resource value: 0x7F0E01A4
-			public const int Widget_AppCompat_Light_ActionButton = 2131624356;
+			public const int Widget_AppCompat_Light_ActionBar_TabView_Inverse = 2131624356;
 			
 			// aapt resource value: 0x7F0E01A5
-			public const int Widget_AppCompat_Light_ActionButton_CloseMode = 2131624357;
+			public const int Widget_AppCompat_Light_ActionButton = 2131624357;
 			
 			// aapt resource value: 0x7F0E01A6
-			public const int Widget_AppCompat_Light_ActionButton_Overflow = 2131624358;
+			public const int Widget_AppCompat_Light_ActionButton_CloseMode = 2131624358;
 			
 			// aapt resource value: 0x7F0E01A7
-			public const int Widget_AppCompat_Light_ActionMode_Inverse = 2131624359;
+			public const int Widget_AppCompat_Light_ActionButton_Overflow = 2131624359;
 			
 			// aapt resource value: 0x7F0E01A8
-			public const int Widget_AppCompat_Light_ActivityChooserView = 2131624360;
+			public const int Widget_AppCompat_Light_ActionMode_Inverse = 2131624360;
 			
 			// aapt resource value: 0x7F0E01A9
-			public const int Widget_AppCompat_Light_AutoCompleteTextView = 2131624361;
+			public const int Widget_AppCompat_Light_ActivityChooserView = 2131624361;
 			
 			// aapt resource value: 0x7F0E01AA
-			public const int Widget_AppCompat_Light_DropDownItem_Spinner = 2131624362;
+			public const int Widget_AppCompat_Light_AutoCompleteTextView = 2131624362;
 			
 			// aapt resource value: 0x7F0E01AB
-			public const int Widget_AppCompat_Light_ListPopupWindow = 2131624363;
+			public const int Widget_AppCompat_Light_DropDownItem_Spinner = 2131624363;
 			
 			// aapt resource value: 0x7F0E01AC
-			public const int Widget_AppCompat_Light_ListView_DropDown = 2131624364;
+			public const int Widget_AppCompat_Light_ListPopupWindow = 2131624364;
 			
 			// aapt resource value: 0x7F0E01AD
-			public const int Widget_AppCompat_Light_PopupMenu = 2131624365;
+			public const int Widget_AppCompat_Light_ListView_DropDown = 2131624365;
 			
 			// aapt resource value: 0x7F0E01AE
-			public const int Widget_AppCompat_Light_PopupMenu_Overflow = 2131624366;
+			public const int Widget_AppCompat_Light_PopupMenu = 2131624366;
 			
 			// aapt resource value: 0x7F0E01AF
-			public const int Widget_AppCompat_Light_SearchView = 2131624367;
+			public const int Widget_AppCompat_Light_PopupMenu_Overflow = 2131624367;
 			
 			// aapt resource value: 0x7F0E01B0
-			public const int Widget_AppCompat_Light_Spinner_DropDown_ActionBar = 2131624368;
+			public const int Widget_AppCompat_Light_SearchView = 2131624368;
 			
 			// aapt resource value: 0x7F0E01B1
-			public const int Widget_AppCompat_ListMenuView = 2131624369;
+			public const int Widget_AppCompat_Light_Spinner_DropDown_ActionBar = 2131624369;
 			
 			// aapt resource value: 0x7F0E01B2
-			public const int Widget_AppCompat_ListPopupWindow = 2131624370;
+			public const int Widget_AppCompat_ListMenuView = 2131624370;
 			
 			// aapt resource value: 0x7F0E01B3
-			public const int Widget_AppCompat_ListView = 2131624371;
+			public const int Widget_AppCompat_ListPopupWindow = 2131624371;
 			
 			// aapt resource value: 0x7F0E01B4
-			public const int Widget_AppCompat_ListView_DropDown = 2131624372;
+			public const int Widget_AppCompat_ListView = 2131624372;
 			
 			// aapt resource value: 0x7F0E01B5
-			public const int Widget_AppCompat_ListView_Menu = 2131624373;
+			public const int Widget_AppCompat_ListView_DropDown = 2131624373;
 			
 			// aapt resource value: 0x7F0E01B6
-			public const int Widget_AppCompat_PopupMenu = 2131624374;
+			public const int Widget_AppCompat_ListView_Menu = 2131624374;
 			
 			// aapt resource value: 0x7F0E01B7
-			public const int Widget_AppCompat_PopupMenu_Overflow = 2131624375;
+			public const int Widget_AppCompat_PopupMenu = 2131624375;
 			
 			// aapt resource value: 0x7F0E01B8
-			public const int Widget_AppCompat_PopupWindow = 2131624376;
+			public const int Widget_AppCompat_PopupMenu_Overflow = 2131624376;
 			
 			// aapt resource value: 0x7F0E01B9
-			public const int Widget_AppCompat_ProgressBar = 2131624377;
+			public const int Widget_AppCompat_PopupWindow = 2131624377;
 			
 			// aapt resource value: 0x7F0E01BA
-			public const int Widget_AppCompat_ProgressBar_Horizontal = 2131624378;
+			public const int Widget_AppCompat_ProgressBar = 2131624378;
 			
 			// aapt resource value: 0x7F0E01BB
-			public const int Widget_AppCompat_RatingBar = 2131624379;
+			public const int Widget_AppCompat_ProgressBar_Horizontal = 2131624379;
 			
 			// aapt resource value: 0x7F0E01BC
-			public const int Widget_AppCompat_RatingBar_Indicator = 2131624380;
+			public const int Widget_AppCompat_RatingBar = 2131624380;
 			
 			// aapt resource value: 0x7F0E01BD
-			public const int Widget_AppCompat_RatingBar_Small = 2131624381;
+			public const int Widget_AppCompat_RatingBar_Indicator = 2131624381;
 			
 			// aapt resource value: 0x7F0E01BE
-			public const int Widget_AppCompat_SearchView = 2131624382;
+			public const int Widget_AppCompat_RatingBar_Small = 2131624382;
 			
 			// aapt resource value: 0x7F0E01BF
-			public const int Widget_AppCompat_SearchView_ActionBar = 2131624383;
+			public const int Widget_AppCompat_SearchView = 2131624383;
 			
 			// aapt resource value: 0x7F0E01C0
-			public const int Widget_AppCompat_SeekBar = 2131624384;
+			public const int Widget_AppCompat_SearchView_ActionBar = 2131624384;
 			
 			// aapt resource value: 0x7F0E01C1
-			public const int Widget_AppCompat_SeekBar_Discrete = 2131624385;
+			public const int Widget_AppCompat_SeekBar = 2131624385;
 			
 			// aapt resource value: 0x7F0E01C2
-			public const int Widget_AppCompat_Spinner = 2131624386;
+			public const int Widget_AppCompat_SeekBar_Discrete = 2131624386;
 			
 			// aapt resource value: 0x7F0E01C3
-			public const int Widget_AppCompat_Spinner_DropDown = 2131624387;
+			public const int Widget_AppCompat_Spinner = 2131624387;
 			
 			// aapt resource value: 0x7F0E01C4
-			public const int Widget_AppCompat_Spinner_DropDown_ActionBar = 2131624388;
+			public const int Widget_AppCompat_Spinner_DropDown = 2131624388;
 			
 			// aapt resource value: 0x7F0E01C5
-			public const int Widget_AppCompat_Spinner_Underlined = 2131624389;
+			public const int Widget_AppCompat_Spinner_DropDown_ActionBar = 2131624389;
 			
 			// aapt resource value: 0x7F0E01C6
-			public const int Widget_AppCompat_TextView = 2131624390;
+			public const int Widget_AppCompat_Spinner_Underlined = 2131624390;
 			
 			// aapt resource value: 0x7F0E01C7
-			public const int Widget_AppCompat_TextView_SpinnerItem = 2131624391;
+			public const int Widget_AppCompat_TextView = 2131624391;
 			
 			// aapt resource value: 0x7F0E01C8
-			public const int Widget_AppCompat_Toolbar = 2131624392;
+			public const int Widget_AppCompat_TextView_SpinnerItem = 2131624392;
 			
 			// aapt resource value: 0x7F0E01C9
-			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131624393;
+			public const int Widget_AppCompat_Toolbar = 2131624393;
 			
 			// aapt resource value: 0x7F0E01CA
-			public const int Widget_Compat_NotificationActionContainer = 2131624394;
+			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131624394;
 			
 			// aapt resource value: 0x7F0E01CB
-			public const int Widget_Compat_NotificationActionText = 2131624395;
+			public const int Widget_Compat_NotificationActionContainer = 2131624395;
 			
 			// aapt resource value: 0x7F0E01CC
-			public const int Widget_Design_AppBarLayout = 2131624396;
+			public const int Widget_Compat_NotificationActionText = 2131624396;
 			
 			// aapt resource value: 0x7F0E01CD
-			public const int Widget_Design_BottomNavigationView = 2131624397;
+			public const int Widget_Design_AppBarLayout = 2131624397;
 			
 			// aapt resource value: 0x7F0E01CE
-			public const int Widget_Design_BottomSheet_Modal = 2131624398;
+			public const int Widget_Design_BottomNavigationView = 2131624398;
 			
 			// aapt resource value: 0x7F0E01CF
-			public const int Widget_Design_CollapsingToolbar = 2131624399;
+			public const int Widget_Design_BottomSheet_Modal = 2131624399;
 			
 			// aapt resource value: 0x7F0E01D0
-			public const int Widget_Design_FloatingActionButton = 2131624400;
+			public const int Widget_Design_CollapsingToolbar = 2131624400;
 			
 			// aapt resource value: 0x7F0E01D1
-			public const int Widget_Design_NavigationView = 2131624401;
+			public const int Widget_Design_FloatingActionButton = 2131624401;
 			
 			// aapt resource value: 0x7F0E01D2
-			public const int Widget_Design_ScrimInsetsFrameLayout = 2131624402;
+			public const int Widget_Design_NavigationView = 2131624402;
 			
 			// aapt resource value: 0x7F0E01D3
-			public const int Widget_Design_Snackbar = 2131624403;
+			public const int Widget_Design_ScrimInsetsFrameLayout = 2131624403;
 			
 			// aapt resource value: 0x7F0E01D4
-			public const int Widget_Design_TabLayout = 2131624404;
+			public const int Widget_Design_Snackbar = 2131624404;
 			
 			// aapt resource value: 0x7F0E01D5
-			public const int Widget_Design_TextInputLayout = 2131624405;
+			public const int Widget_Design_TabLayout = 2131624405;
 			
 			// aapt resource value: 0x7F0E01D6
-			public const int Widget_MaterialComponents_BottomAppBar = 2131624406;
+			public const int Widget_Design_TextInputLayout = 2131624406;
 			
 			// aapt resource value: 0x7F0E01D7
-			public const int Widget_MaterialComponents_BottomAppBar_Colored = 2131624407;
+			public const int Widget_MaterialComponents_BottomAppBar = 2131624407;
 			
 			// aapt resource value: 0x7F0E01D8
-			public const int Widget_MaterialComponents_BottomNavigationView = 2131624408;
+			public const int Widget_MaterialComponents_BottomAppBar_Colored = 2131624408;
 			
 			// aapt resource value: 0x7F0E01D9
-			public const int Widget_MaterialComponents_BottomNavigationView_Colored = 2131624409;
+			public const int Widget_MaterialComponents_BottomNavigationView = 2131624409;
 			
 			// aapt resource value: 0x7F0E01DA
-			public const int Widget_MaterialComponents_BottomSheet_Modal = 2131624410;
+			public const int Widget_MaterialComponents_BottomNavigationView_Colored = 2131624410;
 			
 			// aapt resource value: 0x7F0E01DB
-			public const int Widget_MaterialComponents_Button = 2131624411;
+			public const int Widget_MaterialComponents_BottomSheet_Modal = 2131624411;
 			
 			// aapt resource value: 0x7F0E01DC
-			public const int Widget_MaterialComponents_Button_Icon = 2131624412;
+			public const int Widget_MaterialComponents_Button = 2131624412;
 			
 			// aapt resource value: 0x7F0E01DD
-			public const int Widget_MaterialComponents_Button_OutlinedButton = 2131624413;
+			public const int Widget_MaterialComponents_Button_Icon = 2131624413;
 			
 			// aapt resource value: 0x7F0E01DE
-			public const int Widget_MaterialComponents_Button_OutlinedButton_Icon = 2131624414;
+			public const int Widget_MaterialComponents_Button_OutlinedButton = 2131624414;
 			
 			// aapt resource value: 0x7F0E01DF
-			public const int Widget_MaterialComponents_Button_TextButton = 2131624415;
+			public const int Widget_MaterialComponents_Button_OutlinedButton_Icon = 2131624415;
 			
 			// aapt resource value: 0x7F0E01E0
-			public const int Widget_MaterialComponents_Button_TextButton_Dialog = 2131624416;
+			public const int Widget_MaterialComponents_Button_TextButton = 2131624416;
 			
 			// aapt resource value: 0x7F0E01E1
-			public const int Widget_MaterialComponents_Button_TextButton_Dialog_Icon = 2131624417;
+			public const int Widget_MaterialComponents_Button_TextButton_Dialog = 2131624417;
 			
 			// aapt resource value: 0x7F0E01E2
-			public const int Widget_MaterialComponents_Button_TextButton_Icon = 2131624418;
+			public const int Widget_MaterialComponents_Button_TextButton_Dialog_Icon = 2131624418;
 			
 			// aapt resource value: 0x7F0E01E3
-			public const int Widget_MaterialComponents_Button_UnelevatedButton = 2131624419;
+			public const int Widget_MaterialComponents_Button_TextButton_Icon = 2131624419;
 			
 			// aapt resource value: 0x7F0E01E4
-			public const int Widget_MaterialComponents_Button_UnelevatedButton_Icon = 2131624420;
+			public const int Widget_MaterialComponents_Button_UnelevatedButton = 2131624420;
 			
 			// aapt resource value: 0x7F0E01E5
-			public const int Widget_MaterialComponents_CardView = 2131624421;
-			
-			// aapt resource value: 0x7F0E01EA
-			public const int Widget_MaterialComponents_ChipGroup = 2131624426;
+			public const int Widget_MaterialComponents_Button_UnelevatedButton_Icon = 2131624421;
 			
 			// aapt resource value: 0x7F0E01E6
-			public const int Widget_MaterialComponents_Chip_Action = 2131624422;
-			
-			// aapt resource value: 0x7F0E01E7
-			public const int Widget_MaterialComponents_Chip_Choice = 2131624423;
-			
-			// aapt resource value: 0x7F0E01E8
-			public const int Widget_MaterialComponents_Chip_Entry = 2131624424;
-			
-			// aapt resource value: 0x7F0E01E9
-			public const int Widget_MaterialComponents_Chip_Filter = 2131624425;
+			public const int Widget_MaterialComponents_CardView = 2131624422;
 			
 			// aapt resource value: 0x7F0E01EB
-			public const int Widget_MaterialComponents_FloatingActionButton = 2131624427;
+			public const int Widget_MaterialComponents_ChipGroup = 2131624427;
+			
+			// aapt resource value: 0x7F0E01E7
+			public const int Widget_MaterialComponents_Chip_Action = 2131624423;
+			
+			// aapt resource value: 0x7F0E01E8
+			public const int Widget_MaterialComponents_Chip_Choice = 2131624424;
+			
+			// aapt resource value: 0x7F0E01E9
+			public const int Widget_MaterialComponents_Chip_Entry = 2131624425;
+			
+			// aapt resource value: 0x7F0E01EA
+			public const int Widget_MaterialComponents_Chip_Filter = 2131624426;
 			
 			// aapt resource value: 0x7F0E01EC
-			public const int Widget_MaterialComponents_NavigationView = 2131624428;
+			public const int Widget_MaterialComponents_FloatingActionButton = 2131624428;
 			
 			// aapt resource value: 0x7F0E01ED
-			public const int Widget_MaterialComponents_Snackbar = 2131624429;
+			public const int Widget_MaterialComponents_NavigationView = 2131624429;
 			
 			// aapt resource value: 0x7F0E01EE
-			public const int Widget_MaterialComponents_Snackbar_FullWidth = 2131624430;
+			public const int Widget_MaterialComponents_Snackbar = 2131624430;
 			
 			// aapt resource value: 0x7F0E01EF
-			public const int Widget_MaterialComponents_TabLayout = 2131624431;
+			public const int Widget_MaterialComponents_Snackbar_FullWidth = 2131624431;
 			
 			// aapt resource value: 0x7F0E01F0
-			public const int Widget_MaterialComponents_TabLayout_Colored = 2131624432;
+			public const int Widget_MaterialComponents_TabLayout = 2131624432;
 			
 			// aapt resource value: 0x7F0E01F1
-			public const int Widget_MaterialComponents_TextInputEditText_FilledBox = 2131624433;
+			public const int Widget_MaterialComponents_TabLayout_Colored = 2131624433;
 			
 			// aapt resource value: 0x7F0E01F2
-			public const int Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131624434;
+			public const int Widget_MaterialComponents_TextInputEditText_FilledBox = 2131624434;
 			
 			// aapt resource value: 0x7F0E01F3
-			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox = 2131624435;
+			public const int Widget_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131624435;
 			
 			// aapt resource value: 0x7F0E01F4
-			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131624436;
+			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox = 2131624436;
 			
 			// aapt resource value: 0x7F0E01F5
-			public const int Widget_MaterialComponents_TextInputLayout_FilledBox = 2131624437;
+			public const int Widget_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131624437;
 			
 			// aapt resource value: 0x7F0E01F6
-			public const int Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = 2131624438;
+			public const int Widget_MaterialComponents_TextInputLayout_FilledBox = 2131624438;
 			
 			// aapt resource value: 0x7F0E01F7
-			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox = 2131624439;
+			public const int Widget_MaterialComponents_TextInputLayout_FilledBox_Dense = 2131624439;
 			
 			// aapt resource value: 0x7F0E01F8
-			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = 2131624440;
+			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox = 2131624440;
 			
 			// aapt resource value: 0x7F0E01F9
-			public const int Widget_MaterialComponents_Toolbar = 2131624441;
+			public const int Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense = 2131624441;
 			
 			// aapt resource value: 0x7F0E01FA
-			public const int Widget_Support_CoordinatorLayout = 2131624442;
+			public const int Widget_MaterialComponents_Toolbar = 2131624442;
+			
+			// aapt resource value: 0x7F0E01FB
+			public const int Widget_Support_CoordinatorLayout = 2131624443;
 			
 			static Style()
 			{
@@ -17173,7 +22613,7 @@ namespace LiLo.Lite.Droid
 		public partial class Styleable
 		{
 			
-			// aapt resource value: { 0x7F03003D,0x7F03003E,0x7F03003F,0x7F03009F,0x7F0300A0,0x7F0300A1,0x7F0300A2,0x7F0300A3,0x7F0300A4,0x7F0300B2,0x7F0300B7,0x7F0300B8,0x7F0300CB,0x7F0300F5,0x7F0300FA,0x7F0300FF,0x7F030100,0x7F030102,0x7F03010C,0x7F030116,0x7F03013D,0x7F030149,0x7F03015A,0x7F03015E,0x7F03015F,0x7F03018E,0x7F030191,0x7F0301D7,0x7F0301E1 }
+			// aapt resource value: { 0x7F03003D,0x7F03003E,0x7F03003F,0x7F03009F,0x7F0300A0,0x7F0300A1,0x7F0300A2,0x7F0300A3,0x7F0300A4,0x7F0300B2,0x7F0300B7,0x7F0300B8,0x7F0300CB,0x7F0300F5,0x7F0300FA,0x7F0300FF,0x7F030100,0x7F030102,0x7F03010C,0x7F030116,0x7F03013D,0x7F030149,0x7F03015A,0x7F03015E,0x7F03015F,0x7F03018F,0x7F030192,0x7F0301D8,0x7F0301E2 }
 			public static int[] ActionBar = new int[] {
 					2130903101,
 					2130903102,
@@ -17200,10 +22640,10 @@ namespace LiLo.Lite.Droid
 					2130903386,
 					2130903390,
 					2130903391,
-					2130903438,
-					2130903441,
-					2130903511,
-					2130903521};
+					2130903439,
+					2130903442,
+					2130903512,
+					2130903522};
 			
 			// aapt resource value: { 0x10100B3 }
 			public static int[] ActionBarLayout = new int[] {
@@ -17310,14 +22750,14 @@ namespace LiLo.Lite.Droid
 			public static int[] ActionMenuView = new int[] {
 					-1};
 			
-			// aapt resource value: { 0x7F03003D,0x7F03003E,0x7F03008B,0x7F0300F5,0x7F030191,0x7F0301E1 }
+			// aapt resource value: { 0x7F03003D,0x7F03003E,0x7F03008B,0x7F0300F5,0x7F030192,0x7F0301E2 }
 			public static int[] ActionMode = new int[] {
 					2130903101,
 					2130903102,
 					2130903179,
 					2130903285,
-					2130903441,
-					2130903521};
+					2130903442,
+					2130903522};
 			
 			// aapt resource value: 0
 			public const int ActionMode_background = 0;
@@ -17348,7 +22788,7 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 1
 			public const int ActivityChooserView_initialActivityCount = 1;
 			
-			// aapt resource value: { 0x10100F2,0x7F03005F,0x7F030060,0x7F030132,0x7F030133,0x7F030146,0x7F030176,0x7F030177 }
+			// aapt resource value: { 0x10100F2,0x7F03005F,0x7F030060,0x7F030132,0x7F030133,0x7F030146,0x7F030177,0x7F030178 }
 			public static int[] AlertDialog = new int[] {
 					16842994,
 					2130903135,
@@ -17356,8 +22796,8 @@ namespace LiLo.Lite.Droid
 					2130903346,
 					2130903347,
 					2130903366,
-					2130903414,
-					2130903415};
+					2130903415,
+					2130903416};
 			
 			// aapt resource value: 0
 			public const int AlertDialog_android_layout = 0;
@@ -17449,12 +22889,12 @@ namespace LiLo.Lite.Droid
 					2130903249,
 					2130903339};
 			
-			// aapt resource value: { 0x7F030184,0x7F030185,0x7F030186,0x7F030187 }
+			// aapt resource value: { 0x7F030185,0x7F030186,0x7F030187,0x7F030188 }
 			public static int[] AppBarLayoutStates = new int[] {
-					2130903428,
 					2130903429,
 					2130903430,
-					2130903431};
+					2130903431,
+					2130903432};
 			
 			// aapt resource value: 0
 			public const int AppBarLayoutStates_state_collapsed = 0;
@@ -17497,12 +22937,12 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 5
 			public const int AppBarLayout_liftOnScroll = 5;
 			
-			// aapt resource value: { 0x1010119,0x7F030181,0x7F0301D5,0x7F0301D6 }
+			// aapt resource value: { 0x1010119,0x7F030182,0x7F0301D6,0x7F0301D7 }
 			public static int[] AppCompatImageView = new int[] {
 					16843033,
-					2130903425,
-					2130903509,
-					2130903510};
+					2130903426,
+					2130903510,
+					2130903511};
 			
 			// aapt resource value: 0
 			public const int AppCompatImageView_android_src = 0;
@@ -17516,12 +22956,12 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 3
 			public const int AppCompatImageView_tintMode = 3;
 			
-			// aapt resource value: { 0x1010142,0x7F0301D2,0x7F0301D3,0x7F0301D4 }
+			// aapt resource value: { 0x1010142,0x7F0301D3,0x7F0301D4,0x7F0301D5 }
 			public static int[] AppCompatSeekBar = new int[] {
 					16843074,
-					2130903506,
 					2130903507,
-					2130903508};
+					2130903508,
+					2130903509};
 			
 			// aapt resource value: 0
 			public const int AppCompatSeekBar_android_thumb = 0;
@@ -17566,7 +23006,7 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 0
 			public const int AppCompatTextHelper_android_textAppearance = 0;
 			
-			// aapt resource value: { 0x1010034,0x7F030038,0x7F030039,0x7F03003A,0x7F03003B,0x7F03003C,0x7F0300BC,0x7F0300BD,0x7F0300BE,0x7F0300BF,0x7F0300C1,0x7F0300C2,0x7F0300C3,0x7F0300C4,0x7F0300E4,0x7F0300E7,0x7F0300EF,0x7F03011E,0x7F03012C,0x7F0301B1,0x7F0301CB }
+			// aapt resource value: { 0x1010034,0x7F030038,0x7F030039,0x7F03003A,0x7F03003B,0x7F03003C,0x7F0300BC,0x7F0300BD,0x7F0300BE,0x7F0300BF,0x7F0300C1,0x7F0300C2,0x7F0300C3,0x7F0300C4,0x7F0300E4,0x7F0300E7,0x7F0300EF,0x7F03011E,0x7F03012C,0x7F0301B2,0x7F0301CC }
 			public static int[] AppCompatTextView = new int[] {
 					16842804,
 					2130903096,
@@ -17587,8 +23027,8 @@ namespace LiLo.Lite.Droid
 					2130903279,
 					2130903326,
 					2130903340,
-					2130903473,
-					2130903499};
+					2130903474,
+					2130903500};
 			
 			// aapt resource value: 0
 			public const int AppCompatTextView_android_textAppearance = 0;
@@ -17653,7 +23093,7 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 20
 			public const int AppCompatTextView_textLocale = 20;
 			
-			// aapt resource value: { 0x1010057,0x10100AE,0x7F030000,0x7F030001,0x7F030002,0x7F030003,0x7F030004,0x7F030005,0x7F030006,0x7F030007,0x7F030008,0x7F030009,0x7F03000A,0x7F03000B,0x7F03000C,0x7F03000E,0x7F03000F,0x7F030010,0x7F030011,0x7F030012,0x7F030013,0x7F030014,0x7F030015,0x7F030016,0x7F030017,0x7F030018,0x7F030019,0x7F03001A,0x7F03001B,0x7F03001C,0x7F03001D,0x7F03001E,0x7F030021,0x7F03002E,0x7F03002F,0x7F030030,0x7F030031,0x7F030037,0x7F03004A,0x7F030058,0x7F030059,0x7F03005A,0x7F03005B,0x7F03005C,0x7F030061,0x7F030062,0x7F03006C,0x7F030071,0x7F030092,0x7F030093,0x7F030094,0x7F030095,0x7F030096,0x7F030097,0x7F030098,0x7F030099,0x7F03009A,0x7F03009C,0x7F0300AB,0x7F0300B4,0x7F0300B5,0x7F0300B6,0x7F0300B9,0x7F0300BB,0x7F0300C6,0x7F0300C7,0x7F0300C8,0x7F0300C9,0x7F0300CA,0x7F0300FF,0x7F03010B,0x7F03012E,0x7F03012F,0x7F030130,0x7F030131,0x7F030134,0x7F030135,0x7F030136,0x7F030137,0x7F030138,0x7F030139,0x7F03013A,0x7F03013B,0x7F03013C,0x7F030151,0x7F030152,0x7F030153,0x7F030159,0x7F03015B,0x7F030162,0x7F030163,0x7F030164,0x7F030165,0x7F03016E,0x7F03016F,0x7F030170,0x7F030171,0x7F03017E,0x7F03017F,0x7F030195,0x7F0301BC,0x7F0301BD,0x7F0301BE,0x7F0301BF,0x7F0301C1,0x7F0301C2,0x7F0301C3,0x7F0301C4,0x7F0301C7,0x7F0301C8,0x7F0301E3,0x7F0301E4,0x7F0301E5,0x7F0301E6,0x7F0301ED,0x7F0301EF,0x7F0301F0,0x7F0301F1,0x7F0301F2,0x7F0301F3,0x7F0301F4,0x7F0301F5,0x7F0301F6,0x7F0301F7,0x7F0301F8 }
+			// aapt resource value: { 0x1010057,0x10100AE,0x7F030000,0x7F030001,0x7F030002,0x7F030003,0x7F030004,0x7F030005,0x7F030006,0x7F030007,0x7F030008,0x7F030009,0x7F03000A,0x7F03000B,0x7F03000C,0x7F03000E,0x7F03000F,0x7F030010,0x7F030011,0x7F030012,0x7F030013,0x7F030014,0x7F030015,0x7F030016,0x7F030017,0x7F030018,0x7F030019,0x7F03001A,0x7F03001B,0x7F03001C,0x7F03001D,0x7F03001E,0x7F030021,0x7F03002E,0x7F03002F,0x7F030030,0x7F030031,0x7F030037,0x7F03004A,0x7F030058,0x7F030059,0x7F03005A,0x7F03005B,0x7F03005C,0x7F030061,0x7F030062,0x7F03006C,0x7F030071,0x7F030092,0x7F030093,0x7F030094,0x7F030095,0x7F030096,0x7F030097,0x7F030098,0x7F030099,0x7F03009A,0x7F03009C,0x7F0300AB,0x7F0300B4,0x7F0300B5,0x7F0300B6,0x7F0300B9,0x7F0300BB,0x7F0300C6,0x7F0300C7,0x7F0300C8,0x7F0300C9,0x7F0300CA,0x7F0300FF,0x7F03010B,0x7F03012E,0x7F03012F,0x7F030130,0x7F030131,0x7F030134,0x7F030135,0x7F030136,0x7F030137,0x7F030138,0x7F030139,0x7F03013A,0x7F03013B,0x7F03013C,0x7F030151,0x7F030152,0x7F030153,0x7F030159,0x7F03015B,0x7F030162,0x7F030163,0x7F030164,0x7F030165,0x7F03016F,0x7F030170,0x7F030171,0x7F030172,0x7F03017F,0x7F030180,0x7F030196,0x7F0301BD,0x7F0301BE,0x7F0301BF,0x7F0301C0,0x7F0301C2,0x7F0301C3,0x7F0301C4,0x7F0301C5,0x7F0301C8,0x7F0301C9,0x7F0301E4,0x7F0301E5,0x7F0301E6,0x7F0301E7,0x7F0301EE,0x7F0301F0,0x7F0301F1,0x7F0301F2,0x7F0301F3,0x7F0301F4,0x7F0301F5,0x7F0301F6,0x7F0301F7,0x7F0301F8,0x7F0301F9 }
 			public static int[] AppCompatTheme = new int[] {
 					16842839,
 					16842926,
@@ -17748,29 +23188,28 @@ namespace LiLo.Lite.Droid
 					2130903395,
 					2130903396,
 					2130903397,
-					2130903406,
 					2130903407,
 					2130903408,
 					2130903409,
-					2130903422,
+					2130903410,
 					2130903423,
-					2130903445,
-					2130903484,
+					2130903424,
+					2130903446,
 					2130903485,
 					2130903486,
 					2130903487,
-					2130903489,
+					2130903488,
 					2130903490,
 					2130903491,
 					2130903492,
-					2130903495,
+					2130903493,
 					2130903496,
-					2130903523,
+					2130903497,
 					2130903524,
 					2130903525,
 					2130903526,
-					2130903533,
-					2130903535,
+					2130903527,
+					2130903534,
 					2130903536,
 					2130903537,
 					2130903538,
@@ -17779,7 +23218,8 @@ namespace LiLo.Lite.Droid
 					2130903541,
 					2130903542,
 					2130903543,
-					2130903544};
+					2130903544,
+					2130903545};
 			
 			// aapt resource value: 2
 			public const int AppCompatTheme_actionBarDivider = 2;
@@ -18307,7 +23747,7 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 12
 			public const int CardView_contentPaddingTop = 12;
 			
-			// aapt resource value: { 0x1010034,0x10100AB,0x101011F,0x101014F,0x10101E5,0x7F03006E,0x7F03006F,0x7F030070,0x7F030072,0x7F030073,0x7F030074,0x7F030076,0x7F030077,0x7F030078,0x7F030079,0x7F03007A,0x7F03007B,0x7F030080,0x7F030081,0x7F030082,0x7F030084,0x7F030085,0x7F030086,0x7F030087,0x7F030088,0x7F030089,0x7F03008A,0x7F0300F9,0x7F030103,0x7F030107,0x7F030168,0x7F030174,0x7F0301C9,0x7F0301CC }
+			// aapt resource value: { 0x1010034,0x10100AB,0x101011F,0x101014F,0x10101E5,0x7F03006E,0x7F03006F,0x7F030070,0x7F030072,0x7F030073,0x7F030074,0x7F030076,0x7F030077,0x7F030078,0x7F030079,0x7F03007A,0x7F03007B,0x7F030080,0x7F030081,0x7F030082,0x7F030084,0x7F030085,0x7F030086,0x7F030087,0x7F030088,0x7F030089,0x7F03008A,0x7F0300F9,0x7F030103,0x7F030107,0x7F030168,0x7F030175,0x7F0301CA,0x7F0301CD }
 			public static int[] Chip = new int[] {
 					16842804,
 					16842923,
@@ -18340,18 +23780,18 @@ namespace LiLo.Lite.Droid
 					2130903299,
 					2130903303,
 					2130903400,
-					2130903412,
-					2130903497,
-					2130903500};
+					2130903413,
+					2130903498,
+					2130903501};
 			
-			// aapt resource value: { 0x7F03006D,0x7F03007C,0x7F03007D,0x7F03007E,0x7F030178,0x7F030179 }
+			// aapt resource value: { 0x7F03006D,0x7F03007C,0x7F03007D,0x7F03007E,0x7F030179,0x7F03017A }
 			public static int[] ChipGroup = new int[] {
 					2130903149,
 					2130903164,
 					2130903165,
 					2130903166,
-					2130903416,
-					2130903417};
+					2130903417,
+					2130903418};
 			
 			// aapt resource value: 0
 			public const int ChipGroup_checkedChip = 0;
@@ -18473,7 +23913,7 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 33
 			public const int Chip_textStartPadding = 33;
 			
-			// aapt resource value: { 0x7F03008E,0x7F03008F,0x7F0300AA,0x7F0300D2,0x7F0300D3,0x7F0300D4,0x7F0300D5,0x7F0300D6,0x7F0300D7,0x7F0300D8,0x7F030169,0x7F03016B,0x7F030189,0x7F0301D7,0x7F0301D8,0x7F0301E2 }
+			// aapt resource value: { 0x7F03008E,0x7F03008F,0x7F0300AA,0x7F0300D2,0x7F0300D3,0x7F0300D4,0x7F0300D5,0x7F0300D6,0x7F0300D7,0x7F0300D8,0x7F030169,0x7F03016B,0x7F03018A,0x7F0301D8,0x7F0301D9,0x7F0301E3 }
 			public static int[] CollapsingToolbarLayout = new int[] {
 					2130903182,
 					2130903183,
@@ -18487,10 +23927,10 @@ namespace LiLo.Lite.Droid
 					2130903256,
 					2130903401,
 					2130903403,
-					2130903433,
-					2130903511,
+					2130903434,
 					2130903512,
-					2130903522};
+					2130903513,
+					2130903523};
 			
 			// aapt resource value: 0
 			public const int CollapsingToolbarLayout_collapsedTitleGravity = 0;
@@ -18585,10 +24025,10 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 3
 			public const int CompoundButton_buttonTintMode = 3;
 			
-			// aapt resource value: { 0x7F03011C,0x7F030188 }
+			// aapt resource value: { 0x7F03011C,0x7F030189 }
 			public static int[] CoordinatorLayout = new int[] {
 					2130903324,
-					2130903432};
+					2130903433};
 			
 			// aapt resource value: 0
 			public const int CoordinatorLayout_keylines = 0;
@@ -18638,7 +24078,7 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 1
 			public const int DesignTheme_bottomSheetStyle = 1;
 			
-			// aapt resource value: { 0x7F030035,0x7F030036,0x7F030042,0x7F030091,0x7F0300C0,0x7F0300F2,0x7F03017D,0x7F0301CE }
+			// aapt resource value: { 0x7F030035,0x7F030036,0x7F030042,0x7F030091,0x7F0300C0,0x7F0300F2,0x7F03017E,0x7F0301CF }
 			public static int[] DrawerArrowToggle = new int[] {
 					2130903093,
 					2130903094,
@@ -18646,8 +24086,8 @@ namespace LiLo.Lite.Droid
 					2130903185,
 					2130903232,
 					2130903282,
-					2130903421,
-					2130903502};
+					2130903422,
+					2130903503};
 			
 			// aapt resource value: 0
 			public const int DrawerArrowToggle_arrowHeadLength = 0;
@@ -18673,7 +24113,7 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 7
 			public const int DrawerArrowToggle_thickness = 7;
 			
-			// aapt resource value: { 0x7F030040,0x7F030041,0x7F030049,0x7F0300CB,0x7F0300DD,0x7F0300DE,0x7F0300F9,0x7F030101,0x7F030143,0x7F03015D,0x7F030168,0x7F030174,0x7F0301EC }
+			// aapt resource value: { 0x7F030040,0x7F030041,0x7F030049,0x7F0300CB,0x7F0300DD,0x7F0300DE,0x7F0300F9,0x7F030101,0x7F030143,0x7F03015D,0x7F030168,0x7F030175,0x7F0301ED }
 			public static int[] FloatingActionButton = new int[] {
 					2130903104,
 					2130903105,
@@ -18686,8 +24126,8 @@ namespace LiLo.Lite.Droid
 					2130903363,
 					2130903389,
 					2130903400,
-					2130903412,
-					2130903532};
+					2130903413,
+					2130903533};
 			
 			// aapt resource value: 0
 			public const int FloatingActionButton_backgroundTint = 0;
@@ -18755,7 +24195,7 @@ namespace LiLo.Lite.Droid
 					2130903276,
 					2130903277};
 			
-			// aapt resource value: { 0x1010532,0x1010533,0x101053F,0x101056F,0x1010570,0x7F0300E6,0x7F0300EE,0x7F0300EF,0x7F0300F0,0x7F0301EB }
+			// aapt resource value: { 0x1010532,0x1010533,0x101053F,0x101056F,0x1010570,0x7F0300E6,0x7F0300EE,0x7F0300EF,0x7F0300F0,0x7F0301EC }
 			public static int[] FontFamilyFont = new int[] {
 					16844082,
 					16844083,
@@ -18766,7 +24206,7 @@ namespace LiLo.Lite.Droid
 					2130903278,
 					2130903279,
 					2130903280,
-					2130903531};
+					2130903532};
 			
 			// aapt resource value: 0
 			public const int FontFamilyFont_android_font = 0;
@@ -18926,7 +24366,7 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 0
 			public const int ItemsViewRendererTheme_collectionViewStyle = 0;
 			
-			// aapt resource value: { 0x10100AF,0x10100C4,0x1010126,0x1010127,0x1010128,0x7F0300B8,0x7F0300BA,0x7F030144,0x7F030173 }
+			// aapt resource value: { 0x10100AF,0x10100C4,0x1010126,0x1010127,0x1010128,0x7F0300B8,0x7F0300BA,0x7F030144,0x7F030174 }
 			public static int[] LinearLayoutCompat = new int[] {
 					16842927,
 					16842948,
@@ -18936,7 +24376,7 @@ namespace LiLo.Lite.Droid
 					2130903224,
 					2130903226,
 					2130903364,
-					2130903411};
+					2130903412};
 			
 			// aapt resource value: 2
 			public const int LinearLayoutCompat_android_baselineAligned = 2;
@@ -18995,7 +24435,7 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 1
 			public const int ListPopupWindow_android_dropDownVerticalOffset = 1;
 			
-			// aapt resource value: { 0x10101B7,0x10101B8,0x10101B9,0x10101BA,0x7F030040,0x7F030041,0x7F0300AD,0x7F030102,0x7F030104,0x7F030105,0x7F030106,0x7F030108,0x7F030109,0x7F030168,0x7F03018A,0x7F03018B }
+			// aapt resource value: { 0x10101B7,0x10101B8,0x10101B9,0x10101BA,0x7F030040,0x7F030041,0x7F0300AD,0x7F030102,0x7F030104,0x7F030105,0x7F030106,0x7F030108,0x7F030109,0x7F030168,0x7F03018B,0x7F03018C }
 			public static int[] MaterialButton = new int[] {
 					16843191,
 					16843192,
@@ -19011,8 +24451,8 @@ namespace LiLo.Lite.Droid
 					2130903304,
 					2130903305,
 					2130903400,
-					2130903434,
-					2130903435};
+					2130903435,
+					2130903436};
 			
 			// aapt resource value: 3
 			public const int MaterialButton_android_insetBottom = 3;
@@ -19062,10 +24502,10 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 15
 			public const int MaterialButton_strokeWidth = 15;
 			
-			// aapt resource value: { 0x7F03018A,0x7F03018B }
+			// aapt resource value: { 0x7F03018B,0x7F03018C }
 			public static int[] MaterialCardView = new int[] {
-					2130903434,
-					2130903435};
+					2130903435,
+					2130903436};
 			
 			// aapt resource value: 0
 			public const int MaterialCardView_strokeColor = 0;
@@ -19073,7 +24513,7 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 1
 			public const int MaterialCardView_strokeWidth = 1;
 			
-			// aapt resource value: { 0x7F03004D,0x7F03004E,0x7F030075,0x7F03007F,0x7F030083,0x7F030092,0x7F030093,0x7F030099,0x7F03009A,0x7F03009B,0x7F0300CA,0x7F0300E5,0x7F03013F,0x7F030140,0x7F03014A,0x7F03016A,0x7F03017A,0x7F0301AD,0x7F0301B2,0x7F0301B3,0x7F0301B4,0x7F0301B5,0x7F0301B6,0x7F0301B7,0x7F0301B8,0x7F0301B9,0x7F0301BA,0x7F0301BB,0x7F0301C0,0x7F0301C5,0x7F0301C6,0x7F0301CA }
+			// aapt resource value: { 0x7F03004D,0x7F03004E,0x7F030075,0x7F03007F,0x7F030083,0x7F030092,0x7F030093,0x7F030099,0x7F03009A,0x7F03009B,0x7F0300CA,0x7F0300E5,0x7F03013F,0x7F030140,0x7F03014A,0x7F03016A,0x7F03017B,0x7F0301AE,0x7F0301B3,0x7F0301B4,0x7F0301B5,0x7F0301B6,0x7F0301B7,0x7F0301B8,0x7F0301B9,0x7F0301BA,0x7F0301BB,0x7F0301BC,0x7F0301C1,0x7F0301C6,0x7F0301C7,0x7F0301CB }
 			public static int[] MaterialComponentsTheme = new int[] {
 					2130903117,
 					2130903118,
@@ -19091,9 +24531,8 @@ namespace LiLo.Lite.Droid
 					2130903360,
 					2130903370,
 					2130903402,
-					2130903418,
-					2130903469,
-					2130903474,
+					2130903419,
+					2130903470,
 					2130903475,
 					2130903476,
 					2130903477,
@@ -19103,10 +24542,11 @@ namespace LiLo.Lite.Droid
 					2130903481,
 					2130903482,
 					2130903483,
-					2130903488,
-					2130903493,
+					2130903484,
+					2130903489,
 					2130903494,
-					2130903498};
+					2130903495,
+					2130903499};
 			
 			// aapt resource value: 0
 			public const int MaterialComponentsTheme_bottomSheetDialogTheme = 0;
@@ -19231,7 +24671,7 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 2
 			public const int MenuGroup_android_visible = 2;
 			
-			// aapt resource value: { 0x1010002,0x101000E,0x10100D0,0x1010106,0x1010194,0x10101DE,0x10101DF,0x10101E1,0x10101E2,0x10101E3,0x10101E4,0x10101E5,0x101026F,0x7F03000D,0x7F03001F,0x7F030020,0x7F030034,0x7F03009E,0x7F030108,0x7F030109,0x7F03014B,0x7F030172,0x7F0301E7 }
+			// aapt resource value: { 0x1010002,0x101000E,0x10100D0,0x1010106,0x1010194,0x10101DE,0x10101DF,0x10101E1,0x10101E2,0x10101E3,0x10101E4,0x10101E5,0x101026F,0x7F03000D,0x7F03001F,0x7F030020,0x7F030034,0x7F03009E,0x7F030108,0x7F030109,0x7F03014B,0x7F030173,0x7F0301E8 }
 			public static int[] MenuItem = new int[] {
 					16842754,
 					16842766,
@@ -19254,8 +24694,8 @@ namespace LiLo.Lite.Droid
 					2130903304,
 					2130903305,
 					2130903371,
-					2130903410,
-					2130903527};
+					2130903411,
+					2130903528};
 			
 			// aapt resource value: 13
 			public const int MenuItem_actionLayout = 13;
@@ -19326,7 +24766,7 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 22
 			public const int MenuItem_tooltipText = 22;
 			
-			// aapt resource value: { 0x10100AE,0x101012C,0x101012D,0x101012E,0x101012F,0x1010130,0x1010131,0x7F03015C,0x7F03018C }
+			// aapt resource value: { 0x10100AE,0x101012C,0x101012D,0x101012E,0x101012F,0x1010130,0x1010131,0x7F03015C,0x7F03018D }
 			public static int[] MenuView = new int[] {
 					16842926,
 					16843052,
@@ -19336,7 +24776,7 @@ namespace LiLo.Lite.Droid
 					16843056,
 					16843057,
 					2130903388,
-					2130903436};
+					2130903437};
 			
 			// aapt resource value: 4
 			public const int MenuView_android_headerBackground = 4;
@@ -19422,9 +24862,9 @@ namespace LiLo.Lite.Droid
 					16843465,
 					2130903372};
 			
-			// aapt resource value: { 0x7F030183 }
+			// aapt resource value: { 0x7F030184 }
 			public static int[] PopupWindowBackgroundState = new int[] {
-					2130903427};
+					2130903428};
 			
 			// aapt resource value: 0
 			public const int PopupWindowBackgroundState_state_above_anchor = 0;
@@ -19500,7 +24940,7 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 1
 			public const int RecycleListView_paddingTopNoTitle = 1;
 			
-			// aapt resource value: { 0x10100C4,0x10100EB,0x10100F1,0x7F0300DF,0x7F0300E0,0x7F0300E1,0x7F0300E2,0x7F0300E3,0x7F030120,0x7F030167,0x7F03017C,0x7F030182 }
+			// aapt resource value: { 0x10100C4,0x10100EB,0x10100F1,0x7F0300DF,0x7F0300E0,0x7F0300E1,0x7F0300E2,0x7F0300E3,0x7F030120,0x7F030167,0x7F03017D,0x7F030183 }
 			public static int[] RecyclerView = new int[] {
 					16842948,
 					16842987,
@@ -19512,8 +24952,8 @@ namespace LiLo.Lite.Droid
 					2130903267,
 					2130903328,
 					2130903399,
-					2130903420,
-					2130903426};
+					2130903421,
+					2130903427};
 			
 			// aapt resource value: 1
 			public const int RecyclerView_android_clipToPadding = 1;
@@ -19565,7 +25005,14 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 0
 			public const int ScrollingViewBehavior_Layout_behavior_overlapTop = 0;
 			
-			// aapt resource value: { 0x10100DA,0x101011F,0x1010220,0x1010264,0x7F030084,0x7F03009D,0x7F0300B3,0x7F0300F3,0x7F03010A,0x7F03011F,0x7F030160,0x7F030161,0x7F03016C,0x7F03016D,0x7F03018D,0x7F030192,0x7F0301EE }
+			// aapt resource value: { 0x7F03016C }
+			public static int[] ScrollViewRendererTheme = new int[] {
+					2130903404};
+			
+			// aapt resource value: 0
+			public const int ScrollViewRendererTheme_scrollViewStyle = 0;
+			
+			// aapt resource value: { 0x10100DA,0x101011F,0x1010220,0x1010264,0x7F030084,0x7F03009D,0x7F0300B3,0x7F0300F3,0x7F03010A,0x7F03011F,0x7F030160,0x7F030161,0x7F03016D,0x7F03016E,0x7F03018E,0x7F030193,0x7F0301EF }
 			public static int[] SearchView = new int[] {
 					16842970,
 					16843039,
@@ -19579,11 +25026,11 @@ namespace LiLo.Lite.Droid
 					2130903327,
 					2130903392,
 					2130903393,
-					2130903404,
 					2130903405,
-					2130903437,
-					2130903442,
-					2130903534};
+					2130903406,
+					2130903438,
+					2130903443,
+					2130903535};
 			
 			// aapt resource value: 0
 			public const int SearchView_android_focusable = 0;
@@ -19636,10 +25083,10 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 16
 			public const int SearchView_voiceIcon = 16;
 			
-			// aapt resource value: { 0x7F03017A,0x7F03017B }
+			// aapt resource value: { 0x7F03017B,0x7F03017C }
 			public static int[] Snackbar = new int[] {
-					2130903418,
-					2130903419};
+					2130903419,
+					2130903420};
 			
 			// aapt resource value: { 0x101011F,0x7F0300CB,0x7F030141 }
 			public static int[] SnackbarLayout = new int[] {
@@ -19719,22 +25166,22 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 1
 			public const int StateListDrawable_android_visible = 1;
 			
-			// aapt resource value: { 0x1010124,0x1010125,0x1010142,0x7F030175,0x7F030180,0x7F030193,0x7F030194,0x7F030196,0x7F0301CF,0x7F0301D0,0x7F0301D1,0x7F0301E8,0x7F0301E9,0x7F0301EA }
+			// aapt resource value: { 0x1010124,0x1010125,0x1010142,0x7F030176,0x7F030181,0x7F030194,0x7F030195,0x7F030197,0x7F0301D0,0x7F0301D1,0x7F0301D2,0x7F0301E9,0x7F0301EA,0x7F0301EB }
 			public static int[] SwitchCompat = new int[] {
 					16843044,
 					16843045,
 					16843074,
-					2130903413,
-					2130903424,
-					2130903443,
+					2130903414,
+					2130903425,
 					2130903444,
-					2130903446,
-					2130903503,
+					2130903445,
+					2130903447,
 					2130903504,
 					2130903505,
-					2130903528,
+					2130903506,
 					2130903529,
-					2130903530};
+					2130903530,
+					2130903531};
 			
 			// aapt resource value: 1
 			public const int SwitchCompat_android_textOff = 1;
@@ -19793,9 +25240,8 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 2
 			public const int TabItem_android_text = 2;
 			
-			// aapt resource value: { 0x7F030197,0x7F030198,0x7F030199,0x7F03019A,0x7F03019B,0x7F03019C,0x7F03019D,0x7F03019E,0x7F03019F,0x7F0301A0,0x7F0301A1,0x7F0301A2,0x7F0301A3,0x7F0301A4,0x7F0301A5,0x7F0301A6,0x7F0301A7,0x7F0301A8,0x7F0301A9,0x7F0301AA,0x7F0301AB,0x7F0301AC,0x7F0301AE,0x7F0301AF,0x7F0301B0 }
+			// aapt resource value: { 0x7F030198,0x7F030199,0x7F03019A,0x7F03019B,0x7F03019C,0x7F03019D,0x7F03019E,0x7F03019F,0x7F0301A0,0x7F0301A1,0x7F0301A2,0x7F0301A3,0x7F0301A4,0x7F0301A5,0x7F0301A6,0x7F0301A7,0x7F0301A8,0x7F0301A9,0x7F0301AA,0x7F0301AB,0x7F0301AC,0x7F0301AD,0x7F0301AF,0x7F0301B0,0x7F0301B1 }
 			public static int[] TabLayout = new int[] {
-					2130903447,
 					2130903448,
 					2130903449,
 					2130903450,
@@ -19817,9 +25263,10 @@ namespace LiLo.Lite.Droid
 					2130903466,
 					2130903467,
 					2130903468,
-					2130903470,
+					2130903469,
 					2130903471,
-					2130903472};
+					2130903472,
+					2130903473};
 			
 			// aapt resource value: 0
 			public const int TabLayout_tabBackground = 0;
@@ -19896,7 +25343,7 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 24
 			public const int TabLayout_tabUnboundedRipple = 24;
 			
-			// aapt resource value: { 0x1010095,0x1010096,0x1010097,0x1010098,0x101009A,0x101009B,0x1010161,0x1010162,0x1010163,0x1010164,0x10103AC,0x1010585,0x7F0300E7,0x7F0300EF,0x7F0301B1,0x7F0301CB }
+			// aapt resource value: { 0x1010095,0x1010096,0x1010097,0x1010098,0x101009A,0x101009B,0x1010161,0x1010162,0x1010163,0x1010164,0x10103AC,0x1010585,0x7F0300E7,0x7F0300EF,0x7F0301B2,0x7F0301CC }
 			public static int[] TextAppearance = new int[] {
 					16842901,
 					16842902,
@@ -19912,8 +25359,8 @@ namespace LiLo.Lite.Droid
 					16844165,
 					2130903271,
 					2130903279,
-					2130903473,
-					2130903499};
+					2130903474,
+					2130903500};
 			
 			// aapt resource value: 10
 			public const int TextAppearance_android_fontFamily = 10;
@@ -20093,7 +25540,7 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 2
 			public const int ThemeEnforcement_enforceTextAppearance = 2;
 			
-			// aapt resource value: { 0x10100AF,0x1010140,0x7F03005E,0x7F03008C,0x7F03008D,0x7F03009F,0x7F0300A0,0x7F0300A1,0x7F0300A2,0x7F0300A3,0x7F0300A4,0x7F03013D,0x7F03013E,0x7F030142,0x7F030145,0x7F030147,0x7F030148,0x7F03015A,0x7F03018E,0x7F03018F,0x7F030190,0x7F0301D7,0x7F0301D9,0x7F0301DA,0x7F0301DB,0x7F0301DC,0x7F0301DD,0x7F0301DE,0x7F0301DF,0x7F0301E0 }
+			// aapt resource value: { 0x10100AF,0x1010140,0x7F03005E,0x7F03008C,0x7F03008D,0x7F03009F,0x7F0300A0,0x7F0300A1,0x7F0300A2,0x7F0300A3,0x7F0300A4,0x7F03013D,0x7F03013E,0x7F030142,0x7F030145,0x7F030147,0x7F030148,0x7F03015A,0x7F03018F,0x7F030190,0x7F030191,0x7F0301D8,0x7F0301DA,0x7F0301DB,0x7F0301DC,0x7F0301DD,0x7F0301DE,0x7F0301DF,0x7F0301E0,0x7F0301E1 }
 			public static int[] Toolbar = new int[] {
 					16842927,
 					16843072,
@@ -20113,18 +25560,18 @@ namespace LiLo.Lite.Droid
 					2130903367,
 					2130903368,
 					2130903386,
-					2130903438,
 					2130903439,
 					2130903440,
-					2130903511,
-					2130903513,
+					2130903441,
+					2130903512,
 					2130903514,
 					2130903515,
 					2130903516,
 					2130903517,
 					2130903518,
 					2130903519,
-					2130903520};
+					2130903520,
+					2130903521};
 			
 			// aapt resource value: 0
 			public const int Toolbar_android_gravity = 0;
@@ -20216,13 +25663,13 @@ namespace LiLo.Lite.Droid
 			// aapt resource value: 29
 			public const int Toolbar_titleTextColor = 29;
 			
-			// aapt resource value: { 0x1010000,0x10100DA,0x7F03014E,0x7F03014F,0x7F0301CD }
+			// aapt resource value: { 0x1010000,0x10100DA,0x7F03014E,0x7F03014F,0x7F0301CE }
 			public static int[] View = new int[] {
 					16842752,
 					16842970,
 					2130903374,
 					2130903375,
-					2130903501};
+					2130903502};
 			
 			// aapt resource value: { 0x10100D4,0x7F030040,0x7F030041 }
 			public static int[] ViewBackgroundHelper = new int[] {

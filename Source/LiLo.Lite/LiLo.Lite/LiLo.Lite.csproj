@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
 	<TargetFramework>netstandard2.0</TargetFramework>
@@ -19,19 +19,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-	<PackageReference Include="Acr.UserDialogs" Version="7.1.0.446" />
-	<PackageReference Include="CardsView" Version="2.6.3" />
-	<PackageReference Include="Microsoft.AppCenter.Analytics" Version="3.4.0" />
-	<PackageReference Include="Microsoft.AppCenter.Crashes" Version="3.4.0" />
-	<PackageReference Include="Microsoft.AppCenter.Distribute" Version="3.4.0" />
-	<PackageReference Include="Resizetizer.NT" Version="0.1.0" />
+	<PackageReference Include="Acr.UserDialogs" Version="7.1.0.462" />
+	<PackageReference Include="CardsView" Version="2.6.6" />
+	<PackageReference Include="Microsoft.AppCenter.Analytics" Version="3.4.3" />
+	<PackageReference Include="Microsoft.AppCenter.Crashes" Version="3.4.3" />
+	<PackageReference Include="Microsoft.AppCenter.Distribute" Version="3.4.3" />
+	<PackageReference Include="Resizetizer.NT" Version="0.2.0" />
 	<PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
 	<PackageReference Include="System.Text.Json" Version="4.7.2" />
 	<PackageReference Include="WebSocketSharp-netstandard" Version="1.0.1" />
-	<PackageReference Include="Xamarin.Forms" Version="4.8.0.1269" />  
+	<PackageReference Include="Xamarin.Forms" Version="4.8.0.1560" />  
 	<PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />  
-	<PackageReference Include="Xamarin.Forms.PancakeView" Version="2.1.0.714" />  
-	<PackageReference Include="Xamarin.Plugin.SharedTransitions" Version="2.3.0" />
+	<PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />  
+	<PackageReference Include="Xamarin.Plugin.SharedTransitions" Version="2.4.0" />
   </ItemGroup>
 
 	<ItemGroup>
