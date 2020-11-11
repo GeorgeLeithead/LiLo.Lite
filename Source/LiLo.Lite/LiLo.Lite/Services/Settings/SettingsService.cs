@@ -13,9 +13,9 @@
 
 namespace LiLo.Lite.Services.Settings
 {
-	using System;
 	using Lilo.Lite.Services;
 	using LiLo.Lite.Models;
+	using System;
 	using Xamarin.Essentials;
 
 	/// <summary>Application settings service.</summary>

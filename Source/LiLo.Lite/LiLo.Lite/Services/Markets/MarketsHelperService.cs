@@ -13,11 +13,6 @@
 
 namespace LiLo.Lite.Services.Markets
 {
-	using System;
-	using System.Collections.ObjectModel;
-	using System.ComponentModel;
-	using System.Text.Json;
-	using System.Threading.Tasks;
 	using Lilo.Lite.Services;
 	using LiLo.Lite.Models.BinanceModels;
 	using LiLo.Lite.Models.BitMexModels;
@@ -25,6 +20,11 @@ namespace LiLo.Lite.Services.Markets
 	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.Models.Provider;
 	using LiLo.Lite.Services.Dialog;
+	using System;
+	using System.Collections.ObjectModel;
+	using System.ComponentModel;
+	using System.Text.Json;
+	using System.Threading.Tasks;
 	using WebSocketSharp;
 
 	/// <summary>Markets helper service.</summary>

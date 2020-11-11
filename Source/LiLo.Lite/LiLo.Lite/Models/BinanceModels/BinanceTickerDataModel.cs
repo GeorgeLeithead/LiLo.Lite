@@ -13,12 +13,12 @@
 
 namespace LiLo.Lite.Models.BinanceModels
 {
+	using LiLo.Lite.Models.Markets;
 	using System;
 	using System.Collections.ObjectModel;
 	using System.Linq;
 	using System.Text.Json.Serialization;
 	using System.Threading.Tasks;
-	using LiLo.Lite.Models.Markets;
 
 	/// <summary>Binance ticker symbol stream data.</summary>
 	public class BinanceTickerDataModel

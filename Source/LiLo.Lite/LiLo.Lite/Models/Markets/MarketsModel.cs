@@ -13,10 +13,10 @@
 
 namespace LiLo.Lite.Models.Markets
 {
+	using LiLo.Lite.ViewModels.Base;
 	using System;
 	using System.Globalization;
 	using System.Runtime.Serialization;
-	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.Forms.Internals;
 
 	/// <summary>Model for the Navigation List and Tile with Cards page.</summary>

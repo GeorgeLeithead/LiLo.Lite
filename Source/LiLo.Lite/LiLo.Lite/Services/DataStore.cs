@@ -1,11 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using LiLo.Lite.Models.Markets;
-using LiLo.Lite.Models.Provider;
+﻿//-----------------------------------------------------------------------
+// <copyright file="DataStore.cs" company="InternetWideWorld.com">
+// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
+//   THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
+//   OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
+//   LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+//   FITNESS FOR A PARTICULAR PURPOSE.
+// </copyright>
+// <summary>
+//   Application data store.
+// </summary>
+//-----------------------------------------------------------------------
 
 namespace LiLo.Lite.Services
 {
+	using LiLo.Lite.Models.Markets;
+	using LiLo.Lite.Models.Provider;
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+
+	/// <summary>Application data store.</summary>
 	public static class DataStore
 	{
 		public static List<MarketsModel> Markets;

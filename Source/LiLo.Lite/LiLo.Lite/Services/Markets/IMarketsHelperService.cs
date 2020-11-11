@@ -13,11 +13,11 @@
 
 namespace LiLo.Lite.Services.Markets
 {
+	using LiLo.Lite.Models.Markets;
+	using LiLo.Lite.Models.Provider;
 	using System.Collections.ObjectModel;
 	using System.ComponentModel;
 	using System.Threading.Tasks;
-	using LiLo.Lite.Models.Markets;
-	using LiLo.Lite.Models.Provider;
 	using WebSocketSharp;
 
 	/// <summary>Markets helper service.</summary>

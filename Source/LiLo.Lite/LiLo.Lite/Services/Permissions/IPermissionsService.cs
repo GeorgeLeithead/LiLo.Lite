@@ -13,9 +13,9 @@
 
 namespace LiLo.Lite.Services.Permissions
 {
+	using LiLo.Lite.Models.Permissions;
 	using System.Collections.Generic;
 	using System.Threading.Tasks;
-	using LiLo.Lite.Models.Permissions;
 
 	/// <summary>Application permissions service interface.</summary>
 	public interface IPermissionsService

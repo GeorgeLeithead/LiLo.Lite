@@ -11,11 +11,10 @@
 // </summary>
 //-----------------------------------------------------------------------
 
-
 namespace LiLo.Lite.Services.Dialog
 {
-	using System.Threading.Tasks;
 	using Acr.UserDialogs;
+	using System.Threading.Tasks;
 
 	/// <summary>Dialog service.</summary>
 	public class DialogService : IDialogService

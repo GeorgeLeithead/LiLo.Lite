@@ -13,13 +13,13 @@
 
 namespace LiLo.Lite.Behaviors
 {
+	using LiLo.Lite.Behaviors.Base;
 	using System;
 	using System.Globalization;
 	using System.Linq;
 	using System.Linq.Expressions;
 	using System.Reflection;
 	using System.Windows.Input;
-	using LiLo.Lite.Behaviors.Base;
 	using Xamarin.Forms;
 
 	/// <summary>Event to command behaviour class.</summary>

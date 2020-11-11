@@ -13,8 +13,8 @@
 
 namespace LiLo.Lite.Views
 {
-	using System;
 	using LiLo.Lite.Controls;
+	using System;
 	using Xamarin.Forms;
 	using Xamarin.Forms.Internals;
 	using Xamarin.Forms.Xaml;

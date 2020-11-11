@@ -13,14 +13,14 @@
 
 namespace LiLo.Lite.ViewModels
 {
-	using System.Collections.ObjectModel;
-	using System.Linq;
-	using System.Threading.Tasks;
-	using System.Windows.Input;
 	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.Models.Provider;
 	using LiLo.Lite.Services;
 	using LiLo.Lite.ViewModels.Base;
+	using System.Collections.ObjectModel;
+	using System.Linq;
+	using System.Threading.Tasks;
+	using System.Windows.Input;
 	using Xamarin.Forms;
 
 	/// <summary>Home view model.</summary>

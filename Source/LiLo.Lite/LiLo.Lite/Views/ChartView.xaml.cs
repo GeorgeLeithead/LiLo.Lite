@@ -13,9 +13,6 @@
 
 namespace LiLo.Lite.Views
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Globalization;
 	using Lilo.Lite;
 	using LiLo.Lite.Services.Markets;
 	using LiLo.Lite.Services.Navigation;
@@ -23,6 +20,9 @@ namespace LiLo.Lite.Views
 	using LiLo.Lite.ViewModels.Base;
 	using Microsoft.AppCenter.Analytics;
 	using PanCardView;
+	using System;
+	using System.Collections.Generic;
+	using System.Globalization;
 	using Xamarin.Forms;
 	using Xamarin.Forms.Internals;
 	using Xamarin.Forms.Xaml;

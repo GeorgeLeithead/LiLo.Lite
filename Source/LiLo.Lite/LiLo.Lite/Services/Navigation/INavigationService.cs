@@ -13,8 +13,8 @@
 
 namespace LiLo.Lite.Services.Navigation
 {
-	using System.Threading.Tasks;
 	using LiLo.Lite.ViewModels.Base;
+	using System.Threading.Tasks;
 
 	/// <summary>Navigation service interface.</summary>
 	public interface INavigationService

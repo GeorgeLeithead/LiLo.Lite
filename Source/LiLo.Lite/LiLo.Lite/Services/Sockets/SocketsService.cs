@@ -13,12 +13,12 @@
 
 namespace LiLo.Lite.Services.Sockets
 {
-	using System;
-	using System.ComponentModel;
-	using System.Threading.Tasks;
 	using Lilo.Lite.Services;
 	using LiLo.Lite.Services.Dialog;
 	using LiLo.Lite.Services.Markets;
+	using System;
+	using System.ComponentModel;
+	using System.Threading.Tasks;
 	using WebSocketSharp;
 	using Xamarin.Forms;
 

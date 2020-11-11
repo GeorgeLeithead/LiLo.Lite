@@ -13,6 +13,7 @@ namespace LiLo.Lite.Models.Provider
 {
 	using System;
 
+	/// <summary>Providers model.</summary>
 	public class ProvidersModel
 	{
 		/// <summary>Gets or sets the provider display name.</summary>

@@ -13,8 +13,6 @@
 
 namespace LiLo.Lite
 {
-	using System.Threading.Tasks;
-	using LiLo.Lite.Services.Markets;
 	using LiLo.Lite.Services.Navigation;
 	using LiLo.Lite.Services.Sockets;
 	using LiLo.Lite.ViewModels.Base;
@@ -22,6 +20,7 @@ namespace LiLo.Lite
 	using Microsoft.AppCenter.Analytics;
 	using Microsoft.AppCenter.Crashes;
 	using Microsoft.AppCenter.Distribute;
+	using System.Threading.Tasks;
 	using Xamarin.Forms;
 
 	/// <summary>LiLo application class.</summary>

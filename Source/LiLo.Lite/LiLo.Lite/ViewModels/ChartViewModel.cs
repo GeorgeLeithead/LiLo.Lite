@@ -13,12 +13,12 @@
 
 namespace LiLo.Lite.ViewModels
 {
+	using LiLo.Lite.Models.Markets;
+	using LiLo.Lite.ViewModels.Base;
 	using System.Collections.Generic;
 	using System.Collections.ObjectModel;
 	using System.Linq;
 	using System.Threading.Tasks;
-	using LiLo.Lite.Models.Markets;
-	using LiLo.Lite.ViewModels.Base;
 
 	/// <summary>Chart view model.</summary>
 	public class ChartViewModel : ViewModelBase

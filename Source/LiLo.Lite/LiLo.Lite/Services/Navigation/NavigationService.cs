@@ -13,14 +13,14 @@
 
 namespace LiLo.Lite.Services.Navigation
 {
-	using System;
-	using System.Globalization;
-	using System.Reflection;
-	using System.Threading.Tasks;
 	using LiLo.Lite.ViewModels;
 	using LiLo.Lite.ViewModels.Base;
 	using LiLo.Lite.Views;
 	using Plugin.SharedTransitions;
+	using System;
+	using System.Globalization;
+	using System.Reflection;
+	using System.Threading.Tasks;
 	using Xamarin.Forms;
 
 	/// <summary>Navigation service.</summary>
