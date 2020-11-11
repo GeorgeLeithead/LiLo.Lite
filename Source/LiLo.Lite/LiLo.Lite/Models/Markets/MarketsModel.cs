@@ -36,9 +36,6 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>24HR high price as string</summary>
 		private string highPrice24hString;
 
-		/// <summary>Market visibility</summary>
-		private bool isVisible;
-
 		/// <summary>Market image/icon</summary>
 		private string itemImage;
 
@@ -104,7 +101,6 @@ namespace LiLo.Lite.Models.Markets
 			HighPrice24hString = LowPrice24hString = LastPriceString = MarkPriceString = Price1hPercentString = Price24hPercentString = "$0.00";
 			Turnover = "0";
 			LastTickDirection = string.Empty;
-			IsVisible = true;
 		}
 
 		/// <summary>Gets or sets the number of decimal places to show for the currency.</summary>
@@ -147,20 +143,6 @@ namespace LiLo.Lite.Models.Markets
 				{
 					highPrice24hString = value;
 					NotifyPropertyChanged(() => HighPrice24hString);
-				}
-			}
-		}
-
-		/// <summary>Gets or sets a value indicating whether the market is visible.</summary>
-		public bool IsVisible
-		{
-			get => isVisible;
-			set
-			{
-				if (isVisible != value)
-				{
-					isVisible = value;
-					NotifyPropertyChanged(() => IsVisible);
 				}
 			}
 		}
