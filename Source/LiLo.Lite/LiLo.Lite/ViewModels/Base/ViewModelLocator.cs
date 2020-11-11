@@ -13,15 +13,15 @@
 
 namespace LiLo.Lite.ViewModels.Base
 {
-	using System;
-	using System.Globalization;
-	using System.Reflection;
-	using LiLo.Lite.Services.Bybit;
 	using LiLo.Lite.Services.Dependency;
+	using LiLo.Lite.Services.Dialog;
 	using LiLo.Lite.Services.Markets;
 	using LiLo.Lite.Services.Navigation;
 	using LiLo.Lite.Services.Settings;
 	using LiLo.Lite.Services.Sockets;
+	using System;
+	using System.Globalization;
+	using System.Reflection;
 	using TinyIoC;
 	using Xamarin.Forms;
 
@@ -46,11 +46,10 @@ namespace LiLo.Lite.ViewModels.Base
 			// Services - by default, TinyIoC will register interface registrations as singletons.
 			IocContainer.Register<INavigationService, NavigationService>();
 			IocContainer.Register<IDependencyService, Services.Dependency.DependencyService>();
-			IocContainer.Register<IMarketsService, MarketsService>();
 			IocContainer.Register<ISettingsService, SettingsService>();
 			IocContainer.Register<ISocketsService, SocketsService>();
-			IocContainer.Register<IBybitAuthenticationService, BybitAuthenticationService>();
 			IocContainer.Register<IMarketsHelperService, MarketsHelperService>();
+			IocContainer.Register<IDialogService, DialogService>();
 		}
 
 		/// <summary>Gets or sets a value indicating whether to use the mock service.</summary>
@@ -96,12 +95,10 @@ namespace LiLo.Lite.ViewModels.Base
 			if (useMockServices)
 			{
 				UseMockService = true;
-				IocContainer.Register<IMarketsService, MarketsService>();
 				IocContainer.Register<ISettingsService, SettingsService>();
 			}
 			else
 			{
-				IocContainer.Register<IMarketsService, MarketsService>();
 				IocContainer.Register<ISettingsService, SettingsService>();
 				UseMockService = false;
 			}

@@ -13,11 +13,10 @@
 
 namespace LiLo.Lite.Models.Markets
 {
+	using LiLo.Lite.ViewModels.Base;
 	using System;
 	using System.Globalization;
 	using System.Runtime.Serialization;
-	using LiLo.Lite.Definitions;
-	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.Forms.Internals;
 
 	/// <summary>Model for the Navigation List and Tile with Cards page.</summary>
@@ -27,12 +26,6 @@ namespace LiLo.Lite.Models.Markets
 	{
 		/// <summary>Format culture - set to US</summary>
 		private readonly CultureInfo formatCulture = CultureInfo.CreateSpecificCulture("en-US");
-
-		/// <summary>Currency ENUM</summary>
-		private CurrencyEnum currency;
-
-		/// <summary>Currency string</summary>
-		private string currencyString;
 
 		/// <summary>Number of decimal places</summary>
 		private int decimalPlaces;
@@ -70,17 +63,14 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Mark price as string</summary>
 		private string markPriceString;
 
+		/// <summary>Maximum price</summary>
+		private double maxprice;
+
 		/// <summary>Maximum trading quantity</summary>
 		private int maxtradingqty;
 
 		/// <summary>Minimum price</summary>
 		private double minprice;
-
-		/// <summary>Maximum price</summary>
-		private double maxprice;
-
-		/// <summary>Tick size</summary>
-		private double ticksize;
 
 		/// <summary>1HR price percentage</summary>
 		private double price1hPercent;
@@ -96,6 +86,9 @@ namespace LiLo.Lite.Models.Markets
 
 		/// <summary>Currency symbol as string</summary>
 		private string symbolString;
+
+		/// <summary>Tick size</summary>
+		private double ticksize;
 
 		/// <summary>Currency turnover</summary>
 		private string turnover;
@@ -114,36 +107,6 @@ namespace LiLo.Lite.Models.Markets
 			IsVisible = true;
 		}
 
-		/// <summary>Gets or sets the currency.</summary>
-		public CurrencyEnum Currency
-		{
-			get => currency;
-			set
-			{
-				if (Currency != value)
-				{
-					currency = value;
-					NotifyPropertyChanged(() => Currency);
-				}
-			}
-		}
-
-		/// <summary>Gets or sets the currency.</summary>
-		[DataMember(Name = "currency")]
-		public string CurrencyString
-		{
-			get => currencyString;
-			set
-			{
-				if (currencyString != value)
-				{
-					currencyString = value;
-					Currency = (CurrencyEnum)Enum.Parse(typeof(CurrencyEnum), value);
-					NotifyPropertyChanged(() => CurrencyString);
-				}
-			}
-		}
-
 		/// <summary>Gets or sets the number of decimal places to show for the currency.</summary>
 		[DataMember(Name = "decimalPlaces")]
 		public int DecimalPlaces
@@ -155,6 +118,9 @@ namespace LiLo.Lite.Models.Markets
 				NotifyPropertyChanged(() => DecimalPlaces);
 			}
 		}
+
+		/// <summary>Feed provider.</summary>
+		public string FeedProvider { get; set; }
 
 		/// <summary>Gets or sets the 24HR high price for the currency.</summary>
 		public double HighPrice24h
@@ -406,8 +372,8 @@ namespace LiLo.Lite.Models.Markets
 			}
 		}
 
-		/// <summary>Gets or sets the currency Symbol.</summary>
-		public SymbolEnum Symbol { get; set; }
+		/// <summary>Market ranking.</summary>
+		public int Rank { get; set; }
 
 		/// <summary>Gets or sets the currency Symbol as a string.</summary>
 		[DataMember(Name = "symbol")]
@@ -419,7 +385,6 @@ namespace LiLo.Lite.Models.Markets
 				if (symbolString != value)
 				{
 					symbolString = value;
-					Symbol = (SymbolEnum)Enum.Parse(typeof(SymbolEnum), value);
 					NotifyPropertyChanged(() => SymbolString);
 				}
 			}

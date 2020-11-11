@@ -13,8 +13,8 @@
 
 namespace LiLo.Lite.Services.Navigation
 {
-	using System.Threading.Tasks;
 	using LiLo.Lite.ViewModels.Base;
+	using System.Threading.Tasks;
 
 	/// <summary>Navigation service interface.</summary>
 	public interface INavigationService
@@ -27,5 +27,11 @@ namespace LiLo.Lite.Services.Navigation
 		/// <typeparam name="TViewModel">View Model</typeparam>
 		/// <returns>Navigation task.</returns>
 		Task NavigateToAsync<TViewModel>() where TViewModel : ViewModelBase;
+
+		/// <summary>Navigate to a generic viewModel type.</summary>
+		/// <typeparam name="TViewModel">View Model</typeparam>
+		/// <param name="parameter">Optional navigation parameter.</param>
+		/// <returns>Navigation task.</returns>
+		Task NavigateToAsync<TViewModel>(object parameter) where TViewModel : ViewModelBase;
 	}
 }

@@ -44,5 +44,7 @@ namespace LiLo.Lite.Services.Sockets
 		/// <summary>Handle when the application goes into sleep.</summary>
 		/// <returns>Successful task</returns>
 		Task WebSocket_OnSleep();
+
+		Task Connect(bool isInit = false);
 	}
 }

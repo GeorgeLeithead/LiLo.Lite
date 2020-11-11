@@ -107,7 +107,7 @@ namespace LiLo.Lite.Controls
 			}
 
 			lastPriceView.TextColor = newPrice < oldPrice ? lastPriceView.NegativeTickColor : lastPriceView.PositiveTickColor;
-			if (string.IsNullOrEmpty(lastPriceView.Tick))
+			if (string.IsNullOrEmpty(lastPriceView.Tick) || lastPriceView.Tick.Equals("X"))
 			{
 				// Handle where the price changes, but it not related to the tick (such as High/low 24h prices)
 				Color defaultBackgroundColor = lastPriceView.DefaultBackgroundColor;

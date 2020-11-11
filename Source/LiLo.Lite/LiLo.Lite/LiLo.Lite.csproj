@@ -1,46 +1,77 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
 	<TargetFramework>netstandard2.0</TargetFramework>
 	<ProduceReferenceAssembly>true</ProduceReferenceAssembly>
 	  <LangVersion>8.0</LangVersion>
-	  <Description>LiLo 'lite' is a light-weight version of LiLo, that includes live real-time market information and charting.</Description>
+	  <Description>LiLo 'lite' is a light-weight version of LiLo. The mobile application is written using Xamarin.Forms and integrates with the ByBit WebSockets service to provide live real-time market information, and using a WebView to display charting information from TradingView.</Description>
 	  <Copyright>2020 George Leithead, InternetWideWorld.com</Copyright>
 	  <PackageProjectUrl>https://github.com/GeorgeLeithead/LiLo.Lite</PackageProjectUrl>
 	  <RepositoryUrl>https://github.com/GeorgeLeithead/LiLo.Lite</RepositoryUrl>
 	  <RepositoryType>GIT</RepositoryType>
-	  <PackageTags>ByBit, Crypto, BTC, ETH, EOS, XRP</PackageTags>
+	  <PackageTags>ByBit, Binance, Crypto, BTC, ETH, EOS, XRP</PackageTags>
 	  <Company>InternetWideWorld.com</Company>
 	  <Authors>George Leithead</Authors>
 	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
 	  <PackageIcon>launcher_foreground.png</PackageIcon>
+	  <AssemblyVersion>1.0.3.0</AssemblyVersion>
+	  <FileVersion>1.0.3.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
-	<PackageReference Include="Resizetizer.NT" Version="0.1.0" />
-	<PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
-	<PackageReference Include="System.Text.Json" Version="4.7.2" />
+	<PackageReference Include="Acr.UserDialogs" Version="7.1.0.466" />
+	<PackageReference Include="CardsView" Version="2.6.8" />
+	<PackageReference Include="Microsoft.AppCenter.Analytics" Version="3.4.3" />
+	<PackageReference Include="Microsoft.AppCenter.Crashes" Version="3.4.3" />
+	<PackageReference Include="Microsoft.AppCenter.Distribute" Version="3.4.3" />
+	<PackageReference Include="Resizetizer.NT" Version="0.2.0" />
+	<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+	<PackageReference Include="System.Text.Json" Version="5.0.0" />
 	<PackageReference Include="WebSocketSharp-netstandard" Version="1.0.1" />
-	<PackageReference Include="Xamarin.Forms" Version="4.7.0.968" />  
-	<PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+	<PackageReference Include="Xamarin.Forms" Version="4.8.0.1560" />  
+	<PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />  
+	<PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />  
+	<PackageReference Include="Xamarin.Plugin.SharedTransitions" Version="2.4.0" />
   </ItemGroup>
 
 	<ItemGroup>
 		<None Remove="SharedImages\home.svg" />
 		<None Remove="SharedImages\home_dark.svg" />
-		<None Remove="SharedImages\ladder.svg" />
-		<None Remove="SharedImages\ladder_dark.svg" />
 		<None Remove="SharedImages\settings.svg" />
 		<None Remove="SharedImages\settings_dark.svg" />
-		<None Remove="SharedImages\chart.svg" />
-		<None Remove="SharedImages\chart_dark.svg" />
-		<None Remove="SharedImages\position.svg" />
-		<None Remove="SharedImages\position_dark.svg" />
+		<None Remove="SharedImages\ada.svg" />
+		<None Remove="SharedImages\algo.svg" />
+		<None Remove="SharedImages\atom.svg" />
+		<None Remove="SharedImages\bat.svg" />
+		<None Remove="SharedImages\bch.svg" />
+		<None Remove="SharedImages\bnb.svg" />
 		<None Remove="SharedImages\btc.svg" />
-		<None Remove="SharedImages\eth.svg" />
+		<None Remove="SharedImages\comp.svg" />
+		<None Remove="SharedImages\dash.svg" />
+		<None Remove="SharedImages\doge.svg" />
 		<None Remove="SharedImages\eos.svg" />
+		<None Remove="SharedImages\etc.svg" />
+		<None Remove="SharedImages\eth.svg" />
+		<None Remove="SharedImages\iost.svg" />
+		<None Remove="SharedImages\iota.svg" />
+		<None Remove="SharedImages\knc.svg" />
+		<None Remove="SharedImages\link.svg" />
+		<None Remove="SharedImages\ltc.svg" />
+		<None Remove="SharedImages\neo.svg" />
+		<None Remove="SharedImages\omg.svg" />
+		<None Remove="SharedImages\ont.svg" />
+		<None Remove="SharedImages\qtum.svg" />
+		<None Remove="SharedImages\theta.svg" />
+		<None Remove="SharedImages\sxp.svg" />
+		<None Remove="SharedImages\trx.svg" />
+		<None Remove="SharedImages\vet.svg" />
+		<None Remove="SharedImages\xlm.svg" />
+		<None Remove="SharedImages\xmr.svg" />
 		<None Remove="SharedImages\xrp.svg" />
-		<None Remove="SharedImages\twitter.svg" />
+		<None Remove="SharedImages\xtz.svg" />
+		<None Remove="SharedImages\zec.svg" />
+		<None Remove="SharedImages\zil.svg" />
+		<None Remove="SharedImages\zrx.svg" />
 		<None Include="..\..\..\LICENSE">
 		  <Pack>True</Pack>
 		  <PackagePath></PackagePath>
@@ -54,18 +85,52 @@
 	<ItemGroup>
 		<SharedImage Include="SharedImages\home.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\home_dark.svg" BaseSize="32,32" />
-		<SharedImage Include="SharedImages\ladder.svg" BaseSize="32,32" />
-		<SharedImage Include="SharedImages\ladder_dark.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\settings.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\settings_dark.svg" BaseSize="32,32" />
-		<SharedImage Include="SharedImages\chart.svg" BaseSize="32,32" />
-		<SharedImage Include="SharedImages\chart_dark.svg" BaseSize="32,32" />
-		<SharedImage Include="SharedImages\position.svg" BaseSize="32,32" />
-		<SharedImage Include="SharedImages\position_dark.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\ada.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\algo.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\atom.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\bat.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\bch.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\bnb.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\btc.svg" BaseSize="32,32" />
-		<SharedImage Include="SharedImages\eth.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\comp.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\dash.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\doge.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\eos.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\etc.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\eth.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\iost.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\iota.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\knc.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\link.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\ltc.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\neo.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\omg.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\ont.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\qtum.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\sxp.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\theta.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\trx.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\vet.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\xlm.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\xmr.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\xrp.svg" BaseSize="32,32" />
-		<SharedImage Include="SharedImages\twitter.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\xtz.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\zec.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\zil.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\zrx.svg" BaseSize="32,32" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Controls\TitleBar.xaml">
+	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="Controls\TitleBar.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
 	</ItemGroup>
 </Project>
