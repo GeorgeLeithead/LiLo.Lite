@@ -133,30 +133,31 @@
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Acr.UserDialogs">
-      <Version>7.1.0.466</Version>
-    </PackageReference>
-    <PackageReference Include="CardsView">
-      <Version>2.6.8</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.AppCenter.Analytics">
-      <Version>3.4.3</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.AppCenter.Crashes">
-      <Version>3.4.3</Version>
-    </PackageReference>
-    <PackageReference Include="Microsoft.AppCenter.Distribute">
-      <Version>3.4.3</Version>
-    </PackageReference>
-    <Reference Include="System" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Core" />
-    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1560" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
-    <PackageReference Include="Xamarin.Forms.PancakeView">
-      <Version>2.3.0.759</Version>
-    </PackageReference>
+	<ItemGroup>
+		<PackageReference Include="Acr.UserDialogs">
+			<Version>7.1.0.466</Version>
+		</PackageReference>
+		<PackageReference Include="CardsView">
+			<Version>2.6.8</Version>
+		</PackageReference>
+		<PackageReference Include="Microsoft.AppCenter.Analytics">
+			<Version>3.4.3</Version>
+		</PackageReference>
+		<PackageReference Include="Microsoft.AppCenter.Crashes">
+			<Version>3.4.3</Version>
+		</PackageReference>
+		<PackageReference Include="Microsoft.AppCenter.Distribute">
+			<Version>3.4.3</Version>
+		</PackageReference>
+		<Reference Include="System" />
+		<Reference Include="System.Xml" />
+		<Reference Include="System.Core" />
+		<PackageReference Include="Xamarin.Forms" Version="4.8.0.1560" />
+		<PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+		<PackageReference Include="Xamarin.Forms.PancakeView">
+			<Version>2.3.0.759</Version>
+		</PackageReference>
+	</ItemGroup>
   <ItemGroup>
     <PackageReference Include="Resizetizer.NT">
       <Version>0.2.0</Version>
