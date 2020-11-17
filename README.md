@@ -5,7 +5,7 @@ Open source repository for the LiLo.Lite (Ladder In Ladder Out) Mobile Applicati
 
 ## Overview
 LiLo 'lite' is a light-weight version of [LiLo](https://georgeleithead.github.io/LiLo_Public/).
-The mobile application is written using Xamarin.Forms and integrates with the [ByBit](https://www.bybit.com) WebSockets service to provide live real-time market information, and using a WebView to display charting information from [TradingView](https://uk.tradingview.com/).
+The mobile application is written using Xamarin.Forms and integrates with the [ByBit](https://www.bybit.com), [Binance](https://www.binance.com/) and [BitMEX](https://www.bitmex.com) WebSockets services to provide live real-time market information, and using a WebView to display charting information from [TradingView](https://uk.tradingview.com/).
 
 ### Application Features
 - Live real-time market information.
