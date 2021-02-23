@@ -3,90 +3,89 @@
 	x:Class="LiLo.Lite.Views.ChartView"
 	xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	xmlns:cards="clr-namespace:PanCardView;assembly=PanCardView"
 	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
 	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	xmlns:proc="clr-namespace:PanCardView.Processors;assembly=PanCardView"
-	xmlns:sharedTransition="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
-	xmlns:viewModelBase="clr-namespace:LiLo.Lite.ViewModels.Base"
-	sharedTransition:SharedTransitionNavigationPage.TransitionSelectedGroup="{Binding SelectedCurrency}"
-	viewModelBase:ViewModelLocator.AutoWireViewModel="true"
-	BackgroundColor="{AppThemeBinding Light={StaticResource WindowBackgroundColorLight},
-	                                  Dark={StaticResource WindowBackgroundColorDark}}"
-	NavigationPage.HasNavigationBar="False"
+	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
+	Title="{Binding Title, Mode=OneTime}"
+	Shell.NavBarIsVisible="False"
+	Style="{StaticResource BasePage}"
+	Visual="Material"
 	mc:Ignorable="d">
 
+	<ContentPage.BindingContext>
+		<vm:ChartViewModel />
+	</ContentPage.BindingContext>
+
 	<ContentPage.Content>
-		<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+		<Grid RowDefinitions="Auto,Auto,*">
 			<!--  title bar  -->
-			<Grid>
-				<controls:TitleBar />
-			</Grid>
-
-			<!--  Cover Flow  -->
-			<cards:CoverFlowView
-				x:Name="coverFlowView"
-				IsClippedToBounds="False"
-				IsViewReusingEnabled="False"
-				ItemAppeared="OnCoverFlowViewItemAppeared"
-				ItemsSource="{Binding MarketsList, Mode=OneWay}"
-				PositionShiftValue="0"
-				VerticalOptions="Fill">
-
-				<x:Arguments>
-					<proc:CoverFlowProcessor OpacityFactor="0.5" ScaleFactor="0.7" />
-				</x:Arguments>
-
-				<cards:CoverFlowView.ItemTemplate>
-					<DataTemplate>
-						<Frame AutomationId="{Binding SymbolString}">
-							<StackLayout Margin="0,-80,0,0" IsClippedToBounds="False">
-								<!--  overlap image  -->
-								<Image sharedTransition:Transition.Group="{Binding SymbolString}" sharedTransition:Transition.Name="SelectedItemImage" HeightRequest="150" Source="{Binding ItemImage}" VerticalOptions="Start" />
-								<controls:TickPriceView Price="{Binding LastPrice}" Style="{StaticResource LastPriceStyle}" Text="{Binding LastPriceString}" Tick="{Binding LastTickDirection}" />
-								<Grid ColumnDefinitions="*,*" HorizontalOptions="FillAndExpand" RowDefinitions="Auto,Auto,*">
-									<StackLayout Grid.Row="0" Grid.Column="0" Style="{StaticResource StackLayoutStyle}">
-										<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource HighPriceIcon}" />
-										<controls:TickPriceView Price="{Binding HighPrice24h}" Style="{StaticResource CurrencyPriceStyle}" Text="{Binding HighPrice24hString}" Tick="" />
-									</StackLayout>
-									<StackLayout Grid.Row="1" Grid.Column="0" Style="{StaticResource StackLayoutStyle}">
-										<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource LowPriceIcon}" />
-										<controls:TickPriceView Price="{Binding LowPrice24h}" Style="{StaticResource CurrencyPriceStyle}" Text="{Binding LowPrice24hString}" Tick="" />
-									</StackLayout>
-									<StackLayout Grid.Row="0" Grid.Column="1" Style="{StaticResource StackLayoutStyle}">
-										<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource PercentIcon}" />
-										<controls:CustomStackLayout Orientation="Horizontal" Price1hrPercentSupported="{Binding Price1hPercent}">
-											<controls:TickPriceView Price="{Binding Price1hPercent}" Style="{StaticResource CurrencyPriceStyle}" Text="{Binding Price1hPercentString}" Tick="" />
-											<Label Style="{StaticResource PriceLabelStyle}" Text="/" />
-											<controls:CustomStackLayout.Triggers>
-												<Trigger TargetType="controls:CustomStackLayout" Property="Price1hrPercentSupported" Value="0.0">
-													<Setter Property="IsVisible" Value="False" />
-												</Trigger>
-											</controls:CustomStackLayout.Triggers>
-										</controls:CustomStackLayout>
-										<controls:TickPriceView Price="{Binding Price24hPercent}" Style="{StaticResource CurrencyPriceStyle}" Text="{Binding Price24hPercentString}" Tick="" />
-									</StackLayout>
-									<StackLayout Grid.Row="1" Grid.Column="1" Style="{StaticResource StackLayoutStyle}">
-										<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource TradeIcon}" />
-										<Label Style="{StaticResource PriceLabelRegularStyle}" Text="{Binding Turnover}" />
-									</StackLayout>
-								</Grid>
+			<controls:TitleBar
+				Grid.Row="0"
+				Style="{StaticResource TitleStyle}"
+				Text="{Binding SelectedItem.SymbolString}" />
+			<!--  Markets List View  -->
+			<StackLayout Grid.Row="1">
+				<Frame>
+					<Grid
+						ColumnDefinitions="20*,40*,40*"
+						HorizontalOptions="FillAndExpand"
+						RowDefinitions="Auto,Auto"
+						VerticalOptions="FillAndExpand">
+						<Image
+							Grid.RowSpan="2"
+							Grid.Column="0"
+							Source="{Binding SelectedItem.ItemImage}"
+							Style="{StaticResource SymbolImageStyle}" />
+						<controls:TickPriceView
+							Grid.Row="0"
+							Grid.Column="1"
+							Grid.ColumnSpan="2"
+							Price="{Binding SelectedItem.LastPrice}"
+							Style="{StaticResource LastPriceStyle}"
+							Text="{Binding SelectedItem.LastPriceString}"
+							Tick="{Binding SelectedItem.LastTickDirection}" />
+						<StackLayout
+							Grid.Row="1"
+							Grid.Column="1"
+							Style="{StaticResource MarketsColumnStyle}">
+							<StackLayout Style="{StaticResource StackLayoutStyle}">
+								<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource HighPriceIcon}" />
+								<controls:TickPriceView
+									Price="{Binding SelectedItem.HighPrice24h}"
+									Style="{StaticResource CurrencyPriceStyle}"
+									Text="{Binding SelectedItem.HighPrice24hString}"
+									Tick="" />
 							</StackLayout>
-						</Frame>
-					</DataTemplate>
-				</cards:CoverFlowView.ItemTemplate>
-			</cards:CoverFlowView>
+							<StackLayout Style="{StaticResource StackLayoutStyle}">
+								<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource LowPriceIcon}" />
+								<controls:TickPriceView
+									Price="{Binding SelectedItem.LowPrice24h}"
+									Style="{StaticResource CurrencyPriceStyle}"
+									Text="{Binding SelectedItem.LowPrice24hString}"
+									Tick="" />
+							</StackLayout>
+						</StackLayout>
+						<StackLayout
+							Grid.Row="1"
+							Grid.Column="2"
+							Style="{StaticResource MarketsColumnStyle}">
+							<StackLayout Style="{StaticResource StackLayoutStyle}">
+								<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource PercentIcon}" />
+								<controls:TickPriceView
+									Price="{Binding SelectedItem.Price24hPercent}"
+									Style="{StaticResource CurrencyPriceStyle}"
+									Text="{Binding SelectedItem.Price24hPercentString}"
+									Tick="" />
+							</StackLayout>
+						</StackLayout>
+					</Grid>
+				</Frame>
+			</StackLayout>
 			<WebView
-				Margin="0"
-				AutomationId="MarketWebView"
-				BackgroundColor="Transparent"
-				HeightRequest="300"
-				HorizontalOptions="FillAndExpand"
-				MinimumHeightRequest="300"
-				MinimumWidthRequest="300"
-				VerticalOptions="FillAndExpand"
-				WidthRequest="300" />
-		</StackLayout>
+				x:Name="TradingViewChart"
+				Grid.Row="2"
+				Source="{Binding TradingViewChart, Mode=OneWay}" />
+		</Grid>
 	</ContentPage.Content>
 </ContentPage>

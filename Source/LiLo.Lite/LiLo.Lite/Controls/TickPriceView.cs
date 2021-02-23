@@ -145,9 +145,6 @@ namespace LiLo.Lite.Controls
 						lastPriceView.TextColor = lastPriceView.NegativeTickColor;
 						lastPriceView.ColorTo(lastPriceView.NegativeTickBackgroundColor, defaultBackgroundColor, l => lastPriceView.BackgroundColor = l, AnimationDuration);
 						break;
-						////                    default:
-						////                        lastPriceView.TextColor = (Color)Application.Current.Resources["Gray-900"];
-						////                        break;
 				}
 			}
 		}

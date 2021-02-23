@@ -4,34 +4,33 @@
 	<TargetFramework>netstandard2.0</TargetFramework>
 	<ProduceReferenceAssembly>true</ProduceReferenceAssembly>
 	  <LangVersion>8.0</LangVersion>
-	  <Description>LiLo 'lite' is a light-weight version of LiLo. The mobile application is written using Xamarin.Forms and integrates with the ByBit WebSockets service to provide live real-time market information, and using a WebView to display charting information from TradingView.</Description>
-	  <Copyright>2020 George Leithead, InternetWideWorld.com</Copyright>
+	  <Description>LiLo 'lite' is a light-weight version of LiLo. The mobile application is written using Xamarin.Forms and integrates with the Binance WebSockets service to provide live real-time market information, and using a WebView to display charting information from TradingView.</Description>
+	  <Copyright>2021 George Leithead, InternetWideWorld.com</Copyright>
 	  <PackageProjectUrl>https://github.com/GeorgeLeithead/LiLo.Lite</PackageProjectUrl>
 	  <RepositoryUrl>https://github.com/GeorgeLeithead/LiLo.Lite</RepositoryUrl>
 	  <RepositoryType>GIT</RepositoryType>
-	  <PackageTags>ByBit, Binance, Crypto, BTC, ETH, EOS, XRP</PackageTags>
+	  <PackageTags>Binance, Crypto, BTC, ETH, EOS, XRP</PackageTags>
 	  <Company>InternetWideWorld.com</Company>
 	  <Authors>George Leithead</Authors>
 	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
 	  <PackageIcon>launcher_foreground.png</PackageIcon>
-	  <AssemblyVersion>1.0.3.0</AssemblyVersion>
-	  <FileVersion>1.0.3.0</FileVersion>
+	  <AssemblyVersion>1.0.5.0</AssemblyVersion>
+	  <FileVersion>1.0.5.0</FileVersion>
+	  <Version>1.0.5</Version>
   </PropertyGroup>
 
   <ItemGroup>
-	<PackageReference Include="Acr.UserDialogs" Version="7.1.0.466" />
-	<PackageReference Include="CardsView" Version="2.6.8" />
-	<PackageReference Include="Microsoft.AppCenter.Analytics" Version="3.4.3" />
-	<PackageReference Include="Microsoft.AppCenter.Crashes" Version="3.4.3" />
-	<PackageReference Include="Microsoft.AppCenter.Distribute" Version="3.4.3" />
+	<PackageReference Include="Acr.UserDialogs" Version="7.1.0.475" />
+	<PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.1.0" />
+	<PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.1.0" />
+	<PackageReference Include="Microsoft.AppCenter.Distribute" Version="4.1.0" />
 	<PackageReference Include="Resizetizer.NT" Version="0.2.0" />
 	<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
-	<PackageReference Include="System.Text.Json" Version="5.0.0" />
+	<PackageReference Include="System.Text.Json" Version="5.0.1" />
 	<PackageReference Include="WebSocketSharp-netstandard" Version="1.0.1" />
-	<PackageReference Include="Xamarin.Forms" Version="4.8.0.1687" />  
-	<PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />  
-	<PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />  
-	<PackageReference Include="Xamarin.Plugin.SharedTransitions" Version="2.4.0" />
+	<PackageReference Include="Xamarin.CommunityToolkit" Version="1.0.3" />
+	<PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
+	<PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
 
 	<ItemGroup>
@@ -123,6 +122,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <EmbeddedResource Update="AppShell.xaml">
+	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+	  </EmbeddedResource>
 	  <EmbeddedResource Update="Controls\TitleBar.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </EmbeddedResource>

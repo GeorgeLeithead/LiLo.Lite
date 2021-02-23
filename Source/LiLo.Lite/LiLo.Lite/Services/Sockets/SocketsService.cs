@@ -13,23 +13,20 @@
 
 namespace LiLo.Lite.Services.Sockets
 {
-	using Lilo.Lite.Services;
-	using LiLo.Lite.Services.Dialog;
-	using LiLo.Lite.Services.Markets;
 	using System;
 	using System.ComponentModel;
 	using System.Threading.Tasks;
+	using Lilo.Lite.Services;
+	using LiLo.Lite.Services.Dialog;
+	using LiLo.Lite.Services.Markets;
 	using WebSocketSharp;
 	using Xamarin.Forms;
 
 	/// <summary>Web Sockets Service interface.</summary>
 	public class SocketsService : NotifyPropertyChangedBase, ISocketsService
 	{
-		/// <summary>Markets helper interface.</summary>
-		private readonly IMarketsHelperService marketsHelper;
-
-		/// <summary>Dialog service interface.</summary>
-		private readonly IDialogService dialogService;
+		private IDialogService dialogService;
+		private IMarketsHelperService marketsHelperService;
 
 		/// <summary>Has the service been resumed.</summary>
 		private bool isResumed;
@@ -37,13 +34,8 @@ namespace LiLo.Lite.Services.Sockets
 		/// <summary>Web Socket.</summary>
 		private WebSocket webSocket;
 
-		/// <summary>Initialises a new instance of the <see cref="SocketsService"/> class.</summary>
-		/// <param name="marketsHelperServiceConstructor">Markets helper service constructor.</param>
-		public SocketsService(IMarketsHelperService marketsHelperServiceConstructor, IDialogService dialogServiceConstructor)
-		{
-			marketsHelper = marketsHelperServiceConstructor;
-			dialogService = dialogServiceConstructor;
-		}
+		private IMarketsHelperService MarketsHelperService => this.marketsHelperService ??= DependencyService.Resolve<MarketsHelperService>();
+		public IDialogService DialogService => this.dialogService ??= DependencyService.Resolve<DialogService>();
 
 		/// <summary>Raised when a public property of this object is set.</summary>
 		public override event PropertyChangedEventHandler PropertyChanged
@@ -53,37 +45,22 @@ namespace LiLo.Lite.Services.Sockets
 		}
 
 		/// <summary>Gets a value indicating whether the sockets service is connected.</summary>
-		public bool IsConnected => webSocket.ReadyState == WebSocketState.Open;
+		public bool IsConnected => this.webSocket.ReadyState == WebSocketState.Open;
 
-		/// <summary>Initialises task for the sockets service.</summary>
-		/// <returns>Task results of initialisation.</returns>
-		public Task InitAsync()
+		public async Task Connect()
 		{
-			marketsHelper.Init();
-			Connect(true);
-
-			return Task.FromResult(true);
-		}
-
-		public Task Connect(bool isInit = false)
-		{
-			if (!isInit)
-			{
-				marketsHelper.FeedsModel = DataStore.GetFeed();
-			}
-
-			Uri bybitWssUrl = marketsHelper.FeedsModel.Wss;
-			webSocket = new WebSocket(bybitWssUrl.AbsoluteUri)
+			string wss = "wss://stream.binance.com:9443/stream?streams=adausdt@ticker/algousdt@ticker/atomusdt@ticker/batusdt@ticker/bchusdt@ticker/bnbusdt@ticker/btcusdt@ticker/compusdt@ticker/dashusdt@ticker/dogeusdt@ticker/eosusdt@ticker/etcusdt@ticker/ethusdt@ticker/iostusdt@ticker/iotausdt@ticker/kncusdt@ticker/linkusdt@ticker/ltcusdt@ticker/neousdt@ticker/omgusdt@ticker/ontusdt@ticker/qtumusdt@ticker/sxpusdt@ticker/thetausdt@ticker/trxusdt@ticker/vetusdt@ticker/xlmusdt@ticker/xmrusdt@ticker/xrpusdt@ticker/xtzusdt@ticker/zecusdt@ticker/zilusdt@ticker/zrxusdt@ticker";
+			this.webSocket = new WebSocket(wss)
 			{
 				EmitOnPing = true
 			};
-			webSocket.SslConfiguration.EnabledSslProtocols = System.Security.Authentication.SslProtocols.Tls12;
-			webSocket.SslConfiguration.ServerCertificateValidationCallback = (sender, certificate, chain, sslPolicyError) =>
+			this.webSocket.SslConfiguration.EnabledSslProtocols = System.Security.Authentication.SslProtocols.Tls12;
+			this.webSocket.SslConfiguration.ServerCertificateValidationCallback = (sender, certificate, chain, sslPolicyError) =>
 			{
 				return true;
 			};
 
-			return Task.FromResult(true);
+			await this.WebSocket_OnResume();
 		}
 
 		/// <summary>Handle when the application closes the sockets connection.</summary>
@@ -92,15 +69,15 @@ namespace LiLo.Lite.Services.Sockets
 		{
 			await Task.Factory.StartNew(async () =>
 			{
-				if (webSocket == null)
+				if (this.webSocket == null)
 				{
 					await Task.FromResult(true);
 					return;
 				}
 
-				if (webSocket.IsAlive)
+				if (this.webSocket.IsAlive)
 				{
-					webSocket.CloseAsync(CloseStatusCode.Normal);
+					this.webSocket.CloseAsync(CloseStatusCode.Normal);
 				}
 
 				await Task.FromResult(true);
@@ -115,11 +92,11 @@ namespace LiLo.Lite.Services.Sockets
 			{
 				if (Device.RuntimePlatform != Device.UWP)
 				{
-					webSocket.ConnectAsync();
+					this.webSocket.ConnectAsync();
 				}
 				else
 				{
-					webSocket.Connect();
+					this.webSocket.Connect();
 				}
 
 				await Task.FromResult(true);
@@ -130,15 +107,15 @@ namespace LiLo.Lite.Services.Sockets
 		/// <returns>Successful task</returns>
 		public async Task WebSocket_OnResume()
 		{
-			if (!isResumed)
+			if (!this.isResumed)
 			{
-				webSocket.OnClose += WebSocket_OnClose;
-				webSocket.OnError += WebSocket_OnError;
-				webSocket.OnOpen += WebSocket_OnOpen;
-				webSocket.OnMessage += WebSocket_OnMessage;
-				webSocket.OnMessage += marketsHelper.WebSockets_OnMessageAsync;
-				await WebSocket_OnConnect();
-				isResumed = true;
+				this.webSocket.OnClose += this.WebSocket_OnClose;
+				this.webSocket.OnError += this.WebSocket_OnError;
+				this.webSocket.OnOpen += this.WebSocket_OnOpen;
+				this.webSocket.OnMessage += this.WebSocket_OnMessage;
+				this.webSocket.OnMessage += this.MarketsHelperService.WebSockets_OnMessageAsync;
+				await this.WebSocket_OnConnect();
+				this.isResumed = true;
 			}
 
 			await Task.FromResult(true);
@@ -148,15 +125,15 @@ namespace LiLo.Lite.Services.Sockets
 		/// <returns>Successful task</returns>
 		public async Task WebSocket_OnSleep()
 		{
-			if (isResumed)
+			if (this.isResumed)
 			{
-				webSocket.OnClose -= WebSocket_OnClose;
-				webSocket.OnError -= WebSocket_OnError;
-				webSocket.OnOpen -= WebSocket_OnOpen;
-				webSocket.OnMessage -= marketsHelper.WebSockets_OnMessageAsync;
-				webSocket.OnMessage -= WebSocket_OnMessage;
-				webSocket.CloseAsync(CloseStatusCode.Normal);
-				isResumed = false;
+				this.webSocket.OnClose -= this.WebSocket_OnClose;
+				this.webSocket.OnError -= this.WebSocket_OnError;
+				this.webSocket.OnOpen -= this.WebSocket_OnOpen;
+				this.webSocket.OnMessage -= this.MarketsHelperService.WebSockets_OnMessageAsync;
+				this.webSocket.OnMessage -= this.WebSocket_OnMessage;
+				this.webSocket.CloseAsync(CloseStatusCode.Normal);
+				this.isResumed = false;
 			}
 
 			await Task.FromResult(true);
@@ -169,10 +146,10 @@ namespace LiLo.Lite.Services.Sockets
 		{
 			await Task.Factory.StartNew(async () =>
 			{
-				while (!webSocket.IsAlive)
+				while (!this.webSocket.IsAlive)
 				{
 					Task.Delay(1000).Wait();
-					await WebSocket_OnConnect();
+					await this.WebSocket_OnConnect();
 				}
 			});
 		}
@@ -182,8 +159,7 @@ namespace LiLo.Lite.Services.Sockets
 		/// <param name="e">Error event arguments</param>
 		private void WebSocket_OnError(object sender, ErrorEventArgs e)
 		{
-			dialogService.ShowToastAsync(e.Message).ConfigureAwait(true);
-			//			throw new Exception(e.Message, e.Exception);
+			this.DialogService.ShowToastAsync(e.Message).ConfigureAwait(true);
 		}
 
 		/// <summary>Handle when the sockets connection receives a message.</summary>
@@ -195,7 +171,7 @@ namespace LiLo.Lite.Services.Sockets
 			{
 				if (e.IsText)
 				{
-					webSocket.OnMessage -= WebSocket_OnMessage;
+					this.webSocket.OnMessage -= this.WebSocket_OnMessage;
 				}
 
 				await Task.FromResult(true);
@@ -209,7 +185,8 @@ namespace LiLo.Lite.Services.Sockets
 		{
 			await Task.Factory.StartNew(async () =>
 			{
-				webSocket.Send(marketsHelper.FeedsModel.Subscription);
+				string Subscription = "{\"method\":\"SUBSCRIBE\",\"id\": 1,\"params\": [\"adausdt@ticker\",\"algousdt@ticker\",\"atomusdt@ticker\",\"batusdt@ticker\",\"bchusdt@ticker\",\"bnbusdt@ticker\",\"btcusdt@ticker\",\"compusdt@ticker\",\"dashusdt@ticker\",\"dogeusdt@ticker\",\"eosusdt@ticker\",\"etcusdt@ticker\",\"ethusdt@ticker\",\"iostusdt@ticker\",\"iotausdt@ticker\",\"kncusdt@ticker\",\"linkusdt@ticker\",\"ltcusdt@ticker\",\"neousdt@ticker\",\"omgusdt@ticker\",\"ontusdt@ticker\",\"qtumusdt@ticker\",\"sxpusdt@ticker\",\"thetausdt@ticker\",\"trxusdt@ticker\",\"vetusdt@ticker\",\"xlmusdt@ticker\",\"xmrusdt@ticker\",\"xrpusdt@ticker\",\"xtzusdt@ticker\",\"zecusdt@ticker\",\"zilusdt@ticker\",\"zrxusdt@ticker\"]}";
+				this.webSocket.Send(Subscription);
 				await Task.FromResult(true);
 			});
 		}

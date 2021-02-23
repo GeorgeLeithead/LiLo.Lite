@@ -13,13 +13,10 @@
 
 namespace LiLo.Lite.ViewModels.Base
 {
+	using System.Runtime.Serialization;
 	using LiLo.Lite.Services.Dialog;
 	using LiLo.Lite.Services.Markets;
-	using LiLo.Lite.Services.Navigation;
-	using LiLo.Lite.Services.Settings;
-	using LiLo.Lite.Services.Sockets;
-	using System.Runtime.Serialization;
-	using System.Threading.Tasks;
+	using Xamarin.Forms;
 	using Xamarin.Forms.Internals;
 
 	/// <summary>View model base class.</summary>
@@ -27,50 +24,43 @@ namespace LiLo.Lite.ViewModels.Base
 	[DataContract]
 	public abstract class ViewModelBase : ExtendedBindableObject
 	{
-		/// <summary>Dialog service.</summary>
-		protected readonly IDialogService DialogService;
-
-		/// <summary>Markets service.</summary>
-		protected readonly IMarketsHelperService MarketsHelperService;
-
-		/// <summary>Navigation service.</summary>
-		protected readonly INavigationService NavigationService;
-
-		/// <summary>Settings service.</summary>
-		protected readonly ISettingsService SettingsService;
-
-		/// <summary>Sockets service.</summary>
-		protected readonly ISocketsService SocketsService;
+		private IDialogService dialogService;
+		private MarketsHelperService marketsHelperService;
 
 		/// <summary>View is busy.</summary>
 		private bool isBusy;
 
+		/// <summary>View title.</summary>
+		private string title;
+
 		/// <summary>Initialises a new instance of the <see cref="ViewModelBase" /> class.</summary>
 		public ViewModelBase()
 		{
-			NavigationService = ViewModelLocator.Resolve<INavigationService>();
-			SocketsService = ViewModelLocator.Resolve<ISocketsService>();
-			MarketsHelperService = ViewModelLocator.Resolve<IMarketsHelperService>();
-			SettingsService = ViewModelLocator.Resolve<ISettingsService>();
-			DialogService = ViewModelLocator.Resolve<IDialogService>();
 		}
+
+		public MarketsHelperService MarketsHelperService => this.marketsHelperService ??= DependencyService.Resolve<MarketsHelperService>();
+		public IDialogService DialogService => this.dialogService ??= DependencyService.Resolve<DialogService>();
 
 		/// <summary>Gets or sets a value indicating whether the view is busy.</summary>
 		public bool IsBusy
 		{
-			get => isBusy;
+			get => this.isBusy;
 			set
 			{
-				isBusy = value;
-				NotifyPropertyChanged(() => IsBusy);
+				this.isBusy = value;
+				this.NotifyPropertyChanged(() => this.IsBusy);
 			}
 		}
 
-		/// <summary>Initialises the view model.</summary>
-		/// <returns>Task result</returns>
-		public virtual Task InitializeAsync(object parameter)
+		/// <summary>gets or sets a value for the view title.</summary>
+		public string Title
 		{
-			return Task.FromResult(false);
+			get => this.title;
+			set
+			{
+				this.title = value;
+				this.NotifyPropertyChanged(() => this.Title);
+			}
 		}
 	}
 }

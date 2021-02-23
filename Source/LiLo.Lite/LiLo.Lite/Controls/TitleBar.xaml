@@ -7,20 +7,29 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	mc:Ignorable="d">
 
-	<Grid HorizontalOptions="FillAndExpand" VerticalOptions="Start">
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="*" />
-			<ColumnDefinition Width="*" />
-		</Grid.ColumnDefinitions>
-		<Image Margin="20" HeightRequest="40" HorizontalOptions="Start" Source="{AppThemeBinding Light='home.png', Dark='home_dark.png'}" VerticalOptions="Center">
+	<Grid
+		Margin="4,0"
+		ColumnDefinitions="*,*,*"
+		ColumnSpacing="8"
+		HorizontalOptions="FillAndExpand"
+		VerticalOptions="Start">
+		<Image
+			HeightRequest="40"
+			HorizontalOptions="Start"
+			Source="{AppThemeBinding Light='home.png',
+			                         Dark='home_dark.png'}"
+			VerticalOptions="Center">
 			<Image.GestureRecognizers>
 				<TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
 			</Image.GestureRecognizers>
 		</Image>
-
-		<Image
+		<Label
+			x:Name="Title"
 			Grid.Column="1"
-			Margin="20"
+			IsVisible="false"
+			Text="{Binding Text}" />
+		<Image
+			Grid.Column="2"
 			HeightRequest="40"
 			HorizontalOptions="End"
 			Source="{AppThemeBinding Light='settings.png',

@@ -7,7 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiLo.Lite.Android", "LiLo.L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiLo.Lite.iOS", "LiLo.Lite.iOS\LiLo.Lite.iOS.csproj", "{30C8DFE7-712A-44B0-AE40-4636D244236F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiLo.Lite", "LiLo.Lite\LiLo.Lite.csproj", "{9FC80272-19B2-48C8-8828-4D498882FD9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiLo.Lite", "LiLo.Lite\LiLo.Lite.csproj", "{9FC80272-19B2-48C8-8828-4D498882FD9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{32F25A3E-1911-4790-9567-B6915AE8550C}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

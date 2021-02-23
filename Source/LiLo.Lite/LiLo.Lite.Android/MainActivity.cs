@@ -4,26 +4,33 @@
 	using Android.Content.PM;
 	using Android.OS;
 	using Android.Runtime;
-	using PanCardView.Droid;
+	using LiLo.Lite.Interfaces;
+	using Plugin.CurrentActivity;
+	using Xamarin.Forms;
 
-	[Activity(Label = "LiLo.Lite", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+	[Activity(Label = "LiLo.Lite", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 	public class MainActivity : Xamarin.Forms.Platform.Android.FormsAppCompatActivity
 	{
 		public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
 		{
 			Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
 			base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 		}
 
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
+			CrossCurrentActivity.Current.Init(this, savedInstanceState);
+			DependencyService.Register<IParentWindowLocatorService, AndroidParentWindowLocatorService>();
+
 			TabLayoutResource = Resource.Layout.Tabbar;
 			ToolbarResource = Resource.Layout.Toolbar;
+
 			base.OnCreate(savedInstanceState);
-			Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
+
 			Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-			Xamarin.Forms.Forms.Init(this, savedInstanceState);
-			CardsViewRenderer.Preserve();
+			Forms.Init(this, savedInstanceState);
+			CrossCurrentActivity.Current.Init(this, savedInstanceState);
 			LoadApplication(new App());
 		}
 	}

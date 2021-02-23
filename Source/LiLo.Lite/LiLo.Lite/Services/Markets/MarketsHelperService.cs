@@ -13,42 +13,30 @@
 
 namespace LiLo.Lite.Services.Markets
 {
-	using Lilo.Lite.Services;
-	using LiLo.Lite.Models.BinanceModels;
-	using LiLo.Lite.Models.BitMexModels;
-	using LiLo.Lite.Models.BybitModels;
-	using LiLo.Lite.Models.Markets;
-	using LiLo.Lite.Models.Provider;
-	using LiLo.Lite.Services.Dialog;
 	using System;
-	using System.Collections.ObjectModel;
 	using System.ComponentModel;
 	using System.Text.Json;
 	using System.Threading.Tasks;
+	using Lilo.Lite.Services;
+	using LiLo.Lite.Models.BinanceModels;
+	using LiLo.Lite.Models.Markets;
+	using LiLo.Lite.Services.Dialog;
 	using WebSocketSharp;
+	using Xamarin.CommunityToolkit.ObjectModel;
+	using Xamarin.Forms;
+	using System.Collections.Generic;
+	using System.Linq;
 
 	/// <summary>Markets helper service.</summary>
 	public class MarketsHelperService : NotifyPropertyChangedBase, IMarketsHelperService
 	{
-		/// <summary>Dialog service</summary>
-		private readonly IDialogService dialogService;
+		private IDialogService dialogService;
 
 		/// <summary>Initialises a new instance of the <see cref="MarketsHelperService" /> class.</summary>
-		/// <param name="marketServiceConstructor">Markets service constructor via dependency injection.</param>
-		/// <param name="dialogueServiceConstructor">Dialog service constructor via dependency injection.</param>
-		public MarketsHelperService(IDialogService dialogueServiceConstructor)
+		public MarketsHelperService()
 		{
-			dialogService = dialogueServiceConstructor;
+			this.MarketsList = new ObservableRangeCollection<MarketsModel>();
 		}
-		/// <summary>Initialises task for the markets helper service.</summary>
-		/// <returns>Task results of initialisation.</returns>
-		public Task Init()
-		{
-			FeedsModel = DataStore.GetFeed();
-			MarketsList = new ObservableCollection<MarketsModel>(DataStore.GetMarketsForFeed());
-			return Task.FromResult(true);
-		}
-
 
 		/// <summary>Raised when a public property of this object is set.</summary>
 		public override event PropertyChangedEventHandler PropertyChanged
@@ -58,9 +46,22 @@ namespace LiLo.Lite.Services.Markets
 		}
 
 		/// <summary>Gets or sets an observable list of markets.</summary>
-		public ObservableCollection<MarketsModel> MarketsList { get; set; }
+		public ObservableRangeCollection<MarketsModel> MarketsList { get; set; }
+		public IDialogService DialogService => this.dialogService ??= DependencyService.Resolve<DialogService>();
 
-		public ProvidersModel FeedsModel { get; set; }
+		/// <summary>Initialises task for the markets helper service.</summary>
+		/// <returns>Task results of initialisation.</returns>
+		public void Init()
+		{
+			IEnumerable<MarketsModel> markets = DataStore.GetMarketsForFeed();
+			foreach(MarketsModel market in markets)
+			{
+				if (!this.MarketsList.Any(m => m == market))
+				{
+					this.MarketsList.Add(market);
+				}
+			}
+		}
 
 		/// <summary>WebSockets message handler.</summary>
 		/// <param name="sender">Sockets service</param>
@@ -87,11 +88,11 @@ namespace LiLo.Lite.Services.Markets
 			{
 				try
 				{
-					await GetMessageType(e.Data);
+					await this.GetMessageType(e.Data);
 				}
 				catch (Exception ex)
 				{
-					await dialogService.ShowToastAsync(ex.Message);
+					await this.DialogService.ShowToastAsync(ex.Message);
 				}
 			}
 		}
@@ -106,37 +107,10 @@ namespace LiLo.Lite.Services.Markets
 				throw new ArgumentException("message", nameof(message));
 			}
 
-			if (message.Contains("\"topic\":\"instrument_info"))
-			{
-				if (message.Contains("\"type\":\"delta\""))
-				{
-					InstrumentInfoDeltaModel delta = JsonSerializer.Deserialize<InstrumentInfoDeltaModel>(message);
-					foreach (InstrumentInfoDataModel updateItem in delta.Data.Update)
-					{
-						await InstrumentInfoDataModel.UpdateMarketList(updateItem, MarketsList);
-					}
-				}
-
-				if (message.Contains("\"type\":\"snapshot\""))
-				{
-					InstrumentInfoSnapshotModel snapshot = JsonSerializer.Deserialize<InstrumentInfoSnapshotModel>(message);
-					await InstrumentInfoDataModel.UpdateMarketList(snapshot.Data, MarketsList);
-				}
-			}
-
 			if (message.Contains("\"stream\":"))
 			{
 				BinanceTickerModel binanceStream = JsonSerializer.Deserialize<BinanceTickerModel>(message);
-				await BinanceTickerDataModel.UpdateMarketList(binanceStream.Data, MarketsList);
-			}
-
-			if (message.Contains("\"table\":\"instrument\""))
-			{
-				BitMexInstrumentPartialModel bitmexPartial = JsonSerializer.Deserialize<BitMexInstrumentPartialModel>(message);
-				foreach (BitMexDataModel updateItem in bitmexPartial.Data)
-				{
-					await BitMexDataModel.UpdateMarketList(updateItem, MarketsList);
-				}
+				await BinanceTickerDataModel.UpdateMarketList(binanceStream.Data, this.MarketsList);
 			}
 
 			await Task.FromResult(true);

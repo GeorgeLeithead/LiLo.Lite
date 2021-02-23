@@ -6,7 +6,6 @@
 	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
 	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
 	mc:Ignorable="d">
 	<Application.Resources>
 		<ResourceDictionary>
@@ -16,13 +15,13 @@
 			<Color x:Key="WindowBackgroundColorLight">#F6F7F8</Color>
 			<Color x:Key="WindowBackgroundColorDark">#333942</Color>
 
-			<!--  Markets Colors  -->
+			<!--  Markets Colours  -->
 			<Color x:Key="MarketUpTextColor">#7ed321</Color>
 			<Color x:Key="MarketUpBackgroundColor">#027e42</Color>
 			<Color x:Key="MarketDownTextColor">#ff4a4a</Color>
 			<Color x:Key="MarketDownBackgroundColor">#aa1221</Color>
 
-			<!--  Gray Colors  -->
+			<!--  Gray Colours  -->
 			<Color x:Key="Gray-100">#F6F7F8</Color>
 			<Color x:Key="Gray-300">#CED2D9</Color>
 			<Color x:Key="Gray-700">#606A7B</Color>
@@ -38,43 +37,18 @@
 				</OnPlatform.Platforms>
 			</OnPlatform>
 
-			<OnPlatform x:Key="Montserrat-SemiBold" x:TypeArguments="x:String">
-				<OnPlatform.Platforms>
-					<On Platform="Android" Value="Montserrat-SemiBold.ttf#Montserrat-SemiBold" />
-					<On Platform="iOS" Value="Montserrat-SemiBold" />
-					<On Platform="UWP, WinRT, WinPhone" Value="Assets/Fonts/Montserrat-SemiBold.ttf#Montserrat-SemiBold" />
-				</OnPlatform.Platforms>
-			</OnPlatform>
+			<!--  Shell  -->
+			<Style x:Key="BaseStyle" TargetType="Element">
+				<Setter Property="Shell.BackgroundColor" Value="{AppThemeBinding Light={StaticResource WindowBackgroundColorLight}, Dark={StaticResource WindowBackgroundColorDark}}" />
+				<Setter Property="Shell.ForegroundColor" Value="{AppThemeBinding Light={StaticResource Gray-Black}, Dark={StaticResource Gray-White}}" />
+				<Setter Property="Shell.TitleColor" Value="{AppThemeBinding Light={StaticResource Gray-Black}, Dark={StaticResource Gray-White}}" />
+				<Setter Property="Shell.DisabledColor" Value="#606A7B" />
+				<Setter Property="Shell.UnselectedColor" Value="#CC0000" />
+				<Setter Property="Shell.NavBarHasShadow" Value="False" />
+			</Style>
 
-			<OnPlatform x:Key="Montserrat-Regular" x:TypeArguments="x:String">
-				<OnPlatform.Platforms>
-					<On Platform="Android" Value="Montserrat-Regular.ttf#Montserrat-Regular" />
-					<On Platform="iOS" Value="Montserrat-Regular" />
-					<On Platform="UWP, WinRT, WinPhone" Value="Assets/Fonts/Montserrat-Regular.ttf#Montserrat-Regular" />
-				</OnPlatform.Platforms>
-			</OnPlatform>
-
-			<OnPlatform x:Key="Montserrat-Medium" x:TypeArguments="x:String">
-				<OnPlatform.Platforms>
-					<On Platform="Android" Value="Montserrat-Medium.ttf#Montserrat-Medium" />
-					<On Platform="iOS" Value="Montserrat-Medium" />
-					<On Platform="UWP, WinRT, WinPhone" Value="Assets/Fonts/Montserrat-Medium.ttf#Montserrat-Medium" />
-				</OnPlatform.Platforms>
-			</OnPlatform>
-
-			<OnPlatform x:Key="Montserrat-Bold" x:TypeArguments="x:String">
-				<OnPlatform.Platforms>
-					<On Platform="Android" Value="Montserrat-Bold.ttf#Montserrat-Bold" />
-					<On Platform="iOS" Value="Montserrat-Bold" />
-					<On Platform="UWP, WinRT, WinPhone" Value="Assets/Fonts/Montserrat-Bold.ttf#Montserrat-Bold" />
-				</OnPlatform.Platforms>
-			</OnPlatform>
-
-			<!--  Global Styles  -->
-			<Style TargetType="NavigationPage">
+			<Style x:Key="BasePage" TargetType="ContentPage">
 				<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource WindowBackgroundColorLight}, Dark={StaticResource WindowBackgroundColorDark}}" />
-				<Setter Property="BarBackgroundColor" Value="{AppThemeBinding Light={StaticResource WindowBackgroundColorLight}, Dark={StaticResource WindowBackgroundColorDark}}" />
-				<Setter Property="BarTextColor" Value="{AppThemeBinding Light={StaticResource Gray-White}, Dark={StaticResource Gray-Black}}" />
 			</Style>
 
 			<!--  Icon Styles  -->
@@ -88,30 +62,25 @@
 			</Style>
 
 			<!--  CUSTOM CONTROLS STYLE  -->
-			<Style x:Key="MarketsListViewStyle" TargetType="ListView">
-				<Setter Property="HasUnevenRows" Value="True" />
-				<Setter Property="SelectionMode" Value="None" />
-				<Setter Property="SeparatorVisibility" Value="None" />
+			<Style x:Key="MarketsCollectionViewStyle" TargetType="CollectionView">
+				<Setter Property="SelectionMode" Value="Single" />
+				<Setter Property="IsGrouped" Value="False" />
 				<Setter Property="VerticalScrollBarVisibility" Value="Never" />
 				<Setter Property="Margin" Value="8,0" />
 				<Setter Property="BackgroundColor" Value="Transparent" />
-			</Style>
-
-			<Style x:Key="MarketsLogoStyle" TargetType="{x:Type Image}">
-				<Setter Property="HeightRequest" Value="72" />
-				<Setter Property="WidthRequest" Value="72" />
-				<Setter Property="Margin" Value="4" />
+				<Setter Property="ItemSizingStrategy" Value="MeasureAllItems" />
+				<Setter Property="ItemsLayout" Value="VerticalList" />
+				<Setter Property="VerticalOptions" Value="FillAndExpand" />
 			</Style>
 
 			<Style x:Key="LastPriceStyle" TargetType="{x:Type controls:TickPriceView}">
-				<Setter Property="Margin" Value="2,0" />
-				<Setter Property="Padding" Value="0,2" />
+				<Setter Property="Margin" Value="0" />
+				<Setter Property="Padding" Value="2,2,2,2" />
 				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
 				<Setter Property="VerticalOptions" Value="FillAndExpand" />
 				<Setter Property="HorizontalTextAlignment" Value="Start" />
 				<Setter Property="VerticalTextAlignment" Value="Center" />
-				<Setter Property="FontFamily" Value="{StaticResource Montserrat-Bold}" />
-				<Setter Property="FontSize" Value="36" />
+				<Setter Property="FontSize" Value="Large" />
 				<Setter Property="LineHeight" Value="{OnPlatform Android=1.5, Default=-1}" />
 				<Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray-900}, Dark={StaticResource Gray-100}}" />
 				<Setter Property="DefaultBackgroundColor" Value="Transparent" />
@@ -124,8 +93,7 @@
 				<Setter Property="Padding" Value="4,0" />
 				<Setter Property="HorizontalOptions" Value="Start" />
 				<Setter Property="VerticalOptions" Value="Start" />
-				<Setter Property="FontFamily" Value="{StaticResource Montserrat-Regular}" />
-				<Setter Property="FontSize" Value="14" />
+				<Setter Property="FontSize" Value="Small" />
 				<Setter Property="LineHeight" Value="{OnPlatform Android=1.5, Default=-1}" />
 				<Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray-700}, Dark={StaticResource Gray-300}}" />
 				<Setter Property="DefaultBackgroundColor" Value="Transparent" />
@@ -136,16 +104,24 @@
 			</Style>
 
 			<Style x:Key="PriceLabelStyle" TargetType="{x:Type Label}">
-				<Setter Property="FontFamily" Value="{StaticResource Montserrat-Bold}" />
-				<Setter Property="FontSize" Value="14" />
+				<Setter Property="FontSize" Value="Small" />
 				<Setter Property="LineHeight" Value="{OnPlatform Android=1.5, Default=-1}" />
 				<Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray-700}, Dark={StaticResource Gray-300}}" />
 				<Setter Property="HorizontalTextAlignment" Value="Start" />
 			</Style>
 
-			<Style x:Key="PriceLabelRegularStyle" BasedOn="{StaticResource PriceLabelStyle}" TargetType="{x:Type Label}">
-				<Setter Property="FontFamily" Value="{StaticResource Montserrat-Regular}" />
+			<Style
+				x:Key="PriceLabelRegularStyle"
+				BasedOn="{StaticResource PriceLabelStyle}"
+				TargetType="{x:Type Label}">
 				<Setter Property="Padding" Value="4,0" />
+			</Style>
+
+			<Style x:Key="SymbolImageStyle" TargetType="Image">
+				<Setter Property="Aspect" Value="AspectFit" />
+				<Setter Property="Rotation" Value="0" />
+				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
+				<Setter Property="VerticalOptions" Value="FillAndExpand" />
 			</Style>
 
 			<Style x:Key="MarketsColumnStyle" TargetType="StackLayout">
@@ -157,37 +133,30 @@
 				<Setter Property="Padding" Value="0,2" />
 			</Style>
 
-			<Style x:Key="TitleStyle" TargetType="{x:Type Label}">
-				<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Gray-White}, Dark={StaticResource Gray-Black}}" />
+			<Style x:Key="TitleStyleLabel" TargetType="{x:Type Label}">
+				<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource WindowBackgroundColorLight}, Dark={StaticResource WindowBackgroundColorDark}}" />
 				<Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray-Black}, Dark={StaticResource Gray-White}}" />
-				<Setter Property="FontFamily" Value="{StaticResource Montserrat-Medium}" />
 				<Setter Property="FontSize" Value="Large" />
 				<Setter Property="LineHeight" Value="{OnPlatform Android=1.5, Default=-1}" />
-				<Setter Property="Padding" Value="0,8" />
 				<Setter Property="HorizontalTextAlignment" Value="Center" />
 				<Setter Property="VerticalTextAlignment" Value="Center" />
 				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
 				<Setter Property="VerticalOptions" Value="Center" />
 			</Style>
 
-			<Style TargetType="Frame">
-				<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Gray-White}, Dark={StaticResource Gray-Black}}" />
-				<Setter Property="Margin" Value="4,0,4,4" />
-				<Setter Property="Padding" Value="5" />
-				<Setter Property="CornerRadius" Value="20" />
-				<Setter Property="HasShadow" Value="False" />
-				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
-				<Setter Property="IsClippedToBounds" Value="False" />
-				<Setter Property="VerticalOptions" Value="FillAndExpand" />
+			<Style x:Key="TitleStyle" TargetType="controls:TitleBar">
+				<Setter Property="LabelStyle" Value="{StaticResource TitleStyleLabel}" />
+				<Setter Property="Margin" Value="4,0" />
 			</Style>
 
-			<Style TargetType="pancake:PancakeView">
+			<Style TargetType="Frame">
 				<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Gray-White}, Dark={StaticResource Gray-Black}}" />
-				<Setter Property="Margin" Value="0,0,0,16" />
-				<Setter Property="Padding" Value="4" />
-				<Setter Property="CornerRadius" Value="20" />
+				<Setter Property="Margin" Value="0" />
+				<Setter Property="Padding" Value="5" />
+				<Setter Property="CornerRadius" Value="10" />
+				<Setter Property="HasShadow" Value="False" />
 				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
-				<Setter Property="VerticalOptions" Value="Start" />
+				<Setter Property="VerticalOptions" Value="FillAndExpand" />
 			</Style>
 
 			<Style x:Key="StackLayoutStyle" TargetType="StackLayout">
@@ -196,6 +165,23 @@
 				<Setter Property="HorizontalOptions" Value="Fill" />
 				<Setter Property="Margin" Value="0" />
 				<Setter Property="VerticalOptions" Value="CenterAndExpand" />
+			</Style>
+
+			<Style TargetType="WebView">
+				<Setter Property="Margin" Value="0" />
+				<Setter Property="BackgroundColor" Value="Transparent" />
+				<Setter Property="HeightRequest" Value="300" />
+				<Setter Property="WidthRequest" Value="300" />
+				<Setter Property="MinimumHeightRequest" Value="300" />
+				<Setter Property="MinimumWidthRequest" Value="300" />
+				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
+				<Setter Property="VerticalOptions" Value="FillAndExpand" />
+			</Style>
+
+			<Style TargetType="BoxView">
+				<Setter Property="HeightRequest" Value="4" />
+				<Setter Property="Margin" Value="0" />
+				<Setter Property="BackgroundColor" Value="Transparent" />
 			</Style>
 		</ResourceDictionary>
 	</Application.Resources>

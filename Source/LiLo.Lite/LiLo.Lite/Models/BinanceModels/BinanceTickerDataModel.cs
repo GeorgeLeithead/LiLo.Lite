@@ -15,76 +15,38 @@ namespace LiLo.Lite.Models.BinanceModels
 {
 	using LiLo.Lite.Models.Markets;
 	using System;
-	using System.Collections.ObjectModel;
 	using System.Linq;
 	using System.Text.Json.Serialization;
 	using System.Threading.Tasks;
+	using Xamarin.CommunityToolkit.ObjectModel;
 
 	/// <summary>Binance ticker symbol stream data.</summary>
 	public class BinanceTickerDataModel
 	{
 		private string symbolString;
 
-		[JsonPropertyName("e")]
-		public string EventType { get; set; }
-
-		[JsonPropertyName("E")]
-		public long EventTime { get; set; }
-
 		[JsonPropertyName("s")]
-		public string Symbol
+		public string SymbolString
 		{
 			get => symbolString;
 			set => symbolString = value;
 		}
 
-		public string SymbolString {
-			get => symbolString;
-		}
-
-		[JsonPropertyName("p")]
-		public string PriceChange { get; set; }
-
 		[JsonPropertyName("P")]
-		public string P { get; set; }
+		public string Percent { get; set; }
 
 		public double Price24hPercent
 		{
-			get => Convert.ToDouble(P);
+			get => Convert.ToDouble(Percent);
 		}
 
-		[JsonPropertyName("w")]
-		public string WeightedAveragePrice { get; set; }
-
-		/// <summary>First Trade(f)-1 price (first trade before the 24HR rolling window)</summary>
-		[JsonPropertyName("x")]
-		public string FirstTradeprice { get; set; }
-
 		[JsonPropertyName("c")]
-		public string c { get; set; }
+		public string CurrentPrice { get; set; }
 
 		public double LastPrice
 		{
-			get => Convert.ToDouble(c);
+			get => Convert.ToDouble(CurrentPrice);
 		}
-
-		[JsonPropertyName("Q")]
-		public string LastQuantity { get; set; }
-
-		[JsonPropertyName("b")]
-		public string BestBidPrice { get; set; }
-
-		[JsonPropertyName("B")]
-		public string BestBidQuantity { get; set; }
-
-		[JsonPropertyName("a")]
-		public string BestAskPrice { get; set; }
-
-		[JsonPropertyName("A")]
-		public string BestAskQuantity { get; set; }
-
-		[JsonPropertyName("o")]
-		public string OpenPrice { get; set; }
 
 		[JsonPropertyName("h")]
 		public string HighPrice { get; set; }
@@ -102,34 +64,7 @@ namespace LiLo.Lite.Models.BinanceModels
 			get => Convert.ToDouble(LowPrice);
 		}
 
-		/// <summary>Total traded base asset volume</summary>
-		[JsonPropertyName("v")]
-		public string Volume { get; set; }
-
-		public long Volume24hr
-		{
-			get => Convert.ToInt32(Volume);
-		}
-
-		[JsonPropertyName("q")]
-		public string TotalTradedQuoteAssetVolume { get; set; }
-
-		[JsonPropertyName("O")]
-		public long StatisticsOpenTime { get; set; }
-
-		[JsonPropertyName("C")]
-		public long StatisticsCloseTime { get; set; }
-
-		[JsonPropertyName("F")]
-		public int FirstTradeId { get; set; }
-
-		[JsonPropertyName("L")]
-		public int LastTradeId { get; set; }
-
-		[JsonPropertyName("n")]
-		public int NumberOftrades { get; set; }
-
-		public static async Task UpdateMarketList(BinanceTickerDataModel data, ObservableCollection<MarketsModel> marketsList)
+		public static async Task UpdateMarketList(BinanceTickerDataModel data, ObservableRangeCollection<MarketsModel> marketsList)
 		{
 			if (data is null)
 			{
@@ -162,13 +97,6 @@ namespace LiLo.Lite.Models.BinanceModels
 			{
 				clientItem.HighPrice24h = data.HighPrice24h;
 			}
-
-			/*
-			if (data.Volume24hr != 0)
-			{
-				clientItem.Turnover24h = data.Volume24hr;
-			}
-			*/
 		}
 
 	}

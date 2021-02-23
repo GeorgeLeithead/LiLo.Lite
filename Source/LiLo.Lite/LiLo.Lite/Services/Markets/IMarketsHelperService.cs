@@ -13,12 +13,10 @@
 
 namespace LiLo.Lite.Services.Markets
 {
-	using LiLo.Lite.Models.Markets;
-	using LiLo.Lite.Models.Provider;
-	using System.Collections.ObjectModel;
 	using System.ComponentModel;
-	using System.Threading.Tasks;
+	using LiLo.Lite.Models.Markets;
 	using WebSocketSharp;
+	using Xamarin.CommunityToolkit.ObjectModel;
 
 	/// <summary>Markets helper service.</summary>
 	public interface IMarketsHelperService
@@ -26,18 +24,14 @@ namespace LiLo.Lite.Services.Markets
 		/// <summary>Property changed event</summary>
 		event PropertyChangedEventHandler PropertyChanged;
 
-		ProvidersModel FeedsModel { get; set; }
-
 		/// <summary>Gets or sets a list of Markets.</summary>
-		ObservableCollection<MarketsModel> MarketsList { get; set; }
-
-		/// <summary>Initialises task for the markets helper service.</summary>
-		/// <returns>Task results of initialisation.</returns>
-		Task Init();
+		ObservableRangeCollection<MarketsModel> MarketsList { get; set; }
 
 		/// <summary>Message received handler.</summary>
 		/// <param name="sender">Message sender</param>
 		/// <param name="e">Message event arguments</param>
 		void WebSockets_OnMessageAsync(object sender, MessageEventArgs e);
+
+		void Init();
 	}
 }

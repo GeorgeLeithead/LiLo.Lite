@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="IDependencyService.cs" company="InternetWideWorld.com">
+// <copyright file="AppShell.xaml.cs" company="InternetWideWorld.com">
 // Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
 //   THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
 //   OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
@@ -7,18 +7,22 @@
 //   FITNESS FOR A PARTICULAR PURPOSE.
 // </copyright>
 // <summary>
-//   Dependency service interface.
+//   App shell.
 // </summary>
 //-----------------------------------------------------------------------
 
-namespace LiLo.Lite.Services.Dependency
+namespace LiLo.Lite
 {
-	/// <summary>Dependency service interface.</summary>
-	public interface IDependencyService
+	using Xamarin.Forms.Xaml;
+
+	/// <summary>App shell.</summary>
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class AppShell
 	{
-		/// <summary>Get a dependent service.</summary>
-		/// <typeparam name="T">Service type</typeparam>
-		/// <returns>Dependant service</returns>
-		T Get<T>() where T : class;
+		/// <summary>Initialises a new instance of the <see cref="AppShell"/> class.</summary>
+		public AppShell()
+		{
+			this.InitializeComponent();
+		}
 	}
 }

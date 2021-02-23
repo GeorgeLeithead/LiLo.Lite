@@ -13,10 +13,10 @@
 
 namespace LiLo.Lite.Models.Markets
 {
-	using LiLo.Lite.ViewModels.Base;
 	using System;
 	using System.Globalization;
 	using System.Runtime.Serialization;
+	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.Forms.Internals;
 
 	/// <summary>Model for the Navigation List and Tile with Cards page.</summary>
@@ -69,12 +69,6 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Minimum price</summary>
 		private double minprice;
 
-		/// <summary>1HR price percentage</summary>
-		private double price1hPercent;
-
-		/// <summary>1HR price percentage as string</summary>
-		private string price1hPercentString;
-
 		/// <summary>24HR price percentage</summary>
 		private double price24hPercent;
 
@@ -96,39 +90,36 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Initialises a new instance of the <see cref="MarketsModel"/> class.</summary>
 		public MarketsModel()
 		{
-			DecimalPlaces = 2;
-			HighPrice24h = LowPrice24h = LastPrice = MarkPrice = Price1hPercent = Price24hPercent = Turnover24h = 0;
-			HighPrice24hString = LowPrice24hString = LastPriceString = MarkPriceString = Price1hPercentString = Price24hPercentString = "$0.00";
-			Turnover = "0";
-			LastTickDirection = string.Empty;
+			this.DecimalPlaces = 2;
+			this.HighPrice24h = this.LowPrice24h = this.LastPrice = this.MarkPrice = this.Price24hPercent = this.Turnover24h = 0;
+			this.HighPrice24hString = this.LowPrice24hString = this.LastPriceString = this.MarkPriceString = this.Price24hPercentString = "$0.00";
+			this.Turnover = "0";
+			this.LastTickDirection = string.Empty;
 		}
 
 		/// <summary>Gets or sets the number of decimal places to show for the currency.</summary>
 		[DataMember(Name = "decimalPlaces")]
 		public int DecimalPlaces
 		{
-			get => decimalPlaces;
+			get => this.decimalPlaces;
 			set
 			{
-				decimalPlaces = value;
-				NotifyPropertyChanged(() => DecimalPlaces);
+				this.decimalPlaces = value;
+				this.NotifyPropertyChanged(() => this.DecimalPlaces);
 			}
 		}
-
-		/// <summary>Feed provider.</summary>
-		public string FeedProvider { get; set; }
 
 		/// <summary>Gets or sets the 24HR high price for the currency.</summary>
 		public double HighPrice24h
 		{
-			get => highPrice24h;
+			get => this.highPrice24h;
 			set
 			{
-				if (highPrice24h != value)
+				if (this.highPrice24h != value)
 				{
-					highPrice24h = value;
-					HighPrice24hString = value.ToString("C" + DecimalPlaces, formatCulture);
-					NotifyPropertyChanged(() => HighPrice24h);
+					this.highPrice24h = value;
+					this.HighPrice24hString = value.ToString("C" + this.DecimalPlaces, this.formatCulture);
+					this.NotifyPropertyChanged(() => this.HighPrice24h);
 				}
 			}
 		}
@@ -136,13 +127,13 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the 24HR high price for the currency as string.</summary>
 		public string HighPrice24hString
 		{
-			get => highPrice24hString;
+			get => this.highPrice24hString;
 			set
 			{
-				if (highPrice24hString != value)
+				if (this.highPrice24hString != value)
 				{
-					highPrice24hString = value;
-					NotifyPropertyChanged(() => HighPrice24hString);
+					this.highPrice24hString = value;
+					this.NotifyPropertyChanged(() => this.HighPrice24hString);
 				}
 			}
 		}
@@ -151,13 +142,13 @@ namespace LiLo.Lite.Models.Markets
 		[DataMember(Name = "itemImage")]
 		public virtual string ItemImage
 		{
-			get => itemImage;
+			get => this.itemImage;
 			set
 			{
-				if (itemImage != value)
+				if (this.itemImage != value)
 				{
-					itemImage = value;
-					NotifyPropertyChanged(() => ItemImage);
+					this.itemImage = value;
+					this.NotifyPropertyChanged(() => this.ItemImage);
 				}
 			}
 		}
@@ -165,14 +156,14 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the last price for the currency.</summary>
 		public double LastPrice
 		{
-			get => lastPrice;
+			get => this.lastPrice;
 			set
 			{
-				if (lastPrice != value && value != 0)
+				if (this.lastPrice != value && value != 0)
 				{
-					lastPrice = value;
-					LastPriceString = value.ToString("C" + DecimalPlaces, formatCulture);
-					NotifyPropertyChanged(() => LastPrice);
+					this.lastPrice = value;
+					this.LastPriceString = value.ToString("C" + this.DecimalPlaces, this.formatCulture);
+					this.NotifyPropertyChanged(() => this.LastPrice);
 				}
 			}
 		}
@@ -180,13 +171,13 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the last price as a string</summary>
 		public string LastPriceString
 		{
-			get => lastPriceString;
+			get => this.lastPriceString;
 			set
 			{
-				if (lastPriceString != value)
+				if (this.lastPriceString != value)
 				{
-					lastPriceString = value;
-					NotifyPropertyChanged(() => LastPriceString);
+					this.lastPriceString = value;
+					this.NotifyPropertyChanged(() => this.LastPriceString);
 				}
 			}
 		}
@@ -194,13 +185,13 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the last tick direction for the currency.</summary>
 		public string LastTickDirection
 		{
-			get => string.IsNullOrEmpty(lastTickDirection) ? "PlusTick" : lastTickDirection;
+			get => string.IsNullOrEmpty(this.lastTickDirection) ? "PlusTick" : this.lastTickDirection;
 			set
 			{
-				if (lastTickDirection != value)
+				if (this.lastTickDirection != value)
 				{
-					lastTickDirection = value;
-					NotifyPropertyChanged(() => LastTickDirection);
+					this.lastTickDirection = value;
+					this.NotifyPropertyChanged(() => this.LastTickDirection);
 				}
 			}
 		}
@@ -208,14 +199,14 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the 24HR low price for the currency.</summary>
 		public double LowPrice24h
 		{
-			get => lowPrice24h;
+			get => this.lowPrice24h;
 			set
 			{
-				if (lowPrice24h != value)
+				if (this.lowPrice24h != value)
 				{
-					lowPrice24h = value;
-					LowPrice24hString = value.ToString("C" + DecimalPlaces, formatCulture);
-					NotifyPropertyChanged(() => LowPrice24h);
+					this.lowPrice24h = value;
+					this.LowPrice24hString = value.ToString("C" + this.DecimalPlaces, this.formatCulture);
+					this.NotifyPropertyChanged(() => this.LowPrice24h);
 				}
 			}
 		}
@@ -223,13 +214,13 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the 24HR low price as a string</summary>
 		public string LowPrice24hString
 		{
-			get => lowPrice24hString;
+			get => this.lowPrice24hString;
 			set
 			{
-				if (lowPrice24hString != value)
+				if (this.lowPrice24hString != value)
 				{
-					lowPrice24hString = value;
-					NotifyPropertyChanged(() => LowPrice24hString);
+					this.lowPrice24hString = value;
+					this.NotifyPropertyChanged(() => this.LowPrice24hString);
 				}
 			}
 		}
@@ -237,14 +228,14 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the mark price for the currency.</summary>
 		public double MarkPrice
 		{
-			get => markPrice;
+			get => this.markPrice;
 			set
 			{
-				if (markPrice != value)
+				if (this.markPrice != value)
 				{
-					markPrice = value;
-					MarkPriceString = value.ToString("C" + DecimalPlaces, formatCulture);
-					NotifyPropertyChanged(() => MarkPrice);
+					this.markPrice = value;
+					this.MarkPriceString = value.ToString("C" + this.DecimalPlaces, this.formatCulture);
+					this.NotifyPropertyChanged(() => this.MarkPrice);
 				}
 			}
 		}
@@ -252,90 +243,61 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the mark price as a string</summary>
 		public string MarkPriceString
 		{
-			get => markPriceString;
+			get => this.markPriceString;
 			set
 			{
-				if (markPriceString != value)
+				if (this.markPriceString != value)
 				{
-					markPriceString = value;
-					NotifyPropertyChanged(() => MarkPriceString);
+					this.markPriceString = value;
+					this.NotifyPropertyChanged(() => this.MarkPriceString);
 				}
 			}
 		}
 
-		/// <summary>Gets or sets the max price for the currency</summary>
+		/// <summary>Gets or sets the MAX price for the currency</summary>
 		public double MaxPrice
 		{
-			get => maxprice;
+			get => this.maxprice;
 			set
 			{
-				maxprice = value;
-				NotifyPropertyChanged(() => MaxPrice);
+				this.maxprice = value;
+				this.NotifyPropertyChanged(() => this.MaxPrice);
 			}
 		}
 
-		/// <summary>Gets or sets the max quantity for the currency</summary>
+		/// <summary>Gets or sets the MAX quantity for the currency</summary>
 		public int MaxQuantity
 		{
-			get => maxtradingqty;
+			get => this.maxtradingqty;
 			set
 			{
-				maxtradingqty = value;
-				NotifyPropertyChanged(() => MaxQuantity);
+				this.maxtradingqty = value;
+				this.NotifyPropertyChanged(() => this.MaxQuantity);
 			}
 		}
 
 		/// <summary>Gets or sets the minimum price for the currency</summary>
 		public double MinPrice
 		{
-			get => minprice;
+			get => this.minprice;
 			set
 			{
-				minprice = value;
-				NotifyPropertyChanged(() => MinPrice);
-			}
-		}
-
-		/// <summary>Gets or sets the 1HR percentage price difference for the currency.</summary>
-		public double Price1hPercent
-		{
-			get => price1hPercent;
-			set
-			{
-				if (price1hPercent != value)
-				{
-					price1hPercent = value;
-					Price1hPercentString = value.ToString("F2", formatCulture);
-					NotifyPropertyChanged(() => Price1hPercent);
-				}
-			}
-		}
-
-		/// <summary>Gets or sets the 1HR price percentage as a string</summary>
-		public string Price1hPercentString
-		{
-			get => price1hPercentString;
-			set
-			{
-				if (price1hPercentString != value)
-				{
-					price1hPercentString = value;
-					NotifyPropertyChanged(() => Price1hPercentString);
-				}
+				this.minprice = value;
+				this.NotifyPropertyChanged(() => this.MinPrice);
 			}
 		}
 
 		/// <summary>Gets or sets the 24HR percentage price difference for the currency.</summary>
 		public double Price24hPercent
 		{
-			get => price24hPercent;
+			get => this.price24hPercent;
 			set
 			{
-				if (price24hPercent != value)
+				if (this.price24hPercent != value)
 				{
-					price24hPercent = value;
-					Price24hPercentString = value.ToString("F2", formatCulture);
-					NotifyPropertyChanged(() => Price24hPercent);
+					this.price24hPercent = value;
+					this.Price24hPercentString = value.ToString("F2", this.formatCulture);
+					this.NotifyPropertyChanged(() => this.Price24hPercent);
 				}
 			}
 		}
@@ -343,13 +305,13 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the 24HR price percentage as a string</summary>
 		public string Price24hPercentString
 		{
-			get => price24hPercentString;
+			get => this.price24hPercentString;
 			set
 			{
-				if (price24hPercentString != value)
+				if (this.price24hPercentString != value)
 				{
-					price24hPercentString = value;
-					NotifyPropertyChanged(() => Price24hPercentString);
+					this.price24hPercentString = value;
+					this.NotifyPropertyChanged(() => this.Price24hPercentString);
 				}
 			}
 		}
@@ -361,13 +323,13 @@ namespace LiLo.Lite.Models.Markets
 		[DataMember(Name = "symbol")]
 		public string SymbolString
 		{
-			get => symbolString;
+			get => this.symbolString;
 			set
 			{
-				if (symbolString != value)
+				if (this.symbolString != value)
 				{
-					symbolString = value;
-					NotifyPropertyChanged(() => SymbolString);
+					this.symbolString = value;
+					this.NotifyPropertyChanged(() => this.SymbolString);
 				}
 			}
 		}
@@ -375,24 +337,24 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the tick size for the currency</summary>
 		public double TickSize
 		{
-			get => ticksize;
+			get => this.ticksize;
 			set
 			{
-				ticksize = value;
-				NotifyPropertyChanged(() => TickSize);
+				this.ticksize = value;
+				this.NotifyPropertyChanged(() => this.TickSize);
 			}
 		}
 
 		/// <summary>Gets or sets the 24HR turn over for the currency in a friendly format.</summary>
 		public string Turnover
 		{
-			get => turnover;
+			get => this.turnover;
 			set
 			{
-				if (turnover != value)
+				if (this.turnover != value)
 				{
-					turnover = value;
-					NotifyPropertyChanged(() => Turnover);
+					this.turnover = value;
+					this.NotifyPropertyChanged(() => this.Turnover);
 				}
 			}
 		}
@@ -400,14 +362,14 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the 24HR turn over for the currency.</summary>
 		public long Turnover24h
 		{
-			get => turnover24h;
+			get => this.turnover24h;
 			set
 			{
-				if (turnover24h != value)
+				if (this.turnover24h != value)
 				{
-					turnover24h = value;
-					Turnover = FormatNumber(value);
-					NotifyPropertyChanged(() => Turnover24h);
+					this.turnover24h = value;
+					this.Turnover = FormatNumber(value);
+					this.NotifyPropertyChanged(() => this.Turnover24h);
 				}
 			}
 		}

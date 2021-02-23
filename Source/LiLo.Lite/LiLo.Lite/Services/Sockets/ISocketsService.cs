@@ -25,10 +25,6 @@ namespace LiLo.Lite.Services.Sockets
 		/// <summary>Gets a value indicating whether the sockets service is connected.</summary>
 		bool IsConnected { get; }
 
-		/// <summary>Initialises task for the sockets service.</summary>
-		/// <returns>Task results of initialisation.</returns>
-		Task InitAsync();
-
 		/// <summary>Handle when the application closes the sockets connection.</summary>
 		/// <returns>Successful task</returns>
 		Task WebSocket_Close();
@@ -45,6 +41,6 @@ namespace LiLo.Lite.Services.Sockets
 		/// <returns>Successful task</returns>
 		Task WebSocket_OnSleep();
 
-		Task Connect(bool isInit = false);
+		Task Connect();
 	}
 }
