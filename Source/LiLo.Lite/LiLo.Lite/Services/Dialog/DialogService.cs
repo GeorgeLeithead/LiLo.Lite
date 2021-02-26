@@ -7,7 +7,7 @@
 //   FITNESS FOR A PARTICULAR PURPOSE.
 // </copyright>
 // <summary>
-//   Dialog service.
+//   Dialogue service.
 // </summary>
 //-----------------------------------------------------------------------
 
@@ -15,8 +15,9 @@ namespace LiLo.Lite.Services.Dialog
 {
 	using Acr.UserDialogs;
 	using System.Threading.Tasks;
+	using Xamarin.Forms;
 
-	/// <summary>Dialog service.</summary>
+	/// <summary>Dialogue service.</summary>
 	public class DialogService : IDialogService
 	{
 		/// <summary>Show a cross-platform alert.</summary>
@@ -26,6 +27,12 @@ namespace LiLo.Lite.Services.Dialog
 		/// <returns>Alert task</returns>
 		public Task ShowAlertAsync(string message, string title, string buttonLabel)
 		{
+			Page page = Application.Current.MainPage;
+			if (page == null)
+			{
+				return Task.CompletedTask;
+			}
+
 			return UserDialogs.Instance.AlertAsync(message, title, buttonLabel);
 		}
 
@@ -37,6 +44,13 @@ namespace LiLo.Lite.Services.Dialog
 		/// <returns>Prompt result task</returns>
 		public Task<PromptResult> ShowPromptAsync(string title, string message, string okText, string cancelText)
 		{
+			Page page = Application.Current.MainPage;
+			if (page == null)
+			{
+				PromptResult pr = null;
+				return Task.FromResult(result: pr);
+			}
+
 			return UserDialogs.Instance.PromptAsync(message, title, okText, cancelText);
 		}
 
@@ -44,7 +58,14 @@ namespace LiLo.Lite.Services.Dialog
 		/// <param name="message">Toast message</param>
 		public Task ShowToastAsync(string message)
 		{
-			return (Task)UserDialogs.Instance.Toast(message);
+			Page page = Application.Current.MainPage;
+			if (page == null)
+			{
+				return Task.CompletedTask;
+			}
+
+			UserDialogs.Instance.Toast(message);
+			return Task.CompletedTask;
 		}
 	}
 }

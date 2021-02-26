@@ -22,6 +22,7 @@
 			<!--  title bar  -->
 			<controls:TitleBar
 				Grid.Row="0"
+				HomeVisible="False"
 				Style="{StaticResource TitleStyle}"
 				Text="Markets" />
 			<!--  Markets List View  -->
@@ -50,7 +51,7 @@
 										<Image
 											Grid.RowSpan="2"
 											Grid.Column="0"
-											Source="{Binding ItemImage}"
+											Source="{Binding SymbolString, StringFormat='{0}.png'}"
 											Style="{StaticResource SymbolImageStyle}" />
 										<controls:TickPriceView
 											Grid.Row="0"
@@ -58,8 +59,7 @@
 											Grid.ColumnSpan="2"
 											Price="{Binding LastPrice}"
 											Style="{StaticResource LastPriceStyle}"
-											Text="{Binding LastPriceString}"
-											Tick="{Binding LastTickDirection}" />
+											Text="{Binding LastPriceString}" />
 										<StackLayout
 											Grid.Row="1"
 											Grid.Column="1"
@@ -69,16 +69,14 @@
 												<controls:TickPriceView
 													Price="{Binding HighPrice24h}"
 													Style="{StaticResource CurrencyPriceStyle}"
-													Text="{Binding HighPrice24hString}"
-													Tick="" />
+													Text="{Binding HighPrice24hString}" />
 											</StackLayout>
 											<StackLayout Style="{StaticResource StackLayoutStyle}">
 												<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource LowPriceIcon}" />
 												<controls:TickPriceView
 													Price="{Binding LowPrice24h}"
 													Style="{StaticResource CurrencyPriceStyle}"
-													Text="{Binding LowPrice24hString}"
-													Tick="" />
+													Text="{Binding LowPrice24hString}" />
 											</StackLayout>
 										</StackLayout>
 										<StackLayout
@@ -90,8 +88,7 @@
 												<controls:TickPriceView
 													Price="{Binding Price24hPercent}"
 													Style="{StaticResource CurrencyPriceStyle}"
-													Text="{Binding Price24hPercentString}"
-													Tick="" />
+													Text="{Binding Price24hPercentString}" />
 											</StackLayout>
 										</StackLayout>
 									</Grid>

@@ -7,6 +7,7 @@
 	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
+	xmlns:windows="clr-namespace:Xamarin.Forms.PlatformConfiguration.WindowsSpecific;assembly=Xamarin.Forms.Core"
 	Title="{Binding Title, Mode=OneTime}"
 	Shell.NavBarIsVisible="False"
 	Style="{StaticResource BasePage}"
@@ -22,10 +23,11 @@
 			<!--  title bar  -->
 			<controls:TitleBar
 				Grid.Row="0"
+				HomeVisible="True"
 				Style="{StaticResource TitleStyle}"
 				Text="{Binding SelectedItem.SymbolString}" />
 			<!--  Markets List View  -->
-			<StackLayout Grid.Row="1">
+			<StackLayout Grid.Row="1" Style="{StaticResource ChartFrameStackStyle}">
 				<Frame>
 					<Grid
 						ColumnDefinitions="20*,40*,40*"
@@ -35,7 +37,7 @@
 						<Image
 							Grid.RowSpan="2"
 							Grid.Column="0"
-							Source="{Binding SelectedItem.ItemImage}"
+							Source="{Binding SelectedItem.SymbolString, StringFormat='{0}.png'}"
 							Style="{StaticResource SymbolImageStyle}" />
 						<controls:TickPriceView
 							Grid.Row="0"
@@ -43,8 +45,7 @@
 							Grid.ColumnSpan="2"
 							Price="{Binding SelectedItem.LastPrice}"
 							Style="{StaticResource LastPriceStyle}"
-							Text="{Binding SelectedItem.LastPriceString}"
-							Tick="{Binding SelectedItem.LastTickDirection}" />
+							Text="{Binding SelectedItem.LastPriceString}" />
 						<StackLayout
 							Grid.Row="1"
 							Grid.Column="1"
@@ -54,30 +55,26 @@
 								<controls:TickPriceView
 									Price="{Binding SelectedItem.HighPrice24h}"
 									Style="{StaticResource CurrencyPriceStyle}"
-									Text="{Binding SelectedItem.HighPrice24hString}"
-									Tick="" />
+									Text="{Binding SelectedItem.HighPrice24hString}" />
 							</StackLayout>
 							<StackLayout Style="{StaticResource StackLayoutStyle}">
 								<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource LowPriceIcon}" />
 								<controls:TickPriceView
 									Price="{Binding SelectedItem.LowPrice24h}"
 									Style="{StaticResource CurrencyPriceStyle}"
-									Text="{Binding SelectedItem.LowPrice24hString}"
-									Tick="" />
+									Text="{Binding SelectedItem.LowPrice24hString}" />
 							</StackLayout>
 						</StackLayout>
 						<StackLayout
 							Grid.Row="1"
 							Grid.Column="2"
+							Orientation="Horizontal"
 							Style="{StaticResource MarketsColumnStyle}">
-							<StackLayout Style="{StaticResource StackLayoutStyle}">
-								<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource PercentIcon}" />
-								<controls:TickPriceView
-									Price="{Binding SelectedItem.Price24hPercent}"
-									Style="{StaticResource CurrencyPriceStyle}"
-									Text="{Binding SelectedItem.Price24hPercentString}"
-									Tick="" />
-							</StackLayout>
+							<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource PercentIcon}" />
+							<controls:TickPriceView
+								Price="{Binding SelectedItem.Price24hPercent}"
+								Style="{StaticResource CurrencyPriceStyle}"
+								Text="{Binding SelectedItem.Price24hPercentString}" />
 						</StackLayout>
 					</Grid>
 				</Frame>
@@ -85,6 +82,7 @@
 			<WebView
 				x:Name="TradingViewChart"
 				Grid.Row="2"
+				windows:WebView.ExecutionMode="SeparateThread"
 				Source="{Binding TradingViewChart, Mode=OneWay}" />
 		</Grid>
 	</ContentPage.Content>

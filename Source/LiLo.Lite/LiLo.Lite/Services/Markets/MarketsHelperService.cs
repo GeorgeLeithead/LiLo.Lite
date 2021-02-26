@@ -14,7 +14,9 @@
 namespace LiLo.Lite.Services.Markets
 {
 	using System;
+	using System.Collections.Generic;
 	using System.ComponentModel;
+	using System.Linq;
 	using System.Text.Json;
 	using System.Threading.Tasks;
 	using Lilo.Lite.Services;
@@ -24,8 +26,6 @@ namespace LiLo.Lite.Services.Markets
 	using WebSocketSharp;
 	using Xamarin.CommunityToolkit.ObjectModel;
 	using Xamarin.Forms;
-	using System.Collections.Generic;
-	using System.Linq;
 
 	/// <summary>Markets helper service.</summary>
 	public class MarketsHelperService : NotifyPropertyChangedBase, IMarketsHelperService
@@ -45,16 +45,22 @@ namespace LiLo.Lite.Services.Markets
 			remove { base.PropertyChanged -= value; }
 		}
 
+		public IDialogService DialogService => this.dialogService ??= DependencyService.Resolve<DialogService>();
+
 		/// <summary>Gets or sets an observable list of markets.</summary>
 		public ObservableRangeCollection<MarketsModel> MarketsList { get; set; }
-		public IDialogService DialogService => this.dialogService ??= DependencyService.Resolve<DialogService>();
+
+		public string GetWss()
+		{
+			return DataStore.MarketsWss();
+		}
 
 		/// <summary>Initialises task for the markets helper service.</summary>
 		/// <returns>Task results of initialisation.</returns>
 		public void Init()
 		{
 			IEnumerable<MarketsModel> markets = DataStore.GetMarketsForFeed();
-			foreach(MarketsModel market in markets)
+			foreach (MarketsModel market in markets)
 			{
 				if (!this.MarketsList.Any(m => m == market))
 				{
@@ -107,9 +113,9 @@ namespace LiLo.Lite.Services.Markets
 				throw new ArgumentException("message", nameof(message));
 			}
 
-			if (message.Contains("\"stream\":"))
+			BinanceTickerModel binanceStream = JsonSerializer.Deserialize<BinanceTickerModel>(message);
+			if (binanceStream.Data != null)
 			{
-				BinanceTickerModel binanceStream = JsonSerializer.Deserialize<BinanceTickerModel>(message);
 				await BinanceTickerDataModel.UpdateMarketList(binanceStream.Data, this.MarketsList);
 			}
 

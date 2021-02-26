@@ -37,8 +37,6 @@ namespace LiLo.Lite.Controls
 		/// <summary>Gets or sets the Price Property, and it is a bindable property.</summary>
 		public static readonly BindableProperty PriceProperty = BindableProperty.Create(nameof(Price), typeof(double), typeof(TickPriceView), 16d, BindingMode.Default, null, OnPricePropertyChanged);
 
-		/// <summary>Gets or sets the Tick Property, and it is a bindable property.</summary>
-		public static readonly BindableProperty TickProperty = BindableProperty.Create(nameof(Tick), typeof(string), typeof(TickPriceView), string.Empty, BindingMode.Default, null, OnTickPropertyChanged);
 
 		/// <summary>Animation duration in milliseconds.</summary>
 		private const int AnimationDuration = 1000;
@@ -85,13 +83,6 @@ namespace LiLo.Lite.Controls
 			set => SetValue(PriceProperty, value);
 		}
 
-		/// <summary>Gets or sets the Tick.</summary>
-		public string Tick
-		{
-			get => (string)GetValue(TickProperty);
-			set => SetValue(TickProperty, value);
-		}
-
 		/// <summary>Invoked when the Price is changed.</summary>
 		/// <param name="bindable">The TickPriceView object</param>
 		/// <param name="oldValue">The old value</param>
@@ -107,45 +98,17 @@ namespace LiLo.Lite.Controls
 			}
 
 			lastPriceView.TextColor = newPrice < oldPrice ? lastPriceView.NegativeTickColor : lastPriceView.PositiveTickColor;
-			if (string.IsNullOrEmpty(lastPriceView.Tick) || lastPriceView.Tick.Equals("X"))
-			{
-				// Handle where the price changes, but it not related to the tick (such as High/low 24h prices)
-				Color defaultBackgroundColor = lastPriceView.DefaultBackgroundColor;
-				if (oldPrice <= newPrice)
-				{
-					lastPriceView.ColorTo(lastPriceView.PositiveTickBackgroundColor, defaultBackgroundColor, l => lastPriceView.BackgroundColor = l, AnimationDuration);
-				}
-				else
-				{
-					lastPriceView.ColorTo(lastPriceView.NegativeTickBackgroundColor, defaultBackgroundColor, l => lastPriceView.BackgroundColor = l, AnimationDuration);
-				}
-			}
-		}
-
-		/// <summary>Invoked when the Tick is changed.</summary>
-		/// <param name="bindable">The LastPriceView</param>
-		/// <param name="oldValue">The old value</param>
-		/// <param name="newValue">The new value</param>
-		private static void OnTickPropertyChanged(BindableObject bindable, object oldValue, object newValue)
-		{
-			TickPriceView lastPriceView = bindable as TickPriceView;
-			string newText = (string)newValue;
+			// Handle where the price changes, but it not related to the tick (such as High/low 24h prices)
 			Color defaultBackgroundColor = lastPriceView.DefaultBackgroundColor;
-
-			if (!string.IsNullOrEmpty(newText))
+			if (oldPrice <= newPrice)
 			{
-				switch (newText)
-				{
-					case "PlusTick":
-						lastPriceView.TextColor = lastPriceView.PositiveTickColor;
-						lastPriceView.ColorTo(lastPriceView.PositiveTickBackgroundColor, defaultBackgroundColor, l => lastPriceView.BackgroundColor = l, AnimationDuration);
-						break;
-
-					case "MinusTick":
-						lastPriceView.TextColor = lastPriceView.NegativeTickColor;
-						lastPriceView.ColorTo(lastPriceView.NegativeTickBackgroundColor, defaultBackgroundColor, l => lastPriceView.BackgroundColor = l, AnimationDuration);
-						break;
-				}
+				lastPriceView.TextColor = lastPriceView.PositiveTickColor;
+				lastPriceView.ColorTo(lastPriceView.PositiveTickBackgroundColor, defaultBackgroundColor, l => lastPriceView.BackgroundColor = l, AnimationDuration);
+			}
+			else
+			{
+				lastPriceView.TextColor = lastPriceView.NegativeTickColor;
+				lastPriceView.ColorTo(lastPriceView.NegativeTickBackgroundColor, defaultBackgroundColor, l => lastPriceView.BackgroundColor = l, AnimationDuration);
 			}
 		}
 	}

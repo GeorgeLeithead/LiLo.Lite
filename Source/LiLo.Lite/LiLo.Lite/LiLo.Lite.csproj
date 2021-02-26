@@ -9,7 +9,7 @@
 	  <PackageProjectUrl>https://github.com/GeorgeLeithead/LiLo.Lite</PackageProjectUrl>
 	  <RepositoryUrl>https://github.com/GeorgeLeithead/LiLo.Lite</RepositoryUrl>
 	  <RepositoryType>GIT</RepositoryType>
-	  <PackageTags>Binance, Crypto, BTC, ETH, EOS, XRP</PackageTags>
+	  <PackageTags>Binance;Crypto;Cardano;ADA;Algorand;ALGO;Cosmos;ATOM;BAT;Bitcoin Cash;BCH;Binance Coin;BNB;Bitcoin;BTC;Compound;COMP;DASH;Dogecoin;DOGE;EOS;Etherium Classic;ETC;Etherium;ETH;IOST;IOTA;Cyber Network;KNC;Chainlink;LINK;Litecoin;LTC;NEO;OMG Network;OMG;Ontology;ONT;QTUM;Swipe;SXP;Theta Network;THETA;Tron;TRX;VeChain;VET;Stellar;XLM;Monero;XMR;XRP;Tezos;XTZ;ZCash;ZEC;Zilliqa;ZIL;Ox;ZRX)</PackageTags>
 	  <Company>InternetWideWorld.com</Company>
 	  <Authors>George Leithead</Authors>
 	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
@@ -36,39 +36,83 @@
 	<ItemGroup>
 		<None Remove="SharedImages\home.svg" />
 		<None Remove="SharedImages\home_dark.svg" />
-		<None Remove="SharedImages\settings.svg" />
-		<None Remove="SharedImages\settings_dark.svg" />
+		<None Remove="SharedImages\sun_dark.svg" />
+		<None Remove="SharedImages\moon_light.svg" />
+
+		<None Remove="SharedImages\aave.svg" />
 		<None Remove="SharedImages\ada.svg" />
 		<None Remove="SharedImages\algo.svg" />
 		<None Remove="SharedImages\atom.svg" />
+		<None Remove="SharedImages\avax.svg" />
 		<None Remove="SharedImages\bat.svg" />
 		<None Remove="SharedImages\bch.svg" />
 		<None Remove="SharedImages\bnb.svg" />
+		<None Remove="SharedImages\bnt.svg" />
 		<None Remove="SharedImages\btc.svg" />
+		<None Remove="SharedImages\btt.svg" />
+		<None Remove="SharedImages\busd.svg" />
+		<None Remove="SharedImages\cake.svg" />
 		<None Remove="SharedImages\comp.svg" />
+		<None Remove="SharedImages\crv.svg" />
+		<None Remove="SharedImages\dai.svg" />
 		<None Remove="SharedImages\dash.svg" />
+		<None Remove="SharedImages\dcr.svg" />
+		<None Remove="SharedImages\dgb.svg" />
 		<None Remove="SharedImages\doge.svg" />
+		<None Remove="SharedImages\dot.svg" />
+		<None Remove="SharedImages\egld.svg" />
+		<None Remove="SharedImages\enj.svg" />
 		<None Remove="SharedImages\eos.svg" />
 		<None Remove="SharedImages\etc.svg" />
 		<None Remove="SharedImages\eth.svg" />
+		<None Remove="SharedImages\fil.svg" />
+		<None Remove="SharedImages\ftm.svg" />
+		<None Remove="SharedImages\ftt.svg" />
+		<None Remove="SharedImages\grt.svg" />
+		<None Remove="SharedImages\hbar.svg" />
+		<None Remove="SharedImages\hot.svg" />
+		<None Remove="SharedImages\icx.svg" />
 		<None Remove="SharedImages\iost.svg" />
 		<None Remove="SharedImages\iota.svg" />
 		<None Remove="SharedImages\knc.svg" />
+		<None Remove="SharedImages\ksm.svg" />
 		<None Remove="SharedImages\link.svg" />
+		<None Remove="SharedImages\lrc.svg" />
 		<None Remove="SharedImages\ltc.svg" />
+		<None Remove="SharedImages\luna.svg" />
+		<None Remove="SharedImages\matic.svg" />
+		<None Remove="SharedImages\mkr.svg" />
+		<None Remove="SharedImages\nano.svg" />
+		<None Remove="SharedImages\near.svg" />
 		<None Remove="SharedImages\neo.svg" />
+		<None Remove="SharedImages\npxs.svg" />
 		<None Remove="SharedImages\omg.svg" />
 		<None Remove="SharedImages\ont.svg" />
+		<None Remove="SharedImages\pax.svg" />
 		<None Remove="SharedImages\qtum.svg" />
-		<None Remove="SharedImages\theta.svg" />
+		<None Remove="SharedImages\ren.svg" />
+		<None Remove="SharedImages\rune.svg" />
+		<None Remove="SharedImages\rvn.svg" />
+		<None Remove="SharedImages\sc.svg" />
+		<None Remove="SharedImages\snx.svg" />
+		<None Remove="SharedImages\sol.svg" />
+		<None Remove="SharedImages\stx.svg" />
+		<None Remove="SharedImages\sushi.svg" />
 		<None Remove="SharedImages\sxp.svg" />
+		<None Remove="SharedImages\theta.svg" />
 		<None Remove="SharedImages\trx.svg" />
+		<None Remove="SharedImages\uma.svg" />
+		<None Remove="SharedImages\uni.svg" />
 		<None Remove="SharedImages\vet.svg" />
+		<None Remove="SharedImages\waves.svg" />
+		<None Remove="SharedImages\xem.svg" />
 		<None Remove="SharedImages\xlm.svg" />
 		<None Remove="SharedImages\xmr.svg" />
 		<None Remove="SharedImages\xrp.svg" />
 		<None Remove="SharedImages\xtz.svg" />
+		<None Remove="SharedImages\yfi.svg" />
 		<None Remove="SharedImages\zec.svg" />
+		<None Remove="SharedImages\zen.svg" />
 		<None Remove="SharedImages\zil.svg" />
 		<None Remove="SharedImages\zrx.svg" />
 		<None Include="..\..\..\LICENSE">
@@ -84,39 +128,83 @@
 	<ItemGroup>
 		<SharedImage Include="SharedImages\home.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\home_dark.svg" BaseSize="32,32" />
-		<SharedImage Include="SharedImages\settings.svg" BaseSize="32,32" />
-		<SharedImage Include="SharedImages\settings_dark.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\sun_dark.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\moon_light.svg" BaseSize="32,32" />
+
+		<SharedImage Include="SharedImages\aave.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\ada.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\algo.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\atom.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\avax.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\bat.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\bch.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\bnb.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\bnt.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\btc.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\btt.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\busd.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\cake.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\comp.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\crv.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\dai.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\dash.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\dcr.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\dgb.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\doge.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\dot.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\egld.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\enj.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\eos.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\etc.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\eth.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\fil.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\ftm.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\ftt.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\grt.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\hbar.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\hot.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\icx.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\iost.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\iota.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\knc.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\ksm.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\link.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\lrc.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\ltc.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\luna.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\matic.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\mkr.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\nano.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\near.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\neo.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\npxs.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\omg.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\ont.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\pax.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\qtum.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\ren.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\rune.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\rvn.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\sc.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\snx.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\sol.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\stx.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\sushi.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\sxp.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\theta.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\trx.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\uma.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\uni.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\vet.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\waves.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\xem.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\xlm.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\xmr.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\xrp.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\xtz.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\yfi.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\zec.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\zen.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\zil.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\zrx.svg" BaseSize="32,32" />
 	</ItemGroup>

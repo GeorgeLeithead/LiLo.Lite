@@ -7,7 +7,7 @@
 //   FITNESS FOR A PARTICULAR PURPOSE.
 // </copyright>
 // <summary>
-//   Dialog service interface.
+//   Dialogue service interface.
 // </summary>
 //-----------------------------------------------------------------------
 
@@ -16,7 +16,7 @@ namespace LiLo.Lite.Services.Dialog
 	using Acr.UserDialogs;
 	using System.Threading.Tasks;
 
-	/// <summary>Dialog service interface.</summary>
+	/// <summary>Dialogue service interface.</summary>
 	public interface IDialogService
 	{
 		/// <summary>Show a cross-platform alert.</summary>

@@ -29,6 +29,65 @@ namespace LiLo.Lite.ViewModels
 		private MarketsModel selectedItem;
 		private HtmlWebViewSource tradingViewChart = new HtmlWebViewSource();
 
+		/// <summary>Trading View public Widget HTML string.</summary>
+		private const string TradingViewString = @"
+<html>
+<body class=""XX1XX"">
+<style type=""text/css"">
+body { margin: 0; }
+.dark {
+	background-color: black;
+	color: white;
+}
+
+.light {
+	background-color: white;
+	color: black;
+}
+iframe.body {
+	-moz-transform:scale(0.75);
+	-moz-transform-origin: 0 0;
+	-o-transform: scale(0.75);
+	-o-transform-origin: 0 0;
+	-webkit-transform: scale(0.75);
+	-webkit-transform-origin: 0 0;
+}
+</style>
+<!-- TradingView Widget BEGIN -->
+<div class=""tradingview-widget-container"">
+  <div id=""tradingview_lilo""></div>
+  <script type=""text/javascript"" src=""https://s3.tradingview.com/tv.js""></script>
+</div>
+<script type=""text/javascript"">
+	function CreateChart(displaySymbol) {
+			new TradingView.widget(
+			{
+				autosize: true,
+				symbol: displaySymbol,
+				interval: ""15"",
+				timezone: ""XX0XX"",
+				theme: ""XX1XX"",
+				locale: ""XX2XX"",
+				enable_publishing: false,
+				hide_legend: false,
+				save_image: false,
+				hide_side_toolbar: true,
+				debug: false,
+				preset: ""mobile"",
+				studies: [
+					""RSI@tv-basicstudies"",
+				],
+				container_id: ""tradingview_lilo""
+			});
+	}
+
+	CreateChart('XX3XX');
+</script>
+<!-- TradingView Widget END -->
+</body>
+</html>
+";
+
 		/// <summary>Initialises a new instance of the <see cref="ChartViewModel"/> class.</summary>
 		public ChartViewModel()
 		{
@@ -67,9 +126,9 @@ namespace LiLo.Lite.ViewModels
 					return;
 				}
 
-				string symbol = $"BINANCE:{this.SelectedItem.SymbolString}";
+				string symbol = $"BINANCE:{this.SelectedItem.SymbolString}USDT";
 				string colorTheme = Application.Current.UserAppTheme == OSAppTheme.Dark ? "dark" : "light";
-				this.tradingViewChart = new HtmlWebViewSource() { Html = GlobalSettings.TradingViewWebViewSource.Html.Replace("XX0XX", TimeZoneInfo.Local.ToString()).Replace("XX1XX", colorTheme).Replace("XX2XX", CultureInfo.CurrentCulture.IetfLanguageTag.Substring(0, 2)).Replace("XX3XX", symbol) };
+				this.tradingViewChart = new HtmlWebViewSource() { Html = TradingViewString.Replace("XX0XX", TimeZoneInfo.Local.ToString()).Replace("XX1XX", colorTheme).Replace("XX2XX", CultureInfo.CurrentCulture.IetfLanguageTag.Substring(0, 2)).Replace("XX3XX", symbol) };
 				this.NotifyPropertyChanged(() => this.TradingViewChart);
 			}
 		}

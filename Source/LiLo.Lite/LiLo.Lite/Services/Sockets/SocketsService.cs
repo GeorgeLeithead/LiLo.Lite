@@ -13,7 +13,6 @@
 
 namespace LiLo.Lite.Services.Sockets
 {
-	using System;
 	using System.ComponentModel;
 	using System.Threading.Tasks;
 	using Lilo.Lite.Services;
@@ -26,16 +25,14 @@ namespace LiLo.Lite.Services.Sockets
 	public class SocketsService : NotifyPropertyChangedBase, ISocketsService
 	{
 		private IDialogService dialogService;
-		private IMarketsHelperService marketsHelperService;
 
 		/// <summary>Has the service been resumed.</summary>
 		private bool isResumed;
 
+		private IMarketsHelperService marketsHelperService;
+
 		/// <summary>Web Socket.</summary>
 		private WebSocket webSocket;
-
-		private IMarketsHelperService MarketsHelperService => this.marketsHelperService ??= DependencyService.Resolve<MarketsHelperService>();
-		public IDialogService DialogService => this.dialogService ??= DependencyService.Resolve<DialogService>();
 
 		/// <summary>Raised when a public property of this object is set.</summary>
 		public override event PropertyChangedEventHandler PropertyChanged
@@ -44,12 +41,16 @@ namespace LiLo.Lite.Services.Sockets
 			remove { base.PropertyChanged -= value; }
 		}
 
+		public IDialogService DialogService => this.dialogService ??= DependencyService.Resolve<DialogService>();
+
 		/// <summary>Gets a value indicating whether the sockets service is connected.</summary>
 		public bool IsConnected => this.webSocket.ReadyState == WebSocketState.Open;
 
+		private IMarketsHelperService MarketsHelperService => this.marketsHelperService ??= DependencyService.Resolve<MarketsHelperService>();
+
 		public async Task Connect()
 		{
-			string wss = "wss://stream.binance.com:9443/stream?streams=adausdt@ticker/algousdt@ticker/atomusdt@ticker/batusdt@ticker/bchusdt@ticker/bnbusdt@ticker/btcusdt@ticker/compusdt@ticker/dashusdt@ticker/dogeusdt@ticker/eosusdt@ticker/etcusdt@ticker/ethusdt@ticker/iostusdt@ticker/iotausdt@ticker/kncusdt@ticker/linkusdt@ticker/ltcusdt@ticker/neousdt@ticker/omgusdt@ticker/ontusdt@ticker/qtumusdt@ticker/sxpusdt@ticker/thetausdt@ticker/trxusdt@ticker/vetusdt@ticker/xlmusdt@ticker/xmrusdt@ticker/xrpusdt@ticker/xtzusdt@ticker/zecusdt@ticker/zilusdt@ticker/zrxusdt@ticker";
+			string wss = this.MarketsHelperService.GetWss();
 			this.webSocket = new WebSocket(wss)
 			{
 				EmitOnPing = true
@@ -69,6 +70,7 @@ namespace LiLo.Lite.Services.Sockets
 		{
 			await Task.Factory.StartNew(async () =>
 			{
+				await this.DialogService.ShowToastAsync("Closing connection!");
 				if (this.webSocket == null)
 				{
 					await Task.FromResult(true);
@@ -90,6 +92,7 @@ namespace LiLo.Lite.Services.Sockets
 		{
 			await Task.Factory.StartNew(async () =>
 			{
+				await this.DialogService.ShowToastAsync("Connecting...");
 				if (Device.RuntimePlatform != Device.UWP)
 				{
 					this.webSocket.ConnectAsync();
@@ -111,7 +114,6 @@ namespace LiLo.Lite.Services.Sockets
 			{
 				this.webSocket.OnClose += this.WebSocket_OnClose;
 				this.webSocket.OnError += this.WebSocket_OnError;
-				this.webSocket.OnOpen += this.WebSocket_OnOpen;
 				this.webSocket.OnMessage += this.WebSocket_OnMessage;
 				this.webSocket.OnMessage += this.MarketsHelperService.WebSockets_OnMessageAsync;
 				await this.WebSocket_OnConnect();
@@ -129,7 +131,6 @@ namespace LiLo.Lite.Services.Sockets
 			{
 				this.webSocket.OnClose -= this.WebSocket_OnClose;
 				this.webSocket.OnError -= this.WebSocket_OnError;
-				this.webSocket.OnOpen -= this.WebSocket_OnOpen;
 				this.webSocket.OnMessage -= this.MarketsHelperService.WebSockets_OnMessageAsync;
 				this.webSocket.OnMessage -= this.WebSocket_OnMessage;
 				this.webSocket.CloseAsync(CloseStatusCode.Normal);
@@ -146,6 +147,7 @@ namespace LiLo.Lite.Services.Sockets
 		{
 			await Task.Factory.StartNew(async () =>
 			{
+				await this.DialogService.ShowToastAsync("Disconnected!");
 				while (!this.webSocket.IsAlive)
 				{
 					Task.Delay(1000).Wait();
@@ -174,19 +176,6 @@ namespace LiLo.Lite.Services.Sockets
 					this.webSocket.OnMessage -= this.WebSocket_OnMessage;
 				}
 
-				await Task.FromResult(true);
-			});
-		}
-
-		/// <summary>Handle when the sockets connection is opened.</summary>
-		/// <param name="sender">Sender object</param>
-		/// <param name="e">Event arguments</param>
-		private async void WebSocket_OnOpen(object sender, EventArgs e)
-		{
-			await Task.Factory.StartNew(async () =>
-			{
-				string Subscription = "{\"method\":\"SUBSCRIBE\",\"id\": 1,\"params\": [\"adausdt@ticker\",\"algousdt@ticker\",\"atomusdt@ticker\",\"batusdt@ticker\",\"bchusdt@ticker\",\"bnbusdt@ticker\",\"btcusdt@ticker\",\"compusdt@ticker\",\"dashusdt@ticker\",\"dogeusdt@ticker\",\"eosusdt@ticker\",\"etcusdt@ticker\",\"ethusdt@ticker\",\"iostusdt@ticker\",\"iotausdt@ticker\",\"kncusdt@ticker\",\"linkusdt@ticker\",\"ltcusdt@ticker\",\"neousdt@ticker\",\"omgusdt@ticker\",\"ontusdt@ticker\",\"qtumusdt@ticker\",\"sxpusdt@ticker\",\"thetausdt@ticker\",\"trxusdt@ticker\",\"vetusdt@ticker\",\"xlmusdt@ticker\",\"xmrusdt@ticker\",\"xrpusdt@ticker\",\"xtzusdt@ticker\",\"zecusdt@ticker\",\"zilusdt@ticker\",\"zrxusdt@ticker\"]}";
-				this.webSocket.Send(Subscription);
 				await Task.FromResult(true);
 			});
 		}

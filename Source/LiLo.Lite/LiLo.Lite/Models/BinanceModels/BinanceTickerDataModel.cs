@@ -13,56 +13,38 @@
 
 namespace LiLo.Lite.Models.BinanceModels
 {
-	using LiLo.Lite.Models.Markets;
 	using System;
 	using System.Linq;
 	using System.Text.Json.Serialization;
 	using System.Threading.Tasks;
+	using LiLo.Lite.Models.Markets;
 	using Xamarin.CommunityToolkit.ObjectModel;
 
 	/// <summary>Binance ticker symbol stream data.</summary>
 	public class BinanceTickerDataModel
 	{
-		private string symbolString;
-
-		[JsonPropertyName("s")]
-		public string SymbolString
-		{
-			get => symbolString;
-			set => symbolString = value;
-		}
-
-		[JsonPropertyName("P")]
-		public string Percent { get; set; }
-
-		public double Price24hPercent
-		{
-			get => Convert.ToDouble(Percent);
-		}
-
 		[JsonPropertyName("c")]
 		public string CurrentPrice { get; set; }
-
-		public double LastPrice
-		{
-			get => Convert.ToDouble(CurrentPrice);
-		}
 
 		[JsonPropertyName("h")]
 		public string HighPrice { get; set; }
 
-		public double HighPrice24h
-		{
-			get => Convert.ToDouble(HighPrice);
-		}
+		public double HighPrice24h => Convert.ToDouble(this.HighPrice);
+
+		public double LastPrice => Convert.ToDouble(this.CurrentPrice);
 
 		[JsonPropertyName("l")]
 		public string LowPrice { get; set; }
 
-		public double LowPrice24h
-		{
-			get => Convert.ToDouble(LowPrice);
-		}
+		public double LowPrice24h => Convert.ToDouble(this.LowPrice);
+
+		[JsonPropertyName("P")]
+		public string Percent { get; set; }
+
+		public double Price24hPercent => Convert.ToDouble(this.Percent);
+
+		[JsonPropertyName("s")]
+		public string SymbolString { get; set; }
 
 		public static async Task UpdateMarketList(BinanceTickerDataModel data, ObservableRangeCollection<MarketsModel> marketsList)
 		{
@@ -71,7 +53,7 @@ namespace LiLo.Lite.Models.BinanceModels
 				throw new ArgumentNullException(nameof(data));
 			}
 
-			MarketsModel clientItem = marketsList.SingleOrDefault(nl => nl.SymbolString == data.SymbolString);
+			MarketsModel clientItem = marketsList.SingleOrDefault(nl => (nl.SymbolString + "USDT") == data.SymbolString);
 			if (clientItem == null)
 			{
 				await Task.FromResult(true);
@@ -98,6 +80,5 @@ namespace LiLo.Lite.Models.BinanceModels
 				clientItem.HighPrice24h = data.HighPrice24h;
 			}
 		}
-
 	}
 }

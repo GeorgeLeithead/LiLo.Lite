@@ -34,7 +34,7 @@ namespace LiLo.Lite
 			InitializeComponent();
 			DependencyService.Register<SocketsService>();
 			this.socketsService = DependencyService.Resolve<SocketsService>();
-			DependencyService.Register<IDialogService>();
+			DependencyService.Register<DialogService>();
 			DependencyService.Register<MarketsHelperService>();
 			this.MainPage = new AppShell();
 		}

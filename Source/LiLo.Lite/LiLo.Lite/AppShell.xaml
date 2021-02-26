@@ -7,6 +7,10 @@
 	Shell.FlyoutBehavior="Disabled"
 	Shell.NavBarHasShadow="True"
 	Visual="Material">
-	<ShellContent ContentTemplate="{DataTemplate views:HomeView}" Route="Home" />
-	<ShellContent ContentTemplate="{DataTemplate views:ChartView}" Route="Chart" />
+	<FlyoutItem Route="Home">
+		<ShellContent ContentTemplate="{DataTemplate views:HomeView}" />
+	</FlyoutItem>
+	<FlyoutItem Route="Chart">
+		<ShellContent ContentTemplate="{DataTemplate views:ChartView}" />
+	</FlyoutItem>
 </Shell>

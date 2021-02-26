@@ -1,5 +1,6 @@
 ﻿namespace LiLo.Lite.Droid
 {
+	using Acr.UserDialogs;
 	using Android.App;
 	using Android.Content.PM;
 	using Android.OS;
@@ -31,6 +32,7 @@
 			Xamarin.Essentials.Platform.Init(this, savedInstanceState);
 			Forms.Init(this, savedInstanceState);
 			CrossCurrentActivity.Current.Init(this, savedInstanceState);
+			UserDialogs.Init(this);
 			LoadApplication(new App());
 		}
 	}

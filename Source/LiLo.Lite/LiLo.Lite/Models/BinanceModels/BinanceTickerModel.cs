@@ -18,10 +18,10 @@ namespace LiLo.Lite.Models.BinanceModels
 	/// <summary>Binance ticker symbol stream.</summary>
 	public class BinanceTickerModel
 	{
-		[JsonPropertyName("stream")]
-		public string Stream { get; set; }
-
 		[JsonPropertyName("data")]
 		public BinanceTickerDataModel Data { get; set; }
+
+		[JsonPropertyName("stream")]
+		public string Stream { get; set; }
 	}
 }

@@ -27,11 +27,17 @@ namespace LiLo.Lite.Services.Markets
 		/// <summary>Gets or sets a list of Markets.</summary>
 		ObservableRangeCollection<MarketsModel> MarketsList { get; set; }
 
+		/// <summary>Get the WSS feed string.</summary>
+		/// <returns>WSS URL.</returns>
+		string GetWss();
+
+		/// <summary>Initialises task for the markets helper service.</summary>
+		/// <returns>Task results of initialisation.</returns>
+		void Init();
+
 		/// <summary>Message received handler.</summary>
 		/// <param name="sender">Message sender</param>
 		/// <param name="e">Message event arguments</param>
 		void WebSockets_OnMessageAsync(object sender, MessageEventArgs e);
-
-		void Init();
 	}
 }
