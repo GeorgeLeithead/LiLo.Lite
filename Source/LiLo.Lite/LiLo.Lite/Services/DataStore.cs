@@ -47,7 +47,7 @@ namespace LiLo.Lite.Services
 				new MarketsModel { Rank = 14, DecimalPlaces = 7, SymbolString = "DOGE" },
 				//// #15 is WBTC
 				//// #16 is OKB
-				new MarketsModel { Rank = 17, DecimalPlaces = 6, SymbolString = "XEM" },
+				new MarketsModel { Rank = 17, DecimalPlaces = 4, SymbolString = "XEM" },
 				new MarketsModel { Rank = 18, DecimalPlaces = 3, SymbolString = "ATOM" },
 				new MarketsModel { Rank = 19, DecimalPlaces = 2, SymbolString = "AAVE" }, // from ALT source
 				new MarketsModel { Rank = 20, DecimalPlaces = 2, SymbolString = "SOL" }, // from ALT source
@@ -59,7 +59,7 @@ namespace LiLo.Lite.Services
 				//// #26 is HT
 				new MarketsModel { Rank = 27, DecimalPlaces = 4, SymbolString = "IOTA" },
 				new MarketsModel { Rank = 28, DecimalPlaces = 5, SymbolString = "THETA" },
-				new MarketsModel { Rank = 29, DecimalPlaces = 5, SymbolString = "SNX" }, // from ALT source
+				new MarketsModel { Rank = 29, DecimalPlaces = 3, SymbolString = "SNX" }, // from ALT source
 				new MarketsModel { Rank = 30, DecimalPlaces = 3, SymbolString = "NEO" },
 				new MarketsModel { Rank = 31, DecimalPlaces = 4, SymbolString = "XTZ" },
 				new MarketsModel { Rank = 32, DecimalPlaces = 2, SymbolString = "LUNA" }, // from ALT source
@@ -70,7 +70,7 @@ namespace LiLo.Lite.Services
 				new MarketsModel { Rank = 37, DecimalPlaces = 2, SymbolString = "AVAX" }, // from ALT source
 				//// #38 is DAI, but it's not really available in the spot market!
 				////new MarketsModel { Rank = 38, DecimalPlaces = 6, SymbolString = "DAI" },
-				new MarketsModel { Rank = 39, DecimalPlaces = 6, SymbolString = "BUSD" }, // from ALT source
+				new MarketsModel { Rank = 39, DecimalPlaces = 4, SymbolString = "BUSD" }, // from ALT source
 				//// #40 is CDAI
 				new MarketsModel { Rank = 41, DecimalPlaces = 2, SymbolString = "KSM" }, // from ALT source
 				new MarketsModel { Rank = 42, DecimalPlaces = 2, SymbolString = "SUSHI" }, // from ALT source
@@ -79,14 +79,14 @@ namespace LiLo.Lite.Services
 				new MarketsModel { Rank = 45, DecimalPlaces = 2, SymbolString = "EGLD" }, // from ALT source
 				new MarketsModel { Rank = 46, DecimalPlaces = 2, SymbolString = "FIL" },
 				//// #47 is CEL
-				new MarketsModel { Rank = 48, DecimalPlaces = 6, SymbolString = "FTM" }, // from ALT source
+				new MarketsModel { Rank = 48, DecimalPlaces = 5, SymbolString = "FTM" }, // from ALT source
 				//// #49 is LEO
 				new MarketsModel { Rank = 50, DecimalPlaces = 2, SymbolString = "COMP" },
 				new MarketsModel { Rank = 51, DecimalPlaces = 2, SymbolString = "DCR" },
 				//// #52 is CUSDC
 				new MarketsModel { Rank = 53, DecimalPlaces = 2, SymbolString = "CAKE" }, // from ALT source
 				//// # 54 is VGX
-				new MarketsModel { Rank = 55, DecimalPlaces = 6, SymbolString = "RVN" },
+				new MarketsModel { Rank = 55, DecimalPlaces = 5, SymbolString = "RVN" },
 				new MarketsModel { Rank = 56, DecimalPlaces = 2, SymbolString = "ZEC" },
 				new MarketsModel { Rank = 57, DecimalPlaces = 5, SymbolString = "ZIL" },
 				new MarketsModel { Rank = 58, DecimalPlaces = 4, SymbolString = "ETC" },
@@ -102,21 +102,21 @@ namespace LiLo.Lite.Services
 				//// #68 is XSUSHI
 				new MarketsModel { Rank = 69, DecimalPlaces = 2, SymbolString = "ICX" },
 				new MarketsModel { Rank = 70, DecimalPlaces = 2, SymbolString = "STX" },
-				new MarketsModel { Rank = 71, DecimalPlaces = 6, SymbolString = "HBAR" }, // from ALT source
+				new MarketsModel { Rank = 71, DecimalPlaces = 5, SymbolString = "HBAR" }, // from ALT source
 				//// #72 is AMP
-				new MarketsModel { Rank = 73, DecimalPlaces = 8, SymbolString = "BTT" },
+				new MarketsModel { Rank = 73, DecimalPlaces = 7, SymbolString = "BTT" },
 				//// #74 is MDX
-				new MarketsModel { Rank = 75, DecimalPlaces = 6, SymbolString = "MATIC" },
+				new MarketsModel { Rank = 75, DecimalPlaces = 5, SymbolString = "MATIC" },
 				//// #76 is RENBTC
 				//// #77 is CHSB
 				new MarketsModel { Rank = 78, DecimalPlaces = 6, SymbolString = "IOST" },
 				new MarketsModel { Rank = 79, DecimalPlaces = 4, SymbolString = "ALGO" },
-				new MarketsModel { Rank = 80, DecimalPlaces = 6, SymbolString = "PAX" },
-				new MarketsModel { Rank = 81, DecimalPlaces = 6, SymbolString = "DGB" },
+				new MarketsModel { Rank = 80, DecimalPlaces = 4, SymbolString = "PAX" },
+				new MarketsModel { Rank = 81, DecimalPlaces = 5, SymbolString = "DGB" },
 				new MarketsModel { Rank = 82, DecimalPlaces = 2, SymbolString = "ONT" },
 				new MarketsModel { Rank = 83, DecimalPlaces = 2, SymbolString = "NANO" },
 				new MarketsModel { Rank = 84, DecimalPlaces = 4, SymbolString = "BAT" },
-				new MarketsModel { Rank = 85, DecimalPlaces = 6, SymbolString = "LRC" },
+				new MarketsModel { Rank = 85, DecimalPlaces = 5, SymbolString = "LRC" },
 				//// #86 is ZKS
 				new MarketsModel { Rank = 87, DecimalPlaces = 4, SymbolString = "OMG" },
 				//// #88 is HUSD
@@ -124,13 +124,13 @@ namespace LiLo.Lite.Services
 				//// #90 is UST
 				new MarketsModel { Rank = 91, DecimalPlaces = 2, SymbolString = "ZEN" },
 				new MarketsModel { Rank = 92, DecimalPlaces = 3, SymbolString = "QTUM" },
-				new MarketsModel { Rank = 93, DecimalPlaces = 8, SymbolString = "NPXS" },
-				new MarketsModel { Rank = 94, DecimalPlaces = 8, SymbolString = "HOT" },
+				new MarketsModel { Rank = 93, DecimalPlaces = 7, SymbolString = "NPXS" },
+				new MarketsModel { Rank = 94, DecimalPlaces = 7, SymbolString = "HOT" },
 				////new MarketsModel { Rank = 95, DecimalPlaces = 2, SymbolString = "XVS" }, // NEED PNG
-				new MarketsModel { Rank = 96, DecimalPlaces = 6, SymbolString = "ENJ" },
+				new MarketsModel { Rank = 96, DecimalPlaces = 5, SymbolString = "ENJ" },
 				//// #97 is BTMX
 				new MarketsModel { Rank = 98, DecimalPlaces = 2, SymbolString = "CRV" }, // from ALT source
-				new MarketsModel { Rank = 99, DecimalPlaces = 8, SymbolString = "SC" },
+				new MarketsModel { Rank = 99, DecimalPlaces = 7, SymbolString = "SC" },
 				//// # 100 is BTG
 				new MarketsModel { Rank = 118, DecimalPlaces = 3, SymbolString = "KNC" },
 				new MarketsModel { Rank = 149, DecimalPlaces = 3, SymbolString = "SXP" },
