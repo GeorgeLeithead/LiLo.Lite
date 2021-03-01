@@ -17,6 +17,7 @@ namespace LiLo.Lite.Services.Markets
 	using System.Collections.Generic;
 	using System.ComponentModel;
 	using System.Linq;
+	using System.Net.Http;
 	using System.Text.Json;
 	using System.Threading.Tasks;
 	using Lilo.Lite.Services;
@@ -35,7 +36,7 @@ namespace LiLo.Lite.Services.Markets
 		/// <summary>Initialises a new instance of the <see cref="MarketsHelperService" /> class.</summary>
 		public MarketsHelperService()
 		{
-			this.MarketsList = new ObservableRangeCollection<MarketsModel>();
+			this.MarketsList = new ObservableRangeCollection<MarketModel>();
 		}
 
 		/// <summary>Raised when a public property of this object is set.</summary>
@@ -48,7 +49,7 @@ namespace LiLo.Lite.Services.Markets
 		public IDialogService DialogService => this.dialogService ??= DependencyService.Resolve<DialogService>();
 
 		/// <summary>Gets or sets an observable list of markets.</summary>
-		public ObservableRangeCollection<MarketsModel> MarketsList { get; set; }
+		public ObservableRangeCollection<MarketModel> MarketsList { get; set; }
 
 		public string GetWss()
 		{
@@ -59,8 +60,13 @@ namespace LiLo.Lite.Services.Markets
 		/// <returns>Task results of initialisation.</returns>
 		public void Init()
 		{
-			IEnumerable<MarketsModel> markets = DataStore.GetMarketsForFeed();
-			foreach (MarketsModel market in markets)
+			if (this.MarketsList.Count != 0)
+			{
+				return;
+			}
+
+			IEnumerable<MarketModel> markets = DataStore.GetMarketsForFeed();
+			foreach (MarketModel market in markets)
 			{
 				if (!this.MarketsList.Any(m => m == market))
 				{

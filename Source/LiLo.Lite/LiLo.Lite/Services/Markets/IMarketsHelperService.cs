@@ -25,7 +25,7 @@ namespace LiLo.Lite.Services.Markets
 		event PropertyChangedEventHandler PropertyChanged;
 
 		/// <summary>Gets or sets a list of Markets.</summary>
-		ObservableRangeCollection<MarketsModel> MarketsList { get; set; }
+		ObservableRangeCollection<MarketModel> MarketsList { get; set; }
 
 		/// <summary>Get the WSS feed string.</summary>
 		/// <returns>WSS URL.</returns>

@@ -46,14 +46,14 @@ namespace LiLo.Lite.Models.BinanceModels
 		[JsonPropertyName("s")]
 		public string SymbolString { get; set; }
 
-		public static async Task UpdateMarketList(BinanceTickerDataModel data, ObservableRangeCollection<MarketsModel> marketsList)
+		public static async Task UpdateMarketList(BinanceTickerDataModel data, ObservableRangeCollection<MarketModel> marketsList)
 		{
 			if (data is null)
 			{
 				throw new ArgumentNullException(nameof(data));
 			}
 
-			MarketsModel clientItem = marketsList.SingleOrDefault(nl => (nl.SymbolString + "USDT") == data.SymbolString);
+			MarketModel clientItem = marketsList.SingleOrDefault(nl => (nl.SymbolString + "USDT") == data.SymbolString);
 			if (clientItem == null)
 			{
 				await Task.FromResult(true);

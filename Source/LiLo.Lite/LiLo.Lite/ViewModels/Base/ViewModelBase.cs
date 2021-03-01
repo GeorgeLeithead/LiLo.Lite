@@ -16,6 +16,7 @@ namespace LiLo.Lite.ViewModels.Base
 	using System.Runtime.Serialization;
 	using LiLo.Lite.Services.Dialog;
 	using LiLo.Lite.Services.Markets;
+	using LiLo.Lite.Services.Sockets;
 	using Xamarin.Forms;
 	using Xamarin.Forms.Internals;
 
@@ -26,6 +27,7 @@ namespace LiLo.Lite.ViewModels.Base
 	{
 		private IDialogService dialogService;
 		private MarketsHelperService marketsHelperService;
+		private ISocketsService socketsService;
 
 		/// <summary>View is busy.</summary>
 		private bool isBusy;
@@ -40,6 +42,8 @@ namespace LiLo.Lite.ViewModels.Base
 
 		public MarketsHelperService MarketsHelperService => this.marketsHelperService ??= DependencyService.Resolve<MarketsHelperService>();
 		public IDialogService DialogService => this.dialogService ??= DependencyService.Resolve<DialogService>();
+
+		public ISocketsService SocketsService => this.socketsService ??= DependencyService.Resolve<SocketsService>();
 
 		/// <summary>Gets or sets a value indicating whether the view is busy.</summary>
 		public bool IsBusy

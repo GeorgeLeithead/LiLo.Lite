@@ -7,6 +7,7 @@
 	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
+	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
 	Title="{Binding Title, Mode=OneTime}"
 	Shell.NavBarIsVisible="False"
 	Style="{StaticResource BasePage}"
@@ -17,6 +18,12 @@
 		<vm:HomeViewModel />
 	</ContentPage.BindingContext>
 
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<xct:InvertedBoolConverter x:Key="InvertedBoolConverter" />
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
 	<ContentPage.Content>
 		<Grid RowDefinitions="Auto,*">
 			<!--  title bar  -->
@@ -25,18 +32,35 @@
 				HomeVisible="False"
 				Style="{StaticResource TitleStyle}"
 				Text="Markets" />
+			<ActivityIndicator
+				Grid.Row="1"
+				d:IsRunning="True"
+				d:IsVisible="True"
+				HorizontalOptions="CenterAndExpand"
+				IsRunning="{Binding IsBusy}"
+				IsVisible="{Binding IsBusy}"
+				VerticalOptions="CenterAndExpand" />
 			<!--  Markets List View  -->
-			<ScrollView Grid.Row="1" VerticalScrollBarVisibility="Never">
+			<ScrollView
+				Grid.Row="1"
+				IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}"
+				VerticalScrollBarVisibility="Never">
 				<CollectionView
-					Grid.Row="1"
 					ItemsSource="{Binding MarketsList}"
 					SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
 					Style="{StaticResource MarketsCollectionViewStyle}">
 					<CollectionView.EmptyView>
-						<Label
-							HorizontalOptions="Center"
-							Text="No market feed data...yet."
-							VerticalOptions="Center" />
+						<StackLayout
+							HorizontalOptions="FillAndExpand"
+							Orientation="Vertical"
+							Spacing="8"
+							VerticalOptions="FillAndExpand">
+							<Label
+								HorizontalOptions="Center"
+								Text="No market feed data..."
+								VerticalOptions="Center" />
+							<Button Command="{Binding RetryButtonClicked}" Text="Retry" />
+						</StackLayout>
 					</CollectionView.EmptyView>
 
 					<CollectionView.ItemTemplate>

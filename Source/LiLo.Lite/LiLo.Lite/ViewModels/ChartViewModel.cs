@@ -16,8 +16,6 @@ namespace LiLo.Lite.ViewModels
 	using System;
 	using System.Globalization;
 	using System.Linq;
-	using System.Threading.Tasks;
-	using Lilo.Lite;
 	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.Forms;
@@ -26,7 +24,7 @@ namespace LiLo.Lite.ViewModels
 	[QueryProperty("Symbol", "symbol")]
 	public class ChartViewModel : ViewModelBase
 	{
-		private MarketsModel selectedItem;
+		private MarketModel selectedItem;
 		private HtmlWebViewSource tradingViewChart = new HtmlWebViewSource();
 
 		/// <summary>Trading View public Widget HTML string.</summary>
@@ -105,7 +103,7 @@ iframe.body {
 			}
 		}
 
-		public MarketsModel SelectedItem
+		public MarketModel SelectedItem
 		{
 			get => this.selectedItem;
 			set

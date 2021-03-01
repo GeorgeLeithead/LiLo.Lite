@@ -13,6 +13,9 @@
 
 namespace LiLo.Lite.ViewModels
 {
+	using System.Net.Http;
+	using System.Threading.Tasks;
+	using System.Windows.Input;
 	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.CommunityToolkit.ObjectModel;
@@ -22,20 +25,19 @@ namespace LiLo.Lite.ViewModels
 	public class HomeViewModel : ViewModelBase
 	{
 		/// <summary>Observable list of markets.</summary>
-		private ObservableRangeCollection<MarketsModel> marketsList;
+		private ObservableRangeCollection<MarketModel> marketsList;
 
 		/// <summary>Initializes a new instance of the <see cref="HomeViewModel"/> class.</summary>
 		public HomeViewModel()
 		{
 			this.IsBusy = true;
 			this.Title = "Markets";
-			this.MarketsHelperService.Init();
-			this.MarketsList = this.MarketsHelperService.MarketsList;
-			this.IsBusy = false;
+			this.RetryButtonClicked = new Command(() => this.Init());
+			this.Init();
 		}
 
 		/// <summary>Gets or sets a collection of values to be displayed in the markets view.</summary>
-		public ObservableRangeCollection<MarketsModel> MarketsList
+		public ObservableRangeCollection<MarketModel> MarketsList
 		{
 			get => this.marketsList;
 			set
@@ -49,18 +51,36 @@ namespace LiLo.Lite.ViewModels
 		}
 
 		/// <summary>Sets selected item.</summary>
-		public MarketsModel SelectedItem
+		public MarketModel SelectedItem
 		{
 			get => null;
 			set
 			{
 				if (value != null)
 				{
-					MarketsModel item = value;
+					MarketModel item = value;
 					Shell.Current.GoToAsync($"//Chart?symbol={item.SymbolString}");
 					this.NotifyPropertyChanged(() => this.SelectedItem);
 				}
 			}
+		}
+		public ICommand RetryButtonClicked { get; set; }
+
+		/// <summary>Initialise the home view model.</summary>
+		private void Init()
+		{
+			try
+			{
+				this.MarketsHelperService.Init();
+				this.SocketsService?.Connect();
+				this.MarketsList = this.MarketsHelperService.MarketsList;
+			}
+			catch (HttpRequestException ex)
+			{
+				_ = this.DialogService.ShowAlertAsync(ex.Message, "Markets list error", "Dismiss");
+			}
+
+			this.IsBusy = false;
 		}
 	}
 }
