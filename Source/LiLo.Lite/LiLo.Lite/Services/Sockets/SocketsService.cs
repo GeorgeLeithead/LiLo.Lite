@@ -70,6 +70,11 @@ namespace LiLo.Lite.Services.Sockets
 		{
 			await Task.Factory.StartNew(async () =>
 			{
+				if (!IsConnected)
+				{
+					return;
+				}
+
 				await this.DialogService.ShowToastAsync("Closing connection!");
 				if (this.webSocket == null)
 				{
@@ -92,6 +97,11 @@ namespace LiLo.Lite.Services.Sockets
 		{
 			await Task.Factory.StartNew(async () =>
 			{
+				if (IsConnected)
+				{
+					return;
+				}
+
 				await this.DialogService.ShowToastAsync("Connecting...");
 				if (Device.RuntimePlatform != Device.UWP)
 				{
@@ -147,6 +157,11 @@ namespace LiLo.Lite.Services.Sockets
 		{
 			await Task.Factory.StartNew(async () =>
 			{
+				if (IsConnected)
+				{
+					return;
+				}
+
 				await this.DialogService.ShowToastAsync("Disconnected!");
 				while (!this.webSocket.IsAlive)
 				{

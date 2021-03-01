@@ -47,7 +47,7 @@ namespace LiLo.Lite
 			base.OnResume();
 			if (!DesignMode.IsDesignModeEnabled)
 			{
-				this.socketsService.WebSocket_OnResume();
+				this.socketsService?.WebSocket_OnResume();
 			}
 		}
 
@@ -57,7 +57,7 @@ namespace LiLo.Lite
 			base.OnStart();
 			if (!DesignMode.IsDesignModeEnabled)
 			{
-				this.socketsService.WebSocket_OnSleep();
+				this.socketsService?.WebSocket_OnSleep();
 			}
 		}
 
@@ -68,7 +68,7 @@ namespace LiLo.Lite
 			AppCenter.Start("android=4d413467-bf37-45b0-bf18-b8d15d98a182;", typeof(Analytics), typeof(Crashes), typeof(Distribute));
 			if (!DesignMode.IsDesignModeEnabled)
 			{
-				this.socketsService.Connect();
+				this.socketsService?.Connect();
 			}
 
 			Current.UserAppTheme = Current.RequestedTheme;

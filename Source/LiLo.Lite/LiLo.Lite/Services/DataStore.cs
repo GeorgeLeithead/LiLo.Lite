@@ -16,6 +16,7 @@ namespace LiLo.Lite.Services
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Text;
+	using System.Text.Json;
 	using LiLo.Lite.Models.Markets;
 
 	/// <summary>Application data store.</summary>
@@ -67,7 +68,8 @@ namespace LiLo.Lite.Services
 				new MarketsModel { Rank = 35, DecimalPlaces = 2, SymbolString = "DASH" },
 				new MarketsModel { Rank = 36, DecimalPlaces = 2, SymbolString = "GRT" }, // from ALT source
 				new MarketsModel { Rank = 37, DecimalPlaces = 2, SymbolString = "AVAX" }, // from ALT source
-				new MarketsModel { Rank = 38, DecimalPlaces = 6, SymbolString = "DAI" },
+				//// #38 is DAI, but it's not really available in the spot market!
+				////new MarketsModel { Rank = 38, DecimalPlaces = 6, SymbolString = "DAI" },
 				new MarketsModel { Rank = 39, DecimalPlaces = 6, SymbolString = "BUSD" }, // from ALT source
 				//// #40 is CDAI
 				new MarketsModel { Rank = 41, DecimalPlaces = 2, SymbolString = "KSM" }, // from ALT source
@@ -141,6 +143,9 @@ namespace LiLo.Lite.Services
 		/// <returns>IEnumerable{MarketsModel} ordered by rank.</returns>
 		internal static IEnumerable<MarketsModel> GetMarketsForFeed()
 		{
+			var x = Markets.OrderBy(n => n.Rank);
+			////string y = JsonSerializer.Serialize(x);
+			////string z = y;
 			return Markets.OrderBy(n => n.Rank);
 		}
 

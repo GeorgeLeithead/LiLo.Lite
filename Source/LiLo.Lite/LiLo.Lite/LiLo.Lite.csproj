@@ -54,7 +54,6 @@
 		<None Remove="SharedImages\cake.svg" />
 		<None Remove="SharedImages\comp.svg" />
 		<None Remove="SharedImages\crv.svg" />
-		<None Remove="SharedImages\dai.svg" />
 		<None Remove="SharedImages\dash.svg" />
 		<None Remove="SharedImages\dcr.svg" />
 		<None Remove="SharedImages\dgb.svg" />
@@ -146,7 +145,6 @@
 		<SharedImage Include="SharedImages\cake.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\comp.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\crv.svg" BaseSize="32,32" />
-		<SharedImage Include="SharedImages\dai.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\dash.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\dcr.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\dgb.svg" BaseSize="32,32" />
