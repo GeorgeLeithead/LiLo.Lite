@@ -14,7 +14,6 @@
 namespace LiLo.Lite.ViewModels
 {
 	using System.Net.Http;
-	using System.Threading.Tasks;
 	using System.Windows.Input;
 	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.ViewModels.Base;
@@ -26,6 +25,7 @@ namespace LiLo.Lite.ViewModels
 	{
 		/// <summary>Observable list of markets.</summary>
 		private ObservableRangeCollection<MarketModel> marketsList;
+		private int gridItemsLayoutSpan = 1;
 
 		/// <summary>Initializes a new instance of the <see cref="HomeViewModel"/> class.</summary>
 		public HomeViewModel()
@@ -65,6 +65,19 @@ namespace LiLo.Lite.ViewModels
 			}
 		}
 		public ICommand RetryButtonClicked { get; set; }
+
+		public int GridItemsLayoutSpan
+		{
+			get => gridItemsLayoutSpan;
+			set
+			{
+				if (value != gridItemsLayoutSpan)
+				{
+					gridItemsLayoutSpan = value;
+					this.NotifyPropertyChanged(() => this.GridItemsLayoutSpan);
+				}
+			}
+		}
 
 		/// <summary>Initialise the home view model.</summary>
 		private void Init()

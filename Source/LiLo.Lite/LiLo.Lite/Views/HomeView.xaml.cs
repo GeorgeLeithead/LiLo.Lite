@@ -13,6 +13,7 @@
 
 namespace LiLo.Lite.Views
 {
+	using LiLo.Lite.ViewModels;
 	using Xamarin.Forms;
 	using Xamarin.Forms.Internals;
 	using Xamarin.Forms.Xaml;
@@ -22,7 +23,31 @@ namespace LiLo.Lite.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class HomeView : ContentPage
 	{
+		private HomeViewModel vm;
+
 		/// <summary>Initialises a new instance of the <see cref="HomeView" /> class.</summary>
 		public HomeView() => this.InitializeComponent();
+
+		private HomeViewModel VM
+		{
+			get => this.vm ??= (HomeViewModel)this.BindingContext;
+		}
+
+		protected override void OnSizeAllocated(double width, double height)
+		{
+			base.OnSizeAllocated(width, height);
+			if (width > height)
+			{
+				// Landscape mode
+				this.VM.GridItemsLayoutSpan = 2;
+			}
+			else
+			{
+				// Portrait mode
+				this.VM.GridItemsLayoutSpan = 1;
+			}
+		}
+
 	}
+
 }

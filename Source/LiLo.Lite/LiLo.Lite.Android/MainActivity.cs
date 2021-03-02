@@ -6,12 +6,15 @@
 	using Android.OS;
 	using Android.Runtime;
 	using LiLo.Lite.Interfaces;
+	using LiLo.Lite.Views;
 	using Plugin.CurrentActivity;
 	using Xamarin.Forms;
 
 	[Activity(Label = "LiLo.Lite", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 	public class MainActivity : Xamarin.Forms.Platform.Android.FormsAppCompatActivity
 	{
+		private ScreenOrientation previousOrientation = ScreenOrientation.Unspecified;
+
 		public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Permission[] grantResults)
 		{
 			Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -34,6 +37,15 @@
 			CrossCurrentActivity.Current.Init(this, savedInstanceState);
 			UserDialogs.Init(this);
 			LoadApplication(new App());
+
+			MessagingCenter.Subscribe<ChartView>(this, "preventLandscape", sender => {
+				previousOrientation = this.RequestedOrientation;
+				RequestedOrientation = ScreenOrientation.Portrait;
+			});
+
+			MessagingCenter.Subscribe<ChartView>(this, "allowLandscapePortrait", sender => {
+				RequestedOrientation = previousOrientation;
+			});
 		}
 	}
 }

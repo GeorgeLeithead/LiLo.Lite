@@ -4,14 +4,16 @@
 Open source repository for the LiLo.Lite (Ladder In Ladder Out) Mobile Application.
 
 ## Overview
-LiLo 'Lite' is a light-weight cryptocurrency (crypto) tracking application.  It provides a quick and easy way to watch the top crypto currency information and charts.  With extremely low battery usage, you can leave the application running in the background and have crypto information available right at your fingertips.
+LiLo.Lite is a light-weight cryptocurrency (crypto) tracking application.  It provides a quick and easy way to watch the top crypto currency information and charts.  With extremely low battery usage, you can leave the application running in the background and have crypto information available right at your fingertips.
 
 ## Screenshots
 ### Splash Screen
 ![Splash Screen](Screenshots/SplashScreen.png)
 ### Markets page
-![Home Page - Light theme](Screenshots/HomeLight.png)
-![Home Page - Dark theme](Screenshots/HomeDark.png)
+![Home Page - Light theme - Portrait](Screenshots/HomeLight.png)
+![Home Page - Dark theme - Portrait](Screenshots/HomeDark.png)
+![Home Page - Light theme - Landscape](Screenshots/HomeLightL.png)
+![Home Page - Dark theme - Landscape](Screenshots/HomeDarkL.png)
 
 ### Chart page
 ![Chart page - Light theme](Screenshots/ChartLight.png)
@@ -21,6 +23,14 @@ LiLo 'Lite' is a light-weight cryptocurrency (crypto) tracking application.  It 
 ![Home Page - Light theme - Pixel C Lollipop 5.0 - API 21](Screenshots/HomeLight_Pixel_C_Lollipop_5.0_API_21.png)
 ![Home Page - Light theme - Pixel 2 Lollipop 5.0 - API 21](Screenshots/HomeLight_Pixel_2_Lollipop_5.0_API_21.png)
 
+## Supported Platforms: Android, iOS
+
+The LiLo.Lite mobile application is currently available for these platforms:
+
+| Platform | Install | Build Status |
+| -------- | ------- | ------------ |
+| Android 5.0 and above | [Side-load install](https://install.appcenter.ms/users/george-internetwideworld.com/apps/LiLo.Lite.Android/distribution_groups/public) | [![Build status](https://build.appcenter.ms/v0.1/apps/4a6daf54-3a40-41b5-b2b2-11f740b0b3c7/branches/master/badge)](https://appcenter.ms)       |
+| iOS 8.0 and above | Work-in-progress | N/A       |
 
 ## Feature highlights include:
 - FREE to install and FREE from adverts.
@@ -32,7 +42,7 @@ LiLo 'Lite' is a light-weight cryptocurrency (crypto) tracking application.  It 
 - Currency 24hr price high, low and percentage changes.
 - Simple to use interface.
 - Light and dark theme support.
-- Extremely low battery use.
+- Extremely low battery use (<2% in a typical use day).
 - Support for Android 5.0 (API level 21 - Lollipop) and above.
 - Open source.
 
@@ -56,7 +66,7 @@ LiLo 'Lite' is a light-weight cryptocurrency (crypto) tracking application.  It 
 - Monero (XMR)
 - EOS (EOS)
 - Tron (TRX)
-- IOTA (IOTA)
+- MIOTA (IOTA)
 - Theta Network (THETA)
 - Synthetix Network Token (SNX)
 - NEO (NEO)
@@ -67,7 +77,6 @@ LiLo 'Lite' is a light-weight cryptocurrency (crypto) tracking application.  It 
 - Dash (DASH)
 - The Graph (GRT)
 - Avalanche (AVAX)
-- Dai (DAI)
 - Binance USD (BUSD)
 - Kasuma (KSM)
 - Sushi (SUSHI)
@@ -126,20 +135,11 @@ The application is written using Xamarin.Forms and integrates with the [Binance]
 ### Libraries used
 - [Xamarin.Forms](https://github.com/xamarin/Xamarin.Forms)
 - [Xamarin.Essentials](https://github.com/xamarin/Essentials)
+- [Xamarin.CommunityToolkit](https://github.com/xamarin/XamarinCommunityToolkit)
 - [ResizetizerNT](https://github.com/Redth/ResizetizerNT)
 - [websocket-sharp](https://github.com/PingmanTools/websocket-sharp/)
 - [System.Text.Json](https://github.com/dotnet/corefx)
-
-## Supported Platforms: Android, iOS
-
-The LiLo.Lite mobile application is currently available for these platforms:
-
-| Platform | Install | Build Status |
-| -------- | ------- | ------------ |
-| Android  | [Alpha](https://install.appcenter.ms/users/george-internetwideworld.com/apps/LiLo.Lite.Android/distribution_groups/public) | [![Build status](https://build.appcenter.ms/v0.1/apps/4a6daf54-3a40-41b5-b2b2-11f740b0b3c7/branches/master/badge)](https://appcenter.ms)       |
-| iOS      | Alpha^ | N/A       |
-
-^Currently don't have a MAC available with a new-enough version of XCode to build iOS!
+- [Acr.UserDialogs](https://github.com/aritchie/userdialogs)
 
 ## More information
 - Source code: https://github.com/GeorgeLeithead/LiLo.Lite

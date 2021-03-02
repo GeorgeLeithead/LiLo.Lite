@@ -62,10 +62,17 @@
 							<Button Command="{Binding RetryButtonClicked}" Text="Retry" />
 						</StackLayout>
 					</CollectionView.EmptyView>
+					<CollectionView.ItemsLayout>
+						<GridItemsLayout
+							HorizontalItemSpacing="4"
+							Orientation="Vertical"
+							Span="{Binding GridItemsLayoutSpan}"
+							VerticalItemSpacing="4" />
+					</CollectionView.ItemsLayout>
 
 					<CollectionView.ItemTemplate>
 						<DataTemplate>
-							<StackLayout Orientation="Vertical">
+							<StackLayout>
 								<Frame>
 									<Grid
 										ColumnDefinitions="20*,40*,40*"
@@ -117,7 +124,6 @@
 										</StackLayout>
 									</Grid>
 								</Frame>
-								<BoxView />
 							</StackLayout>
 						</DataTemplate>
 					</CollectionView.ItemTemplate>

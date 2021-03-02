@@ -46,5 +46,17 @@ namespace LiLo.Lite.Views
 		{
 			e.Cancel = true;
 		}
+
+		protected override void OnAppearing()
+		{
+			base.OnAppearing();
+			MessagingCenter.Send(this, "preventLandscape");
+		}
+
+		protected override void OnDisappearing()
+		{
+			base.OnDisappearing();
+			MessagingCenter.Send(this, "allowLandscapePortrait");
+		}
 	}
 }
