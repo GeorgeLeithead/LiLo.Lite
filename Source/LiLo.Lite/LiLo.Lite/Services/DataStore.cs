@@ -15,21 +15,23 @@ namespace LiLo.Lite.Services
 {
 	using System.Collections.Generic;
 	using System.Linq;
+	using System.Net.Http;
 	using System.Text;
 	using System.Text.Json;
 	using LiLo.Lite.Models.Markets;
-	using System.Net.Http;
 
 	/// <summary>Application data store.</summary>
 	public static class DataStore
 	{
-		public static List<MarketModel> Markets;
+		/// <summary>Markets list.</summary>
+		private static List<MarketModel> marketsData;
 
-		/// <summary>Data store.</summary>
+		/// <summary>Initialises static members of the <see cref="DataStore"/> class.</summary>
 		/// <remarks>SVG icons from https://github.com/spothq/cryptocurrency-icons under SVG/colour.</remarks>
 		static DataStore()
 		{
-			List<MarketModel> markets = new List<MarketModel>
+			/*
+			List<MarketModel> defaultMarkets = new List<MarketModel>
 			{
 				// Binance Futures (MainNet)
 				new MarketModel { Rank = 1, DecimalPlaces = 2, SymbolString = "BTC" },
@@ -137,7 +139,8 @@ namespace LiLo.Lite.Services
 				new MarketModel { Rank = 149, DecimalPlaces = 3, SymbolString = "SXP" },
 			};
 
-			////Markets = new List<MarketModel>(markets);
+			Markets = new List<MarketModel>(defaultMarkets);
+			*/
 		}
 
 		/// <summary>Get ordered markets feed list.</summary>
@@ -147,15 +150,15 @@ namespace LiLo.Lite.Services
 			try
 			{
 				using HttpClient client = new HttpClient();
-				HttpResponseMessage response = client.GetAsync("https://raw.githubusercontent.com/GeorgeLeithead/LiLo.Markets/main/Markets.json").Result; // Want to do this synchronously to ensure that we don't start anything else until this is complete! 
+				HttpResponseMessage response = client.GetAsync("https://raw.githubusercontent.com/GeorgeLeithead/LiLo.Markets/main/Markets.json").Result; // Want to do this synchronously to ensure that we don't start anything else until this is complete!
 				if (response.IsSuccessStatusCode)
 				{
 					string marketsJson = response.Content.ReadAsStringAsync().Result;
 					if (!string.IsNullOrEmpty(marketsJson))
 					{
 						MarketsModel markets = JsonSerializer.Deserialize<MarketsModel>(marketsJson);
-						Markets = markets.Markets.ToList();
-						return Markets.OrderBy(n => n.Rank);
+						marketsData = markets.Markets.ToList();
+						return marketsData.OrderBy(n => n.Rank);
 					}
 				}
 			}
@@ -173,7 +176,7 @@ namespace LiLo.Lite.Services
 		{
 			StringBuilder sb = new StringBuilder();
 			sb.Append("wss://stream.binance.com:9443/stream?streams=");
-			foreach (MarketModel market in Markets)
+			foreach (MarketModel market in marketsData)
 			{
 				sb.Append(market.SymbolString.ToLower());
 				sb.Append("usdt@ticker/");

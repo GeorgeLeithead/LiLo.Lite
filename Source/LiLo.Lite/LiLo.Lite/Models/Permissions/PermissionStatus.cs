@@ -29,6 +29,6 @@ namespace LiLo.Lite.Models.Permissions
 		Restricted,
 
 		/// <summary>Permission status unknown.</summary>
-		Unknown
+		Unknown,
 	}
 }

@@ -13,9 +13,9 @@
 
 namespace LiLo.Lite.Services.Settings
 {
-	using Lilo.Lite.Services;
-	using LiLo.Lite.Models;
 	using System;
+	using LiLo.Lite.Models;
+	using Lilo.Lite.Services;
 	using Xamarin.Essentials;
 
 	/// <summary>Application settings service.</summary>
@@ -43,8 +43,8 @@ namespace LiLo.Lite.Services.Settings
 		/// <summary>Gets or sets the users selected theme.</summary>
 		public ThemeModel ThemeOption
 		{
-			get => (ThemeModel)Preferences.Get(nameof(ThemeOption), HasDefaultThemeOption ? (int)ThemeModel.Default : (int)ThemeModel.Light);
-			set => Preferences.Set(nameof(ThemeOption), (int)value);
+			get => (ThemeModel)Preferences.Get(nameof(this.ThemeOption), this.HasDefaultThemeOption ? (int)ThemeModel.Default : (int)ThemeModel.Light);
+			set => Preferences.Set(nameof(this.ThemeOption), (int)value);
 		}
 	}
 }

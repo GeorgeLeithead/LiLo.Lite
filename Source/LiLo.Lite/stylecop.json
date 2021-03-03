@@ -1,0 +1,39 @@
+{
+	"$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+	"settings": {
+		"documentationRules": {
+			"companyName": "InternetWideWorld.com",
+			"copyrightText": "Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.\nTHIS CODE AND INFORMATION IS PROVIDED \"AS IS\" WITHOUT WARRANTY\nOF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT\nLIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS FOR A PARTICULAR PURPOSE.",
+			"xmlHeader": true,
+			"documentInterfaces": true,
+			"documentExposedElements": true,
+			"documentInternalElements": true,
+			"documentPrivateElements": false,
+			"documentPrivateFields": false,
+			"documentationCulture": "en-GB"
+		},
+		"indentation": {
+			"useTabs": true
+		},
+		"readabilityRules": {
+			"allowBuiltInTypeAliases": false
+		},
+		"layoutRules": {
+			"allowConsecutiveUsings": true,
+			"newlineAtEndOfFile": "omit"
+		},
+		"namingRules": {
+			"allowCommonHungarianPrefixes": true,
+			"allowedHungarianPrefixes": [ "my" ]
+		},
+		"maintainabilityRules": {
+			"topLevelTypes": [ "class" ]
+		},
+		"orderingRules": {
+			"usingDirectivesPlacement": "insideNamespace",
+			"systemUsingDirectivesFirst": true,
+			"blankLinesBetweenUsingGroups": "allow",
+			"elementOrder": [ "kind", "accessibility", "constant", "static", "readonly" ]
+		}
+	}
+}

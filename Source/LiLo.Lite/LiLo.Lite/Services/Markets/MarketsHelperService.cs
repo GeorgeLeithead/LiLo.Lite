@@ -17,12 +17,11 @@ namespace LiLo.Lite.Services.Markets
 	using System.Collections.Generic;
 	using System.ComponentModel;
 	using System.Linq;
-	using System.Net.Http;
 	using System.Text.Json;
 	using System.Threading.Tasks;
-	using Lilo.Lite.Services;
 	using LiLo.Lite.Models.BinanceModels;
 	using LiLo.Lite.Models.Markets;
+	using Lilo.Lite.Services;
 	using LiLo.Lite.Services.Dialog;
 	using WebSocketSharp;
 	using Xamarin.CommunityToolkit.ObjectModel;
@@ -46,18 +45,20 @@ namespace LiLo.Lite.Services.Markets
 			remove { base.PropertyChanged -= value; }
 		}
 
+		/// <summary>Gets the dialogue service.</summary>
 		public IDialogService DialogService => this.dialogService ??= DependencyService.Resolve<DialogService>();
 
 		/// <summary>Gets or sets an observable list of markets.</summary>
 		public ObservableRangeCollection<MarketModel> MarketsList { get; set; }
 
+		/// <summary>Get WSS connection.</summary>
+		/// <returns>Connection string.</returns>
 		public string GetWss()
 		{
 			return DataStore.MarketsWss();
 		}
 
 		/// <summary>Initialises task for the markets helper service.</summary>
-		/// <returns>Task results of initialisation.</returns>
 		public void Init()
 		{
 			if (this.MarketsList.Count != 0)
@@ -76,7 +77,7 @@ namespace LiLo.Lite.Services.Markets
 		}
 
 		/// <summary>WebSockets message handler.</summary>
-		/// <param name="sender">Sockets service</param>
+		/// <param name="sender">Sockets service.</param>
 		/// <param name="e">Message event arguments.</param>
 		public async void WebSockets_OnMessageAsync(object sender, MessageEventArgs e)
 		{

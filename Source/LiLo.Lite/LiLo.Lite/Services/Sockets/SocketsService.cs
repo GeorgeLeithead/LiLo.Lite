@@ -41,6 +41,7 @@ namespace LiLo.Lite.Services.Sockets
 			remove { base.PropertyChanged -= value; }
 		}
 
+		/// <summary>Gets the dialogue service.</summary>
 		public IDialogService DialogService => this.dialogService ??= DependencyService.Resolve<DialogService>();
 
 		/// <summary>Gets a value indicating whether the sockets service is connected.</summary>
@@ -48,12 +49,14 @@ namespace LiLo.Lite.Services.Sockets
 
 		private IMarketsHelperService MarketsHelperService => this.marketsHelperService ??= DependencyService.Resolve<MarketsHelperService>();
 
+		/// <summary>Connects to the Sockets Service.</summary>
+		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		public async Task Connect()
 		{
 			string wss = this.MarketsHelperService.GetWss();
 			this.webSocket = new WebSocket(wss)
 			{
-				EmitOnPing = true
+				EmitOnPing = true,
 			};
 			this.webSocket.SslConfiguration.EnabledSslProtocols = System.Security.Authentication.SslProtocols.Tls12;
 			this.webSocket.SslConfiguration.ServerCertificateValidationCallback = (sender, certificate, chain, sslPolicyError) =>
@@ -65,12 +68,12 @@ namespace LiLo.Lite.Services.Sockets
 		}
 
 		/// <summary>Handle when the application closes the sockets connection.</summary>
-		/// <returns>Successful task</returns>
+		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		public async Task WebSocket_Close()
 		{
 			await Task.Factory.StartNew(async () =>
 			{
-				if (!IsConnected)
+				if (!this.IsConnected)
 				{
 					return;
 				}
@@ -92,12 +95,12 @@ namespace LiLo.Lite.Services.Sockets
 		}
 
 		/// <summary>Handle when the application requests a sockets connection.</summary>
-		/// <returns>Successful task.</returns>
+		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		public async Task WebSocket_OnConnect()
 		{
 			await Task.Factory.StartNew(async () =>
 			{
-				if (IsConnected)
+				if (this.IsConnected)
 				{
 					return;
 				}
@@ -117,7 +120,7 @@ namespace LiLo.Lite.Services.Sockets
 		}
 
 		/// <summary>Handle when the application resumes from sleep.</summary>
-		/// <returns>Successful task</returns>
+		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		public async Task WebSocket_OnResume()
 		{
 			if (!this.isResumed)
@@ -134,7 +137,7 @@ namespace LiLo.Lite.Services.Sockets
 		}
 
 		/// <summary>Handle when the application goes into sleep.</summary>
-		/// <returns>Successful task</returns>
+		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		public async Task WebSocket_OnSleep()
 		{
 			if (this.isResumed)
@@ -151,13 +154,13 @@ namespace LiLo.Lite.Services.Sockets
 		}
 
 		/// <summary>Handle when the sockets connection closes.</summary>
-		/// <param name="sender">Sender object</param>
-		/// <param name="e">Close event arguments</param>
+		/// <param name="sender">Sender object.</param>
+		/// <param name="e">Close event arguments.</param>
 		private async void WebSocket_OnClose(object sender, CloseEventArgs e)
 		{
 			await Task.Factory.StartNew(async () =>
 			{
-				if (IsConnected)
+				if (this.IsConnected)
 				{
 					return;
 				}
@@ -172,16 +175,16 @@ namespace LiLo.Lite.Services.Sockets
 		}
 
 		/// <summary>Handle when the sockets connection errors.</summary>
-		/// <param name="sender">Sender object</param>
-		/// <param name="e">Error event arguments</param>
+		/// <param name="sender">Sender object.</param>
+		/// <param name="e">Error event arguments.</param>
 		private void WebSocket_OnError(object sender, ErrorEventArgs e)
 		{
 			this.DialogService.ShowToastAsync(e.Message).ConfigureAwait(true);
 		}
 
 		/// <summary>Handle when the sockets connection receives a message.</summary>
-		/// <param name="sender">Sender object</param>
-		/// <param name="e">Message event arguments</param>
+		/// <param name="sender">Sender object.</param>
+		/// <param name="e">Message event arguments.</param>
 		private async void WebSocket_OnMessage(object sender, MessageEventArgs e)
 		{
 			await Task.Factory.StartNew(async () =>

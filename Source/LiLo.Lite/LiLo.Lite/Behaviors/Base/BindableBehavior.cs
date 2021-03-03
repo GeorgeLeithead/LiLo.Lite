@@ -17,46 +17,47 @@ namespace LiLo.Lite.Behaviors.Base
 	using Xamarin.Forms;
 
 	/// <summary>Bindable behaviour class.</summary>
-	/// <typeparam name="T">Generic type</typeparam>
-	public class BindableBehavior<T> : Behavior<T> where T : BindableObject
+	/// <typeparam name="T">Generic type.</typeparam>
+	public class BindableBehavior<T> : Behavior<T>
+		where T : BindableObject
 	{
 		/// <summary>Gets the Associated object.</summary>
 		public T AssociatedObject { get; private set; }
 
-		/// <summary>Attached to event handler</summary>
-		/// <param name="visualElement">Visual Element</param>
+		/// <summary>Attached to event handler.</summary>
+		/// <param name="visualElement">Visual Element.</param>
 		protected override void OnAttachedTo(T visualElement)
 		{
 			base.OnAttachedTo(visualElement);
-			AssociatedObject = visualElement;
+			this.AssociatedObject = visualElement;
 			if (visualElement.BindingContext != null)
 			{
-				BindingContext = visualElement.BindingContext;
+				this.BindingContext = visualElement.BindingContext;
 			}
 
-			visualElement.BindingContextChanged += OnBindingContextChanged;
+			visualElement.BindingContextChanged += this.OnBindingContextChanged;
 		}
 
 		/// <summary>Binding context changed event handler.</summary>
 		protected override void OnBindingContextChanged()
 		{
 			base.OnBindingContextChanged();
-			BindingContext = AssociatedObject.BindingContext;
+			this.BindingContext = this.AssociatedObject.BindingContext;
 		}
 
 		/// <summary>Detaching from event handler.</summary>
 		/// <param name="view">View element.</param>
 		protected override void OnDetachingFrom(T view)
 		{
-			view.BindingContextChanged -= OnBindingContextChanged;
+			view.BindingContextChanged -= this.OnBindingContextChanged;
 		}
 
 		/// <summary>Binding context changed event handler.</summary>
-		/// <param name="sender">Sending object</param>
-		/// <param name="e">Event arguments</param>
+		/// <param name="sender">Sending object.</param>
+		/// <param name="e">Event arguments.</param>
 		private void OnBindingContextChanged(object sender, EventArgs e)
 		{
-			OnBindingContextChanged();
+			this.OnBindingContextChanged();
 		}
 	}
 }

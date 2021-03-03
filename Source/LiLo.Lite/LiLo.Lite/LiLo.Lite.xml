@@ -1,0 +1,764 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LiLo.Lite</name>
+    </assembly>
+    <members>
+        <member name="T:LiLo.Lite.App">
+            <summary>LiLo application class.</summary>
+        </member>
+        <member name="F:LiLo.Lite.App.socketsService">
+            <summary>Sockets Service.</summary>
+        </member>
+        <member name="M:LiLo.Lite.App.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.App" /> class.</summary>
+        </member>
+        <member name="P:LiLo.Lite.App.UIParent">
+            <summary>Gets or sets the UI Parent.</summary>
+        </member>
+        <member name="M:LiLo.Lite.App.OnResume">
+            <summary>Perform actions when the application resumes from a sleeping state.</summary>
+        </member>
+        <member name="M:LiLo.Lite.App.OnSleep">
+            <summary>Perform actions when the application enters the sleeping state.</summary>
+        </member>
+        <member name="M:LiLo.Lite.App.OnStart">
+            <summary>Perform actions when the application starts.</summary>
+        </member>
+        <member name="T:LiLo.Lite.AppShell">
+            <summary>App shell.</summary>
+        </member>
+        <member name="M:LiLo.Lite.AppShell.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.AppShell"/> class.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Behaviors.Base.BindableBehavior`1">
+            <summary>Bindable behaviour class.</summary>
+            <typeparam name="T">Generic type.</typeparam>
+        </member>
+        <member name="P:LiLo.Lite.Behaviors.Base.BindableBehavior`1.AssociatedObject">
+            <summary>Gets the Associated object.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Behaviors.Base.BindableBehavior`1.OnAttachedTo(`0)">
+            <summary>Attached to event handler.</summary>
+            <param name="visualElement">Visual Element.</param>
+        </member>
+        <member name="M:LiLo.Lite.Behaviors.Base.BindableBehavior`1.OnBindingContextChanged">
+            <summary>Binding context changed event handler.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Behaviors.Base.BindableBehavior`1.OnDetachingFrom(`0)">
+            <summary>Detaching from event handler.</summary>
+            <param name="view">View element.</param>
+        </member>
+        <member name="M:LiLo.Lite.Behaviors.Base.BindableBehavior`1.OnBindingContextChanged(System.Object,System.EventArgs)">
+            <summary>Binding context changed event handler.</summary>
+            <param name="sender">Sending object.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="T:LiLo.Lite.Behaviors.EventToCommandBehavior">
+            <summary>Event to command behaviour class.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Behaviors.EventToCommandBehavior.CommandParameterProperty">
+            <summary>Gets or sets the Command Parameter Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Behaviors.EventToCommandBehavior.CommandProperty">
+            <summary>Gets or sets the Command Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Behaviors.EventToCommandBehavior.EventArgsConverterParameterProperty">
+            <summary>Gets or sets the Event Arguments Converter Parameter Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Behaviors.EventToCommandBehavior.EventArgsConverterProperty">
+            <summary>Gets or sets the Event Arguments Converter Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Behaviors.EventToCommandBehavior.EventNameProperty">
+            <summary>Gets or sets the Event Name Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Behaviors.EventToCommandBehavior.delegateHandler">
+            <summary>Delegate handler.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Behaviors.EventToCommandBehavior.eventInfo">
+            <summary>Event information.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Behaviors.EventToCommandBehavior.Command">
+            <summary>Gets or sets the bound command.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Behaviors.EventToCommandBehavior.CommandParameter">
+            <summary>Gets or sets the command parameter.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Behaviors.EventToCommandBehavior.EventArgsConverter">
+            <summary>Gets or sets the event arguments value converter.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Behaviors.EventToCommandBehavior.EventArgsConverterParameter">
+            <summary>Gets or sets the event arguments value converter parameter.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Behaviors.EventToCommandBehavior.EventName">
+            <summary>Gets or sets the bound event name.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Behaviors.EventToCommandBehavior.OnAttachedTo(Xamarin.Forms.View)">
+            <summary>Attached to event handler.</summary>
+            <param name="visualElement">Visual Element.</param>
+        </member>
+        <member name="M:LiLo.Lite.Behaviors.EventToCommandBehavior.OnDetachingFrom(Xamarin.Forms.View)">
+            <summary>Detaching from event handler.</summary>
+            <param name="view">View element.</param>
+        </member>
+        <member name="M:LiLo.Lite.Behaviors.EventToCommandBehavior.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Action{System.Object,System.EventArgs})">
+            <summary>Attaches the event handler to the delegate.</summary>
+            <param name="eventInfo">Event information.</param>
+            <param name="item">Item to add event handler to.</param>
+            <param name="action">Event handler action.</param>
+        </member>
+        <member name="M:LiLo.Lite.Behaviors.EventToCommandBehavior.OnFired(System.Object,System.EventArgs)">
+            <summary>Command fired.</summary>
+            <param name="sender">Event sender.</param>
+            <param name="eventArgs">Event arguments.</param>
+        </member>
+        <member name="T:LiLo.Lite.Controls.CustomLabel">
+            <summary>Customised label with IsSelected property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.CustomLabel.IsSelectedProperty">
+            <summary>Gets or sets the IsSelected Property, and it is a bindable property.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.CustomLabel.IsSelected">
+            <summary>Gets or sets a value indicating whether is selected.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Controls.TickPriceView">
+            <summary>Custom ticker price view.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.TickPriceView.DefaultBackgroundColorProperty">
+            <summary>Gets or sets the Default Background Colour Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.TickPriceView.NegativeTickBackgroundColorProperty">
+            <summary>Gets or sets the Negative Tick Background Colour Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.TickPriceView.NegativeTickColorProperty">
+            <summary>Gets or sets the Negative Tick Colour Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.TickPriceView.PositiveTickBackgroundColorProperty">
+            <summary>Gets or sets the Positive Tick Background Colour Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.TickPriceView.PositiveTickColorProperty">
+            <summary>Gets or sets the Positive Tick Colour Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.TickPriceView.PriceProperty">
+            <summary>Gets or sets the Price Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.TickPriceView.AnimationDuration">
+            <summary>Animation duration in milliseconds.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.TickPriceView.DefaultBackgroundColor">
+            <summary>Gets or sets the default background colour.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.TickPriceView.NegativeTickBackgroundColor">
+            <summary>Gets or sets the negative tick background colour.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.TickPriceView.NegativeTickColor">
+            <summary>Gets or sets the negative tick colour.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.TickPriceView.PositiveTickBackgroundColor">
+            <summary>Gets or sets the positive tick background colour.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.TickPriceView.PositiveTickColor">
+            <summary>Gets or sets the positive tick colour.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.TickPriceView.Price">
+            <summary>Gets or sets the Price.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Controls.TickPriceView.OnPricePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>Invoked when the Price is changed.</summary>
+            <param name="bindable">The TickPriceView object.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">The new value.</param>
+        </member>
+        <member name="T:LiLo.Lite.Controls.TitleBar">
+            <summary>Custom TitleBar content view.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.TitleBar.LabelStyleProperty">
+            <summary>Gets or sets the label style Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.TitleBar.TextProperty">
+            <summary>Gets or sets the title Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.TitleBar.HomeVisibleProperty">
+            <summary>Gets or sets the home is visible Property, and it is a bindable property.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Controls.TitleBar.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Controls.TitleBar"/> class.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.TitleBar.LabelStyle">
+            <summary>Gets or sets the label style.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.TitleBar.Text">
+            <summary>Gets or sets the Text.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.TitleBar.HomeVisible">
+            <summary>Gets or sets a value indicating whether home is visible.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Controls.TitleBar.LabelStylePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>Label style changed.</summary>
+            <param name="bindable">Bindable object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:LiLo.Lite.Controls.TitleBar.OnHomeVisible(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>Home visible.</summary>
+            <param name="bindable">Bindable object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:LiLo.Lite.Controls.TitleBar.OnTextChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>Change the title bar heading.</summary>
+            <param name="bindable">Bindable object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
+        <member name="M:LiLo.Lite.Controls.TitleBar.SettingsTapped(System.Object,System.EventArgs)">
+            <summary>Change the application theme.</summary>
+            <param name="sender">Object sender.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="T:LiLo.Lite.Extensions.ViewExtensions">
+            <summary>View animation extensions.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Extensions.ViewExtensions.CancelAnimation(Xamarin.Forms.VisualElement)">
+            <summary>Cancel any existing animation.</summary>
+            <param name="self">The visual element being animated.</param>
+        </member>
+        <member name="M:LiLo.Lite.Extensions.ViewExtensions.ColorTo(Xamarin.Forms.VisualElement,Xamarin.Forms.Color,Xamarin.Forms.Color,System.Action{Xamarin.Forms.Color},System.UInt32,Xamarin.Forms.Easing)">
+            <summary>Add Colour animation to element.</summary>
+            <param name="self">The visual element being animated.</param>
+            <param name="fromColor">Colour to start from.</param>
+            <param name="toColor">Colour to end at.</param>
+            <param name="callback">Action to call back.</param>
+            <param name="length">Duration of animation.</param>
+            <param name="easing">Non-linear easing of animation.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Extensions.ViewExtensions.ColorAnimation(Xamarin.Forms.VisualElement,System.String,System.Func{System.Double,Xamarin.Forms.Color},System.Action{Xamarin.Forms.Color},System.UInt32,Xamarin.Forms.Easing)">
+            <summary>Add animation to visual element.</summary>
+            <param name="element">The visual element being animated.</param>
+            <param name="name">Name of animation.</param>
+            <param name="transform">Transformation for animation.</param>
+            <param name="callback">Action to call back.</param>
+            <param name="length">Duration of animation.</param>
+            <param name="easing">Non-linear easing of animation.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="T:LiLo.Lite.Interfaces.IParentWindowLocatorService">
+            <summary>Simple platform specific service that is responsible for locating a parent window service.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Interfaces.IParentWindowLocatorService.GetCurrentParentWindow">
+            <summary>Get current parent window.</summary>
+            <returns>Current parent window object.</returns>
+        </member>
+        <member name="T:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel">
+            <summary>Binance ticker symbol stream data.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.CurrentPrice">
+            <summary>Gets or sets close price.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.HighPrice">
+            <summary>Gets or sets high price.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.HighPrice24h">
+            <summary>Gets the 24hr high price.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.LastPrice">
+            <summary>Gets the last price.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.LowPrice">
+            <summary>Gets or sets the low price.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.LowPrice24h">
+            <summary>Gets the 24hr low price.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.Percent">
+            <summary>Gets or sets the price change percent.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.Price24hPercent">
+            <summary>Gets the 24hr price change percent.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.SymbolString">
+            <summary>Gets or sets the symbol.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.UpdateMarketList(LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel,Xamarin.CommunityToolkit.ObjectModel.ObservableRangeCollection{LiLo.Lite.Models.Markets.MarketModel})">
+            <summary>Updates the market list data.</summary>
+            <param name="data">Ticker data.</param>
+            <param name="marketsList">Markets list.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="T:LiLo.Lite.Models.BinanceModels.BinanceTickerModel">
+            <summary>Binance ticker symbol stream.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerModel.Data">
+            <summary>Gets or sets the ticker data.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerModel.Stream">
+            <summary>Gets or sets the stream type.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Models.Markets.MarketModel">
+            <summary>Model for the markets information.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Markets.MarketModel.formatCulture">
+            <summary>Format culture - set to US.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Markets.MarketModel.decimalPlaces">
+            <summary>Number of decimal places.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Markets.MarketModel.highPrice24h">
+            <summary>24HR high price.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Markets.MarketModel.highPrice24hString">
+            <summary>24HR high price as string.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Markets.MarketModel.lastPrice">
+            <summary>Last price.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Markets.MarketModel.lastPriceString">
+            <summary>Last price as string.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Markets.MarketModel.lowPrice24h">
+            <summary>24HR low price.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Markets.MarketModel.lowPrice24hString">
+            <summary>24HR low price as string.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Markets.MarketModel.price24hPercent">
+            <summary>24HR price percentage.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Markets.MarketModel.price24hPercentString">
+            <summary>24HR price percentage as string.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Markets.MarketModel.symbolString">
+            <summary>Currency symbol as string.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Models.Markets.MarketModel.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Models.Markets.MarketModel"/> class.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.MarketModel.DecimalPlaces">
+            <summary>Gets or sets the number of decimal places to show for the currency.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.MarketModel.HighPrice24h">
+            <summary>Gets or sets the 24HR high price for the currency.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.MarketModel.HighPrice24hString">
+            <summary>Gets or sets the 24HR high price for the currency as string.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.MarketModel.LastPrice">
+            <summary>Gets or sets the last price for the currency.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.MarketModel.LastPriceString">
+            <summary>Gets or sets the last price as a string.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.MarketModel.LowPrice24h">
+            <summary>Gets or sets the 24HR low price for the currency.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.MarketModel.LowPrice24hString">
+            <summary>Gets or sets the 24HR low price as a string.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.MarketModel.Price24hPercent">
+            <summary>Gets or sets the 24HR percentage price difference for the currency.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.MarketModel.Price24hPercentString">
+            <summary>Gets or sets the 24HR price percentage as a string.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.MarketModel.Rank">
+            <summary>Gets or sets the market ranking for the symbol.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.MarketModel.SymbolString">
+            <summary>Gets or sets the currency Symbol as a string.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Models.Markets.MarketsModel">
+            <summary>Markets data model.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.MarketsModel.Markets">
+            <summary>Gets or sets an array of markets.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Models.Permissions.Permission">
+            <summary>Permissions model.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Permissions.Permission.Unknown">
+            <summary>Permission unknown</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Permissions.Permission.Location">
+            <summary>Permission for location.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Permissions.Permission.LocationAlways">
+            <summary>Permission always.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Permissions.Permission.LocationWhenInUse">
+            <summary>Permission when application in use.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Models.Permissions.PermissionStatus">
+            <summary>Permissions status model.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Permissions.PermissionStatus.Denied">
+            <summary>Permission denied.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Permissions.PermissionStatus.Disabled">
+            <summary>Permission disabled.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Permissions.PermissionStatus.Granted">
+            <summary>Permission granted.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Permissions.PermissionStatus.Restricted">
+            <summary>Permission restricted.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.Permissions.PermissionStatus.Unknown">
+            <summary>Permission status unknown.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Models.ThemeModel">
+            <summary>Theme model.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.ThemeModel.Default">
+            <summary>Application default theme.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.ThemeModel.Light">
+            <summary>Light theme.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Models.ThemeModel.Dark">
+            <summary>Dark theme.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Services.DataStore">
+            <summary>Application data store.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Services.DataStore.marketsData">
+            <summary>Markets list.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Services.DataStore.#cctor">
+            <summary>Initialises static members of the <see cref="T:LiLo.Lite.Services.DataStore"/> class.</summary>
+            <remarks>SVG icons from https://github.com/spothq/cryptocurrency-icons under SVG/colour.</remarks>
+        </member>
+        <member name="M:LiLo.Lite.Services.DataStore.GetMarketsForFeed">
+            <summary>Get ordered markets feed list.</summary>
+            <returns>IEnumerable{MarketsModel} ordered by rank.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Services.DataStore.MarketsWss">
+            <summary>Gets the markets WSS stream.</summary>
+            <returns>WSS stream.</returns>
+        </member>
+        <member name="T:LiLo.Lite.Services.Dialog.DialogService">
+            <summary>Dialogue service.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Services.Dialog.DialogService.ShowAlertAsync(System.String,System.String,System.String)">
+            <summary>Show a cross-platform alert.</summary>
+            <param name="message">Alert message.</param>
+            <param name="title">Alert title.</param>
+            <param name="buttonLabel">Alert button label text.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Services.Dialog.DialogService.ShowPromptAsync(System.String,System.String,System.String,System.String)">
+            <summary>Show a cross-platform prompt.</summary>
+            <param name="title">Prompt title.</param>
+            <param name="message">Prompt message.</param>
+            <param name="okText">OK button label text.</param>
+            <param name="cancelText">Cancel button label text.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Services.Dialog.DialogService.ShowToastAsync(System.String)">
+            <summary>Show a cross-platform Toast.</summary>
+            <param name="message">Toast message.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="T:LiLo.Lite.Services.Dialog.IDialogService">
+            <summary>Dialogue service interface.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Services.Dialog.IDialogService.ShowAlertAsync(System.String,System.String,System.String)">
+            <summary>Show a cross-platform alert.</summary>
+            <param name="message">Alert message.</param>
+            <param name="title">Alert title.</param>
+            <param name="buttonLabel">Alert button label text.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Services.Dialog.IDialogService.ShowPromptAsync(System.String,System.String,System.String,System.String)">
+            <summary>Show a cross-platform prompt.</summary>
+            <param name="title">Prompt title.</param>
+            <param name="message">Prompt message.</param>
+            <param name="okText">OK button label text.</param>
+            <param name="cancelText">Cancel button label text.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Services.Dialog.IDialogService.ShowToastAsync(System.String)">
+            <summary>Show a cross-platform Toast.</summary>
+            <param name="message">Toast message.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="T:LiLo.Lite.Services.Markets.IMarketsHelperService">
+            <summary>Markets helper service.</summary>
+        </member>
+        <member name="E:LiLo.Lite.Services.Markets.IMarketsHelperService.PropertyChanged">
+            <summary>Property changed event</summary>
+        </member>
+        <member name="P:LiLo.Lite.Services.Markets.IMarketsHelperService.MarketsList">
+            <summary>Gets or sets a list of Markets.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Services.Markets.IMarketsHelperService.GetWss">
+            <summary>Get the WSS feed string.</summary>
+            <returns>WSS URL.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Services.Markets.IMarketsHelperService.Init">
+            <summary>Initialises task for the markets helper service.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Services.Markets.IMarketsHelperService.WebSockets_OnMessageAsync(System.Object,WebSocketSharp.MessageEventArgs)">
+            <summary>Message received handler.</summary>
+            <param name="sender">Message sender.</param>
+            <param name="e">Message event arguments.</param>
+        </member>
+        <member name="T:LiLo.Lite.Services.Markets.MarketsHelperService">
+            <summary>Markets helper service.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Services.Markets.MarketsHelperService.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Services.Markets.MarketsHelperService" /> class.</summary>
+        </member>
+        <member name="E:LiLo.Lite.Services.Markets.MarketsHelperService.PropertyChanged">
+            <summary>Raised when a public property of this object is set.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Services.Markets.MarketsHelperService.DialogService">
+            <summary>Gets the dialogue service.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Services.Markets.MarketsHelperService.MarketsList">
+            <summary>Gets or sets an observable list of markets.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Services.Markets.MarketsHelperService.GetWss">
+            <summary>Get WSS connection.</summary>
+            <returns>Connection string.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Services.Markets.MarketsHelperService.Init">
+            <summary>Initialises task for the markets helper service.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Services.Markets.MarketsHelperService.WebSockets_OnMessageAsync(System.Object,WebSocketSharp.MessageEventArgs)">
+            <summary>WebSockets message handler.</summary>
+            <param name="sender">Sockets service.</param>
+            <param name="e">Message event arguments.</param>
+        </member>
+        <member name="M:LiLo.Lite.Services.Markets.MarketsHelperService.GetMessageType(System.String)">
+            <summary>Get the message type.</summary>
+            <param name="message">Sockets message.</param>
+            <returns>Task result.</returns>
+        </member>
+        <member name="T:LiLo.Lite.Services.Settings.ISettingsService">
+            <summary>Application settings service interface.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Services.Settings.ISettingsService.HasDefaultThemeOption">
+            <summary>Gets a value indicating whether the device has a default theme option for the appropriate device and version.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Services.Settings.ISettingsService.ThemeOption">
+            <summary>Gets or sets the users selected theme.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Services.Settings.SettingsService">
+            <summary>Application settings service.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Services.Settings.SettingsService.HasDefaultThemeOption">
+            <summary>Gets a value indicating whether the device has a default theme option for the appropriate device and version.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Services.Settings.SettingsService.ThemeOption">
+            <summary>Gets or sets the users selected theme.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Services.Sockets.ISocketsService">
+            <summary>Web Sockets Service interface.</summary>
+        </member>
+        <member name="E:LiLo.Lite.Services.Sockets.ISocketsService.PropertyChanged">
+            <summary>Raised when a public property of this object is set.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Services.Sockets.ISocketsService.IsConnected">
+            <summary>Gets a value indicating whether the sockets service is connected.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Services.Sockets.ISocketsService.WebSocket_Close">
+            <summary>Handle when the application closes the sockets connection.</summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Services.Sockets.ISocketsService.WebSocket_OnConnect">
+            <summary>Handle when the application requests a sockets connection.</summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Services.Sockets.ISocketsService.WebSocket_OnResume">
+            <summary>Handle when the application resumes from sleep.</summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Services.Sockets.ISocketsService.WebSocket_OnSleep">
+            <summary>Handle when the application goes into sleep.</summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Services.Sockets.ISocketsService.Connect">
+            <summary>Connects to the sockets service.</summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="T:LiLo.Lite.Services.Sockets.SocketsService">
+            <summary>Web Sockets Service interface.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Services.Sockets.SocketsService.isResumed">
+            <summary>Has the service been resumed.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Services.Sockets.SocketsService.webSocket">
+            <summary>Web Socket.</summary>
+        </member>
+        <member name="E:LiLo.Lite.Services.Sockets.SocketsService.PropertyChanged">
+            <summary>Raised when a public property of this object is set.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Services.Sockets.SocketsService.DialogService">
+            <summary>Gets the dialogue service.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Services.Sockets.SocketsService.IsConnected">
+            <summary>Gets a value indicating whether the sockets service is connected.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Services.Sockets.SocketsService.Connect">
+            <summary>Connects to the Sockets Service.</summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Services.Sockets.SocketsService.WebSocket_Close">
+            <summary>Handle when the application closes the sockets connection.</summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Services.Sockets.SocketsService.WebSocket_OnConnect">
+            <summary>Handle when the application requests a sockets connection.</summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Services.Sockets.SocketsService.WebSocket_OnResume">
+            <summary>Handle when the application resumes from sleep.</summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Services.Sockets.SocketsService.WebSocket_OnSleep">
+            <summary>Handle when the application goes into sleep.</summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Services.Sockets.SocketsService.WebSocket_OnClose(System.Object,WebSocketSharp.CloseEventArgs)">
+            <summary>Handle when the sockets connection closes.</summary>
+            <param name="sender">Sender object.</param>
+            <param name="e">Close event arguments.</param>
+        </member>
+        <member name="M:LiLo.Lite.Services.Sockets.SocketsService.WebSocket_OnError(System.Object,WebSocketSharp.ErrorEventArgs)">
+            <summary>Handle when the sockets connection errors.</summary>
+            <param name="sender">Sender object.</param>
+            <param name="e">Error event arguments.</param>
+        </member>
+        <member name="M:LiLo.Lite.Services.Sockets.SocketsService.WebSocket_OnMessage(System.Object,WebSocketSharp.MessageEventArgs)">
+            <summary>Handle when the sockets connection receives a message.</summary>
+            <param name="sender">Sender object.</param>
+            <param name="e">Message event arguments.</param>
+        </member>
+        <member name="T:LiLo.Lite.ViewModels.Base.ExtendedBindableObject">
+            <summary>Extended bindable object class.</summary>
+        </member>
+        <member name="M:LiLo.Lite.ViewModels.Base.ExtendedBindableObject.NotifyPropertyChanged``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+            <summary>Notify property has changed.</summary>
+            <typeparam name="T">Property type.</typeparam>
+            <param name="property">Property changed.</param>
+        </member>
+        <member name="M:LiLo.Lite.ViewModels.Base.ExtendedBindableObject.GetMemberInfo(System.Linq.Expressions.Expression)">
+            <summary>Get member information.</summary>
+            <param name="expression">Expression member.</param>
+            <returns>Operand member.</returns>
+        </member>
+        <member name="T:LiLo.Lite.ViewModels.Base.ViewModelBase">
+            <summary>View model base class.</summary>
+        </member>
+        <member name="F:LiLo.Lite.ViewModels.Base.ViewModelBase.isBusy">
+            <summary>View is busy.</summary>
+        </member>
+        <member name="F:LiLo.Lite.ViewModels.Base.ViewModelBase.title">
+            <summary>View title.</summary>
+        </member>
+        <member name="M:LiLo.Lite.ViewModels.Base.ViewModelBase.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.ViewModels.Base.ViewModelBase" /> class.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.Base.ViewModelBase.MarketsHelperService">
+            <summary>Gets the markets helper service.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.Base.ViewModelBase.DialogService">
+            <summary>Gets the dialogue service.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.Base.ViewModelBase.SocketsService">
+            <summary>Gets the sockets service.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.Base.ViewModelBase.IsBusy">
+            <summary>Gets or sets a value indicating whether the view is busy.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.Base.ViewModelBase.Title">
+            <summary>gets or sets a value for the view title.</summary>
+        </member>
+        <member name="T:LiLo.Lite.ViewModels.ChartViewModel">
+            <summary>Chart view model.</summary>
+        </member>
+        <member name="F:LiLo.Lite.ViewModels.ChartViewModel.TradingViewString">
+            <summary>Trading View public Widget HTML string.</summary>
+        </member>
+        <member name="M:LiLo.Lite.ViewModels.ChartViewModel.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.ViewModels.ChartViewModel"/> class.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.ChartViewModel.SelectedItem">
+            <summary>Gets or sets the selected market item.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.ChartViewModel.Symbol">
+            <summary>Sets the market symbol.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.ChartViewModel.TradingViewChart">
+            <summary>Gets or sets the trading view chart source.</summary>
+        </member>
+        <member name="T:LiLo.Lite.ViewModels.HomeViewModel">
+            <summary>Home view model.</summary>
+        </member>
+        <member name="F:LiLo.Lite.ViewModels.HomeViewModel.marketsList">
+            <summary>Observable list of markets.</summary>
+        </member>
+        <member name="M:LiLo.Lite.ViewModels.HomeViewModel.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.ViewModels.HomeViewModel"/> class.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.HomeViewModel.GridItemsLayoutSpan">
+            <summary>Gets or sets the items layout span.</summary>
+            <remarks>To handle landscape and portrait orientation.</remarks>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.HomeViewModel.MarketsList">
+            <summary>Gets or sets a collection of values to be displayed in the markets view.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.HomeViewModel.RetryButtonClicked">
+            <summary>Gets or sets the retry button command.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.HomeViewModel.SelectedItem">
+            <summary>Gets or sets the selected item.</summary>
+        </member>
+        <member name="M:LiLo.Lite.ViewModels.HomeViewModel.Init">
+            <summary>Initialise the home view model.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Views.ChartView">
+            <summary>Chart View class.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Views.ChartView.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Views.ChartView" /> class.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Views.ChartView.OnAppearing">
+            <inheritdoc/>
+        </member>
+        <member name="M:LiLo.Lite.Views.ChartView.OnBackButtonPressed">
+            <summary>Handle the device back button being pressed.</summary>
+            <remarks>As this is the root page, we have to prevent the back button otherwise it will exit the application.</remarks>
+            <returns>true; cancellation of back button.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Views.ChartView.OnDisappearing">
+            <inheritdoc/>
+        </member>
+        <member name="M:LiLo.Lite.Views.ChartView.WebView_Navigating(System.Object,Xamarin.Forms.WebNavigatingEventArgs)">
+            <summary>Navigating in the Web view.</summary>
+            <param name="sender">Sender object.</param>
+            <param name="e">Web navigation Event arguments.</param>
+            <remarks>Prevent users from navigating to anywhere else other than where we want.</remarks>
+        </member>
+        <member name="T:LiLo.Lite.Views.HomeView">
+            <summary>Home page view.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Views.HomeView.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Views.HomeView" /> class.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Views.HomeView.OnSizeAllocated(System.Double,System.Double)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Lilo.Lite.Services.NotifyPropertyChangedBase">
+            <summary>Notify property changed base class.</summary>
+        </member>
+        <member name="E:Lilo.Lite.Services.NotifyPropertyChangedBase.PropertyChanged">
+            <summary>Property changed event handler.</summary>
+        </member>
+        <member name="M:Lilo.Lite.Services.NotifyPropertyChangedBase.NotifyPropertyChanged(System.String)">
+            <summary>This method is called by the Set accessors of each property.</summary>
+            <param name="propertyName">Optionally causes the property name of the caller to be substituted as an argument.</param>
+        </member>
+    </members>
+</doc>

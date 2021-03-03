@@ -31,7 +31,7 @@ namespace LiLo.Lite
 		/// <summary>Initialises a new instance of the <see cref="App" /> class.</summary>
 		public App()
 		{
-			InitializeComponent();
+			this.InitializeComponent();
 			DependencyService.Register<SocketsService>();
 			this.socketsService = DependencyService.Resolve<SocketsService>();
 			DependencyService.Register<DialogService>();
@@ -39,6 +39,7 @@ namespace LiLo.Lite
 			this.MainPage = new AppShell();
 		}
 
+		/// <summary>Gets or sets the UI Parent.</summary>
 		public static object UIParent { get; set; } = null;
 
 		/// <summary>Perform actions when the application resumes from a sleeping state.</summary>

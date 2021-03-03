@@ -19,12 +19,25 @@
 	  <Version>1.0.5</Version>
   </PropertyGroup>
 
-  <ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>.\LiLo.Lite.xml</DocumentationFile>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<AdditionalFiles Include="..\stylecop.json" Link="stylecop.json" />
+		<AdditionalFiles Include="..\Settings.StyleCop" Link="Settings.StyleCop" />
+	</ItemGroup>
+
+	<ItemGroup>
 	<PackageReference Include="Acr.UserDialogs" Version="7.1.0.475" />
 	<PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.1.0" />
 	<PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.1.0" />
 	<PackageReference Include="Microsoft.AppCenter.Distribute" Version="4.1.0" />
 	<PackageReference Include="Resizetizer.NT" Version="0.2.0" />
+	<PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+	  <PrivateAssets>all</PrivateAssets>
+	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
 	<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
 	<PackageReference Include="System.Text.Json" Version="5.0.1" />
 	<PackageReference Include="WebSocketSharp-netstandard" Version="1.0.1" />

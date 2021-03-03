@@ -28,6 +28,13 @@ namespace LiLo.Lite.Views
 			this.InitializeComponent();
 		}
 
+		/// <inheritdoc/>
+		protected override void OnAppearing()
+		{
+			base.OnAppearing();
+			MessagingCenter.Send(this, "preventLandscape");
+		}
+
 		/// <summary>Handle the device back button being pressed.</summary>
 		/// <remarks>As this is the root page, we have to prevent the back button otherwise it will exit the application.</remarks>
 		/// <returns>true; cancellation of back button.</returns>
@@ -38,25 +45,20 @@ namespace LiLo.Lite.Views
 			return true; // prevent users from clicking the back button and exiting the application from the root page.
 		}
 
-		/// <summary>Navigating in the Web view</summary>
-		/// <param name="sender">Sender object</param>
+		/// <inheritdoc/>
+		protected override void OnDisappearing()
+		{
+			base.OnDisappearing();
+			MessagingCenter.Send(this, "allowLandscapePortrait");
+		}
+
+		/// <summary>Navigating in the Web view.</summary>
+		/// <param name="sender">Sender object.</param>
 		/// <param name="e">Web navigation Event arguments.</param>
 		/// <remarks>Prevent users from navigating to anywhere else other than where we want.</remarks>
 		private void WebView_Navigating(object sender, WebNavigatingEventArgs e)
 		{
 			e.Cancel = true;
-		}
-
-		protected override void OnAppearing()
-		{
-			base.OnAppearing();
-			MessagingCenter.Send(this, "preventLandscape");
-		}
-
-		protected override void OnDisappearing()
-		{
-			base.OnDisappearing();
-			MessagingCenter.Send(this, "allowLandscapePortrait");
 		}
 	}
 }

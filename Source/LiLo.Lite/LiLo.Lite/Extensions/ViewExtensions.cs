@@ -36,10 +36,10 @@ namespace LiLo.Lite.Extensions
 		/// <param name="self">The visual element being animated.</param>
 		/// <param name="fromColor">Colour to start from.</param>
 		/// <param name="toColor">Colour to end at.</param>
-		/// <param name="callback">Action to call back</param>
+		/// <param name="callback">Action to call back.</param>
 		/// <param name="length">Duration of animation.</param>
 		/// <param name="easing">Non-linear easing of animation.</param>
-		/// <returns>Animation task.</returns>
+		/// <returns>A <see cref="Task{Boolean}"/> representing the asynchronous operation.</returns>
 		public static Task<bool> ColorTo(this VisualElement self, Color fromColor, Color toColor, Action<Color> callback, uint length = 250, Easing easing = null)
 		{
 			if (self is null)
@@ -52,24 +52,24 @@ namespace LiLo.Lite.Extensions
 				throw new ArgumentNullException(nameof(callback));
 			}
 
-			Color transform(double t) =>
+			Color Transform(double t) =>
 			  Color.FromRgba(
-				fromColor.R + t * (toColor.R - fromColor.R),
-				fromColor.G + t * (toColor.G - fromColor.G),
-				fromColor.B + t * (toColor.B - fromColor.B),
-				fromColor.A + t * (toColor.A - fromColor.A));
+				fromColor.R + (t * (toColor.R - fromColor.R)),
+				fromColor.G + (t * (toColor.G - fromColor.G)),
+				fromColor.B + (t * (toColor.B - fromColor.B)),
+				fromColor.A + (t * (toColor.A - fromColor.A)));
 
-			return ColorAnimation(self, "ColorTo", transform, callback, length, easing);
+			return ColorAnimation(self, "ColorTo", Transform, callback, length, easing);
 		}
 
 		/// <summary>Add animation to visual element.</summary>
 		/// <param name="element">The visual element being animated.</param>
 		/// <param name="name">Name of animation.</param>
 		/// <param name="transform">Transformation for animation.</param>
-		/// <param name="callback">Action to call back</param>
+		/// <param name="callback">Action to call back.</param>
 		/// <param name="length">Duration of animation.</param>
 		/// <param name="easing">Non-linear easing of animation.</param>
-		/// <returns>Animation task completion.</returns>
+		/// <returns>A <see cref="Task{Boolean}"/> representing the asynchronous operation.</returns>
 		private static Task<bool> ColorAnimation(VisualElement element, string name, Func<double, Color> transform, Action<Color> callback, uint length, Easing easing)
 		{
 			if (element is null)

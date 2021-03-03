@@ -33,6 +33,7 @@ namespace LiLo.Lite.Views
 			get => this.vm ??= (HomeViewModel)this.BindingContext;
 		}
 
+		/// <inheritdoc/>
 		protected override void OnSizeAllocated(double width, double height)
 		{
 			base.OnSizeAllocated(width, height);
@@ -47,7 +48,5 @@ namespace LiLo.Lite.Views
 				this.VM.GridItemsLayoutSpan = 1;
 			}
 		}
-
 	}
-
 }

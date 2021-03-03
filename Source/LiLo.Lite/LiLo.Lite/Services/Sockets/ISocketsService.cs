@@ -26,21 +26,23 @@ namespace LiLo.Lite.Services.Sockets
 		bool IsConnected { get; }
 
 		/// <summary>Handle when the application closes the sockets connection.</summary>
-		/// <returns>Successful task</returns>
+		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		Task WebSocket_Close();
 
 		/// <summary>Handle when the application requests a sockets connection.</summary>
-		/// <returns>Successful task.</returns>
+		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		Task WebSocket_OnConnect();
 
 		/// <summary>Handle when the application resumes from sleep.</summary>
-		/// <returns>Successful task</returns>
+		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		Task WebSocket_OnResume();
 
 		/// <summary>Handle when the application goes into sleep.</summary>
-		/// <returns>Successful task</returns>
+		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		Task WebSocket_OnSleep();
 
+		/// <summary>Connects to the sockets service.</summary>
+		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		Task Connect();
 	}
 }

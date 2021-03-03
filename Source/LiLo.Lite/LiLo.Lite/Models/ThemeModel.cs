@@ -23,6 +23,6 @@ namespace LiLo.Lite.Models
 		Light = 1,
 
 		/// <summary>Dark theme.</summary>
-		Dark = 2
+		Dark = 2,
 	}
 }

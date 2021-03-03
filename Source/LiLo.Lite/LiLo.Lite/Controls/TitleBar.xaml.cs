@@ -14,7 +14,6 @@
 namespace LiLo.Lite.Controls
 {
 	using System;
-	using LiLo.Lite.Views;
 	using Xamarin.Forms;
 	using Xamarin.Forms.Xaml;
 
@@ -28,11 +27,13 @@ namespace LiLo.Lite.Controls
 		/// <summary>Gets or sets the title Property, and it is a bindable property.</summary>
 		public static readonly BindableProperty TextProperty = BindableProperty.Create(nameof(Text), typeof(string), typeof(TitleBar), string.Empty, BindingMode.Default, null, OnTextChanged);
 
+		/// <summary>Gets or sets the home is visible Property, and it is a bindable property.</summary>
 		public static readonly BindableProperty HomeVisibleProperty = BindableProperty.Create(nameof(HomeVisible), typeof(bool), typeof(TitleBar), true, BindingMode.Default, null, OnHomeVisible);
 
+		/// <summary>Initialises a new instance of the <see cref="TitleBar"/> class.</summary>
 		public TitleBar()
 		{
-			InitializeComponent();
+			this.InitializeComponent();
 		}
 
 		/// <summary>Gets or sets the label style.</summary>
@@ -41,11 +42,11 @@ namespace LiLo.Lite.Controls
 		/// <summary>Gets or sets the Text.</summary>
 		public string Text
 		{
-			get => (string)GetValue(TextProperty);
-			set => SetValue(TextProperty, value);
+			get => (string)this.GetValue(TextProperty);
+			set => this.SetValue(TextProperty, value);
 		}
 
-		/// <summary>Gets or sets if the home is visible.</summary>
+		/// <summary>Gets or sets a value indicating whether home is visible.</summary>
 		public bool HomeVisible { get; set; }
 
 		/// <summary>Label style changed.</summary>

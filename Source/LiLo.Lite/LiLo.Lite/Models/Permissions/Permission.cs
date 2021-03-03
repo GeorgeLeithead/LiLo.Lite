@@ -26,6 +26,6 @@ namespace LiLo.Lite.Models.Permissions
 		LocationAlways,
 
 		/// <summary>Permission when application in use.</summary>
-		LocationWhenInUse
+		LocationWhenInUse,
 	}
 }

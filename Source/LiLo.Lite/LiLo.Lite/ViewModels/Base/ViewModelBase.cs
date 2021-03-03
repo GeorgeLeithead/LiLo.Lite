@@ -40,9 +40,13 @@ namespace LiLo.Lite.ViewModels.Base
 		{
 		}
 
+		/// <summary>Gets the markets helper service.</summary>
 		public MarketsHelperService MarketsHelperService => this.marketsHelperService ??= DependencyService.Resolve<MarketsHelperService>();
+
+		/// <summary>Gets the dialogue service.</summary>
 		public IDialogService DialogService => this.dialogService ??= DependencyService.Resolve<DialogService>();
 
+		/// <summary>Gets the sockets service.</summary>
 		public ISocketsService SocketsService => this.socketsService ??= DependencyService.Resolve<SocketsService>();
 
 		/// <summary>Gets or sets a value indicating whether the view is busy.</summary>

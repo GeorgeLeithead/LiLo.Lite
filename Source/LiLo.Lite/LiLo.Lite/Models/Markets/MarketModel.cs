@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="MarketsModel.cs" company="InternetWideWorld.com">
+// <copyright file="MarketModel.cs" company="InternetWideWorld.com">
 // Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
 //   THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
 //   OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
@@ -23,37 +23,37 @@ namespace LiLo.Lite.Models.Markets
 	[DataContract]
 	public class MarketModel : ViewModelBase
 	{
-		/// <summary>Format culture - set to US</summary>
+		/// <summary>Format culture - set to US.</summary>
 		private readonly CultureInfo formatCulture = CultureInfo.CreateSpecificCulture("en-US");
 
-		/// <summary>Number of decimal places</summary>
+		/// <summary>Number of decimal places.</summary>
 		private int decimalPlaces;
 
-		/// <summary>24HR high price</summary>
+		/// <summary>24HR high price.</summary>
 		private double highPrice24h;
 
-		/// <summary>24HR high price as string</summary>
+		/// <summary>24HR high price as string.</summary>
 		private string highPrice24hString;
 
-		/// <summary>Last price</summary>
+		/// <summary>Last price.</summary>
 		private double lastPrice;
 
-		/// <summary>Last price as string</summary>
+		/// <summary>Last price as string.</summary>
 		private string lastPriceString;
 
-		/// <summary>24HR low price</summary>
+		/// <summary>24HR low price.</summary>
 		private double lowPrice24h;
 
-		/// <summary>24HR low price as string</summary>
+		/// <summary>24HR low price as string.</summary>
 		private string lowPrice24hString;
 
-		/// <summary>24HR price percentage</summary>
+		/// <summary>24HR price percentage.</summary>
 		private double price24hPercent;
 
-		/// <summary>24HR price percentage as string</summary>
+		/// <summary>24HR price percentage as string.</summary>
 		private string price24hPercentString;
 
-		/// <summary>Currency symbol as string</summary>
+		/// <summary>Currency symbol as string.</summary>
 		private string symbolString;
 
 		/// <summary>Initialises a new instance of the <see cref="MarketModel"/> class.</summary>
@@ -120,7 +120,7 @@ namespace LiLo.Lite.Models.Markets
 			}
 		}
 
-		/// <summary>Gets or sets the last price as a string</summary>
+		/// <summary>Gets or sets the last price as a string.</summary>
 		public string LastPriceString
 		{
 			get => this.lastPriceString;
@@ -149,7 +149,7 @@ namespace LiLo.Lite.Models.Markets
 			}
 		}
 
-		/// <summary>Gets or sets the 24HR low price as a string</summary>
+		/// <summary>Gets or sets the 24HR low price as a string.</summary>
 		public string LowPrice24hString
 		{
 			get => this.lowPrice24hString;
@@ -178,7 +178,7 @@ namespace LiLo.Lite.Models.Markets
 			}
 		}
 
-		/// <summary>Gets or sets the 24HR price percentage as a string</summary>
+		/// <summary>Gets or sets the 24HR price percentage as a string.</summary>
 		public string Price24hPercentString
 		{
 			get => this.price24hPercentString;
@@ -192,7 +192,7 @@ namespace LiLo.Lite.Models.Markets
 			}
 		}
 
-		/// <summary>Market ranking.</summary>
+		/// <summary>Gets or sets the market ranking for the symbol.</summary>
 		public int Rank { get; set; }
 
 		/// <summary>Gets or sets the currency Symbol as a string.</summary>

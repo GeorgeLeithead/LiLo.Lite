@@ -26,7 +26,7 @@ namespace Lilo.Lite.Services
 		/// <param name="propertyName">Optionally causes the property name of the caller to be substituted as an argument.</param>
 		protected virtual void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
 		{
-			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+			this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 		}
 	}
 }

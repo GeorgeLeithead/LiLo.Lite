@@ -32,12 +32,11 @@ namespace LiLo.Lite.Services.Markets
 		string GetWss();
 
 		/// <summary>Initialises task for the markets helper service.</summary>
-		/// <returns>Task results of initialisation.</returns>
 		void Init();
 
 		/// <summary>Message received handler.</summary>
-		/// <param name="sender">Message sender</param>
-		/// <param name="e">Message event arguments</param>
+		/// <param name="sender">Message sender.</param>
+		/// <param name="e">Message event arguments.</param>
 		void WebSockets_OnMessageAsync(object sender, MessageEventArgs e);
 	}
 }

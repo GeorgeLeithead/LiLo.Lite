@@ -25,7 +25,7 @@ namespace LiLo.Lite.Droid
 		protected override void OnResume()
 		{
 			base.OnResume();
-			Task startupWork = new Task(() => { SimulateStartup(); });
+			Task startupWork = new Task(() => { this.SimulateStartup(); });
 			startupWork.Start();
 		}
 
@@ -35,7 +35,7 @@ namespace LiLo.Lite.Droid
 			Log.Debug(TAG, "Performing some start-up work that takes a bit of time.");
 			await Task.Delay(500); // Simulate a bit of start-up work.
 			Log.Debug(TAG, "Start-up work is finished - starting MainActivity.");
-			StartActivity(new Intent(Application.Context, typeof(MainActivity)));
+			this.StartActivity(new Intent(Application.Context, typeof(MainActivity)));
 		}
 	}
 }

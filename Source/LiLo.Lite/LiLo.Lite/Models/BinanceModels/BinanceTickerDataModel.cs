@@ -1,5 +1,5 @@
 ﻿//-----------------------------------------------------------------------
-// <copyright file="Data.cs" company="InternetWideWorld.com">
+// <copyright file="BinanceTickerDataModel.cs" company="InternetWideWorld.com">
 // Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
 //   THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
 //   OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
@@ -23,29 +23,42 @@ namespace LiLo.Lite.Models.BinanceModels
 	/// <summary>Binance ticker symbol stream data.</summary>
 	public class BinanceTickerDataModel
 	{
+		/// <summary>Gets or sets close price.</summary>
 		[JsonPropertyName("c")]
 		public string CurrentPrice { get; set; }
 
+		/// <summary>Gets or sets high price.</summary>
 		[JsonPropertyName("h")]
 		public string HighPrice { get; set; }
 
+		/// <summary>Gets the 24hr high price.</summary>
 		public double HighPrice24h => Convert.ToDouble(this.HighPrice);
 
+		/// <summary>Gets the last price.</summary>
 		public double LastPrice => Convert.ToDouble(this.CurrentPrice);
 
+		/// <summary>Gets or sets the low price.</summary>
 		[JsonPropertyName("l")]
 		public string LowPrice { get; set; }
 
+		/// <summary>Gets the 24hr low price.</summary>
 		public double LowPrice24h => Convert.ToDouble(this.LowPrice);
 
+		/// <summary>Gets or sets the price change percent.</summary>
 		[JsonPropertyName("P")]
 		public string Percent { get; set; }
 
+		/// <summary>Gets the 24hr price change percent.</summary>
 		public double Price24hPercent => Convert.ToDouble(this.Percent);
 
+		/// <summary>Gets or sets the symbol.</summary>
 		[JsonPropertyName("s")]
 		public string SymbolString { get; set; }
 
+		/// <summary>Updates the market list data.</summary>
+		/// <param name="data">Ticker data.</param>
+		/// <param name="marketsList">Markets list.</param>
+		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		public static async Task UpdateMarketList(BinanceTickerDataModel data, ObservableRangeCollection<MarketModel> marketsList)
 		{
 			if (data is null)

@@ -24,9 +24,6 @@ namespace LiLo.Lite.ViewModels
 	[QueryProperty("Symbol", "symbol")]
 	public class ChartViewModel : ViewModelBase
 	{
-		private MarketModel selectedItem;
-		private HtmlWebViewSource tradingViewChart = new HtmlWebViewSource();
-
 		/// <summary>Trading View public Widget HTML string.</summary>
 		private const string TradingViewString = @"
 <html>
@@ -86,6 +83,9 @@ iframe.body {
 </html>
 ";
 
+		private MarketModel selectedItem;
+		private HtmlWebViewSource tradingViewChart = new HtmlWebViewSource();
+
 		/// <summary>Initialises a new instance of the <see cref="ChartViewModel"/> class.</summary>
 		public ChartViewModel()
 		{
@@ -93,16 +93,7 @@ iframe.body {
 			this.IsBusy = false;
 		}
 
-		public string Symbol
-		{
-			set
-			{
-				string symbol = Uri.UnescapeDataString(value);
-				this.SelectedItem = this.MarketsHelperService.MarketsList.Where(m => m.SymbolString == symbol).First();
-				this.Title = symbol;
-			}
-		}
-
+		/// <summary>Gets or sets the selected market item.</summary>
 		public MarketModel SelectedItem
 		{
 			get => this.selectedItem;
@@ -114,6 +105,18 @@ iframe.body {
 			}
 		}
 
+		/// <summary>Sets the market symbol.</summary>
+		public string Symbol
+		{
+			set
+			{
+				string symbol = Uri.UnescapeDataString(value);
+				this.SelectedItem = this.MarketsHelperService.MarketsList.Where(m => m.SymbolString == symbol).First();
+				this.Title = symbol;
+			}
+		}
+
+		/// <summary>Gets or sets the trading view chart source.</summary>
 		public HtmlWebViewSource TradingViewChart
 		{
 			get => this.tradingViewChart;

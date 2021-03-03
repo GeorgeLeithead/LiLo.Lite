@@ -7,19 +7,19 @@
 //   FITNESS FOR A PARTICULAR PURPOSE.
 // </copyright>
 // <summary>
-//   Event to command behavior class.
+//   Event to command behaviour class.
 // </summary>
 //-----------------------------------------------------------------------
 
 namespace LiLo.Lite.Behaviors
 {
-	using LiLo.Lite.Behaviors.Base;
 	using System;
 	using System.Globalization;
 	using System.Linq;
 	using System.Linq.Expressions;
 	using System.Reflection;
 	using System.Windows.Input;
+	using LiLo.Lite.Behaviors.Base;
 	using Xamarin.Forms;
 
 	/// <summary>Event to command behaviour class.</summary>
@@ -49,53 +49,53 @@ namespace LiLo.Lite.Behaviors
 		/// <summary>Gets or sets the bound command.</summary>
 		public ICommand Command
 		{
-			get => (ICommand)GetValue(CommandProperty);
-			set => SetValue(CommandProperty, value);
+			get => (ICommand)this.GetValue(CommandProperty);
+			set => this.SetValue(CommandProperty, value);
 		}
 
 		/// <summary>Gets or sets the command parameter.</summary>
 		public object CommandParameter
 		{
-			get => GetValue(CommandParameterProperty);
-			set => SetValue(CommandParameterProperty, value);
+			get => this.GetValue(CommandParameterProperty);
+			set => this.SetValue(CommandParameterProperty, value);
 		}
 
 		/// <summary>Gets or sets the event arguments value converter.</summary>
 		public IValueConverter EventArgsConverter
 		{
-			get => (IValueConverter)GetValue(EventArgsConverterProperty);
-			set => SetValue(EventArgsConverterProperty, value);
+			get => (IValueConverter)this.GetValue(EventArgsConverterProperty);
+			set => this.SetValue(EventArgsConverterProperty, value);
 		}
 
 		/// <summary>Gets or sets the event arguments value converter parameter.</summary>
 		public object EventArgsConverterParameter
 		{
-			get => GetValue(EventArgsConverterParameterProperty);
-			set => SetValue(EventArgsConverterParameterProperty, value);
+			get => this.GetValue(EventArgsConverterParameterProperty);
+			set => this.SetValue(EventArgsConverterParameterProperty, value);
 		}
 
 		/// <summary>Gets or sets the bound event name.</summary>
 		public string EventName
 		{
-			get => (string)GetValue(EventNameProperty);
-			set => SetValue(EventNameProperty, value);
+			get => (string)this.GetValue(EventNameProperty);
+			set => this.SetValue(EventNameProperty, value);
 		}
 
-		/// <summary>Attached to event handler</summary>
-		/// <param name="visualElement">Visual Element</param>
+		/// <summary>Attached to event handler.</summary>
+		/// <param name="visualElement">Visual Element.</param>
 		protected override void OnAttachedTo(View visualElement)
 		{
 			base.OnAttachedTo(visualElement);
-			EventInfo[] events = AssociatedObject.GetType().GetRuntimeEvents().ToArray();
+			EventInfo[] events = this.AssociatedObject.GetType().GetRuntimeEvents().ToArray();
 			if (events.Any())
 			{
-				eventInfo = events.FirstOrDefault(e => e.Name == EventName);
-				if (eventInfo == null)
+				this.eventInfo = events.FirstOrDefault(e => e.Name == this.EventName);
+				if (this.eventInfo == null)
 				{
-					throw new ArgumentException(string.Format("EventToCommand: Can't find any event named '{0}' on attached type", EventName));
+					throw new ArgumentException(string.Format("EventToCommand: Can't find any event named '{0}' on attached type", this.EventName));
 				}
 
-				AddEventHandler(eventInfo, AssociatedObject, OnFired);
+				this.AddEventHandler(this.eventInfo, this.AssociatedObject, this.OnFired);
 			}
 		}
 
@@ -103,9 +103,9 @@ namespace LiLo.Lite.Behaviors
 		/// <param name="view">View element.</param>
 		protected override void OnDetachingFrom(View view)
 		{
-			if (delegateHandler != null)
+			if (this.delegateHandler != null)
 			{
-				eventInfo.RemoveEventHandler(AssociatedObject, delegateHandler);
+				this.eventInfo.RemoveEventHandler(this.AssociatedObject, this.delegateHandler);
 			}
 
 			base.OnDetachingFrom(view);
@@ -125,37 +125,37 @@ namespace LiLo.Lite.Behaviors
 
 			MethodInfo actionInvoke = action.GetType().GetRuntimeMethods().First(m => m.Name == "Invoke");
 
-			delegateHandler = Expression.Lambda(
+			this.delegateHandler = Expression.Lambda(
 				eventInfo.EventHandlerType,
 				Expression.Call(Expression.Constant(action), actionInvoke, eventParameters[0], eventParameters[1]),
 				eventParameters).Compile();
 
-			eventInfo.AddEventHandler(item, delegateHandler);
+			eventInfo.AddEventHandler(item, this.delegateHandler);
 		}
 
-		/// <summary>Command fired</summary>
-		/// <param name="sender">Event sender</param>
-		/// <param name="eventArgs">Event arguments</param>
+		/// <summary>Command fired.</summary>
+		/// <param name="sender">Event sender.</param>
+		/// <param name="eventArgs">Event arguments.</param>
 		private void OnFired(object sender, EventArgs eventArgs)
 		{
-			if (Command == null)
+			if (this.Command == null)
 			{
 				return;
 			}
 
-			object parameter = CommandParameter;
+			object parameter = this.CommandParameter;
 			if (eventArgs != null && eventArgs != EventArgs.Empty)
 			{
 				parameter = eventArgs;
-				if (EventArgsConverter != null)
+				if (this.EventArgsConverter != null)
 				{
-					parameter = EventArgsConverter.Convert(eventArgs, typeof(object), EventArgsConverterParameter, CultureInfo.CurrentUICulture);
+					parameter = this.EventArgsConverter.Convert(eventArgs, typeof(object), this.EventArgsConverterParameter, CultureInfo.CurrentUICulture);
 				}
 			}
 
-			if (Command.CanExecute(parameter))
+			if (this.Command.CanExecute(parameter))
 			{
-				Command.Execute(parameter);
+				this.Command.Execute(parameter);
 			}
 		}
 	}

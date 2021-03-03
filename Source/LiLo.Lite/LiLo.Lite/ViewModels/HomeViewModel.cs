@@ -18,22 +18,39 @@ namespace LiLo.Lite.ViewModels
 	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.CommunityToolkit.ObjectModel;
+	using Xamarin.Essentials;
 	using Xamarin.Forms;
 
 	/// <summary>Home view model.</summary>
 	public class HomeViewModel : ViewModelBase
 	{
-		/// <summary>Observable list of markets.</summary>
-		private ObservableRangeCollection<MarketModel> marketsList;
 		private int gridItemsLayoutSpan = 1;
 
-		/// <summary>Initializes a new instance of the <see cref="HomeViewModel"/> class.</summary>
+		/// <summary>Observable list of markets.</summary>
+		private ObservableRangeCollection<MarketModel> marketsList;
+
+		/// <summary>Initialises a new instance of the <see cref="HomeViewModel"/> class.</summary>
 		public HomeViewModel()
 		{
 			this.IsBusy = true;
 			this.Title = "Markets";
 			this.RetryButtonClicked = new Command(() => this.Init());
 			this.Init();
+		}
+
+		/// <summary>Gets or sets the items layout span.</summary>
+		/// <remarks>To handle landscape and portrait orientation.</remarks>
+		public int GridItemsLayoutSpan
+		{
+			get => this.gridItemsLayoutSpan;
+			set
+			{
+				if (value != this.gridItemsLayoutSpan)
+				{
+					this.gridItemsLayoutSpan = value;
+					this.NotifyPropertyChanged(() => this.GridItemsLayoutSpan);
+				}
+			}
 		}
 
 		/// <summary>Gets or sets a collection of values to be displayed in the markets view.</summary>
@@ -50,7 +67,10 @@ namespace LiLo.Lite.ViewModels
 			}
 		}
 
-		/// <summary>Sets selected item.</summary>
+		/// <summary>Gets or sets the retry button command.</summary>
+		public ICommand RetryButtonClicked { get; set; }
+
+		/// <summary>Gets or sets the selected item.</summary>
 		public MarketModel SelectedItem
 		{
 			get => null;
@@ -64,33 +84,28 @@ namespace LiLo.Lite.ViewModels
 				}
 			}
 		}
-		public ICommand RetryButtonClicked { get; set; }
-
-		public int GridItemsLayoutSpan
-		{
-			get => gridItemsLayoutSpan;
-			set
-			{
-				if (value != gridItemsLayoutSpan)
-				{
-					gridItemsLayoutSpan = value;
-					this.NotifyPropertyChanged(() => this.GridItemsLayoutSpan);
-				}
-			}
-		}
 
 		/// <summary>Initialise the home view model.</summary>
 		private void Init()
 		{
-			try
+			NetworkAccess current = Connectivity.NetworkAccess;
+			if (current == NetworkAccess.Internet)
 			{
-				this.MarketsHelperService.Init();
-				this.SocketsService?.Connect();
-				this.MarketsList = this.MarketsHelperService.MarketsList;
+				// Connection to internet is available
+				try
+				{
+					this.MarketsHelperService.Init();
+					this.SocketsService?.Connect();
+					this.MarketsList = this.MarketsHelperService.MarketsList;
+				}
+				catch (HttpRequestException ex)
+				{
+					_ = this.DialogService.ShowAlertAsync(ex.Message, "Markets list error", "Dismiss");
+				}
 			}
-			catch (HttpRequestException ex)
+			else
 			{
-				_ = this.DialogService.ShowAlertAsync(ex.Message, "Markets list error", "Dismiss");
+				_ = this.DialogService.ShowAlertAsync("No network access!", "Network error", "Dismiss");
 			}
 
 			this.IsBusy = false;

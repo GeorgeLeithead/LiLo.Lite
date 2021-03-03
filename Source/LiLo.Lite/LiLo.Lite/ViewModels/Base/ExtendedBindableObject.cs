@@ -22,12 +22,12 @@ namespace LiLo.Lite.ViewModels.Base
 	public abstract class ExtendedBindableObject : BindableObject
 	{
 		/// <summary>Notify property has changed.</summary>
-		/// <typeparam name="T">Property type</typeparam>
+		/// <typeparam name="T">Property type.</typeparam>
 		/// <param name="property">Property changed.</param>
 		public void NotifyPropertyChanged<T>(Expression<Func<T>> property)
 		{
-			string name = GetMemberInfo(property).Name;
-			OnPropertyChanged(name);
+			string name = this.GetMemberInfo(property).Name;
+			this.OnPropertyChanged(name);
 		}
 
 		/// <summary>Get member information.</summary>
