@@ -14,6 +14,7 @@
 namespace LiLo.Lite.Controls
 {
 	using System;
+	using LiLo.Lite.Views;
 	using Xamarin.Forms;
 	using Xamarin.Forms.Xaml;
 
@@ -98,7 +99,15 @@ namespace LiLo.Lite.Controls
 
 		private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
 		{
-			await Shell.Current.GoToAsync("//Home");
+			Page page = Shell.Current.CurrentPage;
+			if (page != null && page is ChartView)
+			{
+				await Shell.Current.GoToAsync($"//Home?symbol={this.Text}");
+			}
+			else
+			{
+				await Shell.Current.GoToAsync("//Home");
+			}
 		}
 	}
 }

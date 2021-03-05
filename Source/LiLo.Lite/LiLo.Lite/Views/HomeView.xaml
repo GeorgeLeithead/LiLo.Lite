@@ -40,12 +40,19 @@
 				IsRunning="{Binding IsBusy}"
 				IsVisible="{Binding IsBusy}"
 				VerticalOptions="CenterAndExpand" />
-			<!--  Markets List View  -->
-			<ScrollView
+			<StackLayout
 				Grid.Row="1"
 				IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}"
-				VerticalScrollBarVisibility="Never">
+				Orientation="Vertical">
+				<SearchBar
+					x:Name="searchBar"
+					Placeholder="Symbol..."
+					TextChanged="SearchBarTextChanged"
+					TextTransform="Uppercase" />
+				<!--  Markets List View  -->
 				<CollectionView
+					x:Name="CollectionViewmarketsList"
+					IsGrouped="False"
 					ItemsSource="{Binding MarketsList}"
 					SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
 					Style="{StaticResource MarketsCollectionViewStyle}">
@@ -108,6 +115,7 @@
 													Price="{Binding LowPrice24h}"
 													Style="{StaticResource CurrencyPriceStyle}"
 													Text="{Binding LowPrice24hString}" />
+												<Label Text="{Binding IsVisible}" />
 											</StackLayout>
 										</StackLayout>
 										<StackLayout
@@ -128,7 +136,7 @@
 						</DataTemplate>
 					</CollectionView.ItemTemplate>
 				</CollectionView>
-			</ScrollView>
+			</StackLayout>
 		</Grid>
 	</ContentPage.Content>
 </ContentPage>

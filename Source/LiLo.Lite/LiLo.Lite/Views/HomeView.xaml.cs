@@ -13,6 +13,9 @@
 
 namespace LiLo.Lite.Views
 {
+	using System.Linq;
+	using System.Threading.Tasks;
+	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.ViewModels;
 	using Xamarin.Forms;
 	using Xamarin.Forms.Internals;
@@ -28,9 +31,22 @@ namespace LiLo.Lite.Views
 		/// <summary>Initialises a new instance of the <see cref="HomeView" /> class.</summary>
 		public HomeView() => this.InitializeComponent();
 
-		private HomeViewModel VM
+		private HomeViewModel VM => this.vm ??= (HomeViewModel)this.BindingContext;
+
+		/// <inheritdoc/>
+		protected override void OnAppearing()
 		{
-			get => this.vm ??= (HomeViewModel)this.BindingContext;
+			base.OnAppearing();
+			this.searchBar.Unfocus();
+			if (!string.IsNullOrEmpty(this.VM.Symbol))
+			{
+				Task.Factory.StartNew(() =>
+				{
+					// await Task.Delay(500); // This causes a real problem with the app performance!
+					MarketModel matchingItem = this.VM.MarketsList.Where(m => m.SymbolString == this.VM.Symbol).First();
+					this.CollectionViewmarketsList.ScrollTo(item: matchingItem, group: null, position: ScrollToPosition.Start, animate: true);
+				});
+			}
 		}
 
 		/// <inheritdoc/>
@@ -46,6 +62,25 @@ namespace LiLo.Lite.Views
 			{
 				// Portrait mode
 				this.VM.GridItemsLayoutSpan = 1;
+			}
+		}
+
+		/// <summary>Search Bar text changed.</summary>
+		/// <param name="sender">Sender object.</param>
+		/// <param name="e">Text changed event arguments.</param>
+		private void SearchBarTextChanged(object sender, TextChangedEventArgs e)
+		{
+			if (!string.IsNullOrEmpty(e.NewTextValue))
+			{
+				MarketModel matchingItem = this.VM.MarketsList.Where(m => m.SymbolString.StartsWith(e.NewTextValue.ToUpperInvariant())).FirstOrDefault();
+				if (matchingItem != null)
+				{
+					this.CollectionViewmarketsList.ScrollTo(item: matchingItem, group: null, position: ScrollToPosition.Start, animate: true);
+				}
+			}
+			else
+			{
+				this.CollectionViewmarketsList.ScrollTo(1, -1, ScrollToPosition.Start, true);
 			}
 		}
 	}

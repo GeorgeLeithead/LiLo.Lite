@@ -715,6 +715,9 @@
         <member name="P:LiLo.Lite.ViewModels.HomeViewModel.SelectedItem">
             <summary>Gets or sets the selected item.</summary>
         </member>
+        <member name="P:LiLo.Lite.ViewModels.HomeViewModel.Symbol">
+            <summary>Gets or sets the market symbol.</summary>
+        </member>
         <member name="M:LiLo.Lite.ViewModels.HomeViewModel.Init">
             <summary>Initialise the home view model.</summary>
         </member>
@@ -747,8 +750,16 @@
         <member name="M:LiLo.Lite.Views.HomeView.#ctor">
             <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Views.HomeView" /> class.</summary>
         </member>
+        <member name="M:LiLo.Lite.Views.HomeView.OnAppearing">
+            <inheritdoc/>
+        </member>
         <member name="M:LiLo.Lite.Views.HomeView.OnSizeAllocated(System.Double,System.Double)">
             <inheritdoc/>
+        </member>
+        <member name="M:LiLo.Lite.Views.HomeView.SearchBarTextChanged(System.Object,Xamarin.Forms.TextChangedEventArgs)">
+            <summary>Search Bar text changed.</summary>
+            <param name="sender">Sender object.</param>
+            <param name="e">Text changed event arguments.</param>
         </member>
         <member name="T:Lilo.Lite.Services.NotifyPropertyChangedBase">
             <summary>Notify property changed base class.</summary>
