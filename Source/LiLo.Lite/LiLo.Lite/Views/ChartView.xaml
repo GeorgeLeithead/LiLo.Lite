@@ -24,6 +24,7 @@
 			<controls:TitleBar
 				Grid.Row="0"
 				HomeVisible="True"
+				SettingsVisible="True"
 				Style="{StaticResource TitleStyle}"
 				Text="{Binding SelectedItem.SymbolString}" />
 			<!--  Markets List View  -->

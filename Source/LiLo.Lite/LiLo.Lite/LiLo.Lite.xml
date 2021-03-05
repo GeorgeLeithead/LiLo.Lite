@@ -181,6 +181,9 @@
         <member name="F:LiLo.Lite.Controls.TitleBar.HomeVisibleProperty">
             <summary>Gets or sets the home is visible Property, and it is a bindable property.</summary>
         </member>
+        <member name="F:LiLo.Lite.Controls.TitleBar.SettingsVisibleProperty">
+            <summary>Gets or sets the settings is visible Property, and it is a bindable property.</summary>
+        </member>
         <member name="M:LiLo.Lite.Controls.TitleBar.#ctor">
             <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Controls.TitleBar"/> class.</summary>
         </member>
@@ -192,6 +195,9 @@
         </member>
         <member name="P:LiLo.Lite.Controls.TitleBar.HomeVisible">
             <summary>Gets or sets a value indicating whether home is visible.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.TitleBar.SettingsVisible">
+            <summary>Gets or sets a value indicating whether settings is visible.</summary>
         </member>
         <member name="M:LiLo.Lite.Controls.TitleBar.LabelStylePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
             <summary>Label style changed.</summary>
@@ -205,16 +211,17 @@
             <param name="oldValue">Old value.</param>
             <param name="newValue">New value.</param>
         </member>
+        <member name="M:LiLo.Lite.Controls.TitleBar.OnSettingsVisible(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>Settings visible.</summary>
+            <param name="bindable">Bindable object.</param>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>
+        </member>
         <member name="M:LiLo.Lite.Controls.TitleBar.OnTextChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
             <summary>Change the title bar heading.</summary>
             <param name="bindable">Bindable object.</param>
             <param name="oldValue">Old value.</param>
             <param name="newValue">New value.</param>
-        </member>
-        <member name="M:LiLo.Lite.Controls.TitleBar.SettingsTapped(System.Object,System.EventArgs)">
-            <summary>Change the application theme.</summary>
-            <param name="sender">Object sender.</param>
-            <param name="e">Event arguments.</param>
         </member>
         <member name="T:LiLo.Lite.Extensions.ViewExtensions">
             <summary>View animation extensions.</summary>
@@ -721,6 +728,12 @@
         <member name="M:LiLo.Lite.ViewModels.HomeViewModel.Init">
             <summary>Initialise the home view model.</summary>
         </member>
+        <member name="T:LiLo.Lite.ViewModels.SettingsViewModel">
+            <summary>Settings view model.</summary>
+        </member>
+        <member name="M:LiLo.Lite.ViewModels.SettingsViewModel.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.ViewModels.SettingsViewModel"/> class.</summary>
+        </member>
         <member name="T:LiLo.Lite.Views.ChartView">
             <summary>Chart View class.</summary>
         </member>
@@ -760,6 +773,12 @@
             <summary>Search Bar text changed.</summary>
             <param name="sender">Sender object.</param>
             <param name="e">Text changed event arguments.</param>
+        </member>
+        <member name="T:LiLo.Lite.Views.SettingsView">
+            <summary>Settings view.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Views.SettingsView.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Views.SettingsView"/> class.</summary>
         </member>
         <member name="T:Lilo.Lite.Services.NotifyPropertyChangedBase">
             <summary>Notify property changed base class.</summary>

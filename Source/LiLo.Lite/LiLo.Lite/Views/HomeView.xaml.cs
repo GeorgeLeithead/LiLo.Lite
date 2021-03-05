@@ -43,8 +43,11 @@ namespace LiLo.Lite.Views
 				Task.Factory.StartNew(() =>
 				{
 					// await Task.Delay(500); // This causes a real problem with the app performance!
-					MarketModel matchingItem = this.VM.MarketsList.Where(m => m.SymbolString == this.VM.Symbol).First();
-					this.CollectionViewmarketsList.ScrollTo(item: matchingItem, group: null, position: ScrollToPosition.Start, animate: true);
+					MarketModel matchingItem = this.VM.MarketsList.Where(m => m.SymbolString == this.VM.Symbol).FirstOrDefault();
+					if (matchingItem != null)
+					{
+						this.CollectionViewmarketsList.ScrollTo(item: matchingItem, group: null, position: ScrollToPosition.Start, animate: true);
+					}
 				});
 			}
 		}
@@ -77,10 +80,6 @@ namespace LiLo.Lite.Views
 				{
 					this.CollectionViewmarketsList.ScrollTo(item: matchingItem, group: null, position: ScrollToPosition.Start, animate: true);
 				}
-			}
-			else
-			{
-				this.CollectionViewmarketsList.ScrollTo(1, -1, ScrollToPosition.Start, true);
 			}
 		}
 	}

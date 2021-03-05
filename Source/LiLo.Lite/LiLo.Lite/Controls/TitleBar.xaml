@@ -3,8 +3,10 @@
 	x:Class="LiLo.Lite.Controls.TitleBar"
 	xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
 	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	x:DataType="controls:TitleBar"
 	mc:Ignorable="d">
 
 	<Grid
@@ -15,13 +17,13 @@
 		VerticalOptions="Start">
 		<Image
 			x:Name="HomeImage"
-			HeightRequest="40"
+			Aspect="AspectFill"
 			HorizontalOptions="Start"
 			Source="{AppThemeBinding Light='home.png',
 			                         Dark='home_dark.png'}"
 			VerticalOptions="Center">
 			<Image.GestureRecognizers>
-				<TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+				<TapGestureRecognizer Tapped="HomeTapped" />
 			</Image.GestureRecognizers>
 		</Image>
 		<Label
@@ -30,11 +32,12 @@
 			IsVisible="false"
 			Text="{Binding Text}" />
 		<Image
+			x:Name="SettingsImage"
 			Grid.Column="2"
-			HeightRequest="40"
+			Aspect="AspectFill"
 			HorizontalOptions="End"
-			Source="{AppThemeBinding Light='moon_light.png',
-			                         Dark='sun_dark.png'}"
+			Source="{AppThemeBinding Light='settings.png',
+			                         Dark='settings_dark.png'}"
 			VerticalOptions="Center">
 			<Image.GestureRecognizers>
 				<TapGestureRecognizer Tapped="SettingsTapped" />

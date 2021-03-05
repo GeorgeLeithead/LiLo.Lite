@@ -30,8 +30,9 @@
 			<controls:TitleBar
 				Grid.Row="0"
 				HomeVisible="False"
+				SettingsVisible="True"
 				Style="{StaticResource TitleStyle}"
-				Text="Markets" />
+				Text="{Binding Title, Mode=OneTime}" />
 			<ActivityIndicator
 				Grid.Row="1"
 				d:IsRunning="True"

@@ -131,7 +131,7 @@
 
 			<Style x:Key="TitleStyle" TargetType="controls:TitleBar">
 				<Setter Property="LabelStyle" Value="{StaticResource TitleStyleLabel}" />
-				<Setter Property="Margin" Value="4,0" />
+				<Setter Property="Margin" Value="4,2,4,0" />
 			</Style>
 
 			<Style x:Key="ChartFrameStackStyle" TargetType="StackLayout">

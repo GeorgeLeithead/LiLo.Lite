@@ -3,14 +3,19 @@
 	x:Class="LiLo.Lite.AppShell"
 	xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:lite="clr-namespace:LiLo.Lite"
 	xmlns:views="clr-namespace:LiLo.Lite.Views"
+	x:DataType="lite:AppShell"
 	Shell.FlyoutBehavior="Disabled"
 	Shell.NavBarHasShadow="True"
 	Visual="Material">
-	<FlyoutItem Route="Home">
-		<ShellContent ContentTemplate="{DataTemplate views:HomeView}" />
+	<FlyoutItem>
+		<ShellContent ContentTemplate="{DataTemplate views:HomeView}" Route="Home" />
 	</FlyoutItem>
-	<FlyoutItem Route="Chart">
-		<ShellContent ContentTemplate="{DataTemplate views:ChartView}" />
+	<FlyoutItem>
+		<ShellContent ContentTemplate="{DataTemplate views:ChartView}" Route="Chart" />
+	</FlyoutItem>
+	<FlyoutItem>
+		<ShellContent ContentTemplate="{DataTemplate views:SettingsView}" Route="Settings" />
 	</FlyoutItem>
 </Shell>

@@ -18132,82 +18132,88 @@ namespace LiLo.Lite.Droid
 			public const int sc = 2131165386;
 			
 			// aapt resource value: 0x7F0700CB
-			public const int snx = 2131165387;
+			public const int settings = 2131165387;
 			
 			// aapt resource value: 0x7F0700CC
-			public const int sol = 2131165388;
+			public const int settings_dark = 2131165388;
 			
 			// aapt resource value: 0x7F0700CD
-			public const int Splash_Screen = 2131165389;
+			public const int snx = 2131165389;
 			
 			// aapt resource value: 0x7F0700CE
-			public const int stx = 2131165390;
+			public const int sol = 2131165390;
 			
 			// aapt resource value: 0x7F0700CF
-			public const int sun_dark = 2131165391;
+			public const int Splash_Screen = 2131165391;
 			
 			// aapt resource value: 0x7F0700D0
-			public const int sushi = 2131165392;
+			public const int stx = 2131165392;
 			
 			// aapt resource value: 0x7F0700D1
-			public const int sxp = 2131165393;
+			public const int sun_dark = 2131165393;
 			
 			// aapt resource value: 0x7F0700D2
-			public const int test_custom_background = 2131165394;
+			public const int sushi = 2131165394;
 			
 			// aapt resource value: 0x7F0700D3
-			public const int theta = 2131165395;
+			public const int sxp = 2131165395;
 			
 			// aapt resource value: 0x7F0700D4
-			public const int tooltip_frame_dark = 2131165396;
+			public const int test_custom_background = 2131165396;
 			
 			// aapt resource value: 0x7F0700D5
-			public const int tooltip_frame_light = 2131165397;
+			public const int theta = 2131165397;
 			
 			// aapt resource value: 0x7F0700D6
-			public const int trx = 2131165398;
+			public const int tooltip_frame_dark = 2131165398;
 			
 			// aapt resource value: 0x7F0700D7
-			public const int uma = 2131165399;
+			public const int tooltip_frame_light = 2131165399;
 			
 			// aapt resource value: 0x7F0700D8
-			public const int uni = 2131165400;
+			public const int trx = 2131165400;
 			
 			// aapt resource value: 0x7F0700D9
-			public const int vet = 2131165401;
+			public const int uma = 2131165401;
 			
 			// aapt resource value: 0x7F0700DA
-			public const int waves = 2131165402;
+			public const int uni = 2131165402;
 			
 			// aapt resource value: 0x7F0700DB
-			public const int xem = 2131165403;
+			public const int vet = 2131165403;
 			
 			// aapt resource value: 0x7F0700DC
-			public const int xlm = 2131165404;
+			public const int waves = 2131165404;
 			
 			// aapt resource value: 0x7F0700DD
-			public const int xmr = 2131165405;
+			public const int xem = 2131165405;
 			
 			// aapt resource value: 0x7F0700DE
-			public const int xrp = 2131165406;
+			public const int xlm = 2131165406;
 			
 			// aapt resource value: 0x7F0700DF
-			public const int xtz = 2131165407;
+			public const int xmr = 2131165407;
 			
 			// aapt resource value: 0x7F0700E0
-			public const int yfi = 2131165408;
+			public const int xrp = 2131165408;
 			
 			// aapt resource value: 0x7F0700E1
-			public const int zec = 2131165409;
+			public const int xtz = 2131165409;
 			
 			// aapt resource value: 0x7F0700E2
-			public const int zen = 2131165410;
+			public const int yfi = 2131165410;
 			
 			// aapt resource value: 0x7F0700E3
-			public const int zil = 2131165411;
+			public const int zec = 2131165411;
 			
 			// aapt resource value: 0x7F0700E4
-			public const int zrx = 2131165412;
+			public const int zen = 2131165412;
+			
+			// aapt resource value: 0x7F0700E5
+			public const int zil = 2131165413;
+			
+			// aapt resource value: 0x7F0700E6
+			public const int zrx = 2131165414;
 			
 			static Drawable()
 			{

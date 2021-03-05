@@ -51,6 +51,8 @@
 		<None Remove="SharedImages\home_dark.svg" />
 		<None Remove="SharedImages\sun_dark.svg" />
 		<None Remove="SharedImages\moon_light.svg" />
+		<None Remove="SharedImages\settings_dark.svg" />
+		<None Remove="SharedImages\settings.svg" />
 
 		<None Remove="SharedImages\aave.svg" />
 		<None Remove="SharedImages\ada.svg" />
@@ -142,6 +144,8 @@
 		<SharedImage Include="SharedImages\home_dark.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\sun_dark.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\moon_light.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\settings.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\settings_dark.svg" BaseSize="32,32" />
 
 		<SharedImage Include="SharedImages\aave.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\ada.svg" BaseSize="32,32" />

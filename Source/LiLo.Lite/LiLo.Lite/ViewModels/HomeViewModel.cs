@@ -95,7 +95,10 @@ namespace LiLo.Lite.ViewModels
 			get => this.symbol;
 			set
 			{
-				this.symbol = Uri.UnescapeDataString(value);
+				if (!string.IsNullOrEmpty(value))
+				{
+					this.symbol = Uri.UnescapeDataString(value);
+				}
 			}
 		}
 

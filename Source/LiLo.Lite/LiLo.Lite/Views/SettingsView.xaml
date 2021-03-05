@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	x:Class="LiLo.Lite.Views.SettingsView"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
+	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+	xmlns:lite="clr-namespace:LiLo.Lite"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
+	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+	Title="Settings"
+	x:DataType="lite:AppShell"
+	Shell.NavBarIsVisible="False"
+	Style="{StaticResource BasePage}"
+	Visual="Material"
+	mc:Ignorable="d">
+
+	<ContentPage.BindingContext>
+		<vm:SettingsViewModel />
+	</ContentPage.BindingContext>
+
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<xct:InvertedBoolConverter x:Key="InvertedBoolConverter" />
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
+	<ContentPage.Content>
+		<Grid RowDefinitions="Auto,*">
+			<!--  title bar  -->
+			<controls:TitleBar
+				Grid.Row="0"
+				HomeVisible="True"
+				SettingsVisible="False"
+				Style="{StaticResource TitleStyle}"
+				Text="{Binding Title, Mode=OneTime}" />
+			<ActivityIndicator
+				Grid.Row="1"
+				d:IsRunning="True"
+				d:IsVisible="True"
+				HorizontalOptions="CenterAndExpand"
+				IsRunning="{Binding IsBusy}"
+				IsVisible="{Binding IsBusy}"
+				VerticalOptions="CenterAndExpand" />
+			<StackLayout
+				Grid.Row="1"
+				IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}"
+				Orientation="Vertical">
+				<Label Text="Settings view" />
+			</StackLayout>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>
