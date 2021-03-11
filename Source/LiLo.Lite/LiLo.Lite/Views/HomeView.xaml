@@ -30,8 +30,9 @@
 			<controls:TitleBar
 				Grid.Row="0"
 				HomeVisible="False"
+				SettingsVisible="True"
 				Style="{StaticResource TitleStyle}"
-				Text="Markets" />
+				Text="{Binding Title, Mode=OneTime}" />
 			<ActivityIndicator
 				Grid.Row="1"
 				d:IsRunning="True"
@@ -44,11 +45,7 @@
 				Grid.Row="1"
 				IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}"
 				Orientation="Vertical">
-				<SearchBar
-					x:Name="searchBar"
-					Placeholder="Symbol..."
-					TextChanged="SearchBarTextChanged"
-					TextTransform="Uppercase" />
+				<SearchBar x:Name="searchBar" TextChanged="SearchBarTextChanged" />
 				<!--  Markets List View  -->
 				<CollectionView
 					x:Name="CollectionViewmarketsList"
@@ -115,7 +112,6 @@
 													Price="{Binding LowPrice24h}"
 													Style="{StaticResource CurrencyPriceStyle}"
 													Text="{Binding LowPrice24hString}" />
-												<Label Text="{Binding IsVisible}" />
 											</StackLayout>
 										</StackLayout>
 										<StackLayout

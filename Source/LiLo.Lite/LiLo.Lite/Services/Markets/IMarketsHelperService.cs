@@ -14,6 +14,7 @@
 namespace LiLo.Lite.Services.Markets
 {
 	using System.ComponentModel;
+	using System.Threading.Tasks;
 	using LiLo.Lite.Models.Markets;
 	using WebSocketSharp;
 	using Xamarin.CommunityToolkit.ObjectModel;
@@ -32,7 +33,8 @@ namespace LiLo.Lite.Services.Markets
 		string GetWss();
 
 		/// <summary>Initialises task for the markets helper service.</summary>
-		void Init();
+		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
+		Task Init();
 
 		/// <summary>Message received handler.</summary>
 		/// <param name="sender">Message sender.</param>

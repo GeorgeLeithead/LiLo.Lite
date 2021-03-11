@@ -15,6 +15,7 @@ namespace LiLo.Lite.ViewModels
 {
 	using System;
 	using System.Net.Http;
+	using System.Threading.Tasks;
 	using System.Windows.Input;
 	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.ViewModels.Base;
@@ -38,8 +39,8 @@ namespace LiLo.Lite.ViewModels
 		{
 			this.IsBusy = true;
 			this.Title = "Markets";
-			this.RetryButtonClicked = new Command(() => this.Init());
-			this.Init();
+			this.RetryButtonClicked = new Command(async () => await this.Init());
+			this.Init().ConfigureAwait(false);
 		}
 
 		/// <summary>Gets or sets the items layout span.</summary>
@@ -95,38 +96,44 @@ namespace LiLo.Lite.ViewModels
 			get => this.symbol;
 			set
 			{
-				this.symbol = Uri.UnescapeDataString(value);
+				if (!string.IsNullOrEmpty(value))
+				{
+					this.symbol = Uri.UnescapeDataString(value);
+				}
 			}
 		}
 
 		/// <summary>Initialise the home view model.</summary>
-		private void Init()
+		private async Task Init()
 		{
-			NetworkAccess current = Connectivity.NetworkAccess;
-			if (current == NetworkAccess.Internet)
+			await Task.Factory.StartNew(async () =>
 			{
-				// Connection to internet is available
-				try
+				NetworkAccess current = Connectivity.NetworkAccess;
+				if (current == NetworkAccess.Internet)
 				{
-					this.MarketsHelperService.Init();
-					this.SocketsService?.Connect();
-					this.MarketsList = this.MarketsHelperService.MarketsList;
+					// Connection to internet is available
+					try
+					{
+						await this.MarketsHelperService.Init();
+						this.SocketsService?.Connect();
+						this.MarketsList = this.MarketsHelperService.MarketsList;
+					}
+					catch (HttpRequestException ex)
+					{
+						_ = this.DialogService.ShowAlertAsync(ex.Message, "Markets list error", "Dismiss");
+					}
 				}
-				catch (HttpRequestException ex)
+				else
 				{
-					_ = this.DialogService.ShowAlertAsync(ex.Message, "Markets list error", "Dismiss");
+					_ = this.DialogService.ShowAlertAsync("No network access!", "Network error", "Dismiss");
 				}
-			}
-			else
-			{
-				_ = this.DialogService.ShowAlertAsync("No network access!", "Network error", "Dismiss");
-			}
 
-			this.IsBusy = false;
-			if (!string.IsNullOrEmpty(this.Symbol))
-			{
-				this.NotifyPropertyChanged(() => this.Symbol);
-			}
+				this.IsBusy = false;
+				if (!string.IsNullOrEmpty(this.Symbol))
+				{
+					this.NotifyPropertyChanged(() => this.Symbol);
+				}
+			});
 		}
 	}
 }

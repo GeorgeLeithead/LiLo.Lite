@@ -51,6 +51,9 @@ namespace LiLo.Lite.Services.Markets
 		/// <summary>Gets or sets an observable list of markets.</summary>
 		public ObservableRangeCollection<MarketModel> MarketsList { get; set; }
 
+		/// <summary>Gets or sets an list of markets.</summary>
+		public List<MarketModel> SourceMarketsList { get; set; } = new List<MarketModel>();
+
 		/// <summary>Get WSS connection.</summary>
 		/// <returns>Connection string.</returns>
 		public string GetWss()
@@ -59,21 +62,28 @@ namespace LiLo.Lite.Services.Markets
 		}
 
 		/// <summary>Initialises task for the markets helper service.</summary>
-		public void Init()
+		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
+		public async Task Init()
 		{
-			if (this.MarketsList.Count != 0)
+			await Task.Factory.StartNew(async () =>
 			{
-				return;
-			}
-
-			IEnumerable<MarketModel> markets = DataStore.GetMarketsForFeed();
-			foreach (MarketModel market in markets)
-			{
-				if (!this.MarketsList.Any(m => m == market))
+				if (this.MarketsList.Count != 0)
 				{
-					this.MarketsList.Add(market);
+					return;
 				}
-			}
+
+				IEnumerable<MarketModel> markets = DataStore.GetMarketsForFeed();
+				foreach (MarketModel market in markets)
+				{
+					if (!this.MarketsList.Any(m => m == market))
+					{
+						this.MarketsList.Add(market);
+						this.SourceMarketsList.Add(market);
+					}
+				}
+
+				await Task.Delay(1);
+			});
 		}
 
 		/// <summary>WebSockets message handler.</summary>

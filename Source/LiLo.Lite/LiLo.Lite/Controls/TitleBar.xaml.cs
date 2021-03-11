@@ -31,6 +31,9 @@ namespace LiLo.Lite.Controls
 		/// <summary>Gets or sets the home is visible Property, and it is a bindable property.</summary>
 		public static readonly BindableProperty HomeVisibleProperty = BindableProperty.Create(nameof(HomeVisible), typeof(bool), typeof(TitleBar), true, BindingMode.Default, null, OnHomeVisible);
 
+		/// <summary>Gets or sets the settings is visible Property, and it is a bindable property.</summary>
+		public static readonly BindableProperty SettingsVisibleProperty = BindableProperty.Create(nameof(SettingsVisible), typeof(bool), typeof(TitleBar), true, BindingMode.Default, null, OnSettingsVisible);
+
 		/// <summary>Initialises a new instance of the <see cref="TitleBar"/> class.</summary>
 		public TitleBar()
 		{
@@ -48,7 +51,18 @@ namespace LiLo.Lite.Controls
 		}
 
 		/// <summary>Gets or sets a value indicating whether home is visible.</summary>
-		public bool HomeVisible { get; set; }
+		public bool HomeVisible
+		{
+			get => (bool)this.GetValue(HomeVisibleProperty);
+			set => this.SetValue(HomeVisibleProperty, value);
+		}
+
+		/// <summary>Gets or sets a value indicating whether settings is visible.</summary>
+		public bool SettingsVisible
+		{
+			get => (bool)this.GetValue(SettingsVisibleProperty);
+			set => this.SetValue(SettingsVisibleProperty, value);
+		}
 
 		/// <summary>Label style changed.</summary>
 		/// <param name="bindable">Bindable object.</param>
@@ -70,6 +84,16 @@ namespace LiLo.Lite.Controls
 			tb.HomeImage.IsVisible = (bool)newValue;
 		}
 
+		/// <summary>Settings visible.</summary>
+		/// <param name="bindable">Bindable object.</param>
+		/// <param name="oldValue">Old value.</param>
+		/// <param name="newValue">New value.</param>
+		private static void OnSettingsVisible(BindableObject bindable, object oldValue, object newValue)
+		{
+			TitleBar tb = (TitleBar)bindable;
+			tb.SettingsImage.IsVisible = (bool)newValue;
+		}
+
 		/// <summary>Change the title bar heading.</summary>
 		/// <param name="bindable">Bindable object.</param>
 		/// <param name="oldValue">Old value.</param>
@@ -89,15 +113,13 @@ namespace LiLo.Lite.Controls
 			tb.Title.Text = newValueString;
 		}
 
-		/// <summary>Change the application theme.</summary>
-		/// <param name="sender">Object sender.</param>
-		/// <param name="e">Event arguments.</param>
 		private void SettingsTapped(object sender, EventArgs e)
 		{
-			Application.Current.UserAppTheme = Application.Current.RequestedTheme == OSAppTheme.Light ? OSAppTheme.Dark : OSAppTheme.Light;
+			// Application.Current.UserAppTheme = Application.Current.RequestedTheme == OSAppTheme.Light ? OSAppTheme.Dark : OSAppTheme.Light;
+			Shell.Current.GoToAsync("//Settings");
 		}
 
-		private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+		private async void HomeTapped(object sender, EventArgs e)
 		{
 			Page page = Shell.Current.CurrentPage;
 			if (page != null && page is ChartView)

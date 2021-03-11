@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	x:Class="LiLo.Lite.Views.SettingsView"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
+	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
+	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+	Title="{Binding Title, Mode=OneTime}"
+	d:Title="Settings"
+	x:DataType="vm:SettingsViewModel"
+	Shell.NavBarIsVisible="False"
+	Style="{StaticResource BasePage}"
+	Visual="Material"
+	mc:Ignorable="d">
+
+	<ContentPage.BindingContext>
+		<vm:SettingsViewModel />
+	</ContentPage.BindingContext>
+
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<xct:InvertedBoolConverter x:Key="InvertedBoolConverter" />
+			<ControlTemplate x:Key="ThemeRadioTemplate">
+				<Frame
+					Padding="0"
+					BackgroundColor="{AppThemeBinding Dark={StaticResource DarkRadioButtonColor},
+					                                  Light={StaticResource LightRadioButtonColor}}"
+					BorderColor="{AppThemeBinding Dark={StaticResource DarkRadioButtonColor},
+					                              Light={StaticResource LightRadioButtonColor}}"
+					HasShadow="False"
+					HeightRequest="80"
+					HorizontalOptions="Start"
+					VerticalOptions="Start"
+					WidthRequest="80">
+					<Grid Margin="4" WidthRequest="80">
+						<Grid
+							HeightRequest="20"
+							HorizontalOptions="End"
+							VerticalOptions="Start"
+							WidthRequest="20">
+							<Ellipse
+								Fill="White"
+								HeightRequest="18"
+								HorizontalOptions="Center"
+								Stroke="#2E2545"
+								StrokeThickness="1"
+								VerticalOptions="Center"
+								WidthRequest="18" />
+							<Ellipse
+								x:Name="Check"
+								BackgroundColor="Transparent"
+								Fill="#df6e57"
+								HeightRequest="10"
+								HorizontalOptions="Center"
+								Stroke="#df6e57"
+								StrokeThickness="0"
+								VerticalOptions="Center"
+								WidthRequest="10" />
+						</Grid>
+						<!--  This enables us to put in dynamic content  -->
+						<ContentPresenter />
+					</Grid>
+					<VisualStateManager.VisualStateGroups>
+						<VisualStateGroupList>
+							<VisualStateGroup x:Name="CheckedStates">
+								<VisualState x:Name="Checked">
+									<VisualState.Setters>
+										<Setter Property="BorderColor" Value="{AppThemeBinding Light={StaticResource MarketDownBackgroundColor}, Dark={StaticResource MarketDownTextColor}}" />
+										<Setter TargetName="Check" Property="Opacity" Value="1" />
+									</VisualState.Setters>
+								</VisualState>
+								<VisualState x:Name="Unchecked">
+									<VisualState.Setters>
+										<Setter Property="BorderColor" Value="{AppThemeBinding Light={StaticResource Gray-Black}, Dark={StaticResource Gray-White}}" />
+										<Setter TargetName="Check" Property="Opacity" Value="0" />
+									</VisualState.Setters>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateGroupList>
+					</VisualStateManager.VisualStateGroups>
+				</Frame>
+			</ControlTemplate>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
+	<ContentPage.Content>
+		<Grid RowDefinitions="Auto,Auto">
+			<!--  title bar  -->
+			<controls:TitleBar
+				Grid.Row="0"
+				HomeVisible="True"
+				SettingsVisible="False"
+				Style="{StaticResource TitleStyle}"
+				Text="{Binding Title, Mode=OneTime}" />
+			<ActivityIndicator
+				Grid.Row="1"
+				d:IsRunning="True"
+				d:IsVisible="True"
+				HorizontalOptions="CenterAndExpand"
+				IsRunning="{Binding IsBusy}"
+				IsVisible="{Binding IsBusy}"
+				VerticalOptions="CenterAndExpand" />
+			<StackLayout
+				Grid.Row="1"
+				Margin="8,0"
+				IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}">
+				<TableView HasUnevenRows="True" Intent="Settings">
+					<TableRoot>
+						<TableSection Title="Theme">
+							<ViewCell>
+								<!--  Grid for Theme label and navigation bar icon  -->
+								<!--  Theme choice  -->
+								<Grid
+									ColumnDefinitions="*,*,*"
+									ColumnSpacing="10"
+									RadioButtonGroup.GroupName="ThemeGroup">
+									<RadioButton
+										CheckedChanged="ThemeCheckedChanged"
+										ControlTemplate="{StaticResource ThemeRadioTemplate}"
+										GroupName="ThemeGroup"
+										IsChecked="{Binding ThemeSystem}"
+										IsVisible="{Binding SystemThemeSupported}"
+										Value="0">
+										<RadioButton.Content>
+											<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+												<Image Scale="0.75" Source="{AppThemeBinding Light='settings.png', Dark='settings_dark.png'}" />
+												<Label
+													FontSize="Small"
+													Style="{StaticResource SettingsViewStyle}"
+													Text="System"
+													TextColor="{AppThemeBinding Light={StaticResource Gray-Black},
+													                            Dark={StaticResource Gray-White}}" />
+											</StackLayout>
+										</RadioButton.Content>
+									</RadioButton>
+									<RadioButton
+										Grid.Column="1"
+										CheckedChanged="ThemeCheckedChanged"
+										ControlTemplate="{StaticResource ThemeRadioTemplate}"
+										GroupName="ThemeGroup"
+										IsChecked="{Binding ThemeLight}"
+										Value="1">
+										<RadioButton.Content>
+											<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+												<Image Scale="0.75" Source="{AppThemeBinding Light='sun_light.png', Dark='sun_dark.png'}" />
+												<Label
+													FontSize="Small"
+													Style="{StaticResource SettingsViewStyle}"
+													Text="Light"
+													TextColor="{AppThemeBinding Light={StaticResource Gray-Black},
+													                            Dark={StaticResource Gray-White}}" />
+											</StackLayout>
+										</RadioButton.Content>
+									</RadioButton>
+									<RadioButton
+										Grid.Column="2"
+										CheckedChanged="ThemeCheckedChanged"
+										ControlTemplate="{StaticResource ThemeRadioTemplate}"
+										GroupName="ThemeGroup"
+										IsChecked="{Binding ThemeDark}"
+										Value="2">
+										<RadioButton.Content>
+											<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+												<Image Scale="0.75" Source="{AppThemeBinding Light='moon_light.png', Dark='moon_dark.png'}" />
+												<Label
+													FontSize="Small"
+													Style="{StaticResource SettingsViewStyle}"
+													Text="Dark"
+													TextColor="{AppThemeBinding Light={StaticResource Gray-Black},
+													                            Dark={StaticResource Gray-White}}" />
+											</StackLayout>
+										</RadioButton.Content>
+									</RadioButton>
+								</Grid>
+							</ViewCell>
+						</TableSection>
+						<TableSection Title="Favourites">
+							<SwitchCell
+								On="{Binding FavouritesEnabled}"
+								OnColor="{StaticResource MarketUpTextColor}"
+								Text="Enabled" />
+							<ViewCell>
+								<Button
+									Command="{Binding FavouritesManageCommand}"
+									IsEnabled="{Binding FavouritesEnabled}"
+									Text="manage &gt;" />
+							</ViewCell>
+						</TableSection>
+						<TableSection Title="App Settings">
+							<ImageCell
+								Height="32"
+								Command="{Binding SettingsCommand}"
+								ImageSource="{AppThemeBinding Light='settings.png',
+								                              Dark='settings_dark.png'}"
+								Text="View" />
+						</TableSection>
+						<TableSection Title="About">
+							<ViewCell>
+								<StackLayout>
+									<Label Text="Please contact us on the social platform(s) below.  Please include the application information above, your device details, a description of your problem and steps to replicate." />
+									<ImageButton
+										Command="{Binding TwitterCommand}"
+										HeightRequest="32"
+										Source="twitter.png"
+										WidthRequest="32" />
+								</StackLayout>
+							</ViewCell>
+						</TableSection>
+					</TableRoot>
+				</TableView>
+			</StackLayout>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>
