@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	x:Class="LiLo.Lite.Views.FavouritesView"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
+	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:models="clr-namespace:LiLo.Lite.Models.Markets"
+	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
+	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+	Title="{Binding Title, Mode=OneTime}"
+	x:DataType="vm:FavouritesViewModel"
+	Shell.NavBarIsVisible="False"
+	Style="{StaticResource BasePage}"
+	Visual="Material"
+	mc:Ignorable="d">
+
+	<ContentPage.BindingContext>
+		<vm:FavouritesViewModel />
+	</ContentPage.BindingContext>
+
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<xct:InvertedBoolConverter x:Key="InvertedBoolConverter" />
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
+	<ContentPage.Content>
+		<Grid RowDefinitions="Auto,Auto,Auto">
+			<!--  title bar  -->
+			<controls:TitleBar
+				Grid.Row="0"
+				HomeVisible="True"
+				SettingsVisible="True"
+				Style="{StaticResource TitleStyle}"
+				Text="{Binding Title, Mode=OneTime}" />
+			<ActivityIndicator
+				Grid.Row="1"
+				Grid.RowSpan="2"
+				d:IsRunning="True"
+				d:IsVisible="True"
+				HorizontalOptions="CenterAndExpand"
+				IsRunning="{Binding IsBusy}"
+				IsVisible="{Binding IsBusy}"
+				VerticalOptions="CenterAndExpand" />
+			<Label Grid.Row="2" Text="Footer" />
+			<StackLayout
+				Grid.Row="1"
+				IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}"
+				Orientation="Vertical">
+				<Grid ColumnDefinitions="180,Auto">
+					<CollectionView
+						x:Name="MyFavourites"
+						IsGrouped="True"
+						ItemsSource="{Binding FavouriteItems}"
+						Style="{StaticResource MarketsCollectionViewStyle}"
+						VerticalScrollBarVisibility="Always"
+						WidthRequest="80">
+						<CollectionView.GroupHeaderTemplate>
+							<DataTemplate>
+								<Frame x:DataType="models:ItemsGroupViewModel">
+									<Label Style="{StaticResource SettingsViewStyle}" Text="{Binding Name}" />
+								</Frame>
+							</DataTemplate>
+						</CollectionView.GroupHeaderTemplate>
+
+						<CollectionView.ItemTemplate>
+							<DataTemplate>
+								<StackLayout
+									x:DataType="models:ItemViewModel"
+									HorizontalOptions="Start"
+									Orientation="Horizontal"
+									VerticalOptions="Start"
+									WidthRequest="80">
+									<StackLayout.GestureRecognizers>
+										<DropGestureRecognizer
+											AllowDrop="True"
+											DragLeaveCommand="{Binding BindingContext.ItemDragLeave, Source={x:Reference MyFavourites}}"
+											DragLeaveCommandParameter="{Binding}"
+											DragOverCommand="{Binding BindingContext.ItemDraggedOver, Source={x:Reference MyFavourites}}"
+											DragOverCommandParameter="{Binding}"
+											Drop="DropGestureRecognizer_Drop_Collection"
+											DropCommand="{Binding BindingContext.ItemDropped, Source={x:Reference MyFavourites}}"
+											DropCommandParameter="{Binding}" />
+									</StackLayout.GestureRecognizers>
+									<Grid BackgroundColor="Yellow" IsVisible="{Binding IsBeingDraggedOver}" />
+									<Image
+										HeightRequest="40"
+										Source="{Binding Symbol, StringFormat='{0}.png'}"
+										Style="{StaticResource SymbolImageStyle}"
+										WidthRequest="40">
+										<Image.GestureRecognizers>
+											<DragGestureRecognizer
+												CanDrag="True"
+												DragStarting="DragGestureRecognizer_DragStarting_Collection"
+												DragStartingCommand="{Binding BindingContext.ItemDragged, Source={x:Reference MyFavourites}}"
+												DragStartingCommandParameter="{Binding}" />
+										</Image.GestureRecognizers>
+									</Image>
+								</StackLayout>
+							</DataTemplate>
+						</CollectionView.ItemTemplate>
+					</CollectionView>
+				</Grid>
+			</StackLayout>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>

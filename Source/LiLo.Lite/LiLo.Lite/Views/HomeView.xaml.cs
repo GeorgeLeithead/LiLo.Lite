@@ -13,6 +13,7 @@
 
 namespace LiLo.Lite.Views
 {
+	using System.Collections.Generic;
 	using System.Linq;
 	using System.Threading.Tasks;
 	using LiLo.Lite.Models.Markets;
@@ -73,12 +74,22 @@ namespace LiLo.Lite.Views
 		/// <param name="e">Text changed event arguments.</param>
 		private void SearchBarTextChanged(object sender, TextChangedEventArgs e)
 		{
-			if (!string.IsNullOrEmpty(e.NewTextValue))
+			string searchTerm = e.NewTextValue;
+			if (string.IsNullOrWhiteSpace(searchTerm))
 			{
-				MarketModel matchingItem = this.VM.MarketsList.Where(m => m.SymbolString.StartsWith(e.NewTextValue.ToUpperInvariant())).FirstOrDefault();
-				if (matchingItem != null)
+				searchTerm = string.Empty;
+			}
+
+			searchTerm = searchTerm.ToUpperInvariant();
+			List<MarketModel> originList = this.VM.MarketsHelperService.SourceMarketsList;
+			List<MarketModel> filteredMarkets = originList.Where(ol => ol.SymbolString.Contains(searchTerm)).ToList();
+			this.VM.MarketsList.Clear();
+			foreach (MarketModel market in originList)
+			{
+				bool matchingMarket = filteredMarkets.Any(fm => fm.SymbolString == market.SymbolString);
+				if (matchingMarket)
 				{
-					this.CollectionViewmarketsList.ScrollTo(item: matchingItem, group: null, position: ScrollToPosition.Start, animate: true);
+					this.VM.MarketsList.Add(market);
 				}
 			}
 		}

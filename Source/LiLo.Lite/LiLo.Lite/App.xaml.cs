@@ -25,6 +25,12 @@ namespace LiLo.Lite
 	/// <summary>LiLo application class.</summary>
 	public partial class App : Application
 	{
+		/// <summary>Favourites category.</summary>
+		public const string FavouritesCategory = "Favourites";
+
+		/// <summary>UnLoved favourites category.</summary>
+		public const string UnlovedCategory = "Unloved";
+
 		/// <summary>Sockets Service.</summary>
 		private readonly ISocketsService socketsService;
 

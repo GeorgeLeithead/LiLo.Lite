@@ -9,6 +9,7 @@
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
 	xmlns:windows="clr-namespace:Xamarin.Forms.PlatformConfiguration.WindowsSpecific;assembly=Xamarin.Forms.Core"
 	Title="{Binding Title, Mode=OneTime}"
+	x:DataType="vm:ChartViewModel"
 	Shell.NavBarIsVisible="False"
 	Style="{StaticResource BasePage}"
 	Visual="Material"

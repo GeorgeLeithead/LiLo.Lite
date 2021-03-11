@@ -51,6 +51,9 @@ namespace LiLo.Lite.Services.Markets
 		/// <summary>Gets or sets an observable list of markets.</summary>
 		public ObservableRangeCollection<MarketModel> MarketsList { get; set; }
 
+		/// <summary>Gets or sets an list of markets.</summary>
+		public List<MarketModel> SourceMarketsList { get; set; } = new List<MarketModel>();
+
 		/// <summary>Get WSS connection.</summary>
 		/// <returns>Connection string.</returns>
 		public string GetWss()
@@ -72,6 +75,7 @@ namespace LiLo.Lite.Services.Markets
 				if (!this.MarketsList.Any(m => m == market))
 				{
 					this.MarketsList.Add(market);
+					this.SourceMarketsList.Add(market);
 				}
 			}
 		}

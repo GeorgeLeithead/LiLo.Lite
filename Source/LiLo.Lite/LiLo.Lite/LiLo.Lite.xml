@@ -7,6 +7,12 @@
         <member name="T:LiLo.Lite.App">
             <summary>LiLo application class.</summary>
         </member>
+        <member name="F:LiLo.Lite.App.FavouritesCategory">
+            <summary>Favourites category.</summary>
+        </member>
+        <member name="F:LiLo.Lite.App.UnlovedCategory">
+            <summary>UnLoved favourites category.</summary>
+        </member>
         <member name="F:LiLo.Lite.App.socketsService">
             <summary>Sockets Service.</summary>
         </member>
@@ -120,6 +126,45 @@
         </member>
         <member name="P:LiLo.Lite.Controls.CustomLabel.IsSelected">
             <summary>Gets or sets a value indicating whether is selected.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Controls.TapAnimationGrid">
+            <summary>Customizes the tap animation effects of the grid control.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.TapAnimationGrid.CommandParameterProperty">
+            <summary>Gets or sets the CommandParameterProperty, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.TapAnimationGrid.CommandProperty">
+            <summary>Gets or sets the CommandProperty, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.TapAnimationGrid.TappedProperty">
+            <summary>Gets or sets the TappedProperty, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.TapAnimationGrid.tappedCommand">
+            <summary>Tapped command.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Controls.TapAnimationGrid.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Controls.TapAnimationGrid" /> class.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.TapAnimationGrid.Command">
+            <summary>Gets or sets the command value.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.TapAnimationGrid.CommandParameter">
+            <summary>Gets or sets the command parameter value.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.TapAnimationGrid.Tapped">
+            <summary>Gets or sets a value indicating whether the control is tapped.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.TapAnimationGrid.TappedCommand">
+            <summary>Gets the tapped command.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Controls.TapAnimationGrid.OnTapped(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>Invoked when tap on the item.</summary>
+            <param name="bindable">Bindable object.</param>
+            <param name="oldValue">Old value object.</param>
+            <param name="newValue">New value object.</param>
+        </member>
+        <member name="M:LiLo.Lite.Controls.TapAnimationGrid.Initialize">
+            <summary>Invoked when control is initialised.</summary>
         </member>
         <member name="T:LiLo.Lite.Controls.TickPriceView">
             <summary>Custom ticker price view.</summary>
@@ -250,6 +295,15 @@
             <param name="easing">Non-linear easing of animation.</param>
             <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the asynchronous operation.</returns>
         </member>
+        <member name="T:LiLo.Lite.Helpers.EnumerableHelpers">
+            <summary>Enumerable helper.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Helpers.EnumerableHelpers.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>To Observable collection.</summary>
+            <typeparam name="T">Type.</typeparam>
+            <param name="source">Source.</param>
+            <returns>ObservableCollection{T}.</returns>
+        </member>
         <member name="T:LiLo.Lite.Interfaces.IParentWindowLocatorService">
             <summary>Simple platform specific service that is responsible for locating a parent window service.</summary>
         </member>
@@ -301,6 +355,32 @@
         </member>
         <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerModel.Stream">
             <summary>Gets or sets the stream type.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Models.Markets.ItemsGroupViewModel">
+            <summary>Items group view model.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Models.Markets.ItemsGroupViewModel.#ctor(System.String,System.Collections.Generic.IEnumerable{LiLo.Lite.Models.Markets.ItemViewModel})">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Models.Markets.ItemsGroupViewModel"/> class.</summary>
+            <param name="name">Group name.</param>
+            <param name="items">IEnumerable{ItemViewModel}.</param>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.ItemsGroupViewModel.Name">
+            <summary>Gets or sets the item group name.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Models.Markets.ItemViewModel">
+            <summary>Favourite market model.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.ItemViewModel.Category">
+            <summary>Gets or sets the category.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.ItemViewModel.IsBeingDragged">
+            <summary>Gets or sets a value indicating whether item is being dragged.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.ItemViewModel.IsBeingDraggedOver">
+            <summary>Gets or sets a value indicating whether item being dragged is over.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.ItemViewModel.Symbol">
+            <summary>Gets or sets the symbol.</summary>
         </member>
         <member name="T:LiLo.Lite.Models.Markets.MarketModel">
             <summary>Model for the markets information.</summary>
@@ -431,9 +511,9 @@
         <member name="F:LiLo.Lite.Services.DataStore.marketsData">
             <summary>Markets list.</summary>
         </member>
-        <member name="M:LiLo.Lite.Services.DataStore.#cctor">
-            <summary>Initialises static members of the <see cref="T:LiLo.Lite.Services.DataStore"/> class.</summary>
-            <remarks>SVG icons from https://github.com/spothq/cryptocurrency-icons under SVG/colour.</remarks>
+        <member name="M:LiLo.Lite.Services.DataStore.GetMarketsGroupedByFavourites">
+            <summary>Get markets grouped by favourites.</summary>
+            <returns>IEnumerable{ItemViewModel} of categorised markets.</returns>
         </member>
         <member name="M:LiLo.Lite.Services.DataStore.GetMarketsForFeed">
             <summary>Get ordered markets feed list.</summary>
@@ -524,6 +604,9 @@
         </member>
         <member name="P:LiLo.Lite.Services.Markets.MarketsHelperService.MarketsList">
             <summary>Gets or sets an observable list of markets.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Services.Markets.MarketsHelperService.SourceMarketsList">
+            <summary>Gets or sets an list of markets.</summary>
         </member>
         <member name="M:LiLo.Lite.Services.Markets.MarketsHelperService.GetWss">
             <summary>Get WSS connection.</summary>
@@ -700,6 +783,42 @@
         <member name="P:LiLo.Lite.ViewModels.ChartViewModel.TradingViewChart">
             <summary>Gets or sets the trading view chart source.</summary>
         </member>
+        <member name="T:LiLo.Lite.ViewModels.FavouritesViewModel">
+            <summary>Favourites view model.</summary>
+        </member>
+        <member name="F:LiLo.Lite.ViewModels.FavouritesViewModel.isBusy">
+            <summary>View is busy.</summary>
+        </member>
+        <member name="F:LiLo.Lite.ViewModels.FavouritesViewModel.title">
+            <summary>View title.</summary>
+        </member>
+        <member name="M:LiLo.Lite.ViewModels.FavouritesViewModel.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.ViewModels.FavouritesViewModel"/> class.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.FavouriteItems">
+            <summary>Gets or sets a collection of favourite markets.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.IsBusy">
+            <summary>Gets or sets a value indicating whether the view is busy.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.ItemDragged">
+            <summary>Gets an item dragged command.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.ItemDraggedOver">
+            <summary>Gets an item dragged complete command.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.ItemDragLeave">
+            <summary>Gets an item dragged left command.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.ItemDropped">
+            <summary>Gets an item dropped command.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.MarketItems">
+            <summary>Gets or sets a collection of markets.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.Title">
+            <summary>gets or sets a value for the view title.</summary>
+        </member>
         <member name="T:LiLo.Lite.ViewModels.HomeViewModel">
             <summary>Home view model.</summary>
         </member>
@@ -734,6 +853,24 @@
         <member name="M:LiLo.Lite.ViewModels.SettingsViewModel.#ctor">
             <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.ViewModels.SettingsViewModel"/> class.</summary>
         </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.FavouritesEnabled">
+            <summary>Gets or sets a value indicating whether favourites is enabled.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.SystemThemeSupported">
+            <summary>Gets a value indicating whether the system theme is supported.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.FavouritesManageCommand">
+            <summary>Gets the favourites manage command.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.ThemeDark">
+            <summary>Gets a value indicating whether dark theme is enabled.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.ThemeLight">
+            <summary>Gets a value indicating whether light theme is enabled.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.ThemeSystem">
+            <summary>Gets a value indicating whether system theme is enabled.</summary>
+        </member>
         <member name="T:LiLo.Lite.Views.ChartView">
             <summary>Chart View class.</summary>
         </member>
@@ -756,6 +893,12 @@
             <param name="sender">Sender object.</param>
             <param name="e">Web navigation Event arguments.</param>
             <remarks>Prevent users from navigating to anywhere else other than where we want.</remarks>
+        </member>
+        <member name="T:LiLo.Lite.Views.FavouritesView">
+            <summary>Favourites page view.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Views.FavouritesView.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Views.FavouritesView"/> class.</summary>
         </member>
         <member name="T:LiLo.Lite.Views.HomeView">
             <summary>Home page view.</summary>

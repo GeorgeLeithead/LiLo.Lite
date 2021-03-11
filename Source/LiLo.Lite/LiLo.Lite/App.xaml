@@ -21,6 +21,9 @@
 			<Color x:Key="MarketDownTextColor">#ff4a4a</Color>
 			<Color x:Key="MarketDownBackgroundColor">#aa1221</Color>
 
+			<Color x:Key="LightRadioButtonColor">#F3F2F1</Color>
+			<Color x:Key="DarkRadioButtonColor">#9B9A99</Color>
+
 			<!--  Gray Colours  -->
 			<Color x:Key="Gray-100">#F6F7F8</Color>
 			<Color x:Key="Gray-300">#CED2D9</Color>
@@ -131,14 +134,14 @@
 
 			<Style x:Key="TitleStyle" TargetType="controls:TitleBar">
 				<Setter Property="LabelStyle" Value="{StaticResource TitleStyleLabel}" />
-				<Setter Property="Margin" Value="4,2,4,0" />
+				<Setter Property="Margin" Value="4" />
 			</Style>
 
 			<Style x:Key="ChartFrameStackStyle" TargetType="StackLayout">
 				<Setter Property="Margin" Value="8,0" />
 			</Style>
 
-			<Style TargetType="Frame">
+			<Style TargetType="{x:Type Frame}">
 				<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Gray-White}, Dark={StaticResource Gray-Black}}" />
 				<Setter Property="Margin" Value="0" />
 				<Setter Property="Padding" Value="5" />
@@ -148,7 +151,7 @@
 				<Setter Property="VerticalOptions" Value="FillAndExpand" />
 			</Style>
 
-			<Style x:Key="StackLayoutStyle" TargetType="StackLayout">
+			<Style x:Key="StackLayoutStyle" TargetType="{x:Type StackLayout}">
 				<Setter Property="Orientation" Value="Horizontal" />
 				<Setter Property="Spacing" Value="0" />
 				<Setter Property="HorizontalOptions" Value="Fill" />
@@ -156,7 +159,7 @@
 				<Setter Property="VerticalOptions" Value="CenterAndExpand" />
 			</Style>
 
-			<Style TargetType="WebView">
+			<Style TargetType="{x:Type WebView}">
 				<Setter Property="Margin" Value="0" />
 				<Setter Property="BackgroundColor" Value="Transparent" />
 				<Setter Property="HeightRequest" Value="300" />
@@ -166,6 +169,57 @@
 				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
 				<Setter Property="VerticalOptions" Value="FillAndExpand" />
 			</Style>
+
+			<Style TargetType="{x:Type SearchBar}">
+				<Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray-Black}, Dark={StaticResource Gray-White}}" />
+				<Setter Property="PlaceholderColor" Value="{AppThemeBinding Light={StaticResource Gray-700}, Dark={StaticResource Gray-300}}" />
+				<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource WindowBackgroundColorLight}, Dark={StaticResource WindowBackgroundColorDark}}" />
+				<Setter Property="Placeholder" Value="Symbol..." />
+				<Setter Property="TextTransform" Value="Uppercase" />
+				<Setter Property="FontSize" Value="Medium" />
+				<Setter Property="CancelButtonColor" Value="{AppThemeBinding Light={StaticResource MarketDownBackgroundColor}, Dark={StaticResource MarketDownTextColor}}" />
+				<Setter Property="IsSpellCheckEnabled" Value="False" />
+				<Setter Property="Keyboard" Value="Text" />
+				<Setter Property="MaxLength" Value="5" />
+			</Style>
+
+			<!--  Settings style  -->
+			<Style x:Key="SettingsViewStyle" TargetType="{x:Type Label}">
+				<Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray-Black}, Dark={StaticResource Gray-White}}" />
+				<Setter Property="FontSize" Value="Large" />
+				<Setter Property="LineHeight" Value="{OnPlatform Android=1.5, Default=-1}" />
+				<Setter Property="HorizontalTextAlignment" Value="Start" />
+				<Setter Property="VerticalTextAlignment" Value="Center" />
+				<Setter Property="HorizontalOptions" Value="Start" />
+				<Setter Property="VerticalOptions" Value="Center" />
+			</Style>
+
+			<!--  Common style for icon label  -->
+			<Style x:Key="IconLabelStyle" TargetType="{x:Type Label}">
+				<Setter Property="Margin" Value="0,8,8,8" />
+				<Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray-700}, Dark={StaticResource Gray-300}}" />
+				<Setter Property="FontSize" Value="Medium" />
+				<Setter Property="HorizontalOptions" Value="Center" />
+				<Setter Property="VerticalOptions" Value="Center" />
+				<Setter Property="HorizontalTextAlignment" Value="Center" />
+			</Style>
+
+			<Style x:Key="SettingsGridStyle" TargetType="{x:Type Grid}">
+				<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource WindowBackgroundColorLight}, Dark={StaticResource WindowBackgroundColorDark}}" />
+				<Setter Property="ColumnSpacing" Value="0" />
+				<Setter Property="RowSpacing" Value="0" />
+			</Style>
+			<Style
+				x:Key="SettingsTappedGridStyle"
+				BasedOn="{StaticResource SettingsGridStyle}"
+				TargetType="{x:Type controls:TapAnimationGrid}" />
+
+			<!--  Common style for separators  -->
+			<Style x:Key="SeparatorStyle" TargetType="BoxView">
+				<Setter Property="HeightRequest" Value="1" />
+				<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Gray-700}, Dark={StaticResource Gray-300}}" />
+			</Style>
+
 		</ResourceDictionary>
 	</Application.Resources>
 </Application>

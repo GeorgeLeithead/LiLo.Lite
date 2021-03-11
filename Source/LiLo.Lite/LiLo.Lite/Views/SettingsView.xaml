@@ -5,12 +5,12 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
 	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-	xmlns:lite="clr-namespace:LiLo.Lite"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
 	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-	Title="Settings"
-	x:DataType="lite:AppShell"
+	Title="{Binding Title, Mode=OneTime}"
+	d:Title="Settings"
+	x:DataType="vm:SettingsViewModel"
 	Shell.NavBarIsVisible="False"
 	Style="{StaticResource BasePage}"
 	Visual="Material"
@@ -23,11 +23,71 @@
 	<ContentPage.Resources>
 		<ResourceDictionary>
 			<xct:InvertedBoolConverter x:Key="InvertedBoolConverter" />
+			<ControlTemplate x:Key="ThemeRadioTemplate">
+				<Frame
+					Padding="0"
+					BackgroundColor="{AppThemeBinding Dark={StaticResource DarkRadioButtonColor},
+					                                  Light={StaticResource LightRadioButtonColor}}"
+					BorderColor="{AppThemeBinding Dark={StaticResource DarkRadioButtonColor},
+					                              Light={StaticResource LightRadioButtonColor}}"
+					HasShadow="False"
+					HeightRequest="80"
+					HorizontalOptions="Start"
+					VerticalOptions="Start"
+					WidthRequest="80">
+					<Grid Margin="4" WidthRequest="80">
+						<Grid
+							HeightRequest="20"
+							HorizontalOptions="End"
+							VerticalOptions="Start"
+							WidthRequest="20">
+							<Ellipse
+								Fill="White"
+								HeightRequest="18"
+								HorizontalOptions="Center"
+								Stroke="#2E2545"
+								StrokeThickness="1"
+								VerticalOptions="Center"
+								WidthRequest="18" />
+							<Ellipse
+								x:Name="Check"
+								BackgroundColor="Transparent"
+								Fill="#df6e57"
+								HeightRequest="10"
+								HorizontalOptions="Center"
+								Stroke="#df6e57"
+								StrokeThickness="0"
+								VerticalOptions="Center"
+								WidthRequest="10" />
+						</Grid>
+						<!--  This enables us to put in dynamic content  -->
+						<ContentPresenter />
+					</Grid>
+					<VisualStateManager.VisualStateGroups>
+						<VisualStateGroupList>
+							<VisualStateGroup x:Name="CheckedStates">
+								<VisualState x:Name="Checked">
+									<VisualState.Setters>
+										<Setter Property="BorderColor" Value="{AppThemeBinding Light={StaticResource MarketDownBackgroundColor}, Dark={StaticResource MarketDownTextColor}}" />
+										<Setter TargetName="Check" Property="Opacity" Value="1" />
+									</VisualState.Setters>
+								</VisualState>
+								<VisualState x:Name="Unchecked">
+									<VisualState.Setters>
+										<Setter Property="BorderColor" Value="{AppThemeBinding Light={StaticResource Gray-Black}, Dark={StaticResource Gray-White}}" />
+										<Setter TargetName="Check" Property="Opacity" Value="0" />
+									</VisualState.Setters>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateGroupList>
+					</VisualStateManager.VisualStateGroups>
+				</Frame>
+			</ControlTemplate>
 		</ResourceDictionary>
 	</ContentPage.Resources>
 
 	<ContentPage.Content>
-		<Grid RowDefinitions="Auto,*">
+		<Grid RowDefinitions="Auto,Auto">
 			<!--  title bar  -->
 			<controls:TitleBar
 				Grid.Row="0"
@@ -45,9 +105,108 @@
 				VerticalOptions="CenterAndExpand" />
 			<StackLayout
 				Grid.Row="1"
-				IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}"
-				Orientation="Vertical">
-				<Label Text="Settings view" />
+				Margin="8,0"
+				IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}">
+				<!--  Header label for Theme setting  -->
+				<Label Style="{StaticResource SettingsViewStyle}" Text="Theme" />
+				<Frame>
+					<!--  Grid for Theme label and navigation bar icon  -->
+					<!--  Theme choice  -->
+					<Grid
+						ColumnDefinitions="*,*,*"
+						ColumnSpacing="10"
+						RadioButtonGroup.GroupName="ThemeGroup">
+						<RadioButton
+							CheckedChanged="ThemeCheckedChanged"
+							ControlTemplate="{StaticResource ThemeRadioTemplate}"
+							GroupName="ThemeGroup"
+							IsChecked="{Binding ThemeSystem}"
+							IsVisible="{Binding SystemThemeSupported}"
+							Value="0">
+							<RadioButton.Content>
+								<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+									<Image Scale="0.75" Source="{AppThemeBinding Light='settings.png', Dark='settings_dark.png'}" />
+									<Label
+										FontSize="Small"
+										Style="{StaticResource SettingsViewStyle}"
+										Text="System"
+										TextColor="{AppThemeBinding Light={StaticResource Gray-Black},
+										                            Dark={StaticResource Gray-White}}" />
+								</StackLayout>
+							</RadioButton.Content>
+						</RadioButton>
+						<RadioButton
+							Grid.Column="1"
+							CheckedChanged="ThemeCheckedChanged"
+							ControlTemplate="{StaticResource ThemeRadioTemplate}"
+							GroupName="ThemeGroup"
+							IsChecked="{Binding ThemeLight}"
+							Value="1">
+							<RadioButton.Content>
+								<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+									<Image Scale="0.75" Source="{AppThemeBinding Light='sun_light.png', Dark='sun_dark.png'}" />
+									<Label
+										FontSize="Small"
+										Style="{StaticResource SettingsViewStyle}"
+										Text="Light"
+										TextColor="{AppThemeBinding Light={StaticResource Gray-Black},
+										                            Dark={StaticResource Gray-White}}" />
+								</StackLayout>
+							</RadioButton.Content>
+						</RadioButton>
+						<RadioButton
+							Grid.Column="2"
+							CheckedChanged="ThemeCheckedChanged"
+							ControlTemplate="{StaticResource ThemeRadioTemplate}"
+							GroupName="ThemeGroup"
+							IsChecked="{Binding ThemeDark}"
+							Value="2">
+							<RadioButton.Content>
+								<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+									<Image Scale="0.75" Source="{AppThemeBinding Light='moon_light.png', Dark='moon_dark.png'}" />
+									<Label
+										FontSize="Small"
+										Style="{StaticResource SettingsViewStyle}"
+										Text="Dark"
+										TextColor="{AppThemeBinding Light={StaticResource Gray-Black},
+										                            Dark={StaticResource Gray-White}}" />
+								</StackLayout>
+							</RadioButton.Content>
+						</RadioButton>
+					</Grid>
+				</Frame>
+				<BoxView Style="{StaticResource SeparatorStyle}" />
+				<!--  Header for Favourites  -->
+				<StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+					<Label
+						HorizontalOptions="Start"
+						Style="{StaticResource SettingsViewStyle}"
+						Text="Favourites" />
+					<Switch
+						AutomationId="FavouritesSwitch"
+						HorizontalOptions="End"
+						IsToggled="{Binding FavouritesEnabled}"
+						OnColor="{StaticResource MarketUpTextColor}"
+						ThumbColor="{StaticResource MarketDownTextColor}" />
+				</StackLayout>
+				<controls:TapAnimationGrid
+					AutomationId="Favouritesmanage"
+					ColumnDefinitions="*,Auto"
+					Command="{Binding FavouritesManageCommand}"
+					IsVisible="{Binding FavouritesEnabled}"
+					Style="{StaticResource SettingsGridStyle}"
+					Tapped="False">
+					<Label
+						Grid.Column="1"
+						Style="{StaticResource SettingsViewStyle}"
+						Text="Manage &gt;" />
+				</controls:TapAnimationGrid>
+				<BoxView Style="{StaticResource SeparatorStyle}" />
+
+				<StackLayout>
+					<Label Style="{StaticResource SettingsViewStyle}" Text="About" />
+					<Frame />
+				</StackLayout>
 			</StackLayout>
 		</Grid>
 	</ContentPage.Content>

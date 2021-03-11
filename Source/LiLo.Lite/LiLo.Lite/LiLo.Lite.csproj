@@ -29,7 +29,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	<PackageReference Include="Acr.UserDialogs" Version="7.1.0.475" />
+	<PackageReference Include="Acr.UserDialogs" Version="7.1.0.481" />
 	<PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.1.0" />
 	<PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.1.0" />
 	<PackageReference Include="Microsoft.AppCenter.Distribute" Version="4.1.0" />
@@ -47,10 +47,13 @@
   </ItemGroup>
 
 	<ItemGroup>
+		<None Remove="Services\Markets.json" />
 		<None Remove="SharedImages\home.svg" />
 		<None Remove="SharedImages\home_dark.svg" />
 		<None Remove="SharedImages\sun_dark.svg" />
+		<None Remove="SharedImages\sun_light.svg" />
 		<None Remove="SharedImages\moon_light.svg" />
+		<None Remove="SharedImages\moon_dark.svg" />
 		<None Remove="SharedImages\settings_dark.svg" />
 		<None Remove="SharedImages\settings.svg" />
 
@@ -129,6 +132,7 @@
 		<None Remove="SharedImages\zen.svg" />
 		<None Remove="SharedImages\zil.svg" />
 		<None Remove="SharedImages\zrx.svg" />
+		<EmbeddedResource Include="Services\Markets.json" />
 		<None Include="..\..\..\LICENSE">
 		  <Pack>True</Pack>
 		  <PackagePath></PackagePath>
@@ -143,7 +147,9 @@
 		<SharedImage Include="SharedImages\home.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\home_dark.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\sun_dark.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\sun_light.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\moon_light.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\moon_dark.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\settings.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\settings_dark.svg" BaseSize="32,32" />
 
@@ -229,6 +235,9 @@
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </EmbeddedResource>
 	  <EmbeddedResource Update="Controls\TitleBar.xaml">
+	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Views\FavouritesView.xaml">
 	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 	  </EmbeddedResource>
 	</ItemGroup>

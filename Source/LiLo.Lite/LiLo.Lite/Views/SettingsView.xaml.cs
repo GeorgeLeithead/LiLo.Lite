@@ -20,5 +20,16 @@ namespace LiLo.Lite.Views
 		{
 			this.InitializeComponent();
 		}
+
+		private void ThemeCheckedChanged(object sender, CheckedChangedEventArgs e)
+		{
+			RadioButton button = sender as RadioButton;
+			Application.Current.UserAppTheme = button.Value switch
+			{
+				"1" => OSAppTheme.Light,
+				"2" => OSAppTheme.Dark,
+				_ => OSAppTheme.Unspecified,
+			};
+		}
 	}
 }

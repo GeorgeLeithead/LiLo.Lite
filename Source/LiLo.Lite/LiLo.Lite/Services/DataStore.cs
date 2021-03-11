@@ -13,12 +13,16 @@
 
 namespace LiLo.Lite.Services
 {
+	using System;
 	using System.Collections.Generic;
+	using System.IO;
 	using System.Linq;
 	using System.Net.Http;
+	using System.Reflection;
 	using System.Text;
 	using System.Text.Json;
 	using LiLo.Lite.Models.Markets;
+	using Xamarin.Essentials;
 
 	/// <summary>Application data store.</summary>
 	public static class DataStore
@@ -26,126 +30,94 @@ namespace LiLo.Lite.Services
 		/// <summary>Markets list.</summary>
 		private static List<MarketModel> marketsData;
 
-		/// <summary>Initialises static members of the <see cref="DataStore"/> class.</summary>
-		/// <remarks>SVG icons from https://github.com/spothq/cryptocurrency-icons under SVG/colour.</remarks>
-		static DataStore()
+		/// <summary>Get markets grouped by favourites.</summary>
+		/// <returns>IEnumerable{ItemViewModel} of categorised markets.</returns>
+		public static IEnumerable<ItemViewModel> GetMarketsGroupedByFavourites()
 		{
-			/*
-			List<MarketModel> defaultMarkets = new List<MarketModel>
+			List<ItemViewModel> marketsGroupedByFavourites = new List<ItemViewModel>();
+			IOrderedEnumerable<MarketModel> marketsAllList = GetAllLocalMarkets().OrderBy(m => m.Rank);
+			string savedFavourites = Preferences.Get(App.FavouritesCategory, string.Empty);
+			IEnumerable<string> favourites = savedFavourites.Split(',').ToList();
+			if (string.IsNullOrEmpty(savedFavourites))
 			{
-				// Binance Futures (MainNet)
-				new MarketModel { Rank = 1, DecimalPlaces = 2, SymbolString = "BTC" },
-				new MarketModel { Rank = 2, DecimalPlaces = 2, SymbolString = "ETH" },
-				new MarketModel { Rank = 3, DecimalPlaces = 4, SymbolString = "BNB" },
-				//// #4 is USDT
-				new MarketModel { Rank = 5, DecimalPlaces = 5, SymbolString = "ADA" },
-				new MarketModel { Rank = 6, DecimalPlaces = 2, SymbolString = "DOT" },
-				new MarketModel { Rank = 7, DecimalPlaces = 5, SymbolString = "XRP" },
-				new MarketModel { Rank = 8, DecimalPlaces = 2, SymbolString = "LTC" },
-				new MarketModel { Rank = 9, DecimalPlaces = 4, SymbolString = "LINK" },
-				new MarketModel { Rank = 10, DecimalPlaces = 2, SymbolString = "BCH" },
-				new MarketModel { Rank = 11, DecimalPlaces = 5, SymbolString = "XLM" },
-				//// #12 is USDC
-				new MarketModel { Rank = 13, DecimalPlaces = 2, SymbolString = "UNI" },
-				new MarketModel { Rank = 14, DecimalPlaces = 7, SymbolString = "DOGE" },
-				//// #15 is WBTC
-				//// #16 is OKB
-				new MarketModel { Rank = 17, DecimalPlaces = 4, SymbolString = "XEM" },
-				new MarketModel { Rank = 18, DecimalPlaces = 3, SymbolString = "ATOM" },
-				new MarketModel { Rank = 19, DecimalPlaces = 2, SymbolString = "AAVE" }, // from ALT source
-				new MarketModel { Rank = 20, DecimalPlaces = 2, SymbolString = "SOL" }, // from ALT source
-				//// #21 is CRO
-				new MarketModel { Rank = 22, DecimalPlaces = 2, SymbolString = "XMR" },
-				new MarketModel { Rank = 23, DecimalPlaces = 4, SymbolString = "EOS" },
-				//// #24 is BSV
-				new MarketModel { Rank = 25, DecimalPlaces = 5, SymbolString = "TRX" },
-				//// #26 is HT
-				new MarketModel { Rank = 27, DecimalPlaces = 4, SymbolString = "IOTA" },
-				new MarketModel { Rank = 28, DecimalPlaces = 5, SymbolString = "THETA" },
-				new MarketModel { Rank = 29, DecimalPlaces = 3, SymbolString = "SNX" }, // from ALT source
-				new MarketModel { Rank = 30, DecimalPlaces = 3, SymbolString = "NEO" },
-				new MarketModel { Rank = 31, DecimalPlaces = 4, SymbolString = "XTZ" },
-				new MarketModel { Rank = 32, DecimalPlaces = 2, SymbolString = "LUNA" }, // from ALT source
-				new MarketModel { Rank = 33, DecimalPlaces = 6, SymbolString = "VET" },
-				new MarketModel { Rank = 34, DecimalPlaces = 2, SymbolString = "FTT" }, // from ALT source
-				new MarketModel { Rank = 35, DecimalPlaces = 2, SymbolString = "DASH" },
-				new MarketModel { Rank = 36, DecimalPlaces = 2, SymbolString = "GRT" }, // from ALT source
-				new MarketModel { Rank = 37, DecimalPlaces = 2, SymbolString = "AVAX" }, // from ALT source
-				//// #38 is DAI, but it's not really available in the spot market!
-				////new MarketsModel { Rank = 38, DecimalPlaces = 6, SymbolString = "DAI" },
-				new MarketModel { Rank = 39, DecimalPlaces = 4, SymbolString = "BUSD" }, // from ALT source
-				//// #40 is CDAI
-				new MarketModel { Rank = 41, DecimalPlaces = 2, SymbolString = "KSM" }, // from ALT source
-				new MarketModel { Rank = 42, DecimalPlaces = 2, SymbolString = "SUSHI" }, // from ALT source
-				new MarketModel { Rank = 43, DecimalPlaces = 2, SymbolString = "MKR" },
-				//// #44 is CETH
-				new MarketModel { Rank = 45, DecimalPlaces = 2, SymbolString = "EGLD" }, // from ALT source
-				new MarketModel { Rank = 46, DecimalPlaces = 2, SymbolString = "FIL" },
-				//// #47 is CEL
-				new MarketModel { Rank = 48, DecimalPlaces = 5, SymbolString = "FTM" }, // from ALT source
-				//// #49 is LEO
-				new MarketModel { Rank = 50, DecimalPlaces = 2, SymbolString = "COMP" },
-				new MarketModel { Rank = 51, DecimalPlaces = 2, SymbolString = "DCR" },
-				//// #52 is CUSDC
-				new MarketModel { Rank = 53, DecimalPlaces = 2, SymbolString = "CAKE" }, // from ALT source
-				//// # 54 is VGX
-				new MarketModel { Rank = 55, DecimalPlaces = 5, SymbolString = "RVN" },
-				new MarketModel { Rank = 56, DecimalPlaces = 2, SymbolString = "ZEC" },
-				new MarketModel { Rank = 57, DecimalPlaces = 5, SymbolString = "ZIL" },
-				new MarketModel { Rank = 58, DecimalPlaces = 4, SymbolString = "ETC" },
-				new MarketModel { Rank = 59, DecimalPlaces = 2, SymbolString = "UMA" },
-				new MarketModel { Rank = 60, DecimalPlaces = 2, SymbolString = "YFI" },
-				//// #61 is HBTC
-				//// #62 is NEXO
-				new MarketModel { Rank = 63, DecimalPlaces = 2, SymbolString = "RUNE" }, // from ALT source
-				new MarketModel { Rank = 64, DecimalPlaces = 2, SymbolString = "NEAR" }, // from ALT source
-				new MarketModel { Rank = 65, DecimalPlaces = 4, SymbolString = "ZRX" },
-				new MarketModel { Rank = 66, DecimalPlaces = 2, SymbolString = "REN" },
-				new MarketModel { Rank = 67, DecimalPlaces = 2, SymbolString = "WAVES" },
-				//// #68 is XSUSHI
-				new MarketModel { Rank = 69, DecimalPlaces = 2, SymbolString = "ICX" },
-				new MarketModel { Rank = 70, DecimalPlaces = 2, SymbolString = "STX" },
-				new MarketModel { Rank = 71, DecimalPlaces = 5, SymbolString = "HBAR" }, // from ALT source
-				//// #72 is AMP
-				new MarketModel { Rank = 73, DecimalPlaces = 7, SymbolString = "BTT" },
-				//// #74 is MDX
-				new MarketModel { Rank = 75, DecimalPlaces = 5, SymbolString = "MATIC" },
-				//// #76 is RENBTC
-				//// #77 is CHSB
-				new MarketModel { Rank = 78, DecimalPlaces = 6, SymbolString = "IOST" },
-				new MarketModel { Rank = 79, DecimalPlaces = 4, SymbolString = "ALGO" },
-				new MarketModel { Rank = 80, DecimalPlaces = 4, SymbolString = "PAX" },
-				new MarketModel { Rank = 81, DecimalPlaces = 5, SymbolString = "DGB" },
-				new MarketModel { Rank = 82, DecimalPlaces = 2, SymbolString = "ONT" },
-				new MarketModel { Rank = 83, DecimalPlaces = 2, SymbolString = "NANO" },
-				new MarketModel { Rank = 84, DecimalPlaces = 4, SymbolString = "BAT" },
-				new MarketModel { Rank = 85, DecimalPlaces = 5, SymbolString = "LRC" },
-				//// #86 is ZKS
-				new MarketModel { Rank = 87, DecimalPlaces = 4, SymbolString = "OMG" },
-				//// #88 is HUSD
-				new MarketModel { Rank = 89, DecimalPlaces = 2, SymbolString = "BNT" },
-				//// #90 is UST
-				new MarketModel { Rank = 91, DecimalPlaces = 2, SymbolString = "ZEN" },
-				new MarketModel { Rank = 92, DecimalPlaces = 3, SymbolString = "QTUM" },
-				new MarketModel { Rank = 93, DecimalPlaces = 7, SymbolString = "NPXS" },
-				new MarketModel { Rank = 94, DecimalPlaces = 7, SymbolString = "HOT" },
-				////new MarketsModel { Rank = 95, DecimalPlaces = 2, SymbolString = "XVS" }, // NEED PNG
-				new MarketModel { Rank = 96, DecimalPlaces = 5, SymbolString = "ENJ" },
-				//// #97 is BTMX
-				new MarketModel { Rank = 98, DecimalPlaces = 2, SymbolString = "CRV" }, // from ALT source
-				new MarketModel { Rank = 99, DecimalPlaces = 7, SymbolString = "SC" },
-				//// # 100 is BTG
-				new MarketModel { Rank = 118, DecimalPlaces = 3, SymbolString = "KNC" },
-				new MarketModel { Rank = 149, DecimalPlaces = 3, SymbolString = "SXP" },
-			};
+				// Must have at least 1 in the "Favourite" category
+				favourites = favourites.Concat(new[] { "BTC" });
+			}
 
-			Markets = new List<MarketModel>(defaultMarkets);
-			*/
+			foreach (string favourite in favourites.Where(f => !string.IsNullOrEmpty(f)))
+			{
+				marketsGroupedByFavourites.Add(new ItemViewModel { Category = App.FavouritesCategory, Symbol = favourite });
+			}
+
+			foreach (MarketModel marketItem in marketsAllList)
+			{
+				if (!favourites.Any(f => f == marketItem.SymbolString))
+				{
+					marketsGroupedByFavourites.Add(new ItemViewModel { Category = App.UnlovedCategory, Symbol = marketItem.SymbolString });
+				}
+			}
+
+			return marketsGroupedByFavourites;
 		}
 
 		/// <summary>Get ordered markets feed list.</summary>
 		/// <returns>IEnumerable{MarketsModel} ordered by rank.</returns>
 		internal static IEnumerable<MarketModel> GetMarketsForFeed()
+		{
+			if (Preferences.Get("FavouritesEnabled", false))
+			{
+				try
+				{
+					return GetFavouriteMarkets();
+				}
+				catch (ArgumentNullException)
+				{
+				}
+			}
+
+			return GetExternalMarketsFeed();
+		}
+
+		/// <summary>Gets the markets WSS stream.</summary>
+		/// <returns>WSS stream.</returns>
+		internal static string MarketsWss()
+		{
+			StringBuilder marketsString = new StringBuilder();
+			marketsString.Append("wss://stream.binance.com:9443/stream?streams=");
+			foreach (MarketModel market in marketsData)
+			{
+				marketsString.Append(market.SymbolString.ToLower());
+				marketsString.Append("usdt@ticker/");
+			}
+
+			string marketWss = marketsString.ToString();
+			if (marketWss.ToString().EndsWith("/"))
+			{
+				marketWss = marketWss.Substring(0, marketWss.Length - 1);
+			}
+
+			return marketWss;
+		}
+
+		private static List<MarketModel> GetAllLocalMarkets()
+		{
+			string marketsJson = string.Empty;
+			Assembly assemblyThis = typeof(DataStore).GetTypeInfo().Assembly;
+			Stream streamJson = assemblyThis.GetManifestResourceStream("LiLo.Lite.Services.Markets.json");
+			using (StreamReader reader = new StreamReader(streamJson))
+			{
+				marketsJson = reader.ReadToEnd();
+			}
+
+			if (string.IsNullOrEmpty(marketsJson))
+			{
+				throw new ArgumentNullException("No markets data found!");
+			}
+
+			return JsonSerializer.Deserialize<MarketsModel>(marketsJson).Markets.ToList();
+		}
+
+		private static IEnumerable<MarketModel> GetExternalMarketsFeed()
 		{
 			try
 			{
@@ -170,25 +142,25 @@ namespace LiLo.Lite.Services
 			throw new HttpRequestException("No markets data found!");
 		}
 
-		/// <summary>Gets the markets WSS stream.</summary>
-		/// <returns>WSS stream.</returns>
-		internal static string MarketsWss()
+		private static IEnumerable<MarketModel> GetFavouriteMarkets()
 		{
-			StringBuilder sb = new StringBuilder();
-			sb.Append("wss://stream.binance.com:9443/stream?streams=");
-			foreach (MarketModel market in marketsData)
+			List<MarketModel> marketsAllList = GetAllLocalMarkets();
+			string savedFavourites = Preferences.Get(App.FavouritesCategory, string.Empty);
+			if (string.IsNullOrEmpty(savedFavourites))
 			{
-				sb.Append(market.SymbolString.ToLower());
-				sb.Append("usdt@ticker/");
+				throw new ArgumentNullException("No favourite markets found!");
 			}
 
-			string marketWss = sb.ToString();
-			if (marketWss.ToString().EndsWith("/"))
+			List<string> favourites = savedFavourites.Split(',').ToList();
+			List<MarketModel> favouriteMarkets = new List<MarketModel>();
+			foreach (string favourite in favourites)
 			{
-				marketWss = marketWss.Substring(0, marketWss.Length - 1);
+				MarketModel match = marketsAllList.First(m => m.SymbolString == favourite);
+				favouriteMarkets.Add(match);
 			}
 
-			return marketWss;
+			marketsData = favouriteMarkets.ToList();
+			return marketsData;
 		}
 	}
 }
