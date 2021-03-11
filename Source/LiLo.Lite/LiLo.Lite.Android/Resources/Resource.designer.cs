@@ -18180,46 +18180,49 @@ namespace LiLo.Lite.Droid
 			public const int trx = 2131165402;
 			
 			// aapt resource value: 0x7F0700DB
-			public const int uma = 2131165403;
+			public const int twitter = 2131165403;
 			
 			// aapt resource value: 0x7F0700DC
-			public const int uni = 2131165404;
+			public const int uma = 2131165404;
 			
 			// aapt resource value: 0x7F0700DD
-			public const int vet = 2131165405;
+			public const int uni = 2131165405;
 			
 			// aapt resource value: 0x7F0700DE
-			public const int waves = 2131165406;
+			public const int vet = 2131165406;
 			
 			// aapt resource value: 0x7F0700DF
-			public const int xem = 2131165407;
+			public const int waves = 2131165407;
 			
 			// aapt resource value: 0x7F0700E0
-			public const int xlm = 2131165408;
+			public const int xem = 2131165408;
 			
 			// aapt resource value: 0x7F0700E1
-			public const int xmr = 2131165409;
+			public const int xlm = 2131165409;
 			
 			// aapt resource value: 0x7F0700E2
-			public const int xrp = 2131165410;
+			public const int xmr = 2131165410;
 			
 			// aapt resource value: 0x7F0700E3
-			public const int xtz = 2131165411;
+			public const int xrp = 2131165411;
 			
 			// aapt resource value: 0x7F0700E4
-			public const int yfi = 2131165412;
+			public const int xtz = 2131165412;
 			
 			// aapt resource value: 0x7F0700E5
-			public const int zec = 2131165413;
+			public const int yfi = 2131165413;
 			
 			// aapt resource value: 0x7F0700E6
-			public const int zen = 2131165414;
+			public const int zec = 2131165414;
 			
 			// aapt resource value: 0x7F0700E7
-			public const int zil = 2131165415;
+			public const int zen = 2131165415;
 			
 			// aapt resource value: 0x7F0700E8
-			public const int zrx = 2131165416;
+			public const int zil = 2131165416;
+			
+			// aapt resource value: 0x7F0700E9
+			public const int zrx = 2131165417;
 			
 			static Drawable()
 			{

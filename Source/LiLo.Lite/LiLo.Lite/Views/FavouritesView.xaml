@@ -27,7 +27,7 @@
 	</ContentPage.Resources>
 
 	<ContentPage.Content>
-		<Grid RowDefinitions="Auto,Auto,Auto">
+		<Grid RowDefinitions="Auto,*,Auto">
 			<!--  title bar  -->
 			<controls:TitleBar
 				Grid.Row="0"
@@ -44,7 +44,7 @@
 				IsRunning="{Binding IsBusy}"
 				IsVisible="{Binding IsBusy}"
 				VerticalOptions="CenterAndExpand" />
-			<Label Grid.Row="2" Text="Footer" />
+			<Label Grid.Row="2" Text="Currently, after changing favourites, you need to re-start the app." />
 			<StackLayout
 				Grid.Row="1"
 				IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}"

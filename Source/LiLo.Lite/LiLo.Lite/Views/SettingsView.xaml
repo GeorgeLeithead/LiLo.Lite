@@ -107,106 +107,110 @@
 				Grid.Row="1"
 				Margin="8,0"
 				IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}">
-				<!--  Header label for Theme setting  -->
-				<Label Style="{StaticResource SettingsViewStyle}" Text="Theme" />
-				<Frame>
-					<!--  Grid for Theme label and navigation bar icon  -->
-					<!--  Theme choice  -->
-					<Grid
-						ColumnDefinitions="*,*,*"
-						ColumnSpacing="10"
-						RadioButtonGroup.GroupName="ThemeGroup">
-						<RadioButton
-							CheckedChanged="ThemeCheckedChanged"
-							ControlTemplate="{StaticResource ThemeRadioTemplate}"
-							GroupName="ThemeGroup"
-							IsChecked="{Binding ThemeSystem}"
-							IsVisible="{Binding SystemThemeSupported}"
-							Value="0">
-							<RadioButton.Content>
-								<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-									<Image Scale="0.75" Source="{AppThemeBinding Light='settings.png', Dark='settings_dark.png'}" />
-									<Label
-										FontSize="Small"
-										Style="{StaticResource SettingsViewStyle}"
-										Text="System"
-										TextColor="{AppThemeBinding Light={StaticResource Gray-Black},
-										                            Dark={StaticResource Gray-White}}" />
+				<TableView HasUnevenRows="True" Intent="Settings">
+					<TableRoot>
+						<TableSection Title="Theme">
+							<ViewCell>
+								<!--  Grid for Theme label and navigation bar icon  -->
+								<!--  Theme choice  -->
+								<Grid
+									ColumnDefinitions="*,*,*"
+									ColumnSpacing="10"
+									RadioButtonGroup.GroupName="ThemeGroup">
+									<RadioButton
+										CheckedChanged="ThemeCheckedChanged"
+										ControlTemplate="{StaticResource ThemeRadioTemplate}"
+										GroupName="ThemeGroup"
+										IsChecked="{Binding ThemeSystem}"
+										IsVisible="{Binding SystemThemeSupported}"
+										Value="0">
+										<RadioButton.Content>
+											<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+												<Image Scale="0.75" Source="{AppThemeBinding Light='settings.png', Dark='settings_dark.png'}" />
+												<Label
+													FontSize="Small"
+													Style="{StaticResource SettingsViewStyle}"
+													Text="System"
+													TextColor="{AppThemeBinding Light={StaticResource Gray-Black},
+													                            Dark={StaticResource Gray-White}}" />
+											</StackLayout>
+										</RadioButton.Content>
+									</RadioButton>
+									<RadioButton
+										Grid.Column="1"
+										CheckedChanged="ThemeCheckedChanged"
+										ControlTemplate="{StaticResource ThemeRadioTemplate}"
+										GroupName="ThemeGroup"
+										IsChecked="{Binding ThemeLight}"
+										Value="1">
+										<RadioButton.Content>
+											<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+												<Image Scale="0.75" Source="{AppThemeBinding Light='sun_light.png', Dark='sun_dark.png'}" />
+												<Label
+													FontSize="Small"
+													Style="{StaticResource SettingsViewStyle}"
+													Text="Light"
+													TextColor="{AppThemeBinding Light={StaticResource Gray-Black},
+													                            Dark={StaticResource Gray-White}}" />
+											</StackLayout>
+										</RadioButton.Content>
+									</RadioButton>
+									<RadioButton
+										Grid.Column="2"
+										CheckedChanged="ThemeCheckedChanged"
+										ControlTemplate="{StaticResource ThemeRadioTemplate}"
+										GroupName="ThemeGroup"
+										IsChecked="{Binding ThemeDark}"
+										Value="2">
+										<RadioButton.Content>
+											<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+												<Image Scale="0.75" Source="{AppThemeBinding Light='moon_light.png', Dark='moon_dark.png'}" />
+												<Label
+													FontSize="Small"
+													Style="{StaticResource SettingsViewStyle}"
+													Text="Dark"
+													TextColor="{AppThemeBinding Light={StaticResource Gray-Black},
+													                            Dark={StaticResource Gray-White}}" />
+											</StackLayout>
+										</RadioButton.Content>
+									</RadioButton>
+								</Grid>
+							</ViewCell>
+						</TableSection>
+						<TableSection Title="Favourites">
+							<SwitchCell
+								On="{Binding FavouritesEnabled}"
+								OnColor="{StaticResource MarketUpTextColor}"
+								Text="Enabled" />
+							<ViewCell>
+								<Button
+									Command="{Binding FavouritesManageCommand}"
+									IsEnabled="{Binding FavouritesEnabled}"
+									Text="manage &gt;" />
+							</ViewCell>
+						</TableSection>
+						<TableSection Title="App Settings">
+							<ImageCell
+								Height="32"
+								Command="{Binding SettingsCommand}"
+								ImageSource="{AppThemeBinding Light='settings.png',
+								                              Dark='settings_dark.png'}"
+								Text="View" />
+						</TableSection>
+						<TableSection Title="About">
+							<ViewCell>
+								<StackLayout>
+									<Label Text="Please contact us on the social platform(s) below.  Please include the application information above, your device details, a description of your problem and steps to replicate." />
+									<ImageButton
+										Command="{Binding TwitterCommand}"
+										HeightRequest="32"
+										Source="twitter.png"
+										WidthRequest="32" />
 								</StackLayout>
-							</RadioButton.Content>
-						</RadioButton>
-						<RadioButton
-							Grid.Column="1"
-							CheckedChanged="ThemeCheckedChanged"
-							ControlTemplate="{StaticResource ThemeRadioTemplate}"
-							GroupName="ThemeGroup"
-							IsChecked="{Binding ThemeLight}"
-							Value="1">
-							<RadioButton.Content>
-								<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-									<Image Scale="0.75" Source="{AppThemeBinding Light='sun_light.png', Dark='sun_dark.png'}" />
-									<Label
-										FontSize="Small"
-										Style="{StaticResource SettingsViewStyle}"
-										Text="Light"
-										TextColor="{AppThemeBinding Light={StaticResource Gray-Black},
-										                            Dark={StaticResource Gray-White}}" />
-								</StackLayout>
-							</RadioButton.Content>
-						</RadioButton>
-						<RadioButton
-							Grid.Column="2"
-							CheckedChanged="ThemeCheckedChanged"
-							ControlTemplate="{StaticResource ThemeRadioTemplate}"
-							GroupName="ThemeGroup"
-							IsChecked="{Binding ThemeDark}"
-							Value="2">
-							<RadioButton.Content>
-								<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-									<Image Scale="0.75" Source="{AppThemeBinding Light='moon_light.png', Dark='moon_dark.png'}" />
-									<Label
-										FontSize="Small"
-										Style="{StaticResource SettingsViewStyle}"
-										Text="Dark"
-										TextColor="{AppThemeBinding Light={StaticResource Gray-Black},
-										                            Dark={StaticResource Gray-White}}" />
-								</StackLayout>
-							</RadioButton.Content>
-						</RadioButton>
-					</Grid>
-				</Frame>
-				<BoxView Style="{StaticResource SeparatorStyle}" />
-				<!--  Header for Favourites  -->
-				<StackLayout HorizontalOptions="FillAndExpand" Orientation="Horizontal">
-					<Label
-						HorizontalOptions="Start"
-						Style="{StaticResource SettingsViewStyle}"
-						Text="Favourites" />
-					<Switch
-						AutomationId="FavouritesSwitch"
-						HorizontalOptions="End"
-						IsToggled="{Binding FavouritesEnabled}"
-						OnColor="{StaticResource MarketUpTextColor}"
-						ThumbColor="{StaticResource MarketDownTextColor}" />
-				</StackLayout>
-				<controls:TapAnimationGrid
-					AutomationId="Favouritesmanage"
-					ColumnDefinitions="*,Auto"
-					Command="{Binding FavouritesManageCommand}"
-					IsVisible="{Binding FavouritesEnabled}"
-					Style="{StaticResource SettingsGridStyle}"
-					Tapped="False">
-					<Label
-						Grid.Column="1"
-						Style="{StaticResource SettingsViewStyle}"
-						Text="Manage &gt;" />
-				</controls:TapAnimationGrid>
-				<BoxView Style="{StaticResource SeparatorStyle}" />
-
-				<StackLayout>
-					<Label Style="{StaticResource SettingsViewStyle}" Text="About" />
-					<Frame />
-				</StackLayout>
+							</ViewCell>
+						</TableSection>
+					</TableRoot>
+				</TableView>
 			</StackLayout>
 		</Grid>
 	</ContentPage.Content>

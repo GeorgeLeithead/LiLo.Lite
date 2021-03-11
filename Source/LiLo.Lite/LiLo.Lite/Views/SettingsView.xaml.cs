@@ -21,6 +21,15 @@ namespace LiLo.Lite.Views
 			this.InitializeComponent();
 		}
 
+		/// <summary>Handle the device back button being pressed.</summary>
+		/// <remarks>As this is the root page, we have to prevent the back button otherwise it will exit the application.</remarks>
+		/// <returns>true; cancellation of back button.</returns>
+		protected override bool OnBackButtonPressed()
+		{
+			Shell.Current.GoToAsync("///Home").ConfigureAwait(true);
+			return true; // prevent users from clicking the back button and exiting the application from the root page.
+		}
+
 		private void ThemeCheckedChanged(object sender, CheckedChangedEventArgs e)
 		{
 			RadioButton button = sender as RadioButton;

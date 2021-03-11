@@ -18,6 +18,15 @@ namespace LiLo.Lite.Views
 		/// <summary>Initialises a new instance of the <see cref="FavouritesView"/> class.</summary>
 		public FavouritesView() => this.InitializeComponent();
 
+		/// <summary>Handle the device back button being pressed.</summary>
+		/// <remarks>As this is the root page, we have to prevent the back button otherwise it will exit the application.</remarks>
+		/// <returns>true; cancellation of back button.</returns>
+		protected override bool OnBackButtonPressed()
+		{
+			Shell.Current.GoToAsync("///Settings").ConfigureAwait(true);
+			return true; // prevent users from clicking the back button and exiting the application from the root page.
+		}
+
 		private void DragGestureRecognizer_DragStarting_Collection(object sender, DragStartingEventArgs e)
 		{
 		}

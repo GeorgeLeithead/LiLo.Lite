@@ -12,7 +12,6 @@ namespace LiLo.Lite.ViewModels
 	using System.Threading.Tasks;
 	using System.Windows.Input;
 	using LiLo.Lite.ViewModels.Base;
-	using Xamarin.CommunityToolkit.ObjectModel;
 	using Xamarin.Essentials;
 	using Xamarin.Forms;
 
@@ -38,6 +37,12 @@ namespace LiLo.Lite.ViewModels
 			}
 		}
 
+		/// <summary>Gets the favourites manage command.</summary>
+		public ICommand FavouritesManageCommand => new Command(async () => await this.FavouritesManageClicked());
+
+		/// <summary>Gets the app settings command.</summary>
+		public ICommand SettingsCommand => new Command(() => this.SettingsCommandClicked());
+
 		/// <summary>Gets a value indicating whether the system theme is supported.</summary>
 		public bool SystemThemeSupported
 		{
@@ -57,9 +62,6 @@ namespace LiLo.Lite.ViewModels
 			}
 		}
 
-		/// <summary>Gets the favourites manage command.</summary>
-		public ICommand FavouritesManageCommand => new Command(async () => await this.FavouritesManageClicked());
-
 		/// <summary>Gets a value indicating whether dark theme is enabled.</summary>
 		public bool ThemeDark => Application.Current.UserAppTheme == OSAppTheme.Dark;
 
@@ -69,9 +71,23 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Gets a value indicating whether system theme is enabled.</summary>
 		public bool ThemeSystem => Application.Current.UserAppTheme == OSAppTheme.Unspecified;
 
+		/// <summary>Gets the twitter command.</summary>
+		public ICommand TwitterCommand => new Command(async () => await this.TwitterCommandClicked());
+
 		private async Task FavouritesManageClicked()
 		{
 			await Shell.Current.GoToAsync("///Favourites");
+		}
+
+		private void SettingsCommandClicked()
+		{
+			AppInfo.ShowSettingsUI();
+		}
+
+		/// <summary>Link to the twitter page for LiLo.</summary>
+		private async Task TwitterCommandClicked()
+		{
+			await Browser.OpenAsync(new Uri("https://twitter.com/LiLoMobileApp"), BrowserLaunchMode.SystemPreferred);
 		}
 	}
 }

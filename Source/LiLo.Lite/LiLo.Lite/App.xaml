@@ -209,15 +209,10 @@
 				<Setter Property="ColumnSpacing" Value="0" />
 				<Setter Property="RowSpacing" Value="0" />
 			</Style>
-			<Style
-				x:Key="SettingsTappedGridStyle"
-				BasedOn="{StaticResource SettingsGridStyle}"
-				TargetType="{x:Type controls:TapAnimationGrid}" />
 
-			<!--  Common style for separators  -->
-			<Style x:Key="SeparatorStyle" TargetType="BoxView">
-				<Setter Property="HeightRequest" Value="1" />
-				<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource Gray-700}, Dark={StaticResource Gray-300}}" />
+			<!--  TableView: Settings  -->
+			<Style x:Key="TableSectionStyle" TargetType="{x:Type TableSection}">
+				<Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Gray-Black}, Dark={StaticResource Gray-White}}" />
 			</Style>
 
 		</ResourceDictionary>

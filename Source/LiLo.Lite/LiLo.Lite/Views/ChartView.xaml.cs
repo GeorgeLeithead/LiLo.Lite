@@ -40,7 +40,6 @@ namespace LiLo.Lite.Views
 		/// <returns>true; cancellation of back button.</returns>
 		protected override bool OnBackButtonPressed()
 		{
-			base.OnBackButtonPressed();
 			Shell.Current.GoToAsync("///Home").ConfigureAwait(true);
 			return true; // prevent users from clicking the back button and exiting the application from the root page.
 		}

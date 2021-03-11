@@ -14,6 +14,7 @@
 namespace LiLo.Lite.Views
 {
 	using System.Collections.Generic;
+	using System.Diagnostics;
 	using System.Linq;
 	using System.Threading.Tasks;
 	using LiLo.Lite.Models.Markets;
@@ -51,6 +52,26 @@ namespace LiLo.Lite.Views
 					}
 				});
 			}
+		}
+
+		/// <summary>Handle the device back button being pressed.</summary>
+		/// <remarks>As this is the root page, we have to prevent the back button otherwise it will exit the application.</remarks>
+		/// <returns>true; cancellation of back button.</returns>
+		protected override bool OnBackButtonPressed()
+		{
+			// Begin an asynchronous task on the UI thread because we intend to ask the users permission.
+			Device.BeginInvokeOnMainThread(async () =>
+			{
+				Acr.UserDialogs.PromptResult trulyExit = await this.VM.DialogService.ShowPromptAsync("Exit?", "Are you sure you want to exit the app?", "Yes", "Cancel");
+				if (trulyExit.Ok)
+				{
+					base.OnBackButtonPressed();
+					Process.GetCurrentProcess().CloseMainWindow();
+					Process.GetCurrentProcess().Close();
+				}
+			});
+
+			return true;
 		}
 
 		/// <inheritdoc/>

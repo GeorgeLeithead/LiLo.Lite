@@ -127,45 +127,6 @@
         <member name="P:LiLo.Lite.Controls.CustomLabel.IsSelected">
             <summary>Gets or sets a value indicating whether is selected.</summary>
         </member>
-        <member name="T:LiLo.Lite.Controls.TapAnimationGrid">
-            <summary>Customizes the tap animation effects of the grid control.</summary>
-        </member>
-        <member name="F:LiLo.Lite.Controls.TapAnimationGrid.CommandParameterProperty">
-            <summary>Gets or sets the CommandParameterProperty, and it is a bindable property.</summary>
-        </member>
-        <member name="F:LiLo.Lite.Controls.TapAnimationGrid.CommandProperty">
-            <summary>Gets or sets the CommandProperty, and it is a bindable property.</summary>
-        </member>
-        <member name="F:LiLo.Lite.Controls.TapAnimationGrid.TappedProperty">
-            <summary>Gets or sets the TappedProperty, and it is a bindable property.</summary>
-        </member>
-        <member name="F:LiLo.Lite.Controls.TapAnimationGrid.tappedCommand">
-            <summary>Tapped command.</summary>
-        </member>
-        <member name="M:LiLo.Lite.Controls.TapAnimationGrid.#ctor">
-            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Controls.TapAnimationGrid" /> class.</summary>
-        </member>
-        <member name="P:LiLo.Lite.Controls.TapAnimationGrid.Command">
-            <summary>Gets or sets the command value.</summary>
-        </member>
-        <member name="P:LiLo.Lite.Controls.TapAnimationGrid.CommandParameter">
-            <summary>Gets or sets the command parameter value.</summary>
-        </member>
-        <member name="P:LiLo.Lite.Controls.TapAnimationGrid.Tapped">
-            <summary>Gets or sets a value indicating whether the control is tapped.</summary>
-        </member>
-        <member name="P:LiLo.Lite.Controls.TapAnimationGrid.TappedCommand">
-            <summary>Gets the tapped command.</summary>
-        </member>
-        <member name="M:LiLo.Lite.Controls.TapAnimationGrid.OnTapped(Xamarin.Forms.BindableObject,System.Object,System.Object)">
-            <summary>Invoked when tap on the item.</summary>
-            <param name="bindable">Bindable object.</param>
-            <param name="oldValue">Old value object.</param>
-            <param name="newValue">New value object.</param>
-        </member>
-        <member name="M:LiLo.Lite.Controls.TapAnimationGrid.Initialize">
-            <summary>Invoked when control is initialised.</summary>
-        </member>
         <member name="T:LiLo.Lite.Controls.TickPriceView">
             <summary>Custom ticker price view.</summary>
         </member>
@@ -584,6 +545,7 @@
         </member>
         <member name="M:LiLo.Lite.Services.Markets.IMarketsHelperService.Init">
             <summary>Initialises task for the markets helper service.</summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
         </member>
         <member name="M:LiLo.Lite.Services.Markets.IMarketsHelperService.WebSockets_OnMessageAsync(System.Object,WebSocketSharp.MessageEventArgs)">
             <summary>Message received handler.</summary>
@@ -614,6 +576,7 @@
         </member>
         <member name="M:LiLo.Lite.Services.Markets.MarketsHelperService.Init">
             <summary>Initialises task for the markets helper service.</summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
         </member>
         <member name="M:LiLo.Lite.Services.Markets.MarketsHelperService.WebSockets_OnMessageAsync(System.Object,WebSocketSharp.MessageEventArgs)">
             <summary>WebSockets message handler.</summary>
@@ -856,11 +819,14 @@
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.FavouritesEnabled">
             <summary>Gets or sets a value indicating whether favourites is enabled.</summary>
         </member>
-        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.SystemThemeSupported">
-            <summary>Gets a value indicating whether the system theme is supported.</summary>
-        </member>
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.FavouritesManageCommand">
             <summary>Gets the favourites manage command.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.SettingsCommand">
+            <summary>Gets the app settings command.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.SystemThemeSupported">
+            <summary>Gets a value indicating whether the system theme is supported.</summary>
         </member>
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.ThemeDark">
             <summary>Gets a value indicating whether dark theme is enabled.</summary>
@@ -870,6 +836,12 @@
         </member>
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.ThemeSystem">
             <summary>Gets a value indicating whether system theme is enabled.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.TwitterCommand">
+            <summary>Gets the twitter command.</summary>
+        </member>
+        <member name="M:LiLo.Lite.ViewModels.SettingsViewModel.TwitterCommandClicked">
+            <summary>Link to the twitter page for LiLo.</summary>
         </member>
         <member name="T:LiLo.Lite.Views.ChartView">
             <summary>Chart View class.</summary>
@@ -900,6 +872,11 @@
         <member name="M:LiLo.Lite.Views.FavouritesView.#ctor">
             <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Views.FavouritesView"/> class.</summary>
         </member>
+        <member name="M:LiLo.Lite.Views.FavouritesView.OnBackButtonPressed">
+            <summary>Handle the device back button being pressed.</summary>
+            <remarks>As this is the root page, we have to prevent the back button otherwise it will exit the application.</remarks>
+            <returns>true; cancellation of back button.</returns>
+        </member>
         <member name="T:LiLo.Lite.Views.HomeView">
             <summary>Home page view.</summary>
         </member>
@@ -908,6 +885,11 @@
         </member>
         <member name="M:LiLo.Lite.Views.HomeView.OnAppearing">
             <inheritdoc/>
+        </member>
+        <member name="M:LiLo.Lite.Views.HomeView.OnBackButtonPressed">
+            <summary>Handle the device back button being pressed.</summary>
+            <remarks>As this is the root page, we have to prevent the back button otherwise it will exit the application.</remarks>
+            <returns>true; cancellation of back button.</returns>
         </member>
         <member name="M:LiLo.Lite.Views.HomeView.OnSizeAllocated(System.Double,System.Double)">
             <inheritdoc/>
@@ -922,6 +904,11 @@
         </member>
         <member name="M:LiLo.Lite.Views.SettingsView.#ctor">
             <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Views.SettingsView"/> class.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Views.SettingsView.OnBackButtonPressed">
+            <summary>Handle the device back button being pressed.</summary>
+            <remarks>As this is the root page, we have to prevent the back button otherwise it will exit the application.</remarks>
+            <returns>true; cancellation of back button.</returns>
         </member>
         <member name="T:Lilo.Lite.Services.NotifyPropertyChangedBase">
             <summary>Notify property changed base class.</summary>
