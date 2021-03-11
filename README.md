@@ -12,6 +12,7 @@ LiLo.Lite is a light-weight cryptocurrency (crypto) tracking application.  It pr
 ### Markets page
 ![Home Page - Light theme - Portrait](Screenshots/HomeLight.png)
 ![Home Page - Dark theme - Portrait](Screenshots/HomeDark.png)
+![Home Page - Light theme - Search](Screenshots/HomeLight_Search.png)
 ![Home Page - Light theme - Landscape](Screenshots/HomeLightL.png)
 ![Home Page - Dark theme - Landscape](Screenshots/HomeDarkL.png)
 
@@ -19,9 +20,17 @@ LiLo.Lite is a light-weight cryptocurrency (crypto) tracking application.  It pr
 ![Chart page - Light theme](Screenshots/ChartLight.png)
 ![Chart page - Dark theme](Screenshots/ChartDark.png)
 
+## Settings page
+![Settings page - Light theme](Screenshots/SettingsLight.png)
+![Settings page - Dark theme](Screenshots/SettingsDark.png)
+
+## Manage favourites page
+![Favourites page - Light theme](Screenshots/FavouritesLight.png)
+![Favourites page - Dark theme](Screenshots/FavouritesDark.png)
+
 ### Additional devices and OS versions
-![Home Page - Light theme - Pixel C Lollipop 5.0 - API 21](Screenshots/HomeLight_Pixel_C_Lollipop_5.0_API_21.png)
-![Home Page - Light theme - Pixel 2 Lollipop 5.0 - API 21](Screenshots/HomeLight_Pixel_2_Lollipop_5.0_API_21.png)
+![Home Page - Light theme - Nexus One with Lollipop 5.0 - API 21](Screenshots/HomeLight_Nexus_One_Lollipop_5.0_API_21.png)
+![Home Page - Light theme - Pixel 2 with Lollipop 5.0 - API 21](Screenshots/HomeLight_Pixel_2_Lollipop_5.0_API_21.png)
 
 ## Supported Platforms: Android, iOS
 
