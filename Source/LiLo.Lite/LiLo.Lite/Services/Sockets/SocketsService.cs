@@ -13,39 +13,33 @@
 
 namespace LiLo.Lite.Services.Sockets
 {
-	using System.ComponentModel;
+	using System.Diagnostics;
 	using System.Threading.Tasks;
-	using Lilo.Lite.Services;
 	using LiLo.Lite.Services.Dialog;
 	using LiLo.Lite.Services.Markets;
 	using WebSocketSharp;
 	using Xamarin.Forms;
 
 	/// <summary>Web Sockets Service interface.</summary>
-	public class SocketsService : NotifyPropertyChangedBase, ISocketsService
+	public class SocketsService : ISocketsService
 	{
+		private readonly int delayBetweenTries = 3000;
 		private IDialogService dialogService;
 
 		/// <summary>Has the service been resumed.</summary>
 		private bool isResumed;
 
 		private IMarketsHelperService marketsHelperService;
+		private int numberOfTries = 0;
 
 		/// <summary>Web Socket.</summary>
 		private WebSocket webSocket;
-
-		/// <summary>Raised when a public property of this object is set.</summary>
-		public override event PropertyChangedEventHandler PropertyChanged
-		{
-			add { base.PropertyChanged += value; }
-			remove { base.PropertyChanged -= value; }
-		}
 
 		/// <summary>Gets the dialogue service.</summary>
 		public IDialogService DialogService => this.dialogService ??= DependencyService.Resolve<DialogService>();
 
 		/// <summary>Gets a value indicating whether the sockets service is connected.</summary>
-		public bool IsConnected => this.webSocket.ReadyState == WebSocketState.Open;
+		private bool IsConnected => this.webSocket.ReadyState == WebSocketState.Open;
 
 		private IMarketsHelperService MarketsHelperService => this.marketsHelperService ??= DependencyService.Resolve<MarketsHelperService>();
 
@@ -106,13 +100,26 @@ namespace LiLo.Lite.Services.Sockets
 				}
 
 				await this.DialogService.ShowToastAsync("Connecting...");
-				if (Device.RuntimePlatform != Device.UWP)
+				try
 				{
-					this.webSocket.ConnectAsync();
+					if (Device.RuntimePlatform != Device.UWP)
+					{
+						this.webSocket.ConnectAsync();
+					}
+					else
+					{
+						this.webSocket.Connect();
+					}
+
+					this.numberOfTries = 1;
 				}
-				else
+				catch (System.Net.Sockets.SocketException sex)
 				{
-					this.webSocket.Connect();
+					var x = sex.SocketErrorCode;
+					this.numberOfTries += 1;
+					Debug.WriteLine($"Lost connection, awaiting {this.numberOfTries}");
+					Task.Delay(this.numberOfTries * this.delayBetweenTries).Wait();
+					await this.WebSocket_OnConnect();
 				}
 
 				await Task.FromResult(true);
@@ -125,10 +132,10 @@ namespace LiLo.Lite.Services.Sockets
 		{
 			if (!this.isResumed)
 			{
-				this.webSocket.OnClose += this.WebSocket_OnClose;
-				this.webSocket.OnError += this.WebSocket_OnError;
-				this.webSocket.OnMessage += this.WebSocket_OnMessage;
 				this.webSocket.OnMessage += this.MarketsHelperService.WebSockets_OnMessageAsync;
+				this.webSocket.OnMessage += this.WebSocket_OnMessage;
+				this.webSocket.OnError += this.WebSocket_OnError;
+				this.webSocket.OnClose += this.WebSocket_OnClose;
 				await this.WebSocket_OnConnect();
 				this.isResumed = true;
 			}
@@ -168,9 +175,13 @@ namespace LiLo.Lite.Services.Sockets
 				await this.DialogService.ShowToastAsync("Disconnected!");
 				while (!this.webSocket.IsAlive)
 				{
-					Task.Delay(1000).Wait();
+					this.numberOfTries += 1;
+					Debug.WriteLine($"Lost connection, awaiting {this.numberOfTries}");
+					Task.Delay(this.numberOfTries * this.delayBetweenTries).Wait();
 					await this.WebSocket_OnConnect();
 				}
+
+				this.numberOfTries = 1;
 			});
 		}
 
@@ -179,7 +190,10 @@ namespace LiLo.Lite.Services.Sockets
 		/// <param name="e">Error event arguments.</param>
 		private void WebSocket_OnError(object sender, ErrorEventArgs e)
 		{
-			this.DialogService.ShowToastAsync(e.Message).ConfigureAwait(true);
+			if (this.IsConnected)
+			{
+				this.DialogService.ShowToastAsync(e.Message).ConfigureAwait(true);
+			}
 		}
 
 		/// <summary>Handle when the sockets connection receives a message.</summary>

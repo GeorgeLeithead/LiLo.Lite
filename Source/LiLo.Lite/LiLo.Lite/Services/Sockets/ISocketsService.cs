@@ -13,18 +13,11 @@
 
 namespace LiLo.Lite.Services.Sockets
 {
-	using System.ComponentModel;
 	using System.Threading.Tasks;
 
 	/// <summary>Web Sockets Service interface.</summary>
 	public interface ISocketsService
 	{
-		/// <summary>Raised when a public property of this object is set.</summary>
-		event PropertyChangedEventHandler PropertyChanged;
-
-		/// <summary>Gets a value indicating whether the sockets service is connected.</summary>
-		bool IsConnected { get; }
-
 		/// <summary>Handle when the application closes the sockets connection.</summary>
 		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		Task WebSocket_Close();

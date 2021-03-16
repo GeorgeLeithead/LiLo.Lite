@@ -37,87 +37,6 @@
         <member name="M:LiLo.Lite.AppShell.#ctor">
             <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.AppShell"/> class.</summary>
         </member>
-        <member name="T:LiLo.Lite.Behaviors.Base.BindableBehavior`1">
-            <summary>Bindable behaviour class.</summary>
-            <typeparam name="T">Generic type.</typeparam>
-        </member>
-        <member name="P:LiLo.Lite.Behaviors.Base.BindableBehavior`1.AssociatedObject">
-            <summary>Gets the Associated object.</summary>
-        </member>
-        <member name="M:LiLo.Lite.Behaviors.Base.BindableBehavior`1.OnAttachedTo(`0)">
-            <summary>Attached to event handler.</summary>
-            <param name="visualElement">Visual Element.</param>
-        </member>
-        <member name="M:LiLo.Lite.Behaviors.Base.BindableBehavior`1.OnBindingContextChanged">
-            <summary>Binding context changed event handler.</summary>
-        </member>
-        <member name="M:LiLo.Lite.Behaviors.Base.BindableBehavior`1.OnDetachingFrom(`0)">
-            <summary>Detaching from event handler.</summary>
-            <param name="view">View element.</param>
-        </member>
-        <member name="M:LiLo.Lite.Behaviors.Base.BindableBehavior`1.OnBindingContextChanged(System.Object,System.EventArgs)">
-            <summary>Binding context changed event handler.</summary>
-            <param name="sender">Sending object.</param>
-            <param name="e">Event arguments.</param>
-        </member>
-        <member name="T:LiLo.Lite.Behaviors.EventToCommandBehavior">
-            <summary>Event to command behaviour class.</summary>
-        </member>
-        <member name="F:LiLo.Lite.Behaviors.EventToCommandBehavior.CommandParameterProperty">
-            <summary>Gets or sets the Command Parameter Property, and it is a bindable property.</summary>
-        </member>
-        <member name="F:LiLo.Lite.Behaviors.EventToCommandBehavior.CommandProperty">
-            <summary>Gets or sets the Command Property, and it is a bindable property.</summary>
-        </member>
-        <member name="F:LiLo.Lite.Behaviors.EventToCommandBehavior.EventArgsConverterParameterProperty">
-            <summary>Gets or sets the Event Arguments Converter Parameter Property, and it is a bindable property.</summary>
-        </member>
-        <member name="F:LiLo.Lite.Behaviors.EventToCommandBehavior.EventArgsConverterProperty">
-            <summary>Gets or sets the Event Arguments Converter Property, and it is a bindable property.</summary>
-        </member>
-        <member name="F:LiLo.Lite.Behaviors.EventToCommandBehavior.EventNameProperty">
-            <summary>Gets or sets the Event Name Property, and it is a bindable property.</summary>
-        </member>
-        <member name="F:LiLo.Lite.Behaviors.EventToCommandBehavior.delegateHandler">
-            <summary>Delegate handler.</summary>
-        </member>
-        <member name="F:LiLo.Lite.Behaviors.EventToCommandBehavior.eventInfo">
-            <summary>Event information.</summary>
-        </member>
-        <member name="P:LiLo.Lite.Behaviors.EventToCommandBehavior.Command">
-            <summary>Gets or sets the bound command.</summary>
-        </member>
-        <member name="P:LiLo.Lite.Behaviors.EventToCommandBehavior.CommandParameter">
-            <summary>Gets or sets the command parameter.</summary>
-        </member>
-        <member name="P:LiLo.Lite.Behaviors.EventToCommandBehavior.EventArgsConverter">
-            <summary>Gets or sets the event arguments value converter.</summary>
-        </member>
-        <member name="P:LiLo.Lite.Behaviors.EventToCommandBehavior.EventArgsConverterParameter">
-            <summary>Gets or sets the event arguments value converter parameter.</summary>
-        </member>
-        <member name="P:LiLo.Lite.Behaviors.EventToCommandBehavior.EventName">
-            <summary>Gets or sets the bound event name.</summary>
-        </member>
-        <member name="M:LiLo.Lite.Behaviors.EventToCommandBehavior.OnAttachedTo(Xamarin.Forms.View)">
-            <summary>Attached to event handler.</summary>
-            <param name="visualElement">Visual Element.</param>
-        </member>
-        <member name="M:LiLo.Lite.Behaviors.EventToCommandBehavior.OnDetachingFrom(Xamarin.Forms.View)">
-            <summary>Detaching from event handler.</summary>
-            <param name="view">View element.</param>
-        </member>
-        <member name="M:LiLo.Lite.Behaviors.EventToCommandBehavior.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Action{System.Object,System.EventArgs})">
-            <summary>Attaches the event handler to the delegate.</summary>
-            <param name="eventInfo">Event information.</param>
-            <param name="item">Item to add event handler to.</param>
-            <param name="action">Event handler action.</param>
-        </member>
-        <member name="M:LiLo.Lite.Behaviors.EventToCommandBehavior.OnFired(System.Object,System.EventArgs)">
-            <summary>Command fired.</summary>
-            <param name="sender">Event sender.</param>
-            <param name="eventArgs">Event arguments.</param>
-        </member>
         <member name="T:LiLo.Lite.Controls.CustomLabel">
             <summary>Customised label with IsSelected property.</summary>
         </member>
@@ -533,9 +452,6 @@
         <member name="T:LiLo.Lite.Services.Markets.IMarketsHelperService">
             <summary>Markets helper service.</summary>
         </member>
-        <member name="E:LiLo.Lite.Services.Markets.IMarketsHelperService.PropertyChanged">
-            <summary>Property changed event</summary>
-        </member>
         <member name="P:LiLo.Lite.Services.Markets.IMarketsHelperService.MarketsList">
             <summary>Gets or sets a list of Markets.</summary>
         </member>
@@ -557,9 +473,6 @@
         </member>
         <member name="M:LiLo.Lite.Services.Markets.MarketsHelperService.#ctor">
             <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Services.Markets.MarketsHelperService" /> class.</summary>
-        </member>
-        <member name="E:LiLo.Lite.Services.Markets.MarketsHelperService.PropertyChanged">
-            <summary>Raised when a public property of this object is set.</summary>
         </member>
         <member name="P:LiLo.Lite.Services.Markets.MarketsHelperService.DialogService">
             <summary>Gets the dialogue service.</summary>
@@ -588,32 +501,8 @@
             <param name="message">Sockets message.</param>
             <returns>Task result.</returns>
         </member>
-        <member name="T:LiLo.Lite.Services.Settings.ISettingsService">
-            <summary>Application settings service interface.</summary>
-        </member>
-        <member name="P:LiLo.Lite.Services.Settings.ISettingsService.HasDefaultThemeOption">
-            <summary>Gets a value indicating whether the device has a default theme option for the appropriate device and version.</summary>
-        </member>
-        <member name="P:LiLo.Lite.Services.Settings.ISettingsService.ThemeOption">
-            <summary>Gets or sets the users selected theme.</summary>
-        </member>
-        <member name="T:LiLo.Lite.Services.Settings.SettingsService">
-            <summary>Application settings service.</summary>
-        </member>
-        <member name="P:LiLo.Lite.Services.Settings.SettingsService.HasDefaultThemeOption">
-            <summary>Gets a value indicating whether the device has a default theme option for the appropriate device and version.</summary>
-        </member>
-        <member name="P:LiLo.Lite.Services.Settings.SettingsService.ThemeOption">
-            <summary>Gets or sets the users selected theme.</summary>
-        </member>
         <member name="T:LiLo.Lite.Services.Sockets.ISocketsService">
             <summary>Web Sockets Service interface.</summary>
-        </member>
-        <member name="E:LiLo.Lite.Services.Sockets.ISocketsService.PropertyChanged">
-            <summary>Raised when a public property of this object is set.</summary>
-        </member>
-        <member name="P:LiLo.Lite.Services.Sockets.ISocketsService.IsConnected">
-            <summary>Gets a value indicating whether the sockets service is connected.</summary>
         </member>
         <member name="M:LiLo.Lite.Services.Sockets.ISocketsService.WebSocket_Close">
             <summary>Handle when the application closes the sockets connection.</summary>
@@ -643,9 +532,6 @@
         </member>
         <member name="F:LiLo.Lite.Services.Sockets.SocketsService.webSocket">
             <summary>Web Socket.</summary>
-        </member>
-        <member name="E:LiLo.Lite.Services.Sockets.SocketsService.PropertyChanged">
-            <summary>Raised when a public property of this object is set.</summary>
         </member>
         <member name="P:LiLo.Lite.Services.Sockets.SocketsService.DialogService">
             <summary>Gets the dialogue service.</summary>
@@ -909,16 +795,6 @@
             <summary>Handle the device back button being pressed.</summary>
             <remarks>As this is the root page, we have to prevent the back button otherwise it will exit the application.</remarks>
             <returns>true; cancellation of back button.</returns>
-        </member>
-        <member name="T:Lilo.Lite.Services.NotifyPropertyChangedBase">
-            <summary>Notify property changed base class.</summary>
-        </member>
-        <member name="E:Lilo.Lite.Services.NotifyPropertyChangedBase.PropertyChanged">
-            <summary>Property changed event handler.</summary>
-        </member>
-        <member name="M:Lilo.Lite.Services.NotifyPropertyChangedBase.NotifyPropertyChanged(System.String)">
-            <summary>This method is called by the Set accessors of each property.</summary>
-            <param name="propertyName">Optionally causes the property name of the caller to be substituted as an argument.</param>
         </member>
     </members>
 </doc>

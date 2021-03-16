@@ -22,9 +22,6 @@ namespace LiLo.Lite.Services.Markets
 	/// <summary>Markets helper service.</summary>
 	public interface IMarketsHelperService
 	{
-		/// <summary>Property changed event</summary>
-		event PropertyChangedEventHandler PropertyChanged;
-
 		/// <summary>Gets or sets a list of Markets.</summary>
 		ObservableRangeCollection<MarketModel> MarketsList { get; set; }
 

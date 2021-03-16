@@ -16,7 +16,6 @@ namespace LiLo.Lite.ViewModels
 	using System;
 	using System.Net.Http;
 	using System.Threading.Tasks;
-	using System.Windows.Input;
 	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.CommunityToolkit.ObjectModel;
@@ -39,7 +38,7 @@ namespace LiLo.Lite.ViewModels
 		{
 			this.IsBusy = true;
 			this.Title = "Markets";
-			this.RetryButtonClicked = new Command(async () => await this.Init());
+			this.RetryButtonClicked = new AsyncCommand(this.Init);
 			this.Init().ConfigureAwait(false);
 		}
 
@@ -73,7 +72,7 @@ namespace LiLo.Lite.ViewModels
 		}
 
 		/// <summary>Gets or sets the retry button command.</summary>
-		public ICommand RetryButtonClicked { get; set; }
+		public IAsyncCommand RetryButtonClicked { get; set; }
 
 		/// <summary>Gets or sets the selected item.</summary>
 		public MarketModel SelectedItem

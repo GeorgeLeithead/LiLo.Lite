@@ -109,7 +109,7 @@
 				IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}">
 				<TableView HasUnevenRows="True" Intent="Settings">
 					<TableRoot>
-						<TableSection Title="Theme">
+						<TableSection Title="Theme" TextColor="{AppThemeBinding Light={StaticResource Gray-Black}, Dark={StaticResource Gray-White}}">
 							<ViewCell>
 								<!--  Grid for Theme label and navigation bar icon  -->
 								<!--  Theme choice  -->
@@ -177,7 +177,7 @@
 								</Grid>
 							</ViewCell>
 						</TableSection>
-						<TableSection Title="Favourites">
+						<TableSection Title="Favourites" TextColor="{AppThemeBinding Light={StaticResource Gray-Black}, Dark={StaticResource Gray-White}}">
 							<SwitchCell
 								On="{Binding FavouritesEnabled}"
 								OnColor="{StaticResource MarketUpTextColor}"
@@ -189,7 +189,7 @@
 									Text="manage &gt;" />
 							</ViewCell>
 						</TableSection>
-						<TableSection Title="App Settings">
+						<TableSection Title="App Settings" TextColor="{AppThemeBinding Light={StaticResource Gray-Black}, Dark={StaticResource Gray-White}}">
 							<ImageCell
 								Height="32"
 								Command="{Binding SettingsCommand}"
@@ -197,7 +197,7 @@
 								                              Dark='settings_dark.png'}"
 								Text="View" />
 						</TableSection>
-						<TableSection Title="About">
+						<TableSection Title="About" TextColor="{AppThemeBinding Light={StaticResource Gray-Black}, Dark={StaticResource Gray-White}}">
 							<ViewCell>
 								<StackLayout>
 									<Label Text="Please contact us on the social platform(s) below.  Please include the application information above, your device details, a description of your problem and steps to replicate." />

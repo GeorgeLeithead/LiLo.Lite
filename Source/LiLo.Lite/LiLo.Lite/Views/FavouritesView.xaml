@@ -71,6 +71,7 @@
 									x:DataType="models:ItemViewModel"
 									HorizontalOptions="Start"
 									Orientation="Horizontal"
+									Style="{StaticResource FavouritesStackLayout}"
 									VerticalOptions="Start"
 									WidthRequest="80">
 									<StackLayout.GestureRecognizers>
@@ -85,11 +86,7 @@
 											DropCommandParameter="{Binding}" />
 									</StackLayout.GestureRecognizers>
 									<Grid BackgroundColor="Yellow" IsVisible="{Binding IsBeingDraggedOver}" />
-									<Image
-										HeightRequest="40"
-										Source="{Binding Symbol, StringFormat='{0}.png'}"
-										Style="{StaticResource SymbolImageStyle}"
-										WidthRequest="40">
+									<Image Source="{Binding Symbol, StringFormat='{0}.png'}" Style="{StaticResource FavouritesSymbolImageStyle}">
 										<Image.GestureRecognizers>
 											<DragGestureRecognizer
 												CanDrag="True"

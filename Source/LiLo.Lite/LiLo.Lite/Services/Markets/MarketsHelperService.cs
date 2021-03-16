@@ -15,20 +15,18 @@ namespace LiLo.Lite.Services.Markets
 {
 	using System;
 	using System.Collections.Generic;
-	using System.ComponentModel;
 	using System.Linq;
 	using System.Text.Json;
 	using System.Threading.Tasks;
 	using LiLo.Lite.Models.BinanceModels;
 	using LiLo.Lite.Models.Markets;
-	using Lilo.Lite.Services;
 	using LiLo.Lite.Services.Dialog;
 	using WebSocketSharp;
 	using Xamarin.CommunityToolkit.ObjectModel;
 	using Xamarin.Forms;
 
 	/// <summary>Markets helper service.</summary>
-	public class MarketsHelperService : NotifyPropertyChangedBase, IMarketsHelperService
+	public class MarketsHelperService : IMarketsHelperService
 	{
 		private IDialogService dialogService;
 
@@ -36,13 +34,6 @@ namespace LiLo.Lite.Services.Markets
 		public MarketsHelperService()
 		{
 			this.MarketsList = new ObservableRangeCollection<MarketModel>();
-		}
-
-		/// <summary>Raised when a public property of this object is set.</summary>
-		public override event PropertyChangedEventHandler PropertyChanged
-		{
-			add { base.PropertyChanged += value; }
-			remove { base.PropertyChanged -= value; }
 		}
 
 		/// <summary>Gets the dialogue service.</summary>
