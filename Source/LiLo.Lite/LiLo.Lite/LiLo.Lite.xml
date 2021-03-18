@@ -708,6 +708,9 @@
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.FavouritesManageCommand">
             <summary>Gets the favourites manage command.</summary>
         </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.GithubCommand">
+            <summary>Gets the GitHub command.</summary>
+        </member>
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.SettingsCommand">
             <summary>Gets the app settings command.</summary>
         </member>

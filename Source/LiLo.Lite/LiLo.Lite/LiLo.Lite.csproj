@@ -1,27 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-	<TargetFramework>netstandard2.0</TargetFramework>
-	<ProduceReferenceAssembly>true</ProduceReferenceAssembly>
-	  <LangVersion>8.0</LangVersion>
-	  <Description>LiLo 'lite' is a light-weight version of LiLo. The mobile application is written using Xamarin.Forms and integrates with the Binance WebSockets service to provide live real-time market information, and using a WebView to display charting information from TradingView.</Description>
-	  <Copyright>2021 George Leithead, InternetWideWorld.com</Copyright>
-	  <PackageProjectUrl>https://github.com/GeorgeLeithead/LiLo.Lite</PackageProjectUrl>
-	  <RepositoryUrl>https://github.com/GeorgeLeithead/LiLo.Lite</RepositoryUrl>
-	  <RepositoryType>GIT</RepositoryType>
-	  <PackageTags>Binance;Crypto;Cardano;ADA;Algorand;ALGO;Cosmos;ATOM;BAT;Bitcoin Cash;BCH;Binance Coin;BNB;Bitcoin;BTC;Compound;COMP;DASH;Dogecoin;DOGE;EOS;Etherium Classic;ETC;Etherium;ETH;IOST;IOTA;Cyber Network;KNC;Chainlink;LINK;Litecoin;LTC;NEO;OMG Network;OMG;Ontology;ONT;QTUM;Swipe;SXP;Theta Network;THETA;Tron;TRX;VeChain;VET;Stellar;XLM;Monero;XMR;XRP;Tezos;XTZ;ZCash;ZEC;Zilliqa;ZIL;Ox;ZRX)</PackageTags>
-	  <Company>InternetWideWorld.com</Company>
-	  <Authors>George Leithead</Authors>
-	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
-	  <PackageIcon>launcher_foreground.png</PackageIcon>
-	  <AssemblyVersion>1.0.6.0</AssemblyVersion>
-	  <FileVersion>1.0.6.0</FileVersion>
-	  <Version>1.0.5</Version>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+		<LangVersion>8.0</LangVersion>
+		<Description>LiLo 'lite' is a light-weight version of LiLo. The mobile application is written using Xamarin.Forms and integrates with the Binance WebSockets service to provide live real-time market information, and using a WebView to display charting information from TradingView.</Description>
+		<Copyright>2021 George Leithead, InternetWideWorld.com</Copyright>
+		<PackageProjectUrl>https://github.com/GeorgeLeithead/LiLo.Lite</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/GeorgeLeithead/LiLo.Lite</RepositoryUrl>
+		<RepositoryType>GIT</RepositoryType>
+		<PackageTags>Binance;Crypto;Cardano;ADA;Algorand;ALGO;Cosmos;ATOM;BAT;Bitcoin Cash;BCH;Binance Coin;BNB;Bitcoin;BTC;Compound;COMP;DASH;Dogecoin;DOGE;EOS;Etherium Classic;ETC;Etherium;ETH;IOST;IOTA;Cyber Network;KNC;Chainlink;LINK;Litecoin;LTC;NEO;OMG Network;OMG;Ontology;ONT;QTUM;Swipe;SXP;Theta Network;THETA;Tron;TRX;VeChain;VET;Stellar;XLM;Monero;XMR;XRP;Tezos;XTZ;ZCash;ZEC;Zilliqa;ZIL;Ox;ZRX)</PackageTags>
+		<Company>InternetWideWorld.com</Company>
+		<Authors>George Leithead</Authors>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageIcon>launcher_foreground.png</PackageIcon>
+		<AssemblyVersion>1.0.6.0</AssemblyVersion>
+		<FileVersion>1.0.6.0</FileVersion>
+		<Version>1.0.5</Version>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>.\LiLo.Lite.xml</DocumentationFile>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DocumentationFile>.\LiLo.Lite.xml</DocumentationFile>
+	</PropertyGroup>
 
 	<ItemGroup>
 		<AdditionalFiles Include="..\stylecop.json" Link="stylecop.json" />
@@ -29,22 +29,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	<PackageReference Include="Acr.UserDialogs" Version="7.1.0.481" />
-	<PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.1.0" />
-	<PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.1.0" />
-	<PackageReference Include="Microsoft.AppCenter.Distribute" Version="4.1.0" />
-	<PackageReference Include="Resizetizer.NT" Version="0.2.0" />
-	<PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
-	  <PrivateAssets>all</PrivateAssets>
-	  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-	</PackageReference>
-	<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
-	<PackageReference Include="System.Text.Json" Version="5.0.1" />
-	<PackageReference Include="WebSocketSharp-netstandard" Version="1.0.1" />
-	<PackageReference Include="Xamarin.CommunityToolkit" Version="1.0.3" />
-	<PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
-	<PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
-  </ItemGroup>
+		<PackageReference Include="Acr.UserDialogs" Version="7.1.0.481" />
+		<PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.1.0" />
+		<PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.1.0" />
+		<PackageReference Include="Microsoft.AppCenter.Distribute" Version="4.1.0" />
+		<PackageReference Include="Resizetizer.NT" Version="0.2.0" />
+		<PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+		<PackageReference Include="System.Text.Json" Version="5.0.1" />
+		<PackageReference Include="WebSocketSharp-netstandard" Version="1.0.1" />
+		<PackageReference Include="Xamarin.CommunityToolkit" Version="1.0.3" />
+		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+		<PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<None Remove="Services\Markets.json" />
@@ -57,6 +57,7 @@
 		<None Remove="SharedImages\settings_dark.svg" />
 		<None Remove="SharedImages\settings.svg" />
 		<None Remove="SharedImages\twitter.svg" />
+		<None Remove="SharedImages\github.svg" />
 
 		<None Remove="SharedImages\aave.svg" />
 		<None Remove="SharedImages\ada.svg" />
@@ -135,12 +136,12 @@
 		<None Remove="SharedImages\zrx.svg" />
 		<EmbeddedResource Include="Services\Markets.json" />
 		<None Include="..\..\..\LICENSE">
-		  <Pack>True</Pack>
-		  <PackagePath></PackagePath>
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
 		</None>
 		<None Include="..\..\..\Screenshots\launcher_foreground.png">
-		  <Pack>True</Pack>
-		  <PackagePath></PackagePath>
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
 		</None>
 	</ItemGroup>
 
@@ -154,6 +155,7 @@
 		<SharedImage Include="SharedImages\settings.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\settings_dark.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\twitter.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\github.svg" BaseSize="32,32" />
 
 		<SharedImage Include="SharedImages\aave.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\ada.svg" BaseSize="32,32" />
@@ -233,20 +235,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Update="AppShell.xaml">
-	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-	  </EmbeddedResource>
-	  <EmbeddedResource Update="Controls\TitleBar.xaml">
-	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-	  </EmbeddedResource>
-	  <EmbeddedResource Update="Views\FavouritesView.xaml">
-	    <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-	  </EmbeddedResource>
+		<EmbeddedResource Update="AppShell.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Controls\TitleBar.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Views\FavouritesView.xaml">
+			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="Controls\TitleBar.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </None>
+		<None Update="Controls\TitleBar.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</None>
 	</ItemGroup>
 </Project>

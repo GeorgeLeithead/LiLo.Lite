@@ -40,6 +40,9 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Gets the favourites manage command.</summary>
 		public IAsyncCommand FavouritesManageCommand => new AsyncCommand(this.FavouritesManageClicked, allowsMultipleExecutions: false);
 
+		/// <summary>Gets the GitHub command.</summary>
+		public IAsyncCommand GithubCommand => new AsyncCommand(this.GitHubClicked, allowsMultipleExecutions: false);
+
 		/// <summary>Gets the app settings command.</summary>
 		public IAsyncCommand SettingsCommand => new AsyncCommand(this.SettingsCommandClicked, allowsMultipleExecutions: false);
 
@@ -75,6 +78,8 @@ namespace LiLo.Lite.ViewModels
 		public IAsyncCommand TwitterCommand => new AsyncCommand(this.TwitterCommandClicked, allowsMultipleExecutions: false);
 
 		private async Task FavouritesManageClicked() => await Shell.Current.GoToAsync("///Favourites");
+
+		private async Task GitHubClicked() => await Browser.OpenAsync(new Uri("https://github.com/GeorgeLeithead/LiLo.Lite"), BrowserLaunchMode.SystemPreferred);
 
 		private async Task SettingsCommandClicked()
 		{

@@ -21,8 +21,10 @@
 			<Color x:Key="MarketDownTextColor">#ff4a4a</Color>
 			<Color x:Key="MarketDownBackgroundColor">#aa1221</Color>
 
-			<Color x:Key="LightRadioButtonColor">#F3F2F1</Color>
-			<Color x:Key="DarkRadioButtonColor">#9B9A99</Color>
+			<!--  Ladder Colours  -->
+			<Color x:Key="LadderLeftColor">#179C52</Color>
+			<Color x:Key="LadderMiddleColor">#176BEF</Color>
+			<Color x:Key="LadderRightColor">#FF3E30</Color>
 
 			<!--  Gray Colours  -->
 			<Color x:Key="Gray-100">#F6F7F8</Color>
@@ -154,7 +156,7 @@
 				<Setter Property="Margin" Value="0" />
 				<Setter Property="Padding" Value="5" />
 				<Setter Property="CornerRadius" Value="10" />
-				<Setter Property="HasShadow" Value="False" />
+				<Setter Property="HasShadow" Value="{OnPlatform iOS=false, Default=true}" />
 				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
 				<Setter Property="VerticalOptions" Value="FillAndExpand" />
 			</Style>
@@ -208,6 +210,37 @@
 				<Setter Property="VerticalTextAlignment" Value="Center" />
 				<Setter Property="HorizontalOptions" Value="Start" />
 				<Setter Property="VerticalOptions" Value="Center" />
+				<Setter Property="Margin" Value="0,8,0,0" />
+			</Style>
+
+			<Style
+				x:Key="SettingViewStandardStyle"
+				BasedOn="{StaticResource SettingsViewStyle}"
+				TargetType="{x:Type Label}">
+				<Setter Property="FontSize" Value="Medium" />
+			</Style>
+			<Style
+				x:Key="SettingsThemeStyle"
+				BasedOn="{StaticResource SettingsViewStyle}"
+				TargetType="{x:Type Label}">
+				<Setter Property="FontSize" Value="Micro" />
+			</Style>
+			<Style x:Key="SettingsImageButton" TargetType="{x:Type ImageButton}">
+				<Setter Property="Aspect" Value="AspectFill" />
+				<Setter Property="CornerRadius" Value="8" />
+				<Setter Property="HeightRequest" Value="32" />
+				<Setter Property="WidthRequest" Value="32" />
+				<Setter Property="BackgroundColor" Value="Transparent" />
+			</Style>
+			<Style x:Key="SettingsThemeFrame" TargetType="{x:Type Frame}">
+				<Setter Property="Padding" Value="0" />
+				<Setter Property="BackgroundColor" Value="{AppThemeBinding Dark={StaticResource Gray-700}, Light={StaticResource Gray-300}}" />
+				<Setter Property="BorderColor" Value="{AppThemeBinding Dark={StaticResource Gray-700}, Light={StaticResource Gray-300}}" />
+				<Setter Property="HasShadow" Value="False" />
+				<Setter Property="HeightRequest" Value="80" />
+				<Setter Property="WidthRequest" Value="80" />
+				<Setter Property="HorizontalOptions" Value="Start" />
+				<Setter Property="VerticalOptions" Value="Start" />
 			</Style>
 
 			<!--  Common style for icon label  -->
