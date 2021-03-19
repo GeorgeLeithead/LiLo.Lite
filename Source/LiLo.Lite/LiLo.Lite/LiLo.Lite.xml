@@ -717,6 +717,9 @@
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.SystemThemeSupported">
             <summary>Gets a value indicating whether the system theme is supported.</summary>
         </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.Version">
+            <summary>Gets the application version.</summary>
+        </member>
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.ThemeDark">
             <summary>Gets a value indicating whether dark theme is enabled.</summary>
         </member>

@@ -9,8 +9,10 @@
 namespace LiLo.Lite.ViewModels
 {
 	using System;
+	using System.Collections.Generic;
 	using System.Threading.Tasks;
 	using LiLo.Lite.ViewModels.Base;
+	using Microsoft.AppCenter.Analytics;
 	using Xamarin.CommunityToolkit.ObjectModel;
 	using Xamarin.Essentials;
 	using Xamarin.Forms;
@@ -32,6 +34,7 @@ namespace LiLo.Lite.ViewModels
 			get => Preferences.Get(nameof(this.FavouritesEnabled), false);
 			set
 			{
+				Analytics.TrackEvent("FavouritesEnabled", new Dictionary<string, string> { { nameof(this.FavouritesEnabled), value.ToString() } });
 				Preferences.Set(nameof(this.FavouritesEnabled), value);
 				this.NotifyPropertyChanged(() => this.FavouritesEnabled);
 			}
@@ -64,6 +67,9 @@ namespace LiLo.Lite.ViewModels
 				return DeviceInfo.Version >= minDefaultVersion;
 			}
 		}
+
+		/// <summary>Gets the application version.</summary>
+		public string Version => AppInfo.VersionString;
 
 		/// <summary>Gets a value indicating whether dark theme is enabled.</summary>
 		public bool ThemeDark => Application.Current.UserAppTheme == OSAppTheme.Dark;

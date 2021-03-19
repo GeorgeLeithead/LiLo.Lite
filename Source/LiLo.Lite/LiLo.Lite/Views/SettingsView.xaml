@@ -94,7 +94,45 @@
 				IsVisible="{Binding IsBusy}"
 				VerticalOptions="CenterAndExpand" />
 			<ScrollView Grid.Row="1" IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}">
-				<Grid ColumnDefinitions="{OnIdiom Phone='Auto, *, Auto', Default='.05*, .9*, .05*'}">
+				<Grid>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition>
+							<ColumnDefinition.Width>
+								<OnIdiom x:TypeArguments="GridLength">
+									<OnIdiom.Phone>
+										<OnPlatform x:TypeArguments="GridLength" Default="Auto" />
+									</OnIdiom.Phone>
+									<OnIdiom.Default>
+										<OnPlatform x:TypeArguments="GridLength" Default="0.05*" />
+									</OnIdiom.Default>
+								</OnIdiom>
+							</ColumnDefinition.Width>
+						</ColumnDefinition>
+						<ColumnDefinition>
+							<ColumnDefinition.Width>
+								<OnIdiom x:TypeArguments="GridLength">
+									<OnIdiom.Phone>
+										<OnPlatform x:TypeArguments="GridLength" Default="*" />
+									</OnIdiom.Phone>
+									<OnIdiom.Default>
+										<OnPlatform x:TypeArguments="GridLength" Default="0.9*" />
+									</OnIdiom.Default>
+								</OnIdiom>
+							</ColumnDefinition.Width>
+						</ColumnDefinition>
+						<ColumnDefinition>
+							<ColumnDefinition.Width>
+								<OnIdiom x:TypeArguments="GridLength">
+									<OnIdiom.Phone>
+										<OnPlatform x:TypeArguments="GridLength" Default="Auto" />
+									</OnIdiom.Phone>
+									<OnIdiom.Default>
+										<OnPlatform x:TypeArguments="GridLength" Default="0.05*" />
+									</OnIdiom.Default>
+								</OnIdiom>
+							</ColumnDefinition.Width>
+						</ColumnDefinition>
+					</Grid.ColumnDefinitions>
 					<StackLayout Grid.Column="1">
 						<Label
 							Margin="0"
@@ -161,7 +199,7 @@
 									Grid.Row="0"
 									Grid.Column="0"
 									Style="{StaticResource SettingViewStandardStyle}"
-									Text="Enabled" />
+									Text="Use Favourites" />
 								<Switch
 									Grid.Row="0"
 									Grid.Column="2"
@@ -172,13 +210,15 @@
 									Grid.Row="1"
 									Grid.Column="2"
 									Command="{Binding FavouritesManageCommand}"
+									CornerRadius="8"
 									IsEnabled="{Binding FavouritesEnabled}"
-									Text="manage &gt;" />
+									Text="Manage &#x003e;" />
 							</Grid>
 						</Frame>
-						<Label Style="{StaticResource SettingsViewStyle}" Text="App Settings" />
+						<Label Style="{StaticResource SettingsViewStyle}" Text="App Info" />
 						<Frame>
 							<Grid ColumnDefinitions="*, 32">
+								<Label Style="{StaticResource SettingViewStandardStyle}" Text="{Binding Version, StringFormat='Copyright George Leithead, Ver: {0}'}" />
 								<ImageButton
 									Grid.Column="1"
 									Command="{Binding SettingsCommand}"
