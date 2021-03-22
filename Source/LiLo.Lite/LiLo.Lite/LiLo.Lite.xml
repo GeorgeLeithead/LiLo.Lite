@@ -702,6 +702,9 @@
         <member name="M:LiLo.Lite.ViewModels.SettingsViewModel.#ctor">
             <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.ViewModels.SettingsViewModel"/> class.</summary>
         </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.EdgeBrowserCommand">
+            <summary>Gets the edge browser command.</summary>
+        </member>
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.FavouritesEnabled">
             <summary>Gets or sets a value indicating whether favourites is enabled.</summary>
         </member>
@@ -717,9 +720,6 @@
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.SystemThemeSupported">
             <summary>Gets a value indicating whether the system theme is supported.</summary>
         </member>
-        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.Version">
-            <summary>Gets the application version.</summary>
-        </member>
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.ThemeDark">
             <summary>Gets a value indicating whether dark theme is enabled.</summary>
         </member>
@@ -731,6 +731,9 @@
         </member>
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.TwitterCommand">
             <summary>Gets the twitter command.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.Version">
+            <summary>Gets the application version.</summary>
         </member>
         <member name="M:LiLo.Lite.ViewModels.SettingsViewModel.TwitterCommandClicked">
             <summary>Link to the twitter page for LiLo.</summary>

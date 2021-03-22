@@ -211,7 +211,7 @@
 									Grid.Column="2"
 									Command="{Binding FavouritesManageCommand}"
 									CornerRadius="8"
-									IsEnabled="{Binding FavouritesEnabled}"
+									IsVisible="{Binding FavouritesEnabled}"
 									Text="Manage &#x003e;" />
 							</Grid>
 						</Frame>
@@ -230,20 +230,25 @@
 						<Label Style="{StaticResource SettingsViewStyle}" Text="About" />
 						<Frame>
 							<Grid
-								ColumnDefinitions="*, 32, 32"
+								ColumnDefinitions="*, 32, 32, 32"
 								ColumnSpacing="8"
 								RowDefinitions="Auto, 32"
 								RowSpacing="10">
 								<Label
 									Grid.Row="0"
 									Grid.Column="0"
-									Grid.ColumnSpan="3"
+									Grid.ColumnSpan="4"
 									Style="{StaticResource SettingViewStandardStyle}"
-									Text="Please contact us on the social platform(s) below.  Please include the application information from above (version, release, etc.), your device details, a description of your problem and steps to replicate." />
+									Text="Please contact us on the social platform(s) below.  Please include the application information from above (version, release, etc.), your device details, a description of your problem and steps to replicate.  You can also just reach out and say 'hello'." />
+								<ImageButton
+									Grid.Row="1"
+									Grid.Column="3"
+									Command="{Binding EdgeBrowserCommand}"
+									Source="edgeBrowser.png"
+									Style="{StaticResource SettingsImageButton}" />
 								<ImageButton
 									Grid.Row="1"
 									Grid.Column="1"
-									BackgroundColor="Green"
 									Command="{Binding GithubCommand}"
 									Source="github.png"
 									Style="{StaticResource SettingsImageButton}" />

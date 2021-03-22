@@ -28,6 +28,9 @@ namespace LiLo.Lite.ViewModels
 			this.IsBusy = false;
 		}
 
+		/// <summary>Gets the edge browser command.</summary>
+		public IAsyncCommand EdgeBrowserCommand => new AsyncCommand(this.BrowserCommandClicked, allowsMultipleExecutions: false);
+
 		/// <summary>Gets or sets a value indicating whether favourites is enabled.</summary>
 		public bool FavouritesEnabled
 		{
@@ -41,10 +44,10 @@ namespace LiLo.Lite.ViewModels
 		}
 
 		/// <summary>Gets the favourites manage command.</summary>
-		public IAsyncCommand FavouritesManageCommand => new AsyncCommand(this.FavouritesManageClicked, allowsMultipleExecutions: false);
+		public IAsyncCommand FavouritesManageCommand => new AsyncCommand(this.FavouritesManageCommandClicked, allowsMultipleExecutions: false);
 
 		/// <summary>Gets the GitHub command.</summary>
-		public IAsyncCommand GithubCommand => new AsyncCommand(this.GitHubClicked, allowsMultipleExecutions: false);
+		public IAsyncCommand GithubCommand => new AsyncCommand(this.GitHubCommandClicked, allowsMultipleExecutions: false);
 
 		/// <summary>Gets the app settings command.</summary>
 		public IAsyncCommand SettingsCommand => new AsyncCommand(this.SettingsCommandClicked, allowsMultipleExecutions: false);
@@ -68,9 +71,6 @@ namespace LiLo.Lite.ViewModels
 			}
 		}
 
-		/// <summary>Gets the application version.</summary>
-		public string Version => AppInfo.VersionString;
-
 		/// <summary>Gets a value indicating whether dark theme is enabled.</summary>
 		public bool ThemeDark => Application.Current.UserAppTheme == OSAppTheme.Dark;
 
@@ -83,9 +83,14 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Gets the twitter command.</summary>
 		public IAsyncCommand TwitterCommand => new AsyncCommand(this.TwitterCommandClicked, allowsMultipleExecutions: false);
 
-		private async Task FavouritesManageClicked() => await Shell.Current.GoToAsync("///Favourites");
+		/// <summary>Gets the application version.</summary>
+		public string Version => AppInfo.VersionString;
 
-		private async Task GitHubClicked() => await Browser.OpenAsync(new Uri("https://github.com/GeorgeLeithead/LiLo.Lite"), BrowserLaunchMode.SystemPreferred);
+		private async Task BrowserCommandClicked() => await Browser.OpenAsync(new Uri("https://www.internetwideworld.com/lilolite"), BrowserLaunchMode.SystemPreferred);
+
+		private async Task FavouritesManageCommandClicked() => await Shell.Current.GoToAsync("///Favourites");
+
+		private async Task GitHubCommandClicked() => await Browser.OpenAsync(new Uri("https://github.com/GeorgeLeithead/LiLo.Lite"), BrowserLaunchMode.SystemPreferred);
 
 		private async Task SettingsCommandClicked()
 		{

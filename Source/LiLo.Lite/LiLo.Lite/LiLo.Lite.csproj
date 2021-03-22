@@ -16,7 +16,7 @@
 		<PackageIcon>launcher_foreground.png</PackageIcon>
 		<AssemblyVersion>1.0.6.0</AssemblyVersion>
 		<FileVersion>1.0.6.0</FileVersion>
-		<Version>1.0.5</Version>
+		<Version>1.0.6</Version>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -58,6 +58,7 @@
 		<None Remove="SharedImages\settings.svg" />
 		<None Remove="SharedImages\twitter.svg" />
 		<None Remove="SharedImages\github.svg" />
+		<None Remove="SharedImages\edgeBrowser.svg" />
 
 		<None Remove="SharedImages\aave.svg" />
 		<None Remove="SharedImages\ada.svg" />
@@ -156,6 +157,7 @@
 		<SharedImage Include="SharedImages\settings_dark.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\twitter.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\github.svg" BaseSize="32,32" />
+		<SharedImage Include="SharedImages\edgeBrowser.svg" BaseSize="32,32" />
 
 		<SharedImage Include="SharedImages\aave.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\ada.svg" BaseSize="32,32" />

@@ -42,7 +42,10 @@ namespace LiLo.Lite
 			this.socketsService = DependencyService.Resolve<SocketsService>();
 			DependencyService.Register<DialogService>();
 			DependencyService.Register<MarketsHelperService>();
-			this.MainPage = new AppShell();
+			Xamarin.Forms.Device.BeginInvokeOnMainThread(() =>
+			{
+				Current.MainPage = new AppShell();
+			});
 		}
 
 		/// <summary>Gets or sets the UI Parent.</summary>
