@@ -805,5 +805,8 @@
             <remarks>As this is the root page, we have to prevent the back button otherwise it will exit the application.</remarks>
             <returns>true; cancellation of back button.</returns>
         </member>
+        <member name="T:System.Runtime.CompilerServices.IsExternalInit">
+            <summary>Fix for C#9 quirk in non-.NET 5 project and when using a record.</summary>
+        </member>
     </members>
 </doc>
