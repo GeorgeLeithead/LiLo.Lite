@@ -42,10 +42,17 @@ namespace LiLo.Lite
 			this.socketsService = DependencyService.Resolve<SocketsService>();
 			DependencyService.Register<DialogService>();
 			DependencyService.Register<MarketsHelperService>();
-			Xamarin.Forms.Device.BeginInvokeOnMainThread(() =>
+			if (Xamarin.Forms.Device.RuntimePlatform == Xamarin.Forms.Device.iOS)
 			{
-				Current.MainPage = new AppShell();
-			});
+				this.MainPage = new AppShell();
+			}
+			else
+			{
+				Xamarin.Forms.Device.BeginInvokeOnMainThread(() =>
+				{
+					Current.MainPage = new AppShell();
+				});
+			}
 		}
 
 		/// <summary>Gets or sets the UI Parent.</summary>
@@ -75,7 +82,7 @@ namespace LiLo.Lite
 		protected override void OnStart()
 		{
 			base.OnStart();
-			AppCenter.Start("android=4d413467-bf37-45b0-bf18-b8d15d98a182;", typeof(Analytics), typeof(Crashes), typeof(Distribute));
+			AppCenter.Start("android=4d413467-bf37-45b0-bf18-b8d15d98a182;ios=fc7532d3-fdc1-4447-99a7-33d07c9bae08;", typeof(Analytics), typeof(Crashes), typeof(Distribute));
 			if (!DesignMode.IsDesignModeEnabled)
 			{
 				this.socketsService?.Connect();
