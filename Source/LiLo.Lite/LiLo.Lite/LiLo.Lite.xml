@@ -626,11 +626,17 @@
         <member name="P:LiLo.Lite.ViewModels.ChartViewModel.SelectedItem">
             <summary>Gets or sets the selected market item.</summary>
         </member>
+        <member name="P:LiLo.Lite.ViewModels.ChartViewModel.SwipeItemAlertCommand">
+            <summary>Gets an swipe item Alert command.</summary>
+        </member>
         <member name="P:LiLo.Lite.ViewModels.ChartViewModel.Symbol">
             <summary>Sets the market symbol.</summary>
         </member>
         <member name="P:LiLo.Lite.ViewModels.ChartViewModel.TradingViewChart">
             <summary>Gets or sets the trading view chart source.</summary>
+        </member>
+        <member name="M:LiLo.Lite.ViewModels.ChartViewModel.OnSwipeItemAlert">
+            <summary>Item has been swiped and Alert selected.</summary>
         </member>
         <member name="T:LiLo.Lite.ViewModels.FavouritesViewModel">
             <summary>Favourites view model.</summary>
@@ -690,11 +696,18 @@
         <member name="P:LiLo.Lite.ViewModels.HomeViewModel.SelectedItem">
             <summary>Gets or sets the selected item.</summary>
         </member>
+        <member name="P:LiLo.Lite.ViewModels.HomeViewModel.SwipeItemAlertCommand">
+            <summary>Gets an swipe item Alert command.</summary>
+        </member>
         <member name="P:LiLo.Lite.ViewModels.HomeViewModel.Symbol">
             <summary>Gets or sets the market symbol.</summary>
         </member>
         <member name="M:LiLo.Lite.ViewModels.HomeViewModel.Init">
             <summary>Initialise the home view model.</summary>
+        </member>
+        <member name="M:LiLo.Lite.ViewModels.HomeViewModel.OnSwipeItemAlert(LiLo.Lite.Models.Markets.MarketModel)">
+            <summary>Market Model item has been swiped and Alert selected.</summary>
+            <param name="item">{MarketModel} item.</param>
         </member>
         <member name="T:LiLo.Lite.ViewModels.SettingsViewModel">
             <summary>Settings view model.</summary>

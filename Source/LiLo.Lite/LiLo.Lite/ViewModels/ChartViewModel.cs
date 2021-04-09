@@ -16,6 +16,7 @@ namespace LiLo.Lite.ViewModels
 	using System;
 	using System.Globalization;
 	using System.Linq;
+	using System.Windows.Input;
 	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.Forms;
@@ -90,6 +91,7 @@ iframe.body {
 		public ChartViewModel()
 		{
 			this.IsBusy = true;
+			this.SwipeItemAlertCommand = new Command(this.OnSwipeItemAlert);
 			this.IsBusy = false;
 		}
 
@@ -104,6 +106,9 @@ iframe.body {
 				this.TradingViewChart = new HtmlWebViewSource();
 			}
 		}
+
+		/// <summary>Gets an swipe item Alert command.</summary>
+		public ICommand SwipeItemAlertCommand { get; private set; }
 
 		/// <summary>Sets the market symbol.</summary>
 		public string Symbol
@@ -132,6 +137,14 @@ iframe.body {
 				this.tradingViewChart = new HtmlWebViewSource() { Html = TradingViewString.Replace("XX0XX", TimeZoneInfo.Local.ToString()).Replace("XX1XX", colorTheme).Replace("XX2XX", CultureInfo.CurrentCulture.IetfLanguageTag.Substring(0, 2)).Replace("XX3XX", symbol) };
 				this.NotifyPropertyChanged(() => this.TradingViewChart);
 			}
+		}
+
+		/// <summary>Item has been swiped and Alert selected.</summary>
+		private void OnSwipeItemAlert()
+		{
+			// TODO: Implement the ability to set alerts for market items
+			MarketModel item = this.SelectedItem;
+			_ = this.DialogService.ShowAlertAsync($"Local alerts coming soon for {item.SymbolString}.", "Alerts", "Dismiss");
 		}
 	}
 }

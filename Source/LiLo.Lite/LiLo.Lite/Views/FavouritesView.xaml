@@ -59,7 +59,7 @@
 						WidthRequest="80">
 						<CollectionView.GroupHeaderTemplate>
 							<DataTemplate>
-								<Frame x:DataType="models:ItemsGroupViewModel">
+								<Frame x:DataType="models:ItemsGroupViewModel" Style="{StaticResource DefaultFrameStyle}">
 									<Label Style="{StaticResource SettingsViewStyle}" Text="{Binding Name}" />
 								</Frame>
 							</DataTemplate>

@@ -16,10 +16,10 @@
 			<Color x:Key="WindowBackgroundColorDark">#000</Color>
 
 			<!--  Markets Colours  -->
-			<Color x:Key="MarketUpTextColor">#7ed321</Color>
-			<Color x:Key="MarketUpBackgroundColor">#027e42</Color>
-			<Color x:Key="MarketDownTextColor">#ff4a4a</Color>
-			<Color x:Key="MarketDownBackgroundColor">#aa1221</Color>
+			<Color x:Key="MarketUpBackgroundColor">#00FF00</Color>
+			<Color x:Key="MarketUpTextColor">#027e42</Color>
+			<Color x:Key="MarketDownBackgroundColor">#FF0000</Color>
+			<Color x:Key="MarketDownTextColor">#aa1221</Color>
 
 			<!--  Ladder Colours  -->
 			<Color x:Key="LadderLeftColor">#179C52</Color>
@@ -28,8 +28,8 @@
 
 			<!--  Gray Colours  -->
 			<Color x:Key="Gray-100">#F6F7F8</Color>
-			<Color x:Key="Gray-300">#CED2D9</Color>
-			<Color x:Key="Gray-700">#606A7B</Color>
+			<Color x:Key="Gray-300">#EBECEF</Color>
+			<Color x:Key="Gray-700">#4A515E</Color>
 			<Color x:Key="Gray-900">#333942</Color>
 			<Color x:Key="Gray-Black">#000000</Color>
 			<Color x:Key="Gray-White">#FFFFFF</Color>
@@ -89,30 +89,20 @@
 				</Setter>
 				<Setter Property="TextColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-900}, Dark={x:StaticResource Gray-100}}" />
 				<Setter Property="DefaultBackgroundColor" Value="Transparent" />
-				<Setter Property="NegativeTickColor" Value="{x:StaticResource MarketDownTextColor}" />
-				<Setter Property="NegativeTickBackgroundColor" Value="{x:StaticResource MarketDownBackgroundColor}" />
-				<Setter Property="PositiveTickColor" Value="{x:StaticResource MarketUpTextColor}" />
-				<Setter Property="PositiveTickBackgroundColor" Value="{x:StaticResource MarketUpBackgroundColor}" />
+				<Setter Property="NegativeTickColor" Value="{x:AppThemeBinding Light={x:StaticResource MarketDownBackgroundColor}, Dark={x:StaticResource MarketDownBackgroundColor}}" />
+				<Setter Property="NegativeTickBackgroundColor" Value="{x:AppThemeBinding Light={x:StaticResource MarketDownTextColor}, Dark={x:StaticResource MarketDownTextColor}}" />
+				<Setter Property="PositiveTickColor" Value="{x:AppThemeBinding Light={x:StaticResource MarketUpTextColor}, Dark={x:StaticResource MarketUpBackgroundColor}}" />
+				<Setter Property="PositiveTickBackgroundColor" Value="{x:AppThemeBinding Light={x:StaticResource MarketUpBackgroundColor}, Dark={x:StaticResource MarketUpTextColor}}" />
 			</Style>
-			<Style x:Key="CurrencyPriceStyle" TargetType="{x:Type controls:TickPriceView}">
+
+			<Style
+				x:Key="CurrencyPriceStyle"
+				BasedOn="{x:StaticResource LastPriceStyle}"
+				TargetType="{x:Type controls:TickPriceView}">
 				<Setter Property="Padding" Value="4,0" />
-				<Setter Property="HorizontalOptions" Value="Start" />
+				<Setter Property="HorizontalOptions" Value="StartAndExpand" />
 				<Setter Property="VerticalOptions" Value="Start" />
 				<Setter Property="FontSize" Value="Small" />
-				<Setter Property="LineHeight">
-					<Setter.Value>
-						<OnPlatform x:TypeArguments="x:Double">
-							<On Platform="Android" Value="1.5" />
-							<On Platform="GTK,iOS,macOS,Tizen,UWP,WPF">-1</On>
-						</OnPlatform>
-					</Setter.Value>
-				</Setter>
-				<Setter Property="TextColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-700}, Dark={x:StaticResource Gray-300}}" />
-				<Setter Property="DefaultBackgroundColor" Value="Transparent" />
-				<Setter Property="NegativeTickColor" Value="{x:StaticResource MarketDownTextColor}" />
-				<Setter Property="NegativeTickBackgroundColor" Value="{x:StaticResource MarketDownBackgroundColor}" />
-				<Setter Property="PositiveTickColor" Value="{x:StaticResource MarketUpTextColor}" />
-				<Setter Property="PositiveTickBackgroundColor" Value="{x:StaticResource MarketUpBackgroundColor}" />
 			</Style>
 
 			<Style x:Key="PriceLabelStyle" TargetType="{x:Type Label}">
@@ -125,7 +115,7 @@
 						</OnPlatform>
 					</Setter.Value>
 				</Setter>
-				<Setter Property="TextColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-700}, Dark={x:StaticResource Gray-300}}" />
+				<Setter Property="TextColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-900}, Dark={x:StaticResource Gray-100}}" />
 				<Setter Property="HorizontalTextAlignment" Value="Start" />
 			</Style>
 
@@ -180,7 +170,7 @@
 				<Setter Property="Margin" Value="8,0" />
 			</Style>
 
-			<Style TargetType="{x:Type Frame}">
+			<Style x:Key="DefaultFrameStyle" TargetType="{x:Type Frame}">
 				<Setter Property="BackgroundColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-100}, Dark={x:StaticResource Gray-900}}" />
 				<Setter Property="Margin" Value="0" />
 				<Setter Property="Padding" Value="5" />
@@ -190,10 +180,19 @@
 				<Setter Property="VerticalOptions" Value="FillAndExpand" />
 			</Style>
 
+			<Style
+				x:Key="PriceFrameStyle"
+				BasedOn="{x:StaticResource DefaultFrameStyle}"
+				TargetType="{x:Type Frame}">
+				<Setter Property="Margin" Value="0" />
+				<Setter Property="Padding" Value="0" />
+				<Setter Property="HasShadow" Value="False" />
+			</Style>
+
 			<Style x:Key="StackLayoutStyle" TargetType="{x:Type StackLayout}">
 				<Setter Property="Orientation" Value="Horizontal" />
 				<Setter Property="Spacing" Value="0" />
-				<Setter Property="HorizontalOptions" Value="Fill" />
+				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
 				<Setter Property="Margin" Value="0" />
 				<Setter Property="VerticalOptions" Value="CenterAndExpand" />
 			</Style>
@@ -255,12 +254,14 @@
 				TargetType="{x:Type Label}">
 				<Setter Property="FontSize" Value="Small" />
 			</Style>
+
 			<Style
 				x:Key="SettingsThemeStyle"
 				BasedOn="{x:StaticResource SettingsViewStyle}"
 				TargetType="{x:Type Label}">
 				<Setter Property="FontSize" Value="Micro" />
 			</Style>
+
 			<Style x:Key="SettingsImageButton" TargetType="{x:Type ImageButton}">
 				<Setter Property="Aspect" Value="AspectFill" />
 				<Setter Property="CornerRadius" Value="8" />
@@ -268,6 +269,7 @@
 				<Setter Property="WidthRequest" Value="32" />
 				<Setter Property="BackgroundColor" Value="Transparent" />
 			</Style>
+
 			<Style x:Key="SettingsThemeFrame" TargetType="{x:Type Frame}">
 				<Setter Property="Padding" Value="0" />
 				<Setter Property="BackgroundColor" Value="{x:AppThemeBinding Dark={x:StaticResource Gray-900}, Light={x:StaticResource Gray-100}}" />

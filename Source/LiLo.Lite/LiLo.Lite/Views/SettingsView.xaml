@@ -138,7 +138,7 @@
 							Margin="0"
 							Style="{StaticResource SettingsViewStyle}"
 							Text="Theme" />
-						<Frame>
+						<Frame Style="{StaticResource DefaultFrameStyle}">
 							<!--  Grid for Theme label and navigation bar icon  -->
 							<!--  Theme choice  -->
 							<Grid
@@ -190,7 +190,7 @@
 							</Grid>
 						</Frame>
 						<Label Style="{StaticResource SettingsViewStyle}" Text="Favourites" />
-						<Frame>
+						<Frame Style="{StaticResource DefaultFrameStyle}">
 							<Grid
 								ColumnDefinitions="*,*,*"
 								RowDefinitions="Auto, Auto"
@@ -216,7 +216,7 @@
 							</Grid>
 						</Frame>
 						<Label Style="{StaticResource SettingsViewStyle}" Text="App Info" />
-						<Frame>
+						<Frame Style="{StaticResource DefaultFrameStyle}">
 							<Grid ColumnDefinitions="*, 32">
 								<Label Style="{StaticResource SettingViewStandardStyle}" Text="{Binding Version, StringFormat='Copyright George Leithead, Ver: {0}'}" />
 								<ImageButton
@@ -228,7 +228,7 @@
 							</Grid>
 						</Frame>
 						<Label Style="{StaticResource SettingsViewStyle}" Text="About" />
-						<Frame>
+						<Frame Style="{StaticResource DefaultFrameStyle}">
 							<Grid
 								ColumnDefinitions="*, 32, 32, 32"
 								ColumnSpacing="8"

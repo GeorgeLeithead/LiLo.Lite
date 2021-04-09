@@ -16,6 +16,7 @@ namespace LiLo.Lite.ViewModels
 	using System;
 	using System.Net.Http;
 	using System.Threading.Tasks;
+	using System.Windows.Input;
 	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.CommunityToolkit.ObjectModel;
@@ -39,6 +40,7 @@ namespace LiLo.Lite.ViewModels
 			this.IsBusy = true;
 			this.Title = "Markets";
 			this.RetryButtonClicked = new AsyncCommand(this.Init);
+			this.SwipeItemAlertCommand = new Command<MarketModel>(this.OnSwipeItemAlert);
 			this.Init().ConfigureAwait(false);
 		}
 
@@ -89,6 +91,9 @@ namespace LiLo.Lite.ViewModels
 			}
 		}
 
+		/// <summary>Gets an swipe item Alert command.</summary>
+		public ICommand SwipeItemAlertCommand { get; private set; }
+
 		/// <summary>Gets or sets the market symbol.</summary>
 		public string Symbol
 		{
@@ -133,6 +138,14 @@ namespace LiLo.Lite.ViewModels
 					this.NotifyPropertyChanged(() => this.Symbol);
 				}
 			});
+		}
+
+		/// <summary>Market Model item has been swiped and Alert selected.</summary>
+		/// <param name="item">{MarketModel} item.</param>
+		private void OnSwipeItemAlert(MarketModel item)
+		{
+			// TODO: Implement the ability to set alerts for market items
+			_ = this.DialogService.ShowAlertAsync($"Local alerts coming soon for {item.SymbolString}.", "Alerts", "Dismiss");
 		}
 	}
 }
