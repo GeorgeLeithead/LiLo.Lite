@@ -21,4 +21,7 @@
 	<FlyoutItem>
 		<ShellContent ContentTemplate="{DataTemplate views:FavouritesView}" Route="Favourites" />
 	</FlyoutItem>
+	<FlyoutItem>
+		<ShellContent ContentTemplate="{DataTemplate views:AlertsView}" Route="Alerts" />
+	</FlyoutItem>
 </Shell>

@@ -144,7 +144,7 @@ iframe.body {
 		{
 			// TODO: Implement the ability to set alerts for market items
 			MarketModel item = this.SelectedItem;
-			_ = this.DialogService.ShowAlertAsync($"Local alerts coming soon for {item.SymbolString}.", "Alerts", "Dismiss");
+			Shell.Current.GoToAsync($"//Alerts?symbol={item.SymbolString}");
 		}
 	}
 }

@@ -215,6 +215,12 @@
         <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.Percent">
             <summary>Gets or sets the price change percent.</summary>
         </member>
+        <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.PChange">
+            <summary>Gets or sets the price change.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.PriceChange">
+            <summary>Gets the price change.</summary>
+        </member>
         <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.Price24hPercent">
             <summary>Gets the 24hr price change percent.</summary>
         </member>
@@ -340,6 +346,24 @@
         <member name="P:LiLo.Lite.Models.Markets.MarketsModel.Markets">
             <summary>Gets or sets an array of markets.</summary>
         </member>
+        <member name="T:LiLo.Lite.Models.Notifications.PriceAlertNotification">
+            <summary>Price alert model.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Notifications.PriceAlertNotification.AlertPrice">
+            <summary>Gets or sets the alert price.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Notifications.PriceAlertNotification.TargetEvent">
+            <summary>Gets or sets a value indicating whether the target price event is one time or every time.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Notifications.PriceAlertNotification.IsActive">
+            <summary>Gets or sets a value indicating whether the alert is active.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Notifications.PriceAlertNotification.AlertPercent">
+            <summary>Gets or sets the alert percentage.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Notifications.PriceAlertNotification.Duration">
+            <summary>Gets or sets the alert duration period.</summary>
+        </member>
         <member name="T:LiLo.Lite.Models.Permissions.Permission">
             <summary>Permissions model.</summary>
         </member>
@@ -449,6 +473,47 @@
             <param name="message">Toast message.</param>
             <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
         </member>
+        <member name="T:LiLo.Lite.Services.LocalNotification.INotificationManager">
+            <summary>Local Notification manager interface.</summary>
+        </member>
+        <member name="E:LiLo.Lite.Services.LocalNotification.INotificationManager.NotificationReceived">
+            <summary>Notification received event.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Services.LocalNotification.INotificationManager.Initialize">
+            <summary>Initialise notification manager.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Services.LocalNotification.INotificationManager.ReceiveNotification(System.String,System.String)">
+            <summary>Receive notification.</summary>
+            <param name="title">Title.</param>
+            <param name="message">Message.</param>
+        </member>
+        <member name="M:LiLo.Lite.Services.LocalNotification.INotificationManager.SendNotification(System.String,System.String,System.Nullable{System.DateTime})">
+            <summary>Send notification.</summary>
+            <param name="title">Title.</param>
+            <param name="message">Message.</param>
+            <param name="notifyTime">Notification date and time.</param>
+        </member>
+        <member name="T:LiLo.Lite.Services.LocalNotification.NotificationEventArgs">
+            <summary>Notification event arguments.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Services.LocalNotification.NotificationEventArgs.Message">
+            <summary>Gets or sets the notification message.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Services.LocalNotification.NotificationEventArgs.Title">
+            <summary>Gets or sets the notification title.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Services.LocalNotification.PriceNotifications">
+            <summary>Local price notifications class.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Services.LocalNotification.PriceNotifications.SendNotification(LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel,LiLo.Lite.Services.LocalNotification.INotificationManager)">
+            <summary>Send notification.</summary>
+            <param name="data">Data feed.</param>
+            <param name="notificationManager">Notification Manager.</param>
+            <remarks>Target price: Alert Symbol, Alert Price, One time/Every time, IsActive
+            Price Change: Alert Symbol, Percent, Duration (Binance only offers 24hr), IsActive.
+            </remarks>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
         <member name="T:LiLo.Lite.Services.Markets.IMarketsHelperService">
             <summary>Markets helper service.</summary>
         </member>
@@ -479,6 +544,9 @@
         </member>
         <member name="P:LiLo.Lite.Services.Markets.MarketsHelperService.MarketsList">
             <summary>Gets or sets an observable list of markets.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Services.Markets.MarketsHelperService.NotificationManager">
+            <summary>Gets the local notification manager.</summary>
         </member>
         <member name="P:LiLo.Lite.Services.Markets.MarketsHelperService.SourceMarketsList">
             <summary>Gets or sets an list of markets.</summary>
@@ -573,6 +641,24 @@
             <summary>Handle when the sockets connection receives a message.</summary>
             <param name="sender">Sender object.</param>
             <param name="e">Message event arguments.</param>
+        </member>
+        <member name="T:LiLo.Lite.ViewModels.AlertsViewModel">
+            <summary>Alerts view model.</summary>
+        </member>
+        <member name="F:LiLo.Lite.ViewModels.AlertsViewModel.alertsList">
+            <summary>Observable list of markets.</summary>
+        </member>
+        <member name="M:LiLo.Lite.ViewModels.AlertsViewModel.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.ViewModels.AlertsViewModel"/> class.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.AlertsViewModel.Symbol">
+            <summary>Gets or sets the market symbol.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.AlertsViewModel.AlertsList">
+            <summary>Gets or sets a collection of values to be displayed in the markets view.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.AlertsViewModel.SelectedItem">
+            <summary>Gets or sets the selected item.</summary>
         </member>
         <member name="T:LiLo.Lite.ViewModels.Base.ExtendedBindableObject">
             <summary>Extended bindable object class.</summary>

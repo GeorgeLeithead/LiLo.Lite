@@ -23,10 +23,7 @@ namespace LiLo.Lite.Views
 	public partial class ChartView : ContentPage
 	{
 		/// <summary>Initialises a new instance of the <see cref="ChartView" /> class.</summary>
-		public ChartView()
-		{
-			this.InitializeComponent();
-		}
+		public ChartView() => this.InitializeComponent();
 
 		/// <inheritdoc/>
 		protected override void OnAppearing()

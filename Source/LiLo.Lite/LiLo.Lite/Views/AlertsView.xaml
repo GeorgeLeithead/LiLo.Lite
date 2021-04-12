@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	x:Class="LiLo.Lite.Views.AlertsView"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
+	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
+	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+	Title="{Binding Title, Mode=OneTime}"
+	d:Title="Alerts"
+	x:DataType="vm:AlertsViewModel"
+	Shell.NavBarIsVisible="False"
+	Style="{StaticResource BasePage}"
+	Visual="Material"
+	mc:Ignorable="d">
+
+	<ContentPage.BindingContext>
+		<vm:AlertsViewModel />
+	</ContentPage.BindingContext>
+
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<xct:InvertedBoolConverter x:Key="InvertedBoolConverter" />
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
+	<ContentPage.Content>
+		<Grid RowDefinitions="Auto,Auto">
+			<!--  title bar  -->
+			<controls:TitleBar
+				Grid.Row="0"
+				HomeVisible="True"
+				SettingsVisible="True"
+				Style="{StaticResource TitleStyle}"
+				Text="{Binding Title, Mode=OneTime}" />
+			<ActivityIndicator
+				Grid.Row="1"
+				d:IsRunning="True"
+				d:IsVisible="True"
+				HorizontalOptions="CenterAndExpand"
+				IsRunning="{Binding IsBusy}"
+				IsVisible="{Binding IsBusy}"
+				VerticalOptions="CenterAndExpand" />
+			<ScrollView Grid.Row="1" IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}">
+				<CollectionView
+					x:Name="CollectionViewAlertsList"
+					IsGrouped="False"
+					ItemsSource="{Binding AlertsList}"
+					SelectedItem="{Binding SelectedItem, Mode=TwoWay}">
+					<CollectionView.EmptyView>
+						<StackLayout
+							HorizontalOptions="FillAndExpand"
+							Orientation="Vertical"
+							Spacing="8"
+							VerticalOptions="FillAndExpand">
+							<Label
+								HorizontalOptions="Center"
+								Text="Create a new alert...(coming soon)"
+								VerticalOptions="Center" />
+						</StackLayout>
+					</CollectionView.EmptyView>
+					<CollectionView.ItemsLayout>
+						<GridItemsLayout
+							HorizontalItemSpacing="4"
+							Orientation="Vertical"
+							VerticalItemSpacing="4" />
+					</CollectionView.ItemsLayout>
+
+					<CollectionView.ItemTemplate>
+						<DataTemplate>
+							<Frame Style="{StaticResource DefaultFrameStyle}">
+								<Label Text="List of alerts for symbol here...(coming soon)" />
+							</Frame>
+						</DataTemplate>
+					</CollectionView.ItemTemplate>
+				</CollectionView>
+			</ScrollView>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>

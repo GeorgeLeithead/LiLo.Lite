@@ -167,8 +167,7 @@ namespace LiLo.Lite.ViewModels
 		/// <param name="item">{MarketModel} item.</param>
 		private void OnSwipeItemAlert(MarketModel item)
 		{
-			// TODO: Implement the ability to set alerts for market items
-			_ = this.DialogService.ShowAlertAsync($"Local alerts coming soon for {item.SymbolString}.", "Alerts", "Dismiss");
+			Shell.Current.GoToAsync($"//Alerts?symbol={item.SymbolString}");
 		}
 	}
 }

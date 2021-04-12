@@ -48,6 +48,13 @@ namespace LiLo.Lite.Models.BinanceModels
 		[JsonPropertyName("P")]
 		public string Percent { get; set; }
 
+		/// <summary>Gets or sets the price change.</summary>
+		[JsonPropertyName("p")]
+		public string PChange { get; set; }
+
+		/// <summary>Gets the price change.</summary>
+		public double PriceChange => Convert.ToDouble(this.PChange);
+
 		/// <summary>Gets the 24hr price change percent.</summary>
 		public double Price24hPercent => Convert.ToDouble(this.Percent);
 

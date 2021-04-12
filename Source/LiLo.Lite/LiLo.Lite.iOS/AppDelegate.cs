@@ -19,6 +19,7 @@ namespace LiLo.Lite.iOS
 	using Microsoft.AppCenter.Distribute;
 	using ObjCRuntime;
 	using UIKit;
+	using UserNotifications;
 	using Xamarin.Forms;
 
 	/// <summary>The UIApplicationDelegate for the application. This class is responsible for launching the User Interface of the application, as well as listening (and optionally responding) to application events from iOS.</summary>
@@ -31,6 +32,7 @@ namespace LiLo.Lite.iOS
 			Forms.SetFlags("CollectionView_Experimental");
 			Forms.Init();
 			Distribute.DontCheckForUpdatesInDebug();
+			UNUserNotificationCenter.Current.Delegate = new IOSNotificationReceiver();
 			this.LoadApplication(new App());
 			return base.FinishedLaunching(app, options);
 		}

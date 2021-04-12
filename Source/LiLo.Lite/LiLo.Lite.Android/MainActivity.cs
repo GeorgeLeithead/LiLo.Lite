@@ -15,10 +15,12 @@ namespace LiLo.Lite.Droid
 {
 	using Acr.UserDialogs;
 	using Android.App;
+	using Android.Content;
 	using Android.Content.PM;
 	using Android.OS;
 	using Android.Runtime;
 	using LiLo.Lite.Interfaces;
+	using LiLo.Lite.Services.LocalNotification;
 	using LiLo.Lite.Views;
 	using Plugin.CurrentActivity;
 	using Xamarin.Forms;
@@ -64,6 +66,24 @@ namespace LiLo.Lite.Droid
 			{
 				this.RequestedOrientation = this.previousOrientation;
 			});
+			this.CreateNotificationFromIntent(this.Intent);
 		}
+
+		/// <inheritdoc/>
+		protected override void OnNewIntent(Intent intent)
+		{
+			this.CreateNotificationFromIntent(intent);
+		}
+
+		private void CreateNotificationFromIntent(Intent intent)
+		{
+			if (intent?.Extras != null)
+			{
+				string title = intent.GetStringExtra(AndroidNotificationManager.TitleKey);
+				string message = intent.GetStringExtra(AndroidNotificationManager.MessageKey);
+				DependencyService.Get<INotificationManager>().ReceiveNotification(title, message);
+			}
+		}
+
 	}
 }
