@@ -27,6 +27,12 @@ namespace LiLo.Lite.ViewModels
 	[QueryProperty("Symbol", "symbol")]
 	public class HomeViewModel : ViewModelBase
 	{
+		/// <summary>Indicates whether the favourites was enabled or not.</summary>
+		private bool favouritesEnabled;
+
+		/// <summary>List of favourites.</summary>
+		private string favouritesList;
+
 		private int gridItemsLayoutSpan = 1;
 
 		/// <summary>Observable list of markets.</summary>
@@ -39,9 +45,25 @@ namespace LiLo.Lite.ViewModels
 		{
 			this.IsBusy = true;
 			this.Title = "Markets";
+			this.FavouritesList = Preferences.Get(App.FavouritesCategory, string.Empty);
+			this.FavouritesEnabled = Preferences.Get("FavouritesEnabled", false);
 			this.RetryButtonClicked = new AsyncCommand(this.Init);
 			this.SwipeItemAlertCommand = new Command<MarketModel>(this.OnSwipeItemAlert);
 			this.Init().ConfigureAwait(false);
+		}
+
+		/// <summary>Gets or sets a value indicating whether the favourites is enabled.</summary>
+		public bool FavouritesEnabled
+		{
+			get => this.favouritesEnabled;
+			set => this.favouritesEnabled = value;
+		}
+
+		/// <summary>Gets or sets the users favourites list.</summary>
+		public string FavouritesList
+		{
+			get => this.favouritesList;
+			set => this.favouritesList = value;
 		}
 
 		/// <summary>Gets or sets the items layout span.</summary>
@@ -108,7 +130,8 @@ namespace LiLo.Lite.ViewModels
 		}
 
 		/// <summary>Initialise the home view model.</summary>
-		private async Task Init()
+		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
+		public async Task Init()
 		{
 			await Task.Factory.StartNew(async () =>
 			{

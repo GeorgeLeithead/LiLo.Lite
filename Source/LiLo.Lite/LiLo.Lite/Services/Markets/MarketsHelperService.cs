@@ -58,19 +58,12 @@ namespace LiLo.Lite.Services.Markets
 		{
 			await Task.Factory.StartNew(async () =>
 			{
-				if (this.MarketsList.Count != 0)
-				{
-					return;
-				}
-
 				IEnumerable<MarketModel> markets = DataStore.GetMarketsForFeed();
+				this.MarketsList.Clear();
 				foreach (MarketModel market in markets)
 				{
-					if (!this.MarketsList.Any(m => m == market))
-					{
-						this.MarketsList.Add(market);
-						this.SourceMarketsList.Add(market);
-					}
+					this.MarketsList.Add(market);
+					this.SourceMarketsList.Add(market);
 				}
 
 				await Task.Delay(1);

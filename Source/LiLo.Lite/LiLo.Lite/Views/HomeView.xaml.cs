@@ -19,6 +19,7 @@ namespace LiLo.Lite.Views
 	using System.Threading.Tasks;
 	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.ViewModels;
+	using Xamarin.Essentials;
 	using Xamarin.Forms;
 	using Xamarin.Forms.Internals;
 	using Xamarin.Forms.Xaml;
@@ -40,6 +41,17 @@ namespace LiLo.Lite.Views
 		{
 			base.OnAppearing();
 			this.searchBar.Unfocus();
+			if (this.VM.FavouritesList != Preferences.Get(App.FavouritesCategory, string.Empty) || this.VM.FavouritesEnabled != Preferences.Get("FavouritesEnabled", false))
+			{
+				// Favourites have changed to we need to close the sockets connection, and re-initialise to as to show the updated markets list.
+				this.VM.IsBusy = true;
+				this.VM.FavouritesList = Preferences.Get(App.FavouritesCategory, string.Empty);
+				this.VM.FavouritesEnabled = Preferences.Get("FavouritesEnabled", false);
+				this.VM.SocketsService.WebSocket_OnSleep(); // Sleep the connection
+				this.VM.SocketsService.WebSocket_Close(); // Close the connection
+				this.VM.Init().ConfigureAwait(false); // Re-initialise the markets and sockets connections.
+			}
+
 			if (!string.IsNullOrEmpty(this.VM.Symbol))
 			{
 				Task.Factory.StartNew(() =>
