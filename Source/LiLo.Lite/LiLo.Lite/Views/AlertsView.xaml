@@ -27,7 +27,7 @@
 	</ContentPage.Resources>
 
 	<ContentPage.Content>
-		<Grid RowDefinitions="Auto,Auto">
+		<Grid RowDefinitions="Auto,*">
 			<!--  title bar  -->
 			<controls:TitleBar
 				Grid.Row="0"

@@ -850,6 +850,17 @@
         <member name="M:LiLo.Lite.ViewModels.SettingsViewModel.TwitterCommandClicked">
             <summary>Link to the twitter page for LiLo.</summary>
         </member>
+        <member name="T:LiLo.Lite.Views.AlertsView">
+            <summary>Alerts view.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Views.AlertsView.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Views.AlertsView"/> class.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Views.AlertsView.OnBackButtonPressed">
+            <summary>Handle the device back button being pressed.</summary>
+            <remarks>As this is the root page, we have to prevent the back button otherwise it will exit the application.</remarks>
+            <returns>true; cancellation of back button.</returns>
+        </member>
         <member name="T:LiLo.Lite.Views.ChartView">
             <summary>Chart View class.</summary>
         </member>
