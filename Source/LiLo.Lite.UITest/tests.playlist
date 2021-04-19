@@ -1,0 +1,48 @@
+<Playlist Version="2.0">
+	<Rule Name="Includes" Match="Any">
+		<Rule Match="All">
+			<Property Name="Solution" />
+			<Rule Match="Any">
+				<Rule Match="All">
+					<Property Name="Project" Value="LiLo.Lite.UITest" />
+					<Rule Match="Any">
+						<Rule Match="All">
+							<Property Name="Namespace" Value="LiLo.Lite.UITest.Tests" />
+							<Rule Match="Any">
+								<Rule Match="All">
+									<Property Name="Class" Value="Home(Android)" />
+									<Rule Match="Any">
+										<Rule Match="All">
+											<Property Name="TestWithNormalizedFullyQualifiedName" Value="LiLo.Lite.UITest.Tests.Home.PageTitleTest" />
+											<Rule Match="Any">
+												<Property Name="DisplayName" Value="PageTitleTest" />
+											</Rule>
+										</Rule>
+										<Rule Match="All">
+											<Property Name="TestWithNormalizedFullyQualifiedName" Value="LiLo.Lite.UITest.Tests.Home.MarketsListExists" />
+											<Rule Match="Any">
+												<Property Name="DisplayName" Value="MarketsListExists" />
+											</Rule>
+										</Rule>
+										<Rule Match="All">
+											<Property Name="TestWithNormalizedFullyQualifiedName" Value="LiLo.Lite.UITest.Tests.Home.MarketsListCount" />
+											<Rule Match="Any">
+												<Property Name="DisplayName" Value="MarketsListCount" />
+											</Rule>
+										</Rule>
+										<Rule Match="All">
+											<Property Name="TestWithNormalizedFullyQualifiedName" Value="LiLo.Lite.UITest.Tests.Home.Repl" />
+											<Rule Match="Any">
+												<Property Name="DisplayName" Value="Repl" />
+											</Rule>
+										</Rule>
+									</Rule>
+								</Rule>
+							</Rule>
+						</Rule>
+					</Rule>
+				</Rule>
+			</Rule>
+		</Rule>
+	</Rule>
+</Playlist>

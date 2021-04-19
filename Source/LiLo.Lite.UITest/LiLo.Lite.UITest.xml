@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LiLo.Lite.UITest</name>
+    </assembly>
+    <members>
+        <member name="T:LiLo.Lite.UITest.AppManager">
+            <summary>Application manager.</summary>
+            <remarks>Based on using the 'Page Object Pattern' <a href="https://devblogs.microsoft.com/xamarin/best-practices-tips-xamarin-uitest/">Best Practices and Tips for Using Xamarin.UITest</a> for details.</remarks>
+        </member>
+        <member name="P:LiLo.Lite.UITest.AppManager.App">
+            <summary>Gets the main gateway to interact with an app. This interface contains shared functionality between Xamarin.UITest.Android.AndroidApp and Xamarin.UITest.iOS.iOSApp.</summary>
+        </member>
+        <member name="P:LiLo.Lite.UITest.AppManager.Platform">
+            <summary>Gets or sets the platform being tested.</summary>
+        </member>
+        <member name="M:LiLo.Lite.UITest.AppManager.StartApp">
+            <summary>Application StartUp configuration.</summary>
+            <remarks>REMEMBER:
+            - To use InstalledApp the app must be installed on the emulator
+            - The emulator must be running BEFORE starting tests
+            - Any updates to the app need to be deployed to the emulator, BEFORE they can be tested.
+            </remarks>
+        </member>
+        <member name="T:LiLo.Lite.UITest.BasePage">
+            <summary>Base Page.</summary>
+        </member>
+        <member name="M:LiLo.Lite.UITest.BasePage.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.UITest.BasePage"/> class.</summary>
+        </member>
+        <member name="P:LiLo.Lite.UITest.BasePage.App">
+            <summary>Gets the main gateway to interact with an app. This interface contains shared functionality between Xamarin.UITest.Android.AndroidApp and Xamarin.UITest.iOS.iOSApp.</summary>
+        </member>
+        <member name="P:LiLo.Lite.UITest.BasePage.OnAndroid">
+            <summary>Gets a value indicating whether the application is on Android.</summary>
+        </member>
+        <member name="P:LiLo.Lite.UITest.BasePage.OniOS">
+            <summary>Gets a value indicating whether the application is on iOS.</summary>
+        </member>
+        <member name="P:LiLo.Lite.UITest.BasePage.Trait">
+            <summary>Gets an action on a trait for the test.</summary>
+        </member>
+        <member name="M:LiLo.Lite.UITest.BasePage.AssertOnPage(System.Nullable{System.TimeSpan})">
+            <summary>Verifies that the trait is still present. Defaults to no wait.</summary>
+            <param name="timeout">Time to wait before the assertion fails.</param>
+        </member>
+        <member name="M:LiLo.Lite.UITest.BasePage.WaitForPageToLeave(System.Nullable{System.TimeSpan})">
+            <summary>Verifies that the trait is no longer present. Defaults to a 5 second wait.</summary>
+            <param name="timeout">Time to wait before the assertion fails.</param>
+        </member>
+        <member name="T:LiLo.Lite.UITest.BaseTestFixture">
+            <summary>Base test fixture.</summary>
+        </member>
+        <member name="M:LiLo.Lite.UITest.BaseTestFixture.#ctor(Xamarin.UITest.Platform)">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.UITest.BaseTestFixture"/> class.</summary>
+            <param name="platform">On platform.</param>
+        </member>
+        <member name="P:LiLo.Lite.UITest.BaseTestFixture.App">
+            <summary>Gets the main gateway to interact with an app. This interface contains shared functionality between Xamarin.UITest.Android.AndroidApp and Xamarin.UITest.iOS.iOSApp.</summary>
+        </member>
+        <member name="P:LiLo.Lite.UITest.BaseTestFixture.OnAndroid">
+            <summary>Gets a value indicating whether the application is on Android.</summary>
+        </member>
+        <member name="P:LiLo.Lite.UITest.BaseTestFixture.OniOS">
+            <summary>Gets a value indicating whether the application is on iOS.</summary>
+        </member>
+        <member name="M:LiLo.Lite.UITest.BaseTestFixture.BeforeEachTest">
+            <summary>before each test, start up the app.</summary>
+        </member>
+        <member name="T:LiLo.Lite.UITest.Pages.HomePage">
+            <summary>Home Page Object.</summary>
+        </member>
+        <member name="F:LiLo.Lite.UITest.Pages.HomePage.marketsList">
+            <summary>Arrange test for markets List.</summary>
+        </member>
+        <member name="F:LiLo.Lite.UITest.Pages.HomePage.pageTitle">
+            <summary>Arrange test for page title.</summary>
+        </member>
+        <member name="M:LiLo.Lite.UITest.Pages.HomePage.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.UITest.Pages.HomePage"/> class.</summary>
+        </member>
+        <member name="P:LiLo.Lite.UITest.Pages.HomePage.Trait">
+            <summary>Gets an action on a trait for the test.</summary>
+        </member>
+        <member name="M:LiLo.Lite.UITest.Pages.HomePage.TapBackButton">
+            <summary>Assert that the back button has been tapped.</summary>
+            <returns>Application assertion.</returns>
+        </member>
+        <member name="M:LiLo.Lite.UITest.Pages.HomePage.ValidatePageTitle(System.String)">
+            <summary>Assert the page title.</summary>
+            <param name="pageTitle">Page title.</param>
+            <returns>Application assertion.</returns>
+        </member>
+        <member name="M:LiLo.Lite.UITest.Pages.HomePage.VerifyMarketsList(System.Int32)">
+            <summary>Assert that the Markets List exists.</summary>
+            <param name="marketsCount">Number of expected markets.</param>
+            <returns>Application assertion.</returns>
+        </member>
+        <member name="T:LiLo.Lite.UITest.PlatformQuery">
+            <summary>Platform query.</summary>
+        </member>
+        <member name="P:LiLo.Lite.UITest.PlatformQuery.Android">
+            <summary>Sets the query pattern for Android.</summary>
+        </member>
+        <member name="P:LiLo.Lite.UITest.PlatformQuery.Current">
+            <summary>Gets the query pattern for current platform.</summary>
+        </member>
+        <member name="P:LiLo.Lite.UITest.PlatformQuery.iOS">
+            <summary>Sets the query pattern for iOS.</summary>
+        </member>
+        <member name="T:LiLo.Lite.UITest.Tests.Home">
+            <summary>Tests for the Home page.</summary>
+        </member>
+        <member name="M:LiLo.Lite.UITest.Tests.Home.#ctor(Xamarin.UITest.Platform)">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.UITest.Tests.Home"/> class.</summary>
+            <param name="platform">On Platform.</param>
+        </member>
+        <member name="M:LiLo.Lite.UITest.Tests.Home.Repl">
+            <summary>Launch REPL (read-eval-print-loop).</summary>
+        </member>
+        <member name="M:LiLo.Lite.UITest.Tests.Home.PageTitleTest">
+            <summary>Test the page title.</summary>
+        </member>
+        <member name="M:LiLo.Lite.UITest.Tests.Home.MarketsListExists">
+            <summary>Test that the markets list exists.</summary>
+        </member>
+        <member name="M:LiLo.Lite.UITest.Tests.Home.MarketsListCount">
+            <summary>Test that the markets list exists and has a matching count.</summary>
+        </member>
+    </members>
+</doc>

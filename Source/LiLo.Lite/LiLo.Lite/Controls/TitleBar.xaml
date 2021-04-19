@@ -18,6 +18,7 @@
 		<Image
 			x:Name="HomeImage"
 			Aspect="AspectFill"
+			AutomationId="TitleBarHome"
 			HorizontalOptions="Start"
 			Source="{AppThemeBinding Light='home.png',
 			                         Dark='home_dark.png'}"
@@ -29,12 +30,14 @@
 		<Label
 			x:Name="Title"
 			Grid.Column="1"
+			AutomationId="PageTitle"
 			IsVisible="false"
 			Text="{Binding Text}" />
 		<Image
 			x:Name="SettingsImage"
 			Grid.Column="2"
 			Aspect="AspectFill"
+			AutomationId="TitleBarSettings"
 			HorizontalOptions="End"
 			Source="{AppThemeBinding Light='settings.png',
 			                         Dark='settings_dark.png'}"

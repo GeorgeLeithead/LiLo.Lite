@@ -30,6 +30,7 @@
 			<!--  title bar  -->
 			<controls:TitleBar
 				Grid.Row="0"
+				AutomationId="Titlebar"
 				HomeVisible="False"
 				SettingsVisible="True"
 				Style="{StaticResource TitleStyle}"
@@ -38,6 +39,7 @@
 				Grid.Row="1"
 				d:IsRunning="True"
 				d:IsVisible="True"
+				AutomationId="BusyIndicator"
 				HorizontalOptions="CenterAndExpand"
 				IsRunning="{Binding IsBusy}"
 				IsVisible="{Binding IsBusy}"
@@ -46,16 +48,21 @@
 				Grid.Row="1"
 				IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}"
 				Orientation="Vertical">
-				<SearchBar x:Name="searchBar" TextChanged="SearchBarTextChanged" />
+				<SearchBar
+					x:Name="searchBar"
+					AutomationId="SearchBar"
+					TextChanged="SearchBarTextChanged" />
 				<!--  Markets List View  -->
 				<CollectionView
-					x:Name="CollectionViewmarketsList"
+					x:Name="CollectionViewMarketsList"
+					AutomationId="CollectionViewMarketsList"
 					IsGrouped="False"
 					ItemsSource="{Binding MarketsList}"
 					SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
 					Style="{StaticResource MarketsCollectionViewStyle}">
 					<CollectionView.EmptyView>
 						<StackLayout
+							AutomationId="CollectionViewMarketsListEmptyView"
 							HorizontalOptions="FillAndExpand"
 							Orientation="Vertical"
 							Spacing="8"
@@ -64,7 +71,10 @@
 								HorizontalOptions="Center"
 								Text="No market feed data..."
 								VerticalOptions="Center" />
-							<Button Command="{Binding RetryButtonClicked}" Text="Retry" />
+							<Button
+								AutomationId="EmptyViewRetryButton"
+								Command="{Binding RetryButtonClicked}"
+								Text="Retry" />
 						</StackLayout>
 					</CollectionView.EmptyView>
 					<CollectionView.ItemsLayout>
@@ -77,7 +87,7 @@
 
 					<CollectionView.ItemTemplate>
 						<DataTemplate>
-							<SwipeView>
+							<SwipeView AutomationId="{Binding SymbolString, StringFormat='{0}_symbol'}">
 								<SwipeView.RightItems>
 									<SwipeItems>
 										<SwipeItemView

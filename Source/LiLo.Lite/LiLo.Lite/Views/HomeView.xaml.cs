@@ -60,7 +60,7 @@ namespace LiLo.Lite.Views
 					MarketModel matchingItem = this.VM.MarketsList.Where(m => m.SymbolString == this.VM.Symbol).FirstOrDefault();
 					if (matchingItem != null)
 					{
-						this.CollectionViewmarketsList.ScrollTo(item: matchingItem, group: null, position: ScrollToPosition.Start, animate: true);
+						this.CollectionViewMarketsList.ScrollTo(item: matchingItem, group: null, position: ScrollToPosition.Start, animate: true);
 					}
 				});
 			}
