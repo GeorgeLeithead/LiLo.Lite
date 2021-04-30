@@ -66,7 +66,7 @@ namespace LiLo.Lite.UITest
 
 			if (Platform == Platform.iOS)
 			{
-				app = ConfigureApp.iOS.StartApp();
+				app = ConfigureApp.iOS.EnableLocalScreenshots().StartApp();
 			}
 		}
 	}

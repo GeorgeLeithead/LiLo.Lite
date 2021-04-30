@@ -59,5 +59,23 @@ namespace LiLo.Lite.UITest.Tests
 		{
 			new HomePage().VerifyMarketsList(7);
 		}
+
+		/// <summary>Test home page the search bar.</summary>
+		[Test]
+		public void SearchBar()
+		{
+			HomePage homePage = new HomePage();
+			homePage.SearchBarExists();
+			////homePage.SearchBarSearch("BTC");
+		}
+
+		/// <summary>Test tapping market symbols.</summary>
+		[Test]
+		public void TapMarket()
+		{
+			HomePage homePage = new HomePage();
+			homePage.TapSymbol("XRP_symbol");
+			homePage.TapSymbol("BTC_symbol");
+		}
 	}
 }

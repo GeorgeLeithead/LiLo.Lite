@@ -73,8 +73,17 @@
         <member name="F:LiLo.Lite.UITest.Pages.HomePage.marketsList">
             <summary>Arrange test for markets List.</summary>
         </member>
+        <member name="F:LiLo.Lite.UITest.Pages.HomePage.market">
+            <summary>Arrange test for market.</summary>
+        </member>
         <member name="F:LiLo.Lite.UITest.Pages.HomePage.pageTitle">
             <summary>Arrange test for page title.</summary>
+        </member>
+        <member name="F:LiLo.Lite.UITest.Pages.HomePage.searchSymbol">
+            <summary>Arrange test for search symbol.</summary>
+        </member>
+        <member name="F:LiLo.Lite.UITest.Pages.HomePage.searchSrcText">
+            <summary>Arrange text for search text.</summary>
         </member>
         <member name="M:LiLo.Lite.UITest.Pages.HomePage.#ctor">
             <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.UITest.Pages.HomePage"/> class.</summary>
@@ -94,6 +103,20 @@
         <member name="M:LiLo.Lite.UITest.Pages.HomePage.VerifyMarketsList(System.Int32)">
             <summary>Assert that the Markets List exists.</summary>
             <param name="marketsCount">Number of expected markets.</param>
+            <returns>Application assertion.</returns>
+        </member>
+        <member name="M:LiLo.Lite.UITest.Pages.HomePage.SearchBarExists">
+            <summary>Assert that the Search bar exists.</summary>
+            <returns>Application assertion.</returns>
+        </member>
+        <member name="M:LiLo.Lite.UITest.Pages.HomePage.SearchBarSearch(System.String)">
+            <summary>Assert using the search bar to search for a symbol.</summary>
+            <param name="searchSymbol">Search symbol.</param>
+            <returns>Application assertion.</returns>
+        </member>
+        <member name="M:LiLo.Lite.UITest.Pages.HomePage.TapSymbol(System.String)">
+            <summary>Assert tapping a symbol.</summary>
+            <param name="symbol">market symbol.</param>
             <returns>Application assertion.</returns>
         </member>
         <member name="T:LiLo.Lite.UITest.PlatformQuery">
@@ -126,6 +149,12 @@
         </member>
         <member name="M:LiLo.Lite.UITest.Tests.Home.MarketsListCount">
             <summary>Test that the markets list exists and has a matching count.</summary>
+        </member>
+        <member name="M:LiLo.Lite.UITest.Tests.Home.SearchBar">
+            <summary>Test home page the search bar.</summary>
+        </member>
+        <member name="M:LiLo.Lite.UITest.Tests.Home.TapMarket">
+            <summary>Test tapping market symbols.</summary>
         </member>
     </members>
 </doc>

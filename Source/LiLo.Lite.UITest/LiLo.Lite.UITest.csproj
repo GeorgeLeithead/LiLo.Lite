@@ -81,5 +81,8 @@
     <None Include="test.runsettings" />
     <None Include="tests.playlist" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Screenshots\" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
