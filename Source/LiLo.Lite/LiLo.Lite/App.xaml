@@ -280,6 +280,10 @@
 				<Setter Property="HorizontalOptions" Value="Start" />
 				<Setter Property="VerticalOptions" Value="Start" />
 			</Style>
+
+			<Style x:Key="SettingsPicker" TargetType="{x:Type Picker}">
+				<Setter Property="TextColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-Black}, Dark={x:StaticResource Gray-White}}" />
+			</Style>
 		</ResourceDictionary>
 	</Application.Resources>
 </Application>

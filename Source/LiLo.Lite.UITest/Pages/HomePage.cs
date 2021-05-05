@@ -16,20 +16,22 @@ namespace LiLo.Lite.UITest.Pages
 	/// <summary>Home Page Object.</summary>
 	public class HomePage : BasePage
 	{
-		/// <summary>Arrange test for markets List.</summary>
-		private readonly Query marketsList;
-
 		/// <summary>Arrange test for market.</summary>
 		private readonly Func<string, Query> market;
+
+		/// <summary>Arrange test for markets List.</summary>
+		private readonly Query marketsList;
 
 		/// <summary>Arrange test for page title.</summary>
 		private readonly Func<string, Query> pageTitle;
 
+		/// <summary>Arrange text for search text.</summary>
+		private readonly Query searchSrcText;
+
 		/// <summary>Arrange test for search symbol.</summary>
 		private readonly Query searchSymbol;
 
-		/// <summary>Arrange text for search text.</summary>
-		private readonly Query searchSrcText;
+		private readonly Query alertDialog;
 
 		/// <summary>Initialises a new instance of the <see cref="HomePage"/> class.</summary>
 		public HomePage()
@@ -39,6 +41,7 @@ namespace LiLo.Lite.UITest.Pages
 			this.pageTitle = pageName => x => x.Marked("PageTitle").Text(pageName);
 			this.searchSymbol = x => x.Marked("SearchBar");
 			this.searchSrcText = x => x.Id("search_src_text");
+			this.alertDialog = x => x.Class("AlertDialogLayout");
 		}
 
 		/// <summary>Gets an action on a trait for the test.</summary>
@@ -48,59 +51,13 @@ namespace LiLo.Lite.UITest.Pages
 			iOS = x => x.Marked("PageTitle").Text("Markets"),
 		};
 
-		/// <summary>Assert that the back button has been tapped.</summary>
-		/// <returns>Application assertion.</returns>
-		public HomePage TapBackButton()
-		{
-			this.App.Back();
-			return this;
-		}
-
-		/// <summary>Assert the page title.</summary>
-		/// <param name="pageTitle">Page title.</param>
-		/// <returns>Application assertion.</returns>
-		public HomePage ValidatePageTitle(string pageTitle = "Markets")
-		{
-			this.App.WaitForElement(this.pageTitle(pageTitle), $"Timed out waiting for page with the title '{pageTitle}'.");
-			System.IO.File.Delete(@"C:\Dev\LiLo.Lite\Source\LiLo.Lite.UITest\screenshots\MarketsPageTitle.png");
-			this.App.Screenshot("Markets Page Title").MoveTo(@"C:\Dev\LiLo.Lite\Source\LiLo.Lite.UITest\screenshots\MarketsPageTitle.png");
-			return this;
-		}
-
-		/// <summary>Assert that the Markets List exists.</summary>
-		/// <param name="marketsCount">Number of expected markets.</param>
-		/// <returns>Application assertion.</returns>
-		public HomePage VerifyMarketsList(int marketsCount = -1)
-		{
-			AppResult[] marketsListElement = this.App.WaitForElement(this.marketsList, "Timeout waiting for Markets list");
-			this.App.Screenshot("Markets length").MoveTo(@"C:\Dev\LiLo.Lite\Source\LiLo.Lite.UITest\screenshots\MmarketsLength.png");
-			if (marketsCount == -1)
-			{
-				if (marketsListElement.Length == 0)
-				{
-					this.App.Screenshot("Markets length fail").MoveTo(@"C:\Dev\LiLo.Lite\Source\LiLo.Lite.UITest\screenshots\marketsLengthFail.png");
-					Assert.Fail("Markets list does not contain the expected number of markets");
-				}
-			}
-			else
-			{
-				if (marketsListElement.Length != marketsCount)
-				{
-					this.App.Screenshot($"Markets length fail {marketsCount}").MoveTo(@"C:\Dev\LiLo.Lite\Source\LiLo.Lite.UITest\screenshots\MarketLengthsFailCount.png");
-					Assert.Fail($"Markets list does not contain the expected number {marketsCount} of markets, actual {marketsListElement.Length}");
-				}
-			}
-
-			return this;
-		}
-
 		/// <summary>Assert that the Search bar exists.</summary>
 		/// <returns>Application assertion.</returns>
 		public HomePage SearchBarExists()
 		{
 			AppResult[] searchBarElement = this.App.WaitForElement(this.searchSymbol, "Timeout waiting for search bar.");
-			System.IO.File.Delete(@"C:\Dev\LiLo.Lite\Source\LiLo.Lite.UITest\screenshots\Searchbar.png");
-			this.App.Screenshot("Search Bar").MoveTo(@"C:\Dev\LiLo.Lite\Source\LiLo.Lite.UITest\screenshots\Searchbar.png");
+			System.IO.File.Delete(@".\LiLo.Lite.UITest\Screenshots\Searchbar.png");
+			this.App.Screenshot("Search Bar").MoveTo(@".\LiLo.Lite.UITest\Screenshots\Searchbar.png");
 			if (searchBarElement.Length != 1)
 			{
 				Assert.Fail("Search bar not found.");
@@ -115,14 +72,58 @@ namespace LiLo.Lite.UITest.Pages
 		public HomePage SearchBarSearch(string searchSymbol)
 		{
 			AppResult[] searchBarElement = this.App.WaitForElement(this.searchSymbol, "Timeout waiting for search bar.");
-			System.IO.File.Delete(@"C:\Dev\LiLo.Lite\Source\LiLo.Lite.UITest\screenshots\Searchbar.png");
-			this.App.Screenshot("Search Bar").MoveTo(@"C:\Dev\LiLo.Lite\Source\LiLo.Lite.UITest\screenshots\Searchbar.png");
+			System.IO.File.Delete(@".\LiLo.Lite.UITest\Screenshots\Searchbar.png");
+			this.App.Screenshot("Search Bar").MoveTo(@".\LiLo.Lite.UITest\Screenshots\Searchbar.png");
 			AppResult searchBar = searchBarElement[0];
 			this.App.EnterText(this.searchSrcText, searchSymbol);
 			AppResult[] marketsListElement = this.App.WaitForElement(this.marketsList, "Timeout waiting for Markets list");
 			if (marketsListElement.Length != 1)
 			{
 				Assert.Fail($"Search bar search for symbol {searchSymbol} not found.");
+			}
+
+			return this;
+		}
+
+		/// <summary>Assert that the back button has been tapped.</summary>
+		/// <returns>Application assertion.</returns>
+		public HomePage TapBackButton()
+		{
+			this.App.Back();
+			return this;
+		}
+
+		/// <summary>Assert pressing the back button to leave the app.</summary>
+		/// <param name="pageTitle">Page title.</param>
+		/// <param name="cancel">Cancel leave app.</param>
+		/// <returns>Application assertion.</returns>
+		public HomePage LeaveApp(string pageTitle, bool cancel = false)
+		{
+			this.App.WaitForElement(this.pageTitle(pageTitle), $"Timed out waiting for page with the title '{pageTitle}'.");
+			this.TapBackButton();
+			this.App.WaitForElement(this.alertDialog, $"Time out waiting for alert dialogue.");
+
+			return this;
+		}
+
+		/// <summary>Assert tapping settings icon.</summary>
+		/// <returns>Application assertion.</returns>
+		public HomePage TapSettings()
+		{
+			AppResult[] marketsListElement = this.App.WaitForElement(this.marketsList, "Timeout waiting for Markets list");
+			if (marketsListElement.Length == 0)
+			{
+				System.IO.File.Delete(@".\LiLo.Lite.UITest\Screenshots\marketsLengthFail.png");
+				this.App.Screenshot("Markets length fail").MoveTo(@".\LiLo.Lite.UITest\Screenshots\marketsLengthFail.png");
+				Assert.Fail("Markets list does not contain the expected number of markets");
+			}
+			else
+			{
+				this.App.Tap(x => x.Marked("TitleBarSettings").Index(0));
+				this.WaitForPageToLeave();
+				System.IO.File.Delete(@".\LiLo.Lite.UITest\Screenshots\HomeTapSettings.png");
+				this.App.Screenshot("Tap Settings").MoveTo(@".\LiLo.Lite.UITest\Screenshots\HomeTapSettings.png");
+				this.TapBackButton();
 			}
 
 			return this;
@@ -142,9 +143,50 @@ namespace LiLo.Lite.UITest.Pages
 
 			this.App.Tap(this.market(symbol));
 			this.WaitForPageToLeave();
-			System.IO.File.Delete($@"C:\Dev\LiLo.Lite\Source\LiLo.Lite.UITest\screenshots\TapSymbol{symbol}.png");
-			this.App.Screenshot("Search Bar").MoveTo($@"C:\Dev\LiLo.Lite\Source\LiLo.Lite.UITest\screenshots\TapSymbol{symbol}.png");
+			System.IO.File.Delete($@".\LiLo.Lite.UITest\Screenshots\TapSymbol{symbol}.png");
+			this.App.Screenshot($"Tap Symbol {symbol}").MoveTo($@".\LiLo.Lite.UITest\Screenshots\TapSymbol{symbol}.png");
 			this.TapBackButton();
+			return this;
+		}
+
+		/// <summary>Assert the page title.</summary>
+		/// <param name="pageTitle">Page title.</param>
+		/// <returns>Application assertion.</returns>
+		public HomePage ValidatePageTitle(string pageTitle = "Markets")
+		{
+			this.App.WaitForElement(this.pageTitle(pageTitle), $"Timed out waiting for page with the title '{pageTitle}'.");
+			System.IO.File.Delete(@".\LiLo.Lite.UITest\Screenshots\MarketsPageTitle.png");
+			this.App.Screenshot("Markets Page Title").MoveTo(@".\LiLo.Lite.UITest\Screenshots\MarketsPageTitle.png");
+			return this;
+		}
+
+		/// <summary>Assert that the Markets List exists.</summary>
+		/// <param name="marketsCount">Number of expected markets.</param>
+		/// <returns>Application assertion.</returns>
+		public HomePage VerifyMarketsList(int marketsCount = -1)
+		{
+			AppResult[] marketsListElement = this.App.WaitForElement(this.marketsList, "Timeout waiting for Markets list");
+			System.IO.File.Delete(@".\LiLo.Lite.UITest\Screenshots\MmarketsLength.png");
+			this.App.Screenshot("Markets length").MoveTo(@".\LiLo.Lite.UITest\Screenshots\MmarketsLength.png");
+			if (marketsCount == -1)
+			{
+				if (marketsListElement.Length == 0)
+				{
+					System.IO.File.Delete(@".\LiLo.Lite.UITest\Screenshots\marketsLengthFail.png");
+					this.App.Screenshot("Markets length fail").MoveTo(@".\LiLo.Lite.UITest\Screenshots\marketsLengthFail.png");
+					Assert.Fail("Markets list does not contain the expected number of markets");
+				}
+			}
+			else
+			{
+				if (marketsListElement.Length != marketsCount)
+				{
+					System.IO.File.Delete(@".\LiLo.Lite.UITest\Screenshots\MarketLengthsFailCount.png");
+					this.App.Screenshot($"Markets length fail {marketsCount}").MoveTo(@".\LiLo.Lite.UITest\Screenshots\MarketLengthsFailCount.png");
+					Assert.Fail($"Markets list does not contain the expected number {marketsCount} of markets, actual {marketsListElement.Length}");
+				}
+			}
+
 			return this;
 		}
 	}

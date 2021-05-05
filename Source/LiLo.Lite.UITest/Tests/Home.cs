@@ -77,5 +77,12 @@ namespace LiLo.Lite.UITest.Tests
 			homePage.TapSymbol("XRP_symbol");
 			homePage.TapSymbol("BTC_symbol");
 		}
+
+		/// <summary>Test tapping the settings icon.</summary>
+		[Test]
+		public void TapSettings()
+		{
+			new HomePage().TapSettings();
+		}
 	}
 }

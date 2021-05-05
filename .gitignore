@@ -26,6 +26,7 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+/Source/LiLo.Lite.UITest/Screenshots
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -338,4 +339,3 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
-/Source/LiLo.Lite.UITest/Screenshots

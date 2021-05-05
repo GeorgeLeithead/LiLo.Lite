@@ -93,7 +93,7 @@ namespace LiLo.Lite.Services
 			string marketWss = marketsString.ToString();
 			if (marketWss.ToString().EndsWith("/"))
 			{
-				marketWss = marketWss.Substring(0, marketWss.Length - 1);
+				marketWss = marketWss[0..^1];
 			}
 
 			return marketWss;

@@ -242,6 +242,48 @@
         <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerModel.Stream">
             <summary>Gets or sets the stream type.</summary>
         </member>
+        <member name="T:LiLo.Lite.Models.ChartModels.BarStyleModel">
+            <summary>Chart bar style model.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.ChartModels.BarStyleModel.Name">
+            <summary>Gets or sets the chart bar style name.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.ChartModels.BarStyleModel.Value">
+            <summary>Gets or sets the chart bar style value.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Models.ChartModels.IndicatorModel">
+            <summary>Chart indicator model.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.ChartModels.IndicatorModel.Name">
+            <summary>Gets or sets the indicator name.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.ChartModels.IndicatorModel.Value">
+            <summary>Gets or sets the indicator value.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Models.ChartModels.IntervalModel">
+            <summary>Chart interval model.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.ChartModels.IntervalModel.Name">
+            <summary>Gets or sets the interval name.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.ChartModels.IntervalModel.Value">
+            <summary>Gets or sets the interval value.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Models.ChartModels.PopulateChartModel">
+            <summary>Populate chart model(s).</summary>
+        </member>
+        <member name="M:LiLo.Lite.Models.ChartModels.PopulateChartModel.GetBarStyle">
+            <summary>Get the chart bar style.</summary>
+            <returns>List{BarStyleMenu} of chart bar style.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Models.ChartModels.PopulateChartModel.GetIndicator">
+            <summary>Get the chart indicator.</summary>
+            <returns>List{IndicatorModel} of chart indicators.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Models.ChartModels.PopulateChartModel.GetInterval">
+            <summary>Get the chart interval.</summary>
+            <returns>List{IntervalModel} of chart interval.</returns>
+        </member>
         <member name="T:LiLo.Lite.Models.Markets.ItemsGroupViewModel">
             <summary>Items group view model.</summary>
         </member>
@@ -814,6 +856,22 @@
         <member name="M:LiLo.Lite.ViewModels.SettingsViewModel.#ctor">
             <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.ViewModels.SettingsViewModel"/> class.</summary>
         </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.BarStyleModels">
+            <summary>Gets a collection of chart bar style models.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.ChartBarStyleSelectedItem">
+            <summary>Gets or sets the chart bar style selected item.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.ChartIndicatorSelectedItem">
+            <summary>Gets or sets the chart indicator selected item.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.ChartIntervalSelectedItem">
+            <summary>Gets or sets the chart interval selected item.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.ChartToolBar">
+            <summary>Gets or sets a value indicating whether chart tool bar is enabled.</summary>
+            <remarks>"hide_side_toolbar": true .</remarks>
+        </member>
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.EdgeBrowserCommand">
             <summary>Gets the edge browser command.</summary>
         </member>
@@ -825,6 +883,12 @@
         </member>
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.GithubCommand">
             <summary>Gets the GitHub command.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.IndicatorModels">
+            <summary>Gets a collection of chart indicator models.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.IntervalModels">
+            <summary>Gets a collection of chart interval models.</summary>
         </member>
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.SettingsCommand">
             <summary>Gets the app settings command.</summary>

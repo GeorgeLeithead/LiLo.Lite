@@ -5,6 +5,7 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
 	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+	xmlns:dcm="clr-namespace:LiLo.Lite.Models.ChartModels"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
 	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
@@ -188,6 +189,66 @@
 									</RadioButton.Content>
 								</RadioButton>
 							</Grid>
+						</Frame>
+						<Label Style="{StaticResource SettingsViewStyle}" Text="Charting" />
+						<Frame Style="{StaticResource DefaultFrameStyle}">
+							<StackLayout>
+								<Grid
+									ColumnDefinitions="*,*"
+									RowDefinitions="Auto, Auto, Auto, Auto"
+									RowSpacing="10">
+									<Label
+										Grid.Row="0"
+										Grid.Column="0"
+										Style="{StaticResource SettingViewStandardStyle}"
+										Text="Drawing Tools Bar" />
+									<Switch
+										Grid.Row="0"
+										Grid.Column="1"
+										IsToggled="{Binding ChartToolBar, Converter={StaticResource InvertedBoolConverter}}"
+										OnColor="{StaticResource LadderLeftColor}"
+										ThumbColor="{StaticResource LadderRightColor}" />
+									<Label
+										Grid.Row="1"
+										Grid.Column="0"
+										Style="{StaticResource SettingViewStandardStyle}"
+										Text="Bar Style" />
+									<Picker
+										Title="Bar Style"
+										Grid.Row="1"
+										Grid.Column="1"
+										ItemDisplayBinding="{Binding Name}"
+										ItemsSource="{Binding BarStyleModels}"
+										SelectedItem="{Binding ChartBarStyleSelectedItem}"
+										Style="{StaticResource SettingsPicker}" />
+									<Label
+										Grid.Row="2"
+										Grid.Column="0"
+										Style="{StaticResource SettingViewStandardStyle}"
+										Text="Default Interval" />
+									<Picker
+										Title="Default Interval"
+										Grid.Row="2"
+										Grid.Column="1"
+										ItemDisplayBinding="{Binding Name}"
+										ItemsSource="{Binding IntervalModels}"
+										SelectedItem="{Binding ChartIntervalSelectedItem}"
+										Style="{StaticResource SettingsPicker}" />
+									<Label
+										Grid.Row="3"
+										Grid.Column="0"
+										Style="{StaticResource SettingViewStandardStyle}"
+										Text="Default Indicator" />
+									<Picker
+										Title="Default Indicator"
+										Grid.Row="3"
+										Grid.Column="1"
+										ItemDisplayBinding="{Binding Name}"
+										ItemsSource="{Binding IndicatorModels}"
+										SelectedItem="{Binding ChartIndicatorSelectedItem}"
+										Style="{StaticResource SettingsPicker}" />
+								</Grid>
+							</StackLayout>
 						</Frame>
 						<Label Style="{StaticResource SettingsViewStyle}" Text="Favourites" />
 						<Frame Style="{StaticResource DefaultFrameStyle}">
