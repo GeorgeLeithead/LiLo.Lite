@@ -107,7 +107,6 @@
 		<None Remove="SharedImages\nano.svg" />
 		<None Remove="SharedImages\near.svg" />
 		<None Remove="SharedImages\neo.svg" />
-		<None Remove="SharedImages\npxs.svg" />
 		<None Remove="SharedImages\omg.svg" />
 		<None Remove="SharedImages\ont.svg" />
 		<None Remove="SharedImages\pax.svg" />
@@ -208,7 +207,6 @@
 		<SharedImage Include="SharedImages\nano.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\near.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\neo.svg" BaseSize="32,32" />
-		<SharedImage Include="SharedImages\npxs.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\omg.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\ont.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\pax.svg" BaseSize="32,32" />

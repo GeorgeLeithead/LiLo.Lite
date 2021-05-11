@@ -6,9 +6,10 @@
 	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
 	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:models="clr-namespace:LiLo.Lite.Models.Notifications"
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
 	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-	Title="{Binding Title, Mode=OneTime}"
+	Title="{Binding Title, Mode=OneWay}"
 	d:Title="Alerts"
 	x:DataType="vm:AlertsViewModel"
 	Shell.NavBarIsVisible="False"
@@ -69,10 +70,44 @@
 					</CollectionView.ItemsLayout>
 
 					<CollectionView.ItemTemplate>
-						<DataTemplate>
-							<Frame Style="{StaticResource DefaultFrameStyle}">
-								<Label Text="List of alerts for symbol here...(coming soon)" />
-							</Frame>
+						<DataTemplate x:DataType="models:PriceAlertNotification">
+							<SwipeView AutomationId="{Binding AlertPrice}">
+								<SwipeView.RightItems>
+									<SwipeItems>
+										<SwipeItemView
+											Margin="10"
+											Command="{Binding Source={RelativeSource AncestorType={x:Type vm:AlertsViewModel}}, Path=SwipeItemAlertCommand}"
+											CommandParameter="{Binding .}"
+											HorizontalOptions="Center"
+											VerticalOptions="Center"
+											WidthRequest="52">
+											<Image
+												HeightRequest="32"
+												Source="alarm.png"
+												WidthRequest="32" />
+
+										</SwipeItemView>
+									</SwipeItems>
+								</SwipeView.RightItems>
+								<Frame Style="{StaticResource DefaultFrameStyle}">
+									<Grid ColumnDefinitions="Auto,Auto,Auto">
+										<StackLayout
+											Grid.Column="0"
+											HorizontalOptions="Start"
+											Orientation="Horizontal"
+											VerticalOptions="Start">
+											<Label Text="{Binding Symbol, StringFormat='1 {0} crosses '}" />
+											<Label Text="{Binding AlertPrice, StringFormat='{0:C}'}" />
+										</StackLayout>
+										<Label Grid.Column="1" Text="{Binding RepeatAlert, StringFormat='Repeating {0}'}" />
+										<Switch
+											Grid.Column="2"
+											IsToggled="{Binding IsActive}"
+											OnColor="{StaticResource LadderLeftColor}"
+											ThumbColor="{StaticResource LadderRightColor}" />
+									</Grid>
+								</Frame>
+							</SwipeView>
 						</DataTemplate>
 					</CollectionView.ItemTemplate>
 				</CollectionView>

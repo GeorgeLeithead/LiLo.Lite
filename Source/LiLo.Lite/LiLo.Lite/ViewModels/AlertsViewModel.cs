@@ -9,7 +9,9 @@
 namespace LiLo.Lite.ViewModels
 {
 	using System;
+	using System.Collections.Generic;
 	using LiLo.Lite.Models.Notifications;
+	using LiLo.Lite.Services.LocalNotification;
 	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.CommunityToolkit.ObjectModel;
 	using Xamarin.Essentials;
@@ -38,16 +40,17 @@ namespace LiLo.Lite.ViewModels
 			this.IsBusy = false;
 		}
 
-		/// <summary>Gets or sets the market symbol.</summary>
+		/// <summary>Sets the market symbol.</summary>
 		public string Symbol
 		{
-			get => this.symbol;
 			set
 			{
-				if (!string.IsNullOrEmpty(value))
-				{
-					this.symbol = Uri.UnescapeDataString(value);
-				}
+				this.symbol = Uri.UnescapeDataString(value);
+				List<PriceAlertNotification> alerts = PriceNotifications.GetPriceAlertNotificationList(this.symbol + "USDT");
+				this.alertsList = new ObservableRangeCollection<PriceAlertNotification>(alerts);
+				this.Title = $"{this.symbol} {this.Title}";
+				this.NotifyPropertyChanged(() => this.Title);
+				this.NotifyPropertyChanged(() => this.AlertsList);
 			}
 		}
 
