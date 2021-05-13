@@ -15,14 +15,18 @@ LiLo.Lite is a light-weight cryptocurrency (crypto) tracking application.  It pr
 ![Home Page - Light theme - Search](Screenshots/HomeLight_Search.png)
 ![Home Page - Light theme - Landscape](Screenshots/HomeLightL.png)
 ![Home Page - Dark theme - Landscape](Screenshots/HomeDarkL.png)
+![Home page - Light theme - Favourites](Screenshots/HomeLight_Favourites.png)
+![Home page - Dark theme - Favourites](Screenshots/HomeDark_Favourites.png)
 
 ### Chart page
 ![Chart page - Light theme](Screenshots/ChartLight.png)
 ![Chart page - Dark theme](Screenshots/ChartDark.png)
+![Chart page - Light theme with chart settings](Screenshots/ChartLight_Settings.png)
 
 ## Settings page
 ![Settings page - Light theme](Screenshots/SettingsLight.png)
 ![Settings page - Dark theme](Screenshots/SettingsDark.png)
+![Settings page - Light theme - Chart options](Screenshots/SettingsLight_Chart.png)
 
 ## Manage favourites page
 ![Favourites page - Light theme](Screenshots/FavouritesLight.png)
@@ -45,6 +49,7 @@ The LiLo.Lite mobile application is currently available for these platforms:
 - FREE to install and FREE from adverts.
 - Access real-time market data from [Binance](https://www.binance.com/).
 - Access real-time charting from [TradingView](https://uk.tradingview.com/).
+- Custom charting options.
 - Only internet permissions needed.
 - No personal information collected.
 - Price change highlighting.
@@ -124,7 +129,6 @@ The LiLo.Lite mobile application is currently available for these platforms:
 - Bancor Network Token (BNT)
 - Horizen (ZEN)
 - Qtum (QTUM)
-- Pundi X (NPSX)
 - Holo (HOT)
 - Enjin Coin (ENJ)
 - Curve DAO Token (CRV)
