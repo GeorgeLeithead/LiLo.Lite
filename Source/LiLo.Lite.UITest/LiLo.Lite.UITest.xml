@@ -104,6 +104,12 @@
             <summary>Assert that the back button has been tapped.</summary>
             <returns>Application assertion.</returns>
         </member>
+        <member name="M:LiLo.Lite.UITest.Pages.HomePage.LeaveApp(System.String,System.Boolean)">
+            <summary>Assert pressing the back button to leave the app.</summary>
+            <param name="pageTitle">Page title.</param>
+            <param name="cancel">Cancel leave app.</param>
+            <returns>Application assertion.</returns>
+        </member>
         <member name="M:LiLo.Lite.UITest.Pages.HomePage.TapSettings">
             <summary>Assert tapping settings icon.</summary>
             <returns>Application assertion.</returns>
