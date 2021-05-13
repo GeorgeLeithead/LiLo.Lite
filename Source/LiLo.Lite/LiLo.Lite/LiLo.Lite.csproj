@@ -29,7 +29,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Acr.UserDialogs" Version="7.1.0.483" />
+		<PackageReference Include="Acr.UserDialogs" Version="7.1.0.514" />
 		<PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.2.0" />
 		<PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.2.0" />
 		<PackageReference Include="Microsoft.AppCenter.Distribute" Version="4.2.0" />
