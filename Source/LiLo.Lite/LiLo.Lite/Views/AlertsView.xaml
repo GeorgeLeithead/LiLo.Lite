@@ -82,6 +82,7 @@
 											VerticalOptions="Center"
 											WidthRequest="52">
 											<Image
+												AutomationProperties.Name="{Binding Symbol, StringFormat='Alarm details for symbol {0}.'}"
 												HeightRequest="32"
 												Source="alarm.png"
 												WidthRequest="32" />

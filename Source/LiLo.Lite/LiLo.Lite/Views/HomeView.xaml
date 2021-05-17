@@ -98,6 +98,7 @@
 											VerticalOptions="Center"
 											WidthRequest="52">
 											<Image
+												AutomationProperties.Name="{Binding SymbolString, StringFormat='Alarm details for symbol {0}.'}"
 												HeightRequest="32"
 												Source="alarm.png"
 												WidthRequest="32" />
@@ -114,6 +115,7 @@
 										<Image
 											Grid.RowSpan="2"
 											Grid.Column="0"
+											AutomationProperties.Name="{Binding SymbolString, StringFormat='Icon for symbol {0}.'}"
 											Source="{Binding SymbolString, StringFormat='{0}.png'}"
 											Style="{StaticResource SymbolImageStyle}" />
 										<Frame

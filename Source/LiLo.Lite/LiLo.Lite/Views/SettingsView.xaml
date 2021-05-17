@@ -5,7 +5,6 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
 	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-	xmlns:dcm="clr-namespace:LiLo.Lite.Models.ChartModels"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
 	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
@@ -26,7 +25,10 @@
 			<xct:InvertedBoolConverter x:Key="InvertedBoolConverter" />
 			<ControlTemplate x:Key="ThemeRadioTemplate">
 				<Frame Style="{StaticResource SettingsThemeFrame}">
-					<Grid Margin="4" WidthRequest="80">
+					<Grid
+						Margin="4"
+						RowDefinitions="Auto, *"
+						WidthRequest="80">
 						<Grid
 							HeightRequest="20"
 							HorizontalOptions="End"
@@ -78,7 +80,7 @@
 	</ContentPage.Resources>
 
 	<ContentPage.Content>
-		<Grid RowDefinitions="Auto,Auto">
+		<Grid RowDefinitions="Auto,*,Auto,Auto">
 			<!--  title bar  -->
 			<controls:TitleBar
 				Grid.Row="0"
@@ -155,7 +157,11 @@
 									Value="0">
 									<RadioButton.Content>
 										<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-											<Image Scale="0.75" Source="{AppThemeBinding Light='settings.png', Dark='settings_dark.png'}" />
+											<Image
+												AutomationProperties.Name="System theme style."
+												Scale="0.75"
+												Source="{AppThemeBinding Light='settings.png',
+												                         Dark='settings_dark.png'}" />
 											<Label Style="{StaticResource SettingsThemeStyle}" Text="System" />
 										</StackLayout>
 									</RadioButton.Content>
@@ -169,7 +175,11 @@
 									Value="1">
 									<RadioButton.Content>
 										<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-											<Image Scale="0.75" Source="{AppThemeBinding Light='sun_light.png', Dark='sun_dark.png'}" />
+											<Image
+												AutomationProperties.Name="Light theme style."
+												Scale="0.75"
+												Source="{AppThemeBinding Light='sun_light.png',
+												                         Dark='sun_dark.png'}" />
 											<Label Style="{StaticResource SettingsThemeStyle}" Text="Light" />
 										</StackLayout>
 									</RadioButton.Content>
@@ -183,7 +193,11 @@
 									Value="2">
 									<RadioButton.Content>
 										<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-											<Image Scale="0.75" Source="{AppThemeBinding Light='moon_light.png', Dark='moon_dark.png'}" />
+											<Image
+												AutomationProperties.Name="Dark theme style."
+												Scale="0.75"
+												Source="{AppThemeBinding Light='moon_light.png',
+												                         Dark='moon_dark.png'}" />
 											<Label Style="{StaticResource SettingsThemeStyle}" Text="Dark" />
 										</StackLayout>
 									</RadioButton.Content>
@@ -282,6 +296,7 @@
 								<Label Style="{StaticResource SettingViewStandardStyle}" Text="{Binding Version, StringFormat='Copyright George Leithead, Ver: {0}'}" />
 								<ImageButton
 									Grid.Column="1"
+									AutomationProperties.Name="Application settings."
 									Command="{Binding SettingsCommand}"
 									Source="{AppThemeBinding Light='settings.png',
 									                         Dark='settings_dark.png'}"
@@ -304,18 +319,21 @@
 								<ImageButton
 									Grid.Row="1"
 									Grid.Column="3"
+									AutomationProperties.Name="Open browser to application web site."
 									Command="{Binding EdgeBrowserCommand}"
 									Source="edgebrowser.png"
 									Style="{StaticResource SettingsImageButton}" />
 								<ImageButton
 									Grid.Row="1"
 									Grid.Column="1"
+									AutomationProperties.Name="Open browser to application GitHub repository."
 									Command="{Binding GithubCommand}"
 									Source="github.png"
 									Style="{StaticResource SettingsImageButton}" />
 								<ImageButton
 									Grid.Row="1"
 									Grid.Column="2"
+									AutomationProperties.Name="Open twitter account for application."
 									Command="{Binding TwitterCommand}"
 									Source="twitter.png"
 									Style="{StaticResource SettingsImageButton}" />

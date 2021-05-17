@@ -85,7 +85,10 @@
 									DropCommandParameter="{Binding}" />
 							</StackLayout.GestureRecognizers>
 							<Grid BackgroundColor="Yellow" IsVisible="{Binding IsBeingDraggedOver}" />
-							<Image Source="{Binding Symbol, StringFormat='{0}.png'}" Style="{StaticResource FavouritesSymbolImageStyle}">
+							<Image
+								AutomationProperties.Name="{Binding Symbol, StringFormat='Icon for symbol {0}.'}"
+								Source="{Binding Symbol, StringFormat='{0}.png'}"
+								Style="{StaticResource FavouritesSymbolImageStyle}">
 								<Image.GestureRecognizers>
 									<DragGestureRecognizer
 										CanDrag="True"
