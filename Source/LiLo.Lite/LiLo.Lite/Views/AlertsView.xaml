@@ -91,7 +91,7 @@
 									</SwipeItems>
 								</SwipeView.RightItems>
 								<Frame Style="{StaticResource DefaultFrameStyle}">
-									<Grid ColumnDefinitions="Auto,Auto,Auto">
+									<Grid ColumnDefinitions="Auto,Auto,Auto" RowDefinitions="Auto">
 										<StackLayout
 											Grid.Column="0"
 											HorizontalOptions="Start"

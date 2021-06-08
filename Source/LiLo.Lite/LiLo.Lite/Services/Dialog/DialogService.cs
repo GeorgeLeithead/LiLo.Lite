@@ -20,6 +20,11 @@ namespace LiLo.Lite.Services.Dialog
 	/// <summary>Dialogue service.</summary>
 	public class DialogService : IDialogService
 	{
+		/// <summary>Initialises a new instance of the <see cref="DialogService"/> class.</summary>
+		public DialogService()
+		{
+		}
+
 		/// <summary>Show a cross-platform alert.</summary>
 		/// <param name="message">Alert message.</param>
 		/// <param name="title">Alert title.</param>

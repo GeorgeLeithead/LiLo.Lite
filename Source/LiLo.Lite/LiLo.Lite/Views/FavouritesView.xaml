@@ -27,7 +27,7 @@
 	</ContentPage.Resources>
 
 	<ContentPage.Content>
-		<Grid RowDefinitions="Auto,1*">
+		<Grid ColumnDefinitions="*" RowDefinitions="Auto,1*">
 			<!--  title bar  -->
 			<controls:TitleBar
 				Grid.Row="0"
@@ -84,7 +84,11 @@
 									DropCommand="{Binding BindingContext.ItemDropped, Source={x:Reference MyFavourites}}"
 									DropCommandParameter="{Binding}" />
 							</StackLayout.GestureRecognizers>
-							<Grid BackgroundColor="Yellow" IsVisible="{Binding IsBeingDraggedOver}" />
+							<Grid
+								BackgroundColor="Yellow"
+								ColumnDefinitions="*"
+								IsVisible="{Binding IsBeingDraggedOver}"
+								RowDefinitions="*" />
 							<Image
 								AutomationProperties.Name="{Binding Symbol, StringFormat='Icon for symbol {0}.'}"
 								Source="{Binding Symbol, StringFormat='{0}.png'}"

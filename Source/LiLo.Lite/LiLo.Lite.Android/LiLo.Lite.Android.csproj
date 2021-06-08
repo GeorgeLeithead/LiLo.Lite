@@ -39,9 +39,10 @@
     <BundleAssemblies>false</BundleAssemblies>
     <AndroidPackageFormat>apk</AndroidPackageFormat>
     <MandroidI18n />
+    <AndroidSupportedAbis />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
+    <DebugSymbols>false</DebugSymbols>
     <DebugType>portable</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
@@ -57,6 +58,15 @@
     <AndroidUseAapt2>true</AndroidUseAapt2>
     <AndroidCreatePackagePerAbi>false</AndroidCreatePackagePerAbi>
     <AndroidLinkTool>r8</AndroidLinkTool>
+    <AndroidKeyStore>false</AndroidKeyStore>
+    <AndroidSigningKeyStore>C:\Users\georg\AppData\Local\Xamarin\Mono for Android\Keystore\LiLo\LiLo.keystore</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>
+    </AndroidSigningStorePass>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <MandroidI18n />
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidSupportedAbis />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -64,9 +74,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup Condition=" '$(Configuration)' != 'GooglePlay' ">
-    <PackageReference Include="Microsoft.AppCenter.Distribute" Version="4.2.0" />
   </ItemGroup>
   <ItemGroup Condition=" '$(Configuration)' == 'GooglePlay' ">
     <PackageReference Include="Microsoft.AppCenter.DistributePlay" Version="4.2.0" />

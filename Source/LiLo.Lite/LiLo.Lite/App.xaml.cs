@@ -19,7 +19,6 @@ namespace LiLo.Lite
 	using Microsoft.AppCenter;
 	using Microsoft.AppCenter.Analytics;
 	using Microsoft.AppCenter.Crashes;
-	using Microsoft.AppCenter.Distribute;
 	using Xamarin.Forms;
 
 	/// <summary>LiLo application class.</summary>
@@ -82,7 +81,7 @@ namespace LiLo.Lite
 		protected override void OnStart()
 		{
 			base.OnStart();
-			AppCenter.Start("android=4d413467-bf37-45b0-bf18-b8d15d98a182;ios=fc7532d3-fdc1-4447-99a7-33d07c9bae08;", typeof(Analytics), typeof(Crashes), typeof(Distribute));
+			AppCenter.Start("android=4d413467-bf37-45b0-bf18-b8d15d98a182;ios=fc7532d3-fdc1-4447-99a7-33d07c9bae08;", typeof(Analytics), typeof(Crashes));
 			if (!DesignMode.IsDesignModeEnabled)
 			{
 				this.socketsService?.Connect();

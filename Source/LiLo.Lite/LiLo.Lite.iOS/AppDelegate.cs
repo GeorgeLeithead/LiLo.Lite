@@ -16,7 +16,6 @@ namespace LiLo.Lite.iOS
 	using System.Linq;
 	using Foundation;
 	using LiLo.Lite.Views;
-	using Microsoft.AppCenter.Distribute;
 	using ObjCRuntime;
 	using UIKit;
 	using UserNotifications;
@@ -31,7 +30,6 @@ namespace LiLo.Lite.iOS
 		{
 			Forms.SetFlags("CollectionView_Experimental");
 			Forms.Init();
-			Distribute.DontCheckForUpdatesInDebug();
 			UNUserNotificationCenter.Current.Delegate = new IOSNotificationReceiver();
 			this.LoadApplication(new App());
 			return base.FinishedLaunching(app, options);

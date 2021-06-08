@@ -4,7 +4,7 @@
 Open source repository for the LiLo.Lite (Ladder In Ladder Out) Mobile Application.
 
 ## Overview
-LiLo.Lite is a light-weight cryptocurrency (crypto) tracking application.  It provides a quick and easy way to watch the top crypto currency information and charts.  With extremely low battery usage, you can leave the application running in the background and have crypto information available right at your fingertips.
+LiLo.Lite is a light-weight cryptocurrency (crypto) price tracking application.  It provides a quick and easy way to watch the top crypto currency information and charts.  With extremely low battery usage, you can leave the application running in the background and have crypto information available right at your fingertips.
 
 ## Screenshots
 ### Splash Screen

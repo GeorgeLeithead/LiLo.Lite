@@ -27,11 +27,14 @@
 				<Frame Style="{StaticResource SettingsThemeFrame}">
 					<Grid
 						Margin="4"
+						ColumnDefinitions="*"
 						RowDefinitions="Auto, *"
 						WidthRequest="80">
 						<Grid
+							ColumnDefinitions="*"
 							HeightRequest="20"
 							HorizontalOptions="End"
+							RowDefinitions="*"
 							VerticalOptions="Start"
 							WidthRequest="20">
 							<Ellipse
@@ -147,7 +150,8 @@
 							<Grid
 								ColumnDefinitions="*,*,*"
 								ColumnSpacing="10"
-								RadioButtonGroup.GroupName="ThemeGroup">
+								RadioButtonGroup.GroupName="ThemeGroup"
+								RowDefinitions="*">
 								<RadioButton
 									CheckedChanged="ThemeCheckedChanged"
 									ControlTemplate="{StaticResource ThemeRadioTemplate}"
@@ -292,7 +296,7 @@
 						</Frame>
 						<Label Style="{StaticResource SettingsViewStyle}" Text="App Info" />
 						<Frame Style="{StaticResource DefaultFrameStyle}">
-							<Grid ColumnDefinitions="*, 32">
+							<Grid ColumnDefinitions="*, 32" RowDefinitions="*">
 								<Label Style="{StaticResource SettingViewStandardStyle}" Text="{Binding Version, StringFormat='Copyright George Leithead, Ver: {0}'}" />
 								<ImageButton
 									Grid.Column="1"

@@ -478,6 +478,9 @@
         <member name="T:LiLo.Lite.Services.Dialog.DialogService">
             <summary>Dialogue service.</summary>
         </member>
+        <member name="M:LiLo.Lite.Services.Dialog.DialogService.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Services.Dialog.DialogService"/> class.</summary>
+        </member>
         <member name="M:LiLo.Lite.Services.Dialog.DialogService.ShowAlertAsync(System.String,System.String,System.String)">
             <summary>Show a cross-platform alert.</summary>
             <param name="message">Alert message.</param>
@@ -663,6 +666,9 @@
         </member>
         <member name="F:LiLo.Lite.Services.Sockets.SocketsService.webSocket">
             <summary>Web Socket.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Services.Sockets.SocketsService.#ctor">
+            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Services.Sockets.SocketsService"/> class.</summary>
         </member>
         <member name="P:LiLo.Lite.Services.Sockets.SocketsService.DialogService">
             <summary>Gets the dialogue service.</summary>

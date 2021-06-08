@@ -24,16 +24,23 @@ namespace LiLo.Lite.Services.Sockets
 	public class SocketsService : ISocketsService
 	{
 		private readonly int delayBetweenTries = 3000;
+
 		private IDialogService dialogService;
 
 		/// <summary>Has the service been resumed.</summary>
 		private bool isResumed;
 
 		private IMarketsHelperService marketsHelperService;
+
 		private int numberOfTries = 0;
 
 		/// <summary>Web Socket.</summary>
 		private WebSocket webSocket;
+
+		/// <summary>Initialises a new instance of the <see cref="SocketsService"/> class.</summary>
+		public SocketsService()
+		{
+		}
 
 		/// <summary>Gets the dialogue service.</summary>
 		public IDialogService DialogService => this.dialogService ??= DependencyService.Resolve<DialogService>();

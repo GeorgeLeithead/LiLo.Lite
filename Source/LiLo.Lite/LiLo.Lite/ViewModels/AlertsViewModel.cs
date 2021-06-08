@@ -34,6 +34,7 @@ namespace LiLo.Lite.ViewModels
 
 #if DEBUG
 			// TODO: FOR TEST ONLY
+			Preferences.Remove("TargetAlertXRPUSDT");
 			Preferences.Set("TargetAlertXRPUSDT", "1.35|true|true;1.355|true|true;1.365|true|true;1.368|true|true;1.372|true|true;1.373|true|true");
 #endif
 
