@@ -42,8 +42,8 @@ The LiLo.Lite mobile application is currently available for these platforms:
 
 | Platform | Install | Build Status |
 | -------- | ------- | ------------ |
-| Android 5.0 and above | [Side-load install](https://install.appcenter.ms/users/george-internetwideworld.com/apps/LiLo.Lite.Android/distribution_groups/public) | [![Build status](https://build.appcenter.ms/v0.1/apps/4a6daf54-3a40-41b5-b2b2-11f740b0b3c7/branches/master/badge)](https://appcenter.ms)       |
-| iOS 8.0 and above | Work-in-progress | N/A       |
+| Android 5.0 and above | [![Get it on Google Play](https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.internetwideworld.lilo.lite&pcampaignid=github) | [![Build status](https://build.appcenter.ms/v0.1/apps/4a6daf54-3a40-41b5-b2b2-11f740b0b3c7/branches/master/badge)](https://appcenter.ms) |
+| iOS 8.0 and above | Work-in-progress | [![Build status](https://build.appcenter.ms/v0.1/apps/32746d08-1249-4ee5-851c-55848d4bf6e1/branches/master/badge)](https://appcenter.ms) |
 
 ## Feature highlights include:
 - FREE to install and FREE from adverts.
