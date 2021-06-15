@@ -19,6 +19,7 @@ namespace LiLo.Lite
 	using Microsoft.AppCenter;
 	using Microsoft.AppCenter.Analytics;
 	using Microsoft.AppCenter.Crashes;
+	using Xamarin.Essentials;
 	using Xamarin.Forms;
 
 	/// <summary>LiLo application class.</summary>
@@ -63,18 +64,24 @@ namespace LiLo.Lite
 			base.OnResume();
 			if (!DesignMode.IsDesignModeEnabled)
 			{
-				this.socketsService?.WebSocket_OnResume();
+				_ = this.socketsService?.WebSocket_OnResume();
 			}
+
+			this.SetTheme();
+			this.RequestedThemeChanged += this.App_RequestedThemeChanged;
 		}
 
 		/// <summary>Perform actions when the application enters the sleeping state.</summary>
 		protected override void OnSleep()
 		{
-			base.OnStart();
+			base.OnSleep();
 			if (!DesignMode.IsDesignModeEnabled)
 			{
-				this.socketsService?.WebSocket_OnSleep();
+				_ = this.socketsService?.WebSocket_OnSleep();
 			}
+
+			this.SetTheme();
+			this.RequestedThemeChanged -= this.App_RequestedThemeChanged;
 		}
 
 		/// <summary>Perform actions when the application starts.</summary>
@@ -84,10 +91,31 @@ namespace LiLo.Lite
 			AppCenter.Start("android=4d413467-bf37-45b0-bf18-b8d15d98a182;ios=fc7532d3-fdc1-4447-99a7-33d07c9bae08;", typeof(Analytics), typeof(Crashes));
 			if (!DesignMode.IsDesignModeEnabled)
 			{
-				this.socketsService?.Connect();
+				_ = this.socketsService?.Connect();
 			}
 
-			Current.UserAppTheme = Current.RequestedTheme;
+			this.SetTheme();
+		}
+
+		private void App_RequestedThemeChanged(object sender, AppThemeChangedEventArgs e)
+		{
+			int themeRequested = (int)e.RequestedTheme;
+			Preferences.Set("Theme", themeRequested);
+			this.SetTheme();
+		}
+
+		private void SetTheme()
+		{
+			int theme = Preferences.Get("Theme", 0);
+			MainThread.BeginInvokeOnMainThread(() =>
+			{
+				Current.UserAppTheme = theme switch
+				{
+					1 => OSAppTheme.Light,
+					2 => OSAppTheme.Dark,
+					_ => OSAppTheme.Unspecified,
+				};
+			});
 		}
 	}
 }

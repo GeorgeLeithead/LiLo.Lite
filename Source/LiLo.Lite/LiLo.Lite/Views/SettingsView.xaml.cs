@@ -8,6 +8,7 @@
 
 namespace LiLo.Lite.Views
 {
+	using Xamarin.Essentials;
 	using Xamarin.Forms;
 	using Xamarin.Forms.Xaml;
 
@@ -26,7 +27,7 @@ namespace LiLo.Lite.Views
 		/// <returns>true; cancellation of back button.</returns>
 		protected override bool OnBackButtonPressed()
 		{
-			Shell.Current.GoToAsync("///Home").ConfigureAwait(true);
+			_ = Shell.Current.GoToAsync("///Home").ConfigureAwait(true);
 			return true; // prevent users from clicking the back button and exiting the application from the root page.
 		}
 
@@ -39,6 +40,8 @@ namespace LiLo.Lite.Views
 				"2" => OSAppTheme.Dark,
 				_ => OSAppTheme.Unspecified,
 			};
+
+			Preferences.Set("Theme", (int)Application.Current.UserAppTheme);
 		}
 	}
 }

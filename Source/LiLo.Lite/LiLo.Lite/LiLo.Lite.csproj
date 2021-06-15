@@ -4,7 +4,7 @@
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<ProduceReferenceAssembly>true</ProduceReferenceAssembly>
 		<LangVersion>8.0</LangVersion>
-		<Description>LiLo 'lite' is a light-weight version of LiLo. The mobile application is written using Xamarin.Forms and integrates with the Binance WebSockets service to provide live real-time market information, and using a WebView to display charting information from TradingView.</Description>
+		<Description>LiLo 'lite' is a light-weight version of LiLo. The mobile application is written using Xamarin.Forms and integrates with the Binance WebSockets service to provide live real-time cryptocurrency market information, and using a WebView to display charting information from TradingView.</Description>
 		<Copyright>2021 George Leithead, InternetWideWorld.com</Copyright>
 		<PackageProjectUrl>https://github.com/GeorgeLeithead/LiLo.Lite</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/GeorgeLeithead/LiLo.Lite</RepositoryUrl>
@@ -17,6 +17,7 @@
 		<AssemblyVersion>1.0.6.0</AssemblyVersion>
 		<FileVersion>1.0.6.0</FileVersion>
 		<Version>1.0.6</Version>
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
