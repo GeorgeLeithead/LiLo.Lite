@@ -39,12 +39,9 @@ namespace LiLo.Lite.iOS
 		public override UIInterfaceOrientationMask GetSupportedInterfaceOrientations(UIApplication application, [Transient] UIWindow forWindow)
 		{
 			Page mainpage = Xamarin.Forms.Application.Current.MainPage;
-			if (mainpage.Navigation.NavigationStack.LastOrDefault() is ChartView)
-			{
-				return UIInterfaceOrientationMask.Portrait;
-			}
-
-			return UIInterfaceOrientationMask.All;
+			return mainpage.Navigation.NavigationStack.LastOrDefault() is ChartView
+				? UIInterfaceOrientationMask.Portrait
+				: UIInterfaceOrientationMask.All;
 		}
 	}
 }

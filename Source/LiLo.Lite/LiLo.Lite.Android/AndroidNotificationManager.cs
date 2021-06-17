@@ -44,7 +44,10 @@ namespace LiLo.Lite.Droid
 		private int pendingIntentId = 0;
 
 		/// <summary>Initialises a new instance of the<see cref="AndroidNotificationManager" /> class.</summary>
-		public AndroidNotificationManager() => this.Initialize();
+		public AndroidNotificationManager()
+		{
+			this.Initialize();
+		}
 
 		/// <summary>Notification received event handler.</summary>
 		public event EventHandler NotificationReceived;
@@ -89,9 +92,8 @@ namespace LiLo.Lite.Droid
 			if (notifyTime != null)
 			{
 				Intent intent = new Intent(AndroidApp.Context, typeof(AlarmHandler));
-				intent.PutExtra(TitleKey, title);
-				intent.PutExtra(MessageKey, message);
-
+				_ = intent.PutExtra(TitleKey, title);
+				_ = intent.PutExtra(MessageKey, message);
 				PendingIntent pendingIntent = PendingIntent.GetBroadcast(AndroidApp.Context, this.pendingIntentId++, intent, PendingIntentFlags.CancelCurrent);
 				long triggerTime = this.GetNotifyTime(notifyTime.Value);
 				AlarmManager alarmManager = AndroidApp.Context.GetSystemService(Context.AlarmService) as AlarmManager;
@@ -109,11 +111,9 @@ namespace LiLo.Lite.Droid
 		public void Show(string title, string message)
 		{
 			Intent intent = new Intent(AndroidApp.Context, typeof(MainActivity));
-			intent.PutExtra(TitleKey, title);
-			intent.PutExtra(MessageKey, message);
-
+			_ = intent.PutExtra(TitleKey, title);
+			_ = intent.PutExtra(MessageKey, message);
 			PendingIntent pendingIntent = PendingIntent.GetActivity(AndroidApp.Context, this.pendingIntentId++, intent, PendingIntentFlags.UpdateCurrent);
-
 			NotificationCompat.Builder builder = new NotificationCompat.Builder(AndroidApp.Context, channelId)
 				.SetContentIntent(pendingIntent)
 				.SetContentTitle(title)
@@ -128,8 +128,7 @@ namespace LiLo.Lite.Droid
 
 		private void CreateNotificationChannel()
 		{
-			this.manager = (NotificationManager)AndroidApp.Context.GetSystemService(AndroidApp.NotificationService);
-
+			this.manager = (NotificationManager)AndroidApp.Context.GetSystemService(Context.NotificationService);
 			if (Build.VERSION.SdkInt >= BuildVersionCodes.O)
 			{
 				Java.Lang.String channelNameJava = new Java.Lang.String(channelName);

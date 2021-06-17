@@ -60,7 +60,7 @@ namespace LiLo.Lite.Services.Markets
 		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		public async Task Init()
 		{
-			await Task.Factory.StartNew(async () =>
+			_ = await Task.Factory.StartNew(async () =>
 			{
 				IEnumerable<MarketModel> markets = DataStore.GetMarketsForFeed();
 				this.MarketsList.Clear();
@@ -125,7 +125,7 @@ namespace LiLo.Lite.Services.Markets
 				await PriceNotifications.SendNotification(binanceStream.Data, this.NotificationManager);
 			}
 
-			await Task.FromResult(true);
+			_ = await Task.FromResult(true);
 		}
 	}
 }

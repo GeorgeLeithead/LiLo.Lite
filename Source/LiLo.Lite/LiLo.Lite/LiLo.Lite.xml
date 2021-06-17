@@ -184,6 +184,26 @@
             <param name="source">Source.</param>
             <returns>ObservableCollection{T}.</returns>
         </member>
+        <member name="T:LiLo.Lite.Interfaces.Theme">
+            <summary>Theme enumerator.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Interfaces.Theme.Light">
+            <summary>Light theme.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Interfaces.Theme.Dark">
+            <summary>Dark theme.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Interfaces.IEnvironment">
+            <summary>Environment interface.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Interfaces.IEnvironment.GetOperatingSystemTheme">
+            <summary>Get operating system theme.</summary>
+            <returns>Theme enumeration.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Interfaces.IEnvironment.GetOperatingSystemThemeAsync">
+            <summary>Asynchronous get operating system theme.</summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the asynchronous operation.</returns>
+        </member>
         <member name="T:LiLo.Lite.Interfaces.IParentWindowLocatorService">
             <summary>Simple platform specific service that is responsible for locating a parent window service.</summary>
         </member>
@@ -831,12 +851,6 @@
         </member>
         <member name="T:LiLo.Lite.ViewModels.HomeViewModel">
             <summary>Home view model.</summary>
-        </member>
-        <member name="F:LiLo.Lite.ViewModels.HomeViewModel.favouritesEnabled">
-            <summary>Indicates whether the favourites was enabled or not.</summary>
-        </member>
-        <member name="F:LiLo.Lite.ViewModels.HomeViewModel.favouritesList">
-            <summary>List of favourites.</summary>
         </member>
         <member name="F:LiLo.Lite.ViewModels.HomeViewModel.marketsList">
             <summary>Observable list of markets.</summary>

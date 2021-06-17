@@ -22,31 +22,24 @@ namespace LiLo.Lite.ViewModels
 	/// <summary>Settings view model.</summary>
 	public class SettingsViewModel : ViewModelBase
 	{
-		private readonly ObservableRangeCollection<BarStyleModel> barStyleModels;
-		private readonly ObservableRangeCollection<IndicatorModel> indicatorModels;
-		private readonly ObservableRangeCollection<IntervalModel> intervalModels;
-
 		/// <summary>Initialises a new instance of the <see cref="SettingsViewModel"/> class.</summary>
 		public SettingsViewModel()
 		{
 			this.IsBusy = true;
 			this.Title = "Settings";
-			this.indicatorModels = new ObservableRangeCollection<IndicatorModel>(PopulateChartModel.GetIndicator());
-			this.intervalModels = new ObservableRangeCollection<IntervalModel>(PopulateChartModel.GetInterval());
-			this.barStyleModels = new ObservableRangeCollection<BarStyleModel>(PopulateChartModel.GetBarStyle());
+			this.IndicatorModels = new ObservableRangeCollection<IndicatorModel>(PopulateChartModel.GetIndicator());
+			this.IntervalModels = new ObservableRangeCollection<IntervalModel>(PopulateChartModel.GetInterval());
+			this.BarStyleModels = new ObservableRangeCollection<BarStyleModel>(PopulateChartModel.GetBarStyle());
 			this.IsBusy = false;
 		}
 
 		/// <summary>Gets a collection of chart bar style models.</summary>
-		public ObservableRangeCollection<BarStyleModel> BarStyleModels
-		{
-			get => this.barStyleModels;
-		}
+		public ObservableRangeCollection<BarStyleModel> BarStyleModels { get; }
 
 		/// <summary>Gets or sets the chart bar style selected item.</summary>
 		public BarStyleModel ChartBarStyleSelectedItem
 		{
-			get => this.barStyleModels.FirstOrDefault(bsm => bsm.Value == Preferences.Get("ChartBarStyle", "1"));
+			get => this.BarStyleModels.FirstOrDefault(bsm => bsm.Value == Preferences.Get("ChartBarStyle", "1"));
 			set
 			{
 				BarStyleModel bsm = value;
@@ -58,7 +51,7 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Gets or sets the chart indicator selected item.</summary>
 		public IndicatorModel ChartIndicatorSelectedItem
 		{
-			get => this.indicatorModels.FirstOrDefault(im => im.Value == Preferences.Get("ChartStudyIndicator", "RSI@tv-basicstudies"));
+			get => this.IndicatorModels.FirstOrDefault(im => im.Value == Preferences.Get("ChartStudyIndicator", "RSI@tv-basicstudies"));
 			set
 			{
 				IndicatorModel im = value;
@@ -70,7 +63,7 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Gets or sets the chart interval selected item.</summary>
 		public IntervalModel ChartIntervalSelectedItem
 		{
-			get => this.intervalModels.FirstOrDefault(im => im.Value == Preferences.Get("ChartInterval", "15"));
+			get => this.IntervalModels.FirstOrDefault(im => im.Value == Preferences.Get("ChartInterval", "15"));
 			set
 			{
 				IntervalModel im = value;
@@ -113,16 +106,10 @@ namespace LiLo.Lite.ViewModels
 		public IAsyncCommand GithubCommand => new AsyncCommand(this.GitHubCommandClicked, allowsMultipleExecutions: false);
 
 		/// <summary>Gets a collection of chart indicator models.</summary>
-		public ObservableRangeCollection<IndicatorModel> IndicatorModels
-		{
-			get => this.indicatorModels;
-		}
+		public ObservableRangeCollection<IndicatorModel> IndicatorModels { get; }
 
 		/// <summary>Gets a collection of chart interval models.</summary>
-		public ObservableRangeCollection<IntervalModel> IntervalModels
-		{
-			get => this.intervalModels;
-		}
+		public ObservableRangeCollection<IntervalModel> IntervalModels { get; }
 
 		/// <summary>Gets the app settings command.</summary>
 		public IAsyncCommand SettingsCommand => new AsyncCommand(this.SettingsCommandClicked, allowsMultipleExecutions: false);
@@ -161,19 +148,31 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Gets the application version.</summary>
 		public string Version => AppInfo.VersionString;
 
-		private async Task BrowserCommandClicked() => await Browser.OpenAsync(new Uri("https://www.internetwideworld.com/lilolite"), BrowserLaunchMode.SystemPreferred);
+		private async Task BrowserCommandClicked()
+		{
+			await Browser.OpenAsync(new Uri("https://www.internetwideworld.com/lilolite"), BrowserLaunchMode.SystemPreferred);
+		}
 
-		private async Task FavouritesManageCommandClicked() => await Shell.Current.GoToAsync("///Favourites");
+		private async Task FavouritesManageCommandClicked()
+		{
+			await Shell.Current.GoToAsync("///Favourites");
+		}
 
-		private async Task GitHubCommandClicked() => await Browser.OpenAsync(new Uri("https://github.com/GeorgeLeithead/LiLo.Lite"), BrowserLaunchMode.SystemPreferred);
+		private async Task GitHubCommandClicked()
+		{
+			await Browser.OpenAsync(new Uri("https://github.com/GeorgeLeithead/LiLo.Lite"), BrowserLaunchMode.SystemPreferred);
+		}
 
 		private async Task SettingsCommandClicked()
 		{
 			AppInfo.ShowSettingsUI();
-			await Task.FromResult(true);
+			_ = await Task.FromResult(true);
 		}
 
 		/// <summary>Link to the twitter page for LiLo.</summary>
-		private async Task TwitterCommandClicked() => await Browser.OpenAsync(new Uri("https://twitter.com/LiLoMobileApp"), BrowserLaunchMode.SystemPreferred);
+		private async Task TwitterCommandClicked()
+		{
+			await Browser.OpenAsync(new Uri("https://twitter.com/LiLoMobileApp"), BrowserLaunchMode.SystemPreferred);
+		}
 	}
 }

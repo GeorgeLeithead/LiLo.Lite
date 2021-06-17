@@ -33,12 +33,7 @@ namespace LiLo.Lite.Services.Dialog
 		public Task ShowAlertAsync(string message, string title, string buttonLabel)
 		{
 			Page page = Application.Current.MainPage;
-			if (page == null)
-			{
-				return Task.CompletedTask;
-			}
-
-			return UserDialogs.Instance.AlertAsync(message, title, buttonLabel);
+			return page == null ? Task.CompletedTask : UserDialogs.Instance.AlertAsync(message, title, buttonLabel);
 		}
 
 		/// <summary>Show a cross-platform prompt.</summary>
@@ -70,7 +65,7 @@ namespace LiLo.Lite.Services.Dialog
 				return Task.CompletedTask;
 			}
 
-			UserDialogs.Instance.Toast(message);
+			_ = UserDialogs.Instance.Toast(message);
 			return Task.CompletedTask;
 		}
 	}

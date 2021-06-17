@@ -103,12 +103,12 @@ namespace LiLo.Lite.Controls
 			if (oldPrice <= newPrice)
 			{
 				lastPriceView.TextColor = lastPriceView.PositiveTickColor;
-				lastPriceView.ColorTo(lastPriceView.PositiveTickBackgroundColor, defaultBackgroundColor, l => lastPriceView.BackgroundColor = l, AnimationDuration);
+				_ = lastPriceView.ColorTo(lastPriceView.PositiveTickBackgroundColor, defaultBackgroundColor, l => lastPriceView.BackgroundColor = l, AnimationDuration);
 			}
 			else
 			{
 				lastPriceView.TextColor = lastPriceView.NegativeTickColor;
-				lastPriceView.ColorTo(lastPriceView.NegativeTickBackgroundColor, defaultBackgroundColor, l => lastPriceView.BackgroundColor = l, AnimationDuration);
+				_ = lastPriceView.ColorTo(lastPriceView.NegativeTickBackgroundColor, defaultBackgroundColor, l => lastPriceView.BackgroundColor = l, AnimationDuration);
 			}
 		}
 	}

@@ -72,7 +72,7 @@ namespace LiLo.Lite.Services.Sockets
 		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		public async Task WebSocket_Close()
 		{
-			await Task.Factory.StartNew(async () =>
+			_ = await Task.Factory.StartNew(async () =>
 			{
 				if (!this.IsConnected)
 				{
@@ -82,7 +82,7 @@ namespace LiLo.Lite.Services.Sockets
 				await this.DialogService.ShowToastAsync("Closing connection!");
 				if (this.webSocket == null)
 				{
-					await Task.FromResult(true);
+					_ = await Task.FromResult(true);
 					return;
 				}
 
@@ -91,7 +91,7 @@ namespace LiLo.Lite.Services.Sockets
 					this.webSocket.CloseAsync(CloseStatusCode.Normal);
 				}
 
-				await Task.FromResult(true);
+				_ = await Task.FromResult(true);
 			});
 		}
 
@@ -99,7 +99,7 @@ namespace LiLo.Lite.Services.Sockets
 		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		public async Task WebSocket_OnConnect()
 		{
-			await Task.Factory.StartNew(async () =>
+			_ = await Task.Factory.StartNew(async () =>
 			{
 				if (this.IsConnected)
 				{
@@ -120,16 +120,15 @@ namespace LiLo.Lite.Services.Sockets
 
 					this.numberOfTries = 1;
 				}
-				catch (System.Net.Sockets.SocketException sex)
+				catch (System.Net.Sockets.SocketException)
 				{
-					var x = sex.SocketErrorCode;
 					this.numberOfTries += 1;
 					Debug.WriteLine($"Lost connection, awaiting {this.numberOfTries}");
 					Task.Delay(this.numberOfTries * this.delayBetweenTries).Wait();
 					await this.WebSocket_OnConnect();
 				}
 
-				await Task.FromResult(true);
+				_ = await Task.FromResult(true);
 			});
 		}
 
@@ -147,7 +146,7 @@ namespace LiLo.Lite.Services.Sockets
 				this.isResumed = true;
 			}
 
-			await Task.FromResult(true);
+			_ = await Task.FromResult(true);
 		}
 
 		/// <summary>Handle when the application goes into sleep.</summary>
@@ -164,7 +163,7 @@ namespace LiLo.Lite.Services.Sockets
 				this.isResumed = false;
 			}
 
-			await Task.FromResult(true);
+			_ = await Task.FromResult(true);
 		}
 
 		/// <summary>Handle when the sockets connection closes.</summary>
@@ -172,7 +171,7 @@ namespace LiLo.Lite.Services.Sockets
 		/// <param name="e">Close event arguments.</param>
 		private async void WebSocket_OnClose(object sender, CloseEventArgs e)
 		{
-			await Task.Factory.StartNew(async () =>
+			_ = await Task.Factory.StartNew(async () =>
 			{
 				if (this.IsConnected)
 				{
@@ -199,7 +198,7 @@ namespace LiLo.Lite.Services.Sockets
 		{
 			if (this.IsConnected)
 			{
-				this.DialogService.ShowToastAsync(e.Message).ConfigureAwait(true);
+				_ = this.DialogService.ShowToastAsync(e.Message).ConfigureAwait(true);
 			}
 		}
 
@@ -208,14 +207,14 @@ namespace LiLo.Lite.Services.Sockets
 		/// <param name="e">Message event arguments.</param>
 		private async void WebSocket_OnMessage(object sender, MessageEventArgs e)
 		{
-			await Task.Factory.StartNew(async () =>
+			_ = await Task.Factory.StartNew(async () =>
 			{
 				if (e.IsText)
 				{
 					this.webSocket.OnMessage -= this.WebSocket_OnMessage;
 				}
 
-				await Task.FromResult(true);
+				_ = await Task.FromResult(true);
 			});
 		}
 	}

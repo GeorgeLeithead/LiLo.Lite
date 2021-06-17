@@ -116,7 +116,7 @@ namespace LiLo.Lite.Controls
 		private void SettingsTapped(object sender, EventArgs e)
 		{
 			// Application.Current.UserAppTheme = Application.Current.RequestedTheme == OSAppTheme.Light ? OSAppTheme.Dark : OSAppTheme.Light;
-			Shell.Current.GoToAsync("//Settings");
+			_ = Shell.Current.GoToAsync("//Settings");
 		}
 
 		private async void HomeTapped(object sender, EventArgs e)

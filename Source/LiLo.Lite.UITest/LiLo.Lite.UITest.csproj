@@ -78,6 +78,9 @@
     <AdditionalFiles Include="..\LiLo.Lite\Settings.StyleCop" Link="Settings.StyleCop" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\LiLo.Lite\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="test.runsettings" />
     <None Include="tests.playlist" />
   </ItemGroup>

@@ -83,11 +83,11 @@ namespace LiLo.Lite.Services
 		internal static string MarketsWss()
 		{
 			StringBuilder marketsString = new StringBuilder();
-			marketsString.Append("wss://stream.binance.com:9443/stream?streams=");
+			_ = marketsString.Append("wss://stream.binance.com:9443/stream?streams=");
 			foreach (MarketModel market in marketsData)
 			{
-				marketsString.Append(market.SymbolString.ToLower());
-				marketsString.Append("usdt@ticker/");
+				_ = marketsString.Append(market.SymbolString.ToLower());
+				_ = marketsString.Append("usdt@ticker/");
 			}
 
 			string marketWss = marketsString.ToString();
@@ -109,12 +109,9 @@ namespace LiLo.Lite.Services
 				marketsJson = reader.ReadToEnd();
 			}
 
-			if (string.IsNullOrEmpty(marketsJson))
-			{
-				throw new ArgumentNullException("No markets data found!");
-			}
-
-			return JsonSerializer.Deserialize<MarketsModel>(marketsJson).Markets.ToList();
+			return string.IsNullOrEmpty(marketsJson)
+				? throw new ArgumentNullException("No markets data found!")
+				: JsonSerializer.Deserialize<MarketsModel>(marketsJson).Markets.ToList();
 		}
 
 		private static IEnumerable<MarketModel> GetExternalMarketsFeed()

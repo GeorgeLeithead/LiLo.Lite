@@ -17,6 +17,7 @@ namespace LiLo.Lite.ViewModels
 	using System.Globalization;
 	using System.Linq;
 	using System.Windows.Input;
+	using LiLo.Lite.Interfaces;
 	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.Essentials;
@@ -118,7 +119,7 @@ iframe.body {
 			set
 			{
 				string symbol = Uri.UnescapeDataString(value);
-				this.SelectedItem = this.MarketsHelperService.MarketsList.Where(m => m.SymbolString == symbol).First();
+				this.SelectedItem = this.MarketsHelperService.MarketsList.First(m => m.SymbolString == symbol);
 				this.Title = symbol;
 			}
 		}
@@ -134,8 +135,20 @@ iframe.body {
 					return;
 				}
 
+				Theme theme = Theme.Light;
+				if (Application.Current.UserAppTheme == OSAppTheme.Unspecified)
+				{
+					theme = DependencyService.Get<IEnvironment>().GetOperatingSystemTheme(); // Handle when the user is using SYSTEM theme, and determine what it actually IS!
+				}
+				else
+				{
+					int appTheme = Preferences.Get("Theme", 0);
+					appTheme--;
+					theme = (Theme)appTheme;
+				}
+
 				string tradingViewString = TradingViewString.Replace("X0X", $"BINANCE:{this.SelectedItem.SymbolString}USDT");
-				tradingViewString = tradingViewString.Replace("X1X", Application.Current.UserAppTheme == OSAppTheme.Dark ? "dark" : "light");
+				tradingViewString = tradingViewString.Replace("X1X", theme == Theme.Dark ? "dark" : "light");
 				tradingViewString = tradingViewString.Replace("X2X", TimeZoneInfo.Local.ToString());
 				tradingViewString = tradingViewString.Replace("X3X", CultureInfo.CurrentCulture.IetfLanguageTag.Substring(0, 2));
 				tradingViewString = tradingViewString.Replace("X4X", Preferences.Get("ChartInterval", "15"));
@@ -153,7 +166,7 @@ iframe.body {
 		{
 			// TODO: Implement the ability to set alerts for market items
 			MarketModel item = this.SelectedItem;
-			Shell.Current.GoToAsync($"//Alerts?symbol={item.SymbolString}");
+			_ = Shell.Current.GoToAsync($"//Alerts?symbol={item.SymbolString}");
 		}
 	}
 }

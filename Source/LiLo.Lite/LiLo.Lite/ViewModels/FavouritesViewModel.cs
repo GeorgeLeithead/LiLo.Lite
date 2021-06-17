@@ -49,15 +49,15 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Gets or sets a collection of favourite markets.</summary>
 		public ObservableCollection<ItemsGroupViewModel> FavouriteItems
 		{
-			get { return this.favouriteItems; }
-			set { this.SetProperty(ref this.favouriteItems, value); }
+			get => this.favouriteItems;
+			set => this.SetProperty(ref this.favouriteItems, value);
 		}
 
 		/// <summary>Gets or sets a value indicating whether the view is busy.</summary>
 		public bool IsBusy
 		{
 			get => this.isBusy;
-			set { this.SetProperty(ref this.isBusy, value); }
+			set => this.SetProperty(ref this.isBusy, value);
 		}
 
 		/// <summary>Gets an item dragged command.</summary>
@@ -75,15 +75,15 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Gets or sets a collection of markets.</summary>
 		public ObservableCollection<ItemViewModel> MarketItems
 		{
-			get { return this.marketItems; }
-			set { this.SetProperty(ref this.marketItems, value); }
+			get => this.marketItems;
+			set => this.SetProperty(ref this.marketItems, value);
 		}
 
 		/// <summary>gets or sets a value for the view title.</summary>
 		public string Title
 		{
 			get => this.title;
-			set { this.SetProperty(ref this.title, value); }
+			set => this.SetProperty(ref this.title, value);
 		}
 
 		private void OnItemDragged(ItemViewModel item)
@@ -125,7 +125,7 @@ namespace LiLo.Lite.ViewModels
 				return; // Must have at least 1 in the favourites category!
 			}
 
-			categoryToMoveFrom.Remove(itemToMove);
+			_ = categoryToMoveFrom.Remove(itemToMove);
 			int insertAtIndex = categoryToMoveTo.IndexOf(itemToInsertBefore);
 			itemToMove.Category = categoryToMoveFrom.Name;
 			categoryToMoveTo.Insert(insertAtIndex, itemToMove);

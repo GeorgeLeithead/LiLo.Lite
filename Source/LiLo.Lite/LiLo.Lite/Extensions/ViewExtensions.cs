@@ -29,7 +29,7 @@ namespace LiLo.Lite.Extensions
 				throw new ArgumentNullException(nameof(self));
 			}
 
-			self.AbortAnimation("ColorTo");
+			_ = self.AbortAnimation("ColorTo");
 		}
 
 		/// <summary>Add Colour animation to element.</summary>
@@ -52,12 +52,14 @@ namespace LiLo.Lite.Extensions
 				throw new ArgumentNullException(nameof(callback));
 			}
 
-			Color Transform(double t) =>
-			  Color.FromRgba(
-				fromColor.R + (t * (toColor.R - fromColor.R)),
-				fromColor.G + (t * (toColor.G - fromColor.G)),
-				fromColor.B + (t * (toColor.B - fromColor.B)),
-				fromColor.A + (t * (toColor.A - fromColor.A)));
+			Color Transform(double t)
+			{
+				return Color.FromRgba(
+fromColor.R + (t * (toColor.R - fromColor.R)),
+fromColor.G + (t * (toColor.G - fromColor.G)),
+fromColor.B + (t * (toColor.B - fromColor.B)),
+fromColor.A + (t * (toColor.A - fromColor.A)));
+			}
 
 			return ColorAnimation(self, "ColorTo", Transform, callback, length, easing);
 		}
@@ -93,7 +95,7 @@ namespace LiLo.Lite.Extensions
 			}
 
 			easing ??= Easing.Linear;
-			var taskCompletionSource = new TaskCompletionSource<bool>();
+			TaskCompletionSource<bool> taskCompletionSource = new TaskCompletionSource<bool>();
 			element.Animate(name, transform, callback, 16, length, easing, (v, c) => taskCompletionSource.SetResult(c));
 			return taskCompletionSource.Task;
 		}

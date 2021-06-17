@@ -27,12 +27,6 @@ namespace LiLo.Lite.ViewModels
 	[QueryProperty("Symbol", "symbol")]
 	public class HomeViewModel : ViewModelBase
 	{
-		/// <summary>Indicates whether the favourites was enabled or not.</summary>
-		private bool favouritesEnabled;
-
-		/// <summary>List of favourites.</summary>
-		private string favouritesList;
-
 		private int gridItemsLayoutSpan = 1;
 
 		/// <summary>Observable list of markets.</summary>
@@ -49,22 +43,14 @@ namespace LiLo.Lite.ViewModels
 			this.FavouritesEnabled = Preferences.Get("FavouritesEnabled", false);
 			this.RetryButtonClicked = new AsyncCommand(this.Init);
 			this.SwipeItemAlertCommand = new Command<MarketModel>(this.OnSwipeItemAlert);
-			this.Init().ConfigureAwait(false);
+			_ = this.Init().ConfigureAwait(false);
 		}
 
 		/// <summary>Gets or sets a value indicating whether the favourites is enabled.</summary>
-		public bool FavouritesEnabled
-		{
-			get => this.favouritesEnabled;
-			set => this.favouritesEnabled = value;
-		}
+		public bool FavouritesEnabled { get; set; }
 
 		/// <summary>Gets or sets the users favourites list.</summary>
-		public string FavouritesList
-		{
-			get => this.favouritesList;
-			set => this.favouritesList = value;
-		}
+		public string FavouritesList { get; set; }
 
 		/// <summary>Gets or sets the items layout span.</summary>
 		/// <remarks>To handle landscape and portrait orientation.</remarks>
@@ -107,7 +93,7 @@ namespace LiLo.Lite.ViewModels
 				if (value != null)
 				{
 					MarketModel item = value;
-					Shell.Current.GoToAsync($"//Chart?symbol={item.SymbolString}");
+					_ = Shell.Current.GoToAsync($"//Chart?symbol={item.SymbolString}");
 					this.NotifyPropertyChanged(() => this.SelectedItem);
 				}
 			}
@@ -133,41 +119,41 @@ namespace LiLo.Lite.ViewModels
 		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		public async Task Init()
 		{
-			await Task.Factory.StartNew(async () =>
-			{
-				NetworkAccess current = Connectivity.NetworkAccess;
-				if (current == NetworkAccess.Internet)
-				{
-					// Connection to internet is available
-					try
-					{
-						await this.MarketsHelperService.Init();
-						this.SocketsService?.Connect();
-						this.MarketsList = this.MarketsHelperService.MarketsList;
-					}
-					catch (HttpRequestException ex)
-					{
-						_ = this.DialogService.ShowAlertAsync(ex.Message, "Markets list error", "Dismiss");
-					}
-				}
-				else
-				{
-					_ = this.DialogService.ShowAlertAsync("No network access!", "Network error", "Dismiss");
-				}
+			_ = await Task.Factory.StartNew(async () =>
+			  {
+				  NetworkAccess current = Connectivity.NetworkAccess;
+				  if (current == NetworkAccess.Internet)
+				  {
+					  // Connection to internet is available
+					  try
+					  {
+						  await this.MarketsHelperService.Init();
+						  _ = this.SocketsService?.Connect();
+						  this.MarketsList = this.MarketsHelperService.MarketsList;
+					  }
+					  catch (HttpRequestException ex)
+					  {
+						  _ = this.DialogService.ShowAlertAsync(ex.Message, "Markets list error", "Dismiss");
+					  }
+				  }
+				  else
+				  {
+					  _ = this.DialogService.ShowAlertAsync("No network access!", "Network error", "Dismiss");
+				  }
 
-				this.IsBusy = false;
-				if (!string.IsNullOrEmpty(this.Symbol))
-				{
-					this.NotifyPropertyChanged(() => this.Symbol);
-				}
-			});
+				  this.IsBusy = false;
+				  if (!string.IsNullOrEmpty(this.Symbol))
+				  {
+					  this.NotifyPropertyChanged(() => this.Symbol);
+				  }
+			  });
 		}
 
 		/// <summary>Market Model item has been swiped and Alert selected.</summary>
 		/// <param name="item">{MarketModel} item.</param>
 		private void OnSwipeItemAlert(MarketModel item)
 		{
-			Shell.Current.GoToAsync($"//Alerts?symbol={item.SymbolString}");
+			_ = Shell.Current.GoToAsync($"//Alerts?symbol={item.SymbolString}");
 		}
 	}
 }

@@ -1,4 +1,16 @@
-﻿
+﻿//-----------------------------------------------------------------------
+// <copyright file="SplashActivity.cs" company="InternetWideWorld.com">
+// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
+//   THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
+//   OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
+//   LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+//   FITNESS FOR A PARTICULAR PURPOSE.
+// </copyright>
+// <summary>
+//   Main Activity.
+// </summary>
+//-----------------------------------------------------------------------
+
 namespace LiLo.Lite.Droid
 {
 	using Android.App;
@@ -12,13 +24,13 @@ namespace LiLo.Lite.Droid
 	[Activity(Theme = "@style/MainTheme.Splash", Icon = "@mipmap/icon", MainLauncher = true, NoHistory = true)]
 	public class SplashActivity : AppCompatActivity
 	{
-		static readonly string TAG = "X:" + typeof(SplashActivity).Name;
+		private static readonly string TAG = "X:" + nameof(SplashActivity);
 
 		/// <inheritdoc/>
 		public override void OnCreate(Bundle savedInstanceState, PersistableBundle persistentState)
 		{
 			base.OnCreate(savedInstanceState, persistentState);
-			Log.Debug(TAG, "SplashActivity.OnCreate");
+			_ = Log.Debug(TAG, "SplashActivity.OnCreate");
 		}
 
 		/// <summary>Launches the start-up task.</summary>summary>
@@ -30,11 +42,11 @@ namespace LiLo.Lite.Droid
 		}
 
 		/// <summary>Simulates background work that happens behind the splash screen.</summary>
-		async void SimulateStartup()
+		private async void SimulateStartup()
 		{
-			Log.Debug(TAG, "Performing some start-up work that takes a bit of time.");
+			_ = Log.Debug(TAG, "Performing some start-up work that takes a bit of time.");
 			await Task.Delay(500); // Simulate a bit of start-up work.
-			Log.Debug(TAG, "Start-up work is finished - starting MainActivity.");
+			_ = Log.Debug(TAG, "Start-up work is finished - starting MainActivity.");
 			this.StartActivity(new Intent(Application.Context, typeof(MainActivity)));
 		}
 	}
