@@ -49,7 +49,7 @@
 				IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}"
 				Orientation="Vertical">
 				<SearchBar
-					x:Name="searchBar"
+					x:Name="SearchBar"
 					AutomationId="SearchBar"
 					TextChanged="SearchBarTextChanged" />
 				<!--  Markets List View  -->

@@ -64,6 +64,7 @@ namespace LiLo.Lite.Services.Markets
 			{
 				IEnumerable<MarketModel> markets = DataStore.GetMarketsForFeed();
 				this.MarketsList.Clear();
+				this.SourceMarketsList.Clear();
 				foreach (MarketModel market in markets)
 				{
 					this.MarketsList.Add(market);

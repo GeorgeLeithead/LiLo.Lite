@@ -35,8 +35,8 @@
 
 	<ItemGroup>
 		<PackageReference Include="Acr.UserDialogs" Version="7.1.0.514" />
-		<PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.2.0" />
-		<PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.2.0" />
+		<PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.3.0" />
+		<PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.3.0" />
 		<PackageReference Include="Resizetizer.NT" Version="0.2.0" />
 		<PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
 			<PrivateAssets>all</PrivateAssets>

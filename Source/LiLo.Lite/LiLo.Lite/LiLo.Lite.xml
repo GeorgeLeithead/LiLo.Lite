@@ -1014,8 +1014,12 @@
             <remarks>As this is the root page, we have to prevent the back button otherwise it will exit the application.</remarks>
             <returns>true; cancellation of back button.</returns>
         </member>
+        <member name="M:LiLo.Lite.Views.HomeView.OnDisappearing">
+            <inheritdoc/>
+        </member>
         <member name="M:LiLo.Lite.Views.HomeView.OnSizeAllocated(System.Double,System.Double)">
             <inheritdoc/>
+            <remarks>1 = Portrait mode, 2 = Landscape mode.</remarks>
         </member>
         <member name="M:LiLo.Lite.Views.HomeView.SearchBarTextChanged(System.Object,Xamarin.Forms.TextChangedEventArgs)">
             <summary>Search Bar text changed.</summary>

@@ -16,6 +16,8 @@ namespace LiLo.Lite.UITest.Pages
 	/// <summary>Home Page Object.</summary>
 	public class HomePage : BasePage
 	{
+		private readonly Query alertDialog;
+
 		/// <summary>Arrange test for market.</summary>
 		private readonly Func<string, Query> market;
 
@@ -30,8 +32,6 @@ namespace LiLo.Lite.UITest.Pages
 
 		/// <summary>Arrange test for search symbol.</summary>
 		private readonly Query searchSymbol;
-
-		private readonly Query alertDialog;
 
 		/// <summary>Initialises a new instance of the <see cref="HomePage"/> class.</summary>
 		public HomePage()
@@ -50,6 +50,18 @@ namespace LiLo.Lite.UITest.Pages
 			Android = x => x.Marked("PageTitle").Text("Markets"),
 			iOS = x => x.Marked("PageTitle").Text("Markets"),
 		};
+
+		/// <summary>Assert pressing the back button to leave the app.</summary>
+		/// <param name="pageTitle">Page title.</param>
+		/// <param name="cancel">Cancel leave app.</param>
+		/// <returns>Application assertion.</returns>
+		public HomePage LeaveApp(string pageTitle, bool cancel = false)
+		{
+			_ = this.App.WaitForElement(this.pageTitle(pageTitle), $"Timed out waiting for page with the title '{pageTitle}'.");
+			_ = this.TapBackButton();
+			_ = this.App.WaitForElement(this.alertDialog, $"Time out waiting for alert dialogue.");
+			return this;
+		}
 
 		/// <summary>Assert that the Search bar exists.</summary>
 		/// <returns>Application assertion.</returns>
@@ -93,19 +105,6 @@ namespace LiLo.Lite.UITest.Pages
 			return this;
 		}
 
-		/// <summary>Assert pressing the back button to leave the app.</summary>
-		/// <param name="pageTitle">Page title.</param>
-		/// <param name="cancel">Cancel leave app.</param>
-		/// <returns>Application assertion.</returns>
-		public HomePage LeaveApp(string pageTitle, bool cancel = false)
-		{
-			this.App.WaitForElement(this.pageTitle(pageTitle), $"Timed out waiting for page with the title '{pageTitle}'.");
-			this.TapBackButton();
-			this.App.WaitForElement(this.alertDialog, $"Time out waiting for alert dialogue.");
-
-			return this;
-		}
-
 		/// <summary>Assert tapping settings icon.</summary>
 		/// <returns>Application assertion.</returns>
 		public HomePage TapSettings()
@@ -123,7 +122,7 @@ namespace LiLo.Lite.UITest.Pages
 				this.WaitForPageToLeave();
 				System.IO.File.Delete(@".\LiLo.Lite.UITest\Screenshots\HomeTapSettings.png");
 				this.App.Screenshot("Tap Settings").MoveTo(@".\LiLo.Lite.UITest\Screenshots\HomeTapSettings.png");
-				this.TapBackButton();
+				_ = this.TapBackButton();
 			}
 
 			return this;
@@ -137,7 +136,7 @@ namespace LiLo.Lite.UITest.Pages
 			AppResult[] selectedmarket = this.App.WaitForElement(this.market(symbol));
 			if (selectedmarket.Length != 1)
 			{
-				this.App.Screenshot($"Market for currency '{symbol}' length fail");
+				_ = this.App.Screenshot($"Market for currency '{symbol}' length fail");
 				Assert.Fail($"Expected Market '{symbol}' does not exist in Markets List");
 			}
 
@@ -145,7 +144,7 @@ namespace LiLo.Lite.UITest.Pages
 			this.WaitForPageToLeave();
 			System.IO.File.Delete($@".\LiLo.Lite.UITest\Screenshots\TapSymbol{symbol}.png");
 			this.App.Screenshot($"Tap Symbol {symbol}").MoveTo($@".\LiLo.Lite.UITest\Screenshots\TapSymbol{symbol}.png");
-			this.TapBackButton();
+			_ = this.TapBackButton();
 			return this;
 		}
 
@@ -154,7 +153,7 @@ namespace LiLo.Lite.UITest.Pages
 		/// <returns>Application assertion.</returns>
 		public HomePage ValidatePageTitle(string pageTitle = "Markets")
 		{
-			this.App.WaitForElement(this.pageTitle(pageTitle), $"Timed out waiting for page with the title '{pageTitle}'.");
+			_ = this.App.WaitForElement(this.pageTitle(pageTitle), $"Timed out waiting for page with the title '{pageTitle}'.");
 			System.IO.File.Delete(@".\LiLo.Lite.UITest\Screenshots\MarketsPageTitle.png");
 			this.App.Screenshot("Markets Page Title").MoveTo(@".\LiLo.Lite.UITest\Screenshots\MarketsPageTitle.png");
 			return this;

@@ -32,7 +32,10 @@ namespace LiLo.Lite.Views
 		private HomeViewModel vm;
 
 		/// <summary>Initialises a new instance of the <see cref="HomeView" /> class.</summary>
-		public HomeView() => this.InitializeComponent();
+		public HomeView()
+		{
+			this.InitializeComponent();
+		}
 
 		private HomeViewModel VM => this.vm ??= (HomeViewModel)this.BindingContext;
 
@@ -40,29 +43,29 @@ namespace LiLo.Lite.Views
 		protected override void OnAppearing()
 		{
 			base.OnAppearing();
-			this.searchBar.Unfocus();
+			this.SearchBar.Unfocus();
 			if (this.VM.FavouritesList != Preferences.Get(App.FavouritesCategory, string.Empty) || this.VM.FavouritesEnabled != Preferences.Get("FavouritesEnabled", false))
 			{
 				// Favourites have changed to we need to close the sockets connection, and re-initialise to as to show the updated markets list.
 				this.VM.IsBusy = true;
 				this.VM.FavouritesList = Preferences.Get(App.FavouritesCategory, string.Empty);
 				this.VM.FavouritesEnabled = Preferences.Get("FavouritesEnabled", false);
-				this.VM.SocketsService.WebSocket_OnSleep(); // Sleep the connection
-				this.VM.SocketsService.WebSocket_Close(); // Close the connection
-				this.VM.Init().ConfigureAwait(false); // Re-initialise the markets and sockets connections.
+				_ = this.VM.SocketsService.WebSocket_OnSleep(); // Sleep the connection
+				_ = this.VM.SocketsService.WebSocket_Close(); // Close the connection
+				_ = this.VM.Init().ConfigureAwait(false); // Re-initialise the markets and sockets connections.
 			}
 
 			if (!string.IsNullOrEmpty(this.VM.Symbol))
 			{
-				Task.Factory.StartNew(() =>
-				{
-					// await Task.Delay(500); // This causes a real problem with the app performance!
-					MarketModel matchingItem = this.VM.MarketsList.Where(m => m.SymbolString == this.VM.Symbol).FirstOrDefault();
-					if (matchingItem != null)
-					{
-						this.CollectionViewMarketsList.ScrollTo(item: matchingItem, group: null, position: ScrollToPosition.Start, animate: true);
-					}
-				});
+				_ = Task.Factory.StartNew(() =>
+				  {
+					  // await Task.Delay(500); // This causes a real problem with the app performance!
+					  MarketModel matchingItem = this.VM.MarketsList.FirstOrDefault(m => m.SymbolString == this.VM.Symbol);
+					  if (matchingItem != null)
+					  {
+						  this.CollectionViewMarketsList.ScrollTo(item: matchingItem, group: null, position: ScrollToPosition.Start, animate: true);
+					  }
+				  });
 			}
 		}
 
@@ -77,8 +80,8 @@ namespace LiLo.Lite.Views
 				Acr.UserDialogs.PromptResult trulyExit = await this.VM.DialogService.ShowPromptAsync("Exit?", "Are you sure you want to exit the app?", "Yes", "Cancel");
 				if (trulyExit.Ok)
 				{
-					base.OnBackButtonPressed();
-					Process.GetCurrentProcess().CloseMainWindow();
+					_ = base.OnBackButtonPressed();
+					_ = Process.GetCurrentProcess().CloseMainWindow();
 					Process.GetCurrentProcess().Close();
 				}
 			});
@@ -87,19 +90,18 @@ namespace LiLo.Lite.Views
 		}
 
 		/// <inheritdoc/>
+		protected override void OnDisappearing()
+		{
+			base.OnDisappearing();
+			this.SearchBar.Text = string.Empty; // When we leave the page, make sure that the search bar is cleared
+		}
+
+		/// <inheritdoc/>
+		/// <remarks>1 = Portrait mode, 2 = Landscape mode.</remarks>
 		protected override void OnSizeAllocated(double width, double height)
 		{
 			base.OnSizeAllocated(width, height);
-			if (width > height)
-			{
-				// Landscape mode
-				this.VM.GridItemsLayoutSpan = 2;
-			}
-			else
-			{
-				// Portrait mode
-				this.VM.GridItemsLayoutSpan = 1;
-			}
+			this.VM.GridItemsLayoutSpan = width > height ? 2 : 1;
 		}
 
 		/// <summary>Search Bar text changed.</summary>
@@ -117,13 +119,22 @@ namespace LiLo.Lite.Views
 			List<MarketModel> originList = this.VM.MarketsHelperService.SourceMarketsList;
 			List<MarketModel> filteredMarkets = originList.Where(ol => ol.SymbolString.Contains(searchTerm)).ToList();
 			this.VM.MarketsList.Clear();
-			foreach (MarketModel market in originList)
+			if (string.IsNullOrEmpty(searchTerm))
 			{
-				bool matchingMarket = filteredMarkets.Any(fm => fm.SymbolString == market.SymbolString);
-				if (matchingMarket)
+				foreach (MarketModel market in originList)
 				{
 					this.VM.MarketsList.Add(market);
 				}
+
+				return;
+			}
+
+			foreach (MarketModel market in from MarketModel market in originList
+										   let matchingMarket = filteredMarkets.Any(fm => fm.SymbolString == market.SymbolString)
+										   where matchingMarket
+										   select market)
+			{
+				this.VM.MarketsList.Add(market);
 			}
 		}
 	}
