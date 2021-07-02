@@ -13,7 +13,9 @@
 
 namespace LiLo.Lite
 {
-	using Xamarin.Forms.Xaml;
+    using LiLo.Lite.Views;
+    using Xamarin.Forms;
+    using Xamarin.Forms.Xaml;
 
 	/// <summary>App shell.</summary>
 	[XamlCompilation(XamlCompilationOptions.Compile)]
@@ -23,6 +25,11 @@ namespace LiLo.Lite
 		public AppShell()
 		{
 			this.InitializeComponent();
+
+			Routing.RegisterRoute("Chart", typeof(ChartView));
+			Routing.RegisterRoute("Settings", typeof(SettingsView));
+			Routing.RegisterRoute("Favourites", typeof(FavouritesView));
+			Routing.RegisterRoute("Alerts", typeof(AlertsView));
 		}
 	}
 }

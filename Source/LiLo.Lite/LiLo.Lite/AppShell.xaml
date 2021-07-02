@@ -6,22 +6,25 @@
 	xmlns:lite="clr-namespace:LiLo.Lite"
 	xmlns:views="clr-namespace:LiLo.Lite.Views"
 	x:DataType="lite:AppShell"
-	Shell.FlyoutBehavior="Disabled"
-	Shell.NavBarHasShadow="True"
+    FlyoutBehavior="Disabled"
 	Visual="Material">
-	<FlyoutItem>
-		<ShellContent ContentTemplate="{DataTemplate views:HomeView}" Route="Home" />
-	</FlyoutItem>
-	<FlyoutItem>
-		<ShellContent ContentTemplate="{DataTemplate views:ChartView}" Route="Chart" />
-	</FlyoutItem>
-	<FlyoutItem>
-		<ShellContent ContentTemplate="{DataTemplate views:SettingsView}" Route="Settings" />
-	</FlyoutItem>
-	<FlyoutItem>
-		<ShellContent ContentTemplate="{DataTemplate views:FavouritesView}" Route="Favourites" />
-	</FlyoutItem>
-	<FlyoutItem>
-		<ShellContent ContentTemplate="{DataTemplate views:AlertsView}" Route="Alerts" />
-	</FlyoutItem>
+    <Shell.Resources>
+        <Style x:Key="BaseStyle" TargetType="Element">
+            <Setter Property="Shell.BackgroundColor" Value="{AppThemeBinding Dark=Black, Light=White}" />
+            <Setter Property="Shell.ForegroundColor" Value="{AppThemeBinding Dark=White, Light=Black}" />
+            <Setter Property="Shell.TitleColor" Value="{AppThemeBinding Dark=White, Light=Black}" />
+            <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
+            <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
+            <Setter Property="Shell.TabBarBackgroundColor" Value="{AppThemeBinding Dark=Black, Light=White}" />
+            <Setter Property="Shell.TabBarForegroundColor" Value="White" />
+            <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF" />
+            <Setter Property="Shell.TabBarTitleColor" Value="White" />
+        </Style>
+        <Style BasedOn="{StaticResource BaseStyle}" TargetType="TabBar" />
+        <Style BasedOn="{StaticResource BaseStyle}" TargetType="FlyoutItem" />
+        <Style BasedOn="{StaticResource BaseStyle}" TargetType="ShellContent" />
+    </Shell.Resources>
+    <FlyoutItem>
+        <ShellContent ContentTemplate="{DataTemplate views:HomeView}" Route="Home" />
+    </FlyoutItem>
 </Shell>

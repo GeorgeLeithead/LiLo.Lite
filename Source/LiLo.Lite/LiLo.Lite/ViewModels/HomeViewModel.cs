@@ -93,7 +93,7 @@ namespace LiLo.Lite.ViewModels
 				if (value != null)
 				{
 					MarketModel item = value;
-					_ = Shell.Current.GoToAsync($"//Chart?symbol={item.SymbolString}");
+					_ = Shell.Current.GoToAsync($"Chart?symbol={item.SymbolString}");
 					this.NotifyPropertyChanged(() => this.SelectedItem);
 				}
 			}
