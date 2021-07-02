@@ -5,12 +5,12 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
 	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-	xmlns:local="clr-namespace:LiLo.Lite.ViewModels"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
+    xmlns:models="clr-namespace:LiLo.Lite.Models.Markets"
 	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
 	Title="{Binding Title, Mode=OneTime}"
-	Shell.NavBarIsVisible="False"
+    x:DataType="vm:HomeViewModel"
 	Style="{StaticResource BasePage}"
 	Visual="Material"
 	mc:Ignorable="d">
@@ -18,6 +18,13 @@
 	<ContentPage.BindingContext>
 		<vm:HomeViewModel />
 	</ContentPage.BindingContext>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Settings"
+                     IconImageSource="{AppThemeBinding Light='settings.png',
+			                         Dark='settings_dark.png'}"
+                     Command="{Binding GoToSettingsCommand}"/>
+    </ContentPage.ToolbarItems>
 
 	<ContentPage.Resources>
 		<ResourceDictionary>
@@ -28,13 +35,13 @@
 	<ContentPage.Content>
 		<Grid RowDefinitions="Auto,*">
 			<!--  title bar  -->
-			<controls:TitleBar
+			<!--<controls:TitleBar
 				Grid.Row="0"
 				AutomationId="Titlebar"
 				HomeVisible="False"
 				SettingsVisible="True"
 				Style="{StaticResource TitleStyle}"
-				Text="{Binding Title, Mode=OneTime}" />
+				Text="{Binding Title, Mode=OneTime}" />-->
 			<ActivityIndicator
 				Grid.Row="1"
 				d:IsRunning="True"
@@ -86,13 +93,13 @@
 					</CollectionView.ItemsLayout>
 
 					<CollectionView.ItemTemplate>
-						<DataTemplate>
+                        <DataTemplate x:DataType="models:MarketModel">
 							<SwipeView AutomationId="{Binding SymbolString, StringFormat='{0}_symbol'}">
 								<SwipeView.RightItems>
 									<SwipeItems>
 										<SwipeItemView
 											Margin="10"
-											Command="{Binding Source={RelativeSource AncestorType={x:Type local:HomeViewModel}}, Path=SwipeItemAlertCommand}"
+											Command="{Binding Source={RelativeSource AncestorType={x:Type vm:HomeViewModel}}, Path=SwipeItemAlertCommand}"
 											CommandParameter="{Binding .}"
 											HorizontalOptions="Center"
 											VerticalOptions="Center"
@@ -106,7 +113,8 @@
 										</SwipeItemView>
 									</SwipeItems>
 								</SwipeView.RightItems>
-								<Frame Style="{StaticResource DefaultFrameStyle}">
+                                <Grid Padding="10,5">
+									<Frame Style="{StaticResource DefaultFrameStyle}">
 									<Grid
 										ColumnDefinitions="20*,40*,40*"
 										HorizontalOptions="FillAndExpand"
@@ -167,7 +175,8 @@
 										</StackLayout>
 									</Grid>
 								</Frame>
-							</SwipeView>
+                                </Grid>
+                            </SwipeView>
 						</DataTemplate>
 					</CollectionView.ItemTemplate>
 				</CollectionView>

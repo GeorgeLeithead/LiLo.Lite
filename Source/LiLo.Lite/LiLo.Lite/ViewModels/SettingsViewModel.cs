@@ -84,6 +84,7 @@ namespace LiLo.Lite.ViewModels
 			}
 		}
 
+		
 		/// <summary>Gets the edge browser command.</summary>
 		public IAsyncCommand EdgeBrowserCommand => new AsyncCommand(this.BrowserCommandClicked, allowsMultipleExecutions: false);
 
@@ -155,7 +156,7 @@ namespace LiLo.Lite.ViewModels
 
 		private async Task FavouritesManageCommandClicked()
 		{
-			await Shell.Current.GoToAsync("///Favourites");
+			await Shell.Current.GoToAsync("Favourites");
 		}
 
 		private async Task GitHubCommandClicked()

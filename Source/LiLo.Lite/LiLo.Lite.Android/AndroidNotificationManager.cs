@@ -118,8 +118,8 @@ namespace LiLo.Lite.Droid
 				.SetContentIntent(pendingIntent)
 				.SetContentTitle(title)
 				.SetContentText(message)
-				.SetLargeIcon(BitmapFactory.DecodeResource(AndroidApp.Context.Resources, Resource.Drawable.LiLo))
-				.SetSmallIcon(Resource.Drawable.LiLo)
+				.SetLargeIcon(BitmapFactory.DecodeResource(AndroidApp.Context.Resources, Resource.Drawable.ic_splash))
+				.SetSmallIcon(Resource.Drawable.ic_notification)
 				.SetDefaults((int)NotificationDefaults.Sound | (int)NotificationDefaults.Vibrate);
 
 			Notification notification = builder.Build();

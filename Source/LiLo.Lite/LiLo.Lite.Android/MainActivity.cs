@@ -19,14 +19,12 @@ namespace LiLo.Lite.Droid
 	using Android.Content.PM;
 	using Android.OS;
 	using Android.Runtime;
-	using LiLo.Lite.Interfaces;
 	using LiLo.Lite.Services.LocalNotification;
 	using LiLo.Lite.Views;
-	using Plugin.CurrentActivity;
 	using Xamarin.Forms;
 
 	/// <inheritdoc/>
-	[Activity(Label = "LiLo.Lite", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+	[Activity(Label = "LiLo.Lite", Theme = "@style/MainTheme", MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 	public class MainActivity : Xamarin.Forms.Platform.Android.FormsAppCompatActivity
 	{
 		private ScreenOrientation previousOrientation = ScreenOrientation.Unspecified;
@@ -42,8 +40,6 @@ namespace LiLo.Lite.Droid
 		/// <inheritdoc/>
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
-			CrossCurrentActivity.Current.Init(this, savedInstanceState);
-			DependencyService.Register<IParentWindowLocatorService, AndroidParentWindowLocatorService>();
 
 			TabLayoutResource = Resource.Layout.Tabbar;
 			ToolbarResource = Resource.Layout.Toolbar;
@@ -52,7 +48,6 @@ namespace LiLo.Lite.Droid
 
 			Xamarin.Essentials.Platform.Init(this, savedInstanceState);
 			Forms.Init(this, savedInstanceState);
-			CrossCurrentActivity.Current.Init(this, savedInstanceState);
 			UserDialogs.Init(this);
 			this.LoadApplication(new App());
 

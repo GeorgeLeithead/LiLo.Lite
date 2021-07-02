@@ -184,33 +184,6 @@
             <param name="source">Source.</param>
             <returns>ObservableCollection{T}.</returns>
         </member>
-        <member name="T:LiLo.Lite.Interfaces.Theme">
-            <summary>Theme enumerator.</summary>
-        </member>
-        <member name="F:LiLo.Lite.Interfaces.Theme.Light">
-            <summary>Light theme.</summary>
-        </member>
-        <member name="F:LiLo.Lite.Interfaces.Theme.Dark">
-            <summary>Dark theme.</summary>
-        </member>
-        <member name="T:LiLo.Lite.Interfaces.IEnvironment">
-            <summary>Environment interface.</summary>
-        </member>
-        <member name="M:LiLo.Lite.Interfaces.IEnvironment.GetOperatingSystemTheme">
-            <summary>Get operating system theme.</summary>
-            <returns>Theme enumeration.</returns>
-        </member>
-        <member name="M:LiLo.Lite.Interfaces.IEnvironment.GetOperatingSystemThemeAsync">
-            <summary>Asynchronous get operating system theme.</summary>
-            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the asynchronous operation.</returns>
-        </member>
-        <member name="T:LiLo.Lite.Interfaces.IParentWindowLocatorService">
-            <summary>Simple platform specific service that is responsible for locating a parent window service.</summary>
-        </member>
-        <member name="M:LiLo.Lite.Interfaces.IParentWindowLocatorService.GetCurrentParentWindow">
-            <summary>Get current parent window.</summary>
-            <returns>Current parent window object.</returns>
-        </member>
         <member name="T:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel">
             <summary>Binance ticker symbol stream data.</summary>
         </member>
@@ -788,6 +761,9 @@
         </member>
         <member name="P:LiLo.Lite.ViewModels.Base.ViewModelBase.Title">
             <summary>gets or sets a value for the view title.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.Base.ViewModelBase.GoToSettingsCommand">
+            <summary>Navigates to settings</summary>
         </member>
         <member name="T:LiLo.Lite.ViewModels.ChartViewModel">
             <summary>Chart view model.</summary>
