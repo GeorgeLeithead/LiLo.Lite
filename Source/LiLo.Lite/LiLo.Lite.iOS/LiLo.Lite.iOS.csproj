@@ -70,7 +70,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ChartViewRederer.cs" />
-    <Compile Include="EnvironmentIos.cs" />
     <Compile Include="IOSNotificationManager.cs" />
     <Compile Include="IOSNotificationReceiver.cs" />
     <Compile Include="Main.cs" />

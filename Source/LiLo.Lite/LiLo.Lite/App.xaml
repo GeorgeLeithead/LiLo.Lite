@@ -173,7 +173,7 @@
 			<Style x:Key="DefaultFrameStyle" TargetType="{x:Type Frame}">
 				<Setter Property="BackgroundColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-100}, Dark={x:StaticResource Gray-900}}" />
 				<Setter Property="Margin" Value="0" />
-				<Setter Property="Padding" Value="5" />
+				<Setter Property="Padding" Value="10" />
 				<Setter Property="CornerRadius" Value="10" />
 				<Setter Property="HasShadow" Value="{OnPlatform iOS=false, Default=true}" />
 				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
@@ -271,7 +271,7 @@
 			</Style>
 
 			<Style x:Key="SettingsThemeFrame" TargetType="{x:Type Frame}">
-				<Setter Property="Padding" Value="0" />
+				<Setter Property="Padding" Value="10" />
 				<Setter Property="BackgroundColor" Value="{x:AppThemeBinding Dark={x:StaticResource Gray-900}, Light={x:StaticResource Gray-100}}" />
 				<Setter Property="BorderColor" Value="{x:AppThemeBinding Dark={x:StaticResource Gray-900}, Light={x:StaticResource Gray-100}}" />
 				<Setter Property="HasShadow" Value="False" />

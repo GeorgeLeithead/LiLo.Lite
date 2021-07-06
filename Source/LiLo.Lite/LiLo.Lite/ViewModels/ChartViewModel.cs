@@ -17,7 +17,6 @@ namespace LiLo.Lite.ViewModels
 	using System.Globalization;
 	using System.Linq;
 	using System.Windows.Input;
-	using LiLo.Lite.Interfaces;
 	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.Essentials;
@@ -135,20 +134,19 @@ iframe.body {
 					return;
 				}
 
-				Theme theme = Theme.Light;
+				OSAppTheme theme = OSAppTheme.Light;
 				if (Application.Current.UserAppTheme == OSAppTheme.Unspecified)
 				{
-					theme = DependencyService.Get<IEnvironment>().GetOperatingSystemTheme(); // Handle when the user is using SYSTEM theme, and determine what it actually IS!
+					theme = Application.Current.RequestedTheme;
 				}
 				else
 				{
 					int appTheme = Preferences.Get("Theme", 0);
-					appTheme--;
-					theme = (Theme)appTheme;
+					theme = (OSAppTheme)appTheme;
 				}
 
 				string tradingViewString = TradingViewString.Replace("X0X", $"BINANCE:{this.SelectedItem.SymbolString}USDT");
-				tradingViewString = tradingViewString.Replace("X1X", theme == Theme.Dark ? "dark" : "light");
+				tradingViewString = tradingViewString.Replace("X1X", theme == OSAppTheme.Dark ? "dark" : "light");
 				tradingViewString = tradingViewString.Replace("X2X", TimeZoneInfo.Local.ToString());
 				tradingViewString = tradingViewString.Replace("X3X", CultureInfo.CurrentCulture.IetfLanguageTag.Substring(0, 2));
 				tradingViewString = tradingViewString.Replace("X4X", Preferences.Get("ChartInterval", "15"));

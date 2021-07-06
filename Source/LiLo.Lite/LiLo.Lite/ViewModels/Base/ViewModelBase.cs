@@ -14,13 +14,15 @@
 namespace LiLo.Lite.ViewModels.Base
 {
 	using System.Runtime.Serialization;
-	using LiLo.Lite.Services.Dialog;
+    using System.Threading.Tasks;
+    using LiLo.Lite.Services.Dialog;
 	using LiLo.Lite.Services.Markets;
 	using LiLo.Lite.Services.Sockets;
-	using Xamarin.Forms;
-	using Xamarin.Forms.Internals;
+    using Xamarin.CommunityToolkit.ObjectModel;
+    using Xamarin.Forms;
+using Xamarin.Forms.Internals;
 
-	/// <summary>View model base class.</summary>
+/// <summary>View model base class.</summary>
 	[Preserve(AllMembers = true)]
 	[DataContract]
 	public abstract class ViewModelBase : ExtendedBindableObject
@@ -70,5 +72,13 @@ namespace LiLo.Lite.ViewModels.Base
 				this.NotifyPropertyChanged(() => this.Title);
 			}
 		}
+
+		private IAsyncCommand goToSettingsCommand;
+
+		/// <summary>Navigates to settings</summary>
+		public IAsyncCommand GoToSettingsCommand => this.goToSettingsCommand ??= new AsyncCommand(this.GoToSettings);
+
+		async Task GoToSettings() => await Shell.Current.GoToAsync("Settings");
+
 	}
 }
