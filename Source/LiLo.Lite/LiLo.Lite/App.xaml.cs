@@ -42,17 +42,8 @@ namespace LiLo.Lite
 			this.socketsService = DependencyService.Resolve<SocketsService>();
 			DependencyService.Register<DialogService>();
 			DependencyService.Register<MarketsHelperService>();
-			if (Xamarin.Forms.Device.RuntimePlatform == Xamarin.Forms.Device.iOS)
-			{
-				this.MainPage = new AppShell();
-			}
-			else
-			{
-				Xamarin.Forms.Device.BeginInvokeOnMainThread(() =>
-				{
-					Current.MainPage = new AppShell();
-				});
-			}
+			
+			Current.MainPage = new AppShell();
 		}
 
 		/// <summary>Gets or sets the UI Parent.</summary>

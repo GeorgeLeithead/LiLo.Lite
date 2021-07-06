@@ -21,7 +21,7 @@ namespace LiLo.Lite.Droid
 	using System.Threading.Tasks;
 
 	/// <summary>Splash screen activity.</summary>
-	[Activity(Theme = "@style/MainTheme.Splash", Icon = "@mipmap/icon", MainLauncher = true, NoHistory = true)]
+	[Activity(Theme = "@style/MainTheme.Splash", MainLauncher = true, NoHistory = true)]
 	public class SplashActivity : AppCompatActivity
 	{
 		private static readonly string TAG = "X:" + nameof(SplashActivity);
