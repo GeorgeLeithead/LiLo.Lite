@@ -51,8 +51,6 @@
 
 	<ItemGroup>
 		<None Remove="Services\Markets.json" />
-		<None Remove="SharedImages\home.svg" />
-		<None Remove="SharedImages\home_dark.svg" />
 		<None Remove="SharedImages\sun_dark.svg" />
 		<None Remove="SharedImages\sun_light.svg" />
 		<None Remove="SharedImages\moon_light.svg" />
@@ -151,8 +149,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<SharedImage Include="SharedImages\home.svg" BaseSize="32,32" />
-		<SharedImage Include="SharedImages\home_dark.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\sun_dark.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\sun_light.svg" BaseSize="32,32" />
 		<SharedImage Include="SharedImages\moon_light.svg" BaseSize="32,32" />
@@ -243,9 +239,6 @@
 
 	<ItemGroup>
 		<EmbeddedResource Update="AppShell.xaml">
-			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-		</EmbeddedResource>
-		<EmbeddedResource Update="Controls\TitleBar.xaml">
 			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 		</EmbeddedResource>
 		<EmbeddedResource Update="Views\AlertsView.xaml">

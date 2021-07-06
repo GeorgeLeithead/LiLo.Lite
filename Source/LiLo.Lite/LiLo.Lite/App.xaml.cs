@@ -1,18 +1,10 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="App.xaml.cs" company="InternetWideWorld.com">
-// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
-//   THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-//   OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-//   LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-//   FITNESS FOR A PARTICULAR PURPOSE.
+﻿// <copyright file="App.xaml.cs" company="InternetWideWorld.com">
+// Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
-// <summary>
-//   LiLo application class.
-// </summary>
-//-----------------------------------------------------------------------
 
 namespace LiLo.Lite
 {
+	using LiLo.Lite.Helpers;
 	using LiLo.Lite.Services.Dialog;
 	using LiLo.Lite.Services.Markets;
 	using LiLo.Lite.Services.Sockets;
@@ -42,12 +34,8 @@ namespace LiLo.Lite
 			this.socketsService = DependencyService.Resolve<SocketsService>();
 			DependencyService.Register<DialogService>();
 			DependencyService.Register<MarketsHelperService>();
-			
 			Current.MainPage = new AppShell();
 		}
-
-		/// <summary>Gets or sets the UI Parent.</summary>
-		public static object UIParent { get; set; } = null;
 
 		/// <summary>Perform actions when the application resumes from a sleeping state.</summary>
 		protected override void OnResume()
@@ -106,6 +94,16 @@ namespace LiLo.Lite
 					2 => OSAppTheme.Dark,
 					_ => OSAppTheme.Unspecified,
 				};
+
+				IEnvironment env = DependencyService.Get<IEnvironment>();
+				if (Current.RequestedTheme == OSAppTheme.Dark)
+				{
+					env?.SetStatusBarColor(Color.Black, false);
+				}
+				else
+				{
+					env?.SetStatusBarColor(Color.White, true);
+				}
 			});
 		}
 	}

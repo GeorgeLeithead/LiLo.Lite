@@ -94,11 +94,12 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlarmHandler.cs" />
-    <Compile Include="AndroidNotificationManager.cs" />
+    <Compile Include="Services\AlarmHandler.cs" />
+    <Compile Include="Services\AndroidNotificationManager.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Environment.cs" />
     <Compile Include="SplashActivity.cs" />
   </ItemGroup>
   <ItemGroup>

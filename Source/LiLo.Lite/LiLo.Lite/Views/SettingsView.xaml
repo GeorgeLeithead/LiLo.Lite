@@ -3,7 +3,6 @@
 	x:Class="LiLo.Lite.Views.SettingsView"
 	xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
 	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
@@ -82,23 +81,16 @@
 	</ContentPage.Resources>
 
 	<ContentPage.Content>
-		<Grid RowDefinitions="Auto,*,Auto,Auto">
-			<!--  title bar  -->
-			<!--<controls:TitleBar
-				Grid.Row="0"
-				HomeVisible="True"
-				SettingsVisible="False"
-				Style="{StaticResource TitleStyle}"
-				Text="{Binding Title, Mode=OneTime}" />-->
+		<Grid ColumnDefinitions="*" RowDefinitions="*">
 			<ActivityIndicator
-				Grid.Row="1"
+				Grid.Row="0"
 				d:IsRunning="True"
 				d:IsVisible="True"
 				HorizontalOptions="CenterAndExpand"
 				IsRunning="{Binding IsBusy}"
 				IsVisible="{Binding IsBusy}"
 				VerticalOptions="CenterAndExpand" />
-			<ScrollView Grid.Row="1" IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}">
+			<ScrollView Grid.Row="0" IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}">
 				<Grid Padding="10">
 					<Grid.ColumnDefinitions>
 						<ColumnDefinition>
@@ -152,11 +144,11 @@
 								RadioButtonGroup.GroupName="ThemeGroup"
 								RowDefinitions="*">
 								<RadioButton
+									Grid.Column="1"
 									CheckedChanged="ThemeCheckedChanged"
 									ControlTemplate="{StaticResource ThemeRadioTemplate}"
 									GroupName="ThemeGroup"
 									IsChecked="{Binding ThemeSystem}"
-                                    Grid.Column="1"
 									Value="0">
 									<RadioButton.Content>
 										<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
@@ -223,8 +215,7 @@
 										Grid.Row="0"
 										Grid.Column="1"
 										IsToggled="{Binding ChartToolBar, Converter={StaticResource InvertedBoolConverter}}"
-										OnColor="{StaticResource LadderLeftColor}"
-										ThumbColor="{StaticResource LadderRightColor}" />
+										ThumbColor="{StaticResource LadderLeftColor}" />
 									<Label
 										Grid.Row="1"
 										Grid.Column="0"
@@ -282,8 +273,7 @@
 									Grid.Row="0"
 									Grid.Column="2"
 									IsToggled="{Binding FavouritesEnabled}"
-									OnColor="{StaticResource LadderLeftColor}"
-									ThumbColor="{StaticResource LadderRightColor}" />
+									ThumbColor="{StaticResource LadderLeftColor}" />
 								<Button
 									Grid.Row="1"
 									Grid.Column="2"
@@ -291,19 +281,6 @@
 									CornerRadius="8"
 									IsVisible="{Binding FavouritesEnabled}"
 									Text="Manage &#x003e;" />
-							</Grid>
-						</Frame>
-						<Label Style="{StaticResource SettingsViewStyle}" Text="App Info" />
-						<Frame Style="{StaticResource DefaultFrameStyle}">
-							<Grid ColumnDefinitions="*, 32" RowDefinitions="*">
-								<Label Style="{StaticResource SettingViewStandardStyle}" Text="{Binding Version, StringFormat='Copyright George Leithead, Ver: {0}'}" />
-								<ImageButton
-									Grid.Column="1"
-									AutomationProperties.Name="Application settings."
-									Command="{Binding SettingsCommand}"
-									Source="{AppThemeBinding Light='settings.png',
-									                         Dark='settings_dark.png'}"
-									Style="{StaticResource SettingsImageButton}" />
 							</Grid>
 						</Frame>
 						<Label Style="{StaticResource SettingsViewStyle}" Text="About" />
@@ -318,7 +295,7 @@
 									Grid.Column="0"
 									Grid.ColumnSpan="4"
 									Style="{StaticResource SettingViewStandardStyle}"
-									Text="Please contact us on the social platform(s) below.  Please include the application information from above (version, release, etc.), your device details, a description of your problem and steps to replicate.  You can also just reach out and say 'hello'." />
+									Text="{Binding Version, StringFormat='Copyright George Leithead, Ver: {0} &#10;Please contact us on the social platform(s) below.  Please include the application information from above (version, release, etc.), your device details, a description of your problem and steps to replicate.  You can also just reach out and say &quot;hello&quot;.'}" />
 								<ImageButton
 									Grid.Row="1"
 									Grid.Column="3"

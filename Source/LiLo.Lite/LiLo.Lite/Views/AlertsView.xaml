@@ -3,7 +3,6 @@
 	x:Class="LiLo.Lite.Views.AlertsView"
 	xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
 	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:models="clr-namespace:LiLo.Lite.Models.Notifications"
@@ -28,23 +27,15 @@
 	</ContentPage.Resources>
 
 	<ContentPage.Content>
-		<Grid RowDefinitions="Auto,*">
-			<!--  title bar  -->
-			<controls:TitleBar
-				Grid.Row="0"
-				HomeVisible="True"
-				SettingsVisible="True"
-				Style="{StaticResource TitleStyle}"
-				Text="{Binding Title, Mode=OneTime}" />
+		<Grid RowDefinitions="*">
 			<ActivityIndicator
-				Grid.Row="1"
 				d:IsRunning="True"
 				d:IsVisible="True"
 				HorizontalOptions="CenterAndExpand"
 				IsRunning="{Binding IsBusy}"
 				IsVisible="{Binding IsBusy}"
 				VerticalOptions="CenterAndExpand" />
-			<ScrollView Grid.Row="1" IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}">
+			<ScrollView IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}">
 				<CollectionView
 					x:Name="CollectionViewAlertsList"
 					IsGrouped="False"
@@ -58,7 +49,7 @@
 							VerticalOptions="FillAndExpand">
 							<Label
 								HorizontalOptions="Center"
-								Text="Create a new alert...(coming soon)"
+								Text="{Binding AlertsComingSoon}"
 								VerticalOptions="Center" />
 						</StackLayout>
 					</CollectionView.EmptyView>

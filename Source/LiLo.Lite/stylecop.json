@@ -3,7 +3,7 @@
 	"settings": {
 		"documentationRules": {
 			"companyName": "InternetWideWorld.com",
-			"copyrightText": "Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.\nTHIS CODE AND INFORMATION IS PROVIDED \"AS IS\" WITHOUT WARRANTY\nOF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT\nLIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS FOR A PARTICULAR PURPOSE.",
+			"copyrightText": "Copyright (c) George Leithead, InternetWideWorld.com",
 			"xmlHeader": true,
 			"documentInterfaces": true,
 			"documentExposedElements": true,

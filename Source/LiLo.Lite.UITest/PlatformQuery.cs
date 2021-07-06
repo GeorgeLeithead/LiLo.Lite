@@ -1,9 +1,5 @@
 ﻿// <copyright file="PlatformQuery.cs" company="InternetWideWorld.com">
-// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
-// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-// OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-// LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-// FITNESS FOR A PARTICULAR PURPOSE.
+// Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
 
 namespace LiLo.Lite.UITest
@@ -30,18 +26,7 @@ namespace LiLo.Lite.UITest
 		}
 
 		/// <summary>Gets the query pattern for current platform.</summary>
-		public Func<AppQuery, AppQuery> Current
-		{
-			get
-			{
-				if (this.current == null)
-				{
-					throw new NullReferenceException("Trait not set for current platform");
-				}
-
-				return this.current;
-			}
-		}
+		public Func<AppQuery, AppQuery> Current => this.current ?? throw new NullReferenceException("Trait not set for current platform");
 
 		/// <summary>Sets the query pattern for iOS.</summary>
 #pragma warning disable IDE1006 // Naming Styles

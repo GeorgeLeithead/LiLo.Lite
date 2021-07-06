@@ -71,6 +71,10 @@
 				<Setter Property="VerticalOptions" Value="FillAndExpand" />
 			</Style>
 
+			<Style x:Key="MarketsCollectionViewGridStyle" TargetType="Grid">
+				<Setter Property="Padding" Value="8,4" />
+			</Style>
+
 			<Style x:Key="LastPriceStyle" TargetType="{x:Type controls:TickPriceView}">
 				<Setter Property="Margin" Value="0" />
 				<Setter Property="Padding" Value="4,1,4,1" />
@@ -126,6 +130,12 @@
 				<Setter Property="VerticalOptions" Value="FillAndExpand" />
 			</Style>
 
+			<Style x:Key="SymbolImageStringStyle" TargetType="Label">
+				<Setter Property="TextColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-900}, Dark={x:StaticResource Gray-100}}" />
+				<Setter Property="BackgroundColor" Value="Transparent" />
+				<Setter Property="HorizontalTextAlignment" Value="Center" />
+			</Style>
+
 			<Style
 				x:Key="FavouritesSymbolImageStyle"
 				BasedOn="{x:StaticResource SymbolImageStyle}"
@@ -161,11 +171,6 @@
 				<Setter Property="VerticalOptions" Value="Center" />
 			</Style>
 
-			<Style x:Key="TitleStyle" TargetType="{x:Type controls:TitleBar}">
-				<Setter Property="LabelStyle" Value="{x:StaticResource TitleStyleLabel}" />
-				<Setter Property="Margin" Value="4" />
-			</Style>
-
 			<Style x:Key="ChartFrameStackStyle" TargetType="{x:Type StackLayout}">
 				<Setter Property="Margin" Value="8,0" />
 			</Style>
@@ -173,11 +178,18 @@
 			<Style x:Key="DefaultFrameStyle" TargetType="{x:Type Frame}">
 				<Setter Property="BackgroundColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-100}, Dark={x:StaticResource Gray-900}}" />
 				<Setter Property="Margin" Value="0" />
-				<Setter Property="Padding" Value="10" />
-				<Setter Property="CornerRadius" Value="10" />
+				<Setter Property="Padding" Value="4" />
+				<Setter Property="CornerRadius" Value="8" />
 				<Setter Property="HasShadow" Value="{OnPlatform iOS=false, Default=true}" />
 				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
 				<Setter Property="VerticalOptions" Value="FillAndExpand" />
+			</Style>
+
+			<Style
+				x:Key="ChartFrameStyle"
+				BasedOn="{x:StaticResource DefaultFrameStyle}"
+				TargetType="Frame">
+				<Setter Property="Margin" Value="5,10,5,5" />
 			</Style>
 
 			<Style

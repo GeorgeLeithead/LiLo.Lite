@@ -1,9 +1,5 @@
 ﻿// <copyright file="BasePage.cs" company="InternetWideWorld.com">
-// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
-// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-// OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-// LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-// FITNESS FOR A PARTICULAR PURPOSE.
+// Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
 
 namespace LiLo.Lite.UITest
@@ -19,7 +15,7 @@ namespace LiLo.Lite.UITest
 		protected BasePage()
 		{
 			this.AssertOnPage(TimeSpan.FromSeconds(30));
-			this.App.Screenshot("On " + this.GetType().Name);
+			_ = this.App.Screenshot("On " + this.GetType().Name);
 		}
 
 		/// <summary>Gets the main gateway to interact with an app. This interface contains shared functionality between Xamarin.UITest.Android.AndroidApp and Xamarin.UITest.iOS.iOSApp.</summary>

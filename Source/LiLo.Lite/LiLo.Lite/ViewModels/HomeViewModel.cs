@@ -1,15 +1,6 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="HomeViewModel.cs" company="InternetWideWorld.com">
-// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
-//   THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-//   OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-//   LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-//   FITNESS FOR A PARTICULAR PURPOSE.
+﻿// <copyright file="HomeViewModel.cs" company="InternetWideWorld.com">
+// Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
-// <summary>
-//   Home view model.
-// </summary>
-//-----------------------------------------------------------------------
 
 namespace LiLo.Lite.ViewModels
 {
@@ -27,6 +18,7 @@ namespace LiLo.Lite.ViewModels
 	[QueryProperty("Symbol", "symbol")]
 	public class HomeViewModel : ViewModelBase
 	{
+		private IAsyncCommand goToSettingsCommand;
 		private int gridItemsLayoutSpan = 1;
 
 		/// <summary>Observable list of markets.</summary>
@@ -51,6 +43,9 @@ namespace LiLo.Lite.ViewModels
 
 		/// <summary>Gets or sets the users favourites list.</summary>
 		public string FavouritesList { get; set; }
+
+		/// <summary>Gets the navigate to settings command.</summary>
+		public IAsyncCommand GoToSettingsCommand => this.goToSettingsCommand ??= new AsyncCommand(this.GoToSettings);
 
 		/// <summary>Gets or sets the items layout span.</summary>
 		/// <remarks>To handle landscape and portrait orientation.</remarks>
@@ -81,8 +76,14 @@ namespace LiLo.Lite.ViewModels
 			}
 		}
 
+		/// <summary>Gets the no market data text.</summary>
+		public string NoMarketData => Helpers.Constants.Views.Controls.NoMarketData;
+
 		/// <summary>Gets or sets the retry button command.</summary>
 		public IAsyncCommand RetryButtonClicked { get; set; }
+
+		/// <summary>Gets the retry text.</summary>
+		public string RetryText => Helpers.Constants.Views.Controls.Retry;
 
 		/// <summary>Gets or sets the selected item.</summary>
 		public MarketModel SelectedItem
@@ -149,11 +150,16 @@ namespace LiLo.Lite.ViewModels
 			  });
 		}
 
+		private async Task GoToSettings()
+		{
+			await Shell.Current.GoToAsync("Settings");
+		}
+
 		/// <summary>Market Model item has been swiped and Alert selected.</summary>
 		/// <param name="item">{MarketModel} item.</param>
 		private void OnSwipeItemAlert(MarketModel item)
 		{
-			_ = Shell.Current.GoToAsync($"//Alerts?symbol={item.SymbolString}");
+			_ = Shell.Current.GoToAsync($"Alerts?symbol={item.SymbolString}");
 		}
 	}
 }

@@ -1,9 +1,5 @@
 ﻿// <copyright file="AlertsViewModel.cs" company="InternetWideWorld.com">
-// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
-// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-// OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-// LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-// FITNESS FOR A PARTICULAR PURPOSE.
+// Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
 
 namespace LiLo.Lite.ViewModels
@@ -21,10 +17,10 @@ namespace LiLo.Lite.ViewModels
 	[QueryProperty("Symbol", "symbol")]
 	public class AlertsViewModel : ViewModelBase
 	{
-		private string symbol;
-
 		/// <summary>Observable list of markets.</summary>
 		private ObservableRangeCollection<PriceAlertNotification> alertsList;
+
+		private string symbol;
 
 		/// <summary>Initialises a new instance of the <see cref="AlertsViewModel"/> class.</summary>
 		public AlertsViewModel()
@@ -41,20 +37,6 @@ namespace LiLo.Lite.ViewModels
 			this.IsBusy = false;
 		}
 
-		/// <summary>Sets the market symbol.</summary>
-		public string Symbol
-		{
-			set
-			{
-				this.symbol = Uri.UnescapeDataString(value);
-				List<PriceAlertNotification> alerts = PriceNotifications.GetPriceAlertNotificationList(this.symbol + "USDT");
-				this.alertsList = new ObservableRangeCollection<PriceAlertNotification>(alerts);
-				this.Title = $"{this.symbol} {this.Title}";
-				this.NotifyPropertyChanged(() => this.Title);
-				this.NotifyPropertyChanged(() => this.AlertsList);
-			}
-		}
-
 		/// <summary>Gets or sets a collection of values to be displayed in the markets view.</summary>
 		public ObservableRangeCollection<PriceAlertNotification> AlertsList
 		{
@@ -69,6 +51,9 @@ namespace LiLo.Lite.ViewModels
 			}
 		}
 
+		/// <summary>Gets the alerts coming soon text.</summary>
+		public string AlertsComingSoon => Helpers.Constants.Views.Controls.AlertsComingSoon;
+
 		/// <summary>Gets or sets the selected item.</summary>
 		public PriceAlertNotification SelectedItem
 		{
@@ -80,6 +65,20 @@ namespace LiLo.Lite.ViewModels
 					PriceAlertNotification item = value;
 					this.NotifyPropertyChanged(() => this.SelectedItem);
 				}
+			}
+		}
+
+		/// <summary>Sets the market symbol.</summary>
+		public string Symbol
+		{
+			set
+			{
+				this.symbol = Uri.UnescapeDataString(value);
+				List<PriceAlertNotification> alerts = PriceNotifications.GetPriceAlertNotificationList(this.symbol + "USDT");
+				this.alertsList = new ObservableRangeCollection<PriceAlertNotification>(alerts);
+				this.Title = $"{this.symbol} {this.Title}";
+				this.NotifyPropertyChanged(() => this.Title);
+				this.NotifyPropertyChanged(() => this.AlertsList);
 			}
 		}
 	}

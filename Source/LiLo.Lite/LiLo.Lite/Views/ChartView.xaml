@@ -5,7 +5,6 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
 	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-	xmlns:local="clr-namespace:LiLo.Lite.ViewModels"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
 	xmlns:windows="clr-namespace:Xamarin.Forms.PlatformConfiguration.WindowsSpecific;assembly=Xamarin.Forms.Core"
@@ -20,96 +19,70 @@
 	</ContentPage.BindingContext>
 
 	<ContentPage.Content>
-		<Grid RowDefinitions="Auto,Auto,*">
-			<!--  title bar  -->
-			<!--<controls:TitleBar
-				Grid.Row="0"
-				HomeVisible="True"
-				SettingsVisible="True"
-				Style="{StaticResource TitleStyle}"
-				Text="{Binding SelectedItem.SymbolString}" />-->
-			<!--  Markets List View  -->
-			<SwipeView Grid.Row="1" Style="{StaticResource ChartFrameStackStyle}">
-				<SwipeView.RightItems>
-					<SwipeItems>
-						<SwipeItemView
-							Margin="10"
-							Command="{Binding Source={RelativeSource AncestorType={x:Type local:ChartViewModel}}, Path=SwipeItemAlertCommand}"
-							HorizontalOptions="Center"
-							VerticalOptions="Center"
-							WidthRequest="52">
-							<Image
-								AutomationProperties.Name="{Binding SelectedItem.SymbolString, StringFormat='Alarm details for symbol {0}.'}"
-								HeightRequest="32"
-								Source="alarm.png"
-								WidthRequest="32" />
-						</SwipeItemView>
-					</SwipeItems>
-				</SwipeView.RightItems>
-				<Frame Margin="5" Style="{StaticResource DefaultFrameStyle}">
-					<Grid
-						ColumnDefinitions="20*,40*,40*"
-						HorizontalOptions="FillAndExpand"
-						RowDefinitions="Auto,Auto"
-						VerticalOptions="FillAndExpand">
-						<Image
-							Grid.RowSpan="2"
-							Grid.Column="0"
-							AutomationProperties.Name="{Binding SelectedItem.SymbolString, StringFormat='Icon for symbol {0}.'}"
-							Source="{Binding SelectedItem.SymbolString, StringFormat='{0}.png'}"
-							Style="{StaticResource SymbolImageStyle}" />
-						<Frame
-							Grid.Row="0"
-							Grid.Column="1"
-							Grid.ColumnSpan="2"
-							Style="{StaticResource PriceFrameStyle}">
-							<controls:TickPriceView
-								Price="{Binding SelectedItem.LastPrice}"
-								Style="{StaticResource LastPriceStyle}"
-								Text="{Binding SelectedItem.LastPriceString}" />
-						</Frame>
-						<StackLayout
-							Grid.Row="1"
-							Grid.Column="1"
-							Style="{StaticResource MarketsColumnStyle}">
-							<StackLayout Style="{StaticResource StackLayoutStyle}">
-								<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource HighPriceIcon}" />
-								<Frame Style="{StaticResource PriceFrameStyle}">
-									<controls:TickPriceView
-										Price="{Binding SelectedItem.HighPrice24h}"
-										Style="{StaticResource CurrencyPriceStyle}"
-										Text="{Binding SelectedItem.HighPrice24hString}" />
-								</Frame>
-							</StackLayout>
-							<StackLayout Style="{StaticResource StackLayoutStyle}">
-								<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource LowPriceIcon}" />
-								<Frame Style="{StaticResource PriceFrameStyle}">
-									<controls:TickPriceView
-										Price="{Binding SelectedItem.LowPrice24h}"
-										Style="{StaticResource CurrencyPriceStyle}"
-										Text="{Binding SelectedItem.LowPrice24hString}" />
-								</Frame>
-							</StackLayout>
-						</StackLayout>
-						<StackLayout
-							Grid.Row="1"
-							Grid.Column="2"
-							Orientation="Horizontal"
-							Style="{StaticResource MarketsColumnStyle}">
-							<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource PercentIcon}" />
+		<Grid RowDefinitions="Auto,*">
+			<Frame Style="{StaticResource ChartFrameStyle}">
+				<Grid
+					ColumnDefinitions="20*,45*,35*"
+					HorizontalOptions="FillAndExpand"
+					RowDefinitions="Auto,Auto"
+					VerticalOptions="FillAndExpand">
+					<Image
+						Grid.RowSpan="2"
+						Grid.Column="0"
+						AutomationProperties.Name="{Binding SelectedItem.SymbolString, StringFormat='Icon for symbol {0}.'}"
+						Source="{Binding SelectedItem.SymbolString, StringFormat='{0}.png'}"
+						Style="{StaticResource SymbolImageStyle}" />
+					<Frame
+						Grid.Row="0"
+						Grid.Column="1"
+						Grid.ColumnSpan="2"
+						Style="{StaticResource PriceFrameStyle}">
+						<controls:TickPriceView
+							Price="{Binding SelectedItem.LastPrice}"
+							Style="{StaticResource LastPriceStyle}"
+							Text="{Binding SelectedItem.LastPriceString}" />
+					</Frame>
+					<StackLayout
+						Grid.Row="1"
+						Grid.Column="1"
+						Style="{StaticResource MarketsColumnStyle}">
+						<StackLayout Style="{StaticResource StackLayoutStyle}">
+							<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource HighPriceIcon}" />
 							<Frame Style="{StaticResource PriceFrameStyle}">
 								<controls:TickPriceView
-									Price="{Binding SelectedItem.Price24hPercent}"
+									Price="{Binding SelectedItem.HighPrice24h}"
 									Style="{StaticResource CurrencyPriceStyle}"
-									Text="{Binding SelectedItem.Price24hPercentString}" />
+									Text="{Binding SelectedItem.HighPrice24hString}" />
 							</Frame>
 						</StackLayout>
-					</Grid>
-				</Frame>
-			</SwipeView>
+						<StackLayout Style="{StaticResource StackLayoutStyle}">
+							<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource LowPriceIcon}" />
+							<Frame Style="{StaticResource PriceFrameStyle}">
+								<controls:TickPriceView
+									Price="{Binding SelectedItem.LowPrice24h}"
+									Style="{StaticResource CurrencyPriceStyle}"
+									Text="{Binding SelectedItem.LowPrice24hString}" />
+							</Frame>
+						</StackLayout>
+					</StackLayout>
+					<StackLayout
+						Grid.Row="1"
+						Grid.Column="2"
+						Orientation="Horizontal"
+						Style="{StaticResource MarketsColumnStyle}">
+						<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource PercentIcon}" />
+						<Frame Style="{StaticResource PriceFrameStyle}">
+							<controls:TickPriceView
+								Price="{Binding SelectedItem.Price24hPercent}"
+								Style="{StaticResource CurrencyPriceStyle}"
+								Text="{Binding SelectedItem.Price24hPercentString}" />
+						</Frame>
+					</StackLayout>
+				</Grid>
+			</Frame>
 			<WebView
 				x:Name="TradingViewChart"
-				Grid.Row="2"
+				Grid.Row="1"
 				windows:WebView.ExecutionMode="SeparateThread"
 				Source="{Binding TradingViewChart, Mode=OneWay}" />
 		</Grid>

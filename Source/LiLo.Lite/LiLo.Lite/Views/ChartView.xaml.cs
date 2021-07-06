@@ -1,15 +1,6 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="ChartView.xaml.cs" company="InternetWideWorld.com">
-// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
-//   THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-//   OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-//   LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-//   FITNESS FOR A PARTICULAR PURPOSE.
+﻿// <copyright file="ChartView.xaml.cs" company="InternetWideWorld.com">
+// Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
-// <summary>
-//   Chart View class.
-// </summary>
-//-----------------------------------------------------------------------
 
 namespace LiLo.Lite.Views
 {
@@ -23,7 +14,10 @@ namespace LiLo.Lite.Views
 	public partial class ChartView : ContentPage
 	{
 		/// <summary>Initialises a new instance of the <see cref="ChartView" /> class.</summary>
-		public ChartView() => this.InitializeComponent();
+		public ChartView()
+		{
+			this.InitializeComponent();
+		}
 
 		/// <inheritdoc/>
 		protected override void OnAppearing()
@@ -33,11 +27,10 @@ namespace LiLo.Lite.Views
 		}
 
 		/// <summary>Handle the device back button being pressed.</summary>
-		/// <remarks>As this is the root page, we have to prevent the back button otherwise it will exit the application.</remarks>
 		/// <returns>true; cancellation of back button.</returns>
 		protected override bool OnBackButtonPressed()
 		{
-			Shell.Current.GoToAsync("///Home").ConfigureAwait(true);
+			_ = Shell.Current.GoToAsync("..");
 			return true; // prevent users from clicking the back button and exiting the application from the root page.
 		}
 

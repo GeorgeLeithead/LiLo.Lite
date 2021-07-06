@@ -1,15 +1,6 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="HomeView.xaml.cs" company="InternetWideWorld.com">
-// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
-//   THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-//   OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-//   LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-//   FITNESS FOR A PARTICULAR PURPOSE.
+﻿// <copyright file="HomeView.xaml.cs" company="InternetWideWorld.com">
+// Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
-// <summary>
-//   Home page view.
-// </summary>
-//-----------------------------------------------------------------------
 
 namespace LiLo.Lite.Views
 {
@@ -34,6 +25,7 @@ namespace LiLo.Lite.Views
 		/// <summary>Initialises a new instance of the <see cref="HomeView" /> class.</summary>
 		public HomeView()
 		{
+			// TODO: Add symbol string to view as an overlay? to the symbol image, to help users understand name < - > symbol
 			this.InitializeComponent();
 		}
 

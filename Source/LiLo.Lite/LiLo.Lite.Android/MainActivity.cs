@@ -11,6 +11,7 @@
 // </summary>
 //-----------------------------------------------------------------------
 
+[assembly: Xamarin.Forms.Dependency(typeof(LiLo.Lite.Droid.Services.Environment))]
 namespace LiLo.Lite.Droid
 {
 	using Acr.UserDialogs;
@@ -19,6 +20,7 @@ namespace LiLo.Lite.Droid
 	using Android.Content.PM;
 	using Android.OS;
 	using Android.Runtime;
+	using LiLo.Lite.Droid.Services;
 	using LiLo.Lite.Services.LocalNotification;
 	using LiLo.Lite.Views;
 	using Xamarin.Forms;
@@ -79,6 +81,5 @@ namespace LiLo.Lite.Droid
 				DependencyService.Get<INotificationManager>().ReceiveNotification(title, message);
 			}
 		}
-
 	}
 }
