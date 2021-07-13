@@ -1,9 +1,5 @@
 ﻿// <copyright file="Home.cs" company="InternetWideWorld.com">
-// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
-// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-// OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-// LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-// FITNESS FOR A PARTICULAR PURPOSE.
+// Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
 
 namespace LiLo.Lite.UITest.Tests
@@ -43,21 +39,21 @@ namespace LiLo.Lite.UITest.Tests
 			string pageTitle = "Markets";
 
 			// Act
-			new HomePage().ValidatePageTitle(pageTitle);
+			_ = new HomePage().ValidatePageTitle(pageTitle);
 		}
 
 		/// <summary>Test that the markets list exists.</summary>
 		[Test]
 		public void MarketsListExists()
 		{
-			new HomePage().VerifyMarketsList();
+			_ = new HomePage().VerifyMarketsList();
 		}
 
 		/// <summary>Test that the markets list exists and has a matching count.</summary>
 		[Test]
 		public void MarketsListCount()
 		{
-			new HomePage().VerifyMarketsList(7);
+			_ = new HomePage().VerifyMarketsList(7);
 		}
 
 		/// <summary>Test home page the search bar.</summary>
@@ -65,7 +61,7 @@ namespace LiLo.Lite.UITest.Tests
 		public void SearchBar()
 		{
 			HomePage homePage = new HomePage();
-			homePage.SearchBarExists();
+			_ = homePage.SearchBarExists();
 			////homePage.SearchBarSearch("BTC");
 		}
 
@@ -74,15 +70,15 @@ namespace LiLo.Lite.UITest.Tests
 		public void TapMarket()
 		{
 			HomePage homePage = new HomePage();
-			homePage.TapSymbol("XRP_symbol");
-			homePage.TapSymbol("BTC_symbol");
+			_ = homePage.TapSymbol("XRP_symbol");
+			_ = homePage.TapSymbol("BTC_symbol");
 		}
 
 		/// <summary>Test tapping the settings icon.</summary>
 		[Test]
 		public void TapSettings()
 		{
-			new HomePage().TapSettings();
+			_ = new HomePage().TapSettings();
 		}
 	}
 }

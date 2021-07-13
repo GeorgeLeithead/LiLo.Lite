@@ -1,9 +1,5 @@
 ﻿// <copyright file="PriceNotifications.cs" company="InternetWideWorld.com">
-// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
-// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-// OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-// LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-// FITNESS FOR A PARTICULAR PURPOSE.
+// Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
 
 namespace LiLo.Lite.Services.LocalNotification
@@ -132,7 +128,7 @@ namespace LiLo.Lite.Services.LocalNotification
 			{
 				bool changed = false;
 				string[] alerts = targetAlerts.Split(';');
-				for (var alertItem = 0; alertItem < alerts.Length; alertItem++)
+				for (int alertItem = 0; alertItem < alerts.Length; alertItem++)
 				{
 					if (string.IsNullOrWhiteSpace(alerts[alertItem]))
 					{

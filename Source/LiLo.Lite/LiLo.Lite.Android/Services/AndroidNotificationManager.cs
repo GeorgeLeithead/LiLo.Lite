@@ -11,21 +11,18 @@
 // </summary>
 //-----------------------------------------------------------------------
 
-using System;
-using Android.App;
-using Android.Content;
-using Android.Graphics;
-using Android.OS;
-using AndroidX.Core.App;
-using LiLo.Lite.Droid;
-using LiLo.Lite.Services.LocalNotification;
-using Xamarin.Forms;
-using AndroidApp = Android.App.Application;
-
-[assembly: Dependency(typeof(AndroidNotificationManager))]
-
-namespace LiLo.Lite.Droid
+[assembly: Xamarin.Forms.Dependency(typeof(LiLo.Lite.Droid.Services.AndroidNotificationManager))]
+namespace LiLo.Lite.Droid.Services
 {
+	using System;
+	using Android.App;
+	using Android.Content;
+	using Android.Graphics;
+	using Android.OS;
+	using AndroidX.Core.App;
+	using LiLo.Lite.Services.LocalNotification;
+	using AndroidApp = Android.App.Application;
+
 	/// <summary>Notification handler.</summary>
 	public class AndroidNotificationManager : INotificationManager
 	{
@@ -118,7 +115,7 @@ namespace LiLo.Lite.Droid
 				.SetContentIntent(pendingIntent)
 				.SetContentTitle(title)
 				.SetContentText(message)
-				.SetLargeIcon(BitmapFactory.DecodeResource(AndroidApp.Context.Resources, Resource.Drawable.ic_splash))
+				.SetLargeIcon(BitmapFactory.DecodeResource(AndroidApp.Context.Resources, Resource.Drawable.ic_notification))
 				.SetSmallIcon(Resource.Drawable.ic_notification)
 				.SetDefaults((int)NotificationDefaults.Sound | (int)NotificationDefaults.Vibrate);
 

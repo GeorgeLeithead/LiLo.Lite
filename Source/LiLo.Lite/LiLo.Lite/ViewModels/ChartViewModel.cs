@@ -1,15 +1,6 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="ChartViewModel.cs" company="InternetWideWorld.com">
-// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
-//   THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-//   OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-//   LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-//   FITNESS FOR A PARTICULAR PURPOSE.
+﻿// <copyright file="ChartViewModel.cs" company="InternetWideWorld.com">
+// Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
-// <summary>
-//   Chart view model.
-// </summary>
-//-----------------------------------------------------------------------
 
 namespace LiLo.Lite.ViewModels
 {
@@ -17,84 +8,27 @@ namespace LiLo.Lite.ViewModels
 	using System.Globalization;
 	using System.Linq;
 	using System.Windows.Input;
+	using LiLo.Lite.Helpers;
 	using LiLo.Lite.Models.Markets;
+	using LiLo.Lite.Resources;
 	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.Essentials;
 	using Xamarin.Forms;
 
 	/// <summary>Chart view model.</summary>
-	[QueryProperty("Symbol", "symbol")]
+	[QueryProperty(nameof(Symbol), "symbol")]
 	public class ChartViewModel : ViewModelBase
 	{
-		/// <summary>Trading View public Widget HTML string.</summary>
-		private const string TradingViewString = @"
-<html>
-<body class=""X1X"">
-<style type=""text/css"">
-body { margin: 0; }
-.dark {
-	background-color: black;
-	color: white;
-}
-
-.light {
-	background-color: white;
-	color: black;
-}
-iframe.body {
-	-moz-transform:scale(0.75);
-	-moz-transform-origin: 0 0;
-	-o-transform: scale(0.75);
-	-o-transform-origin: 0 0;
-	-webkit-transform: scale(0.75);
-	-webkit-transform-origin: 0 0;
-}
-</style>
-<!-- TradingView Widget BEGIN -->
-<div class=""tradingview-widget-container"">
-  <div id=""tradingview_lilo""></div>
-  <script type=""text/javascript"" src=""https://s3.tradingview.com/tv.js""></script>
-</div>
-<script type=""text/javascript"">
-	function CreateChart(displaySymbol) {
-			new TradingView.widget(
-			{
-				autosize: true,
-				symbol: displaySymbol,
-				interval: ""X4X"",
-				timezone: ""X2X"",
-				theme: ""X1X"",
-				locale: ""X3X"",
-				enable_publishing: false,
-				hide_legend: false,
-				save_image: false,
-				style: ""X5X"",
-				hide_side_toolbar: X7X,
-				debug: false,
-				preset: ""mobile"",
-				studies: [
-					""X6X"",
-				],
-				container_id: ""tradingview_lilo""
-			});
-	}
-
-	CreateChart('X0X');
-</script>
-<!-- TradingView Widget END -->
-</body>
-</html>
-";
-
+		private readonly string tradingViewString = AppResources.TradingViewPage;
 		private MarketModel selectedItem;
 		private HtmlWebViewSource tradingViewChart = new HtmlWebViewSource();
+		private string symbol;
 
 		/// <summary>Initialises a new instance of the <see cref="ChartViewModel"/> class.</summary>
 		public ChartViewModel()
 		{
 			this.IsBusy = true;
-			this.SwipeItemAlertCommand = new Command(this.OnSwipeItemAlert);
-			this.IsBusy = false;
+			this.Title = AppResources.ViewTitleChart;
 		}
 
 		/// <summary>Gets or sets the selected market item.</summary>
@@ -104,7 +38,7 @@ iframe.body {
 			set
 			{
 				this.selectedItem = value;
-				this.NotifyPropertyChanged(() => this.SelectedItem);
+				this.OnPropertyChanged(nameof(this.SelectedItem));
 				this.TradingViewChart = new HtmlWebViewSource();
 			}
 		}
@@ -117,9 +51,10 @@ iframe.body {
 		{
 			set
 			{
-				string symbol = Uri.UnescapeDataString(value);
-				this.SelectedItem = this.MarketsHelperService.MarketsList.First(m => m.SymbolString == symbol);
-				this.Title = symbol;
+				this.symbol = Uri.UnescapeDataString(value);
+				this.SelectedItem = this.MarketsHelperService.MarketsList.First(m => m.SymbolString == this.symbol);
+				this.Title = this.symbol;
+				this.IsBusy = false;
 			}
 		}
 
@@ -134,7 +69,7 @@ iframe.body {
 					return;
 				}
 
-				OSAppTheme theme = OSAppTheme.Light;
+				Theme theme = Theme.Light;
 				if (Application.Current.UserAppTheme == OSAppTheme.Unspecified)
 				{
 					theme = Application.Current.RequestedTheme;
@@ -142,11 +77,12 @@ iframe.body {
 				else
 				{
 					int appTheme = Preferences.Get("Theme", 0);
-					theme = (OSAppTheme)appTheme;
+					appTheme--;
+					theme = (Theme)appTheme;
 				}
 
 				string tradingViewString = TradingViewString.Replace("X0X", $"BINANCE:{this.SelectedItem.SymbolString}USDT");
-				tradingViewString = tradingViewString.Replace("X1X", theme == OSAppTheme.Dark ? "dark" : "light");
+				tradingViewString = tradingViewString.Replace("X1X", theme == Theme.Dark ? "dark" : "light");
 				tradingViewString = tradingViewString.Replace("X2X", TimeZoneInfo.Local.ToString());
 				tradingViewString = tradingViewString.Replace("X3X", CultureInfo.CurrentCulture.IetfLanguageTag.Substring(0, 2));
 				tradingViewString = tradingViewString.Replace("X4X", Preferences.Get("ChartInterval", "15"));
