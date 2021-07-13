@@ -14,7 +14,7 @@ namespace LiLo.Lite.ViewModels.Base
 	/// <summary>View model base class.</summary>
 	[Preserve(AllMembers = true)]
 	[DataContract]
-	public abstract class ViewModelBase : ExtendedBindableObject
+	public abstract class ViewModelBase : BindableObject
 	{
 		private IDialogService dialogService;
 
@@ -42,7 +42,7 @@ namespace LiLo.Lite.ViewModels.Base
 			set
 			{
 				this.isBusy = value;
-				this.NotifyPropertyChanged(() => this.IsBusy);
+				this.OnPropertyChanged(nameof(this.IsBusy));
 			}
 		}
 
@@ -59,7 +59,7 @@ namespace LiLo.Lite.ViewModels.Base
 			set
 			{
 				this.title = value;
-				this.NotifyPropertyChanged(() => this.Title);
+				this.OnPropertyChanged(nameof(this.Title));
 			}
 		}
 	}

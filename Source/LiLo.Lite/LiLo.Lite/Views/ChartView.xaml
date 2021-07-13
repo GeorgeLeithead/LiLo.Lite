@@ -8,7 +8,9 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
 	xmlns:windows="clr-namespace:Xamarin.Forms.PlatformConfiguration.WindowsSpecific;assembly=Xamarin.Forms.Core"
-	Title="{Binding Title, Mode=OneTime}"
+	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+	Title="{Binding Title, Mode=OneWay}"
+	d:Title="Chart"
 	x:DataType="vm:ChartViewModel"
 	Style="{StaticResource BasePage}"
 	Visual="Material"
@@ -18,15 +20,31 @@
 		<vm:ChartViewModel />
 	</ContentPage.BindingContext>
 
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<xct:InvertedBoolConverter x:Key="InvertedBoolConverter" />
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
 	<ContentPage.Content>
 		<Grid RowDefinitions="Auto,*">
-			<Frame Style="{StaticResource ChartFrameStyle}">
+			<ActivityIndicator
+				Grid.Row="0"
+				Grid.RowSpan="2"
+				d:IsRunning="True"
+				d:IsVisible="True"
+				HorizontalOptions="CenterAndExpand"
+				IsRunning="{Binding IsBusy}"
+				IsVisible="{Binding IsBusy}"
+				VerticalOptions="CenterAndExpand" />
+			<Frame Grid.Row="0" Style="{StaticResource ChartFrameStyle}">
 				<Grid
 					ColumnDefinitions="20*,45*,35*"
 					HorizontalOptions="FillAndExpand"
 					RowDefinitions="Auto,Auto"
 					VerticalOptions="FillAndExpand">
 					<Image
+						Grid.Row="0"
 						Grid.RowSpan="2"
 						Grid.Column="0"
 						AutomationProperties.Name="{Binding SelectedItem.SymbolString, StringFormat='Icon for symbol {0}.'}"
@@ -68,8 +86,7 @@
 					<StackLayout
 						Grid.Row="1"
 						Grid.Column="2"
-						Orientation="Horizontal"
-						Style="{StaticResource MarketsColumnStyle}">
+						Style="{StaticResource StackLayoutStyle}">
 						<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource PercentIcon}" />
 						<Frame Style="{StaticResource PriceFrameStyle}">
 							<controls:TickPriceView

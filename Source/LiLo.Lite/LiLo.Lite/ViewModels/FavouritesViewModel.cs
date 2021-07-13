@@ -10,30 +10,24 @@ namespace LiLo.Lite.ViewModels
 	using System.Windows.Input;
 	using LiLo.Lite.Helpers;
 	using LiLo.Lite.Models.Markets;
+	using LiLo.Lite.Resources;
 	using LiLo.Lite.Services;
-	using Xamarin.CommunityToolkit.ObjectModel;
+	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.Essentials;
 	using Xamarin.Forms;
 	using Xamarin.Forms.Internals;
 
 	/// <summary>Favourites view model.</summary>
-	public class FavouritesViewModel : ObservableObject
+	public class FavouritesViewModel : ViewModelBase
 	{
 		private ObservableCollection<ItemsGroupViewModel> favouriteItems = new ObservableCollection<ItemsGroupViewModel>();
-
-		/// <summary>View is busy.</summary>
-		private bool isBusy;
-
 		private ObservableCollection<ItemViewModel> marketItems = new ObservableCollection<ItemViewModel>();
-
-		/// <summary>View title.</summary>
-		private string title;
 
 		/// <summary>Initialises a new instance of the <see cref="FavouritesViewModel"/> class.</summary>
 		public FavouritesViewModel()
 		{
 			this.IsBusy = true;
-			this.Title = "Manage Favourites";
+			this.Title = AppResources.ViewTitleFavourites;
 			this.ItemDragged = new Command<ItemViewModel>(this.OnItemDragged);
 			this.ItemDraggedOver = new Command<ItemViewModel>(this.OnItemDraggedOver);
 			this.ItemDragLeave = new Command<ItemViewModel>(this.OnItemDragLeave);
@@ -46,14 +40,11 @@ namespace LiLo.Lite.ViewModels
 		public ObservableCollection<ItemsGroupViewModel> FavouriteItems
 		{
 			get => this.favouriteItems;
-			set => this.SetProperty(ref this.favouriteItems, value);
-		}
-
-		/// <summary>Gets or sets a value indicating whether the view is busy.</summary>
-		public bool IsBusy
-		{
-			get => this.isBusy;
-			set => this.SetProperty(ref this.isBusy, value);
+			set
+			{
+				this.favouriteItems = value;
+				this.OnPropertyChanged(nameof(this.FavouriteItems));
+			}
 		}
 
 		/// <summary>Gets an item dragged command.</summary>
@@ -72,14 +63,11 @@ namespace LiLo.Lite.ViewModels
 		public ObservableCollection<ItemViewModel> MarketItems
 		{
 			get => this.marketItems;
-			set => this.SetProperty(ref this.marketItems, value);
-		}
-
-		/// <summary>gets or sets a value for the view title.</summary>
-		public string Title
-		{
-			get => this.title;
-			set => this.SetProperty(ref this.title, value);
+			set
+			{
+				this.marketItems = value;
+				this.OnPropertyChanged(nameof(this.MarketItems));
+			}
 		}
 
 		private void OnItemDragged(ItemViewModel item)
@@ -116,7 +104,7 @@ namespace LiLo.Lite.ViewModels
 
 			ItemsGroupViewModel categoryToMoveTo = this.FavouriteItems.First(g => g.Contains(itemToInsertBefore));
 
-			if (this.MarketItems.Count(m => m.Category == App.FavouritesCategory) <= 1 && categoryToMoveFrom.Name == App.FavouritesCategory && categoryToMoveFrom.Name == categoryToMoveTo.Name)
+			if (this.MarketItems.Count(m => m.Category == Constants.Preferences.Favourites.FavouritesCategory) <= 1 && categoryToMoveFrom.Name == Constants.Preferences.Favourites.FavouritesCategory && categoryToMoveFrom.Name == categoryToMoveTo.Name)
 			{
 				return; // Must have at least 1 in the favourites category!
 			}
@@ -128,7 +116,7 @@ namespace LiLo.Lite.ViewModels
 			itemToMove.IsBeingDragged = false;
 			itemToInsertBefore.IsBeingDraggedOver = false;
 			List<string> favouritesList = new List<string>();
-			ItemsGroupViewModel favouriteCategory = this.FavouriteItems.First(fi => fi.Name == App.FavouritesCategory);
+			ItemsGroupViewModel favouriteCategory = this.FavouriteItems.First(fi => fi.Name == Constants.Preferences.Favourites.FavouritesCategory);
 			foreach (ItemViewModel fi in favouriteCategory)
 			{
 				favouritesList.Add(fi.Symbol);
@@ -136,7 +124,7 @@ namespace LiLo.Lite.ViewModels
 
 			if (favouritesList.Count > 0)
 			{
-				Preferences.Set(App.FavouritesCategory, string.Join(",", favouritesList));
+				Preferences.Set(Constants.Preferences.Favourites.FavouritesCategory, string.Join(",", favouritesList));
 			}
 		}
 

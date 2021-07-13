@@ -8,7 +8,9 @@ namespace LiLo.Lite.Views
 	using System.Diagnostics;
 	using System.Linq;
 	using System.Threading.Tasks;
+	using LiLo.Lite.Helpers;
 	using LiLo.Lite.Models.Markets;
+	using LiLo.Lite.Resources;
 	using LiLo.Lite.ViewModels;
 	using Xamarin.Essentials;
 	using Xamarin.Forms;
@@ -36,12 +38,12 @@ namespace LiLo.Lite.Views
 		{
 			base.OnAppearing();
 			this.SearchBar.Unfocus();
-			if (this.VM.FavouritesList != Preferences.Get(App.FavouritesCategory, string.Empty) || this.VM.FavouritesEnabled != Preferences.Get("FavouritesEnabled", false))
+			if (this.VM.FavouritesList != Preferences.Get(Constants.Preferences.Favourites.FavouritesCategory, Constants.Preferences.Favourites.FavouritesCategoryDefaultValue) || this.VM.FavouritesEnabled != Preferences.Get(Constants.Preferences.Favourites.FavouritesEnabled, Constants.Preferences.Favourites.FavouritesEnabledDefaultValue))
 			{
 				// Favourites have changed to we need to close the sockets connection, and re-initialise to as to show the updated markets list.
 				this.VM.IsBusy = true;
-				this.VM.FavouritesList = Preferences.Get(App.FavouritesCategory, string.Empty);
-				this.VM.FavouritesEnabled = Preferences.Get("FavouritesEnabled", false);
+				this.VM.FavouritesList = Preferences.Get(Constants.Preferences.Favourites.FavouritesCategory, Constants.Preferences.Favourites.FavouritesCategoryDefaultValue);
+				this.VM.FavouritesEnabled = Preferences.Get(Constants.Preferences.Favourites.FavouritesEnabled, Constants.Preferences.Favourites.FavouritesEnabledDefaultValue);
 				_ = this.VM.SocketsService.WebSocket_OnSleep(); // Sleep the connection
 				_ = this.VM.SocketsService.WebSocket_Close(); // Close the connection
 				_ = this.VM.Init().ConfigureAwait(false); // Re-initialise the markets and sockets connections.
@@ -69,7 +71,7 @@ namespace LiLo.Lite.Views
 			// Begin an asynchronous task on the UI thread because we intend to ask the users permission.
 			Device.BeginInvokeOnMainThread(async () =>
 			{
-				Acr.UserDialogs.PromptResult trulyExit = await this.VM.DialogService.ShowPromptAsync("Exit?", "Are you sure you want to exit the app?", "Yes", "Cancel");
+				Acr.UserDialogs.PromptResult trulyExit = await this.VM.DialogService.ShowPromptAsync(AppResources.ExitModalTitle, AppResources.ExitModalMessage, AppResources.ExitModalOkText, AppResources.ExitModalCancelText);
 				if (trulyExit.Ok)
 				{
 					_ = base.OnBackButtonPressed();

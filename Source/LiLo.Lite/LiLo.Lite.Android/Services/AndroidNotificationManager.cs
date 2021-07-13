@@ -115,7 +115,7 @@ namespace LiLo.Lite.Droid.Services
 				.SetContentIntent(pendingIntent)
 				.SetContentTitle(title)
 				.SetContentText(message)
-				.SetLargeIcon(BitmapFactory.DecodeResource(AndroidApp.Context.Resources, Resource.Drawable.ic_splash))
+				.SetLargeIcon(BitmapFactory.DecodeResource(AndroidApp.Context.Resources, Resource.Drawable.ic_notification))
 				.SetSmallIcon(Resource.Drawable.ic_notification)
 				.SetDefaults((int)NotificationDefaults.Sound | (int)NotificationDefaults.Vibrate);
 

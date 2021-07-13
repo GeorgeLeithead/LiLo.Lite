@@ -11,7 +11,7 @@
 		<ResourceDictionary>
 			<Color x:Key="PrimaryColor">#000000</Color>
 			<Color x:Key="PrimaryDarkColor">#000000</Color>
-			<Color x:Key="AccentColor">#179C52</Color>
+			<Color x:Key="Accent">#176BEF</Color>
 			<Color x:Key="WindowBackgroundColorLight">#FFF</Color>
 			<Color x:Key="WindowBackgroundColorDark">#000</Color>
 
@@ -48,19 +48,19 @@
 				<Setter Property="Shell.TitleColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-Black}, Dark={x:StaticResource Gray-White}}" />
 				<Setter Property="Shell.DisabledColor" Value="#606A7B" />
 				<Setter Property="Shell.UnselectedColor" Value="#CC0000" />
-				<Setter Property="Shell.NavBarHasShadow" Value="False" />
+				<Setter Property="Shell.NavBarHasShadow" Value="True" />
 			</Style>
 
-			<Style x:Key="BasePage" TargetType="{x:Type ContentPage}">
+			<Style x:Key="BasePage" TargetType="ContentPage">
 				<Setter Property="BackgroundColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-White}, Dark={x:StaticResource Gray-Black}}" />
 			</Style>
 
-			<Style TargetType="{x:Type Label}">
+			<Style TargetType="Label">
 				<Setter Property="TextColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-Black}, Dark={x:StaticResource Gray-White}}" />
 			</Style>
 
 			<!--  CUSTOM CONTROLS STYLE  -->
-			<Style x:Key="MarketsCollectionViewStyle" TargetType="{x:Type CollectionView}">
+			<Style x:Key="MarketsCollectionViewStyle" TargetType="CollectionView">
 				<Setter Property="SelectionMode" Value="Single" />
 				<Setter Property="IsGrouped" Value="False" />
 				<Setter Property="VerticalScrollBarVisibility" Value="Never" />
@@ -71,8 +71,22 @@
 				<Setter Property="VerticalOptions" Value="FillAndExpand" />
 			</Style>
 
+			<Style x:Key="MarketsCollectionViewStyleEmpty" TargetType="StackLayout">
+				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
+				<Setter Property="Orientation" Value="Vertical" />
+				<Setter Property="Spacing" Value="8" />
+				<Setter Property="VerticalOptions" Value="FillAndExpand" />
+			</Style>
+
 			<Style x:Key="MarketsCollectionViewGridStyle" TargetType="Grid">
 				<Setter Property="Padding" Value="8,4" />
+			</Style>
+
+			<Style x:Key="SwipeItemViewStyle" TargetType="SwipeItemView">
+				<Setter Property="Margin" Value="10" />
+				<Setter Property="HorizontalOptions" Value="Center" />
+				<Setter Property="VerticalOptions" Value="Center" />
+				<Setter Property="WidthRequest" Value="52" />
 			</Style>
 
 			<Style x:Key="LastPriceStyle" TargetType="{x:Type controls:TickPriceView}">
@@ -109,7 +123,7 @@
 				<Setter Property="FontSize" Value="Small" />
 			</Style>
 
-			<Style x:Key="PriceLabelStyle" TargetType="{x:Type Label}">
+			<Style x:Key="PriceLabelStyle" TargetType="Label">
 				<Setter Property="FontSize" Value="Small" />
 				<Setter Property="LineHeight">
 					<Setter.Value>
@@ -123,7 +137,7 @@
 				<Setter Property="HorizontalTextAlignment" Value="Start" />
 			</Style>
 
-			<Style x:Key="SymbolImageStyle" TargetType="{x:Type Image}">
+			<Style x:Key="SymbolImageStyle" TargetType="Image">
 				<Setter Property="Aspect" Value="AspectFit" />
 				<Setter Property="Rotation" Value="0" />
 				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
@@ -139,21 +153,21 @@
 			<Style
 				x:Key="FavouritesSymbolImageStyle"
 				BasedOn="{x:StaticResource SymbolImageStyle}"
-				TargetType="{x:Type Image}">
+				TargetType="Image">
 				<Setter Property="HeightRequest" Value="64" />
 				<Setter Property="WidthRequest" Value="64" />
 			</Style>
 
-			<Style x:Key="MarketsColumnStyle" TargetType="{x:Type StackLayout}">
+			<Style x:Key="MarketsColumnStyle" TargetType="StackLayout">
 				<Setter Property="Spacing" Value="0" />
 				<Setter Property="Orientation" Value="Vertical" />
 				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
-				<Setter Property="VerticalOptions" Value="StartAndExpand" />
+				<Setter Property="VerticalOptions" Value="FillAndExpand" />
 				<Setter Property="Margin" Value="2,0" />
 				<Setter Property="Padding" Value="0,2" />
 			</Style>
 
-			<Style x:Key="TitleStyleLabel" TargetType="{x:Type Label}">
+			<Style x:Key="TitleStyleLabel" TargetType="Label">
 				<Setter Property="BackgroundColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-White}, Dark={x:StaticResource Gray-Black}}" />
 				<Setter Property="TextColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-Black}, Dark={x:StaticResource Gray-White}}" />
 				<Setter Property="FontSize" Value="Large" />
@@ -171,11 +185,11 @@
 				<Setter Property="VerticalOptions" Value="Center" />
 			</Style>
 
-			<Style x:Key="ChartFrameStackStyle" TargetType="{x:Type StackLayout}">
+			<Style x:Key="ChartFrameStackStyle" TargetType="StackLayout">
 				<Setter Property="Margin" Value="8,0" />
 			</Style>
 
-			<Style x:Key="DefaultFrameStyle" TargetType="{x:Type Frame}">
+			<Style x:Key="DefaultFrameStyle" TargetType="Frame">
 				<Setter Property="BackgroundColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-100}, Dark={x:StaticResource Gray-900}}" />
 				<Setter Property="Margin" Value="0" />
 				<Setter Property="Padding" Value="4" />
@@ -189,19 +203,19 @@
 				x:Key="ChartFrameStyle"
 				BasedOn="{x:StaticResource DefaultFrameStyle}"
 				TargetType="Frame">
-				<Setter Property="Margin" Value="5,10,5,5" />
+				<Setter Property="Margin" Value="8,8,8,0" />
 			</Style>
 
 			<Style
 				x:Key="PriceFrameStyle"
 				BasedOn="{x:StaticResource DefaultFrameStyle}"
-				TargetType="{x:Type Frame}">
+				TargetType="Frame">
 				<Setter Property="Margin" Value="0" />
 				<Setter Property="Padding" Value="0" />
 				<Setter Property="HasShadow" Value="False" />
 			</Style>
 
-			<Style x:Key="StackLayoutStyle" TargetType="{x:Type StackLayout}">
+			<Style x:Key="StackLayoutStyle" TargetType="StackLayout">
 				<Setter Property="Orientation" Value="Horizontal" />
 				<Setter Property="Spacing" Value="0" />
 				<Setter Property="HorizontalOptions" Value="FillAndExpand" />
@@ -209,7 +223,7 @@
 				<Setter Property="VerticalOptions" Value="CenterAndExpand" />
 			</Style>
 
-			<Style TargetType="{x:Type WebView}">
+			<Style TargetType="WebView">
 				<Setter Property="Margin" Value="0" />
 				<Setter Property="BackgroundColor" Value="Transparent" />
 				<Setter Property="HeightRequest" Value="300" />
@@ -220,11 +234,10 @@
 				<Setter Property="VerticalOptions" Value="FillAndExpand" />
 			</Style>
 
-			<Style TargetType="{x:Type SearchBar}">
+			<Style TargetType="SearchBar">
 				<Setter Property="TextColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-Black}, Dark={x:StaticResource Gray-White}}" />
 				<Setter Property="PlaceholderColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-700}, Dark={x:StaticResource Gray-300}}" />
 				<Setter Property="BackgroundColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-White}, Dark={x:StaticResource Gray-Black}}" />
-				<Setter Property="Placeholder" Value="Symbol..." />
 				<Setter Property="TextTransform" Value="Uppercase" />
 				<Setter Property="FontSize" Value="Medium" />
 				<Setter Property="CancelButtonColor" Value="{x:AppThemeBinding Light={x:StaticResource MarketDownBackgroundColor}, Dark={x:StaticResource MarketDownTextColor}}" />
@@ -234,7 +247,7 @@
 			</Style>
 
 			<!--  Favourites Style  -->
-			<Style x:Key="FavouritesStackLayout" TargetType="{x:Type StackLayout}">
+			<Style x:Key="FavouritesStackLayout" TargetType="StackLayout">
 				<Setter Property="HorizontalOptions" Value="Start" />
 				<Setter Property="Orientation" Value="Horizontal" />
 				<Setter Property="VerticalOptions" Value="Start" />
@@ -242,7 +255,7 @@
 			</Style>
 
 			<!--  Settings style  -->
-			<Style x:Key="SettingsViewStyle" TargetType="{x:Type Label}">
+			<Style x:Key="SettingsViewStyle" TargetType="Label">
 				<Setter Property="TextColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-Black}, Dark={x:StaticResource Gray-White}}" />
 				<Setter Property="FontSize" Value="Large" />
 				<Setter Property="LineHeight">
@@ -263,18 +276,18 @@
 			<Style
 				x:Key="SettingViewStandardStyle"
 				BasedOn="{x:StaticResource SettingsViewStyle}"
-				TargetType="{x:Type Label}">
+				TargetType="Label">
 				<Setter Property="FontSize" Value="Small" />
 			</Style>
 
 			<Style
 				x:Key="SettingsThemeStyle"
 				BasedOn="{x:StaticResource SettingsViewStyle}"
-				TargetType="{x:Type Label}">
+				TargetType="Label">
 				<Setter Property="FontSize" Value="Micro" />
 			</Style>
 
-			<Style x:Key="SettingsImageButton" TargetType="{x:Type ImageButton}">
+			<Style x:Key="SettingsImageButton" TargetType="ImageButton">
 				<Setter Property="Aspect" Value="AspectFill" />
 				<Setter Property="CornerRadius" Value="8" />
 				<Setter Property="HeightRequest" Value="32" />
@@ -282,18 +295,19 @@
 				<Setter Property="BackgroundColor" Value="Transparent" />
 			</Style>
 
-			<Style x:Key="SettingsThemeFrame" TargetType="{x:Type Frame}">
-				<Setter Property="Padding" Value="10" />
+			<Style x:Key="SettingsThemeFrame" TargetType="Frame">
+				<Setter Property="Padding" Value="0" />
 				<Setter Property="BackgroundColor" Value="{x:AppThemeBinding Dark={x:StaticResource Gray-900}, Light={x:StaticResource Gray-100}}" />
 				<Setter Property="BorderColor" Value="{x:AppThemeBinding Dark={x:StaticResource Gray-900}, Light={x:StaticResource Gray-100}}" />
-				<Setter Property="HasShadow" Value="False" />
+				<Setter Property="CornerRadius" Value="8" />
+				<Setter Property="HasShadow" Value="{OnPlatform iOS=false, Android=true}" />
 				<Setter Property="HeightRequest" Value="80" />
 				<Setter Property="WidthRequest" Value="80" />
 				<Setter Property="HorizontalOptions" Value="Start" />
 				<Setter Property="VerticalOptions" Value="Start" />
 			</Style>
 
-			<Style x:Key="SettingsPicker" TargetType="{x:Type Picker}">
+			<Style x:Key="SettingsPicker" TargetType="Picker">
 				<Setter Property="TextColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-Black}, Dark={x:StaticResource Gray-White}}" />
 			</Style>
 		</ResourceDictionary>

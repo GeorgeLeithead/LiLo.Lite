@@ -31,7 +31,7 @@ namespace LiLo.Lite.Views
 		protected override bool OnBackButtonPressed()
 		{
 			_ = Shell.Current.GoToAsync("..");
-			return true; // prevent users from clicking the back button and exiting the application from the root page.
+			return true;
 		}
 
 		/// <inheritdoc/>

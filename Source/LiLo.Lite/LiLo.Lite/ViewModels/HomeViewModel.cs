@@ -8,14 +8,16 @@ namespace LiLo.Lite.ViewModels
 	using System.Net.Http;
 	using System.Threading.Tasks;
 	using System.Windows.Input;
+	using LiLo.Lite.Helpers;
 	using LiLo.Lite.Models.Markets;
+	using LiLo.Lite.Resources;
 	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.CommunityToolkit.ObjectModel;
 	using Xamarin.Essentials;
 	using Xamarin.Forms;
 
 	/// <summary>Home view model.</summary>
-	[QueryProperty("Symbol", "symbol")]
+	[QueryProperty(nameof(Symbol), "symbol")]
 	public class HomeViewModel : ViewModelBase
 	{
 		private IAsyncCommand goToSettingsCommand;
@@ -30,9 +32,9 @@ namespace LiLo.Lite.ViewModels
 		public HomeViewModel()
 		{
 			this.IsBusy = true;
-			this.Title = "Markets";
-			this.FavouritesList = Preferences.Get(App.FavouritesCategory, string.Empty);
-			this.FavouritesEnabled = Preferences.Get("FavouritesEnabled", false);
+			this.Title = AppResources.ViewTitleMarkets;
+			this.FavouritesList = Preferences.Get(Constants.Preferences.Favourites.FavouritesCategory, Constants.Preferences.Favourites.FavouritesCategoryDefaultValue);
+			this.FavouritesEnabled = Preferences.Get(Constants.Preferences.Favourites.FavouritesEnabled, Constants.Preferences.Favourites.FavouritesEnabledDefaultValue);
 			this.RetryButtonClicked = new AsyncCommand(this.Init);
 			this.SwipeItemAlertCommand = new Command<MarketModel>(this.OnSwipeItemAlert);
 			_ = this.Init().ConfigureAwait(false);
@@ -57,7 +59,7 @@ namespace LiLo.Lite.ViewModels
 				if (value != this.gridItemsLayoutSpan)
 				{
 					this.gridItemsLayoutSpan = value;
-					this.NotifyPropertyChanged(() => this.GridItemsLayoutSpan);
+					this.OnPropertyChanged(nameof(this.GridItemsLayoutSpan));
 				}
 			}
 		}
@@ -71,19 +73,13 @@ namespace LiLo.Lite.ViewModels
 				if (this.marketsList != value)
 				{
 					this.marketsList = value;
-					this.NotifyPropertyChanged(() => this.MarketsList);
+					this.OnPropertyChanged(nameof(this.MarketsList));
 				}
 			}
 		}
 
-		/// <summary>Gets the no market data text.</summary>
-		public string NoMarketData => Helpers.Constants.Views.Controls.NoMarketData;
-
 		/// <summary>Gets or sets the retry button command.</summary>
 		public IAsyncCommand RetryButtonClicked { get; set; }
-
-		/// <summary>Gets the retry text.</summary>
-		public string RetryText => Helpers.Constants.Views.Controls.Retry;
 
 		/// <summary>Gets or sets the selected item.</summary>
 		public MarketModel SelectedItem
@@ -94,8 +90,8 @@ namespace LiLo.Lite.ViewModels
 				if (value != null)
 				{
 					MarketModel item = value;
-					_ = Shell.Current.GoToAsync($"Chart?symbol={item.SymbolString}");
-					this.NotifyPropertyChanged(() => this.SelectedItem);
+					_ = Shell.Current.GoToAsync($"{Constants.Navigation.Paths.Chart}?symbol={item.SymbolString}");
+					this.OnPropertyChanged(nameof(this.SelectedItem));
 				}
 			}
 		}
@@ -145,21 +141,21 @@ namespace LiLo.Lite.ViewModels
 				  this.IsBusy = false;
 				  if (!string.IsNullOrEmpty(this.Symbol))
 				  {
-					  this.NotifyPropertyChanged(() => this.Symbol);
+					  this.OnPropertyChanged(nameof(this.Symbol));
 				  }
 			  });
 		}
 
 		private async Task GoToSettings()
 		{
-			await Shell.Current.GoToAsync("Settings");
+			await Shell.Current.GoToAsync(Constants.Navigation.Paths.Settings);
 		}
 
 		/// <summary>Market Model item has been swiped and Alert selected.</summary>
 		/// <param name="item">{MarketModel} item.</param>
 		private void OnSwipeItemAlert(MarketModel item)
 		{
-			_ = Shell.Current.GoToAsync($"Alerts?symbol={item.SymbolString}");
+			_ = Shell.Current.GoToAsync($"{Constants.Navigation.Paths.Alert}?symbol={item.SymbolString}");
 		}
 	}
 }

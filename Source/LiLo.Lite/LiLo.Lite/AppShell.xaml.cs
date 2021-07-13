@@ -4,6 +4,7 @@
 
 namespace LiLo.Lite
 {
+	using LiLo.Lite.Helpers;
 	using LiLo.Lite.Views;
 	using Xamarin.Forms;
 	using Xamarin.Forms.Xaml;
@@ -17,10 +18,10 @@ namespace LiLo.Lite
 		{
 			this.InitializeComponent();
 
-			Routing.RegisterRoute("Chart", typeof(ChartView));
-			Routing.RegisterRoute("Settings", typeof(SettingsView));
-			Routing.RegisterRoute("Settings/Favourites", typeof(FavouritesView));
-			Routing.RegisterRoute("Alerts", typeof(AlertsView));
+			Routing.RegisterRoute(Constants.Navigation.Paths.Chart, typeof(ChartView));
+			Routing.RegisterRoute(Constants.Navigation.Paths.Settings, typeof(SettingsView));
+			Routing.RegisterRoute($"{Constants.Navigation.Paths.Settings}/{Constants.Navigation.Paths.Favourites}", typeof(FavouritesView));
+			Routing.RegisterRoute(Constants.Navigation.Paths.Alert, typeof(AlertsView));
 		}
 	}
 }

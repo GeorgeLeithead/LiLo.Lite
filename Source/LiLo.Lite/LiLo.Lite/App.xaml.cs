@@ -17,12 +17,6 @@ namespace LiLo.Lite
 	/// <summary>LiLo application class.</summary>
 	public partial class App : Application
 	{
-		/// <summary>Favourites category.</summary>
-		public const string FavouritesCategory = "Favourites";
-
-		/// <summary>UnLoved favourites category.</summary>
-		public const string UnlovedCategory = "Unloved";
-
 		/// <summary>Sockets Service.</summary>
 		private readonly ISocketsService socketsService;
 
@@ -79,13 +73,13 @@ namespace LiLo.Lite
 		private void App_RequestedThemeChanged(object sender, AppThemeChangedEventArgs e)
 		{
 			int themeRequested = (int)e.RequestedTheme;
-			Preferences.Set("Theme", themeRequested);
+			Preferences.Set(Constants.Preferences.Settings.Theme, themeRequested);
 			this.SetTheme();
 		}
 
 		private void SetTheme()
 		{
-			int theme = Preferences.Get("Theme", 0);
+			int theme = Preferences.Get(Constants.Preferences.Settings.Theme, Constants.Preferences.Settings.ThemeDefaultValue);
 			MainThread.BeginInvokeOnMainThread(() =>
 			{
 				Current.UserAppTheme = theme switch

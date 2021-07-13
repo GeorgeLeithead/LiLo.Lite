@@ -47,7 +47,7 @@ namespace LiLo.Lite.Views
 				env?.SetStatusBarColor(Color.White, true);
 			}
 
-			Preferences.Set("Theme", (int)Application.Current.UserAppTheme);
+			Preferences.Set(Constants.Preferences.Settings.Theme, (int)Application.Current.UserAppTheme);
 		}
 	}
 }

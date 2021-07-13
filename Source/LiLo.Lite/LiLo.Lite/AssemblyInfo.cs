@@ -2,9 +2,11 @@
 // Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
 
+using System.Resources;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+[assembly: NeutralResourcesLanguage("en-GB")]
 
 namespace System.Runtime.CompilerServices
 {

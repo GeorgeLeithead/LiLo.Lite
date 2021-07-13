@@ -63,7 +63,7 @@ namespace LiLo.Lite.Models.Markets
 			set
 			{
 				this.decimalPlaces = value;
-				this.NotifyPropertyChanged(() => this.DecimalPlaces);
+				this.OnPropertyChanged(nameof(this.DecimalPlaces));
 			}
 		}
 
@@ -77,7 +77,7 @@ namespace LiLo.Lite.Models.Markets
 				{
 					this.highPrice24h = value;
 					this.HighPrice24hString = value.ToString("C" + this.DecimalPlaces, this.formatCulture);
-					this.NotifyPropertyChanged(() => this.HighPrice24h);
+					this.OnPropertyChanged(nameof(this.HighPrice24h));
 				}
 			}
 		}
@@ -91,7 +91,7 @@ namespace LiLo.Lite.Models.Markets
 				if (this.highPrice24hString != value)
 				{
 					this.highPrice24hString = value;
-					this.NotifyPropertyChanged(() => this.HighPrice24hString);
+					this.OnPropertyChanged(nameof(this.HighPrice24hString));
 				}
 			}
 		}
@@ -106,7 +106,7 @@ namespace LiLo.Lite.Models.Markets
 				{
 					this.lastPrice = value;
 					this.LastPriceString = value.ToString("C" + this.DecimalPlaces, this.formatCulture);
-					this.NotifyPropertyChanged(() => this.LastPrice);
+					this.OnPropertyChanged(nameof(this.LastPrice));
 				}
 			}
 		}
@@ -120,7 +120,7 @@ namespace LiLo.Lite.Models.Markets
 				if (this.lastPriceString != value)
 				{
 					this.lastPriceString = value;
-					this.NotifyPropertyChanged(() => this.LastPriceString);
+					this.OnPropertyChanged(nameof(this.LastPriceString));
 				}
 			}
 		}
@@ -135,7 +135,7 @@ namespace LiLo.Lite.Models.Markets
 				{
 					this.lowPrice24h = value;
 					this.LowPrice24hString = value.ToString("C" + this.DecimalPlaces, this.formatCulture);
-					this.NotifyPropertyChanged(() => this.LowPrice24h);
+					this.OnPropertyChanged(nameof(this.LowPrice24h));
 				}
 			}
 		}
@@ -149,7 +149,7 @@ namespace LiLo.Lite.Models.Markets
 				if (this.lowPrice24hString != value)
 				{
 					this.lowPrice24hString = value;
-					this.NotifyPropertyChanged(() => this.LowPrice24hString);
+					this.OnPropertyChanged(nameof(this.LowPrice24hString));
 				}
 			}
 		}
@@ -164,7 +164,7 @@ namespace LiLo.Lite.Models.Markets
 				{
 					this.price24hPercent = value;
 					this.Price24hPercentString = value.ToString("F2", this.formatCulture);
-					this.NotifyPropertyChanged(() => this.Price24hPercent);
+					this.OnPropertyChanged(nameof(this.Price24hPercent));
 				}
 			}
 		}
@@ -178,7 +178,7 @@ namespace LiLo.Lite.Models.Markets
 				if (this.price24hPercentString != value)
 				{
 					this.price24hPercentString = value;
-					this.NotifyPropertyChanged(() => this.Price24hPercentString);
+					this.OnPropertyChanged(nameof(this.Price24hPercentString));
 				}
 			}
 		}
@@ -196,7 +196,7 @@ namespace LiLo.Lite.Models.Markets
 				if (this.symbolString != value)
 				{
 					this.symbolString = value;
-					this.NotifyPropertyChanged(() => this.SymbolString);
+					this.OnPropertyChanged(nameof(this.SymbolString));
 				}
 			}
 		}

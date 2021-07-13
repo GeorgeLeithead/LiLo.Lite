@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AlertsComingSoonLabel" xml:space="preserve">
+    <value>Create a new alert...(coming soon)</value>
+  </data>
+  <data name="ExitModalCancelText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ExitModalMessage" xml:space="preserve">
+    <value>Are you sure you want to exit?</value>
+  </data>
+  <data name="ExitModalOkText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="ExitModalTitle" xml:space="preserve">
+    <value>Exit?</value>
+  </data>
+  <data name="NoMarketDataLabel" xml:space="preserve">
+    <value>No market feed data...</value>
+  </data>
+  <data name="RetryLabel" xml:space="preserve">
+    <value>Retry</value>
+  </data>
+  <data name="SearchBarPlaceholder" xml:space="preserve">
+    <value>Search for currency...</value>
+  </data>
+  <data name="SettingsChartingLabelBarStyle" xml:space="preserve">
+    <value>Bar Style</value>
+  </data>
+  <data name="SettingsChartingLabelDefaultIndicator" xml:space="preserve">
+    <value>Default Indicator</value>
+  </data>
+  <data name="SettingsChartingLabelDefaultInterval" xml:space="preserve">
+    <value>Default Interval</value>
+  </data>
+  <data name="SettingsChartingLabelDrawingToolBar" xml:space="preserve">
+    <value>Drawing Tools Bar</value>
+  </data>
+  <data name="SettingsFavouriteManage" xml:space="preserve">
+    <value>Manage &gt;</value>
+  </data>
+  <data name="SettingsFavouritesLabelUse" xml:space="preserve">
+    <value>Use Favourites</value>
+  </data>
+  <data name="SettingsGitHub" xml:space="preserve">
+    <value>https://github.com/GeorgeLeithead/LiLo.Lite</value>
+  </data>
+  <data name="SettingsHeadingAbout" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="SettingsHeadingCharting" xml:space="preserve">
+    <value>Charting</value>
+  </data>
+  <data name="SettingsHeadingFavourites" xml:space="preserve">
+    <value>Favourites</value>
+  </data>
+  <data name="SettingsHeadingTheme" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="SettingsIconText" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="SettingsIww" xml:space="preserve">
+    <value>https://www.internetwideworld.com/lilolite</value>
+  </data>
+  <data name="SettingsLabelAbout" xml:space="preserve">
+    <value>Copyright George Leithead, Ver: {0}
+
+Please contact us on the social platform(s) below.  Please include the application information from above (version, release, etc.), your device details, a description of your problem and steps to replicate.  You can also just reach out and say "hello".</value>
+  </data>
+  <data name="SettingsTemeLabelSystem" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="SettingsThemeLabelDark" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="SettingsThemeLabelLight" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="SettingsTwitter" xml:space="preserve">
+    <value>https://twitter.com/LiLoMobileApp</value>
+  </data>
+  <data name="TradingViewPage" xml:space="preserve">
+    <value>&lt;html&gt;
+&lt;body class="X1X"&gt;
+&lt;style type="text/css"&gt;
+body { margin: 0; }
+.dark {
+	background-color: black;
+	color: white;
+}
+
+.light {
+	background-color: white;
+	color: black;
+}
+iframe.body {
+	-moz-transform:scale(0.75);
+	-moz-transform-origin: 0 0;
+	-o-transform: scale(0.75);
+	-o-transform-origin: 0 0;
+	-webkit-transform: scale(0.75);
+	-webkit-transform-origin: 0 0;
+}
+&lt;/style&gt;
+&lt;!-- TradingView Widget BEGIN --&gt;
+&lt;div class="tradingview-widget-container"&gt;
+  &lt;div id="tradingview_lilo"&gt;&lt;/div&gt;
+  &lt;script type="text/javascript" src="https://s3.tradingview.com/tv.js"&gt;&lt;/script&gt;
+&lt;/div&gt;
+&lt;script type="text/javascript"&gt;
+	function CreateChart(displaySymbol) {
+			new TradingView.widget(
+			{
+				autosize: true,
+				symbol: displaySymbol,
+				interval: "X4X",
+				timezone: "X2X",
+				theme: "X1X",
+				locale: "X3X",
+				enable_publishing: false,
+				hide_legend: false,
+				save_image: false,
+				style: "X5X",
+				hide_side_toolbar: X7X,
+				debug: false,
+				preset: "mobile",
+				studies: [
+					"X6X",
+				],
+				container_id: "tradingview_lilo"
+			});
+	}
+
+	CreateChart('BINANCE:X0XUSDT');
+&lt;/script&gt;
+&lt;!-- TradingView Widget END --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+  <data name="ViewTitleAlerts" xml:space="preserve">
+    <value>Alerts</value>
+  </data>
+  <data name="ViewTitleChart" xml:space="preserve">
+    <value>Chart</value>
+  </data>
+  <data name="ViewTitleFavourites" xml:space="preserve">
+    <value>Manage Favourites</value>
+  </data>
+  <data name="ViewTitleMarkets" xml:space="preserve">
+    <value>Markets</value>
+  </data>
+  <data name="ViewTitleSettings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+</root>

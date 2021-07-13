@@ -7,55 +7,104 @@ namespace LiLo.Lite.Helpers
 	/// <summary>Application constants.</summary>
 	public static class Constants
 	{
-		/// <summary>AppCentre analytics class.</summary>
+		/// <summary>AppCentre analytics class constants.</summary>
 		public static class Analytics
 		{
-			/// <summary>Analytics events class.</summary>
+			/// <summary>Analytics events class constants.</summary>
 			public static class Events
 			{
 				/// <summary>Favourites enabled tracking event.</summary>
 				public const string FavouritesEnabled = "FavouritesEnabled";
+
+				/// <summary>Show Symbol Labels tracking event.</summary>
+				public const string ShowSymbolLabels = "ShowSymbolLabels";
 			}
 		}
 
-		/// <summary>User preferences class.</summary>
-		public static class Preferences
-		{
-			/// <summary>Preferences analytics.</summary>
-			public const string Analytics = "Analytics";
-		}
-
-		/// <summary>Navigation class.</summary>
+		/// <summary>Navigation class constants.</summary>
 		public static class Navigation
 		{
-			/// <summary>Navigation paths class.</summary>
+			/// <summary>Navigation paths class constants.</summary>
 			public static class Paths
 			{
-				/// <summary>Home path.</summary>
-				public const string Home = "home";
-
 				/// <summary>Alert path.</summary>
 				public const string Alert = "alerts";
 
 				/// <summary>Chart path.</summary>
 				public const string Chart = "chart";
+
+				/// <summary>Favourites path.</summary>
+				public const string Favourites = "favourites";
+
+				/// <summary>Home path.</summary>
+				public const string Home = "home";
+
+				/// <summary>Settings path.</summary>
+				public const string Settings = "settings";
 			}
 		}
 
-		/// <summary>Views class.</summary>
-		public static class Views
+		/// <summary>User preferences class constants.</summary>
+		public static class Preferences
 		{
-			/// <summary>View controls class.</summary>
-			public static class Controls
+			/// <summary>Preferences analytics.</summary>
+			public const string Analytics = "Analytics";
+
+			/// <summary>Chart preferences class constants.</summary>
+			public static class Chart
 			{
-				/// <summary>Retry control text.</summary>
-				public const string Retry = "Retry";
+				/// <summary>Chart bar Style preference name.</summary>
+				public const string ChartBarStyle = "ChartBarStyle";
 
-				/// <summary>No markets data control text.</summary>
-				public const string NoMarketData = "No market feed data...";
+				/// <summary>Chart bar style preference default value.</summary>
+				public const string ChartBaryDefaultValue = "1";
 
-				/// <summary>Alerts coming soon control text.</summary>
-				public const string AlertsComingSoon = "Create a new alert...(coming soon)";
+				/// <summary>Chart interval preference name.</summary>
+				public const string ChartInterval = "ChartInterval";
+
+				/// <summary>Chart interval preference default value.</summary>
+				public const string ChartIntervalDefaultValue = "15";
+
+				/// <summary>Chart study indicator preference name.</summary>
+				public const string ChartStudyIndicator = "ChartStudyIndicator";
+
+				/// <summary>Chart study indicator preference default value.</summary>
+				public const string ChartStudyIndicatorDefaultValue = "RSI@tv-basicstudies";
+
+				/// <summary>Chart tool bar preference name.</summary>
+				public const string ChartToolBar = "ChartToolBar";
+
+				/// <summary>Chart tool bar preference default value.</summary>
+				public const bool ChartToolBarDefaultValue = true;
+			}
+
+			/// <summary>Favourites preferences class constants.</summary>
+			public static class Favourites
+			{
+				/// <summary>User saved favourites preference name.</summary>
+				public const string FavouritesCategory = "Favourites";
+
+				/// <summary>User saved favourites preference default value.</summary>
+				public const string FavouritesCategoryDefaultValue = "";
+
+				/// <summary>Favourites enabled preference name.</summary>
+				public const string FavouritesEnabled = "FavouritesEnabled";
+
+				/// <summary>Favourites enabled preference default value.</summary>
+				public const bool FavouritesEnabledDefaultValue = false;
+
+				/// <summary>User unloved favourites preference name.</summary>
+				public const string UnlovedCategory = "Unloved";
+			}
+
+			/// <summary>Settings preferences class constants.</summary>
+			public static class Settings
+			{
+				/// <summary>User theme preference name.</summary>
+				public const string Theme = "Theme";
+
+				/// <summary>User theme preference default value.</summary>
+				public const int ThemeDefaultValue = 0;
 			}
 		}
 	}

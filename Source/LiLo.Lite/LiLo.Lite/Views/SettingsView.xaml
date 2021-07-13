@@ -5,9 +5,10 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:resources="clr-namespace:LiLo.Lite.Resources"
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
 	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-	Title="{Binding Title, Mode=OneTime}"
+	Title="{Binding Title, Mode=OneWay}"
 	d:Title="Settings"
 	x:DataType="vm:SettingsViewModel"
 	Style="{StaticResource BasePage}"
@@ -21,26 +22,31 @@
 	<ContentPage.Resources>
 		<ResourceDictionary>
 			<xct:InvertedBoolConverter x:Key="InvertedBoolConverter" />
+
 			<ControlTemplate x:Key="ThemeRadioTemplate">
 				<Frame Style="{StaticResource SettingsThemeFrame}">
-					<Grid
-						Margin="4"
-						ColumnDefinitions="*"
-						RowDefinitions="Auto, *"
-						WidthRequest="80">
+					<Grid Margin="4" WidthRequest="80">
 						<Grid
-							ColumnDefinitions="*"
 							HeightRequest="20"
 							HorizontalOptions="End"
-							RowDefinitions="*"
 							VerticalOptions="Start"
 							WidthRequest="20">
 							<Ellipse
+								x:Name="FillUncheck"
 								Fill="White"
 								HeightRequest="18"
 								HorizontalOptions="Center"
-								Stroke="#606A7B"
-								StrokeThickness="1"
+								Stroke="#2E2545"
+								StrokeThickness="2"
+								VerticalOptions="Center"
+								WidthRequest="18" />
+							<Ellipse
+								x:Name="FillCheck"
+								Fill="White"
+								HeightRequest="18"
+								HorizontalOptions="Center"
+								Stroke="#FF3E30"
+								StrokeThickness="2"
 								VerticalOptions="Center"
 								WidthRequest="18" />
 							<Ellipse
@@ -54,7 +60,6 @@
 								VerticalOptions="Center"
 								WidthRequest="10" />
 						</Grid>
-						<!--  This enables us to put in dynamic content  -->
 						<ContentPresenter />
 					</Grid>
 					<VisualStateManager.VisualStateGroups>
@@ -62,14 +67,18 @@
 							<VisualStateGroup x:Name="CheckedStates">
 								<VisualState x:Name="Checked">
 									<VisualState.Setters>
-										<Setter Property="BorderColor" Value="{StaticResource LadderRightColor}" />
+										<Setter Property="BorderColor" Value="#FF3E30" />
 										<Setter TargetName="Check" Property="Opacity" Value="1" />
+										<Setter TargetName="FillCheck" Property="Opacity" Value="1" />
+										<Setter TargetName="FillUncheck" Property="Opacity" Value="0" />
 									</VisualState.Setters>
 								</VisualState>
 								<VisualState x:Name="Unchecked">
 									<VisualState.Setters>
-										<Setter Property="BorderColor" Value="{AppThemeBinding Light={StaticResource Gray-Black}, Dark={StaticResource Gray-White}}" />
+										<Setter Property="BorderColor" Value="#F3F2F1" />
 										<Setter TargetName="Check" Property="Opacity" Value="0" />
+										<Setter TargetName="FillCheck" Property="Opacity" Value="0" />
+										<Setter TargetName="FillUncheck" Property="Opacity" Value="1" />
 									</VisualState.Setters>
 								</VisualState>
 							</VisualStateGroup>
@@ -77,6 +86,10 @@
 					</VisualStateManager.VisualStateGroups>
 				</Frame>
 			</ControlTemplate>
+
+			<Style TargetType="RadioButton">
+				<Setter Property="ControlTemplate" Value="{StaticResource ThemeRadioTemplate}" />
+			</Style>
 		</ResourceDictionary>
 	</ContentPage.Resources>
 
@@ -134,20 +147,18 @@
 						<Label
 							Margin="0"
 							Style="{StaticResource SettingsViewStyle}"
-							Text="Theme" />
+							Text="{x:Static resources:AppResources.SettingsHeadingTheme}" />
 						<Frame Style="{StaticResource DefaultFrameStyle}">
-							<!--  Grid for Theme label and navigation bar icon  -->
-							<!--  Theme choice  -->
 							<Grid
 								ColumnDefinitions="*,Auto,Auto,Auto,*"
 								ColumnSpacing="10"
 								RadioButtonGroup.GroupName="ThemeGroup"
-								RowDefinitions="*">
+								RowDefinitions="Auto"
+								RowSpacing="10">
 								<RadioButton
+									x:Name="RadioButtonSystem"
 									Grid.Column="1"
 									CheckedChanged="ThemeCheckedChanged"
-									ControlTemplate="{StaticResource ThemeRadioTemplate}"
-									GroupName="ThemeGroup"
 									IsChecked="{Binding ThemeSystem}"
 									Value="0">
 									<RadioButton.Content>
@@ -157,15 +168,17 @@
 												Scale="0.75"
 												Source="{AppThemeBinding Light='settings.png',
 												                         Dark='settings_dark.png'}" />
-											<Label Style="{StaticResource SettingsThemeStyle}" Text="System" />
+											<Label
+												FontSize="Small"
+												Style="{StaticResource SettingsThemeStyle}"
+												Text="{x:Static resources:AppResources.SettingsTemeLabelSystem}" />
 										</StackLayout>
 									</RadioButton.Content>
 								</RadioButton>
 								<RadioButton
+									x:Name="RadioButtonLight"
 									Grid.Column="2"
 									CheckedChanged="ThemeCheckedChanged"
-									ControlTemplate="{StaticResource ThemeRadioTemplate}"
-									GroupName="ThemeGroup"
 									IsChecked="{Binding ThemeLight}"
 									Value="1">
 									<RadioButton.Content>
@@ -175,15 +188,17 @@
 												Scale="0.75"
 												Source="{AppThemeBinding Light='sun_light.png',
 												                         Dark='sun_dark.png'}" />
-											<Label Style="{StaticResource SettingsThemeStyle}" Text="Light" />
+											<Label
+												FontSize="Small"
+												Style="{StaticResource SettingsThemeStyle}"
+												Text="{x:Static resources:AppResources.SettingsThemeLabelLight}" />
 										</StackLayout>
 									</RadioButton.Content>
 								</RadioButton>
 								<RadioButton
+									x:Name="RadioButtonDark"
 									Grid.Column="3"
 									CheckedChanged="ThemeCheckedChanged"
-									ControlTemplate="{StaticResource ThemeRadioTemplate}"
-									GroupName="ThemeGroup"
 									IsChecked="{Binding ThemeDark}"
 									Value="2">
 									<RadioButton.Content>
@@ -193,24 +208,30 @@
 												Scale="0.75"
 												Source="{AppThemeBinding Light='moon_light.png',
 												                         Dark='moon_dark.png'}" />
-											<Label Style="{StaticResource SettingsThemeStyle}" Text="Dark" />
+											<Label
+												FontSize="Small"
+												Style="{StaticResource SettingsThemeStyle}"
+												Text="{x:Static resources:AppResources.SettingsThemeLabelDark}" />
 										</StackLayout>
 									</RadioButton.Content>
 								</RadioButton>
 							</Grid>
 						</Frame>
-						<Label Style="{StaticResource SettingsViewStyle}" Text="Charting" />
+						<Label Style="{StaticResource SettingsViewStyle}" Text="{x:Static resources:AppResources.SettingsHeadingCharting}" />
 						<Frame Style="{StaticResource DefaultFrameStyle}">
 							<StackLayout>
-								<Grid
-									ColumnDefinitions="*,*"
-									RowDefinitions="Auto, Auto, Auto, Auto"
-									RowSpacing="10">
+								<Grid ColumnDefinitions="*,*" RowSpacing="10">
+									<Grid.RowDefinitions>
+										<RowDefinition Height="Auto" />
+										<RowDefinition Height="Auto" />
+										<RowDefinition Height="Auto" />
+										<RowDefinition Height="Auto" />
+									</Grid.RowDefinitions>
 									<Label
 										Grid.Row="0"
 										Grid.Column="0"
 										Style="{StaticResource SettingViewStandardStyle}"
-										Text="Drawing Tools Bar" />
+										Text="{x:Static resources:AppResources.SettingsChartingLabelDrawingToolBar}" />
 									<Switch
 										Grid.Row="0"
 										Grid.Column="1"
@@ -220,9 +241,9 @@
 										Grid.Row="1"
 										Grid.Column="0"
 										Style="{StaticResource SettingViewStandardStyle}"
-										Text="Bar Style" />
+										Text="{x:Static resources:AppResources.SettingsChartingLabelBarStyle}" />
 									<Picker
-										Title="Bar Style"
+										Title="{x:Static resources:AppResources.SettingsChartingLabelBarStyle}"
 										Grid.Row="1"
 										Grid.Column="1"
 										ItemDisplayBinding="{Binding Name}"
@@ -233,9 +254,9 @@
 										Grid.Row="2"
 										Grid.Column="0"
 										Style="{StaticResource SettingViewStandardStyle}"
-										Text="Default Interval" />
+										Text="{x:Static resources:AppResources.SettingsChartingLabelDefaultInterval}" />
 									<Picker
-										Title="Default Interval"
+										Title="{x:Static resources:AppResources.SettingsChartingLabelDefaultInterval}"
 										Grid.Row="2"
 										Grid.Column="1"
 										ItemDisplayBinding="{Binding Name}"
@@ -246,9 +267,9 @@
 										Grid.Row="3"
 										Grid.Column="0"
 										Style="{StaticResource SettingViewStandardStyle}"
-										Text="Default Indicator" />
+										Text="{x:Static resources:AppResources.SettingsChartingLabelDefaultIndicator}" />
 									<Picker
-										Title="Default Indicator"
+										Title="{x:Static resources:AppResources.SettingsChartingLabelDefaultIndicator}"
 										Grid.Row="3"
 										Grid.Column="1"
 										ItemDisplayBinding="{Binding Name}"
@@ -258,7 +279,7 @@
 								</Grid>
 							</StackLayout>
 						</Frame>
-						<Label Style="{StaticResource SettingsViewStyle}" Text="Favourites" />
+						<Label Style="{StaticResource SettingsViewStyle}" Text="{x:Static resources:AppResources.SettingsHeadingFavourites}" />
 						<Frame Style="{StaticResource DefaultFrameStyle}">
 							<Grid
 								ColumnDefinitions="*,*,*"
@@ -268,7 +289,7 @@
 									Grid.Row="0"
 									Grid.Column="0"
 									Style="{StaticResource SettingViewStandardStyle}"
-									Text="Use Favourites" />
+									Text="{x:Static resources:AppResources.SettingsFavouritesLabelUse}" />
 								<Switch
 									Grid.Row="0"
 									Grid.Column="2"
@@ -280,10 +301,10 @@
 									Command="{Binding FavouritesManageCommand}"
 									CornerRadius="8"
 									IsVisible="{Binding FavouritesEnabled}"
-									Text="Manage &#x003e;" />
+									Text="{x:Static resources:AppResources.SettingsFavouriteManage}" />
 							</Grid>
 						</Frame>
-						<Label Style="{StaticResource SettingsViewStyle}" Text="About" />
+						<Label Style="{StaticResource SettingsViewStyle}" Text="{x:Static resources:AppResources.SettingsHeadingAbout}" />
 						<Frame Style="{StaticResource DefaultFrameStyle}">
 							<Grid
 								ColumnDefinitions="*, 32, 32, 32"
@@ -295,7 +316,7 @@
 									Grid.Column="0"
 									Grid.ColumnSpan="4"
 									Style="{StaticResource SettingViewStandardStyle}"
-									Text="{Binding Version, StringFormat='Copyright George Leithead, Ver: {0} &#10;Please contact us on the social platform(s) below.  Please include the application information from above (version, release, etc.), your device details, a description of your problem and steps to replicate.  You can also just reach out and say &quot;hello&quot;.'}" />
+									Text="{Binding About}" />
 								<ImageButton
 									Grid.Row="1"
 									Grid.Column="3"

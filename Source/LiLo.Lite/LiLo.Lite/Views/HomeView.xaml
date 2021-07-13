@@ -7,9 +7,10 @@
 	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:models="clr-namespace:LiLo.Lite.Models.Markets"
+	xmlns:resources="clr-namespace:LiLo.Lite.Resources"
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
 	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-	Title="{Binding Title, Mode=OneTime}"
+	Title="{Binding Title, Mode=OneWay}"
 	x:DataType="vm:HomeViewModel"
 	Style="{StaticResource BasePage}"
 	Visual="Material"
@@ -24,7 +25,7 @@
 			Command="{Binding GoToSettingsCommand}"
 			IconImageSource="{AppThemeBinding Light='settings.png',
 			                                  Dark='settings_dark.png'}"
-			Text="Settings" />
+			Text="{x:Static resources:AppResources.SettingsIconText}" />
 	</ContentPage.ToolbarItems>
 
 	<ContentPage.Resources>
@@ -34,7 +35,7 @@
 	</ContentPage.Resources>
 
 	<ContentPage.Content>
-		<Grid RowDefinitions="*">
+		<Grid>
 			<ActivityIndicator
 				Grid.Row="0"
 				d:IsRunning="True"
@@ -51,8 +52,8 @@
 				<SearchBar
 					x:Name="SearchBar"
 					AutomationId="SearchBar"
+					Placeholder="{x:Static resources:AppResources.SearchBarPlaceholder}"
 					TextChanged="SearchBarTextChanged" />
-				<!--  Markets List View  -->
 				<CollectionView
 					x:Name="CollectionViewMarketsList"
 					AutomationId="CollectionViewMarketsList"
@@ -61,20 +62,15 @@
 					SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
 					Style="{StaticResource MarketsCollectionViewStyle}">
 					<CollectionView.EmptyView>
-						<StackLayout
-							AutomationId="CollectionViewMarketsListEmptyView"
-							HorizontalOptions="FillAndExpand"
-							Orientation="Vertical"
-							Spacing="8"
-							VerticalOptions="FillAndExpand">
+						<StackLayout AutomationId="CollectionViewMarketsListEmptyView" Style="{StaticResource MarketsCollectionViewStyleEmpty}">
 							<Label
 								HorizontalOptions="Center"
-								Text="{Binding NoMarketData}"
+								Text="{x:Static resources:AppResources.NoMarketDataLabel}"
 								VerticalOptions="Center" />
 							<Button
 								AutomationId="EmptyViewRetryButton"
 								Command="{Binding RetryButtonClicked}"
-								Text="{Binding RetryText}" />
+								Text="{x:Static resources:AppResources.RetryLabel}" />
 						</StackLayout>
 					</CollectionView.EmptyView>
 					<CollectionView.ItemsLayout>
@@ -91,12 +87,9 @@
 								<SwipeView.RightItems>
 									<SwipeItems>
 										<SwipeItemView
-											Margin="10"
 											Command="{Binding Source={RelativeSource AncestorType={x:Type vm:HomeViewModel}}, Path=SwipeItemAlertCommand}"
 											CommandParameter="{Binding .}"
-											HorizontalOptions="Center"
-											VerticalOptions="Center"
-											WidthRequest="52">
+											Style="{StaticResource SwipeItemViewStyle}">
 											<Image
 												AutomationProperties.Name="{Binding SymbolString, StringFormat='Alarm details for symbol {0}.'}"
 												HeightRequest="32"
@@ -110,8 +103,11 @@
 										<Grid
 											ColumnDefinitions="20*,45*,35*"
 											HorizontalOptions="FillAndExpand"
-											RowDefinitions="Auto,Auto"
 											VerticalOptions="FillAndExpand">
+											<Grid.RowDefinitions>
+												<RowDefinition Height="Auto" />
+												<RowDefinition Height="Auto" />
+											</Grid.RowDefinitions>
 											<StackLayout
 												Grid.RowSpan="2"
 												Grid.Column="0"

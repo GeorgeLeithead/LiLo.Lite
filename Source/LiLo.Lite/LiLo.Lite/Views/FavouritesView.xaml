@@ -8,7 +8,7 @@
 	xmlns:models="clr-namespace:LiLo.Lite.Models.Markets"
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
 	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-	Title="{Binding Title, Mode=OneTime}"
+	Title="{Binding Title, Mode=OneWay}"
 	x:DataType="vm:FavouritesViewModel"
 	Style="{StaticResource BasePage}"
 	Visual="Material"

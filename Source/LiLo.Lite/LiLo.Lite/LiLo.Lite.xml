@@ -7,12 +7,6 @@
         <member name="T:LiLo.Lite.App">
             <summary>LiLo application class.</summary>
         </member>
-        <member name="F:LiLo.Lite.App.FavouritesCategory">
-            <summary>Favourites category.</summary>
-        </member>
-        <member name="F:LiLo.Lite.App.UnlovedCategory">
-            <summary>UnLoved favourites category.</summary>
-        </member>
         <member name="F:LiLo.Lite.App.socketsService">
             <summary>Sockets Service.</summary>
         </member>
@@ -122,28 +116,22 @@
             <summary>Application constants.</summary>
         </member>
         <member name="T:LiLo.Lite.Helpers.Constants.Analytics">
-            <summary>AppCentre analytics class.</summary>
+            <summary>AppCentre analytics class constants.</summary>
         </member>
         <member name="T:LiLo.Lite.Helpers.Constants.Analytics.Events">
-            <summary>Analytics events class.</summary>
+            <summary>Analytics events class constants.</summary>
         </member>
         <member name="F:LiLo.Lite.Helpers.Constants.Analytics.Events.FavouritesEnabled">
             <summary>Favourites enabled tracking event.</summary>
         </member>
-        <member name="T:LiLo.Lite.Helpers.Constants.Preferences">
-            <summary>User preferences class.</summary>
-        </member>
-        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Analytics">
-            <summary>Preferences analytics.</summary>
+        <member name="F:LiLo.Lite.Helpers.Constants.Analytics.Events.ShowSymbolLabels">
+            <summary>Show Symbol Labels tracking event.</summary>
         </member>
         <member name="T:LiLo.Lite.Helpers.Constants.Navigation">
-            <summary>Navigation class.</summary>
+            <summary>Navigation class constants.</summary>
         </member>
         <member name="T:LiLo.Lite.Helpers.Constants.Navigation.Paths">
-            <summary>Navigation paths class.</summary>
-        </member>
-        <member name="F:LiLo.Lite.Helpers.Constants.Navigation.Paths.Home">
-            <summary>Home path.</summary>
+            <summary>Navigation paths class constants.</summary>
         </member>
         <member name="F:LiLo.Lite.Helpers.Constants.Navigation.Paths.Alert">
             <summary>Alert path.</summary>
@@ -151,20 +139,74 @@
         <member name="F:LiLo.Lite.Helpers.Constants.Navigation.Paths.Chart">
             <summary>Chart path.</summary>
         </member>
-        <member name="T:LiLo.Lite.Helpers.Constants.Views">
-            <summary>Views class.</summary>
+        <member name="F:LiLo.Lite.Helpers.Constants.Navigation.Paths.Favourites">
+            <summary>Favourites path.</summary>
         </member>
-        <member name="T:LiLo.Lite.Helpers.Constants.Views.Controls">
-            <summary>View controls class.</summary>
+        <member name="F:LiLo.Lite.Helpers.Constants.Navigation.Paths.Home">
+            <summary>Home path.</summary>
         </member>
-        <member name="F:LiLo.Lite.Helpers.Constants.Views.Controls.Retry">
-            <summary>Retry control text.</summary>
+        <member name="F:LiLo.Lite.Helpers.Constants.Navigation.Paths.Settings">
+            <summary>Settings path.</summary>
         </member>
-        <member name="F:LiLo.Lite.Helpers.Constants.Views.Controls.NoMarketData">
-            <summary>No markets data control text.</summary>
+        <member name="T:LiLo.Lite.Helpers.Constants.Preferences">
+            <summary>User preferences class constants.</summary>
         </member>
-        <member name="F:LiLo.Lite.Helpers.Constants.Views.Controls.AlertsComingSoon">
-            <summary>Alerts coming soon control text.</summary>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Analytics">
+            <summary>Preferences analytics.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Helpers.Constants.Preferences.Chart">
+            <summary>Chart preferences class constants.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Chart.ChartBarStyle">
+            <summary>Chart bar Style preference name.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Chart.ChartBaryDefaultValue">
+            <summary>Chart bar style preference default value.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Chart.ChartInterval">
+            <summary>Chart interval preference name.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Chart.ChartIntervalDefaultValue">
+            <summary>Chart interval preference default value.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Chart.ChartStudyIndicator">
+            <summary>Chart study indicator preference name.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Chart.ChartStudyIndicatorDefaultValue">
+            <summary>Chart study indicator preference default value.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Chart.ChartToolBar">
+            <summary>Chart tool bar preference name.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Chart.ChartToolBarDefaultValue">
+            <summary>Chart tool bar preference default value.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Helpers.Constants.Preferences.Favourites">
+            <summary>Favourites preferences class constants.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Favourites.FavouritesCategory">
+            <summary>User saved favourites preference name.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Favourites.FavouritesCategoryDefaultValue">
+            <summary>User saved favourites preference default value.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Favourites.FavouritesEnabled">
+            <summary>Favourites enabled preference name.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Favourites.FavouritesEnabledDefaultValue">
+            <summary>Favourites enabled preference default value.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Favourites.UnlovedCategory">
+            <summary>User unloved favourites preference name.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Helpers.Constants.Preferences.Settings">
+            <summary>Settings preferences class constants.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Settings.Theme">
+            <summary>User theme preference name.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Settings.ThemeDefaultValue">
+            <summary>User theme preference default value.</summary>
         </member>
         <member name="T:LiLo.Lite.Helpers.EnumerableHelpers">
             <summary>Enumerable helper.</summary>
@@ -403,6 +445,208 @@
         </member>
         <member name="P:LiLo.Lite.Models.Notifications.PriceAlertNotification.Symbol">
             <summary>Gets or sets the alert symbol.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Resources.AppResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.AlertsComingSoonLabel">
+            <summary>
+              Looks up a localized string similar to Create a new alert...(coming soon).
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.ExitModalCancelText">
+            <summary>
+              Looks up a localized string similar to Cancel.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.ExitModalMessage">
+            <summary>
+              Looks up a localized string similar to Are you sure you want to exit?.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.ExitModalOkText">
+            <summary>
+              Looks up a localized string similar to Yes.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.ExitModalTitle">
+            <summary>
+              Looks up a localized string similar to Exit?.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.NoMarketDataLabel">
+            <summary>
+              Looks up a localized string similar to No market feed data....
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.RetryLabel">
+            <summary>
+              Looks up a localized string similar to Retry.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SearchBarPlaceholder">
+            <summary>
+              Looks up a localized string similar to Search for currency....
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsChartingLabelBarStyle">
+            <summary>
+              Looks up a localized string similar to Bar Style.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsChartingLabelDefaultIndicator">
+            <summary>
+              Looks up a localized string similar to Default Indicator.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsChartingLabelDefaultInterval">
+            <summary>
+              Looks up a localized string similar to Default Interval.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsChartingLabelDrawingToolBar">
+            <summary>
+              Looks up a localized string similar to Drawing Tools Bar.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsFavouriteManage">
+            <summary>
+              Looks up a localized string similar to Manage &gt;.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsFavouritesLabelUse">
+            <summary>
+              Looks up a localized string similar to Use Favourites.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsGitHub">
+            <summary>
+              Looks up a localized string similar to https://github.com/GeorgeLeithead/LiLo.Lite.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsHeadingAbout">
+            <summary>
+              Looks up a localized string similar to About.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsHeadingCharting">
+            <summary>
+              Looks up a localized string similar to Charting.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsHeadingFavourites">
+            <summary>
+              Looks up a localized string similar to Favourites.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsHeadingTheme">
+            <summary>
+              Looks up a localized string similar to Theme.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsIconText">
+            <summary>
+              Looks up a localized string similar to Settings.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsIww">
+            <summary>
+              Looks up a localized string similar to https://www.internetwideworld.com/lilolite.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsLabelAbout">
+             <summary>
+               Looks up a localized string similar to Copyright George Leithead, Ver: {0}
+            
+            Please contact us on the social platform(s) below.  Please include the application information from above (version, release, etc.), your device details, a description of your problem and steps to replicate.  You can also just reach out and say &quot;hello&quot;..
+             </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsTemeLabelSystem">
+            <summary>
+              Looks up a localized string similar to System.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsThemeLabelDark">
+            <summary>
+              Looks up a localized string similar to Dark.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsThemeLabelLight">
+            <summary>
+              Looks up a localized string similar to Light.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsTwitter">
+            <summary>
+              Looks up a localized string similar to https://twitter.com/LiLoMobileApp.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.TradingViewPage">
+             <summary>
+               Looks up a localized string similar to &lt;html&gt;
+            &lt;body class=&quot;X1X&quot;&gt;
+            &lt;style type=&quot;text/css&quot;&gt;
+            body { margin: 0; }
+            .dark {
+            	background-color: black;
+            	color: white;
+            }
+            
+            .light {
+            	background-color: white;
+            	color: black;
+            }
+            iframe.body {
+            	-moz-transform:scale(0.75);
+            	-moz-transform-origin: 0 0;
+            	-o-transform: scale(0.75);
+            	-o-transform-origin: 0 0;
+            	-webkit-transform: scale(0.75);
+            	-webkit-transform-origin: 0 0;
+            }
+            &lt;/style&gt;
+            &lt;!-- TradingView Widget BEGIN --&gt;
+            &lt;div class=&quot;tradingview-widget-container&quot;&gt;
+              &lt;div id=&quot;tradingview_lilo&quot;&gt;&lt;/div [rest of string was truncated]&quot;;.
+             </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.ViewTitleAlerts">
+            <summary>
+              Looks up a localized string similar to Alerts.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.ViewTitleChart">
+            <summary>
+              Looks up a localized string similar to Chart.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.ViewTitleFavourites">
+            <summary>
+              Looks up a localized string similar to Manage Favourites.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.ViewTitleMarkets">
+            <summary>
+              Looks up a localized string similar to Markets.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.ViewTitleSettings">
+            <summary>
+              Looks up a localized string similar to Settings.
+            </summary>
         </member>
         <member name="T:LiLo.Lite.Services.DataStore">
             <summary>Application data store.</summary>
@@ -670,27 +914,11 @@
         <member name="P:LiLo.Lite.ViewModels.AlertsViewModel.AlertsList">
             <summary>Gets or sets a collection of values to be displayed in the markets view.</summary>
         </member>
-        <member name="P:LiLo.Lite.ViewModels.AlertsViewModel.AlertsComingSoon">
-            <summary>Gets the alerts coming soon text.</summary>
-        </member>
         <member name="P:LiLo.Lite.ViewModels.AlertsViewModel.SelectedItem">
             <summary>Gets or sets the selected item.</summary>
         </member>
         <member name="P:LiLo.Lite.ViewModels.AlertsViewModel.Symbol">
             <summary>Sets the market symbol.</summary>
-        </member>
-        <member name="T:LiLo.Lite.ViewModels.Base.ExtendedBindableObject">
-            <summary>Extended bindable object class.</summary>
-        </member>
-        <member name="M:LiLo.Lite.ViewModels.Base.ExtendedBindableObject.NotifyPropertyChanged``1(System.Linq.Expressions.Expression{System.Func{``0}})">
-            <summary>Notify property has changed.</summary>
-            <typeparam name="T">Property type.</typeparam>
-            <param name="property">Property changed.</param>
-        </member>
-        <member name="M:LiLo.Lite.ViewModels.Base.ExtendedBindableObject.GetMemberInfo(System.Linq.Expressions.Expression)">
-            <summary>Get member information.</summary>
-            <param name="expression">Expression member.</param>
-            <returns>Operand member.</returns>
         </member>
         <member name="T:LiLo.Lite.ViewModels.Base.ViewModelBase">
             <summary>View model base class.</summary>
@@ -722,9 +950,6 @@
         <member name="T:LiLo.Lite.ViewModels.ChartViewModel">
             <summary>Chart view model.</summary>
         </member>
-        <member name="F:LiLo.Lite.ViewModels.ChartViewModel.TradingViewString">
-            <summary>Trading View public Widget HTML string.</summary>
-        </member>
         <member name="M:LiLo.Lite.ViewModels.ChartViewModel.#ctor">
             <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.ViewModels.ChartViewModel"/> class.</summary>
         </member>
@@ -740,26 +965,14 @@
         <member name="P:LiLo.Lite.ViewModels.ChartViewModel.TradingViewChart">
             <summary>Gets or sets the trading view chart source.</summary>
         </member>
-        <member name="M:LiLo.Lite.ViewModels.ChartViewModel.OnSwipeItemAlert">
-            <summary>Item has been swiped and Alert selected.</summary>
-        </member>
         <member name="T:LiLo.Lite.ViewModels.FavouritesViewModel">
             <summary>Favourites view model.</summary>
-        </member>
-        <member name="F:LiLo.Lite.ViewModels.FavouritesViewModel.isBusy">
-            <summary>View is busy.</summary>
-        </member>
-        <member name="F:LiLo.Lite.ViewModels.FavouritesViewModel.title">
-            <summary>View title.</summary>
         </member>
         <member name="M:LiLo.Lite.ViewModels.FavouritesViewModel.#ctor">
             <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.ViewModels.FavouritesViewModel"/> class.</summary>
         </member>
         <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.FavouriteItems">
             <summary>Gets or sets a collection of favourite markets.</summary>
-        </member>
-        <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.IsBusy">
-            <summary>Gets or sets a value indicating whether the view is busy.</summary>
         </member>
         <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.ItemDragged">
             <summary>Gets an item dragged command.</summary>
@@ -775,9 +988,6 @@
         </member>
         <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.MarketItems">
             <summary>Gets or sets a collection of markets.</summary>
-        </member>
-        <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.Title">
-            <summary>gets or sets a value for the view title.</summary>
         </member>
         <member name="T:LiLo.Lite.ViewModels.HomeViewModel">
             <summary>Home view model.</summary>
@@ -804,14 +1014,8 @@
         <member name="P:LiLo.Lite.ViewModels.HomeViewModel.MarketsList">
             <summary>Gets or sets a collection of values to be displayed in the markets view.</summary>
         </member>
-        <member name="P:LiLo.Lite.ViewModels.HomeViewModel.NoMarketData">
-            <summary>Gets the no market data text.</summary>
-        </member>
         <member name="P:LiLo.Lite.ViewModels.HomeViewModel.RetryButtonClicked">
             <summary>Gets or sets the retry button command.</summary>
-        </member>
-        <member name="P:LiLo.Lite.ViewModels.HomeViewModel.RetryText">
-            <summary>Gets the retry text.</summary>
         </member>
         <member name="P:LiLo.Lite.ViewModels.HomeViewModel.SelectedItem">
             <summary>Gets or sets the selected item.</summary>
@@ -835,6 +1039,9 @@
         </member>
         <member name="M:LiLo.Lite.ViewModels.SettingsViewModel.#ctor">
             <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.ViewModels.SettingsViewModel"/> class.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.About">
+            <summary>Gets the about application details.</summary>
         </member>
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.BarStyleModels">
             <summary>Gets a collection of chart bar style models.</summary>
@@ -869,6 +1076,9 @@
         </member>
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.IntervalModels">
             <summary>Gets a collection of chart interval models.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.ShowSymbolLabels">
+            <summary>Gets or sets a value indicating whether show labels is enables.</summary>
         </member>
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.ThemeDark">
             <summary>Gets a value indicating whether dark theme is enabled.</summary>
