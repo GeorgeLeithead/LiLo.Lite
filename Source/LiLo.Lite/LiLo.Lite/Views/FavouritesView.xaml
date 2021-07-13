@@ -3,13 +3,12 @@
 	x:Class="LiLo.Lite.Views.FavouritesView"
 	xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
 	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:models="clr-namespace:LiLo.Lite.Models.Markets"
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
 	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-	Title="{Binding Title, Mode=OneTime}"
+	Title="{Binding Title, Mode=OneWay}"
 	x:DataType="vm:FavouritesViewModel"
 	Style="{StaticResource BasePage}"
 	Visual="Material"
@@ -26,16 +25,9 @@
 	</ContentPage.Resources>
 
 	<ContentPage.Content>
-		<Grid ColumnDefinitions="*" RowDefinitions="Auto,1*">
-			<!--  title bar  -->
-			<!--<controls:TitleBar
-				Grid.Row="0"
-				HomeVisible="True"
-				SettingsVisible="True"
-				Style="{StaticResource TitleStyle}"
-				Text="{Binding Title, Mode=OneTime}" />-->
+		<Grid ColumnDefinitions="*" RowDefinitions="*">
 			<ActivityIndicator
-				Grid.Row="1"
+				Grid.Row="0"
 				d:IsRunning="True"
 				d:IsVisible="True"
 				HorizontalOptions="CenterAndExpand"
@@ -44,7 +36,7 @@
 				VerticalOptions="CenterAndExpand" />
 			<CollectionView
 				x:Name="MyFavourites"
-				Grid.Row="1"
+				Grid.Row="0"
 				IsGrouped="True"
 				IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}"
 				ItemsSource="{Binding FavouriteItems}"
@@ -79,7 +71,6 @@
 									DragLeaveCommandParameter="{Binding}"
 									DragOverCommand="{Binding BindingContext.ItemDraggedOver, Source={x:Reference MyFavourites}}"
 									DragOverCommandParameter="{Binding}"
-									Drop="DropGestureRecognizer_Drop_Collection"
 									DropCommand="{Binding BindingContext.ItemDropped, Source={x:Reference MyFavourites}}"
 									DropCommandParameter="{Binding}" />
 							</StackLayout.GestureRecognizers>
@@ -95,7 +86,6 @@
 								<Image.GestureRecognizers>
 									<DragGestureRecognizer
 										CanDrag="True"
-										DragStarting="DragGestureRecognizer_DragStarting_Collection"
 										DragStartingCommand="{Binding BindingContext.ItemDragged, Source={x:Reference MyFavourites}}"
 										DragStartingCommandParameter="{Binding}" />
 								</Image.GestureRecognizers>

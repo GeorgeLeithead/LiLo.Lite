@@ -1,15 +1,6 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="HomeViewModel.cs" company="InternetWideWorld.com">
-// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
-//   THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-//   OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-//   LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-//   FITNESS FOR A PARTICULAR PURPOSE.
+﻿// <copyright file="HomeViewModel.cs" company="InternetWideWorld.com">
+// Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
-// <summary>
-//   Home view model.
-// </summary>
-//-----------------------------------------------------------------------
 
 namespace LiLo.Lite.ViewModels
 {
@@ -17,16 +8,19 @@ namespace LiLo.Lite.ViewModels
 	using System.Net.Http;
 	using System.Threading.Tasks;
 	using System.Windows.Input;
+	using LiLo.Lite.Helpers;
 	using LiLo.Lite.Models.Markets;
+	using LiLo.Lite.Resources;
 	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.CommunityToolkit.ObjectModel;
 	using Xamarin.Essentials;
 	using Xamarin.Forms;
 
 	/// <summary>Home view model.</summary>
-	[QueryProperty("Symbol", "symbol")]
+	[QueryProperty(nameof(Symbol), "symbol")]
 	public class HomeViewModel : ViewModelBase
 	{
+		private IAsyncCommand goToSettingsCommand;
 		private int gridItemsLayoutSpan = 1;
 
 		/// <summary>Observable list of markets.</summary>
@@ -38,9 +32,9 @@ namespace LiLo.Lite.ViewModels
 		public HomeViewModel()
 		{
 			this.IsBusy = true;
-			this.Title = "Markets";
-			this.FavouritesList = Preferences.Get(App.FavouritesCategory, string.Empty);
-			this.FavouritesEnabled = Preferences.Get("FavouritesEnabled", false);
+			this.Title = AppResources.ViewTitleMarkets;
+			this.FavouritesList = Preferences.Get(Constants.Preferences.Favourites.FavouritesCategory, Constants.Preferences.Favourites.FavouritesCategoryDefaultValue);
+			this.FavouritesEnabled = Preferences.Get(Constants.Preferences.Favourites.FavouritesEnabled, Constants.Preferences.Favourites.FavouritesEnabledDefaultValue);
 			this.RetryButtonClicked = new AsyncCommand(this.Init);
 			this.SwipeItemAlertCommand = new Command<MarketModel>(this.OnSwipeItemAlert);
 			_ = this.Init().ConfigureAwait(false);
@@ -52,6 +46,9 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Gets or sets the users favourites list.</summary>
 		public string FavouritesList { get; set; }
 
+		/// <summary>Gets the navigate to settings command.</summary>
+		public IAsyncCommand GoToSettingsCommand => this.goToSettingsCommand ??= new AsyncCommand(this.GoToSettings);
+
 		/// <summary>Gets or sets the items layout span.</summary>
 		/// <remarks>To handle landscape and portrait orientation.</remarks>
 		public int GridItemsLayoutSpan
@@ -62,7 +59,7 @@ namespace LiLo.Lite.ViewModels
 				if (value != this.gridItemsLayoutSpan)
 				{
 					this.gridItemsLayoutSpan = value;
-					this.NotifyPropertyChanged(() => this.GridItemsLayoutSpan);
+					this.OnPropertyChanged(nameof(this.GridItemsLayoutSpan));
 				}
 			}
 		}
@@ -76,7 +73,7 @@ namespace LiLo.Lite.ViewModels
 				if (this.marketsList != value)
 				{
 					this.marketsList = value;
-					this.NotifyPropertyChanged(() => this.MarketsList);
+					this.OnPropertyChanged(nameof(this.MarketsList));
 				}
 			}
 		}
@@ -93,8 +90,8 @@ namespace LiLo.Lite.ViewModels
 				if (value != null)
 				{
 					MarketModel item = value;
-					_ = Shell.Current.GoToAsync($"Chart?symbol={item.SymbolString}");
-					this.NotifyPropertyChanged(() => this.SelectedItem);
+					_ = Shell.Current.GoToAsync($"{Constants.Navigation.Paths.Chart}?symbol={item.SymbolString}");
+					this.OnPropertyChanged(nameof(this.SelectedItem));
 				}
 			}
 		}
@@ -144,16 +141,21 @@ namespace LiLo.Lite.ViewModels
 				  this.IsBusy = false;
 				  if (!string.IsNullOrEmpty(this.Symbol))
 				  {
-					  this.NotifyPropertyChanged(() => this.Symbol);
+					  this.OnPropertyChanged(nameof(this.Symbol));
 				  }
 			  });
+		}
+
+		private async Task GoToSettings()
+		{
+			await Shell.Current.GoToAsync(Constants.Navigation.Paths.Settings);
 		}
 
 		/// <summary>Market Model item has been swiped and Alert selected.</summary>
 		/// <param name="item">{MarketModel} item.</param>
 		private void OnSwipeItemAlert(MarketModel item)
 		{
-			_ = Shell.Current.GoToAsync($"//Alerts?symbol={item.SymbolString}");
+			_ = Shell.Current.GoToAsync($"{Constants.Navigation.Paths.Alert}?symbol={item.SymbolString}");
 		}
 	}
 }

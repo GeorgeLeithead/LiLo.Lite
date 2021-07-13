@@ -1,15 +1,6 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="DataStore.cs" company="InternetWideWorld.com">
-// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
-//   THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-//   OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-//   LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-//   FITNESS FOR A PARTICULAR PURPOSE.
+﻿// <copyright file="DataStore.cs" company="InternetWideWorld.com">
+// Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
-// <summary>
-//   Application data store.
-// </summary>
-//-----------------------------------------------------------------------
 
 namespace LiLo.Lite.Services
 {
@@ -21,6 +12,7 @@ namespace LiLo.Lite.Services
 	using System.Reflection;
 	using System.Text;
 	using System.Text.Json;
+	using LiLo.Lite.Helpers;
 	using LiLo.Lite.Models.Markets;
 	using Xamarin.Essentials;
 
@@ -36,9 +28,9 @@ namespace LiLo.Lite.Services
 		{
 			List<ItemViewModel> marketsGroupedByFavourites = new List<ItemViewModel>();
 			IOrderedEnumerable<MarketModel> marketsAllList = GetAllLocalMarkets().OrderBy(m => m.Rank);
-			string savedFavourites = Preferences.Get(App.FavouritesCategory, string.Empty);
+			string savedFavourites = Preferences.Get(Constants.Preferences.Favourites.FavouritesCategory, Constants.Preferences.Favourites.FavouritesCategoryDefaultValue);
 			IEnumerable<string> favourites = savedFavourites.Split(',').ToList();
-			if (string.IsNullOrEmpty(savedFavourites))
+			if (string.IsNullOrWhiteSpace(savedFavourites))
 			{
 				// Must have at least 1 in the "Favourite" category
 				favourites = favourites.Concat(new[] { "BTC" });
@@ -46,14 +38,14 @@ namespace LiLo.Lite.Services
 
 			foreach (string favourite in favourites.Where(f => !string.IsNullOrEmpty(f)))
 			{
-				marketsGroupedByFavourites.Add(new ItemViewModel { Category = App.FavouritesCategory, Symbol = favourite });
+				marketsGroupedByFavourites.Add(new ItemViewModel { Category = Constants.Preferences.Favourites.FavouritesCategory, Symbol = favourite });
 			}
 
 			foreach (MarketModel marketItem in marketsAllList)
 			{
 				if (!favourites.Any(f => f == marketItem.SymbolString))
 				{
-					marketsGroupedByFavourites.Add(new ItemViewModel { Category = App.UnlovedCategory, Symbol = marketItem.SymbolString });
+					marketsGroupedByFavourites.Add(new ItemViewModel { Category = Constants.Preferences.Favourites.UnlovedCategory, Symbol = marketItem.SymbolString });
 				}
 			}
 
@@ -64,7 +56,7 @@ namespace LiLo.Lite.Services
 		/// <returns>IEnumerable{MarketsModel} ordered by rank.</returns>
 		internal static IEnumerable<MarketModel> GetMarketsForFeed()
 		{
-			if (Preferences.Get("FavouritesEnabled", false))
+			if (Preferences.Get(Constants.Preferences.Favourites.FavouritesEnabled, Constants.Preferences.Favourites.FavouritesEnabledDefaultValue))
 			{
 				try
 				{
@@ -142,7 +134,7 @@ namespace LiLo.Lite.Services
 		private static IEnumerable<MarketModel> GetFavouriteMarkets()
 		{
 			List<MarketModel> marketsAllList = GetAllLocalMarkets();
-			string savedFavourites = Preferences.Get(App.FavouritesCategory, string.Empty);
+			string savedFavourites = Preferences.Get(Constants.Preferences.Favourites.FavouritesCategory, Constants.Preferences.Favourites.FavouritesCategoryDefaultValue);
 			if (string.IsNullOrEmpty(savedFavourites))
 			{
 				throw new ArgumentNullException("No favourite markets found!");

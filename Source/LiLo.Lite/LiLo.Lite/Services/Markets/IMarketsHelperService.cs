@@ -1,19 +1,9 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="IMarketsHelperService.cs" company="InternetWideWorld.com">
-// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
-//   THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-//   OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-//   LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-//   FITNESS FOR A PARTICULAR PURPOSE.
+﻿// <copyright file="IMarketsHelperService.cs" company="InternetWideWorld.com">
+// Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
-// <summary>
-//   Markets helper service.
-// </summary>
-//-----------------------------------------------------------------------
 
 namespace LiLo.Lite.Services.Markets
 {
-	using System.ComponentModel;
 	using System.Threading.Tasks;
 	using LiLo.Lite.Models.Markets;
 	using WebSocketSharp;

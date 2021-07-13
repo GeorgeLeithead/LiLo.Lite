@@ -11,7 +11,7 @@
 // </summary>
 //-----------------------------------------------------------------------
 
-namespace LiLo.Lite.Droid
+namespace LiLo.Lite.Droid.Services
 {
 	using Android.Content;
 

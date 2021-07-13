@@ -1,21 +1,13 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="AppShell.xaml.cs" company="InternetWideWorld.com">
-// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
-//   THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-//   OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-//   LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-//   FITNESS FOR A PARTICULAR PURPOSE.
+﻿// <copyright file="AppShell.xaml.cs" company="InternetWideWorld.com">
+// Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
-// <summary>
-//   App shell.
-// </summary>
-//-----------------------------------------------------------------------
 
 namespace LiLo.Lite
 {
-    using LiLo.Lite.Views;
-    using Xamarin.Forms;
-    using Xamarin.Forms.Xaml;
+	using LiLo.Lite.Helpers;
+	using LiLo.Lite.Views;
+	using Xamarin.Forms;
+	using Xamarin.Forms.Xaml;
 
 	/// <summary>App shell.</summary>
 	[XamlCompilation(XamlCompilationOptions.Compile)]
@@ -26,10 +18,10 @@ namespace LiLo.Lite
 		{
 			this.InitializeComponent();
 
-			Routing.RegisterRoute("Chart", typeof(ChartView));
-			Routing.RegisterRoute("Settings", typeof(SettingsView));
-			Routing.RegisterRoute("Favourites", typeof(FavouritesView));
-			Routing.RegisterRoute("Alerts", typeof(AlertsView));
+			Routing.RegisterRoute(Constants.Navigation.Paths.Chart, typeof(ChartView));
+			Routing.RegisterRoute(Constants.Navigation.Paths.Settings, typeof(SettingsView));
+			Routing.RegisterRoute($"{Constants.Navigation.Paths.Settings}/{Constants.Navigation.Paths.Favourites}", typeof(FavouritesView));
+			Routing.RegisterRoute(Constants.Navigation.Paths.Alert, typeof(AlertsView));
 		}
 	}
 }

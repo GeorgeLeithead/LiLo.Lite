@@ -1,9 +1,5 @@
 ﻿// <copyright file="AppManager.cs" company="InternetWideWorld.com">
-// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
-// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-// OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-// LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-// FITNESS FOR A PARTICULAR PURPOSE.
+// Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
 
 namespace LiLo.Lite.UITest
@@ -19,32 +15,12 @@ namespace LiLo.Lite.UITest
 		private static Platform? platform;
 
 		/// <summary>Gets the main gateway to interact with an app. This interface contains shared functionality between Xamarin.UITest.Android.AndroidApp and Xamarin.UITest.iOS.iOSApp.</summary>
-		public static IApp App
-		{
-			get
-			{
-				if (app == null)
-				{
-					throw new NullReferenceException("'AppManager.App' not set. Call 'AppManager.StartApp()' before trying to access it.");
-				}
-
-				return app;
-			}
-		}
+		public static IApp App => app ?? throw new NullReferenceException("'AppManager.App' not set. Call 'AppManager.StartApp()' before trying to access it.");
 
 		/// <summary>Gets or sets the platform being tested.</summary>
 		public static Platform Platform
 		{
-			get
-			{
-				if (platform == null)
-				{
-					throw new NullReferenceException("'AppManager.Platform' not set.");
-				}
-
-				return platform.Value;
-			}
-
+			get => platform == null ? throw new NullReferenceException("'AppManager.Platform' not set.") : platform.Value;
 			set => platform = value;
 		}
 

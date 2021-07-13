@@ -1,38 +1,28 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="ViewModelBase.cs" company="InternetWideWorld.com">
-// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
-//   THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-//   OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-//   LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-//   FITNESS FOR A PARTICULAR PURPOSE.
+﻿// <copyright file="ViewModelBase.cs" company="InternetWideWorld.com">
+// Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
-// <summary>
-//   View model base class.
-// </summary>
-//-----------------------------------------------------------------------
 
 namespace LiLo.Lite.ViewModels.Base
 {
 	using System.Runtime.Serialization;
-    using System.Threading.Tasks;
-    using LiLo.Lite.Services.Dialog;
+	using LiLo.Lite.Services.Dialog;
 	using LiLo.Lite.Services.Markets;
 	using LiLo.Lite.Services.Sockets;
-    using Xamarin.CommunityToolkit.ObjectModel;
-    using Xamarin.Forms;
-using Xamarin.Forms.Internals;
+	using Xamarin.Forms;
+	using Xamarin.Forms.Internals;
 
-/// <summary>View model base class.</summary>
+	/// <summary>View model base class.</summary>
 	[Preserve(AllMembers = true)]
 	[DataContract]
-	public abstract class ViewModelBase : ExtendedBindableObject
+	public abstract class ViewModelBase : BindableObject
 	{
 		private IDialogService dialogService;
-		private MarketsHelperService marketsHelperService;
-		private ISocketsService socketsService;
 
 		/// <summary>View is busy.</summary>
 		private bool isBusy;
+
+		private MarketsHelperService marketsHelperService;
+		private ISocketsService socketsService;
 
 		/// <summary>View title.</summary>
 		private string title;
@@ -42,14 +32,8 @@ using Xamarin.Forms.Internals;
 		{
 		}
 
-		/// <summary>Gets the markets helper service.</summary>
-		public MarketsHelperService MarketsHelperService => this.marketsHelperService ??= DependencyService.Resolve<MarketsHelperService>();
-
 		/// <summary>Gets the dialogue service.</summary>
 		public IDialogService DialogService => this.dialogService ??= DependencyService.Resolve<DialogService>();
-
-		/// <summary>Gets the sockets service.</summary>
-		public ISocketsService SocketsService => this.socketsService ??= DependencyService.Resolve<SocketsService>();
 
 		/// <summary>Gets or sets a value indicating whether the view is busy.</summary>
 		public bool IsBusy
@@ -58,9 +42,15 @@ using Xamarin.Forms.Internals;
 			set
 			{
 				this.isBusy = value;
-				this.NotifyPropertyChanged(() => this.IsBusy);
+				this.OnPropertyChanged(nameof(this.IsBusy));
 			}
 		}
+
+		/// <summary>Gets the markets helper service.</summary>
+		public MarketsHelperService MarketsHelperService => this.marketsHelperService ??= DependencyService.Resolve<MarketsHelperService>();
+
+		/// <summary>Gets the sockets service.</summary>
+		public ISocketsService SocketsService => this.socketsService ??= DependencyService.Resolve<SocketsService>();
 
 		/// <summary>gets or sets a value for the view title.</summary>
 		public string Title
@@ -69,16 +59,8 @@ using Xamarin.Forms.Internals;
 			set
 			{
 				this.title = value;
-				this.NotifyPropertyChanged(() => this.Title);
+				this.OnPropertyChanged(nameof(this.Title));
 			}
 		}
-
-		private IAsyncCommand goToSettingsCommand;
-
-		/// <summary>Navigates to settings</summary>
-		public IAsyncCommand GoToSettingsCommand => this.goToSettingsCommand ??= new AsyncCommand(this.GoToSettings);
-
-		async Task GoToSettings() => await Shell.Current.GoToAsync("Settings");
-
 	}
 }

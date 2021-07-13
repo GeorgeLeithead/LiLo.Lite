@@ -1,13 +1,10 @@
 ﻿// <copyright file="SettingsView.xaml.cs" company="InternetWideWorld.com">
-// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
-// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-// OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-// LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-// FITNESS FOR A PARTICULAR PURPOSE.
+// Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
 
 namespace LiLo.Lite.Views
 {
+	using LiLo.Lite.Helpers;
 	using Xamarin.Essentials;
 	using Xamarin.Forms;
 	using Xamarin.Forms.Xaml;
@@ -23,11 +20,10 @@ namespace LiLo.Lite.Views
 		}
 
 		/// <summary>Handle the device back button being pressed.</summary>
-		/// <remarks>As this is the root page, we have to prevent the back button otherwise it will exit the application.</remarks>
 		/// <returns>true; cancellation of back button.</returns>
 		protected override bool OnBackButtonPressed()
 		{
-			_ = Shell.Current.GoToAsync("///Home").ConfigureAwait(true);
+			_ = Shell.Current.GoToAsync("..");
 			return true; // prevent users from clicking the back button and exiting the application from the root page.
 		}
 
@@ -41,7 +37,17 @@ namespace LiLo.Lite.Views
 				_ => OSAppTheme.Unspecified,
 			};
 
-			Preferences.Set("Theme", (int)Application.Current.UserAppTheme);
+			IEnvironment env = DependencyService.Get<IEnvironment>();
+			if (Application.Current.RequestedTheme == OSAppTheme.Dark)
+			{
+				env?.SetStatusBarColor(Color.Black, false);
+			}
+			else
+			{
+				env?.SetStatusBarColor(Color.White, true);
+			}
+
+			Preferences.Set(Constants.Preferences.Settings.Theme, (int)Application.Current.UserAppTheme);
 		}
 	}
 }

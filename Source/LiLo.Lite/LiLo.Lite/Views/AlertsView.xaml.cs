@@ -1,9 +1,5 @@
 ﻿// <copyright file="AlertsView.xaml.cs" company="InternetWideWorld.com">
-// Copyright (c) George Leithead, InternetWideWorld.  All rights reserved.
-// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
-// OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
-// LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-// FITNESS FOR A PARTICULAR PURPOSE.
+// Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
 
 namespace LiLo.Lite.Views
@@ -18,14 +14,16 @@ namespace LiLo.Lite.Views
 	public partial class AlertsView : ContentPage
 	{
 		/// <summary>Initialises a new instance of the <see cref="AlertsView"/> class.</summary>
-		public AlertsView() => this.InitializeComponent();
+		public AlertsView()
+		{
+			this.InitializeComponent();
+		}
 
 		/// <summary>Handle the device back button being pressed.</summary>
-		/// <remarks>As this is the root page, we have to prevent the back button otherwise it will exit the application.</remarks>
 		/// <returns>true; cancellation of back button.</returns>
 		protected override bool OnBackButtonPressed()
 		{
-			Shell.Current.GoToAsync("///Home").ConfigureAwait(true);
+			_ = Shell.Current.GoToAsync("..");
 			return true; // prevent users from clicking the back button and exiting the application from the root page.
 		}
 	}

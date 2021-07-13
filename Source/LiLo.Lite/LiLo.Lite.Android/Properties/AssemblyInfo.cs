@@ -6,7 +6,7 @@ using Android.App;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("LiLo.Lite.Android")]
-[assembly: AssemblyDescription("LiLo 'lite' is a light-weight version of LiLo. The mobile application is written using Xamarin.Forms and integrates with the ByBit WebSockets service to provide live real-time market information, and using a WebView to display charting information from TradingView.")]
+[assembly: AssemblyDescription("LiLo.Lite is a light-weight cryptocurrency (crypto) price tracking application. It provides a quick and easy way to watch the top crypto currency information and charts. With extremely low battery usage, you can leave the application running in the background and have crypto information available right at your fingertips.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("InternetWideWorld.com")]
 [assembly: AssemblyProduct("LiLo.Lite.Android")]
@@ -21,10 +21,9 @@ using Android.App;
 //      Minor Version 
 //      Build Number
 //      Revision
-[assembly: AssemblyVersion("1.0.5.0")]
-[assembly: AssemblyFileVersion("1.0.5.0")]
+[assembly: AssemblyVersion("2.0.0.0")]
+[assembly: AssemblyFileVersion("2.0.0.0")]
 
 // Add some common permissions, these can be removed if not needed
 [assembly: UsesPermission(Android.Manifest.Permission.Internet)]
 [assembly: UsesPermission(Android.Manifest.Permission.AccessNetworkState)]
-[assembly: UsesPermission(Android.Manifest.Permission.WriteExternalStorage)]
