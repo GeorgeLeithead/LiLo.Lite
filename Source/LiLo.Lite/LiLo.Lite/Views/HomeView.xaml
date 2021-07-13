@@ -9,7 +9,6 @@
 	xmlns:models="clr-namespace:LiLo.Lite.Models.Markets"
 	xmlns:resources="clr-namespace:LiLo.Lite.Resources"
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
-    xmlns:models="clr-namespace:LiLo.Lite.Models.Markets"
 	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
 	Title="{Binding Title, Mode=OneWay}"
 	x:DataType="vm:HomeViewModel"
@@ -104,11 +103,8 @@
 										<Grid
 											ColumnDefinitions="20*,45*,35*"
 											HorizontalOptions="FillAndExpand"
+											RowDefinitions="Auto,Auto"
 											VerticalOptions="FillAndExpand">
-											<Grid.RowDefinitions>
-												<RowDefinition Height="Auto" />
-												<RowDefinition Height="Auto" />
-											</Grid.RowDefinitions>
 											<StackLayout
 												Grid.RowSpan="2"
 												Grid.Column="0"

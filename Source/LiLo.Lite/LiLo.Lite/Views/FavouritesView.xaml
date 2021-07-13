@@ -28,12 +28,6 @@
 		<Grid ColumnDefinitions="*" RowDefinitions="*">
 			<ActivityIndicator
 				Grid.Row="0"
-				HomeVisible="True"
-				SettingsVisible="True"
-				Style="{StaticResource TitleStyle}"
-				Text="{Binding Title, Mode=OneTime}" />
-			<ActivityIndicator
-				Grid.Row="1"
 				d:IsRunning="True"
 				d:IsVisible="True"
 				HorizontalOptions="CenterAndExpand"
