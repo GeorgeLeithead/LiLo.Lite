@@ -17958,19 +17958,19 @@ namespace LiLo.Lite.Droid
 			public const int ic_splash = 2131165333;
 			
 			// aapt resource value: 0x7F070096
-			public const int ic_notification = 2131165334;
-			
-			// aapt resource value: 0x7F070097
-			public const int ic_splash = 2131165335;
+			public const int ic_successstatus = 2131165334;
 			
 			// aapt resource value: 0x7F070098
-			public const int ic_successstatus = 2131165336;
+			public const int iost = 2131165336;
+			
+			// aapt resource value: 0x7F070099
+			public const int iota = 2131165337;
 			
 			// aapt resource value: 0x7F07009A
-			public const int iost = 2131165338;
+			public const int knc = 2131165338;
 			
 			// aapt resource value: 0x7F07009B
-			public const int iota = 2131165339;
+			public const int ksm = 2131165339;
 			
 			// aapt resource value: 0x7F07009C
 			public const int link = 2131165340;

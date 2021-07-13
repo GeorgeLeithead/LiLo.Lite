@@ -86,7 +86,6 @@ namespace LiLo.Lite.ViewModels
 			}
 		}
 
-		
 		/// <summary>Gets the edge browser command.</summary>
 		public IAsyncCommand EdgeBrowserCommand => new AsyncCommand(this.BrowserCommandClicked, allowsMultipleExecutions: false);
 

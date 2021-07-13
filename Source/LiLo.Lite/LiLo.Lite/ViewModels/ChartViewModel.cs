@@ -69,38 +69,28 @@ namespace LiLo.Lite.ViewModels
 					return;
 				}
 
-				Theme theme = Theme.Light;
+				OSAppTheme theme;
 				if (Application.Current.UserAppTheme == OSAppTheme.Unspecified)
 				{
 					theme = Application.Current.RequestedTheme;
 				}
 				else
 				{
-					int appTheme = Preferences.Get("Theme", 0);
-					appTheme--;
-					theme = (Theme)appTheme;
+					int appTheme = Preferences.Get(Constants.Preferences.Settings.Theme, Constants.Preferences.Settings.ThemeDefaultValue);
+					theme = (OSAppTheme)appTheme;
 				}
 
-				string tradingViewString = TradingViewString.Replace("X0X", $"BINANCE:{this.SelectedItem.SymbolString}USDT");
-				tradingViewString = tradingViewString.Replace("X1X", theme == Theme.Dark ? "dark" : "light");
-				tradingViewString = tradingViewString.Replace("X2X", TimeZoneInfo.Local.ToString());
-				tradingViewString = tradingViewString.Replace("X3X", CultureInfo.CurrentCulture.IetfLanguageTag.Substring(0, 2));
-				tradingViewString = tradingViewString.Replace("X4X", Preferences.Get("ChartInterval", "15"));
-				tradingViewString = tradingViewString.Replace("X5X", Preferences.Get("ChartBarStyle", "1"));
-				tradingViewString = tradingViewString.Replace("X6X", Preferences.Get("ChartStudyIndicator", "RSI@tv-basicstudies"));
-				tradingViewString = tradingViewString.Replace("X7X", Preferences.Get("ChartToolBar", true).ToString().ToLower());
-
-				this.tradingViewChart = new HtmlWebViewSource() { Html = tradingViewString };
-				this.NotifyPropertyChanged(() => this.TradingViewChart);
+				string formattedTradingViewString = this.tradingViewString.Replace("X0X", this.SelectedItem.SymbolString);
+				formattedTradingViewString = formattedTradingViewString.Replace("X1X", theme == OSAppTheme.Dark ? "dark" : "light");
+				formattedTradingViewString = formattedTradingViewString.Replace("X2X", TimeZoneInfo.Local.ToString());
+				formattedTradingViewString = formattedTradingViewString.Replace("X3X", CultureInfo.CurrentCulture.IetfLanguageTag.Substring(0, 2));
+				formattedTradingViewString = formattedTradingViewString.Replace("X4X", Preferences.Get(Constants.Preferences.Chart.ChartInterval, Constants.Preferences.Chart.ChartIntervalDefaultValue));
+				formattedTradingViewString = formattedTradingViewString.Replace("X5X", Preferences.Get(Constants.Preferences.Chart.ChartBarStyle, Constants.Preferences.Chart.ChartBaryDefaultValue));
+				formattedTradingViewString = formattedTradingViewString.Replace("X6X", Preferences.Get(Constants.Preferences.Chart.ChartStudyIndicator, Constants.Preferences.Chart.ChartStudyIndicatorDefaultValue));
+				formattedTradingViewString = formattedTradingViewString.Replace("X7X", Preferences.Get(Constants.Preferences.Chart.ChartToolBar, Constants.Preferences.Chart.ChartToolBarDefaultValue).ToString().ToLower());
+				this.tradingViewChart = new HtmlWebViewSource() { Html = formattedTradingViewString };
+				this.OnPropertyChanged(nameof(this.TradingViewChart));
 			}
-		}
-
-		/// <summary>Item has been swiped and Alert selected.</summary>
-		private void OnSwipeItemAlert()
-		{
-			// TODO: Implement the ability to set alerts for market items
-			MarketModel item = this.SelectedItem;
-			_ = Shell.Current.GoToAsync($"//Alerts?symbol={item.SymbolString}");
 		}
 	}
 }

@@ -947,9 +947,6 @@
         <member name="P:LiLo.Lite.ViewModels.Base.ViewModelBase.Title">
             <summary>gets or sets a value for the view title.</summary>
         </member>
-        <member name="P:LiLo.Lite.ViewModels.Base.ViewModelBase.GoToSettingsCommand">
-            <summary>Navigates to settings</summary>
-        </member>
         <member name="T:LiLo.Lite.ViewModels.ChartViewModel">
             <summary>Chart view model.</summary>
         </member>
