@@ -8,33 +8,26 @@ LiLo.Lite is a light-weight cryptocurrency (crypto) price tracking application. 
 
 ## Screenshots
 ### Splash Screen
-![Splash Screen](Screenshots/SplashScreen.png)
+![Splash Screen](Screenshots/Phone_SplashScreen.png)
 ### Markets page
-![Home Page - Light theme - Portrait](Screenshots/HomeLight.png)
-![Home Page - Dark theme - Portrait](Screenshots/HomeDark.png)
-![Home Page - Light theme - Search](Screenshots/HomeLight_Search.png)
-![Home Page - Light theme - Landscape](Screenshots/HomeLightL.png)
-![Home Page - Dark theme - Landscape](Screenshots/HomeDarkL.png)
-![Home page - Light theme - Favourites](Screenshots/HomeLight_Favourites.png)
-![Home page - Dark theme - Favourites](Screenshots/HomeDark_Favourites.png)
+![Home Page - Light theme - Portrait](Screenshots/Phone_HomeLight.png)
+![Home Page - Dark theme - Portrait](Screenshots/Phone_HomeDark.png)
+![Home page - Light theme - Favourites](Screenshots/Phone_HomeLight_Favourites.png)
 
 ### Chart page
-![Chart page - Light theme](Screenshots/ChartLight.png)
-![Chart page - Dark theme](Screenshots/ChartDark.png)
-![Chart page - Light theme with chart settings](Screenshots/ChartLight_Settings.png)
+![Chart page - Light theme](Screenshots/Phone_ChartLight.png)
+![Chart page - Dark theme](Screenshots/Phone_ChartDark.png)
 
 ## Settings page
-![Settings page - Light theme](Screenshots/SettingsLight.png)
-![Settings page - Dark theme](Screenshots/SettingsDark.png)
-![Settings page - Light theme - Chart options](Screenshots/SettingsLight_Chart.png)
+![Settings page - Light theme](Screenshots/Phone_SettingsLight.png)
+![Settings page - Dark theme](Screenshots/Phone_SettingsDark.png)
 
 ## Manage favourites page
-![Favourites page - Light theme](Screenshots/FavouritesLight.png)
-![Favourites page - Dark theme](Screenshots/FavouritesDark.png)
+![Favourites page - Light theme](Screenshots/Phone_FavouritesLight.png)
 
 ### Additional devices and OS versions
-![Home Page - Light theme - Nexus One with Lollipop 5.0 - API 21](Screenshots/HomeLight_Nexus_One_Lollipop_5.0_API_21.png)
-![Home Page - Light theme - Pixel 2 with Lollipop 5.0 - API 21](Screenshots/HomeLight_Pixel_2_Lollipop_5.0_API_21.png)
+![Home Page - Light theme - Tablet 7in with Pie 9.0 - API 28](Screenshots/Tablet7_HomeLight.png)
+![Home Page - Light theme - Tablet 10.1in with Pie 9.0 - API 28](Screenshots/Tablet10_HomeLight.png)
 
 ## Supported Platforms: Android, iOS
 
