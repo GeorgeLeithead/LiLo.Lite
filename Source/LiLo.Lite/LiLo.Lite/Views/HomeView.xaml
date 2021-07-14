@@ -77,7 +77,7 @@
 						<GridItemsLayout
 							HorizontalItemSpacing="4"
 							Orientation="Vertical"
-							Span="{Binding GridItemsLayoutSpan}"
+							Span="{Binding GridItemsLayoutSpan, Mode=OneWay}"
 							VerticalItemSpacing="4" />
 					</CollectionView.ItemsLayout>
 
@@ -110,10 +110,10 @@
 												Grid.Column="0"
 												Orientation="Vertical">
 												<Image
-													AutomationProperties.Name="{Binding SymbolString, StringFormat='Icon for symbol {0}.'}"
-													Source="{Binding SymbolString, StringFormat='{0}.png'}"
+													AutomationProperties.Name="{Binding SymbolString, StringFormat='Icon for symbol {0}.', Mode=OneWay}"
+													Source="{Binding SymbolString, StringFormat='{0}.png', Mode=OneWay}"
 													Style="{StaticResource SymbolImageStyle}" />
-												<Label Style="{StaticResource SymbolImageStringStyle}" Text="{Binding SymbolString}" />
+												<Label Style="{StaticResource SymbolImageStringStyle}" Text="{Binding SymbolString, Mode=OneWay}" />
 											</StackLayout>
 											<Frame
 												Grid.Row="0"
@@ -121,9 +121,9 @@
 												Grid.ColumnSpan="2"
 												Style="{StaticResource PriceFrameStyle}">
 												<controls:TickPriceView
-													Price="{Binding LastPrice}"
+													Price="{Binding LastPrice, Mode=OneWay}"
 													Style="{StaticResource LastPriceStyle}"
-													Text="{Binding LastPriceString}" />
+													Text="{Binding LastPriceString, Mode=OneWay}" />
 											</Frame>
 											<StackLayout
 												Grid.Row="1"
@@ -133,18 +133,18 @@
 													<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource HighPriceIcon}" />
 													<Frame Style="{StaticResource PriceFrameStyle}">
 														<controls:TickPriceView
-															Price="{Binding HighPrice24h}"
+															Price="{Binding HighPrice24h, Mode=OneWay}"
 															Style="{StaticResource CurrencyPriceStyle}"
-															Text="{Binding HighPrice24hString}" />
+															Text="{Binding HighPrice24hString, Mode=OneWay}" />
 													</Frame>
 												</StackLayout>
 												<StackLayout Style="{StaticResource StackLayoutStyle}">
 													<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource LowPriceIcon}" />
 													<Frame Style="{StaticResource PriceFrameStyle}">
 														<controls:TickPriceView
-															Price="{Binding LowPrice24h}"
+															Price="{Binding LowPrice24h, Mode=OneWay}"
 															Style="{StaticResource CurrencyPriceStyle}"
-															Text="{Binding LowPrice24hString}" />
+															Text="{Binding LowPrice24hString, Mode=OneWay}" />
 													</Frame>
 												</StackLayout>
 											</StackLayout>
@@ -156,9 +156,9 @@
 													<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource PercentIcon}" />
 													<Frame Style="{StaticResource PriceFrameStyle}">
 														<controls:TickPriceView
-															Price="{Binding Price24hPercent}"
+															Price="{Binding Price24hPercent, Mode=OneWay}"
 															Style="{StaticResource CurrencyPriceStyle}"
-															Text="{Binding Price24hPercentString}" />
+															Text="{Binding Price24hPercentString, Mode=OneWay}" />
 													</Frame>
 												</StackLayout>
 											</StackLayout>
