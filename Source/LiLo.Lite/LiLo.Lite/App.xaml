@@ -203,7 +203,7 @@
 				x:Key="ChartFrameStyle"
 				BasedOn="{x:StaticResource DefaultFrameStyle}"
 				TargetType="Frame">
-				<Setter Property="Margin" Value="8,8,8,0" />
+				<Setter Property="Margin" Value="16,16,16,8" />
 			</Style>
 
 			<Style
@@ -309,6 +309,12 @@
 
 			<Style x:Key="SettingsPicker" TargetType="Picker">
 				<Setter Property="TextColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-Black}, Dark={x:StaticResource Gray-White}}" />
+			</Style>
+
+			<Style x:Key="SettingsGridStyle" TargetType="Grid">
+				<Setter Property="Padding" Value="8" />
+				<Setter Property="RowSpacing" Value="8" />
+				<Setter Property="ColumnSpacing" Value="8" />
 			</Style>
 		</ResourceDictionary>
 	</Application.Resources>

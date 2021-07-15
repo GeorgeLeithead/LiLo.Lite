@@ -27,8 +27,10 @@
 				<Frame Style="{StaticResource SettingsThemeFrame}">
 					<Grid Margin="4" WidthRequest="80">
 						<Grid
+							ColumnDefinitions="Auto,Auto,Auto"
 							HeightRequest="20"
 							HorizontalOptions="End"
+							RowDefinitions="Auto"
 							VerticalOptions="Start"
 							WidthRequest="20">
 							<Ellipse
@@ -104,7 +106,7 @@
 				IsVisible="{Binding IsBusy}"
 				VerticalOptions="CenterAndExpand" />
 			<ScrollView Grid.Row="0" IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}">
-				<Grid Padding="10">
+				<Grid Padding="8">
 					<Grid.ColumnDefinitions>
 						<ColumnDefinition>
 							<ColumnDefinition.Width>
@@ -151,10 +153,9 @@
 						<Frame Style="{StaticResource DefaultFrameStyle}">
 							<Grid
 								ColumnDefinitions="*,Auto,Auto,Auto,*"
-								ColumnSpacing="10"
 								RadioButtonGroup.GroupName="ThemeGroup"
 								RowDefinitions="Auto"
-								RowSpacing="10">
+								Style="{StaticResource SettingsGridStyle}">
 								<RadioButton
 									x:Name="RadioButtonSystem"
 									Grid.Column="1"
@@ -220,13 +221,10 @@
 						<Label Style="{StaticResource SettingsViewStyle}" Text="{x:Static resources:AppResources.SettingsHeadingCharting}" />
 						<Frame Style="{StaticResource DefaultFrameStyle}">
 							<StackLayout>
-								<Grid ColumnDefinitions="*,*" RowSpacing="10">
-									<Grid.RowDefinitions>
-										<RowDefinition Height="Auto" />
-										<RowDefinition Height="Auto" />
-										<RowDefinition Height="Auto" />
-										<RowDefinition Height="Auto" />
-									</Grid.RowDefinitions>
+								<Grid
+									ColumnDefinitions="*,*"
+									RowDefinitions="Auto,Auto,Auto,Auto"
+									Style="{StaticResource SettingsGridStyle}">
 									<Label
 										Grid.Row="0"
 										Grid.Column="0"
@@ -284,7 +282,7 @@
 							<Grid
 								ColumnDefinitions="*,*,*"
 								RowDefinitions="Auto, Auto"
-								RowSpacing="10">
+								Style="{StaticResource SettingsGridStyle}">
 								<Label
 									Grid.Row="0"
 									Grid.Column="0"
@@ -308,9 +306,8 @@
 						<Frame Style="{StaticResource DefaultFrameStyle}">
 							<Grid
 								ColumnDefinitions="*, 32, 32, 32"
-								ColumnSpacing="8"
 								RowDefinitions="Auto, 32"
-								RowSpacing="10">
+								Style="{StaticResource SettingsGridStyle}">
 								<Label
 									Grid.Row="0"
 									Grid.Column="0"

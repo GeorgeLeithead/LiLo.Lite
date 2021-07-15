@@ -43,19 +43,30 @@
 					HorizontalOptions="FillAndExpand"
 					RowDefinitions="Auto,Auto"
 					VerticalOptions="FillAndExpand">
-					<Image
-						Grid.Row="0"
+					<StackLayout
 						Grid.RowSpan="2"
 						Grid.Column="0"
-						AutomationProperties.Name="{Binding SelectedItem.SymbolString, StringFormat='Icon for symbol {0}.', Mode=OneWay}"
-						Source="{Binding SelectedItem.SymbolString, StringFormat='{0}.png', Mode=OneWay}"
-						Style="{StaticResource SymbolImageStyle}" />
+						Orientation="Vertical">
+						<Image
+							AutomationProperties.HelpText="Currency symbol icon."
+							AutomationProperties.Name="{Binding SelectedItem.SymbolString, StringFormat='Icon for symbol {0}.', Mode=OneWay}"
+							Source="{Binding SelectedItem.SymbolString, StringFormat='{0}.png', Mode=OneWay}"
+							Style="{StaticResource SymbolImageStyle}" />
+						<Label
+							x:Name="SymbolStringLabel"
+							AutomationProperties.HelpText="Currency symbol."
+							AutomationProperties.Name="SymbolStringLabel"
+							Style="{StaticResource SymbolImageStringStyle}"
+							Text="{Binding SelectedItem.SymbolString, Mode=OneWay}" />
+					</StackLayout>
 					<Frame
 						Grid.Row="0"
 						Grid.Column="1"
 						Grid.ColumnSpan="2"
 						Style="{StaticResource PriceFrameStyle}">
 						<controls:TickPriceView
+							AutomationProperties.IsInAccessibleTree="True"
+							AutomationProperties.LabeledBy="{x:Reference SymbolStringLabel}"
 							Price="{Binding SelectedItem.LastPrice, Mode=OneWay}"
 							Style="{StaticResource LastPriceStyle}"
 							Text="{Binding SelectedItem.LastPriceString, Mode=OneWay}" />
@@ -65,18 +76,32 @@
 						Grid.Column="1"
 						Style="{StaticResource MarketsColumnStyle}">
 						<StackLayout Style="{StaticResource StackLayoutStyle}">
-							<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource HighPriceIcon}" />
+							<Label
+								x:Name="HighPrice24hStringLabel"
+								AutomationProperties.HelpText="Price 24hr high."
+								AutomationProperties.Name="HighPrice24hStringLabel"
+								Style="{StaticResource PriceLabelStyle}"
+								Text="{StaticResource HighPriceIcon}" />
 							<Frame Style="{StaticResource PriceFrameStyle}">
 								<controls:TickPriceView
+									AutomationProperties.IsInAccessibleTree="True"
+									AutomationProperties.LabeledBy="{x:Reference HighPrice24hStringLabel}"
 									Price="{Binding SelectedItem.HighPrice24h, Mode=OneWay}"
 									Style="{StaticResource CurrencyPriceStyle}"
 									Text="{Binding SelectedItem.HighPrice24hString, Mode=OneWay}" />
 							</Frame>
 						</StackLayout>
 						<StackLayout Style="{StaticResource StackLayoutStyle}">
-							<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource LowPriceIcon}" />
+							<Label
+								x:Name="LowPrice24hStringLabel"
+								AutomationProperties.HelpText="Price 24hr low."
+								AutomationProperties.Name="LowPrice24hStringLabel"
+								Style="{StaticResource PriceLabelStyle}"
+								Text="{StaticResource LowPriceIcon}" />
 							<Frame Style="{StaticResource PriceFrameStyle}">
 								<controls:TickPriceView
+									AutomationProperties.IsInAccessibleTree="True"
+									AutomationProperties.LabeledBy="{x:Reference LowPrice24hStringLabel}"
 									Price="{Binding SelectedItem.LowPrice24h, Mode=OneWay}"
 									Style="{StaticResource CurrencyPriceStyle}"
 									Text="{Binding SelectedItem.LowPrice24hString, Mode=OneWay}" />
@@ -88,16 +113,28 @@
 						Grid.Column="2"
 						Style="{StaticResource MarketsColumnStyle}">
 						<StackLayout Style="{StaticResource StackLayoutStyle}">
-							<Label Style="{StaticResource PriceLabelStyle}" Text="{StaticResource PercentIcon}" />
+							<Label
+								x:Name="Price24hPercentLabel"
+								AutomationProperties.HelpText="Price 24hr percent change."
+								AutomationProperties.Name="Price24hPercentLabel"
+								Style="{StaticResource PriceLabelStyle}"
+								Text="{StaticResource PercentIcon}" />
 							<Frame Style="{StaticResource PriceFrameStyle}">
 								<controls:TickPriceView
+									AutomationProperties.IsInAccessibleTree="True"
+									AutomationProperties.LabeledBy="{x:Reference Price24hPercentLabel}"
 									Price="{Binding SelectedItem.Price24hPercent, Mode=OneWay}"
 									Style="{StaticResource CurrencyPriceStyle}"
 									Text="{Binding SelectedItem.Price24hPercentString, Mode=OneWay}" />
 							</Frame>
 						</StackLayout>
+						<StackLayout Style="{StaticResource StackLayoutStyle}">
+							<Label
+								AutomationProperties.Name="Turnover"
+								Style="{StaticResource PriceLabelStyle}"
+								Text="" />
+						</StackLayout>
 					</StackLayout>
-
 				</Grid>
 			</Frame>
 			<WebView
