@@ -17,6 +17,14 @@ namespace LiLo.Lite.Services.Dialog
 		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		Task ShowAlertAsync(string message, string title, string buttonLabel);
 
+		/// <summary>Show a cross-platform confirm dialogue.</summary>
+		/// <param name="title">Confirm title.</param>
+		/// <param name="message">Confirm message.</param>
+		/// <param name="okText">OK button label text.</param>
+		/// <param name="cancelText">Cancel button label text.</param>
+		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
+		Task<bool> ShowConfirmAsync(string title, string message, string okText, string cancelText);
+
 		/// <summary>Show a cross-platform prompt.</summary>
 		/// <param name="title">Prompt title.</param>
 		/// <param name="message">Prompt message.</param>

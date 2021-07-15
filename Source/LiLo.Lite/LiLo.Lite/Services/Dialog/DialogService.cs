@@ -45,6 +45,18 @@ namespace LiLo.Lite.Services.Dialog
 			return UserDialogs.Instance.PromptAsync(message, title, okText, cancelText);
 		}
 
+		/// <summary>Show a cross-platform confirm dialogue.</summary>
+		/// <param name="title">Confirm title.</param>
+		/// <param name="message">Confirm message.</param>
+		/// <param name="okText">OK button label text.</param>
+		/// <param name="cancelText">Cancel button label text.</param>
+		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
+		public Task<bool> ShowConfirmAsync(string title, string message, string okText, string cancelText)
+		{
+			Page page = Application.Current.MainPage;
+			return page == null ? Task.FromResult(false) : UserDialogs.Instance.ConfirmAsync(message, title, okText, cancelText);
+		}
+
 		/// <summary>Show a cross-platform Toast.</summary>
 		/// <param name="message">Toast message.</param>
 		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>

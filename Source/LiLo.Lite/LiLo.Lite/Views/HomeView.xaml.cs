@@ -27,7 +27,6 @@ namespace LiLo.Lite.Views
 		/// <summary>Initialises a new instance of the <see cref="HomeView" /> class.</summary>
 		public HomeView()
 		{
-			// TODO: Add symbol string to view as an overlay? to the symbol image, to help users understand name < - > symbol
 			this.InitializeComponent();
 		}
 
@@ -71,8 +70,8 @@ namespace LiLo.Lite.Views
 			// Begin an asynchronous task on the UI thread because we intend to ask the users permission.
 			Device.BeginInvokeOnMainThread(async () =>
 			{
-				Acr.UserDialogs.PromptResult trulyExit = await this.VM.DialogService.ShowPromptAsync(AppResources.ExitModalTitle, AppResources.ExitModalMessage, AppResources.ExitModalOkText, AppResources.ExitModalCancelText);
-				if (trulyExit.Ok)
+				bool trulyExitConfirm = await this.VM.DialogService.ShowConfirmAsync(AppResources.ExitModalTitle, AppResources.ExitModalMessage, AppResources.ExitModalOkText, AppResources.ExitModalCancelText);
+				if (trulyExitConfirm)
 				{
 					_ = base.OnBackButtonPressed();
 					_ = Process.GetCurrentProcess().CloseMainWindow();
