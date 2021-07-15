@@ -13,12 +13,12 @@
 
 namespace LiLo.Lite.Droid
 {
+	using System.Threading.Tasks;
 	using Android.App;
 	using Android.Content;
 	using Android.OS;
 	using Android.Util;
 	using AndroidX.AppCompat.App;
-	using System.Threading.Tasks;
 
 	/// <summary>Splash screen activity.</summary>
 	[Activity(Theme = "@style/MainTheme.Splash", MainLauncher = true, NoHistory = true)]

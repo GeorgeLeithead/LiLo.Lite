@@ -124,7 +124,7 @@ namespace LiLo.Lite.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Search for currency....
+        ///   Looks up a localized string similar to Search....
         /// </summary>
         public static string SearchBarPlaceholder {
             get {

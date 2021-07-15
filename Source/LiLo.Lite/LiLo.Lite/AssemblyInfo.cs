@@ -12,8 +12,10 @@ namespace System.Runtime.CompilerServices
 {
 	/// <summary>Fix for C#9 quirk in non-.NET 5 project and when using a record.</summary>
 #pragma warning disable SA1649 // File name should match first type name
+
 	public class IsExternalInit
 	{
 	}
+
 #pragma warning restore SA1649 // File name should match first type name
 }

@@ -139,7 +139,7 @@
     <value>Retry</value>
   </data>
   <data name="SearchBarPlaceholder" xml:space="preserve">
-    <value>Search for currency...</value>
+    <value>Search...</value>
   </data>
   <data name="SettingsChartingLabelBarStyle" xml:space="preserve">
     <value>Bar Style</value>
