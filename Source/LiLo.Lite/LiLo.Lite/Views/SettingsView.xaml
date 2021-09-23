@@ -5,6 +5,7 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:models="clr-namespace:LiLo.Lite.Models.Markets"
 	xmlns:resources="clr-namespace:LiLo.Lite.Resources"
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
 	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
@@ -277,29 +278,58 @@
 								</Grid>
 							</StackLayout>
 						</Frame>
+						<!--  Favourites  -->
 						<Label Style="{StaticResource SettingsViewStyle}" Text="{x:Static resources:AppResources.SettingsHeadingFavourites}" />
 						<Frame Style="{StaticResource DefaultFrameStyle}">
 							<Grid
-								ColumnDefinitions="*,*,*"
-								RowDefinitions="Auto, Auto"
+								ColumnDefinitions="*"
+								RowDefinitions="*"
 								Style="{StaticResource SettingsGridStyle}">
-								<Label
-									Grid.Row="0"
-									Grid.Column="0"
-									Style="{StaticResource SettingViewStandardStyle}"
-									Text="{x:Static resources:AppResources.SettingsFavouritesLabelUse}" />
-								<Switch
-									Grid.Row="0"
-									Grid.Column="2"
-									IsToggled="{Binding FavouritesEnabled}"
-									ThumbColor="{StaticResource LadderLeftColor}" />
-								<Button
-									Grid.Row="1"
-									Grid.Column="2"
-									Command="{Binding FavouritesManageCommand}"
-									CornerRadius="8"
-									IsVisible="{Binding FavouritesEnabled}"
-									Text="{x:Static resources:AppResources.SettingsFavouriteManage}" />
+								<FlexLayout
+									AlignContent="SpaceAround"
+									AlignItems="Start"
+									BindableLayout.ItemsSource="{Binding MarketsList}"
+									Direction="Row"
+									JustifyContent="SpaceAround"
+									Wrap="Wrap">
+									<BindableLayout.ItemTemplate>
+										<DataTemplate x:DataType="models:MarketModel">
+											<Frame Margin="4" Style="{StaticResource DefaultFrameStyle}">
+												<StackLayout Orientation="Vertical">
+													<Image
+														AutomationProperties.HelpText="Currency symbol icon."
+														AutomationProperties.Name="{Binding SymbolString, StringFormat='Icon for symbol {0}.', Mode=OneWay}"
+														Source="{Binding SymbolString, StringFormat='{0}.png', Mode=OneWay}"
+														Style="{StaticResource SymbolImageStyle}" />
+													<Label
+														x:Name="SymbolStringLabel"
+														AutomationProperties.HelpText="Currency symbol."
+														AutomationProperties.Name="SymbolStringLabel"
+														Style="{StaticResource SymbolImageStringStyle}"
+														Text="{Binding SymbolString, Mode=OneWay}"
+														TextColor="{StaticResource Gray-White}" />
+												</StackLayout>
+												<Frame.Triggers>
+													<DataTrigger
+														Binding="{Binding IsFavourite}"
+														TargetType="Frame"
+														Value="true">
+														<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={x:StaticResource LadderLeftColor}, Dark={x:StaticResource LadderLeftColor}}" />
+													</DataTrigger>
+													<DataTrigger
+														Binding="{Binding IsFavourite}"
+														TargetType="Frame"
+														Value="false">
+														<Setter Property="BackgroundColor" Value="{AppThemeBinding Light={x:StaticResource LadderRightColor}, Dark={x:StaticResource LadderRightColor}}" />
+													</DataTrigger>
+												</Frame.Triggers>
+												<Frame.GestureRecognizers>
+													<TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:SettingsViewModel}}, Path=FavouriteItemSelectedCommand}" CommandParameter="{Binding .}" />
+												</Frame.GestureRecognizers>
+											</Frame>
+										</DataTemplate>
+									</BindableLayout.ItemTemplate>
+								</FlexLayout>
 							</Grid>
 						</Frame>
 						<Label Style="{StaticResource SettingsViewStyle}" Text="{x:Static resources:AppResources.SettingsHeadingAbout}" />

@@ -33,18 +33,10 @@ namespace LiLo.Lite.ViewModels
 		{
 			this.IsBusy = true;
 			this.Title = AppResources.ViewTitleMarkets;
-			this.FavouritesList = Preferences.Get(Constants.Preferences.Favourites.FavouritesCategory, Constants.Preferences.Favourites.FavouritesCategoryDefaultValue);
-			this.FavouritesEnabled = Preferences.Get(Constants.Preferences.Favourites.FavouritesEnabled, Constants.Preferences.Favourites.FavouritesEnabledDefaultValue);
 			this.RetryButtonClicked = new AsyncCommand(this.Init);
 			this.SwipeItemAlertCommand = new Command<MarketModel>(this.OnSwipeItemAlert);
 			_ = this.Init().ConfigureAwait(false);
 		}
-
-		/// <summary>Gets or sets a value indicating whether the favourites is enabled.</summary>
-		public bool FavouritesEnabled { get; set; }
-
-		/// <summary>Gets or sets the users favourites list.</summary>
-		public string FavouritesList { get; set; }
 
 		/// <summary>Gets the navigate to settings command.</summary>
 		public IAsyncCommand GoToSettingsCommand => this.goToSettingsCommand ??= new AsyncCommand(this.GoToSettings);

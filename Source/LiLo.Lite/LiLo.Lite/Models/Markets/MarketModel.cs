@@ -186,6 +186,9 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the market ranking for the symbol.</summary>
 		public int Rank { get; set; }
 
+		/// <summary>Gets or sets a value indicating whether the currency is a favourite.</summary>
+		public bool IsFavourite { get; set; }
+
 		/// <summary>Gets or sets the currency Symbol as a string.</summary>
 		[DataMember(Name = "symbol")]
 		public string SymbolString

@@ -11,6 +11,7 @@ namespace LiLo.Lite.ViewModels
 	using System.Threading.Tasks;
 	using LiLo.Lite.Helpers;
 	using LiLo.Lite.Models.ChartModels;
+	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.Resources;
 	using LiLo.Lite.ViewModels.Base;
 	using Microsoft.AppCenter.Analytics;
@@ -21,6 +22,9 @@ namespace LiLo.Lite.ViewModels
 	/// <summary>Settings view model.</summary>
 	public class SettingsViewModel : ViewModelBase
 	{
+		/// <summary>Observable list of markets.</summary>
+		private ObservableRangeCollection<MarketModel> marketsList;
+
 		/// <summary>Initialises a new instance of the <see cref="SettingsViewModel"/> class.</summary>
 		public SettingsViewModel()
 		{
@@ -29,7 +33,8 @@ namespace LiLo.Lite.ViewModels
 			this.IndicatorModels = new ObservableRangeCollection<IndicatorModel>(PopulateChartModel.GetIndicator());
 			this.IntervalModels = new ObservableRangeCollection<IntervalModel>(PopulateChartModel.GetInterval());
 			this.BarStyleModels = new ObservableRangeCollection<BarStyleModel>(PopulateChartModel.GetBarStyle());
-			this.IsBusy = false;
+			this.FavouriteItemSelectedCommand = new AsyncCommand<MarketModel>(async item => await this.FavouriteSelected(item));
+			_ = this.InIt().ConfigureAwait(true);
 		}
 
 		/// <summary>Gets the about application details.</summary>
@@ -89,20 +94,8 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Gets the edge browser command.</summary>
 		public IAsyncCommand EdgeBrowserCommand => new AsyncCommand(this.BrowserCommandClicked, allowsMultipleExecutions: false);
 
-		/// <summary>Gets or sets a value indicating whether favourites is enabled.</summary>
-		public bool FavouritesEnabled
-		{
-			get => Preferences.Get(Constants.Preferences.Favourites.FavouritesEnabled, Constants.Preferences.Favourites.FavouritesEnabledDefaultValue);
-			set
-			{
-				Analytics.TrackEvent(Constants.Analytics.Events.FavouritesEnabled, new Dictionary<string, string> { { Constants.Preferences.Favourites.FavouritesEnabled, value.ToString() } });
-				Preferences.Set(Constants.Preferences.Favourites.FavouritesEnabled, value);
-				this.OnPropertyChanged(nameof(this.FavouritesEnabled));
-			}
-		}
-
-		/// <summary>Gets the favourites manage command.</summary>
-		public IAsyncCommand FavouritesManageCommand => new AsyncCommand(this.FavouritesManageCommandClicked, allowsMultipleExecutions: false);
+		/// <summary>Gets the Favourite item selected command.</summary>
+		public IAsyncCommand<MarketModel> FavouriteItemSelectedCommand { get; }
 
 		/// <summary>Gets the GitHub command.</summary>
 		public IAsyncCommand GithubCommand => new AsyncCommand(this.GitHubCommandClicked, allowsMultipleExecutions: false);
@@ -113,13 +106,27 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Gets a collection of chart interval models.</summary>
 		public ObservableRangeCollection<IntervalModel> IntervalModels { get; }
 
+		/// <summary>Gets or sets a collection of values to be displayed in the markets view.</summary>
+		public ObservableRangeCollection<MarketModel> MarketsList
+		{
+			get => this.marketsList;
+			set
+			{
+				if (this.marketsList != value)
+				{
+					this.marketsList = value;
+					this.OnPropertyChanged(nameof(this.MarketsList));
+				}
+			}
+		}
+
 		/// <summary>Gets or sets a value indicating whether show labels is enables.</summary>
 		public bool ShowSymbolLabels
 		{
 			get => Preferences.Get(nameof(this.ShowSymbolLabels), true);
 			set
 			{
-				Analytics.TrackEvent(Constants.Analytics.Events.ShowSymbolLabels, new Dictionary<string, string> { { nameof(this.FavouritesEnabled), value.ToString() } });
+				Analytics.TrackEvent(Constants.Analytics.Events.ShowSymbolLabels, new Dictionary<string, string> { { nameof(this.ShowSymbolLabels), value.ToString() } });
 				Preferences.Set(nameof(this.ShowSymbolLabels), value);
 				this.OnPropertyChanged(nameof(this.ShowSymbolLabels));
 			}
@@ -145,9 +152,12 @@ namespace LiLo.Lite.ViewModels
 			await Browser.OpenAsync(new Uri(AppResources.SettingsIww), BrowserLaunchMode.SystemPreferred);
 		}
 
-		private async Task FavouritesManageCommandClicked()
+		private Task FavouriteSelected(MarketModel item)
 		{
-			await Shell.Current.GoToAsync(Constants.Navigation.Paths.Favourites);
+			MarketModel selectedItem = item;
+			selectedItem.IsFavourite = !selectedItem.IsFavourite;
+			this.OnPropertyChanged(nameof(selectedItem.IsFavourite));
+			return Task.CompletedTask;
 		}
 
 		private async Task GitHubCommandClicked()
@@ -158,6 +168,16 @@ namespace LiLo.Lite.ViewModels
 		private async Task TwitterCommandClicked()
 		{
 			await Browser.OpenAsync(new Uri(AppResources.SettingsTwitter), BrowserLaunchMode.SystemPreferred);
+		}
+
+		private async Task InIt()
+		{
+			_ = await Task.Factory.StartNew(async () =>
+			{
+				await Task.Delay(1);
+				this.MarketsList = this.MarketsHelperService.MarketsListAll;
+				this.IsBusy = false;
+			});
 		}
 	}
 }

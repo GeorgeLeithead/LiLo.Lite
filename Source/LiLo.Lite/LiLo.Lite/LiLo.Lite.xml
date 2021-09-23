@@ -187,6 +187,9 @@
         <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Favourites.FavouritesCategory">
             <summary>User saved favourites preference name.</summary>
         </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Favourites.FavouriteOrderedCurrency">
+            <summary>User favourite ordered currency preference name.</summary>
+        </member>
         <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Favourites.FavouritesCategoryDefaultValue">
             <summary>User saved favourites preference default value.</summary>
         </member>
@@ -198,6 +201,9 @@
         </member>
         <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Favourites.UnlovedCategory">
             <summary>User unloved favourites preference name.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Favourites.FavouritesChanged">
+            <summary>Favourites changed flag preference name.</summary>
         </member>
         <member name="T:LiLo.Lite.Helpers.Constants.Preferences.Settings">
             <summary>Settings preferences class constants.</summary>
@@ -318,31 +324,14 @@
             <summary>Get the chart interval.</summary>
             <returns>List{IntervalModel} of chart interval.</returns>
         </member>
-        <member name="T:LiLo.Lite.Models.Markets.ItemsGroupViewModel">
-            <summary>Items group view model.</summary>
+        <member name="T:LiLo.Lite.Models.Markets.FavouriteOrderedCurrency">
+            <summary>User Favourite Ordered Currency Model.</summary>
         </member>
-        <member name="M:LiLo.Lite.Models.Markets.ItemsGroupViewModel.#ctor(System.String,System.Collections.Generic.IEnumerable{LiLo.Lite.Models.Markets.ItemViewModel})">
-            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Models.Markets.ItemsGroupViewModel"/> class.</summary>
-            <param name="name">Group name.</param>
-            <param name="items">IEnumerable{ItemViewModel}.</param>
+        <member name="P:LiLo.Lite.Models.Markets.FavouriteOrderedCurrency.SymbolString">
+            <summary>Gets or sets the currency Symbol as a string.</summary>
         </member>
-        <member name="P:LiLo.Lite.Models.Markets.ItemsGroupViewModel.Name">
-            <summary>Gets or sets the item group name.</summary>
-        </member>
-        <member name="T:LiLo.Lite.Models.Markets.ItemViewModel">
-            <summary>Favourite market model.</summary>
-        </member>
-        <member name="P:LiLo.Lite.Models.Markets.ItemViewModel.Category">
-            <summary>Gets or sets the category.</summary>
-        </member>
-        <member name="P:LiLo.Lite.Models.Markets.ItemViewModel.IsBeingDragged">
-            <summary>Gets or sets a value indicating whether item is being dragged.</summary>
-        </member>
-        <member name="P:LiLo.Lite.Models.Markets.ItemViewModel.IsBeingDraggedOver">
-            <summary>Gets or sets a value indicating whether item being dragged is over.</summary>
-        </member>
-        <member name="P:LiLo.Lite.Models.Markets.ItemViewModel.Symbol">
-            <summary>Gets or sets the symbol.</summary>
+        <member name="P:LiLo.Lite.Models.Markets.FavouriteOrderedCurrency.Rank">
+            <summary>Gets or sets the user selected rank.</summary>
         </member>
         <member name="T:LiLo.Lite.Models.Markets.MarketModel">
             <summary>Model for the markets information.</summary>
@@ -412,6 +401,9 @@
         </member>
         <member name="P:LiLo.Lite.Models.Markets.MarketModel.Rank">
             <summary>Gets or sets the market ranking for the symbol.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.MarketModel.IsFavourite">
+            <summary>Gets or sets a value indicating whether the currency is a favourite.</summary>
         </member>
         <member name="P:LiLo.Lite.Models.Markets.MarketModel.SymbolString">
             <summary>Gets or sets the currency Symbol as a string.</summary>
@@ -499,7 +491,7 @@
         </member>
         <member name="P:LiLo.Lite.Resources.AppResources.SearchBarPlaceholder">
             <summary>
-              Looks up a localized string similar to Search for currency....
+              Looks up a localized string similar to Search....
             </summary>
         </member>
         <member name="P:LiLo.Lite.Resources.AppResources.SettingsChartingLabelBarStyle">
@@ -654,12 +646,12 @@
         <member name="F:LiLo.Lite.Services.DataStore.marketsData">
             <summary>Markets list.</summary>
         </member>
-        <member name="M:LiLo.Lite.Services.DataStore.GetMarketsGroupedByFavourites">
-            <summary>Get markets grouped by favourites.</summary>
-            <returns>IEnumerable{ItemViewModel} of categorised markets.</returns>
-        </member>
         <member name="M:LiLo.Lite.Services.DataStore.GetMarketsForFeed">
             <summary>Get ordered markets feed list.</summary>
+            <returns>IEnumerable{MarketsModel} ordered by rank.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Services.DataStore.GetmarketsForSettings">
+            <summary>Gets the list of all markets for settings.</summary>
             <returns>IEnumerable{MarketsModel} ordered by rank.</returns>
         </member>
         <member name="M:LiLo.Lite.Services.DataStore.MarketsWss">
@@ -818,6 +810,9 @@
         <member name="P:LiLo.Lite.Services.Markets.MarketsHelperService.MarketsList">
             <summary>Gets or sets an observable list of markets.</summary>
         </member>
+        <member name="P:LiLo.Lite.Services.Markets.MarketsHelperService.MarketsListAll">
+            <summary>Gets an observable list of all markets.</summary>
+        </member>
         <member name="P:LiLo.Lite.Services.Markets.MarketsHelperService.NotificationManager">
             <summary>Gets the local notification manager.</summary>
         </member>
@@ -845,6 +840,10 @@
         <member name="T:LiLo.Lite.Services.Sockets.ISocketsService">
             <summary>Web Sockets Service interface.</summary>
         </member>
+        <member name="M:LiLo.Lite.Services.Sockets.ISocketsService.Connect">
+            <summary>Connects to the sockets service.</summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
         <member name="M:LiLo.Lite.Services.Sockets.ISocketsService.WebSocket_Close">
             <summary>Handle when the application closes the sockets connection.</summary>
             <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
@@ -859,10 +858,6 @@
         </member>
         <member name="M:LiLo.Lite.Services.Sockets.ISocketsService.WebSocket_OnSleep">
             <summary>Handle when the application goes into sleep.</summary>
-            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
-        </member>
-        <member name="M:LiLo.Lite.Services.Sockets.ISocketsService.Connect">
-            <summary>Connects to the sockets service.</summary>
             <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
         </member>
         <member name="T:LiLo.Lite.Services.Sockets.SocketsService">
@@ -981,30 +976,6 @@
         <member name="P:LiLo.Lite.ViewModels.ChartViewModel.TradingViewChart">
             <summary>Gets or sets the trading view chart source.</summary>
         </member>
-        <member name="T:LiLo.Lite.ViewModels.FavouritesViewModel">
-            <summary>Favourites view model.</summary>
-        </member>
-        <member name="M:LiLo.Lite.ViewModels.FavouritesViewModel.#ctor">
-            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.ViewModels.FavouritesViewModel"/> class.</summary>
-        </member>
-        <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.FavouriteItems">
-            <summary>Gets or sets a collection of favourite markets.</summary>
-        </member>
-        <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.ItemDragged">
-            <summary>Gets an item dragged command.</summary>
-        </member>
-        <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.ItemDraggedOver">
-            <summary>Gets an item dragged complete command.</summary>
-        </member>
-        <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.ItemDragLeave">
-            <summary>Gets an item dragged left command.</summary>
-        </member>
-        <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.ItemDropped">
-            <summary>Gets an item dropped command.</summary>
-        </member>
-        <member name="P:LiLo.Lite.ViewModels.FavouritesViewModel.MarketItems">
-            <summary>Gets or sets a collection of markets.</summary>
-        </member>
         <member name="T:LiLo.Lite.ViewModels.HomeViewModel">
             <summary>Home view model.</summary>
         </member>
@@ -1013,12 +984,6 @@
         </member>
         <member name="M:LiLo.Lite.ViewModels.HomeViewModel.#ctor">
             <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.ViewModels.HomeViewModel"/> class.</summary>
-        </member>
-        <member name="P:LiLo.Lite.ViewModels.HomeViewModel.FavouritesEnabled">
-            <summary>Gets or sets a value indicating whether the favourites is enabled.</summary>
-        </member>
-        <member name="P:LiLo.Lite.ViewModels.HomeViewModel.FavouritesList">
-            <summary>Gets or sets the users favourites list.</summary>
         </member>
         <member name="P:LiLo.Lite.ViewModels.HomeViewModel.GoToSettingsCommand">
             <summary>Gets the navigate to settings command.</summary>
@@ -1053,6 +1018,9 @@
         <member name="T:LiLo.Lite.ViewModels.SettingsViewModel">
             <summary>Settings view model.</summary>
         </member>
+        <member name="F:LiLo.Lite.ViewModels.SettingsViewModel.marketsList">
+            <summary>Observable list of markets.</summary>
+        </member>
         <member name="M:LiLo.Lite.ViewModels.SettingsViewModel.#ctor">
             <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.ViewModels.SettingsViewModel"/> class.</summary>
         </member>
@@ -1078,11 +1046,8 @@
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.EdgeBrowserCommand">
             <summary>Gets the edge browser command.</summary>
         </member>
-        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.FavouritesEnabled">
-            <summary>Gets or sets a value indicating whether favourites is enabled.</summary>
-        </member>
-        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.FavouritesManageCommand">
-            <summary>Gets the favourites manage command.</summary>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.FavouriteItemSelectedCommand">
+            <summary>Gets the Favourite item selected command.</summary>
         </member>
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.GithubCommand">
             <summary>Gets the GitHub command.</summary>
@@ -1092,6 +1057,9 @@
         </member>
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.IntervalModels">
             <summary>Gets a collection of chart interval models.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.MarketsList">
+            <summary>Gets or sets a collection of values to be displayed in the markets view.</summary>
         </member>
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.ShowSymbolLabels">
             <summary>Gets or sets a value indicating whether show labels is enables.</summary>
@@ -1142,16 +1110,6 @@
             <param name="sender">Sender object.</param>
             <param name="e">Web navigation Event arguments.</param>
             <remarks>Prevent users from navigating to anywhere else other than where we want.</remarks>
-        </member>
-        <member name="T:LiLo.Lite.Views.FavouritesView">
-            <summary>Favourites page view.</summary>
-        </member>
-        <member name="M:LiLo.Lite.Views.FavouritesView.#ctor">
-            <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Views.FavouritesView"/> class.</summary>
-        </member>
-        <member name="M:LiLo.Lite.Views.FavouritesView.OnBackButtonPressed">
-            <summary>Handle the device back button being pressed.</summary>
-            <returns>true; cancellation of back button.</returns>
         </member>
         <member name="T:LiLo.Lite.Views.HomeView">
             <summary>Home page view.</summary>

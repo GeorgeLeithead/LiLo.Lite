@@ -46,11 +46,10 @@
 		<PackageReference Include="WebSocketSharp-netstandard" Version="1.0.1" />
 		<PackageReference Include="Xamarin.CommunityToolkit" Version="1.2.0" />
 		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
-		<PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+		<PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Remove="Services\Markets.json" />
 		<None Remove="SharedImages\sun_dark.svg" />
 		<None Remove="SharedImages\sun_light.svg" />
 		<None Remove="SharedImages\moon_light.svg" />
@@ -137,7 +136,6 @@
 		<None Remove="SharedImages\zen.svg" />
 		<None Remove="SharedImages\zil.svg" />
 		<None Remove="SharedImages\zrx.svg" />
-		<EmbeddedResource Include="Services\Markets.json" />
 		<None Include="..\..\..\LICENSE">
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
@@ -255,9 +253,6 @@
 		</EmbeddedResource>
 		<EmbeddedResource Update="Views\AlertsView.xaml">
 		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-		</EmbeddedResource>
-		<EmbeddedResource Update="Views\FavouritesView.xaml">
-			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 		</EmbeddedResource>
 	</ItemGroup>
 

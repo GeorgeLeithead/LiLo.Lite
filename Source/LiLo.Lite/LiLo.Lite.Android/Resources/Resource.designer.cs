@@ -6260,6 +6260,7 @@ namespace LiLo.Lite.Droid
 			global::Xamarin.Essentials.Resource.Id.text2 = global::LiLo.Lite.Droid.Resource.Id.text2;
 			global::Xamarin.Essentials.Resource.Id.time = global::LiLo.Lite.Droid.Resource.Id.time;
 			global::Xamarin.Essentials.Resource.Id.title = global::LiLo.Lite.Droid.Resource.Id.title;
+			global::Xamarin.Essentials.Resource.Id.view_tree_lifecycle_owner = global::LiLo.Lite.Droid.Resource.Id.view_tree_lifecycle_owner;
 			global::Xamarin.Essentials.Resource.Integer.status_bar_notification_info_maxnum = global::LiLo.Lite.Droid.Resource.Integer.status_bar_notification_info_maxnum;
 			global::Xamarin.Essentials.Resource.Layout.browser_actions_context_menu_page = global::LiLo.Lite.Droid.Resource.Layout.browser_actions_context_menu_page;
 			global::Xamarin.Essentials.Resource.Layout.browser_actions_context_menu_row = global::LiLo.Lite.Droid.Resource.Layout.browser_actions_context_menu_row;
@@ -19171,25 +19172,28 @@ namespace LiLo.Lite.Droid
 			public const int view_offset_helper = 2131231034;
 			
 			// aapt resource value: 0x7F08013B
-			public const int view_tree_saved_state_registry_owner = 2131231035;
+			public const int view_tree_lifecycle_owner = 2131231035;
 			
 			// aapt resource value: 0x7F08013C
-			public const int visible = 2131231036;
+			public const int view_tree_saved_state_registry_owner = 2131231036;
 			
 			// aapt resource value: 0x7F08013D
-			public const int visible_removing_fragment_view_tag = 2131231037;
-			
-			// aapt resource value: 0x7F08013F
-			public const int withinBounds = 2131231039;
+			public const int visible = 2131231037;
 			
 			// aapt resource value: 0x7F08013E
-			public const int withText = 2131231038;
+			public const int visible_removing_fragment_view_tag = 2131231038;
 			
 			// aapt resource value: 0x7F080140
-			public const int wrap_content = 2131231040;
+			public const int withinBounds = 2131231040;
+			
+			// aapt resource value: 0x7F08013F
+			public const int withText = 2131231039;
 			
 			// aapt resource value: 0x7F080141
-			public const int zero_corner_chip = 2131231041;
+			public const int wrap_content = 2131231041;
+			
+			// aapt resource value: 0x7F080142
+			public const int zero_corner_chip = 2131231042;
 			
 			static Id()
 			{

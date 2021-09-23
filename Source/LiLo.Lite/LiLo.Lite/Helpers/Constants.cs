@@ -84,6 +84,9 @@ namespace LiLo.Lite.Helpers
 				/// <summary>User saved favourites preference name.</summary>
 				public const string FavouritesCategory = "Favourites";
 
+				/// <summary>User favourite ordered currency preference name.</summary>
+				public const string FavouriteOrderedCurrency = "FavouriteOrderedCurrency";
+
 				/// <summary>User saved favourites preference default value.</summary>
 				public const string FavouritesCategoryDefaultValue = "";
 
@@ -95,6 +98,9 @@ namespace LiLo.Lite.Helpers
 
 				/// <summary>User unloved favourites preference name.</summary>
 				public const string UnlovedCategory = "Unloved";
+
+				/// <summary>Favourites changed flag preference name.</summary>
+				public const string FavouritesChanged = "FavouritesChanged";
 			}
 
 			/// <summary>Settings preferences class constants.</summary>

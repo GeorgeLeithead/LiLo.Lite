@@ -34,6 +34,9 @@ namespace LiLo.Lite.Services.Markets
 		/// <summary>Gets or sets an observable list of markets.</summary>
 		public ObservableRangeCollection<MarketModel> MarketsList { get; set; }
 
+		/// <summary>Gets an observable list of all markets.</summary>
+		public ObservableRangeCollection<MarketModel> MarketsListAll => new ObservableRangeCollection<MarketModel>(DataStore.GetmarketsForSettings());
+
 		/// <summary>Gets the local notification manager.</summary>
 		public INotificationManager NotificationManager => this.notificationManager ??= DependencyService.Get<INotificationManager>();
 

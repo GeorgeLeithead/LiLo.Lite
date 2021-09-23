@@ -37,12 +37,10 @@ namespace LiLo.Lite.Views
 		{
 			base.OnAppearing();
 			this.SearchBar.Unfocus();
-			if (this.VM.FavouritesList != Preferences.Get(Constants.Preferences.Favourites.FavouritesCategory, Constants.Preferences.Favourites.FavouritesCategoryDefaultValue) || this.VM.FavouritesEnabled != Preferences.Get(Constants.Preferences.Favourites.FavouritesEnabled, Constants.Preferences.Favourites.FavouritesEnabledDefaultValue))
+			if (Preferences.Get(Constants.Preferences.Favourites.FavouritesChanged, false))
 			{
 				// Favourites have changed to we need to close the sockets connection, and re-initialise to as to show the updated markets list.
 				this.VM.IsBusy = true;
-				this.VM.FavouritesList = Preferences.Get(Constants.Preferences.Favourites.FavouritesCategory, Constants.Preferences.Favourites.FavouritesCategoryDefaultValue);
-				this.VM.FavouritesEnabled = Preferences.Get(Constants.Preferences.Favourites.FavouritesEnabled, Constants.Preferences.Favourites.FavouritesEnabledDefaultValue);
 				_ = this.VM.SocketsService.WebSocket_OnSleep(); // Sleep the connection
 				_ = this.VM.SocketsService.WebSocket_Close(); // Close the connection
 				_ = this.VM.Init().ConfigureAwait(false); // Re-initialise the markets and sockets connections.
