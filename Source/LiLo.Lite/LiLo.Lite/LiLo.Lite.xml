@@ -499,7 +499,7 @@
         </member>
         <member name="P:LiLo.Lite.Resources.AppResources.SearchBarPlaceholder">
             <summary>
-              Looks up a localized string similar to Search for currency....
+              Looks up a localized string similar to Search....
             </summary>
         </member>
         <member name="P:LiLo.Lite.Resources.AppResources.SettingsChartingLabelBarStyle">

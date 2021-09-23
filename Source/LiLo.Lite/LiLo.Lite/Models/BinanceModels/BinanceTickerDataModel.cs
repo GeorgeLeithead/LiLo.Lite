@@ -5,6 +5,7 @@
 namespace LiLo.Lite.Models.BinanceModels
 {
 	using System;
+	using System.Globalization;
 	using System.Linq;
 	using System.Text.Json.Serialization;
 	using System.Threading.Tasks;
@@ -14,6 +15,8 @@ namespace LiLo.Lite.Models.BinanceModels
 	/// <summary>Binance ticker symbol stream data.</summary>
 	public class BinanceTickerDataModel
 	{
+		private CultureInfo enusCultureFormat = new CultureInfo("en-US");
+
 		/// <summary>Gets or sets close price.</summary>
 		[JsonPropertyName("c")]
 		public string CurrentPrice { get; set; }
@@ -23,17 +26,17 @@ namespace LiLo.Lite.Models.BinanceModels
 		public string HighPrice { get; set; }
 
 		/// <summary>Gets the 24hr high price.</summary>
-		public double HighPrice24h => Convert.ToDouble(this.HighPrice);
+		public double HighPrice24h => Convert.ToDouble(this.HighPrice, this.enusCultureFormat);
 
 		/// <summary>Gets the last price.</summary>
-		public double LastPrice => Convert.ToDouble(this.CurrentPrice);
+		public double LastPrice => Convert.ToDouble(this.CurrentPrice, this.enusCultureFormat);
 
 		/// <summary>Gets or sets the low price.</summary>
 		[JsonPropertyName("l")]
 		public string LowPrice { get; set; }
 
 		/// <summary>Gets the 24hr low price.</summary>
-		public double LowPrice24h => Convert.ToDouble(this.LowPrice);
+		public double LowPrice24h => Convert.ToDouble(this.LowPrice, this.enusCultureFormat);
 
 		/// <summary>Gets or sets the price change percent.</summary>
 		[JsonPropertyName("P")]
@@ -44,10 +47,10 @@ namespace LiLo.Lite.Models.BinanceModels
 		public string PChange { get; set; }
 
 		/// <summary>Gets the price change.</summary>
-		public double PriceChange => Convert.ToDouble(this.PChange);
+		public double PriceChange => Convert.ToDouble(this.PChange, this.enusCultureFormat);
 
 		/// <summary>Gets the 24hr price change percent.</summary>
-		public double Price24hPercent => Convert.ToDouble(this.Percent);
+		public double Price24hPercent => Convert.ToDouble(this.Percent, this.enusCultureFormat);
 
 		/// <summary>Gets or sets the symbol.</summary>
 		[JsonPropertyName("s")]
