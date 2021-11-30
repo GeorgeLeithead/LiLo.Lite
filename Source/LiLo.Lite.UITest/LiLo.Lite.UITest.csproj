@@ -48,7 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Acr.UserDialogs">
-      <Version>7.1.0.514</Version>
+      <Version>7.2.0.534</Version>
     </PackageReference>
     <PackageReference Include="StyleCop.Analyzers">
       <Version>1.1.118</Version>
@@ -56,11 +56,11 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>5.0.0.2012</Version>
+      <Version>5.0.0.2244</Version>
     </PackageReference>
     <PackageReference Include="NUnit" Version="3.13.2" />
-    <PackageReference Include="Xamarin.UITest" Version="3.1.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="4.0.0">
+    <PackageReference Include="Xamarin.UITest" Version="3.2.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.1.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
