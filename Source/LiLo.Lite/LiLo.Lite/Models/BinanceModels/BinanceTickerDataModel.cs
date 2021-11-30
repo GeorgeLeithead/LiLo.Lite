@@ -15,7 +15,7 @@ namespace LiLo.Lite.Models.BinanceModels
 	/// <summary>Binance ticker symbol stream data.</summary>
 	public class BinanceTickerDataModel
 	{
-		private CultureInfo enusCultureFormat = new CultureInfo("en-US");
+		private readonly CultureInfo enusCultureFormat = new CultureInfo("en-US");
 
 		/// <summary>Gets or sets close price.</summary>
 		[JsonPropertyName("c")]

@@ -369,6 +369,86 @@
             "DecimalPlaces": 3,
             "Rank": 145,
             "SymbolString": "SXP"
+        },
+        {
+            "DecimalPlaces": 8,
+            "Rank": 11,
+            "SymbolString": "SHIB"
+        },
+        {
+            "DecimalPlaces": 2,
+            "Rank": 23,
+            "SymbolString": "AXS"
+        },
+        {
+            "DecimalPlaces": 2,
+            "Rank": 29,
+            "SymbolString": "ICP"
+        },
+        {
+            "DecimalPlaces": 4,
+            "Rank": 39,
+            "SymbolString": "SAND"
+        },
+        {
+            "DecimalPlaces": 4,
+            "Rank": 41,
+            "SymbolString": "MANA"
+        },
+        {
+            "DecimalPlaces": 2,
+            "Rank": 51,
+            "SymbolString": "HNT"
+        },
+        {
+            "DecimalPlaces": 2,
+            "Rank": 53,
+            "SymbolString": "FLOW"
+        },
+        {
+            "DecimalPlaces": 3,
+            "Rank": 55,
+            "SymbolString": "KLAY"
+        },
+        {
+            "DecimalPlaces": 5,
+            "Rank": 66,
+            "SymbolString": "ONE"
+        },
+        {
+            "DecimalPlaces": 2,
+            "Rank": 65,
+            "SymbolString": "AR"
+        },
+        {
+            "DecimalPlaces": 5,
+            "Rank": 67,
+            "SymbolString": "AMP"
+        },
+        {
+            "DecimalPlaces": 8,
+            "Rank": 68,
+            "SymbolString": "XEC"
+        },
+        {
+            "DecimalPlaces": 1,
+            "Rank": 71,
+            "SymbolString": "QNT"
+        },
+        {
+            "DecimalPlaces": 4,
+            "Rank": 86,
+            "SymbolString": "TFUEL"
+        },
+        {
+            "DecimalPlaces": 3,
+            "Rank": 88,
+            "SymbolString": "CELO"
+        },
+        {
+            "DecimalPlaces": 5,
+            "Rank": 99,
+            "SymbolString": "IOTX"
         }
     ]
 }
