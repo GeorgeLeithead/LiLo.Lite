@@ -19,6 +19,19 @@ jobs:
         cd ..
         ls
         
+  build:
+    name: Setup Xamarin and Mono versions
+    runs-on: macos-latest
+    steps:
+    - name: setup-xamarin
+      uses: maxim-lobanov/setup-xamarin@v1
+      with:
+        mono-version: latest # specify version in '<major>.<minor>' format
+        xamarin-ios-version: latest # specify version in '<major>' format
+        xamarin-mac-version: latest # specify 'latest' keyword to pick up the latest available version
+        xamarin-android-version: latest # specify full version; it is not recommended option because your pipeline can be broken suddenly in future
+        xcode-version: latest # set the latest available Xcode 11
+
   Android:
     runs-on: macos-latest
     steps:
