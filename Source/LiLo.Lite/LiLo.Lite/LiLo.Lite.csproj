@@ -14,9 +14,9 @@
 		<Authors>George Leithead</Authors>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageIcon>launcher_foreground.png</PackageIcon>
-		<AssemblyVersion>1.1.0.0</AssemblyVersion>
-		<FileVersion>1.1.0.0</FileVersion>
-		<Version>1.0.6</Version>
+		<AssemblyVersion>1.2.0.0</AssemblyVersion>
+		<FileVersion>1.2.0.0</FileVersion>
+		<Version>1.2.0</Version>
 		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
 	</PropertyGroup>
 
