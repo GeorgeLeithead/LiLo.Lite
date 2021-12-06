@@ -83,7 +83,7 @@
 
 					<CollectionView.ItemTemplate>
 						<DataTemplate x:DataType="models:MarketModel">
-							<SwipeView AutomationId="{Binding SymbolString, StringFormat='{0}_symbol'}">
+							<SwipeView AutomationId="{Binding SymbolString, StringFormat='{0}_symbol'}" Style="{StaticResource SwipeViewStyle}">
 								<SwipeView.RightItems>
 									<SwipeItems>
 										<SwipeItemView

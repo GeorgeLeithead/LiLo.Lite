@@ -22,6 +22,9 @@ namespace LiLo.Lite.Services
 		/// <summary>Markets list.</summary>
 		private static List<MarketModel> marketsData;
 
+		/// <summary>Gets the application version.</summary>
+		private static string Version => AppInfo.VersionString;
+
 		/// <summary>Get markets grouped by favourites.</summary>
 		/// <returns>IEnumerable{ItemViewModel} of categorised markets.</returns>
 		public static IEnumerable<ItemViewModel> GetMarketsGroupedByFavourites()
@@ -108,10 +111,13 @@ namespace LiLo.Lite.Services
 
 		private static IEnumerable<MarketModel> GetExternalMarketsFeed()
 		{
+			string defaultMarketsJsonFile = "https://raw.githubusercontent.com/GeorgeLeithead/LiLo.Markets/main/Markets.json";
+			string versionMarketsJsonFile = "https://raw.githubusercontent.com/GeorgeLeithead/LiLo.Markets/main/Markets" + Version + ".json";
+
 			try
 			{
 				using HttpClient client = new HttpClient();
-				HttpResponseMessage response = client.GetAsync("https://raw.githubusercontent.com/GeorgeLeithead/LiLo.Markets/main/Markets.json").Result; // Want to do this synchronously to ensure that we don't start anything else until this is complete!
+				HttpResponseMessage response = client.GetAsync(versionMarketsJsonFile).Result; // Want to do this synchronously to ensure that we don't start anything else until this is complete!
 				if (response.IsSuccessStatusCode)
 				{
 					string marketsJson = response.Content.ReadAsStringAsync().Result;
@@ -120,6 +126,23 @@ namespace LiLo.Lite.Services
 						MarketsModel markets = JsonSerializer.Deserialize<MarketsModel>(marketsJson);
 						marketsData = markets.Markets.ToList();
 						return marketsData.OrderBy(n => n.Rank);
+					}
+				}
+				else
+				{
+					if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+					{
+						response = client.GetAsync(defaultMarketsJsonFile).Result; // Want to do this synchronously to ensure that we don't start anything else until this is complete!
+						if (response.IsSuccessStatusCode)
+						{
+							string marketsJson = response.Content.ReadAsStringAsync().Result;
+							if (!string.IsNullOrEmpty(marketsJson))
+							{
+								MarketsModel markets = JsonSerializer.Deserialize<MarketsModel>(marketsJson);
+								marketsData = markets.Markets.ToList();
+								return marketsData.OrderBy(n => n.Rank);
+							}
+						}
 					}
 				}
 			}

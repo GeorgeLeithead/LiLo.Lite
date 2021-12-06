@@ -654,6 +654,9 @@
         <member name="F:LiLo.Lite.Services.DataStore.marketsData">
             <summary>Markets list.</summary>
         </member>
+        <member name="P:LiLo.Lite.Services.DataStore.Version">
+            <summary>Gets the application version.</summary>
+        </member>
         <member name="M:LiLo.Lite.Services.DataStore.GetMarketsGroupedByFavourites">
             <summary>Get markets grouped by favourites.</summary>
             <returns>IEnumerable{ItemViewModel} of categorised markets.</returns>

@@ -89,6 +89,10 @@
 				<Setter Property="WidthRequest" Value="52" />
 			</Style>
 
+			<Style x:Key="SwipeViewStyle" TargetType="SwipeView">
+				<Setter Property="BackgroundColor" Value="Transparent" />
+			</Style>
+
 			<Style x:Key="LastPriceStyle" TargetType="{x:Type controls:TickPriceView}">
 				<Setter Property="Margin" Value="0" />
 				<Setter Property="Padding" Value="4,1,4,1" />
