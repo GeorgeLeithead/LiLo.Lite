@@ -12,6 +12,7 @@
 //-----------------------------------------------------------------------
 
 [assembly: Xamarin.Forms.Dependency(typeof(LiLo.Lite.Droid.Services.Environment))]
+
 namespace LiLo.Lite.Droid
 {
 	using Acr.UserDialogs;
@@ -42,7 +43,6 @@ namespace LiLo.Lite.Droid
 		/// <inheritdoc/>
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
-
 			TabLayoutResource = Resource.Layout.Tabbar;
 			ToolbarResource = Resource.Layout.Toolbar;
 
@@ -51,25 +51,25 @@ namespace LiLo.Lite.Droid
 			Xamarin.Essentials.Platform.Init(this, savedInstanceState);
 			Forms.Init(this, savedInstanceState);
 			UserDialogs.Init(this);
-			this.LoadApplication(new App());
+			LoadApplication(new App());
 
 			MessagingCenter.Subscribe<ChartView>(this, "preventLandscape", sender =>
 			{
-				this.previousOrientation = this.RequestedOrientation;
-				this.RequestedOrientation = ScreenOrientation.Portrait;
+				previousOrientation = RequestedOrientation;
+				RequestedOrientation = ScreenOrientation.Portrait;
 			});
 
 			MessagingCenter.Subscribe<ChartView>(this, "allowLandscapePortrait", sender =>
 			{
-				this.RequestedOrientation = this.previousOrientation;
+				RequestedOrientation = previousOrientation;
 			});
-			this.CreateNotificationFromIntent(this.Intent);
+			CreateNotificationFromIntent(Intent);
 		}
 
 		/// <inheritdoc/>
 		protected override void OnNewIntent(Intent intent)
 		{
-			this.CreateNotificationFromIntent(intent);
+			CreateNotificationFromIntent(intent);
 		}
 
 		private void CreateNotificationFromIntent(Intent intent)

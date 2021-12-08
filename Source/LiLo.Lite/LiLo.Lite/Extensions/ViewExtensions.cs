@@ -86,7 +86,7 @@ fromColor.A + (t * (toColor.A - fromColor.A)));
 			}
 
 			easing ??= Easing.Linear;
-			TaskCompletionSource<bool> taskCompletionSource = new TaskCompletionSource<bool>();
+			TaskCompletionSource<bool> taskCompletionSource = new();
 			element.Animate(name, transform, callback, 16, length, easing, (v, c) => taskCompletionSource.SetResult(c));
 			return taskCompletionSource.Task;
 		}

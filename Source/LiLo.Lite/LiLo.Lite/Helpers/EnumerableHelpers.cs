@@ -22,7 +22,7 @@ namespace LiLo.Lite.Helpers
 				return null;
 			}
 
-			ObservableCollection<T> result = new ObservableCollection<T>();
+			ObservableCollection<T> result = new();
 			source.ForEach(result.Add);
 			return result;
 		}

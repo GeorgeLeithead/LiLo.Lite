@@ -20,13 +20,13 @@ namespace LiLo.Lite.UITest
 			{
 				if (AppManager.Platform == Platform.Android)
 				{
-					this.current = value;
+					current = value;
 				}
 			}
 		}
 
 		/// <summary>Gets the query pattern for current platform.</summary>
-		public Func<AppQuery, AppQuery> Current => this.current ?? throw new NullReferenceException("Trait not set for current platform");
+		public Func<AppQuery, AppQuery> Current => current ?? throw new NullReferenceException("Trait not set for current platform");
 
 		/// <summary>Sets the query pattern for iOS.</summary>
 #pragma warning disable IDE1006 // Naming Styles
@@ -39,7 +39,7 @@ namespace LiLo.Lite.UITest
 			{
 				if (AppManager.Platform == Platform.iOS)
 				{
-					this.current = value;
+					current = value;
 				}
 			}
 		}

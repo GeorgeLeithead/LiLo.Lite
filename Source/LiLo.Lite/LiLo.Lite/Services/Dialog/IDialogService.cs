@@ -4,8 +4,8 @@
 
 namespace LiLo.Lite.Services.Dialog
 {
-	using System.Threading.Tasks;
 	using Acr.UserDialogs;
+	using System.Threading.Tasks;
 
 	/// <summary>Dialogue service interface.</summary>
 	public interface IDialogService

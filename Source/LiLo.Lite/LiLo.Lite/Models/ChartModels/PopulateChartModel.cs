@@ -13,7 +13,7 @@ namespace LiLo.Lite.Models.ChartModels
 		/// <returns>List{BarStyleMenu} of chart bar style.</returns>
 		public static List<BarStyleModel> GetBarStyle()
 		{
-			List<BarStyleModel> barStyleModel = new List<BarStyleModel>
+			List<BarStyleModel> barStyleModel = new()
 			{
 				new BarStyleModel { Name = "Bars", Value = "0" },
 				new BarStyleModel { Name = "Candles", Value = "1" },
@@ -34,7 +34,7 @@ namespace LiLo.Lite.Models.ChartModels
 		/// <returns>List{IndicatorModel} of chart indicators.</returns>
 		public static List<IndicatorModel> GetIndicator()
 		{
-			List<IndicatorModel> indicatorModel = new List<IndicatorModel>
+			List<IndicatorModel> indicatorModel = new()
 			{
 				new IndicatorModel { Value = string.Empty, Name = "-- NONE --" },
 				new IndicatorModel { Value = "ACCD@tv-basicstudies", Name = "Accumulation/Distribution" },
@@ -107,7 +107,7 @@ namespace LiLo.Lite.Models.ChartModels
 		/// <returns>List{IntervalModel} of chart interval.</returns>
 		public static List<IntervalModel> GetInterval()
 		{
-			List<IntervalModel> intervalModel = new List<IntervalModel>
+			List<IntervalModel> intervalModel = new()
 			{
 				new IntervalModel { Name = "1m", Value = "1" },
 				new IntervalModel { Name = "3m", Value = "3" },

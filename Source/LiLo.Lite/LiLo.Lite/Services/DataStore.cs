@@ -4,6 +4,8 @@
 
 namespace LiLo.Lite.Services
 {
+	using LiLo.Lite.Helpers;
+	using LiLo.Lite.Models.Markets;
 	using System;
 	using System.Collections.Generic;
 	using System.IO;
@@ -12,8 +14,6 @@ namespace LiLo.Lite.Services
 	using System.Reflection;
 	using System.Text;
 	using System.Text.Json;
-	using LiLo.Lite.Helpers;
-	using LiLo.Lite.Models.Markets;
 	using Xamarin.Essentials;
 
 	/// <summary>Application data store.</summary>
@@ -29,7 +29,7 @@ namespace LiLo.Lite.Services
 		/// <returns>IEnumerable{ItemViewModel} of categorised markets.</returns>
 		public static IEnumerable<ItemViewModel> GetMarketsGroupedByFavourites()
 		{
-			List<ItemViewModel> marketsGroupedByFavourites = new List<ItemViewModel>();
+			List<ItemViewModel> marketsGroupedByFavourites = new();
 			IOrderedEnumerable<MarketModel> marketsAllList = GetAllLocalMarkets().OrderBy(m => m.Rank);
 			string savedFavourites = Preferences.Get(Constants.Preferences.Favourites.FavouritesCategory, Constants.Preferences.Favourites.FavouritesCategoryDefaultValue);
 			IEnumerable<string> favourites = savedFavourites.Split(',').ToList();
@@ -77,7 +77,7 @@ namespace LiLo.Lite.Services
 		/// <returns>WSS stream.</returns>
 		internal static string MarketsWss()
 		{
-			StringBuilder marketsString = new StringBuilder();
+			StringBuilder marketsString = new();
 			_ = marketsString.Append("wss://stream.binance.com:9443/stream?streams=");
 			foreach (MarketModel market in marketsData)
 			{
@@ -99,7 +99,7 @@ namespace LiLo.Lite.Services
 			string marketsJson = string.Empty;
 			Assembly assemblyThis = typeof(DataStore).GetTypeInfo().Assembly;
 			Stream streamJson = assemblyThis.GetManifestResourceStream("LiLo.Lite.Services.Markets.json");
-			using (StreamReader reader = new StreamReader(streamJson))
+			using (StreamReader reader = new(streamJson))
 			{
 				marketsJson = reader.ReadToEnd();
 			}
@@ -116,7 +116,7 @@ namespace LiLo.Lite.Services
 
 			try
 			{
-				using HttpClient client = new HttpClient();
+				using HttpClient client = new();
 				HttpResponseMessage response = client.GetAsync(versionMarketsJsonFile).Result; // Want to do this synchronously to ensure that we don't start anything else until this is complete!
 				if (response.IsSuccessStatusCode)
 				{
@@ -164,7 +164,7 @@ namespace LiLo.Lite.Services
 			}
 
 			List<string> favourites = savedFavourites.Split(',').ToList();
-			List<MarketModel> favouriteMarkets = new List<MarketModel>();
+			List<MarketModel> favouriteMarkets = new();
 			foreach (string favourite in favourites)
 			{
 				MarketModel match = marketsAllList.First(m => m.SymbolString == favourite);

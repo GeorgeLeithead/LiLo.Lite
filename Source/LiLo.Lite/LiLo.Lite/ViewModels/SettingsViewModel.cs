@@ -4,16 +4,16 @@
 
 namespace LiLo.Lite.ViewModels
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Globalization;
-	using System.Linq;
-	using System.Threading.Tasks;
 	using LiLo.Lite.Helpers;
 	using LiLo.Lite.Models.ChartModels;
 	using LiLo.Lite.Resources;
 	using LiLo.Lite.ViewModels.Base;
 	using Microsoft.AppCenter.Analytics;
+	using System;
+	using System.Collections.Generic;
+	using System.Globalization;
+	using System.Linq;
+	using System.Threading.Tasks;
 	using Xamarin.CommunityToolkit.ObjectModel;
 	using Xamarin.Essentials;
 	using Xamarin.Forms;
@@ -24,16 +24,16 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Initialises a new instance of the <see cref="SettingsViewModel"/> class.</summary>
 		public SettingsViewModel()
 		{
-			this.IsBusy = true;
-			this.Title = AppResources.ViewTitleSettings;
-			this.IndicatorModels = new ObservableRangeCollection<IndicatorModel>(PopulateChartModel.GetIndicator());
-			this.IntervalModels = new ObservableRangeCollection<IntervalModel>(PopulateChartModel.GetInterval());
-			this.BarStyleModels = new ObservableRangeCollection<BarStyleModel>(PopulateChartModel.GetBarStyle());
-			this.IsBusy = false;
+			IsBusy = true;
+			Title = AppResources.ViewTitleSettings;
+			IndicatorModels = new ObservableRangeCollection<IndicatorModel>(PopulateChartModel.GetIndicator());
+			IntervalModels = new ObservableRangeCollection<IntervalModel>(PopulateChartModel.GetInterval());
+			BarStyleModels = new ObservableRangeCollection<BarStyleModel>(PopulateChartModel.GetBarStyle());
+			IsBusy = false;
 		}
 
 		/// <summary>Gets the about application details.</summary>
-		public string About => string.Format(CultureInfo.InvariantCulture, AppResources.SettingsLabelAbout, this.Version);
+		public string About => string.Format(CultureInfo.InvariantCulture, AppResources.SettingsLabelAbout, Version);
 
 		/// <summary>Gets a collection of chart bar style models.</summary>
 		public ObservableRangeCollection<BarStyleModel> BarStyleModels { get; }
@@ -41,36 +41,36 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Gets or sets the chart bar style selected item.</summary>
 		public BarStyleModel ChartBarStyleSelectedItem
 		{
-			get => this.BarStyleModels.FirstOrDefault(bsm => bsm.Value == Preferences.Get(Constants.Preferences.Chart.ChartBarStyle, Constants.Preferences.Chart.ChartBaryDefaultValue));
+			get => BarStyleModels.FirstOrDefault(bsm => bsm.Value == Preferences.Get(Constants.Preferences.Chart.ChartBarStyle, Constants.Preferences.Chart.ChartBaryDefaultValue));
 			set
 			{
 				BarStyleModel bsm = value;
 				Preferences.Set(Constants.Preferences.Chart.ChartBarStyle, bsm.Value);
-				this.OnPropertyChanged(nameof(this.ChartBarStyleSelectedItem));
+				OnPropertyChanged(nameof(ChartBarStyleSelectedItem));
 			}
 		}
 
 		/// <summary>Gets or sets the chart indicator selected item.</summary>
 		public IndicatorModel ChartIndicatorSelectedItem
 		{
-			get => this.IndicatorModels.FirstOrDefault(im => im.Value == Preferences.Get(Constants.Preferences.Chart.ChartStudyIndicator, Constants.Preferences.Chart.ChartStudyIndicatorDefaultValue));
+			get => IndicatorModels.FirstOrDefault(im => im.Value == Preferences.Get(Constants.Preferences.Chart.ChartStudyIndicator, Constants.Preferences.Chart.ChartStudyIndicatorDefaultValue));
 			set
 			{
 				IndicatorModel im = value;
 				Preferences.Set(Constants.Preferences.Chart.ChartStudyIndicator, im.Value);
-				this.OnPropertyChanged(nameof(this.ChartIndicatorSelectedItem));
+				OnPropertyChanged(nameof(ChartIndicatorSelectedItem));
 			}
 		}
 
 		/// <summary>Gets or sets the chart interval selected item.</summary>
 		public IntervalModel ChartIntervalSelectedItem
 		{
-			get => this.IntervalModels.FirstOrDefault(im => im.Value == Preferences.Get(Constants.Preferences.Chart.ChartInterval, Constants.Preferences.Chart.ChartIntervalDefaultValue));
+			get => IntervalModels.FirstOrDefault(im => im.Value == Preferences.Get(Constants.Preferences.Chart.ChartInterval, Constants.Preferences.Chart.ChartIntervalDefaultValue));
 			set
 			{
 				IntervalModel im = value;
 				Preferences.Set(Constants.Preferences.Chart.ChartInterval, im.Value);
-				this.OnPropertyChanged(nameof(this.ChartIntervalSelectedItem));
+				OnPropertyChanged(nameof(ChartIntervalSelectedItem));
 			}
 		}
 
@@ -82,12 +82,12 @@ namespace LiLo.Lite.ViewModels
 			set
 			{
 				Preferences.Set(Constants.Preferences.Chart.ChartToolBar, value);
-				this.OnPropertyChanged(nameof(this.ChartToolBar));
+				OnPropertyChanged(nameof(ChartToolBar));
 			}
 		}
 
 		/// <summary>Gets the edge browser command.</summary>
-		public IAsyncCommand EdgeBrowserCommand => new AsyncCommand(this.BrowserCommandClicked, allowsMultipleExecutions: false);
+		public IAsyncCommand EdgeBrowserCommand => new AsyncCommand(BrowserCommandClicked, allowsMultipleExecutions: false);
 
 		/// <summary>Gets or sets a value indicating whether favourites is enabled.</summary>
 		public bool FavouritesEnabled
@@ -97,15 +97,15 @@ namespace LiLo.Lite.ViewModels
 			{
 				Analytics.TrackEvent(Constants.Analytics.Events.FavouritesEnabled, new Dictionary<string, string> { { Constants.Preferences.Favourites.FavouritesEnabled, value.ToString() } });
 				Preferences.Set(Constants.Preferences.Favourites.FavouritesEnabled, value);
-				this.OnPropertyChanged(nameof(this.FavouritesEnabled));
+				OnPropertyChanged(nameof(FavouritesEnabled));
 			}
 		}
 
 		/// <summary>Gets the favourites manage command.</summary>
-		public IAsyncCommand FavouritesManageCommand => new AsyncCommand(this.FavouritesManageCommandClicked, allowsMultipleExecutions: false);
+		public IAsyncCommand FavouritesManageCommand => new AsyncCommand(FavouritesManageCommandClicked, allowsMultipleExecutions: false);
 
 		/// <summary>Gets the GitHub command.</summary>
-		public IAsyncCommand GithubCommand => new AsyncCommand(this.GitHubCommandClicked, allowsMultipleExecutions: false);
+		public IAsyncCommand GithubCommand => new AsyncCommand(GitHubCommandClicked, allowsMultipleExecutions: false);
 
 		/// <summary>Gets a collection of chart indicator models.</summary>
 		public ObservableRangeCollection<IndicatorModel> IndicatorModels { get; }
@@ -116,12 +116,12 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Gets or sets a value indicating whether show labels is enables.</summary>
 		public bool ShowSymbolLabels
 		{
-			get => Preferences.Get(nameof(this.ShowSymbolLabels), true);
+			get => Preferences.Get(nameof(ShowSymbolLabels), true);
 			set
 			{
-				Analytics.TrackEvent(Constants.Analytics.Events.ShowSymbolLabels, new Dictionary<string, string> { { nameof(this.FavouritesEnabled), value.ToString() } });
-				Preferences.Set(nameof(this.ShowSymbolLabels), value);
-				this.OnPropertyChanged(nameof(this.ShowSymbolLabels));
+				Analytics.TrackEvent(Constants.Analytics.Events.ShowSymbolLabels, new Dictionary<string, string> { { nameof(FavouritesEnabled), value.ToString() } });
+				Preferences.Set(nameof(ShowSymbolLabels), value);
+				OnPropertyChanged(nameof(ShowSymbolLabels));
 			}
 		}
 
@@ -135,7 +135,7 @@ namespace LiLo.Lite.ViewModels
 		public bool ThemeSystem => Application.Current.UserAppTheme == OSAppTheme.Unspecified;
 
 		/// <summary>Gets the twitter command.</summary>
-		public IAsyncCommand TwitterCommand => new AsyncCommand(this.TwitterCommandClicked, allowsMultipleExecutions: false);
+		public IAsyncCommand TwitterCommand => new AsyncCommand(TwitterCommandClicked, allowsMultipleExecutions: false);
 
 		/// <summary>Gets the application version.</summary>
 		private string Version => AppInfo.VersionString;

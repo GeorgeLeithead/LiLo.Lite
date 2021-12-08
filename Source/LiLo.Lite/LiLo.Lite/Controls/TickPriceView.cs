@@ -34,43 +34,43 @@ namespace LiLo.Lite.Controls
 		/// <summary>Gets or sets the default background colour.</summary>
 		public Color DefaultBackgroundColor
 		{
-			get => (Color)this.GetValue(DefaultBackgroundColorProperty);
-			set => this.SetValue(DefaultBackgroundColorProperty, value);
+			get => (Color)GetValue(DefaultBackgroundColorProperty);
+			set => SetValue(DefaultBackgroundColorProperty, value);
 		}
 
 		/// <summary>Gets or sets the negative tick background colour.</summary>
 		public Color NegativeTickBackgroundColor
 		{
-			get => (Color)this.GetValue(NegativeTickBackgroundColorProperty);
-			set => this.SetValue(NegativeTickBackgroundColorProperty, value);
+			get => (Color)GetValue(NegativeTickBackgroundColorProperty);
+			set => SetValue(NegativeTickBackgroundColorProperty, value);
 		}
 
 		/// <summary>Gets or sets the negative tick colour.</summary>
 		public Color NegativeTickColor
 		{
-			get => (Color)this.GetValue(NegativeTickColorProperty);
-			set => this.SetValue(NegativeTickColorProperty, value);
+			get => (Color)GetValue(NegativeTickColorProperty);
+			set => SetValue(NegativeTickColorProperty, value);
 		}
 
 		/// <summary>Gets or sets the positive tick background colour.</summary>
 		public Color PositiveTickBackgroundColor
 		{
-			get => (Color)this.GetValue(PositiveTickBackgroundColorProperty);
-			set => this.SetValue(PositiveTickBackgroundColorProperty, value);
+			get => (Color)GetValue(PositiveTickBackgroundColorProperty);
+			set => SetValue(PositiveTickBackgroundColorProperty, value);
 		}
 
 		/// <summary>Gets or sets the positive tick colour.</summary>
 		public Color PositiveTickColor
 		{
-			get => (Color)this.GetValue(PositiveTickColorProperty);
-			set => this.SetValue(PositiveTickColorProperty, value);
+			get => (Color)GetValue(PositiveTickColorProperty);
+			set => SetValue(PositiveTickColorProperty, value);
 		}
 
 		/// <summary>Gets or sets the Price.</summary>
 		public double Price
 		{
-			get => (double)this.GetValue(PriceProperty);
-			set => this.SetValue(PriceProperty, value);
+			get => (double)GetValue(PriceProperty);
+			set => SetValue(PriceProperty, value);
 		}
 
 		/// <summary>Invoked when the Price is changed.</summary>

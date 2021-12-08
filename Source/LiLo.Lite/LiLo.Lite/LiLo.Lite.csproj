@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<ProduceReferenceAssembly>true</ProduceReferenceAssembly>
-		<LangVersion>8.0</LangVersion>
+		<LangVersion>9.0</LangVersion>
 		<Description>LiLo 'lite' is a light-weight version of LiLo. The mobile application is written using Xamarin.Forms and integrates with the Binance WebSockets service to provide live real-time cryptocurrency market information, and using a WebView to display charting information from TradingView.</Description>
 		<Copyright>2021 George Leithead, InternetWideWorld.com</Copyright>
 		<PackageProjectUrl>https://github.com/GeorgeLeithead/LiLo.Lite</PackageProjectUrl>
@@ -29,21 +29,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<AdditionalFiles Include="..\stylecop.json" Link="stylecop.json" />
-		<AdditionalFiles Include="..\Settings.StyleCop" Link="Settings.StyleCop" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<PackageReference Include="Acr.UserDialogs" Version="7.2.0.534" />
+		<PackageReference Include="Acr.UserDialogs" Version="7.2.0.561" />
 		<PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.4.0" />
 		<PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.4.0" />
 		<PackageReference Include="Resizetizer.NT" Version="0.3.0">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 		<PackageReference Include="System.Text.Json" Version="6.0.0" />
 		<PackageReference Include="WebSocketSharp-netstandard" Version="1.0.1" />

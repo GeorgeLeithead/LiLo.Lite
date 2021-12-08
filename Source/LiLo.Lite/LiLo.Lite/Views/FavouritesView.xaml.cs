@@ -14,7 +14,7 @@ namespace LiLo.Lite.Views
 		/// <summary>Initialises a new instance of the <see cref="FavouritesView"/> class.</summary>
 		public FavouritesView()
 		{
-			this.InitializeComponent();
+			InitializeComponent();
 		}
 
 		/// <summary>Handle the device back button being pressed.</summary>

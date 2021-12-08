@@ -4,9 +4,9 @@
 
 namespace LiLo.Lite.Models.Markets
 {
+	using LiLo.Lite.ViewModels.Base;
 	using System.Globalization;
 	using System.Runtime.Serialization;
-	using LiLo.Lite.ViewModels.Base;
 	using Xamarin.Forms.Internals;
 
 	/// <summary>Model for the markets information.</summary>
@@ -50,34 +50,34 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Initialises a new instance of the <see cref="MarketModel"/> class.</summary>
 		public MarketModel()
 		{
-			this.DecimalPlaces = 2;
-			this.HighPrice24h = this.LowPrice24h = this.LastPrice = this.Price24hPercent = 0;
-			this.HighPrice24hString = this.LowPrice24hString = this.LastPriceString = this.Price24hPercentString = "$0.00";
+			DecimalPlaces = 2;
+			HighPrice24h = LowPrice24h = LastPrice = Price24hPercent = 0;
+			HighPrice24hString = LowPrice24hString = LastPriceString = Price24hPercentString = "$0.00";
 		}
 
 		/// <summary>Gets or sets the number of decimal places to show for the currency.</summary>
 		[DataMember(Name = "decimalPlaces")]
 		public int DecimalPlaces
 		{
-			get => this.decimalPlaces;
+			get => decimalPlaces;
 			set
 			{
-				this.decimalPlaces = value;
-				this.OnPropertyChanged(nameof(this.DecimalPlaces));
+				decimalPlaces = value;
+				OnPropertyChanged(nameof(DecimalPlaces));
 			}
 		}
 
 		/// <summary>Gets or sets the 24HR high price for the currency.</summary>
 		public double HighPrice24h
 		{
-			get => this.highPrice24h;
+			get => highPrice24h;
 			set
 			{
-				if (this.highPrice24h != value)
+				if (highPrice24h != value)
 				{
-					this.highPrice24h = value;
-					this.HighPrice24hString = value.ToString("C" + this.DecimalPlaces, this.formatCulture);
-					this.OnPropertyChanged(nameof(this.HighPrice24h));
+					highPrice24h = value;
+					HighPrice24hString = value.ToString("C" + DecimalPlaces, formatCulture);
+					OnPropertyChanged(nameof(HighPrice24h));
 				}
 			}
 		}
@@ -85,13 +85,13 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the 24HR high price for the currency as string.</summary>
 		public string HighPrice24hString
 		{
-			get => this.highPrice24hString;
+			get => highPrice24hString;
 			set
 			{
-				if (this.highPrice24hString != value)
+				if (highPrice24hString != value)
 				{
-					this.highPrice24hString = value;
-					this.OnPropertyChanged(nameof(this.HighPrice24hString));
+					highPrice24hString = value;
+					OnPropertyChanged(nameof(HighPrice24hString));
 				}
 			}
 		}
@@ -99,14 +99,14 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the last price for the currency.</summary>
 		public double LastPrice
 		{
-			get => this.lastPrice;
+			get => lastPrice;
 			set
 			{
-				if (this.lastPrice != value && value != 0)
+				if (lastPrice != value && value != 0)
 				{
-					this.lastPrice = value;
-					this.LastPriceString = value.ToString("C" + this.DecimalPlaces, this.formatCulture);
-					this.OnPropertyChanged(nameof(this.LastPrice));
+					lastPrice = value;
+					LastPriceString = value.ToString("C" + DecimalPlaces, formatCulture);
+					OnPropertyChanged(nameof(LastPrice));
 				}
 			}
 		}
@@ -114,13 +114,13 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the last price as a string.</summary>
 		public string LastPriceString
 		{
-			get => this.lastPriceString;
+			get => lastPriceString;
 			set
 			{
-				if (this.lastPriceString != value)
+				if (lastPriceString != value)
 				{
-					this.lastPriceString = value;
-					this.OnPropertyChanged(nameof(this.LastPriceString));
+					lastPriceString = value;
+					OnPropertyChanged(nameof(LastPriceString));
 				}
 			}
 		}
@@ -128,14 +128,14 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the 24HR low price for the currency.</summary>
 		public double LowPrice24h
 		{
-			get => this.lowPrice24h;
+			get => lowPrice24h;
 			set
 			{
-				if (this.lowPrice24h != value)
+				if (lowPrice24h != value)
 				{
-					this.lowPrice24h = value;
-					this.LowPrice24hString = value.ToString("C" + this.DecimalPlaces, this.formatCulture);
-					this.OnPropertyChanged(nameof(this.LowPrice24h));
+					lowPrice24h = value;
+					LowPrice24hString = value.ToString("C" + DecimalPlaces, formatCulture);
+					OnPropertyChanged(nameof(LowPrice24h));
 				}
 			}
 		}
@@ -143,13 +143,13 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the 24HR low price as a string.</summary>
 		public string LowPrice24hString
 		{
-			get => this.lowPrice24hString;
+			get => lowPrice24hString;
 			set
 			{
-				if (this.lowPrice24hString != value)
+				if (lowPrice24hString != value)
 				{
-					this.lowPrice24hString = value;
-					this.OnPropertyChanged(nameof(this.LowPrice24hString));
+					lowPrice24hString = value;
+					OnPropertyChanged(nameof(LowPrice24hString));
 				}
 			}
 		}
@@ -157,14 +157,14 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the 24HR percentage price difference for the currency.</summary>
 		public double Price24hPercent
 		{
-			get => this.price24hPercent;
+			get => price24hPercent;
 			set
 			{
-				if (this.price24hPercent != value)
+				if (price24hPercent != value)
 				{
-					this.price24hPercent = value;
-					this.Price24hPercentString = value.ToString("F2", this.formatCulture);
-					this.OnPropertyChanged(nameof(this.Price24hPercent));
+					price24hPercent = value;
+					Price24hPercentString = value.ToString("F2", formatCulture);
+					OnPropertyChanged(nameof(Price24hPercent));
 				}
 			}
 		}
@@ -172,13 +172,13 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the 24HR price percentage as a string.</summary>
 		public string Price24hPercentString
 		{
-			get => this.price24hPercentString;
+			get => price24hPercentString;
 			set
 			{
-				if (this.price24hPercentString != value)
+				if (price24hPercentString != value)
 				{
-					this.price24hPercentString = value;
-					this.OnPropertyChanged(nameof(this.Price24hPercentString));
+					price24hPercentString = value;
+					OnPropertyChanged(nameof(Price24hPercentString));
 				}
 			}
 		}
@@ -190,13 +190,13 @@ namespace LiLo.Lite.Models.Markets
 		[DataMember(Name = "symbol")]
 		public string SymbolString
 		{
-			get => this.symbolString;
+			get => symbolString;
 			set
 			{
-				if (this.symbolString != value)
+				if (symbolString != value)
 				{
-					this.symbolString = value;
-					this.OnPropertyChanged(nameof(this.SymbolString));
+					symbolString = value;
+					OnPropertyChanged(nameof(SymbolString));
 				}
 			}
 		}

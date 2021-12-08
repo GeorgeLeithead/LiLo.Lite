@@ -246,17 +246,17 @@
         <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.LowPrice24h">
             <summary>Gets the 24hr low price.</summary>
         </member>
-        <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.Percent">
-            <summary>Gets or sets the price change percent.</summary>
-        </member>
         <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.PChange">
             <summary>Gets or sets the price change.</summary>
         </member>
-        <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.PriceChange">
-            <summary>Gets the price change.</summary>
+        <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.Percent">
+            <summary>Gets or sets the price change percent.</summary>
         </member>
         <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.Price24hPercent">
             <summary>Gets the 24hr price change percent.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.PriceChange">
+            <summary>Gets the price change.</summary>
         </member>
         <member name="P:LiLo.Lite.Models.BinanceModels.BinanceTickerDataModel.SymbolString">
             <summary>Gets or sets the symbol.</summary>
@@ -682,14 +682,6 @@
             <param name="buttonLabel">Alert button label text.</param>
             <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
         </member>
-        <member name="M:LiLo.Lite.Services.Dialog.DialogService.ShowPromptAsync(System.String,System.String,System.String,System.String)">
-            <summary>Show a cross-platform prompt.</summary>
-            <param name="title">Prompt title.</param>
-            <param name="message">Prompt message.</param>
-            <param name="okText">OK button label text.</param>
-            <param name="cancelText">Cancel button label text.</param>
-            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the asynchronous operation.</returns>
-        </member>
         <member name="M:LiLo.Lite.Services.Dialog.DialogService.ShowConfirmAsync(System.String,System.String,System.String,System.String)">
             <summary>Show a cross-platform confirm dialogue.</summary>
             <param name="title">Confirm title.</param>
@@ -697,6 +689,14 @@
             <param name="okText">OK button label text.</param>
             <param name="cancelText">Cancel button label text.</param>
             <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:LiLo.Lite.Services.Dialog.DialogService.ShowPromptAsync(System.String,System.String,System.String,System.String)">
+            <summary>Show a cross-platform prompt.</summary>
+            <param name="title">Prompt title.</param>
+            <param name="message">Prompt message.</param>
+            <param name="okText">OK button label text.</param>
+            <param name="cancelText">Cancel button label text.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the asynchronous operation.</returns>
         </member>
         <member name="M:LiLo.Lite.Services.Dialog.DialogService.ShowToastAsync(System.String)">
             <summary>Show a cross-platform Toast.</summary>
@@ -848,6 +848,10 @@
         <member name="T:LiLo.Lite.Services.Sockets.ISocketsService">
             <summary>Web Sockets Service interface.</summary>
         </member>
+        <member name="M:LiLo.Lite.Services.Sockets.ISocketsService.Connect">
+            <summary>Connects to the sockets service.</summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+        </member>
         <member name="M:LiLo.Lite.Services.Sockets.ISocketsService.WebSocket_Close">
             <summary>Handle when the application closes the sockets connection.</summary>
             <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
@@ -862,10 +866,6 @@
         </member>
         <member name="M:LiLo.Lite.Services.Sockets.ISocketsService.WebSocket_OnSleep">
             <summary>Handle when the application goes into sleep.</summary>
-            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
-        </member>
-        <member name="M:LiLo.Lite.Services.Sockets.ISocketsService.Connect">
-            <summary>Connects to the sockets service.</summary>
             <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
         </member>
         <member name="T:LiLo.Lite.Services.Sockets.SocketsService">

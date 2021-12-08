@@ -25,7 +25,7 @@ namespace LiLo.Lite.iOS
 			Forms.SetFlags("CollectionView_Experimental");
 			Forms.Init();
 			UNUserNotificationCenter.Current.Delegate = new IOSNotificationReceiver();
-			this.LoadApplication(new App());
+			LoadApplication(new App());
 			return base.FinishedLaunching(app, options);
 		}
 

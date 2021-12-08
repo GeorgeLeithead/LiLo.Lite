@@ -4,10 +4,10 @@
 
 namespace LiLo.Lite.Services.Sockets
 {
-	using System.Diagnostics;
-	using System.Threading.Tasks;
 	using LiLo.Lite.Services.Dialog;
 	using LiLo.Lite.Services.Markets;
+	using System.Diagnostics;
+	using System.Threading.Tasks;
 	using WebSocketSharp;
 	using Xamarin.Forms;
 
@@ -34,29 +34,29 @@ namespace LiLo.Lite.Services.Sockets
 		}
 
 		/// <summary>Gets the dialogue service.</summary>
-		public IDialogService DialogService => this.dialogService ??= DependencyService.Resolve<DialogService>();
+		public IDialogService DialogService => dialogService ??= DependencyService.Resolve<DialogService>();
 
 		/// <summary>Gets a value indicating whether the sockets service is connected.</summary>
-		private bool IsConnected => this.webSocket.ReadyState == WebSocketState.Open;
+		private bool IsConnected => webSocket.ReadyState == WebSocketState.Open;
 
-		private IMarketsHelperService MarketsHelperService => this.marketsHelperService ??= DependencyService.Resolve<MarketsHelperService>();
+		private IMarketsHelperService MarketsHelperService => marketsHelperService ??= DependencyService.Resolve<MarketsHelperService>();
 
 		/// <summary>Connects to the Sockets Service.</summary>
 		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		public async Task Connect()
 		{
-			string wss = this.MarketsHelperService.GetWss();
-			this.webSocket = new WebSocket(wss)
+			string wss = MarketsHelperService.GetWss();
+			webSocket = new WebSocket(wss)
 			{
 				EmitOnPing = true,
 			};
-			this.webSocket.SslConfiguration.EnabledSslProtocols = System.Security.Authentication.SslProtocols.Tls12;
-			this.webSocket.SslConfiguration.ServerCertificateValidationCallback = (sender, certificate, chain, sslPolicyError) =>
+			webSocket.SslConfiguration.EnabledSslProtocols = System.Security.Authentication.SslProtocols.Tls12;
+			webSocket.SslConfiguration.ServerCertificateValidationCallback = (sender, certificate, chain, sslPolicyError) =>
 			{
 				return true;
 			};
 
-			await this.WebSocket_OnResume();
+			await WebSocket_OnResume();
 		}
 
 		/// <summary>Handle when the application closes the sockets connection.</summary>
@@ -65,21 +65,21 @@ namespace LiLo.Lite.Services.Sockets
 		{
 			_ = await Task.Factory.StartNew(async () =>
 			{
-				if (!this.IsConnected)
+				if (!IsConnected)
 				{
 					return;
 				}
 
-				await this.DialogService.ShowToastAsync("Closing connection!");
-				if (this.webSocket == null)
+				await DialogService.ShowToastAsync("Closing connection!");
+				if (webSocket == null)
 				{
 					_ = await Task.FromResult(true);
 					return;
 				}
 
-				if (this.webSocket.IsAlive)
+				if (webSocket.IsAlive)
 				{
-					this.webSocket.CloseAsync(CloseStatusCode.Normal);
+					webSocket.CloseAsync(CloseStatusCode.Normal);
 				}
 
 				_ = await Task.FromResult(true);
@@ -92,31 +92,31 @@ namespace LiLo.Lite.Services.Sockets
 		{
 			_ = await Task.Factory.StartNew(async () =>
 			{
-				if (this.IsConnected)
+				if (IsConnected)
 				{
 					return;
 				}
 
-				await this.DialogService.ShowToastAsync("Connecting...");
+				await DialogService.ShowToastAsync("Connecting...");
 				try
 				{
 					if (Device.RuntimePlatform != Device.UWP)
 					{
-						this.webSocket.ConnectAsync();
+						webSocket.ConnectAsync();
 					}
 					else
 					{
-						this.webSocket.Connect();
+						webSocket.Connect();
 					}
 
-					this.numberOfTries = 1;
+					numberOfTries = 1;
 				}
 				catch (System.Net.Sockets.SocketException)
 				{
-					this.numberOfTries += 1;
-					Debug.WriteLine($"Lost connection, awaiting {this.numberOfTries}");
-					Task.Delay(this.numberOfTries * this.delayBetweenTries).Wait();
-					await this.WebSocket_OnConnect();
+					numberOfTries += 1;
+					Debug.WriteLine($"Lost connection, awaiting {numberOfTries}");
+					Task.Delay(numberOfTries * delayBetweenTries).Wait();
+					await WebSocket_OnConnect();
 				}
 
 				_ = await Task.FromResult(true);
@@ -127,14 +127,14 @@ namespace LiLo.Lite.Services.Sockets
 		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		public async Task WebSocket_OnResume()
 		{
-			if (!this.isResumed)
+			if (!isResumed)
 			{
-				this.webSocket.OnMessage += this.MarketsHelperService.WebSockets_OnMessageAsync;
-				this.webSocket.OnMessage += this.WebSocket_OnMessage;
-				this.webSocket.OnError += this.WebSocket_OnError;
-				this.webSocket.OnClose += this.WebSocket_OnClose;
-				await this.WebSocket_OnConnect();
-				this.isResumed = true;
+				webSocket.OnMessage += MarketsHelperService.WebSockets_OnMessageAsync;
+				webSocket.OnMessage += WebSocket_OnMessage;
+				webSocket.OnError += WebSocket_OnError;
+				webSocket.OnClose += WebSocket_OnClose;
+				await WebSocket_OnConnect();
+				isResumed = true;
 			}
 
 			_ = await Task.FromResult(true);
@@ -144,14 +144,14 @@ namespace LiLo.Lite.Services.Sockets
 		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		public async Task WebSocket_OnSleep()
 		{
-			if (this.isResumed)
+			if (isResumed)
 			{
-				this.webSocket.OnClose -= this.WebSocket_OnClose;
-				this.webSocket.OnError -= this.WebSocket_OnError;
-				this.webSocket.OnMessage -= this.MarketsHelperService.WebSockets_OnMessageAsync;
-				this.webSocket.OnMessage -= this.WebSocket_OnMessage;
-				this.webSocket.CloseAsync(CloseStatusCode.Normal);
-				this.isResumed = false;
+				webSocket.OnClose -= WebSocket_OnClose;
+				webSocket.OnError -= WebSocket_OnError;
+				webSocket.OnMessage -= MarketsHelperService.WebSockets_OnMessageAsync;
+				webSocket.OnMessage -= WebSocket_OnMessage;
+				webSocket.CloseAsync(CloseStatusCode.Normal);
+				isResumed = false;
 			}
 
 			_ = await Task.FromResult(true);
@@ -164,21 +164,21 @@ namespace LiLo.Lite.Services.Sockets
 		{
 			_ = await Task.Factory.StartNew(async () =>
 			{
-				if (this.IsConnected)
+				if (IsConnected)
 				{
 					return;
 				}
 
-				await this.DialogService.ShowToastAsync("Disconnected!");
-				while (!this.webSocket.IsAlive)
+				await DialogService.ShowToastAsync("Disconnected!");
+				while (!webSocket.IsAlive)
 				{
-					this.numberOfTries += 1;
-					Debug.WriteLine($"Lost connection, awaiting {this.numberOfTries}");
-					Task.Delay(this.numberOfTries * this.delayBetweenTries).Wait();
-					await this.WebSocket_OnConnect();
+					numberOfTries += 1;
+					Debug.WriteLine($"Lost connection, awaiting {numberOfTries}");
+					Task.Delay(numberOfTries * delayBetweenTries).Wait();
+					await WebSocket_OnConnect();
 				}
 
-				this.numberOfTries = 1;
+				numberOfTries = 1;
 			});
 		}
 
@@ -187,9 +187,9 @@ namespace LiLo.Lite.Services.Sockets
 		/// <param name="e">Error event arguments.</param>
 		private void WebSocket_OnError(object sender, ErrorEventArgs e)
 		{
-			if (this.IsConnected)
+			if (IsConnected)
 			{
-				_ = this.DialogService.ShowToastAsync(e.Message).ConfigureAwait(true);
+				_ = DialogService.ShowToastAsync(e.Message).ConfigureAwait(true);
 			}
 		}
 
@@ -202,7 +202,7 @@ namespace LiLo.Lite.Services.Sockets
 			{
 				if (e.IsText)
 				{
-					this.webSocket.OnMessage -= this.WebSocket_OnMessage;
+					webSocket.OnMessage -= WebSocket_OnMessage;
 				}
 
 				_ = await Task.FromResult(true);

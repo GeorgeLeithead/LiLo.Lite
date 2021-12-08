@@ -4,11 +4,11 @@
 
 namespace LiLo.Lite.Services.LocalNotification
 {
+	using LiLo.Lite.Models.BinanceModels;
+	using LiLo.Lite.Models.Notifications;
 	using System;
 	using System.Collections.Generic;
 	using System.Threading.Tasks;
-	using LiLo.Lite.Models.BinanceModels;
-	using LiLo.Lite.Models.Notifications;
 	using Xamarin.Essentials;
 
 	/// <summary>Local price notifications class.</summary>
@@ -19,9 +19,9 @@ namespace LiLo.Lite.Services.LocalNotification
 		/// <returns>List{priceAlertNotification} for the given symbol.</returns>
 		public static List<PriceAlertNotification> GetPriceAlertNotificationList(string symbol)
 		{
-			List<PriceAlertNotification> alerts = new List<PriceAlertNotification>();
-			List<PriceAlertNotification> targetAlerts = new List<PriceAlertNotification>();
-			List<PriceAlertNotification> changeAlerts = new List<PriceAlertNotification>();
+			List<PriceAlertNotification> alerts = new();
+			List<PriceAlertNotification> targetAlerts = new();
+			List<PriceAlertNotification> changeAlerts = new();
 			string targetPriceAlert = Preferences.Get($"TargetAlert{symbol}", string.Empty);
 			string changePriceAlert = Preferences.Get($"ChangeAlert{symbol}", string.Empty);
 			if (!string.IsNullOrEmpty(targetPriceAlert))
@@ -73,7 +73,7 @@ namespace LiLo.Lite.Services.LocalNotification
 		/// <returns>List{PriceAlertNotification} for target type.</returns>
 		private static List<PriceAlertNotification> ParseNotifications(string alertInformation, string symbol, bool isTarget = true)
 		{
-			List<PriceAlertNotification> returnAlerts = new List<PriceAlertNotification>();
+			List<PriceAlertNotification> returnAlerts = new();
 			string[] alerts = alertInformation.Split(';');
 			for (int alertItem = 0; alertItem < alerts.Length; alertItem++)
 			{

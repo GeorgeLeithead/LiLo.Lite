@@ -4,14 +4,14 @@
 
 namespace LiLo.Lite.ViewModels
 {
-	using System;
-	using System.Net.Http;
-	using System.Threading.Tasks;
-	using System.Windows.Input;
 	using LiLo.Lite.Helpers;
 	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.Resources;
 	using LiLo.Lite.ViewModels.Base;
+	using System;
+	using System.Net.Http;
+	using System.Threading.Tasks;
+	using System.Windows.Input;
 	using Xamarin.CommunityToolkit.ObjectModel;
 	using Xamarin.Essentials;
 	using Xamarin.Forms;
@@ -31,13 +31,13 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Initialises a new instance of the <see cref="HomeViewModel"/> class.</summary>
 		public HomeViewModel()
 		{
-			this.IsBusy = true;
-			this.Title = AppResources.ViewTitleMarkets;
-			this.FavouritesList = Preferences.Get(Constants.Preferences.Favourites.FavouritesCategory, Constants.Preferences.Favourites.FavouritesCategoryDefaultValue);
-			this.FavouritesEnabled = Preferences.Get(Constants.Preferences.Favourites.FavouritesEnabled, Constants.Preferences.Favourites.FavouritesEnabledDefaultValue);
-			this.RetryButtonClicked = new AsyncCommand(this.Init);
-			this.SwipeItemAlertCommand = new Command<MarketModel>(this.OnSwipeItemAlert);
-			_ = this.Init().ConfigureAwait(false);
+			IsBusy = true;
+			Title = AppResources.ViewTitleMarkets;
+			FavouritesList = Preferences.Get(Constants.Preferences.Favourites.FavouritesCategory, Constants.Preferences.Favourites.FavouritesCategoryDefaultValue);
+			FavouritesEnabled = Preferences.Get(Constants.Preferences.Favourites.FavouritesEnabled, Constants.Preferences.Favourites.FavouritesEnabledDefaultValue);
+			RetryButtonClicked = new AsyncCommand(Init);
+			SwipeItemAlertCommand = new Command<MarketModel>(OnSwipeItemAlert);
+			_ = Init().ConfigureAwait(false);
 		}
 
 		/// <summary>Gets or sets a value indicating whether the favourites is enabled.</summary>
@@ -47,19 +47,19 @@ namespace LiLo.Lite.ViewModels
 		public string FavouritesList { get; set; }
 
 		/// <summary>Gets the navigate to settings command.</summary>
-		public IAsyncCommand GoToSettingsCommand => this.goToSettingsCommand ??= new AsyncCommand(this.GoToSettings);
+		public IAsyncCommand GoToSettingsCommand => goToSettingsCommand ??= new AsyncCommand(GoToSettings);
 
 		/// <summary>Gets or sets the items layout span.</summary>
 		/// <remarks>To handle landscape and portrait orientation.</remarks>
 		public int GridItemsLayoutSpan
 		{
-			get => this.gridItemsLayoutSpan;
+			get => gridItemsLayoutSpan;
 			set
 			{
-				if (value != this.gridItemsLayoutSpan)
+				if (value != gridItemsLayoutSpan)
 				{
-					this.gridItemsLayoutSpan = value;
-					this.OnPropertyChanged(nameof(this.GridItemsLayoutSpan));
+					gridItemsLayoutSpan = value;
+					OnPropertyChanged(nameof(GridItemsLayoutSpan));
 				}
 			}
 		}
@@ -67,13 +67,13 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Gets or sets a collection of values to be displayed in the markets view.</summary>
 		public ObservableRangeCollection<MarketModel> MarketsList
 		{
-			get => this.marketsList;
+			get => marketsList;
 			set
 			{
-				if (this.marketsList != value)
+				if (marketsList != value)
 				{
-					this.marketsList = value;
-					this.OnPropertyChanged(nameof(this.MarketsList));
+					marketsList = value;
+					OnPropertyChanged(nameof(MarketsList));
 				}
 			}
 		}
@@ -91,7 +91,7 @@ namespace LiLo.Lite.ViewModels
 				{
 					MarketModel item = value;
 					_ = Shell.Current.GoToAsync($"{Constants.Navigation.Paths.Chart}?symbol={item.SymbolString}");
-					this.OnPropertyChanged(nameof(this.SelectedItem));
+					OnPropertyChanged(nameof(SelectedItem));
 				}
 			}
 		}
@@ -102,12 +102,12 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Gets or sets the market symbol.</summary>
 		public string Symbol
 		{
-			get => this.symbol;
+			get => symbol;
 			set
 			{
 				if (!string.IsNullOrEmpty(value))
 				{
-					this.symbol = Uri.UnescapeDataString(value);
+					symbol = Uri.UnescapeDataString(value);
 				}
 			}
 		}
@@ -124,24 +124,24 @@ namespace LiLo.Lite.ViewModels
 					  // Connection to internet is available
 					  try
 					  {
-						  await this.MarketsHelperService.Init();
-						  _ = this.SocketsService?.Connect();
-						  this.MarketsList = this.MarketsHelperService.MarketsList;
+						  await MarketsHelperService.Init();
+						  _ = SocketsService?.Connect();
+						  MarketsList = MarketsHelperService.MarketsList;
 					  }
 					  catch (HttpRequestException ex)
 					  {
-						  _ = this.DialogService.ShowAlertAsync(ex.Message, "Markets list error", "Dismiss");
+						  _ = DialogService.ShowAlertAsync(ex.Message, "Markets list error", "Dismiss");
 					  }
 				  }
 				  else
 				  {
-					  _ = this.DialogService.ShowAlertAsync("No network access!", "Network error", "Dismiss");
+					  _ = DialogService.ShowAlertAsync("No network access!", "Network error", "Dismiss");
 				  }
 
-				  this.IsBusy = false;
-				  if (!string.IsNullOrEmpty(this.Symbol))
+				  IsBusy = false;
+				  if (!string.IsNullOrEmpty(Symbol))
 				  {
-					  this.OnPropertyChanged(nameof(this.Symbol));
+					  OnPropertyChanged(nameof(Symbol));
 				  }
 			  });
 		}

@@ -3,11 +3,11 @@
 	x:Class="LiLo.Lite.Views.SettingsView"
 	xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
 	xmlns:resources="clr-namespace:LiLo.Lite.Resources"
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
-	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
 	Title="{Binding Title, Mode=OneWay}"
 	d:Title="Settings"
 	x:DataType="vm:SettingsViewModel"
@@ -168,7 +168,7 @@
 												AutomationProperties.Name="System theme style."
 												Scale="0.75"
 												Source="{AppThemeBinding Light='settings.png',
-												                         Dark='settings_dark.png'}" />
+																		 Dark='settings_dark.png'}" />
 											<Label
 												FontSize="Small"
 												Style="{StaticResource SettingsThemeStyle}"
@@ -188,7 +188,7 @@
 												AutomationProperties.Name="Light theme style."
 												Scale="0.75"
 												Source="{AppThemeBinding Light='sun_light.png',
-												                         Dark='sun_dark.png'}" />
+																		 Dark='sun_dark.png'}" />
 											<Label
 												FontSize="Small"
 												Style="{StaticResource SettingsThemeStyle}"
@@ -208,7 +208,7 @@
 												AutomationProperties.Name="Dark theme style."
 												Scale="0.75"
 												Source="{AppThemeBinding Light='moon_light.png',
-												                         Dark='moon_dark.png'}" />
+																		 Dark='moon_dark.png'}" />
 											<Label
 												FontSize="Small"
 												Style="{StaticResource SettingsThemeStyle}"

@@ -4,8 +4,8 @@
 
 namespace LiLo.Lite.Services.Markets
 {
-	using System.Threading.Tasks;
 	using LiLo.Lite.Models.Markets;
+	using System.Threading.Tasks;
 	using WebSocketSharp;
 	using Xamarin.CommunityToolkit.ObjectModel;
 

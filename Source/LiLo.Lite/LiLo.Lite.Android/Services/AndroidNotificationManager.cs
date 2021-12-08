@@ -12,15 +12,16 @@
 //-----------------------------------------------------------------------
 
 [assembly: Xamarin.Forms.Dependency(typeof(LiLo.Lite.Droid.Services.AndroidNotificationManager))]
+
 namespace LiLo.Lite.Droid.Services
 {
-	using System;
 	using Android.App;
 	using Android.Content;
 	using Android.Graphics;
 	using Android.OS;
 	using AndroidX.Core.App;
 	using LiLo.Lite.Services.LocalNotification;
+	using System;
 	using AndroidApp = Android.App.Application;
 
 	/// <summary>Notification handler.</summary>
@@ -43,7 +44,7 @@ namespace LiLo.Lite.Droid.Services
 		/// <summary>Initialises a new instance of the<see cref="AndroidNotificationManager" /> class.</summary>
 		public AndroidNotificationManager()
 		{
-			this.Initialize();
+			Initialize();
 		}
 
 		/// <summary>Notification received event handler.</summary>
@@ -57,7 +58,7 @@ namespace LiLo.Lite.Droid.Services
 		{
 			if (Instance == null)
 			{
-				this.CreateNotificationChannel();
+				CreateNotificationChannel();
 				Instance = this;
 			}
 		}
@@ -81,9 +82,9 @@ namespace LiLo.Lite.Droid.Services
 		/// <param name="notifyTime">Notification time.</param>
 		public void SendNotification(string title, string message, DateTime? notifyTime = null)
 		{
-			if (!this.channelInitialized)
+			if (!channelInitialized)
 			{
-				this.CreateNotificationChannel();
+				CreateNotificationChannel();
 			}
 
 			if (notifyTime != null)
@@ -91,14 +92,14 @@ namespace LiLo.Lite.Droid.Services
 				Intent intent = new Intent(AndroidApp.Context, typeof(AlarmHandler));
 				_ = intent.PutExtra(TitleKey, title);
 				_ = intent.PutExtra(MessageKey, message);
-				PendingIntent pendingIntent = PendingIntent.GetBroadcast(AndroidApp.Context, this.pendingIntentId++, intent, PendingIntentFlags.CancelCurrent);
-				long triggerTime = this.GetNotifyTime(notifyTime.Value);
+				PendingIntent pendingIntent = PendingIntent.GetBroadcast(AndroidApp.Context, pendingIntentId++, intent, PendingIntentFlags.CancelCurrent);
+				long triggerTime = GetNotifyTime(notifyTime.Value);
 				AlarmManager alarmManager = AndroidApp.Context.GetSystemService(Context.AlarmService) as AlarmManager;
 				alarmManager.Set(AlarmType.RtcWakeup, triggerTime, pendingIntent);
 			}
 			else
 			{
-				this.Show(title, message);
+				Show(title, message);
 			}
 		}
 
@@ -110,7 +111,7 @@ namespace LiLo.Lite.Droid.Services
 			Intent intent = new Intent(AndroidApp.Context, typeof(MainActivity));
 			_ = intent.PutExtra(TitleKey, title);
 			_ = intent.PutExtra(MessageKey, message);
-			PendingIntent pendingIntent = PendingIntent.GetActivity(AndroidApp.Context, this.pendingIntentId++, intent, PendingIntentFlags.UpdateCurrent);
+			PendingIntent pendingIntent = PendingIntent.GetActivity(AndroidApp.Context, pendingIntentId++, intent, PendingIntentFlags.UpdateCurrent);
 			NotificationCompat.Builder builder = new NotificationCompat.Builder(AndroidApp.Context, channelId)
 				.SetContentIntent(pendingIntent)
 				.SetContentTitle(title)
@@ -120,12 +121,12 @@ namespace LiLo.Lite.Droid.Services
 				.SetDefaults((int)NotificationDefaults.Sound | (int)NotificationDefaults.Vibrate);
 
 			Notification notification = builder.Build();
-			this.manager.Notify(this.messageId++, notification);
+			manager.Notify(messageId++, notification);
 		}
 
 		private void CreateNotificationChannel()
 		{
-			this.manager = (NotificationManager)AndroidApp.Context.GetSystemService(Context.NotificationService);
+			manager = (NotificationManager)AndroidApp.Context.GetSystemService(Context.NotificationService);
 			if (Build.VERSION.SdkInt >= BuildVersionCodes.O)
 			{
 				Java.Lang.String channelNameJava = new Java.Lang.String(channelName);
@@ -133,10 +134,10 @@ namespace LiLo.Lite.Droid.Services
 				{
 					Description = channelDescription
 				};
-				this.manager.CreateNotificationChannel(channel);
+				manager.CreateNotificationChannel(channel);
 			}
 
-			this.channelInitialized = true;
+			channelInitialized = true;
 		}
 
 		private long GetNotifyTime(DateTime notifyTime)

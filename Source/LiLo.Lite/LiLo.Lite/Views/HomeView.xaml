@@ -3,13 +3,13 @@
 	x:Class="LiLo.Lite.Views.HomeView"
 	xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
-	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+	xmlns:controls="clr-namespace:LiLo.Lite.Controls"
 	xmlns:models="clr-namespace:LiLo.Lite.Models.Markets"
 	xmlns:resources="clr-namespace:LiLo.Lite.Resources"
 	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
-	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
 	Title="{Binding Title, Mode=OneWay}"
 	x:DataType="vm:HomeViewModel"
 	Style="{StaticResource BasePage}"
@@ -24,7 +24,7 @@
 		<ToolbarItem
 			Command="{Binding GoToSettingsCommand}"
 			IconImageSource="{AppThemeBinding Light='settings.png',
-			                                  Dark='settings_dark.png'}"
+											  Dark='settings_dark.png'}"
 			Text="{x:Static resources:AppResources.SettingsIconText}" />
 	</ContentPage.ToolbarItems>
 

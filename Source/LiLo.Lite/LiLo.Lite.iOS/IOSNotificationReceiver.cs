@@ -22,7 +22,7 @@ namespace LiLo.Lite.iOS
 	{
 		public override void WillPresentNotification(UNUserNotificationCenter center, UNNotification notification, Action<UNNotificationPresentationOptions> completionHandler)
 		{
-			this.ProcessNotification(notification);
+			ProcessNotification(notification);
 			completionHandler(UNNotificationPresentationOptions.Alert);
 		}
 

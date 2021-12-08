@@ -16,7 +16,7 @@ namespace LiLo.Lite.Views
 		/// <summary>Initialises a new instance of the <see cref="ChartView" /> class.</summary>
 		public ChartView()
 		{
-			this.InitializeComponent();
+			InitializeComponent();
 		}
 
 		/// <inheritdoc/>

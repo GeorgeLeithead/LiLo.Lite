@@ -23,9 +23,9 @@ namespace LiLo.Lite
 		/// <summary>Initialises a new instance of the <see cref="App" /> class.</summary>
 		public App()
 		{
-			this.InitializeComponent();
+			InitializeComponent();
 			DependencyService.Register<SocketsService>();
-			this.socketsService = DependencyService.Resolve<SocketsService>();
+			socketsService = DependencyService.Resolve<SocketsService>();
 			DependencyService.Register<DialogService>();
 			DependencyService.Register<MarketsHelperService>();
 			Current.MainPage = new AppShell();
@@ -37,11 +37,11 @@ namespace LiLo.Lite
 			base.OnResume();
 			if (!DesignMode.IsDesignModeEnabled)
 			{
-				_ = this.socketsService?.WebSocket_OnResume();
+				_ = socketsService?.WebSocket_OnResume();
 			}
 
-			this.SetTheme();
-			this.RequestedThemeChanged += this.App_RequestedThemeChanged;
+			SetTheme();
+			RequestedThemeChanged += App_RequestedThemeChanged;
 		}
 
 		/// <summary>Perform actions when the application enters the sleeping state.</summary>
@@ -50,11 +50,11 @@ namespace LiLo.Lite
 			base.OnSleep();
 			if (!DesignMode.IsDesignModeEnabled)
 			{
-				_ = this.socketsService?.WebSocket_OnSleep();
+				_ = socketsService?.WebSocket_OnSleep();
 			}
 
-			this.SetTheme();
-			this.RequestedThemeChanged -= this.App_RequestedThemeChanged;
+			SetTheme();
+			RequestedThemeChanged -= App_RequestedThemeChanged;
 		}
 
 		/// <summary>Perform actions when the application starts.</summary>
@@ -64,17 +64,17 @@ namespace LiLo.Lite
 			AppCenter.Start("android=4d413467-bf37-45b0-bf18-b8d15d98a182;ios=fc7532d3-fdc1-4447-99a7-33d07c9bae08;", typeof(Analytics), typeof(Crashes));
 			if (!DesignMode.IsDesignModeEnabled)
 			{
-				_ = this.socketsService?.Connect();
+				_ = socketsService?.Connect();
 			}
 
-			this.SetTheme();
+			SetTheme();
 		}
 
 		private void App_RequestedThemeChanged(object sender, AppThemeChangedEventArgs e)
 		{
 			int themeRequested = (int)e.RequestedTheme;
 			Preferences.Set(Constants.Preferences.Settings.Theme, themeRequested);
-			this.SetTheme();
+			SetTheme();
 		}
 
 		private void SetTheme()

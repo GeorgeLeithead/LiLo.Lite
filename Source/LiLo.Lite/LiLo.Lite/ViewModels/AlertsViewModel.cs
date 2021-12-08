@@ -4,12 +4,12 @@
 
 namespace LiLo.Lite.ViewModels
 {
-	using System;
-	using System.Collections.Generic;
 	using LiLo.Lite.Models.Notifications;
 	using LiLo.Lite.Resources;
 	using LiLo.Lite.Services.LocalNotification;
 	using LiLo.Lite.ViewModels.Base;
+	using System;
+	using System.Collections.Generic;
 	using Xamarin.CommunityToolkit.ObjectModel;
 	using Xamarin.Essentials;
 	using Xamarin.Forms;
@@ -26,8 +26,8 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Initialises a new instance of the <see cref="AlertsViewModel"/> class.</summary>
 		public AlertsViewModel()
 		{
-			this.IsBusy = true;
-			this.Title = AppResources.ViewTitleAlerts;
+			IsBusy = true;
+			Title = AppResources.ViewTitleAlerts;
 
 #if DEBUG
 			// TODO: FOR TEST ONLY
@@ -39,13 +39,13 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Gets or sets a collection of values to be displayed in the markets view.</summary>
 		public ObservableRangeCollection<PriceAlertNotification> AlertsList
 		{
-			get => this.alertsList;
+			get => alertsList;
 			set
 			{
-				if (this.alertsList != value)
+				if (alertsList != value)
 				{
-					this.alertsList = value;
-					this.OnPropertyChanged(nameof(this.AlertsList));
+					alertsList = value;
+					OnPropertyChanged(nameof(AlertsList));
 				}
 			}
 		}
@@ -58,7 +58,7 @@ namespace LiLo.Lite.ViewModels
 			{
 				if (value != null)
 				{
-					this.OnPropertyChanged(nameof(this.SelectedItem));
+					OnPropertyChanged(nameof(SelectedItem));
 				}
 			}
 		}
@@ -68,13 +68,13 @@ namespace LiLo.Lite.ViewModels
 		{
 			set
 			{
-				this.symbol = Uri.UnescapeDataString(value);
-				List<PriceAlertNotification> alerts = PriceNotifications.GetPriceAlertNotificationList(this.symbol + "USDT");
-				this.alertsList = new ObservableRangeCollection<PriceAlertNotification>(alerts);
-				this.Title = $"{this.symbol} {this.Title}";
-				this.OnPropertyChanged(nameof(this.Title));
-				this.OnPropertyChanged(nameof(this.AlertsList));
-				this.IsBusy = false;
+				symbol = Uri.UnescapeDataString(value);
+				List<PriceAlertNotification> alerts = PriceNotifications.GetPriceAlertNotificationList(symbol + "USDT");
+				alertsList = new ObservableRangeCollection<PriceAlertNotification>(alerts);
+				Title = $"{symbol} {Title}";
+				OnPropertyChanged(nameof(Title));
+				OnPropertyChanged(nameof(AlertsList));
+				IsBusy = false;
 			}
 		}
 	}

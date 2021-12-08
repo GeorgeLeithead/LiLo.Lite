@@ -13,12 +13,11 @@
 
 namespace LiLo.Lite.Droid.Services
 {
-	using System.Drawing;
-
 	using Android.App;
 	using Android.OS;
 	using Android.Views;
 	using LiLo.Lite.Helpers;
+	using System.Drawing;
 	using Xamarin.Essentials;
 
 	public class Environment : IEnvironment

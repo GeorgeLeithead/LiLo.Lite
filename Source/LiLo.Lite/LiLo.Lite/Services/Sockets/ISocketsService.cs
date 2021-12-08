@@ -9,6 +9,10 @@ namespace LiLo.Lite.Services.Sockets
 	/// <summary>Web Sockets Service interface.</summary>
 	public interface ISocketsService
 	{
+		/// <summary>Connects to the sockets service.</summary>
+		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
+		Task Connect();
+
 		/// <summary>Handle when the application closes the sockets connection.</summary>
 		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		Task WebSocket_Close();
@@ -24,9 +28,5 @@ namespace LiLo.Lite.Services.Sockets
 		/// <summary>Handle when the application goes into sleep.</summary>
 		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
 		Task WebSocket_OnSleep();
-
-		/// <summary>Connects to the sockets service.</summary>
-		/// <returns>A <see cref="Task"/> representing the asynchronous operation.</returns>
-		Task Connect();
 	}
 }

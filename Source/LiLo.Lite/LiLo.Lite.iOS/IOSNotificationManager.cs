@@ -34,7 +34,7 @@ namespace LiLo.Lite.iOS
 			// request the permission to use local notifications
 			UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert, (approved, err) =>
 			{
-				this.hasNotificationsPermission = approved;
+				hasNotificationsPermission = approved;
 			});
 		}
 
@@ -51,12 +51,12 @@ namespace LiLo.Lite.iOS
 		public void SendNotification(string title, string message, DateTime? notifyTime = null)
 		{
 			// EARLY OUT: app doesn't have permissions
-			if (!this.hasNotificationsPermission)
+			if (!hasNotificationsPermission)
 			{
 				return;
 			}
 
-			this.messageId++;
+			messageId++;
 
 			UNMutableNotificationContent content = new UNMutableNotificationContent()
 			{
@@ -70,7 +70,7 @@ namespace LiLo.Lite.iOS
 			if (notifyTime != null)
 			{
 				// Create a calendar-based trigger.
-				trigger = UNCalendarNotificationTrigger.CreateTrigger(this.GetNSDateComponents(notifyTime.Value), false);
+				trigger = UNCalendarNotificationTrigger.CreateTrigger(GetNSDateComponents(notifyTime.Value), false);
 			}
 			else
 			{
@@ -78,7 +78,7 @@ namespace LiLo.Lite.iOS
 				trigger = UNTimeIntervalNotificationTrigger.CreateTrigger(0.25, false);
 			}
 
-			UNNotificationRequest request = UNNotificationRequest.FromIdentifier(this.messageId.ToString(), content, trigger);
+			UNNotificationRequest request = UNNotificationRequest.FromIdentifier(messageId.ToString(), content, trigger);
 			UNUserNotificationCenter.Current.AddNotificationRequest(request, (err) =>
 			{
 				if (err != null)

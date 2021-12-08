@@ -28,7 +28,7 @@ namespace LiLo.Lite.UITest.Tests
 				Assert.Ignore("Local only");
 			}
 
-			this.App.Repl();
+			App.Repl();
 		}
 
 		/// <summary>Test the page title.</summary>

@@ -4,18 +4,18 @@
 
 namespace LiLo.Lite.Models.BinanceModels
 {
+	using LiLo.Lite.Models.Markets;
 	using System;
 	using System.Globalization;
 	using System.Linq;
 	using System.Text.Json.Serialization;
 	using System.Threading.Tasks;
-	using LiLo.Lite.Models.Markets;
 	using Xamarin.CommunityToolkit.ObjectModel;
 
 	/// <summary>Binance ticker symbol stream data.</summary>
 	public class BinanceTickerDataModel
 	{
-		private readonly CultureInfo enusCultureFormat = new CultureInfo("en-US");
+		private readonly CultureInfo enusCultureFormat = new("en-US");
 
 		/// <summary>Gets or sets close price.</summary>
 		[JsonPropertyName("c")]
@@ -26,31 +26,31 @@ namespace LiLo.Lite.Models.BinanceModels
 		public string HighPrice { get; set; }
 
 		/// <summary>Gets the 24hr high price.</summary>
-		public double HighPrice24h => Convert.ToDouble(this.HighPrice, this.enusCultureFormat);
+		public double HighPrice24h => Convert.ToDouble(HighPrice, enusCultureFormat);
 
 		/// <summary>Gets the last price.</summary>
-		public double LastPrice => Convert.ToDouble(this.CurrentPrice, this.enusCultureFormat);
+		public double LastPrice => Convert.ToDouble(CurrentPrice, enusCultureFormat);
 
 		/// <summary>Gets or sets the low price.</summary>
 		[JsonPropertyName("l")]
 		public string LowPrice { get; set; }
 
 		/// <summary>Gets the 24hr low price.</summary>
-		public double LowPrice24h => Convert.ToDouble(this.LowPrice, this.enusCultureFormat);
-
-		/// <summary>Gets or sets the price change percent.</summary>
-		[JsonPropertyName("P")]
-		public string Percent { get; set; }
+		public double LowPrice24h => Convert.ToDouble(LowPrice, enusCultureFormat);
 
 		/// <summary>Gets or sets the price change.</summary>
 		[JsonPropertyName("p")]
 		public string PChange { get; set; }
 
-		/// <summary>Gets the price change.</summary>
-		public double PriceChange => Convert.ToDouble(this.PChange, this.enusCultureFormat);
+		/// <summary>Gets or sets the price change percent.</summary>
+		[JsonPropertyName("P")]
+		public string Percent { get; set; }
 
 		/// <summary>Gets the 24hr price change percent.</summary>
-		public double Price24hPercent => Convert.ToDouble(this.Percent, this.enusCultureFormat);
+		public double Price24hPercent => Convert.ToDouble(Percent, enusCultureFormat);
+
+		/// <summary>Gets the price change.</summary>
+		public double PriceChange => Convert.ToDouble(PChange, enusCultureFormat);
 
 		/// <summary>Gets or sets the symbol.</summary>
 		[JsonPropertyName("s")]

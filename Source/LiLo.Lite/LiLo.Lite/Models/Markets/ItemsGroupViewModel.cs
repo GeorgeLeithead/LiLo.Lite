@@ -16,7 +16,7 @@ namespace LiLo.Lite.Models.Markets
 		public ItemsGroupViewModel(string name, IEnumerable<ItemViewModel> items)
 			: base(items)
 		{
-			this.Name = name;
+			Name = name;
 		}
 
 		/// <summary>Gets or sets the item group name.</summary>

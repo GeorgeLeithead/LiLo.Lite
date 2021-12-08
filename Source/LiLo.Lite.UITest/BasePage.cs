@@ -14,8 +14,8 @@ namespace LiLo.Lite.UITest
 		/// <summary>Initialises a new instance of the <see cref="BasePage"/> class.</summary>
 		protected BasePage()
 		{
-			this.AssertOnPage(TimeSpan.FromSeconds(30));
-			_ = this.App.Screenshot("On " + this.GetType().Name);
+			AssertOnPage(TimeSpan.FromSeconds(30));
+			_ = App.Screenshot("On " + GetType().Name);
 		}
 
 		/// <summary>Gets the main gateway to interact with an app. This interface contains shared functionality between Xamarin.UITest.Android.AndroidApp and Xamarin.UITest.iOS.iOSApp.</summary>
@@ -34,14 +34,14 @@ namespace LiLo.Lite.UITest
 		/// <param name="timeout">Time to wait before the assertion fails.</param>
 		protected void AssertOnPage(TimeSpan? timeout = default)
 		{
-			string message = "Unable to verify on page: " + this.GetType().Name;
+			string message = "Unable to verify on page: " + GetType().Name;
 			if (timeout == null)
 			{
-				Assert.IsNotEmpty(this.App.Query(this.Trait.Current), message);
+				Assert.IsNotEmpty(App.Query(Trait.Current), message);
 			}
 			else
 			{
-				Assert.DoesNotThrow(() => this.App.WaitForElement(this.Trait.Current, timeout: timeout), message);
+				Assert.DoesNotThrow(() => App.WaitForElement(Trait.Current, timeout: timeout), message);
 			}
 		}
 
@@ -50,8 +50,8 @@ namespace LiLo.Lite.UITest
 		protected void WaitForPageToLeave(TimeSpan? timeout = default)
 		{
 			timeout ??= TimeSpan.FromSeconds(5);
-			string message = "Unable to verify *not* on page: " + this.GetType().Name;
-			Assert.DoesNotThrow(() => this.App.WaitForNoElement(this.Trait.Current, timeout: timeout), message);
+			string message = "Unable to verify *not* on page: " + GetType().Name;
+			Assert.DoesNotThrow(() => App.WaitForNoElement(Trait.Current, timeout: timeout), message);
 		}
 	}
 }

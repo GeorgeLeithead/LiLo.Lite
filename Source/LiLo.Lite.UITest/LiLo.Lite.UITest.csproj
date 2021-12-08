@@ -48,15 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Acr.UserDialogs">
-      <Version>7.2.0.534</Version>
+      <Version>7.2.0.561</Version>
     </PackageReference>
     <PackageReference Include="Resizetizer.NT">
       <Version>0.3.0</Version>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="StyleCop.Analyzers">
-      <Version>1.1.118</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
@@ -64,7 +59,7 @@
       <Version>5.0.0.2244</Version>
     </PackageReference>
     <PackageReference Include="NUnit" Version="3.13.2" />
-    <PackageReference Include="Xamarin.UITest" Version="3.2.3" />
+    <PackageReference Include="Xamarin.UITest" Version="3.2.4" />
     <PackageReference Include="NUnit3TestAdapter" Version="4.1.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
@@ -77,10 +72,6 @@
     <Compile Include="Pages\HomePage.cs" />
     <Compile Include="PlatformQuery.cs" />
     <Compile Include="Tests\Home.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <AdditionalFiles Include="..\LiLo.Lite\stylecop.json" Link="stylecop.json" />
-    <AdditionalFiles Include="..\LiLo.Lite\Settings.StyleCop" Link="Settings.StyleCop" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\LiLo.Lite\.editorconfig">

@@ -16,7 +16,7 @@ namespace LiLo.Lite
 		/// <summary>Initialises a new instance of the <see cref="AppShell"/> class.</summary>
 		public AppShell()
 		{
-			this.InitializeComponent();
+			InitializeComponent();
 
 			Routing.RegisterRoute(Constants.Navigation.Paths.Chart, typeof(ChartView));
 			Routing.RegisterRoute(Constants.Navigation.Paths.Settings, typeof(SettingsView));

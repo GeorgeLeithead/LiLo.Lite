@@ -18,15 +18,15 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets a value indicating whether item is being dragged.</summary>
 		public bool IsBeingDragged
 		{
-			get => this.isBeingDragged;
-			set => this.SetProperty(ref this.isBeingDragged, value);
+			get => isBeingDragged;
+			set => SetProperty(ref isBeingDragged, value);
 		}
 
 		/// <summary>Gets or sets a value indicating whether item being dragged is over.</summary>
 		public bool IsBeingDraggedOver
 		{
-			get => this.isBeingDraggedOver;
-			set => this.SetProperty(ref this.isBeingDraggedOver, value);
+			get => isBeingDraggedOver;
+			set => SetProperty(ref isBeingDraggedOver, value);
 		}
 
 		/// <summary>Gets or sets the symbol.</summary>

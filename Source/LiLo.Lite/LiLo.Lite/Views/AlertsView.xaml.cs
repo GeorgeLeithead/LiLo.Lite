@@ -16,7 +16,7 @@ namespace LiLo.Lite.Views
 		/// <summary>Initialises a new instance of the <see cref="AlertsView"/> class.</summary>
 		public AlertsView()
 		{
-			this.InitializeComponent();
+			InitializeComponent();
 		}
 
 		/// <summary>Handle the device back button being pressed.</summary>

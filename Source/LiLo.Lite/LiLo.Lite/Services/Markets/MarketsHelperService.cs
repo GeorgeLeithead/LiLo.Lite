@@ -4,14 +4,14 @@
 
 namespace LiLo.Lite.Services.Markets
 {
-	using System;
-	using System.Collections.Generic;
-	using System.Text.Json;
-	using System.Threading.Tasks;
 	using LiLo.Lite.Models.BinanceModels;
 	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.Services.Dialog;
 	using LiLo.Lite.Services.LocalNotification;
+	using System;
+	using System.Collections.Generic;
+	using System.Text.Json;
+	using System.Threading.Tasks;
 	using WebSocketSharp;
 	using Xamarin.CommunityToolkit.ObjectModel;
 	using Xamarin.Forms;
@@ -25,17 +25,17 @@ namespace LiLo.Lite.Services.Markets
 		/// <summary>Initialises a new instance of the <see cref="MarketsHelperService" /> class.</summary>
 		public MarketsHelperService()
 		{
-			this.MarketsList = new ObservableRangeCollection<MarketModel>();
+			MarketsList = new ObservableRangeCollection<MarketModel>();
 		}
 
 		/// <summary>Gets the dialogue service.</summary>
-		public IDialogService DialogService => this.dialogService ??= DependencyService.Resolve<DialogService>();
+		public IDialogService DialogService => dialogService ??= DependencyService.Resolve<DialogService>();
 
 		/// <summary>Gets or sets an observable list of markets.</summary>
 		public ObservableRangeCollection<MarketModel> MarketsList { get; set; }
 
 		/// <summary>Gets the local notification manager.</summary>
-		public INotificationManager NotificationManager => this.notificationManager ??= DependencyService.Get<INotificationManager>();
+		public INotificationManager NotificationManager => notificationManager ??= DependencyService.Get<INotificationManager>();
 
 		/// <summary>Gets or sets an list of markets.</summary>
 		public List<MarketModel> SourceMarketsList { get; set; } = new List<MarketModel>();
@@ -54,12 +54,12 @@ namespace LiLo.Lite.Services.Markets
 			_ = await Task.Factory.StartNew(async () =>
 			{
 				IEnumerable<MarketModel> markets = DataStore.GetMarketsForFeed();
-				this.MarketsList.Clear();
-				this.SourceMarketsList.Clear();
+				MarketsList.Clear();
+				SourceMarketsList.Clear();
 				foreach (MarketModel market in markets)
 				{
-					this.MarketsList.Add(market);
-					this.SourceMarketsList.Add(market);
+					MarketsList.Add(market);
+					SourceMarketsList.Add(market);
 				}
 
 				await Task.Delay(1);
@@ -91,11 +91,11 @@ namespace LiLo.Lite.Services.Markets
 			{
 				try
 				{
-					await this.GetMessageType(e.Data);
+					await GetMessageType(e.Data);
 				}
 				catch (Exception ex)
 				{
-					await this.DialogService.ShowToastAsync(ex.Message);
+					await DialogService.ShowToastAsync(ex.Message);
 				}
 			}
 		}
@@ -113,8 +113,8 @@ namespace LiLo.Lite.Services.Markets
 			BinanceTickerModel binanceStream = JsonSerializer.Deserialize<BinanceTickerModel>(message);
 			if (binanceStream.Data != null)
 			{
-				await BinanceTickerDataModel.UpdateMarketList(binanceStream.Data, this.MarketsList);
-				await PriceNotifications.SendNotification(binanceStream.Data, this.NotificationManager);
+				await BinanceTickerDataModel.UpdateMarketList(binanceStream.Data, MarketsList);
+				await PriceNotifications.SendNotification(binanceStream.Data, NotificationManager);
 			}
 
 			_ = await Task.FromResult(true);

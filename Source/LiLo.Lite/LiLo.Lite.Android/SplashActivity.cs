@@ -13,12 +13,12 @@
 
 namespace LiLo.Lite.Droid
 {
-	using System.Threading.Tasks;
 	using Android.App;
 	using Android.Content;
 	using Android.OS;
 	using Android.Util;
 	using AndroidX.AppCompat.App;
+	using System.Threading.Tasks;
 
 	/// <summary>Splash screen activity.</summary>
 	[Activity(Theme = "@style/MainTheme.Splash", MainLauncher = true, NoHistory = true)]
@@ -37,7 +37,7 @@ namespace LiLo.Lite.Droid
 		protected override void OnResume()
 		{
 			base.OnResume();
-			Task startupWork = new Task(() => { this.SimulateStartup(); });
+			Task startupWork = new Task(() => { SimulateStartup(); });
 			startupWork.Start();
 		}
 
@@ -47,7 +47,7 @@ namespace LiLo.Lite.Droid
 			_ = Log.Debug(TAG, "Performing some start-up work that takes a bit of time.");
 			await Task.Delay(500); // Simulate a bit of start-up work.
 			_ = Log.Debug(TAG, "Start-up work is finished - starting MainActivity.");
-			this.StartActivity(new Intent(Application.Context, typeof(MainActivity)));
+			StartActivity(new Intent(Application.Context, typeof(MainActivity)));
 		}
 	}
 }

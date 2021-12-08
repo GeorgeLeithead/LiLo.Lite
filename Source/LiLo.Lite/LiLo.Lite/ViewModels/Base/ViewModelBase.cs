@@ -4,10 +4,10 @@
 
 namespace LiLo.Lite.ViewModels.Base
 {
-	using System.Runtime.Serialization;
 	using LiLo.Lite.Services.Dialog;
 	using LiLo.Lite.Services.Markets;
 	using LiLo.Lite.Services.Sockets;
+	using System.Runtime.Serialization;
 	using Xamarin.Forms;
 	using Xamarin.Forms.Internals;
 
@@ -33,33 +33,33 @@ namespace LiLo.Lite.ViewModels.Base
 		}
 
 		/// <summary>Gets the dialogue service.</summary>
-		public IDialogService DialogService => this.dialogService ??= DependencyService.Resolve<DialogService>();
+		public IDialogService DialogService => dialogService ??= DependencyService.Resolve<DialogService>();
 
 		/// <summary>Gets or sets a value indicating whether the view is busy.</summary>
 		public bool IsBusy
 		{
-			get => this.isBusy;
+			get => isBusy;
 			set
 			{
-				this.isBusy = value;
-				this.OnPropertyChanged(nameof(this.IsBusy));
+				isBusy = value;
+				OnPropertyChanged(nameof(IsBusy));
 			}
 		}
 
 		/// <summary>Gets the markets helper service.</summary>
-		public MarketsHelperService MarketsHelperService => this.marketsHelperService ??= DependencyService.Resolve<MarketsHelperService>();
+		public MarketsHelperService MarketsHelperService => marketsHelperService ??= DependencyService.Resolve<MarketsHelperService>();
 
 		/// <summary>Gets the sockets service.</summary>
-		public ISocketsService SocketsService => this.socketsService ??= DependencyService.Resolve<SocketsService>();
+		public ISocketsService SocketsService => socketsService ??= DependencyService.Resolve<SocketsService>();
 
 		/// <summary>gets or sets a value for the view title.</summary>
 		public string Title
 		{
-			get => this.title;
+			get => title;
 			set
 			{
-				this.title = value;
-				this.OnPropertyChanged(nameof(this.Title));
+				title = value;
+				OnPropertyChanged(nameof(Title));
 			}
 		}
 	}

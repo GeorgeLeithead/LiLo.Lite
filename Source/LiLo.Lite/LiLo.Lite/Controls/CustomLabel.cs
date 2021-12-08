@@ -17,8 +17,8 @@ namespace LiLo.Lite.Controls
 		/// <summary>Gets or sets a value indicating whether is selected.</summary>
 		public bool IsSelected
 		{
-			get => (bool)this.GetValue(IsSelectedProperty);
-			set => this.SetValue(IsSelectedProperty, value);
+			get => (bool)GetValue(IsSelectedProperty);
+			set => SetValue(IsSelectedProperty, value);
 		}
 	}
 }
