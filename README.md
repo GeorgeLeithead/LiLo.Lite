@@ -59,7 +59,7 @@ The LiLo.Lite mobile application is currently available for these platforms:
 - Binance Coin (BNB)
 - Cardano (ADA)
 - Polkadot (DOT)
-- XRP (XRP)
+- Ripple (XRP)
 - Litecoin (LTC)
 - Chainlink (LINK)
 - Bitcoin Cash (BCH)
@@ -68,25 +68,25 @@ The LiLo.Lite mobile application is currently available for these platforms:
 - Dogecoin (DOGE)
 - NEM (XEM)
 - Cosmos (ATOM)
-- Aave (AAVE)
+- AAVE
 - Solana (SOL)
 - Monero (XMR)
-- EOS (EOS)
+- EOS
 - Tron (TRX)
 - MIOTA (IOTA)
 - Theta Network (THETA)
 - Synthetix Network Token (SNX)
-- NEO (NEO)
+- NEO
 - Tezos (XTZ)
 - Terra (LUNA)
 - VeChain (VET)
 - FTX Token (FTT)
-- Dash (DASH)
+- DASH
 - The Graph (GRT)
 - Avalanche (AVAX)
 - Binance USD (BUSD)
 - Kasuma (KSM)
-- Sushi (SUSHI)
+- SUSHI
 - Maker (MKR)
 - Elrond (EGLD)
 - FileCoin (FIL)
@@ -97,8 +97,8 @@ The LiLo.Lite mobile application is currently available for these platforms:
 - ZCash (ZEC)
 - Etherium Classic (ETC)
 - THORChain (RUNE)
-- Near (NEAR)
-- Waves (WAVES)
+- NEAR
+- WAVES
 - Stacks (STX)
 - Hadera Hashgraph (HBAR)
 - BitTirrent (BTT)
@@ -110,7 +110,7 @@ The LiLo.Lite mobile application is currently available for these platforms:
 - Loopring (LRC)
 - OMG Network (OMG)
 - Horizen (ZEN)
-- Qtum (QTUM)
+- QTUM
 - Holo (HOT)
 - Enjin Coin (ENJ)
 - Curve DAO Token (CRV)
@@ -120,17 +120,16 @@ The LiLo.Lite mobile application is currently available for these platforms:
 - The Sandbox (SAND)
 - Decentraland (MANA)
 - Helium (HNT)
-- Flow (FLOW)
+- FLOW
 - Klaytn (KLAY)
 - Harmony (ONE)
 - Arweave (AR)
-- Amp (AMP)
+- AMP
 - eCash (XEC)
 - Quant (QNT)
 - Theta Fuel (TFUEL)
-- Celo (CELO)
+- CELO
 - IoTeX (IOTX)
-
 
 ## Social contact:
 - [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/LiLoMobileApp.svg?style=social&label=Follow%20%40LiLoMobileApp)](https://twitter.com/LiLoMobileApp)
