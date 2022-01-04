@@ -23,6 +23,8 @@ namespace LiLo.Lite.ViewModels
 		private IAsyncCommand goToSettingsCommand;
 		private int gridItemsLayoutSpan = 1;
 
+		private bool isSearchVisible = false;
+
 		/// <summary>Observable list of markets.</summary>
 		private ObservableRangeCollection<MarketModel> marketsList;
 
@@ -37,6 +39,7 @@ namespace LiLo.Lite.ViewModels
 			FavouritesEnabled = Preferences.Get(Constants.Preferences.Favourites.FavouritesEnabled, Constants.Preferences.Favourites.FavouritesEnabledDefaultValue);
 			RetryButtonClicked = new AsyncCommand(Init);
 			SwipeItemAlertCommand = new Command<MarketModel>(OnSwipeItemAlert);
+			ShowSearchCommand = new Command(ShowSearch);
 			_ = Init().ConfigureAwait(false);
 		}
 
@@ -60,6 +63,20 @@ namespace LiLo.Lite.ViewModels
 				{
 					gridItemsLayoutSpan = value;
 					OnPropertyChanged(nameof(GridItemsLayoutSpan));
+				}
+			}
+		}
+
+		/// <summary>Gets or sets the search visibility.</summary>
+		public bool IsSearchVisible
+		{
+			get => isSearchVisible;
+			set
+			{
+				if (value != isSearchVisible)
+				{
+					isSearchVisible = value;
+					OnPropertyChanged(nameof(IsSearchVisible));
 				}
 			}
 		}
@@ -96,6 +113,9 @@ namespace LiLo.Lite.ViewModels
 			}
 		}
 
+		/// <summary>Gets a show search command.</summary>
+		public ICommand ShowSearchCommand { get; private set; }
+
 		/// <summary>Gets an swipe item Alert command.</summary>
 		public ICommand SwipeItemAlertCommand { get; private set; }
 
@@ -130,19 +150,20 @@ namespace LiLo.Lite.ViewModels
 					  }
 					  catch (HttpRequestException ex)
 					  {
-						  _ = DialogService.ShowAlertAsync(ex.Message, "Markets list error", "Dismiss");
+						  _ = DialogService.ShowAlertAsync(ex.Message, AppResources.TitleMarketsListError, AppResources.DismissButton);
 					  }
 				  }
 				  else
 				  {
-					  _ = DialogService.ShowAlertAsync("No network access!", "Network error", "Dismiss");
+					  _ = DialogService.ShowAlertAsync(AppResources.ErrorNoNetwork, AppResources.TitleNetworkError, AppResources.DismissButton);
 				  }
 
-				  IsBusy = false;
 				  if (!string.IsNullOrEmpty(Symbol))
 				  {
 					  OnPropertyChanged(nameof(Symbol));
 				  }
+
+				  IsBusy = false;
 			  });
 		}
 
@@ -156,6 +177,11 @@ namespace LiLo.Lite.ViewModels
 		private void OnSwipeItemAlert(MarketModel item)
 		{
 			_ = Shell.Current.GoToAsync($"{Constants.Navigation.Paths.Alert}?symbol={item.SymbolString}");
+		}
+
+		private void ShowSearch()
+		{
+			IsSearchVisible = !isSearchVisible;
 		}
 	}
 }

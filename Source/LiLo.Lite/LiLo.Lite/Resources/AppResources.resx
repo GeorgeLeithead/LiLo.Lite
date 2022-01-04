@@ -120,6 +120,15 @@
   <data name="AlertsComingSoonLabel" xml:space="preserve">
     <value>Create a new alert...(coming soon)</value>
   </data>
+  <data name="DismissButton" xml:space="preserve">
+    <value>Dismiss</value>
+  </data>
+  <data name="ErrorNoMarkets" xml:space="preserve">
+    <value>No data found!</value>
+  </data>
+  <data name="ErrorNoNetwork" xml:space="preserve">
+    <value>No Network Access!</value>
+  </data>
   <data name="ExitModalCancelText" xml:space="preserve">
     <value>Cancel</value>
   </data>
@@ -140,6 +149,9 @@
   </data>
   <data name="SearchBarPlaceholder" xml:space="preserve">
     <value>Search...</value>
+  </data>
+  <data name="SearchIconText" xml:space="preserve">
+    <value>Search</value>
   </data>
   <data name="SettingsChartingLabelBarStyle" xml:space="preserve">
     <value>Bar Style</value>
@@ -196,6 +208,12 @@ Please contact us on the social platform(s) below.  Please include the applicati
   </data>
   <data name="SettingsTwitter" xml:space="preserve">
     <value>https://twitter.com/LiLoMobileApp</value>
+  </data>
+  <data name="TitleMarketsListError" xml:space="preserve">
+    <value>Markets list error</value>
+  </data>
+  <data name="TitleNetworkError" xml:space="preserve">
+    <value>Network Error</value>
   </data>
   <data name="TradingViewPage" xml:space="preserve">
     <value>&lt;html&gt;
@@ -265,7 +283,7 @@ iframe.body {
     <value>Manage Favourites</value>
   </data>
   <data name="ViewTitleMarkets" xml:space="preserve">
-    <value>Markets</value>
+    <value>Cryptoassets</value>
   </data>
   <data name="ViewTitleSettings" xml:space="preserve">
     <value>Settings</value>

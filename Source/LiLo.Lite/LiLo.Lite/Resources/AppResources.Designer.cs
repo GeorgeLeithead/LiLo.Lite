@@ -19,7 +19,7 @@ namespace LiLo.Lite.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class AppResources {
@@ -66,6 +66,33 @@ namespace LiLo.Lite.Resources {
         public static string AlertsComingSoonLabel {
             get {
                 return ResourceManager.GetString("AlertsComingSoonLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dismiss.
+        /// </summary>
+        public static string DismissButton {
+            get {
+                return ResourceManager.GetString("DismissButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No data found!.
+        /// </summary>
+        public static string ErrorNoMarkets {
+            get {
+                return ResourceManager.GetString("ErrorNoMarkets", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No Network Access!.
+        /// </summary>
+        public static string ErrorNoNetwork {
+            get {
+                return ResourceManager.GetString("ErrorNoNetwork", resourceCulture);
             }
         }
         
@@ -129,6 +156,15 @@ namespace LiLo.Lite.Resources {
         public static string SearchBarPlaceholder {
             get {
                 return ResourceManager.GetString("SearchBarPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search.
+        /// </summary>
+        public static string SearchIconText {
+            get {
+                return ResourceManager.GetString("SearchIconText", resourceCulture);
             }
         }
         
@@ -297,6 +333,24 @@ namespace LiLo.Lite.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Markets list error.
+        /// </summary>
+        public static string TitleMarketsListError {
+            get {
+                return ResourceManager.GetString("TitleMarketsListError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Network Error.
+        /// </summary>
+        public static string TitleNetworkError {
+            get {
+                return ResourceManager.GetString("TitleNetworkError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &lt;html&gt;
         ///&lt;body class=&quot;X1X&quot;&gt;
         ///&lt;style type=&quot;text/css&quot;&gt;
@@ -357,7 +411,7 @@ namespace LiLo.Lite.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Markets.
+        ///   Looks up a localized string similar to Cryptoassets.
         /// </summary>
         public static string ViewTitleMarkets {
             get {

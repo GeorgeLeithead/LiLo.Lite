@@ -35,6 +35,7 @@ namespace LiLo.Lite.Views
 		/// <inheritdoc/>
 		protected override void OnAppearing()
 		{
+			var x = DeviceDisplay.MainDisplayInfo.Density;
 			base.OnAppearing();
 			SearchBar.Unfocus();
 			if (VM.FavouritesList != Preferences.Get(Constants.Preferences.Favourites.FavouritesCategory, Constants.Preferences.Favourites.FavouritesCategoryDefaultValue) || VM.FavouritesEnabled != Preferences.Get(Constants.Preferences.Favourites.FavouritesEnabled, Constants.Preferences.Favourites.FavouritesEnabledDefaultValue))
@@ -106,6 +107,7 @@ namespace LiLo.Lite.Views
 			if (string.IsNullOrWhiteSpace(searchTerm))
 			{
 				searchTerm = string.Empty;
+				VM.IsSearchVisible = false;
 			}
 
 			searchTerm = searchTerm.ToUpperInvariant();

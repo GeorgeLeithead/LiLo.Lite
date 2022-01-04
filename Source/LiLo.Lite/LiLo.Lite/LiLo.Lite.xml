@@ -467,6 +467,21 @@
               Looks up a localized string similar to Create a new alert...(coming soon).
             </summary>
         </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.DismissButton">
+            <summary>
+              Looks up a localized string similar to Dismiss.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.ErrorNoMarkets">
+            <summary>
+              Looks up a localized string similar to No data found!.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.ErrorNoNetwork">
+            <summary>
+              Looks up a localized string similar to No Network Access!.
+            </summary>
+        </member>
         <member name="P:LiLo.Lite.Resources.AppResources.ExitModalCancelText">
             <summary>
               Looks up a localized string similar to Cancel.
@@ -500,6 +515,11 @@
         <member name="P:LiLo.Lite.Resources.AppResources.SearchBarPlaceholder">
             <summary>
               Looks up a localized string similar to Search....
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SearchIconText">
+            <summary>
+              Looks up a localized string similar to Search.
             </summary>
         </member>
         <member name="P:LiLo.Lite.Resources.AppResources.SettingsChartingLabelBarStyle">
@@ -594,6 +614,16 @@
               Looks up a localized string similar to https://twitter.com/LiLoMobileApp.
             </summary>
         </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.TitleMarketsListError">
+            <summary>
+              Looks up a localized string similar to Markets list error.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.TitleNetworkError">
+            <summary>
+              Looks up a localized string similar to Network Error.
+            </summary>
+        </member>
         <member name="P:LiLo.Lite.Resources.AppResources.TradingViewPage">
              <summary>
                Looks up a localized string similar to &lt;html&gt;
@@ -640,7 +670,7 @@
         </member>
         <member name="P:LiLo.Lite.Resources.AppResources.ViewTitleMarkets">
             <summary>
-              Looks up a localized string similar to Markets.
+              Looks up a localized string similar to Cryptoassets.
             </summary>
         </member>
         <member name="P:LiLo.Lite.Resources.AppResources.ViewTitleSettings">
@@ -660,10 +690,6 @@
         <member name="M:LiLo.Lite.Services.DataStore.GetMarketsGroupedByFavourites">
             <summary>Get markets grouped by favourites.</summary>
             <returns>IEnumerable{ItemViewModel} of categorised markets.</returns>
-        </member>
-        <member name="M:LiLo.Lite.Services.DataStore.GetMarketsForFeed">
-            <summary>Get ordered markets feed list.</summary>
-            <returns>IEnumerable{MarketsModel} ordered by rank.</returns>
         </member>
         <member name="M:LiLo.Lite.Services.DataStore.MarketsWss">
             <summary>Gets the markets WSS stream.</summary>
@@ -1030,6 +1056,9 @@
             <summary>Gets or sets the items layout span.</summary>
             <remarks>To handle landscape and portrait orientation.</remarks>
         </member>
+        <member name="P:LiLo.Lite.ViewModels.HomeViewModel.IsSearchVisible">
+            <summary>Gets or sets the search visibility.</summary>
+        </member>
         <member name="P:LiLo.Lite.ViewModels.HomeViewModel.MarketsList">
             <summary>Gets or sets a collection of values to be displayed in the markets view.</summary>
         </member>
@@ -1038,6 +1067,9 @@
         </member>
         <member name="P:LiLo.Lite.ViewModels.HomeViewModel.SelectedItem">
             <summary>Gets or sets the selected item.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.HomeViewModel.ShowSearchCommand">
+            <summary>Gets a show search command.</summary>
         </member>
         <member name="P:LiLo.Lite.ViewModels.HomeViewModel.SwipeItemAlertCommand">
             <summary>Gets an swipe item Alert command.</summary>

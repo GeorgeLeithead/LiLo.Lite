@@ -4,6 +4,7 @@
 
 namespace LiLo.Lite.Services.Markets
 {
+	using LiLo.Lite.Helpers;
 	using LiLo.Lite.Models.BinanceModels;
 	using LiLo.Lite.Models.Markets;
 	using LiLo.Lite.Services.Dialog;
@@ -14,6 +15,7 @@ namespace LiLo.Lite.Services.Markets
 	using System.Threading.Tasks;
 	using WebSocketSharp;
 	using Xamarin.CommunityToolkit.ObjectModel;
+	using Xamarin.Essentials;
 	using Xamarin.Forms;
 
 	/// <summary>Markets helper service.</summary>
@@ -53,7 +55,12 @@ namespace LiLo.Lite.Services.Markets
 		{
 			_ = await Task.Factory.StartNew(async () =>
 			{
-				IEnumerable<MarketModel> markets = DataStore.GetMarketsForFeed();
+				IEnumerable<MarketModel> markets = DataStore.GetExternalMarketsFeed();
+				if (Preferences.Get(Constants.Preferences.Favourites.FavouritesEnabled, Constants.Preferences.Favourites.FavouritesEnabledDefaultValue))
+				{
+					markets = DataStore.GetFavouriteMarkets();
+				}
+
 				MarketsList.Clear();
 				SourceMarketsList.Clear();
 				foreach (MarketModel market in markets)
