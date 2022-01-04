@@ -28,6 +28,9 @@ jobs:
         distribution: 'adopt'
         java-version: '11'
         check-latest: true
+    - uses: nuget/setup-nuget@v1
+      with:
+        nuget-version: 5.6.x
     - name: Android
       run: |
         cd source
