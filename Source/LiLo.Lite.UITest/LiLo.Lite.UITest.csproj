@@ -51,7 +51,7 @@
       <Version>7.2.0.562</Version>
     </PackageReference>
     <PackageReference Include="Resizetizer.NT">
-      <Version>0.2.0</Version>
+      <Version>0.3.0</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
