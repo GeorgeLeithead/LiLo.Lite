@@ -1,0 +1,29 @@
+name: Grading workflow
+on:
+  push:
+    paths:
+      - ".gitignore"
+  workflow_dispatch:
+
+jobs:
+  grade-learner:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Grade gitignore activity
+        id: events
+        uses: ./.github/actions/gitignore-parser-action
+
+      - name: Grading results
+        uses: githubtraining/looking-glass-action@v0.2.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          feedback: ${{ steps.events.outputs.reports }}
+
+  troubleshoot-activity:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: troubleshooting steps
+        run: echo "If you're stuck, this documentation may be helpful; https://git-scm.com/docs/gitignore"

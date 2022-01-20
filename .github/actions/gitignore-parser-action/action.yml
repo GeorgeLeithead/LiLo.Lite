@@ -1,0 +1,6 @@
+name: gitignore parser
+author: githubtraining
+description: validation action for this exercise
+runs:
+  using: node12
+  main: "dist/index.js"
