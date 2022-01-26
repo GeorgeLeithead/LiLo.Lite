@@ -37,6 +37,8 @@
     <AndroidPackageFormat>apk</AndroidPackageFormat>
     <MandroidI18n />
     <AndroidSupportedAbis />
+    <AndroidTlsProvider>
+    </AndroidTlsProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>

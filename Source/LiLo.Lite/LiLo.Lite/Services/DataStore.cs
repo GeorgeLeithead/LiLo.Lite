@@ -6,12 +6,14 @@ namespace LiLo.Lite.Services
 {
 	using LiLo.Lite.Helpers;
 	using LiLo.Lite.Models.Markets;
+	using System;
 	using System.Collections.Generic;
 	using System.Linq;
 	using System.Net.Http;
 	using System.Text;
 	using System.Text.Json;
 	using Xamarin.Essentials;
+	using Xamarin.Forms;
 
 	/// <summary>Application data store.</summary>
 	public static class DataStore
@@ -52,66 +54,75 @@ namespace LiLo.Lite.Services
 			return marketsGroupedByFavourites;
 		}
 
-		/// <summary>Gets the markets WSS stream.</summary>
-		/// <returns>WSS stream.</returns>
-		internal static string MarketsWss()
-		{
-			StringBuilder marketsString = new();
-			_ = marketsString.Append(Constants.Sources.MarketFeed.WssData);
-			foreach (MarketModel market in marketsData)
-			{
-				_ = marketsString.Append(market.SymbolString.ToLower());
-				_ = marketsString.Append(Constants.Sources.MarketFeed.DataFeedSeparator);
-			}
-
-			string marketWss = marketsString.ToString();
-			if (marketWss.ToString().EndsWith("/"))
-			{
-				marketWss = marketWss[0..^1];
-			}
-
-			return marketWss;
-		}
-
 		internal static IEnumerable<MarketModel> GetExternalMarketsFeed()
 		{
 			string versionMarketsJsonFile = string.Format(Constants.Sources.MarketFeed.Versioned, Version);
 
 			try
 			{
+				string droidSource = null;
+				string iosSource = null;
 				HttpClientHandler httpClientHandler = new()
 				{
 					ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => { return true; }
 				};
 				using HttpClient client = new(httpClientHandler);
 				HttpResponseMessage response = client.GetAsync(versionMarketsJsonFile).Result; // Want to do this synchronously to ensure that we don't start anything else until this is complete!
+				if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+				{
+					response = client.GetAsync(Constants.Sources.MarketFeed.Default).Result; // Want to do this synchronously to ensure that we don't start anything else until this is complete!
+				}
+
 				if (response.IsSuccessStatusCode)
 				{
 					string marketsJson = response.Content.ReadAsStringAsync().Result;
 					if (!string.IsNullOrEmpty(marketsJson))
 					{
 						MarketsModel markets = JsonSerializer.Deserialize<MarketsModel>(marketsJson);
-						marketsData = markets.Markets.OrderBy(n => n.Rank).ToList();
-						return marketsData;
-					}
-				}
-				else
-				{
-					if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
-					{
-						response = client.GetAsync(Constants.Sources.MarketFeed.Default).Result; // Want to do this synchronously to ensure that we don't start anything else until this is complete!
-						if (response.IsSuccessStatusCode)
+						if (string.IsNullOrEmpty(markets.IconSourceDroid))
 						{
-							string marketsJson = response.Content.ReadAsStringAsync().Result;
-							if (!string.IsNullOrEmpty(marketsJson))
-							{
-								MarketsModel markets = JsonSerializer.Deserialize<MarketsModel>(marketsJson);
-								marketsData = markets.Markets.OrderBy(n => n.Rank).ToList();
-								return marketsData;
-							}
+							droidSource = Constants.Sources.Icons.DroidSource;
+							iosSource = Constants.Sources.Icons.IosSource;
 						}
+						else
+						{
+							droidSource = markets.IconSourceDroid;
+							iosSource = markets.IconSourceIos;
+						}
+
+						marketsData = markets.Markets.OrderBy(n => n.Rank).ToList();
 					}
 				}
+
+				if (marketsData.Count > 0)
+				{
+					string imageSource = null;
+					switch (Device.RuntimePlatform)
+					{
+						case Device.iOS:
+							imageSource = iosSource;
+							break;
+
+						case Device.UWP:
+							break;
+
+						default:
+							imageSource = droidSource;
+							break;
+					}
+
+					foreach (MarketModel market in marketsData)
+					{
+						market.SymbolImage = new UriImageSource
+						{
+							Uri = new Uri(string.Format(imageSource, market.SymbolString.ToLowerInvariant())),
+							CachingEnabled = true,
+							CacheValidity = TimeSpan.FromDays(Constants.Sources.Icons.CacheDuration)
+						};
+					}
+				}
+
+				return marketsData;
 			}
 			catch (HttpRequestException)
 			{
@@ -139,6 +150,27 @@ namespace LiLo.Lite.Services
 			}
 
 			return favouriteMarkets.ToList();
+		}
+
+		/// <summary>Gets the markets WSS stream.</summary>
+		/// <returns>WSS stream.</returns>
+		internal static string MarketsWss()
+		{
+			StringBuilder marketsString = new();
+			_ = marketsString.Append(Constants.Sources.MarketFeed.WssData);
+			foreach (MarketModel market in marketsData)
+			{
+				_ = marketsString.Append(market.SymbolString.ToLower());
+				_ = marketsString.Append(Constants.Sources.MarketFeed.DataFeedSeparator);
+			}
+
+			string marketWss = marketsString.ToString();
+			if (marketWss.ToString().EndsWith("/"))
+			{
+				marketWss = marketWss[0..^1];
+			}
+
+			return marketWss;
 		}
 	}
 }

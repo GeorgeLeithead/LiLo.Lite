@@ -4,9 +4,7 @@
 
 namespace LiLo.Lite.Models.Markets
 {
-	using LiLo.Lite.Helpers;
 	using LiLo.Lite.ViewModels.Base;
-	using System;
 	using System.Globalization;
 	using System.Runtime.Serialization;
 	using Xamarin.Forms;
@@ -213,26 +211,6 @@ namespace LiLo.Lite.Models.Markets
 				if (symbolString != value)
 				{
 					symbolString = value;
-					string imageSource = null;
-					if (Device.RuntimePlatform == Device.Android)
-					{
-						imageSource = string.Format(Constants.Sources.Icons.DroidSource, symbolString.ToLowerInvariant());
-					}
-					else if (Device.RuntimePlatform == Device.iOS)
-					{
-						imageSource = string.Format(Constants.Sources.Icons.IosSource, symbolString.ToLowerInvariant());
-					}
-					else if (Device.RuntimePlatform == Device.UWP)
-					{
-						// Not Yet supported!
-					}
-
-					SymbolImage = new UriImageSource
-					{
-						Uri = new Uri(imageSource),
-						CachingEnabled = true,
-						CacheValidity = TimeSpan.FromDays(Constants.Sources.Icons.CacheDuration)
-					};
 					OnPropertyChanged(nameof(SymbolString));
 				}
 			}

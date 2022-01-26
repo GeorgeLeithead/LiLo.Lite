@@ -458,6 +458,12 @@
         <member name="P:LiLo.Lite.Models.Markets.MarketsModel.Markets">
             <summary>Gets or sets an array of markets.</summary>
         </member>
+        <member name="P:LiLo.Lite.Models.Markets.MarketsModel.IconSourceDroid">
+            <summary>Gets or sets the icon source for Android.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.MarketsModel.IconSourceIos">
+            <summary>Gets or sets the icon source for IOS.</summary>
+        </member>
         <member name="T:LiLo.Lite.Models.Notifications.PriceAlertNotification">
             <summary>Price alert model.</summary>
         </member>
