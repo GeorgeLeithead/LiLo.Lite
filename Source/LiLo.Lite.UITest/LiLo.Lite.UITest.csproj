@@ -56,11 +56,11 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>5.0.0.2291</Version>
+      <Version>5.0.0.2337</Version>
     </PackageReference>
     <PackageReference Include="NUnit" Version="3.13.2" />
-    <PackageReference Include="Xamarin.UITest" Version="3.2.4" />
-    <PackageReference Include="NUnit3TestAdapter" Version="4.2.0">
+    <PackageReference Include="Xamarin.UITest" Version="3.2.5" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.2.1">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>

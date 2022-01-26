@@ -118,7 +118,7 @@
                                                 <Image
                                                     AutomationProperties.HelpText="Currency symbol icon."
                                                     AutomationProperties.Name="{Binding SymbolString, StringFormat='Icon for symbol {0}.', Mode=OneWay}"
-                                                    Source="{Binding SymbolString, StringFormat='{0}.png', Mode=OneWay}"
+                                                    Source="{Binding SymbolImage, Mode=OneWay}"
                                                     Style="{StaticResource SymbolImageStyle}" />
                                                 <Label
                                                     x:Name="SymbolStringLabel"

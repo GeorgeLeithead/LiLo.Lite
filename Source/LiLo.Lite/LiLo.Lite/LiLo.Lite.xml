@@ -208,6 +208,36 @@
         <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Settings.ThemeDefaultValue">
             <summary>User theme preference default value.</summary>
         </member>
+        <member name="T:LiLo.Lite.Helpers.Constants.Sources">
+            <summary>Sources for application files.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Helpers.Constants.Sources.Icons">
+            <summary>Source for icons.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Sources.Icons.DroidSource">
+            <summary>Android icon source.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Sources.Icons.IosSource">
+            <summary>IOS icon source.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Sources.Icons.CacheDuration">
+            <summary>Cache duration in days.</summary>
+        </member>
+        <member name="T:LiLo.Lite.Helpers.Constants.Sources.MarketFeed">
+            <summary>Source for market data feed.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Sources.MarketFeed.DataFeedSeparator">
+            <summary>Data feed separator.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Sources.MarketFeed.Default">
+            <summary>Default market feed.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Sources.MarketFeed.Versioned">
+            <summary>Versioned market feed.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Sources.MarketFeed.WssData">
+            <summary>Secure-WebSockets data feed.</summary>
+        </member>
         <member name="T:LiLo.Lite.Helpers.EnumerableHelpers">
             <summary>Enumerable helper.</summary>
         </member>
@@ -377,6 +407,9 @@
         <member name="F:LiLo.Lite.Models.Markets.MarketModel.price24hPercentString">
             <summary>24HR price percentage as string.</summary>
         </member>
+        <member name="F:LiLo.Lite.Models.Markets.MarketModel.symbolImage">
+            <summary>Currency symbol image.</summary>
+        </member>
         <member name="F:LiLo.Lite.Models.Markets.MarketModel.symbolString">
             <summary>Currency symbol as string.</summary>
         </member>
@@ -412,6 +445,9 @@
         </member>
         <member name="P:LiLo.Lite.Models.Markets.MarketModel.Rank">
             <summary>Gets or sets the market ranking for the symbol.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.MarketModel.SymbolImage">
+            <summary>Gets or sets the currency symbol image.</summary>
         </member>
         <member name="P:LiLo.Lite.Models.Markets.MarketModel.SymbolString">
             <summary>Gets or sets the currency Symbol as a string.</summary>

@@ -57,11 +57,11 @@ namespace LiLo.Lite.Services
 		internal static string MarketsWss()
 		{
 			StringBuilder marketsString = new();
-			_ = marketsString.Append("wss://stream.binance.com:9443/stream?streams=");
+			_ = marketsString.Append(Constants.Sources.MarketFeed.WssData);
 			foreach (MarketModel market in marketsData)
 			{
 				_ = marketsString.Append(market.SymbolString.ToLower());
-				_ = marketsString.Append("usdt@ticker/");
+				_ = marketsString.Append(Constants.Sources.MarketFeed.DataFeedSeparator);
 			}
 
 			string marketWss = marketsString.ToString();
@@ -75,8 +75,7 @@ namespace LiLo.Lite.Services
 
 		internal static IEnumerable<MarketModel> GetExternalMarketsFeed()
 		{
-			string defaultMarketsJsonFile = "https://raw.githubusercontent.com/GeorgeLeithead/LiLo.Markets/main/Markets.json";
-			string versionMarketsJsonFile = "https://raw.githubusercontent.com/GeorgeLeithead/LiLo.Markets/main/Markets" + Version + ".json";
+			string versionMarketsJsonFile = string.Format(Constants.Sources.MarketFeed.Versioned, Version);
 
 			try
 			{
@@ -100,7 +99,7 @@ namespace LiLo.Lite.Services
 				{
 					if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
 					{
-						response = client.GetAsync(defaultMarketsJsonFile).Result; // Want to do this synchronously to ensure that we don't start anything else until this is complete!
+						response = client.GetAsync(Constants.Sources.MarketFeed.Default).Result; // Want to do this synchronously to ensure that we don't start anything else until this is complete!
 						if (response.IsSuccessStatusCode)
 						{
 							string marketsJson = response.Content.ReadAsStringAsync().Result;

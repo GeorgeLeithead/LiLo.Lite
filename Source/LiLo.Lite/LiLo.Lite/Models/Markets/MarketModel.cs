@@ -4,9 +4,12 @@
 
 namespace LiLo.Lite.Models.Markets
 {
+	using LiLo.Lite.Helpers;
 	using LiLo.Lite.ViewModels.Base;
+	using System;
 	using System.Globalization;
 	using System.Runtime.Serialization;
+	using Xamarin.Forms;
 	using Xamarin.Forms.Internals;
 
 	/// <summary>Model for the markets information.</summary>
@@ -43,6 +46,9 @@ namespace LiLo.Lite.Models.Markets
 
 		/// <summary>24HR price percentage as string.</summary>
 		private string price24hPercentString;
+
+		/// <summary>Currency symbol image.</summary>
+		private UriImageSource symbolImage;
 
 		/// <summary>Currency symbol as string.</summary>
 		private string symbolString;
@@ -186,6 +192,17 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Gets or sets the market ranking for the symbol.</summary>
 		public int Rank { get; set; }
 
+		/// <summary>Gets or sets the currency symbol image.</summary>
+		public UriImageSource SymbolImage
+		{
+			get => symbolImage;
+			set
+			{
+				symbolImage = value;
+				OnPropertyChanged(nameof(SymbolImage));
+			}
+		}
+
 		/// <summary>Gets or sets the currency Symbol as a string.</summary>
 		[DataMember(Name = "symbol")]
 		public string SymbolString
@@ -196,6 +213,26 @@ namespace LiLo.Lite.Models.Markets
 				if (symbolString != value)
 				{
 					symbolString = value;
+					string imageSource = null;
+					if (Device.RuntimePlatform == Device.Android)
+					{
+						imageSource = string.Format(Constants.Sources.Icons.DroidSource, symbolString.ToLowerInvariant());
+					}
+					else if (Device.RuntimePlatform == Device.iOS)
+					{
+						imageSource = string.Format(Constants.Sources.Icons.IosSource, symbolString.ToLowerInvariant());
+					}
+					else if (Device.RuntimePlatform == Device.UWP)
+					{
+						// Not Yet supported!
+					}
+
+					SymbolImage = new UriImageSource
+					{
+						Uri = new Uri(imageSource),
+						CachingEnabled = true,
+						CacheValidity = TimeSpan.FromDays(Constants.Sources.Icons.CacheDuration)
+					};
 					OnPropertyChanged(nameof(SymbolString));
 				}
 			}

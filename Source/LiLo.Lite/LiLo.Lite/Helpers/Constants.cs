@@ -107,5 +107,38 @@ namespace LiLo.Lite.Helpers
 				public const int ThemeDefaultValue = 0;
 			}
 		}
+
+		/// <summary>Sources for application files.</summary>
+		public static class Sources
+		{
+			/// <summary>Source for icons.</summary>
+			public static class Icons
+			{
+				/// <summary>Android icon source.</summary>
+				public const string DroidSource = "https://www.internetwideworld.com/Images/Droid/drawable-xxxhdpi/{0}.png";
+
+				/// <summary>IOS icon source.</summary>
+				public const string IosSource = "https://www.internetwideworld.com/Images/iOS/{0}@3x.png";
+
+				/// <summary>Cache duration in days.</summary>
+				public const int CacheDuration = 30;
+			}
+
+			/// <summary>Source for market data feed.</summary>
+			public static class MarketFeed
+			{
+				/// <summary>Data feed separator.</summary>
+				public const string DataFeedSeparator = "usdt@ticker/";
+
+				/// <summary>Default market feed.</summary>
+				public const string Default = "https://raw.githubusercontent.com/GeorgeLeithead/LiLo.Markets/main/Markets.json";
+
+				/// <summary>Versioned market feed.</summary>
+				public const string Versioned = "https://raw.githubusercontent.com/GeorgeLeithead/LiLo.Markets/main/Markets{0}.json";
+
+				/// <summary>Secure-WebSockets data feed.</summary>
+				public const string WssData = "wss://stream.binance.com:9443/stream?streams=";
+			}
+		}
 	}
 }
