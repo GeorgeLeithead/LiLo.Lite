@@ -40,14 +40,15 @@ namespace LiLo.Lite.Services
 
 			foreach (string favourite in favourites.Where(f => !string.IsNullOrEmpty(f)))
 			{
-				marketsGroupedByFavourites.Add(new ItemViewModel { Category = Constants.Preferences.Favourites.FavouritesCategory, Symbol = favourite });
+				UriImageSource symbolImage = marketsAllList.FirstOrDefault(f => f.SymbolString == favourite).SymbolImage;
+				marketsGroupedByFavourites.Add(new ItemViewModel { Category = Constants.Preferences.Favourites.FavouritesCategory, Symbol = favourite, SymbolImage = symbolImage });
 			}
 
 			foreach (MarketModel marketItem in marketsAllList)
 			{
 				if (!favourites.Any(f => f == marketItem.SymbolString))
 				{
-					marketsGroupedByFavourites.Add(new ItemViewModel { Category = Constants.Preferences.Favourites.UnlovedCategory, Symbol = marketItem.SymbolString });
+					marketsGroupedByFavourites.Add(new ItemViewModel { Category = Constants.Preferences.Favourites.UnlovedCategory, Symbol = marketItem.SymbolString, SymbolImage = marketItem.SymbolImage });
 				}
 			}
 

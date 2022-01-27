@@ -5,6 +5,7 @@
 namespace LiLo.Lite.Models.Markets
 {
 	using Xamarin.CommunityToolkit.ObjectModel;
+	using Xamarin.Forms;
 
 	/// <summary>Favourite market model.</summary>
 	public class ItemViewModel : ObservableObject
@@ -31,5 +32,8 @@ namespace LiLo.Lite.Models.Markets
 
 		/// <summary>Gets or sets the symbol.</summary>
 		public string Symbol { get; set; }
+
+		/// <summary>Gets or sets the symbol image.</summary>
+		public UriImageSource SymbolImage { get; set; }
 	}
 }

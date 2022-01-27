@@ -411,7 +411,7 @@ namespace LiLo.Lite.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cryptoassets.
+        ///   Looks up a localized string similar to LiLo.Lite.
         /// </summary>
         public static string ViewTitleMarkets {
             get {

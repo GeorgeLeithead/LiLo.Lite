@@ -1,99 +1,99 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-	x:Class="LiLo.Lite.Views.FavouritesView"
-	xmlns="http://xamarin.com/schemas/2014/forms"
-	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-	xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-	xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-	xmlns:models="clr-namespace:LiLo.Lite.Models.Markets"
-	xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
-	Title="{Binding Title, Mode=OneWay}"
-	x:DataType="vm:FavouritesViewModel"
-	Style="{StaticResource BasePage}"
-	Visual="Material"
-	mc:Ignorable="d">
+    x:Class="LiLo.Lite.Views.FavouritesView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="clr-namespace:LiLo.Lite.Models.Markets"
+    xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    Title="{Binding Title, Mode=OneWay}"
+    x:DataType="vm:FavouritesViewModel"
+    Style="{StaticResource BasePage}"
+    Visual="Material"
+    mc:Ignorable="d">
 
-	<ContentPage.BindingContext>
-		<vm:FavouritesViewModel />
-	</ContentPage.BindingContext>
+    <ContentPage.BindingContext>
+        <vm:FavouritesViewModel />
+    </ContentPage.BindingContext>
 
-	<ContentPage.Resources>
-		<ResourceDictionary>
-			<xct:InvertedBoolConverter x:Key="InvertedBoolConverter" />
-		</ResourceDictionary>
-	</ContentPage.Resources>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <xct:InvertedBoolConverter x:Key="InvertedBoolConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
-	<ContentPage.Content>
-		<Grid ColumnDefinitions="*" RowDefinitions="*">
-			<ActivityIndicator
-				Grid.Row="0"
-				d:IsRunning="True"
-				d:IsVisible="True"
-				HorizontalOptions="CenterAndExpand"
-				IsRunning="{Binding IsBusy}"
-				IsVisible="{Binding IsBusy}"
-				VerticalOptions="CenterAndExpand" />
-			<CollectionView
-				x:Name="MyFavourites"
-				Grid.Row="0"
-				IsGrouped="True"
-				IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}"
-				ItemsSource="{Binding FavouriteItems}"
-				Style="{StaticResource MarketsCollectionViewStyle}"
-				VerticalOptions="FillAndExpand"
-				VerticalScrollBarVisibility="Always"
-				WidthRequest="140">
-				<CollectionView.GroupHeaderTemplate>
-					<DataTemplate>
-						<Frame x:DataType="models:ItemsGroupViewModel" Style="{StaticResource DefaultFrameStyle}">
-							<Label
-								Style="{StaticResource SettingsViewStyle}"
-								Text="{Binding Name}"
-								WidthRequest="140" />
-						</Frame>
-					</DataTemplate>
-				</CollectionView.GroupHeaderTemplate>
+    <ContentPage.Content>
+        <Grid ColumnDefinitions="*" RowDefinitions="*">
+            <ActivityIndicator
+                Grid.Row="0"
+                d:IsRunning="True"
+                d:IsVisible="True"
+                HorizontalOptions="CenterAndExpand"
+                IsRunning="{Binding IsBusy}"
+                IsVisible="{Binding IsBusy}"
+                VerticalOptions="CenterAndExpand" />
+            <CollectionView
+                x:Name="MyFavourites"
+                Grid.Row="0"
+                IsGrouped="True"
+                IsVisible="{Binding IsBusy, Converter={StaticResource InvertedBoolConverter}}"
+                ItemsSource="{Binding FavouriteItems}"
+                Style="{StaticResource MarketsCollectionViewStyle}"
+                VerticalOptions="FillAndExpand"
+                VerticalScrollBarVisibility="Always"
+                WidthRequest="140">
+                <CollectionView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <Frame x:DataType="models:ItemsGroupViewModel" Style="{StaticResource DefaultFrameStyle}">
+                            <Label
+                                Style="{StaticResource SettingsViewStyle}"
+                                Text="{Binding Name}"
+                                WidthRequest="140" />
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.GroupHeaderTemplate>
 
-				<CollectionView.ItemTemplate>
-					<DataTemplate>
-						<StackLayout
-							x:DataType="models:ItemViewModel"
-							HorizontalOptions="Start"
-							Orientation="Horizontal"
-							Style="{StaticResource FavouritesStackLayout}"
-							VerticalOptions="Start"
-							WidthRequest="140">
-							<StackLayout.GestureRecognizers>
-								<DropGestureRecognizer
-									AllowDrop="True"
-									DragLeaveCommand="{Binding BindingContext.ItemDragLeave, Source={x:Reference MyFavourites}}"
-									DragLeaveCommandParameter="{Binding}"
-									DragOverCommand="{Binding BindingContext.ItemDraggedOver, Source={x:Reference MyFavourites}}"
-									DragOverCommandParameter="{Binding}"
-									DropCommand="{Binding BindingContext.ItemDropped, Source={x:Reference MyFavourites}}"
-									DropCommandParameter="{Binding}" />
-							</StackLayout.GestureRecognizers>
-							<Grid
-								BackgroundColor="Yellow"
-								ColumnDefinitions="*"
-								IsVisible="{Binding IsBeingDraggedOver}"
-								RowDefinitions="*" />
-							<Image
-								AutomationProperties.Name="{Binding Symbol, StringFormat='Icon for symbol {0}.'}"
-								Source="{Binding Symbol, StringFormat='{0}.png'}"
-								Style="{StaticResource FavouritesSymbolImageStyle}">
-								<Image.GestureRecognizers>
-									<DragGestureRecognizer
-										CanDrag="True"
-										DragStartingCommand="{Binding BindingContext.ItemDragged, Source={x:Reference MyFavourites}}"
-										DragStartingCommandParameter="{Binding}" />
-								</Image.GestureRecognizers>
-							</Image>
-						</StackLayout>
-					</DataTemplate>
-				</CollectionView.ItemTemplate>
-			</CollectionView>
-		</Grid>
-	</ContentPage.Content>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout
+                            x:DataType="models:ItemViewModel"
+                            HorizontalOptions="Start"
+                            Orientation="Horizontal"
+                            Style="{StaticResource FavouritesStackLayout}"
+                            VerticalOptions="Start"
+                            WidthRequest="140">
+                            <StackLayout.GestureRecognizers>
+                                <DropGestureRecognizer
+                                    AllowDrop="True"
+                                    DragLeaveCommand="{Binding BindingContext.ItemDragLeave, Source={x:Reference MyFavourites}}"
+                                    DragLeaveCommandParameter="{Binding}"
+                                    DragOverCommand="{Binding BindingContext.ItemDraggedOver, Source={x:Reference MyFavourites}}"
+                                    DragOverCommandParameter="{Binding}"
+                                    DropCommand="{Binding BindingContext.ItemDropped, Source={x:Reference MyFavourites}}"
+                                    DropCommandParameter="{Binding}" />
+                            </StackLayout.GestureRecognizers>
+                            <Grid
+                                BackgroundColor="Yellow"
+                                ColumnDefinitions="*"
+                                IsVisible="{Binding IsBeingDraggedOver}"
+                                RowDefinitions="*" />
+                            <Image
+                                AutomationProperties.Name="{Binding Symbol, StringFormat='Icon for symbol {0}.'}"
+                                Source="{Binding SymbolImage, Mode=OneWay}"
+                                Style="{StaticResource FavouritesSymbolImageStyle}">
+                                <Image.GestureRecognizers>
+                                    <DragGestureRecognizer
+                                        CanDrag="True"
+                                        DragStartingCommand="{Binding BindingContext.ItemDragged, Source={x:Reference MyFavourites}}"
+                                        DragStartingCommandParameter="{Binding}" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </ContentPage.Content>
 </ContentPage>

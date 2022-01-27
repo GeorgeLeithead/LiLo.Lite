@@ -374,6 +374,9 @@
         <member name="P:LiLo.Lite.Models.Markets.ItemViewModel.Symbol">
             <summary>Gets or sets the symbol.</summary>
         </member>
+        <member name="P:LiLo.Lite.Models.Markets.ItemViewModel.SymbolImage">
+            <summary>Gets or sets the symbol image.</summary>
+        </member>
         <member name="T:LiLo.Lite.Models.Markets.MarketModel">
             <summary>Model for the markets information.</summary>
         </member>
@@ -712,7 +715,7 @@
         </member>
         <member name="P:LiLo.Lite.Resources.AppResources.ViewTitleMarkets">
             <summary>
-              Looks up a localized string similar to Cryptoassets.
+              Looks up a localized string similar to LiLo.Lite.
             </summary>
         </member>
         <member name="P:LiLo.Lite.Resources.AppResources.ViewTitleSettings">
