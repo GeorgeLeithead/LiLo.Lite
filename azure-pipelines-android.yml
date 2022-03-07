@@ -20,6 +20,16 @@ steps:
   inputs:
     restoreSolution: '**/*.sln'
 
+- task: NuGetToolInstaller@1
+  displayName: 'Install nuget 5.6.0'
+  inputs:
+    versionSpec: 5.6.x
+
+- task: NuGetCommand@2
+  displayName: 'Install dependencies'
+  inputs:
+   command: 'restore'
+
 - task: DownloadSecureFile@1
   name: keyStore
   displayName: "Download keystore from secure files"
