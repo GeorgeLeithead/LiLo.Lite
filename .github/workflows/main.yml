@@ -23,14 +23,6 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-java@v2
-      with:
-        distribution: 'adopt'
-        java-version: '11'
-        check-latest: true
-    - uses: nuget/setup-nuget@v1
-      with:
-        nuget-version: 5.6.x
     - name: Android
       run: |
         cd source
@@ -40,14 +32,14 @@ jobs:
         cd LiLo.Lite.Android
         msbuild LiLo.Lite.Android.csproj /verbosity:normal /t:Rebuild /p:Configuration=Debug
         
-  #iOS:
-    #runs-on: macos-latest
-    #steps:
-    #- uses: actions/checkout@v2
-    #- name: iOS
-      #run: |
-        #cd source
-        #cd LiLo.Lite
-        #nuget restore
-        #cd LiLo.Lite.iOS
-        #msbuild LiLo.Lite.iOS.csproj /verbosity:normal /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
+  iOS:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: iOS
+      run: |
+        cd source
+        cd LiLo.Lite
+        nuget restore
+        cd LiLo.Lite.iOS
+        msbuild LiLo.Lite.iOS.csproj /verbosity:normal /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
