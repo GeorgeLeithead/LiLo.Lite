@@ -24,6 +24,13 @@ steps:
   displayName: "Select the Xamarin SDK version"
   enabled: true
 
+- task: JavaToolInstaller@0
+  displayName: "Select the JDK version"
+  inputs:
+    versionSpec: '11'
+    jdkArchitectureOption: 'x64'
+    jdkSourceOption: 'PreInstalled'
+
 - task: DownloadSecureFile@1
   name: keyStore
   displayName: 'Download keystore from secure files'
