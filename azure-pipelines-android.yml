@@ -36,12 +36,12 @@ steps:
   inputs:
     secureFile: LiLo.keystore
 
-- task: Bash@3
-  displayName: "Build and App Bundle"
+- task: DotNetCoreCLI@2
+  displayName: "Build App Bundle"
   inputs:
-    targetType: "inline"
-    script: |
-      msbuild -restore $(Build.SourcesDirectory)/Source/LiLo.Lite/LiLo.Lite.Android/*droid*.csproj -p:AndroidPackageFormat=aab -p:Configuration=$(buildConfiguration)
+    command: 'build'
+    projects: $(Build.SourcesDirectory)/Source/LiLo.Lite/LiLo.Lite.Android/*droid*.csproj
+    arguments: '-c Release'
 
 - task: Bash@3
   displayName: "Build and sign App Bundle"
