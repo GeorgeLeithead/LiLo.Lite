@@ -81,6 +81,8 @@ jobs:
     - run: |
        cd Source
        cd LiLo.Lite
+       nuget restore
+       sudo purge
        dotnet build /p:UseSharedCompilation=false
 
     - name: Perform CodeQL Analysis
