@@ -63,6 +63,8 @@ jobs:
     #    uses a compiled language
 
     - run: |
+       cd source
+       cd LiLo.Lite
        dotnet build /p:UseSharedCompilation=false
 
     - name: Perform CodeQL Analysis
