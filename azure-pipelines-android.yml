@@ -9,6 +9,13 @@ trigger:
 pool:
   vmImage: 'macos-latest'
 
+steps:
+- task: NuGetToolInstaller@1
+
+- task: NuGetCommand@2
+  inputs:
+    restoreSolution: '**/*.sln'
+
 - task: DownloadSecureFile@1
   name: keyStore
   displayName: "Download keystore from secure files"
