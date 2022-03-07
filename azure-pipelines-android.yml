@@ -9,6 +9,10 @@ trigger:
 pool:
   vmImage: 'macos-latest'
 
+variables:
+  buildConfiguration: 'Release'
+  outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
+
 steps:
 - task: NuGetToolInstaller@1
 
