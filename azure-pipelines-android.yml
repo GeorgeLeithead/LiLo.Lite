@@ -9,50 +9,22 @@ trigger:
 pool:
   vmImage: 'macos-latest'
 
-variables:
-  buildConfiguration: 'Release'
-  outputDirectory: '$(build.binariesDirectory)/$(buildConfiguration)'
-
-steps:
-- task: NuGetToolInstaller@1
-
-- task: NuGetCommand@2
-  inputs:
-    restoreSolution: '**/*.sln'
-
-- script: sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 6_12_0
-  displayName: "Select the Xamarin SDK version"
-  enabled: true
-
-- task: JavaToolInstaller@0
-  displayName: "Select the JDK version"
-  inputs:
-    versionSpec: '11'
-    jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'PreInstalled'
-
 - task: DownloadSecureFile@1
   name: keyStore
-  displayName: 'Download keystore from secure files'
+  displayName: "Download keystore from secure files"
   inputs:
-    secureFile: 'LiLo.keystore'
+    secureFile: LiLo.keystore
 
 - task: Bash@3
   displayName: "Build and sign App Bundle"
   inputs:
     targetType: "inline"
     script: |
-      msbuild -restore $(Build.SourcesDirectory)/Source/LiLo.Lite/LiLo.Lite.Android/*droid*.csproj -t:SignAndroidPackage -p:AndroidPackageFormat=aab -p:Configuration=$(buildConfiguration) -p:AndroidKeyStore=True -p:AndroidSigningKeyStore=$(keyStore.secureFilePath) -p:AndroidSigningStorePass=$(keystore-password) -p:AndroidSigningKeyAlias=$(key-alias) -p:AndroidSigningKeyPass=$(key-password)
+      msbuild -restore $(Build.SourcesDirectory)/Source/LiLo.Lite/LiLo.Lite.Android/*.csproj -t:SignAndroidPackage -p:AndroidPackageFormat=aab -p:Configuration=$(buildConfiguration) -p:AndroidKeyStore=True -p:AndroidSigningKeyStore=$(keyStore.secureFilePath) -p:AndroidSigningStorePass=$(keystore-password) -p:AndroidSigningKeyAlias=$(key-alias) -p:AndroidSigningKeyPass=$(key-password)
 
 - task: CopyFiles@2
   displayName: 'Copy deliverables'
   inputs:
-    SourceFolder: '$(Build.SourcesDirectory)/XamarinAndroidAab/bin/$(buildConfiguration)'
+    SourceFolder: '$(Build.SourcesDirectory)/Source/LiLo.Lite/LiLo.Lite.Android/bin/$(buildConfiguration)'
     Contents: '*.aab'
     TargetFolder: 'drop'
-
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish release'
-  inputs:
-    pathToPublish: 'drop'
-    artifactName: 'release'
