@@ -79,6 +79,7 @@ jobs:
     #    uses a compiled language
 
     - run: |
+       cd Source
        cd LiLo.Lite
        dotnet build /p:UseSharedCompilation=false
 
