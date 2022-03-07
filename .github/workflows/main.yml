@@ -41,5 +41,6 @@ jobs:
         cd source
         cd LiLo.Lite
         nuget restore
+        sudo purge
         cd LiLo.Lite.iOS
         msbuild LiLo.Lite.iOS.csproj /verbosity:normal /t:Rebuild /p:Platform=iPhoneSimulator /p:Configuration=Debug
