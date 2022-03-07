@@ -9,6 +9,7 @@ namespace LiLo.Lite.Services.Dialog
 	using Xamarin.Forms;
 
 	/// <summary>Dialogue service.</summary>
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class DialogService : IDialogService
 	{
 		/// <summary>Initialises a new instance of the <see cref="DialogService"/> class.</summary>

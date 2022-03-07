@@ -8,6 +8,7 @@ namespace LiLo.Lite.Models.Markets
 	using System.Collections.ObjectModel;
 
 	/// <summary>Items group view model.</summary>
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ItemsGroupViewModel : ObservableCollection<ItemViewModel>
 	{
 		/// <summary>Initialises a new instance of the <see cref="ItemsGroupViewModel"/> class.</summary>

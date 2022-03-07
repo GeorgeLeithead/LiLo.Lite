@@ -8,10 +8,9 @@ namespace LiLo.Lite.Models.Markets
 	using System.Globalization;
 	using System.Runtime.Serialization;
 	using Xamarin.Forms;
-	using Xamarin.Forms.Internals;
 
 	/// <summary>Model for the markets information.</summary>
-	[Preserve(AllMembers = true)]
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	[DataContract]
 	public class MarketModel : ViewModelBase
 	{

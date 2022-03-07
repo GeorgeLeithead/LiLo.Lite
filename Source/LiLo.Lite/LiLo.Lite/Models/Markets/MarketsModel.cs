@@ -5,6 +5,7 @@
 namespace LiLo.Lite.Models.Markets
 {
 	/// <summary>Markets data model.</summary>
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class MarketsModel
 	{
 		/// <summary>Gets or sets an array of markets.</summary>

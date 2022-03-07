@@ -8,6 +8,7 @@ namespace LiLo.Lite.Models.Markets
 	using Xamarin.Forms;
 
 	/// <summary>Favourite market model.</summary>
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class ItemViewModel : ObservableObject
 	{
 		private bool isBeingDragged;

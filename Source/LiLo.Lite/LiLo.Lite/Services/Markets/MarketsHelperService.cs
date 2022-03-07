@@ -19,6 +19,7 @@ namespace LiLo.Lite.Services.Markets
 	using Xamarin.Forms;
 
 	/// <summary>Markets helper service.</summary>
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class MarketsHelperService : IMarketsHelperService
 	{
 		private IDialogService dialogService;

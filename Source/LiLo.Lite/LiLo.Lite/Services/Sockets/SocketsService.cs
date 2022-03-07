@@ -12,6 +12,7 @@ namespace LiLo.Lite.Services.Sockets
 	using Xamarin.Forms;
 
 	/// <summary>Web Sockets Service interface.</summary>
+	[Xamarin.Forms.Internals.Preserve(AllMembers = true)]
 	public class SocketsService : ISocketsService
 	{
 		private readonly int delayBetweenTries = 3000;

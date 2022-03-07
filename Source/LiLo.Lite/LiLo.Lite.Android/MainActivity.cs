@@ -28,6 +28,7 @@ namespace LiLo.Lite.Droid
 
 	/// <inheritdoc/>
 	[Activity(Label = "LiLo.Lite", Theme = "@style/MainTheme", MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+	[Preserve(AllMembers = true)]
 	public class MainActivity : Xamarin.Forms.Platform.Android.FormsAppCompatActivity
 	{
 		private ScreenOrientation previousOrientation = ScreenOrientation.Unspecified;
