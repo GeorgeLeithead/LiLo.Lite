@@ -26,7 +26,7 @@ steps:
 - task: JavaToolInstaller@0
   displayName: "Select Java version"
   inputs:
-    versionSpec: '14'
+    versionSpec: '11'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: 'PreInstalled'
 
