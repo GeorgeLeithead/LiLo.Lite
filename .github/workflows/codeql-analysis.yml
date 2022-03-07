@@ -21,7 +21,23 @@ on:
     - cron: '18 3 * * 5'
 
 jobs:
-  analyze:
+  Practice:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
+    - name: Show what's in the directory
+      run: |
+        ls
+    - name: Show what all is in the parent directory
+      run: |
+        cd ..
+        ls
+
+  Analyze:
     name: Analyze
     runs-on: ubuntu-latest
     permissions:
@@ -63,7 +79,6 @@ jobs:
     #    uses a compiled language
 
     - run: |
-       cd source
        cd LiLo.Lite
        dotnet build /p:UseSharedCompilation=false
 
