@@ -81,6 +81,7 @@ jobs:
     - run: |
        cd Source
        cd LiLo.Lite
+       cd LiLo.Lite
        nuget restore
        dotnet build /p:UseSharedCompilation=false
 
