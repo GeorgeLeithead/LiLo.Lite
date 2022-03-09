@@ -141,6 +141,7 @@
                 x:Name="TradingViewChart"
                 Grid.Row="1"
                 windows:WebView.ExecutionMode="SeparateThread"
+                BackgroundColor="red"
                 Source="{Binding TradingViewChart, Mode=OneWay}" />
         </Grid>
     </ContentPage.Content>

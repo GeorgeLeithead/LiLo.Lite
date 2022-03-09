@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30204.135
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiLo.Lite.Android", "LiLo.Lite.Android\LiLo.Lite.Android.csproj", "{9891374A-1081-432B-B9DE-BFD171F8E35D}"
 EndProject
@@ -57,6 +57,7 @@ Global
 		{30C8DFE7-712A-44B0-AE40-4636D244236F}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{30C8DFE7-712A-44B0-AE40-4636D244236F}.Debug|iPhoneSimulator.Deploy.0 = Debug|iPhoneSimulator
 		{30C8DFE7-712A-44B0-AE40-4636D244236F}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{30C8DFE7-712A-44B0-AE40-4636D244236F}.Release|Any CPU.Build.0 = Release|iPhone
 		{30C8DFE7-712A-44B0-AE40-4636D244236F}.Release|Any CPU.Deploy.0 = Release|iPhone
 		{30C8DFE7-712A-44B0-AE40-4636D244236F}.Release|iPhone.ActiveCfg = Release|iPhone
 		{30C8DFE7-712A-44B0-AE40-4636D244236F}.Release|iPhone.Build.0 = Release|iPhone

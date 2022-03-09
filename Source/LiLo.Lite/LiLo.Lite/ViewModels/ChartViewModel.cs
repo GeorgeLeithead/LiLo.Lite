@@ -11,7 +11,6 @@ namespace LiLo.Lite.ViewModels
 	using System;
 	using System.Globalization;
 	using System.Linq;
-	using System.Windows.Input;
 	using Xamarin.Essentials;
 	using Xamarin.Forms;
 
@@ -42,9 +41,6 @@ namespace LiLo.Lite.ViewModels
 				TradingViewChart = new HtmlWebViewSource();
 			}
 		}
-
-		/// <summary>Gets an swipe item Alert command.</summary>
-		public ICommand SwipeItemAlertCommand { get; private set; }
 
 		/// <summary>Sets the market symbol.</summary>
 		public string Symbol

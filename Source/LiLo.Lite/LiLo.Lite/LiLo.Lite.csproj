@@ -33,10 +33,6 @@
 		<PackageReference Include="Acr.UserDialogs" Version="7.2.0.562" />
 		<PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.5.0" />
 		<PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.5.0" />
-		<PackageReference Include="Resizetizer.NT" Version="0.3.0">
-		  <PrivateAssets>all</PrivateAssets>
-		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
 		<PackageReference Include="System.Text.Json" Version="6.0.2" />
 		<PackageReference Include="WebSocketSharp-netstandard" Version="1.0.1" />
 		<PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.0" />
@@ -45,19 +41,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Remove="sharedimages\alarmactive.svg" />
-		<None Remove="sharedimages\moondark.svg" />
-		<None Remove="sharedimages\moonlight.svg" />
-		<None Remove="sharedimages\searchdark.svg" />
-		<None Remove="sharedimages\searchlight.svg" />
-		<None Remove="sharedimages\settingsdark.svg" />
-		<None Remove="sharedimages\settingslight.svg" />
-		<None Remove="sharedimages\sundark.svg" />
-		<None Remove="sharedimages\sunlight.svg" />
-		<None Remove="sharedimages\twitter.svg" />
-		<None Remove="sharedimages\github.svg" />
-		<None Remove="sharedimages\edgebrowser.svg" />
-		<None Remove="sharedimages\alarm.svg" />
 		<None Include="..\..\..\LICENSE">
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
@@ -66,48 +49,6 @@
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
 		</None>
-	</ItemGroup>
-
-	<ItemGroup>
-		<SharedImage Include="sharedimages\sundark.svg">
-			<BaseSize>32,32</BaseSize>
-		</SharedImage>
-		<SharedImage Include="sharedimages\sunlight.svg">
-			<BaseSize>32,32</BaseSize>
-		</SharedImage>
-		<SharedImage Include="sharedimages\moonlight.svg">
-			<BaseSize>32,32</BaseSize>
-		</SharedImage>
-		<SharedImage Include="sharedimages\moondark.svg">
-			<BaseSize>32,32</BaseSize>
-		</SharedImage>
-		<SharedImage Include="sharedimages\searchlight.svg">
-			<BaseSize>32,32</BaseSize>
-		</SharedImage>
-		<SharedImage Include="sharedimages\searchdark.svg">
-			<BaseSize>32,32</BaseSize>
-		</SharedImage>
-		<SharedImage Include="sharedimages\settingslight.svg">
-			<BaseSize>32,32</BaseSize>
-		</SharedImage>
-		<SharedImage Include="sharedimages\settingsdark.svg">
-			<BaseSize>32,32</BaseSize>
-		</SharedImage>
-		<SharedImage Include="sharedimages\twitter.svg">
-			<BaseSize>32,32</BaseSize>
-		</SharedImage>
-		<SharedImage Include="sharedimages\github.svg">
-			<BaseSize>32,32</BaseSize>
-		</SharedImage>
-		<SharedImage Include="sharedimages\edgebrowser.svg">
-			<BaseSize>32,32</BaseSize>
-		</SharedImage>
-		<SharedImage Include="sharedimages\alarm.svg">
-			<BaseSize>32,32</BaseSize>
-		</SharedImage>
-		<SharedImage Include="sharedimages\alarmactive.svg">
-			<BaseSize>32,32</BaseSize>
-		</SharedImage>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -125,9 +66,6 @@
 		<EmbeddedResource Update="Resources\AppResources.resx">
 		  <Generator>PublicResXFileCodeGenerator</Generator>
 		  <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
-		</EmbeddedResource>
-		<EmbeddedResource Update="Views\AlertsView.xaml">
-		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 		</EmbeddedResource>
 		<EmbeddedResource Update="Views\FavouritesView.xaml">
 			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>

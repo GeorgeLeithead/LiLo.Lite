@@ -27,9 +27,6 @@ namespace LiLo.Lite.Helpers
 			/// <summary>Navigation paths class constants.</summary>
 			public static class Paths
 			{
-				/// <summary>Alert path.</summary>
-				public const string Alert = "alerts";
-
 				/// <summary>Chart path.</summary>
 				public const string Chart = "chart";
 

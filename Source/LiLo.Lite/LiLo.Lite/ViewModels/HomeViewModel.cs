@@ -38,7 +38,6 @@ namespace LiLo.Lite.ViewModels
 			FavouritesList = Preferences.Get(Constants.Preferences.Favourites.FavouritesCategory, Constants.Preferences.Favourites.FavouritesCategoryDefaultValue);
 			FavouritesEnabled = Preferences.Get(Constants.Preferences.Favourites.FavouritesEnabled, Constants.Preferences.Favourites.FavouritesEnabledDefaultValue);
 			RetryButtonClicked = new AsyncCommand(Init);
-			SwipeItemAlertCommand = new Command<MarketModel>(OnSwipeItemAlert);
 			ShowSearchCommand = new Command(ShowSearch);
 			_ = Init().ConfigureAwait(false);
 		}
@@ -116,9 +115,6 @@ namespace LiLo.Lite.ViewModels
 		/// <summary>Gets a show search command.</summary>
 		public ICommand ShowSearchCommand { get; private set; }
 
-		/// <summary>Gets an swipe item Alert command.</summary>
-		public ICommand SwipeItemAlertCommand { get; private set; }
-
 		/// <summary>Gets or sets the market symbol.</summary>
 		public string Symbol
 		{
@@ -170,13 +166,6 @@ namespace LiLo.Lite.ViewModels
 		private async Task GoToSettings()
 		{
 			await Shell.Current.GoToAsync(Constants.Navigation.Paths.Settings);
-		}
-
-		/// <summary>Market Model item has been swiped and Alert selected.</summary>
-		/// <param name="item">{MarketModel} item.</param>
-		private void OnSwipeItemAlert(MarketModel item)
-		{
-			_ = Shell.Current.GoToAsync($"{Constants.Navigation.Paths.Alert}?symbol={item.SymbolString}");
 		}
 
 		private void ShowSearch()
