@@ -167,8 +167,8 @@
                                             <Image
                                                 AutomationProperties.Name="System theme style."
                                                 Scale="0.75"
-                                                Source="{AppThemeBinding Light='settings.png',
-                                                                         Dark='settings_dark.png'}" />
+                                                Source="{AppThemeBinding Light='settingslight.png',
+                                                                         Dark='settingsdark.png'}" />
                                             <Label
                                                 FontSize="Small"
                                                 Style="{StaticResource SettingsThemeStyle}"
@@ -187,8 +187,8 @@
                                             <Image
                                                 AutomationProperties.Name="Light theme style."
                                                 Scale="0.75"
-                                                Source="{AppThemeBinding Light='sun_light.png',
-                                                                         Dark='sun_dark.png'}" />
+                                                Source="{AppThemeBinding Light='sunlight.png',
+                                                                         Dark='sundark.png'}" />
                                             <Label
                                                 FontSize="Small"
                                                 Style="{StaticResource SettingsThemeStyle}"
@@ -207,8 +207,8 @@
                                             <Image
                                                 AutomationProperties.Name="Dark theme style."
                                                 Scale="0.75"
-                                                Source="{AppThemeBinding Light='moon_light.png',
-                                                                         Dark='moon_dark.png'}" />
+                                                Source="{AppThemeBinding Light='moonlight.png',
+                                                                         Dark='moondark.png'}" />
                                             <Label
                                                 FontSize="Small"
                                                 Style="{StaticResource SettingsThemeStyle}"

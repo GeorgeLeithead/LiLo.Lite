@@ -23,13 +23,13 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem
             Command="{Binding ShowSearchCommand}"
-            IconImageSource="{AppThemeBinding Light='search.png',
-                                              Dark='search_dark.png'}"
+            IconImageSource="{AppThemeBinding Light='searchlight.png',
+                                              Dark='searchdark.png'}"
             Text="{x:Static resources:AppResources.SearchIconText}" />
         <ToolbarItem
             Command="{Binding GoToSettingsCommand}"
-            IconImageSource="{AppThemeBinding Light='settings.png',
-                                              Dark='settings_dark.png'}"
+            IconImageSource="{AppThemeBinding Light='settingslight.png',
+                                              Dark='settingsdark.png'}"
             Text="{x:Static resources:AppResources.SettingsIconText}" />
     </ContentPage.ToolbarItems>
 
