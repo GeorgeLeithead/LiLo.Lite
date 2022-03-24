@@ -10,6 +10,7 @@ namespace LiLo.Lite.Services.Markets
 	using LiLo.Lite.Services.Dialog;
 	using System;
 	using System.Collections.Generic;
+	using System.Diagnostics;
 	using System.Text.Json;
 	using System.Threading.Tasks;
 	using WebSocketSharp;
@@ -96,9 +97,13 @@ namespace LiLo.Lite.Services.Markets
 				{
 					await GetMessageType(e.Data);
 				}
-				catch (Exception ex)
+				catch (Exception ex) when (ex is not InvalidOperationException)
 				{
 					await DialogService.ShowToastAsync(ex.Message);
+				}
+				catch (Exception ex)
+				{
+					Debug.WriteLine(ex.Message);
 				}
 			}
 		}

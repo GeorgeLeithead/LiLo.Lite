@@ -11,7 +11,6 @@ namespace LiLo.Lite.Views
 	using System.Collections.Generic;
 	using System.Diagnostics;
 	using System.Linq;
-	using System.Threading.Tasks;
 	using Xamarin.Essentials;
 	using Xamarin.Forms;
 	using Xamarin.Forms.Internals;
@@ -35,7 +34,6 @@ namespace LiLo.Lite.Views
 		/// <inheritdoc/>
 		protected override void OnAppearing()
 		{
-			var x = DeviceDisplay.MainDisplayInfo.Density;
 			base.OnAppearing();
 			SearchBar.Unfocus();
 			if (VM.FavouritesList != Preferences.Get(Constants.Preferences.Favourites.FavouritesCategory, Constants.Preferences.Favourites.FavouritesCategoryDefaultValue) || VM.FavouritesEnabled != Preferences.Get(Constants.Preferences.Favourites.FavouritesEnabled, Constants.Preferences.Favourites.FavouritesEnabledDefaultValue))
@@ -47,19 +45,6 @@ namespace LiLo.Lite.Views
 				_ = VM.SocketsService.WebSocket_OnSleep(); // Sleep the connection
 				_ = VM.SocketsService.WebSocket_Close(); // Close the connection
 				_ = VM.Init().ConfigureAwait(false); // Re-initialise the markets and sockets connections.
-			}
-
-			if (!string.IsNullOrEmpty(VM.Symbol))
-			{
-				_ = Task.Factory.StartNew(() =>
-				  {
-					  // await Task.Delay(500); // This causes a real problem with the app performance!
-					  MarketModel matchingItem = VM.MarketsList.FirstOrDefault(m => m.SymbolString == VM.Symbol);
-					  if (matchingItem != null)
-					  {
-						  CollectionViewMarketsList.ScrollTo(item: matchingItem, group: null, position: ScrollToPosition.Start, animate: true);
-					  }
-				  });
 			}
 		}
 
@@ -87,7 +72,6 @@ namespace LiLo.Lite.Views
 		protected override void OnDisappearing()
 		{
 			base.OnDisappearing();
-			SearchBar.Text = string.Empty; // When we leave the page, make sure that the search bar is cleared
 		}
 
 		/// <inheritdoc/>
@@ -108,6 +92,7 @@ namespace LiLo.Lite.Views
 			{
 				searchTerm = string.Empty;
 				VM.IsSearchVisible = false;
+				SearchBar.Unfocus();
 			}
 
 			searchTerm = searchTerm.ToUpperInvariant();
