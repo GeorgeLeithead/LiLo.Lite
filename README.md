@@ -12,24 +12,19 @@ With extremely low battery usage, you can leave the application running in the b
 <img title="Splash Screen" src="Screenshots/Phone_SplashScreen.png" width="137px" />
 
 ### Markets page
-<img title="Home Page - Light theme - Portrait" src="Screenshots/Phone_HomeLight.png" width="137px" />
-<img title="Home Page - Dark theme - Portrait" src="Screenshots/Phone_HomeDark.png" width="137px" />
-<img title="Home page - Light theme - Favourites" src="Screenshots/Phone_HomeLight_Favourites.png" width="137px" />
+<img title="Home Page - Light theme - Portrait" src="Screenshots/Phone_HomeLight.png" width="137px" /> <img title="Home Page - Dark theme - Portrait" src="Screenshots/Phone_HomeDark.png" width="137px" /> <img title="Home page - Light theme - Favourites" src="Screenshots/Phone_HomeLight_Favourites.png" width="137px" />
 
 ### Chart page
-<img title="Chart page - Light theme" src="Screenshots/Phone_ChartLight.png" width="137px" />
-<img title="Chart page - Dark theme" src="Screenshots/Phone_ChartDark.png" width="137px" />
+<img title="Chart page - Light theme" src="Screenshots/Phone_ChartLight.png" width="137px" /> <img title="Chart page - Dark theme" src="Screenshots/Phone_ChartDark.png" width="137px" />
 
 ## Settings page
-<img title="Settings page - Light theme" src="Screenshots/Phone_SettingsLight.png" width="137px" />
-<img title="Settings page - Dark theme" src="Screenshots/Phone_SettingsDark.png" width="137px" />
+<img title="Settings page - Light theme" src="Screenshots/Phone_SettingsLight.png" width="137px" /> <img title="Settings page - Dark theme" src="Screenshots/Phone_SettingsDark.png" width="137px" />
 
 ## Manage favourites page
 <img title="Favourites page - Light theme" src="Screenshots/Phone_FavouritesLight.png" width="137px" />
 
 ### Additional devices and OS versions
-<img title="Home Page - Light theme - Tablet 7in with Pie 9.0 - API 28" src="Screenshots/Tablet7_HomeLight.png" height=137px}
-<img title="Home Page - Light theme - Tablet 10.1in with Pie 9.0 - API 28" src="Screenshots/Tablet10_HomeLight.png" width="137px" />
+<img title="Home Page - Light theme - Tablet 7in with Pie 9.0 - API 28" src="Screenshots/Tablet7_HomeLight.png" height=137px /> <img title="Home Page - Light theme - Tablet 10.1in with Pie 9.0 - API 28" src="Screenshots/Tablet10_HomeLight.png" width="137px" />
 
 ## Supported Platforms: Android, iOS
 
