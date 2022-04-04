@@ -1,4 +1,4 @@
-<img title="LiLo" src="Screenshots/launcher_foreground.png "LiLo.Lite - logo")
+![LiLo](Screenshots/launcher_foreground.png "LiLo.Lite - logo")
 
 # LiLo.Lite 
 Open source repository for the LiLo.Lite (Ladder In Ladder Out) Mobile Application.
@@ -38,8 +38,8 @@ The LiLo.Lite mobile application is currently available for these platforms:
 
 ## Feature highlights include:
 - FREE to install and FREE from adverts.
-- Access real-time market data from [Binance" src="https://www.binance.com/).
-- Access real-time charting from [TradingView" src="https://uk.tradingview.com/).
+- Access real-time market data from [Binance](https://www.binance.com/).
+- Access real-time charting from [TradingView](https://uk.tradingview.com/).
 - Price change highlighting.
 - Currency 24hr price high, low and percentage changes.
 - Custom charting options.
