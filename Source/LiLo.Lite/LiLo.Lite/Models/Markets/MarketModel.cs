@@ -50,6 +50,9 @@ namespace LiLo.Lite.Models.Markets
 		/// <summary>Currency symbol as string.</summary>
 		private string symbolString;
 
+		/// <summary>Currency display name.</summary>
+		private string displayName;
+
 		/// <summary>Initialises a new instance of the <see cref="MarketModel"/> class.</summary>
 		public MarketModel()
 		{
@@ -67,6 +70,17 @@ namespace LiLo.Lite.Models.Markets
 			{
 				decimalPlaces = value;
 				OnPropertyChanged(nameof(DecimalPlaces));
+			}
+		}
+
+		/// <summary>Gets or sets the Display Name for the currency.</summary>
+		public string DisplayName
+		{
+			get => displayName;
+			set
+			{
+				displayName = value;
+				OnPropertyChanged(nameof(DisplayName));
 			}
 		}
 

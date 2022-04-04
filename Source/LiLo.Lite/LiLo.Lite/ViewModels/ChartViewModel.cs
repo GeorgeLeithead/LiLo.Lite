@@ -49,7 +49,7 @@ namespace LiLo.Lite.ViewModels
 			{
 				symbol = Uri.UnescapeDataString(value);
 				SelectedItem = MarketsHelperService.MarketsList.First(m => m.SymbolString == symbol);
-				Title = symbol;
+				Title = SelectedItem.DisplayName ?? symbol;
 				IsBusy = false;
 			}
 		}

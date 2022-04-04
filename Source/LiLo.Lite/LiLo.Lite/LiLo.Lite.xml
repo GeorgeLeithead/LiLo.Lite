@@ -413,11 +413,17 @@
         <member name="F:LiLo.Lite.Models.Markets.MarketModel.symbolString">
             <summary>Currency symbol as string.</summary>
         </member>
+        <member name="F:LiLo.Lite.Models.Markets.MarketModel.displayName">
+            <summary>Currency display name.</summary>
+        </member>
         <member name="M:LiLo.Lite.Models.Markets.MarketModel.#ctor">
             <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.Models.Markets.MarketModel"/> class.</summary>
         </member>
         <member name="P:LiLo.Lite.Models.Markets.MarketModel.DecimalPlaces">
             <summary>Gets or sets the number of decimal places to show for the currency.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Models.Markets.MarketModel.DisplayName">
+            <summary>Gets or sets the Display Name for the currency.</summary>
         </member>
         <member name="P:LiLo.Lite.Models.Markets.MarketModel.HighPrice24h">
             <summary>Gets or sets the 24HR high price for the currency.</summary>

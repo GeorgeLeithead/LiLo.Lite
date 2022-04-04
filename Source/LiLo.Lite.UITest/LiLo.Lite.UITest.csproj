@@ -51,7 +51,7 @@
       <Version>7.2.0.562</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>5.0.0.2337</Version>
+      <Version>5.0.0.2401</Version>
     </PackageReference>
     <PackageReference Include="NUnit" Version="3.13.3" />
     <PackageReference Include="Xamarin.UITest" Version="3.2.6" />
