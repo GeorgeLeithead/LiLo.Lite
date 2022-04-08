@@ -255,6 +255,7 @@ iframe.body {
 				locale: "X3X",
 				enable_publishing: false,
 				hide_legend: false,
+				withdateranges: true,
 				save_image: false,
 				style: "X5X",
 				hide_side_toolbar: X7X,
