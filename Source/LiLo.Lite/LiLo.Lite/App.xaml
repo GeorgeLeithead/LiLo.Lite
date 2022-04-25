@@ -17,9 +17,9 @@
 
             <!--  Markets Colours  -->
             <Color x:Key="MarketUpBackgroundColor">#00FF00</Color>
-            <Color x:Key="MarketUpTextColor">#027e42</Color>
+            <Color x:Key="MarketUpTextColor">#007F0E</Color>
             <Color x:Key="MarketDownBackgroundColor">#FF0000</Color>
-            <Color x:Key="MarketDownTextColor">#aa1221</Color>
+            <Color x:Key="MarketDownTextColor">#ED411F</Color>
 
             <!--  Ladder Colours  -->
             <Color x:Key="LadderLeftColor">#179C52</Color>
@@ -30,7 +30,7 @@
             <Color x:Key="Gray-100">#F6F7F8</Color>
             <Color x:Key="Gray-300">#EBECEF</Color>
             <Color x:Key="Gray-700">#4A515E</Color>
-            <Color x:Key="Gray-900">#333942</Color>
+            <Color x:Key="Gray-900">#202020</Color>
             <Color x:Key="Gray-Black">#000000</Color>
             <Color x:Key="Gray-White">#FFFFFF</Color>
 
