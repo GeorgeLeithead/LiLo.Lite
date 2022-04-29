@@ -37,6 +37,21 @@
         <member name="P:LiLo.Lite.Controls.CustomLabel.IsSelected">
             <summary>Gets or sets a value indicating whether is selected.</summary>
         </member>
+        <member name="T:LiLo.Lite.Controls.MarketViewTemplateSelector">
+            <summary>Runtime based data template selector for market view.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.MarketViewTemplateSelector.CompactView">
+            <summary>Gets or sets the data template for compact view.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.MarketViewTemplateSelector.MagazineView">
+            <summary>Gets or sets the data template for magazine view.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Controls.MarketViewTemplateSelector.OnSelectTemplate(System.Object,Xamarin.Forms.BindableObject)">
+            <summary>Return the user selected data template.</summary>
+            <param name="item">The data for which to return a template.</param>
+            <param name="container">An optional container object in which the developer may have opted to store Xamarin.Forms.DataTemplateSelector objects.</param>
+            <returns>A developer-defined Xamarin.Forms.DataTemplate that can be used to display item.</returns>
+        </member>
         <member name="T:LiLo.Lite.Controls.TickPriceView">
             <summary>Custom ticker price view.</summary>
         </member>
@@ -204,6 +219,12 @@
         </member>
         <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Settings.ThemeDefaultValue">
             <summary>User theme preference default value.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Settings.MarketsView">
+            <summary>User markets view preference name.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Settings.MarketsViewDefaulyValue">
+            <summary>User markets view default value.</summary>
         </member>
         <member name="T:LiLo.Lite.Helpers.Constants.Sources">
             <summary>Sources for application files.</summary>
@@ -625,6 +646,11 @@
               Looks up a localized string similar to Theme.
             </summary>
         </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsHeadingView">
+            <summary>
+              Looks up a localized string similar to View.
+            </summary>
+        </member>
         <member name="P:LiLo.Lite.Resources.AppResources.SettingsIconText">
             <summary>
               Looks up a localized string similar to Settings.
@@ -660,6 +686,11 @@
         <member name="P:LiLo.Lite.Resources.AppResources.SettingsTwitter">
             <summary>
               Looks up a localized string similar to https://twitter.com/LiLoMobileApp.
+            </summary>
+        </member>
+        <member name="P:LiLo.Lite.Resources.AppResources.SettingsViewLabel">
+            <summary>
+              Looks up a localized string similar to Compact view.
             </summary>
         </member>
         <member name="P:LiLo.Lite.Resources.AppResources.TitleMarketsListError">
@@ -1070,6 +1101,9 @@
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.ChartToolBar">
             <summary>Gets or sets a value indicating whether chart tool bar is enabled.</summary>
             <remarks>"hide_side_toolbar": true .</remarks>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.DisplayMagazineView">
+            <summary>Gets or set a value indicating whether to display Magazine view.</summary>
         </member>
         <member name="P:LiLo.Lite.ViewModels.SettingsViewModel.EdgeBrowserCommand">
             <summary>Gets the edge browser command.</summary>

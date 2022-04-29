@@ -86,6 +86,17 @@ namespace LiLo.Lite.ViewModels
 			}
 		}
 
+		/// <summary>Gets or set a value indicating whether to display Magazine view.</summary>
+		public bool DisplayMagazineView
+		{
+			get => Preferences.Get(Constants.Preferences.Settings.MarketsView, Constants.Preferences.Settings.MarketsViewDefaulyValue);
+			set
+			{
+				Preferences.Set(Constants.Preferences.Settings.MarketsView, value);
+				OnPropertyChanged(nameof(DisplayMagazineView));
+			}
+		}
+
 		/// <summary>Gets the edge browser command.</summary>
 		public IAsyncCommand EdgeBrowserCommand => new AsyncCommand(BrowserCommandClicked, allowsMultipleExecutions: false);
 

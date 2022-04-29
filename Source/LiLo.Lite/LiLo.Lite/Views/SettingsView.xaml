@@ -218,6 +218,28 @@
                                 </RadioButton>
                             </Grid>
                         </Frame>
+                        <Label Style="{StaticResource SettingsViewStyle}" Text="{x:Static resources:AppResources.SettingsHeadingView}" />
+                        <Frame Style="{StaticResource DefaultFrameStyle}">
+                            <StackLayout>
+                                <Grid
+                                    ColumnDefinitions="*,*"
+                                    RowDefinitions="Auto"
+                                    Style="{StaticResource SettingsGridStyle}">
+                                    <Label
+                                        x:Name="MarketsView"
+                                        Grid.Row="0"
+                                        Grid.Column="0"
+                                        Style="{StaticResource SettingViewStandardStyle}"
+                                        Text="{x:Static resources:AppResources.SettingsViewLabel}" />
+                                    <Switch
+                                        Grid.Row="0"
+                                        Grid.Column="1"
+                                        AutomationProperties.LabeledBy="{x:Reference DrawingToolBar}"
+                                        IsToggled="{Binding DisplayMagazineView, Converter={StaticResource InvertedBoolConverter}}"
+                                        ThumbColor="{StaticResource LadderLeftColor}" />
+                                </Grid>
+                            </StackLayout>
+                        </Frame>
                         <Label Style="{StaticResource SettingsViewStyle}" Text="{x:Static resources:AppResources.SettingsHeadingCharting}" />
                         <Frame Style="{StaticResource DefaultFrameStyle}">
                             <StackLayout>

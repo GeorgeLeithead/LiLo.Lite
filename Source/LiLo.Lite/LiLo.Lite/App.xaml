@@ -82,13 +82,33 @@
                 <Setter Property="Padding" Value="8,4" />
             </Style>
 
-            <Style x:Key="LastPriceStyle" TargetType="{x:Type controls:TickPriceView}">
-                <Setter Property="Margin" Value="0" />
-                <Setter Property="Padding" Value="4,1,4,1" />
+            <Style
+                x:Key="MarketsCollectionViewCompactGridStyle"
+                BasedOn="{StaticResource MarketsCollectionViewGridStyle}"
+                TargetType="Grid">
+                <Setter Property="Padding" Value="4" />
+            </Style>
+
+            <Style x:Key="LastPriceStyleColours" TargetType="{x:Type controls:TickPriceView}">
+                <Setter Property="TextColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-900}, Dark={x:StaticResource Gray-100}}" />
+                <Setter Property="DefaultBackgroundColor" Value="Transparent" />
+                <Setter Property="NegativeTickColor" Value="{x:AppThemeBinding Light={x:StaticResource MarketDownBackgroundColor}, Dark={x:StaticResource MarketDownBackgroundColor}}" />
+                <Setter Property="NegativeTickBackgroundColor" Value="{x:AppThemeBinding Light={x:StaticResource MarketDownTextColor}, Dark={x:StaticResource MarketDownTextColor}}" />
+                <Setter Property="PositiveTickColor" Value="{x:AppThemeBinding Light={x:StaticResource MarketUpTextColor}, Dark={x:StaticResource MarketUpBackgroundColor}}" />
+                <Setter Property="PositiveTickBackgroundColor" Value="{x:AppThemeBinding Light={x:StaticResource MarketUpBackgroundColor}, Dark={x:StaticResource MarketUpTextColor}}" />
                 <Setter Property="HorizontalOptions" Value="FillAndExpand" />
                 <Setter Property="VerticalOptions" Value="FillAndExpand" />
                 <Setter Property="HorizontalTextAlignment" Value="Start" />
                 <Setter Property="VerticalTextAlignment" Value="Center" />
+                <Setter Property="Padding" Value="4,1" />
+            </Style>
+
+            <Style
+                x:Key="LastPriceStyle"
+                BasedOn="{x:StaticResource LastPriceStyleColours}"
+                TargetType="{x:Type controls:TickPriceView}">
+                <Setter Property="Margin" Value="0" />
+                <Setter Property="Padding" Value="4,1,4,1" />
                 <Setter Property="FontSize" Value="Large" />
                 <Setter Property="LineHeight">
                     <Setter.Value>
@@ -98,12 +118,6 @@
                         </OnPlatform>
                     </Setter.Value>
                 </Setter>
-                <Setter Property="TextColor" Value="{x:AppThemeBinding Light={x:StaticResource Gray-900}, Dark={x:StaticResource Gray-100}}" />
-                <Setter Property="DefaultBackgroundColor" Value="Transparent" />
-                <Setter Property="NegativeTickColor" Value="{x:AppThemeBinding Light={x:StaticResource MarketDownBackgroundColor}, Dark={x:StaticResource MarketDownBackgroundColor}}" />
-                <Setter Property="NegativeTickBackgroundColor" Value="{x:AppThemeBinding Light={x:StaticResource MarketDownTextColor}, Dark={x:StaticResource MarketDownTextColor}}" />
-                <Setter Property="PositiveTickColor" Value="{x:AppThemeBinding Light={x:StaticResource MarketUpTextColor}, Dark={x:StaticResource MarketUpBackgroundColor}}" />
-                <Setter Property="PositiveTickBackgroundColor" Value="{x:AppThemeBinding Light={x:StaticResource MarketUpBackgroundColor}, Dark={x:StaticResource MarketUpTextColor}}" />
             </Style>
 
             <Style

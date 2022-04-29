@@ -268,6 +268,15 @@ namespace LiLo.Lite.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to View.
+        /// </summary>
+        public static string SettingsHeadingView {
+            get {
+                return ResourceManager.GetString("SettingsHeadingView", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Settings.
         /// </summary>
         public static string SettingsIconText {
@@ -329,6 +338,15 @@ namespace LiLo.Lite.Resources {
         public static string SettingsTwitter {
             get {
                 return ResourceManager.GetString("SettingsTwitter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Compact view.
+        /// </summary>
+        public static string SettingsViewLabel {
+            get {
+                return ResourceManager.GetString("SettingsViewLabel", resourceCulture);
             }
         }
         
