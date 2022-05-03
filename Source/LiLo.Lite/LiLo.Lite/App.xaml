@@ -86,7 +86,7 @@
                 x:Key="MarketsCollectionViewCompactGridStyle"
                 BasedOn="{StaticResource MarketsCollectionViewGridStyle}"
                 TargetType="Grid">
-                <Setter Property="Padding" Value="4" />
+                <Setter Property="Padding" Value="8,4" />
             </Style>
 
             <Style x:Key="LastPriceStyleColours" TargetType="{x:Type controls:TickPriceView}">

@@ -25,11 +25,15 @@
             Command="{Binding ShowSearchCommand}"
             IconImageSource="{AppThemeBinding Light='searchlight.png',
                                               Dark='searchdark.png'}"
+            Order="Primary"
+            Priority="1"
             Text="{x:Static resources:AppResources.SearchIconText}" />
         <ToolbarItem
             Command="{Binding GoToSettingsCommand}"
             IconImageSource="{AppThemeBinding Light='settingslight.png',
                                               Dark='settingsdark.png'}"
+            Order="Primary"
+            Priority="2"
             Text="{x:Static resources:AppResources.SettingsIconText}" />
     </ContentPage.ToolbarItems>
 
@@ -142,58 +146,84 @@
             </Grid>
         </DataTemplate>
         <DataTemplate x:Key="CompactView" x:DataType="models:MarketModel">
-            <Grid Style="{StaticResource MarketsCollectionViewCompactGridStyle}">
-                <Grid
-                    ColumnDefinitions="16,Auto,*,Auto"
+            <Grid
+                ColumnDefinitions="16,Auto,*,Auto"
+                HorizontalOptions="FillAndExpand"
+                RowDefinitions="*"
+                Style="{StaticResource MarketsCollectionViewCompactGridStyle}">
+                <Label
+                    Grid.Column="0"
+                    HorizontalOptions="Start"
+                    Text="W"
+                    TextColor="Transparent" />
+                <Image
+                    Grid.Column="0"
+                    Margin="0,2"
+                    AutomationProperties.HelpText="Currency symbol icon."
+                    AutomationProperties.Name="{Binding SymbolString, StringFormat='Icon for symbol {0}.', Mode=OneWay}"
+                    Source="{Binding SymbolImage, Mode=OneWay}"
+                    Style="{StaticResource SymbolImageStyle}"
+                    VerticalOptions="StartAndExpand" />
+                <Label
+                    Grid.Column="1"
+                    Margin="4,0"
+                    Text="WWWWW"
+                    TextColor="Transparent" />
+                <Label
+                    x:Name="SymbolStringLabel"
+                    Grid.Column="1"
+                    Margin="4,0"
+                    AutomationProperties.HelpText="Currency symbol."
+                    AutomationProperties.Name="SymbolStringLabel"
+                    HorizontalOptions="StartAndExpand"
+                    Text="{Binding SymbolString, Mode=OneWay}" />
+                <Label
+                    Grid.Column="2"
+                    Text="$9.99999999"
+                    TextColor="Transparent"
+                    VerticalOptions="Start" />
+                <Frame
+                    Grid.Column="2"
+                    BackgroundColor="Transparent"
+                    HasShadow="False"
                     HorizontalOptions="FillAndExpand"
-                    RowDefinitions="Auto">
-                    <Image
-                        Grid.Column="0"
-                        AutomationProperties.HelpText="Currency symbol icon."
-                        AutomationProperties.Name="{Binding SymbolString, StringFormat='Icon for symbol {0}.', Mode=OneWay}"
-                        HorizontalOptions="Start"
-                        Source="{Binding SymbolImage, Mode=OneWay}"
-                        Style="{StaticResource SymbolImageStyle}" />
-                    <Label
-                        Grid.Column="1"
-                        Text="WWWWW"
-                        TextColor="Transparent" />
-                    <Label
-                        x:Name="SymbolStringLabel"
-                        Grid.Column="1"
-                        Margin="0,4"
-                        AutomationProperties.HelpText="Currency symbol."
-                        AutomationProperties.Name="SymbolStringLabel"
-                        Text="{Binding SymbolString, Mode=OneWay}" />
-                    <Label
-                        Grid.Column="2"
-                        Text="$9.99999999"
-                        TextColor="Transparent" />
+                    Style="{StaticResource PriceFrameStyle}"
+                    VerticalOptions="Start">
                     <controls:TickPriceView
-                        Grid.Column="2"
                         AutomationProperties.IsInAccessibleTree="True"
                         AutomationProperties.LabeledBy="{x:Reference SymbolStringLabel}"
+                        HorizontalOptions="FillAndExpand"
                         Price="{Binding LastPrice, Mode=OneWay}"
                         Style="{StaticResource LastPriceStyleColours}"
                         Text="{Binding LastPriceString, Mode=OneWay}" />
-                    <Label
-                        x:Name="Price24hPercentLabel"
-                        Grid.Column="3"
-                        AutomationProperties.HelpText="Price 24hr percent change."
-                        AutomationProperties.Name="Price24hPercentLabel"
-                        HorizontalOptions="EndAndExpand"
-                        Text="9,999.99%"
-                        TextColor="Transparent" />
-                    <controls:TickPriceView
-                        Grid.Column="3"
+                </Frame>
+                <Label
+                    x:Name="Price24hPercentLabel"
+                    Grid.Column="3"
+                    AutomationProperties.HelpText="Price 24hr percent change."
+                    AutomationProperties.Name="Price24hPercentLabel"
+                    HorizontalOptions="EndAndExpand"
+                    Text="9,999.99%"
+                    TextColor="Transparent"
+                    VerticalOptions="Start" />
+                <Frame
+                    Grid.Column="3"
+                    BackgroundColor="Transparent"
+                    HasShadow="False"
+                    HorizontalOptions="Fill"
+                    Style="{StaticResource PriceFrameStyle}"
+                    VerticalOptions="Start">
+                    <controls:PercentageTickView
+                        Padding="4,0"
                         AutomationProperties.IsInAccessibleTree="True"
                         AutomationProperties.LabeledBy="{x:Reference Price24hPercentLabel}"
-                        HorizontalOptions="FillAndExpand"
                         HorizontalTextAlignment="End"
+                        NegativeTickBackgroundColor="{StaticResource MarketDownTextColor}"
+                        PositiveTickBackgroundColor="{StaticResource MarketUpTextColor}"
                         Price="{Binding Price24hPercent, Mode=OneWay}"
-                        Style="{StaticResource LastPriceStyleColours}"
-                        Text="{Binding Price24hPercentString, Mode=OneWay}" />
-                </Grid>
+                        Text="{Binding Price24hPercentString, Mode=OneWay}"
+                        TextColor="White" />
+                </Frame>
             </Grid>
         </DataTemplate>
         <controls:MarketViewTemplateSelector

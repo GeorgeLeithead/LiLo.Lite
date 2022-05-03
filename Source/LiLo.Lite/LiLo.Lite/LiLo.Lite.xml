@@ -52,6 +52,54 @@
             <param name="container">An optional container object in which the developer may have opted to store Xamarin.Forms.DataTemplateSelector objects.</param>
             <returns>A developer-defined Xamarin.Forms.DataTemplate that can be used to display item.</returns>
         </member>
+        <member name="T:LiLo.Lite.Controls.PercentageTickView">
+            <summary>Custom ticker percentage view.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.PercentageTickView.DefaultBackgroundColorProperty">
+            <summary>Gets or sets the Default Background Colour Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.PercentageTickView.NegativeTickBackgroundColorProperty">
+            <summary>Gets or sets the Negative Tick Background Colour Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.PercentageTickView.NegativeTickColorProperty">
+            <summary>Gets or sets the Negative Tick Colour Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.PercentageTickView.PositiveTickBackgroundColorProperty">
+            <summary>Gets or sets the Positive Tick Background Colour Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.PercentageTickView.PositiveTickColorProperty">
+            <summary>Gets or sets the Positive Tick Colour Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.PercentageTickView.PriceProperty">
+            <summary>Gets or sets the Price Property, and it is a bindable property.</summary>
+        </member>
+        <member name="F:LiLo.Lite.Controls.PercentageTickView.AnimationDuration">
+            <summary>Animation duration in milliseconds.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.PercentageTickView.DefaultBackgroundColor">
+            <summary>Gets or sets the default background colour.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.PercentageTickView.NegativeTickBackgroundColor">
+            <summary>Gets or sets the negative tick background colour.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.PercentageTickView.NegativeTickColor">
+            <summary>Gets or sets the negative tick colour.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.PercentageTickView.PositiveTickBackgroundColor">
+            <summary>Gets or sets the positive tick background colour.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.PercentageTickView.PositiveTickColor">
+            <summary>Gets or sets the positive tick colour.</summary>
+        </member>
+        <member name="P:LiLo.Lite.Controls.PercentageTickView.Price">
+            <summary>Gets or sets the Price.</summary>
+        </member>
+        <member name="M:LiLo.Lite.Controls.PercentageTickView.OnPricePropertyChanged(Xamarin.Forms.BindableObject,System.Object,System.Object)">
+            <summary>Invoked when the Price is changed.</summary>
+            <param name="bindable">The PercentageTickView object.</param>
+            <param name="oldValue">The old value.</param>
+            <param name="newValue">The new value.</param>
+        </member>
         <member name="T:LiLo.Lite.Controls.TickPriceView">
             <summary>Custom ticker price view.</summary>
         </member>
