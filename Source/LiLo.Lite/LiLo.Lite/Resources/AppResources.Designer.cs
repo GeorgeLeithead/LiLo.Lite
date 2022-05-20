@@ -342,7 +342,8 @@ namespace LiLo.Lite.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Compact view.
+        ///   Looks up a localized string similar to Compact view
+        ///* Requires app restart.
         /// </summary>
         public static string SettingsViewLabel {
             get {

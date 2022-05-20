@@ -213,7 +213,8 @@ Please contact us on the social platform(s) below.  Please include the applicati
     <value>https://twitter.com/LiLoMobileApp</value>
   </data>
   <data name="SettingsViewLabel" xml:space="preserve">
-    <value>Compact view</value>
+    <value>Compact view
+* Requires app restart</value>
   </data>
   <data name="TitleMarketsListError" xml:space="preserve">
     <value>Markets list error</value>

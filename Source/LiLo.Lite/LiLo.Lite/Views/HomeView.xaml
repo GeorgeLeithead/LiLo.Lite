@@ -92,6 +92,7 @@
                                     <controls:TickPriceView
                                         AutomationProperties.IsInAccessibleTree="True"
                                         AutomationProperties.LabeledBy="{x:Reference HighPrice24hStringLabel}"
+                                        HorizontalOptions="FillAndExpand"
                                         Price="{Binding HighPrice24h, Mode=OneWay}"
                                         Style="{StaticResource CurrencyPriceStyle}"
                                         Text="{Binding HighPrice24hString, Mode=OneWay}" />
@@ -108,6 +109,7 @@
                                     <controls:TickPriceView
                                         AutomationProperties.IsInAccessibleTree="True"
                                         AutomationProperties.LabeledBy="{x:Reference LowPrice24hStringLabel}"
+                                        HorizontalOptions="FillAndExpand"
                                         Price="{Binding LowPrice24h, Mode=OneWay}"
                                         Style="{StaticResource CurrencyPriceStyle}"
                                         Text="{Binding LowPrice24hString, Mode=OneWay}" />
@@ -129,6 +131,7 @@
                                     <controls:TickPriceView
                                         AutomationProperties.IsInAccessibleTree="True"
                                         AutomationProperties.LabeledBy="{x:Reference Price24hPercentLabel}"
+                                        HorizontalOptions="FillAndExpand"
                                         Price="{Binding Price24hPercent, Mode=OneWay}"
                                         Style="{StaticResource CurrencyPriceStyle}"
                                         Text="{Binding Price24hPercentString, Mode=OneWay}" />
