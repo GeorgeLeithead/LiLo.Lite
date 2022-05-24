@@ -102,6 +102,12 @@ namespace LiLo.Lite.Helpers
 
 				/// <summary>User theme preference default value.</summary>
 				public const int ThemeDefaultValue = 0;
+
+				/// <summary>User markets view preference name.</summary>
+				public const string MarketsView = "MarketsView";
+
+				/// <summary>User markets view default value.</summary>
+				public const bool MarketsViewDefaulyValue = true;
 			}
 		}
 

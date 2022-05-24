@@ -186,6 +186,9 @@
   <data name="SettingsHeadingTheme" xml:space="preserve">
     <value>Theme</value>
   </data>
+  <data name="SettingsHeadingView" xml:space="preserve">
+    <value>View</value>
+  </data>
   <data name="SettingsIconText" xml:space="preserve">
     <value>Settings</value>
   </data>
@@ -208,6 +211,9 @@ Please contact us on the social platform(s) below.  Please include the applicati
   </data>
   <data name="SettingsTwitter" xml:space="preserve">
     <value>https://twitter.com/LiLoMobileApp</value>
+  </data>
+  <data name="SettingsViewLabel" xml:space="preserve">
+    <value>Compact view</value>
   </data>
   <data name="TitleMarketsListError" xml:space="preserve">
     <value>Markets list error</value>

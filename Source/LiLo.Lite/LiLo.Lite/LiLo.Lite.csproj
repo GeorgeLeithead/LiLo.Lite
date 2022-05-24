@@ -16,7 +16,7 @@
 		<PackageIcon>launcher_foreground.png</PackageIcon>
 		<AssemblyVersion>1.2.0.0</AssemblyVersion>
 		<FileVersion>1.2.0.0</FileVersion>
-		<Version>1.2.0</Version>
+		<Version>1.4.0</Version>
 		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
 		<AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
 	</PropertyGroup>
@@ -30,12 +30,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Acr.UserDialogs" Version="7.2.0.562" />
-		<PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.5.0" />
-		<PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.5.0" />
-		<PackageReference Include="System.Text.Json" Version="6.0.2" />
+		<PackageReference Include="Acr.UserDialogs" Version="7.2.0.564" />
+		<PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.5.1" />
+		<PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.5.1" />
+		<PackageReference Include="System.Text.Json" Version="6.0.3" />
 		<PackageReference Include="WebSocketSharp-netstandard" Version="1.0.1" />
-		<PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.1" />
+		<PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.2" />
 		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2401" />
 		<PackageReference Include="Xamarin.Essentials" Version="1.7.2" />
 	</ItemGroup>
