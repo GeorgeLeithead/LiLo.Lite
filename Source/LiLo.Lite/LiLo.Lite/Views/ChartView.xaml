@@ -41,7 +41,7 @@
                 x:Name="CollectionViewMarketsList"
                 Grid.Row="0"
                 AutomationId="CollectionViewMarketsList"
-                HeightRequest="98"
+                HeightRequest="110"
                 IsGrouped="False"
                 ItemSizingStrategy="MeasureFirstItem"
                 ItemTemplate="{x:StaticResource MagazineView}"
