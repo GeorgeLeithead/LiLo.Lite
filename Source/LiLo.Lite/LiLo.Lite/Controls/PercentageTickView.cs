@@ -1,6 +1,7 @@
 ﻿namespace LiLo.Lite.Controls
 {
 	using LiLo.Lite.Extensions;
+	using System;
 	using Xamarin.Forms;
 
 	/// <summary>Custom ticker percentage view.</summary>
@@ -76,8 +77,8 @@
 		private static void OnPricePropertyChanged(BindableObject bindable, object oldValue, object newValue)
 		{
 			PercentageTickView lastPriceView = bindable as PercentageTickView;
-			double newPrice = (double)newValue;
-			double oldPrice = (double)oldValue;
+			double newPrice = Math.Round((double)newValue, 2);
+			double oldPrice = Math.Round((double)oldValue, 2);
 			if (oldPrice == newPrice)
 			{
 				return;

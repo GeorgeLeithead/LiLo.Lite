@@ -37,6 +37,7 @@ namespace LiLo.Lite.ViewModels
 			Title = AppResources.ViewTitleMarkets;
 			FavouritesList = Preferences.Get(Constants.Preferences.Favourites.FavouritesCategory, Constants.Preferences.Favourites.FavouritesCategoryDefaultValue);
 			FavouritesEnabled = Preferences.Get(Constants.Preferences.Favourites.FavouritesEnabled, Constants.Preferences.Favourites.FavouritesEnabledDefaultValue);
+			MagazineView = Preferences.Get(Constants.Preferences.Settings.MarketsView, Constants.Preferences.Settings.MarketsViewDefaulyValue);
 			RetryButtonClicked = new AsyncCommand(Init);
 			ShowSearchCommand = new Command(ShowSearch);
 			_ = Init().ConfigureAwait(false);
@@ -47,6 +48,9 @@ namespace LiLo.Lite.ViewModels
 
 		/// <summary>Gets or sets the users favourites list.</summary>
 		public string FavouritesList { get; set; }
+
+		/// <summary>Gets or sets a value indicating whether the view is magazine.</summary>
+		public bool MagazineView { get; set; }
 
 		/// <summary>Gets the navigate to settings command.</summary>
 		public IAsyncCommand GoToSettingsCommand => goToSettingsCommand ??= new AsyncCommand(GoToSettings);

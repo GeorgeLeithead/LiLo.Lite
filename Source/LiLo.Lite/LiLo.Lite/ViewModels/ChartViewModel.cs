@@ -11,6 +11,7 @@ namespace LiLo.Lite.ViewModels
 	using System;
 	using System.Globalization;
 	using System.Linq;
+	using Xamarin.CommunityToolkit.ObjectModel;
 	using Xamarin.Essentials;
 	using Xamarin.Forms;
 
@@ -19,8 +20,7 @@ namespace LiLo.Lite.ViewModels
 	public class ChartViewModel : ViewModelBase
 	{
 		private readonly string tradingViewString = AppResources.TradingViewPage;
-		private MarketModel selectedItem;
-		private string symbol;
+		private ObservableRangeCollection<MarketModel> marketsList;
 		private HtmlWebViewSource tradingViewChart = new();
 
 		/// <summary>Initialises a new instance of the <see cref="ChartViewModel"/> class.</summary>
@@ -30,15 +30,17 @@ namespace LiLo.Lite.ViewModels
 			Title = AppResources.ViewTitleChart;
 		}
 
-		/// <summary>Gets or sets the selected market item.</summary>
-		public MarketModel SelectedItem
+		/// <summary>Gets or sets a collection of values to be displayed in the markets view.</summary>
+		public ObservableRangeCollection<MarketModel> MarketsList
 		{
-			get => selectedItem;
+			get => marketsList;
 			set
 			{
-				selectedItem = value;
-				OnPropertyChanged(nameof(SelectedItem));
-				TradingViewChart = new HtmlWebViewSource();
+				if (marketsList != value)
+				{
+					marketsList = value;
+					OnPropertyChanged(nameof(MarketsList));
+				}
 			}
 		}
 
@@ -47,9 +49,12 @@ namespace LiLo.Lite.ViewModels
 		{
 			set
 			{
-				symbol = Uri.UnescapeDataString(value);
-				SelectedItem = MarketsHelperService.MarketsList.First(m => m.SymbolString == symbol);
-				Title = SelectedItem.DisplayName ?? symbol;
+				string symbol = Uri.UnescapeDataString(value);
+				MarketModel selectedItem = MarketsHelperService.MarketsList.First(m => m.SymbolString == symbol);
+				Title = selectedItem.DisplayName ?? symbol;
+				marketsList = new ObservableRangeCollection<MarketModel>() { selectedItem };
+				TradingViewChart = new HtmlWebViewSource();
+				OnPropertyChanged(nameof(MarketsList));
 				IsBusy = false;
 			}
 		}
@@ -60,7 +65,7 @@ namespace LiLo.Lite.ViewModels
 			get => tradingViewChart;
 			set
 			{
-				if (SelectedItem == null)
+				if (MarketsList.Count == 0)
 				{
 					return;
 				}
@@ -76,7 +81,8 @@ namespace LiLo.Lite.ViewModels
 					theme = (OSAppTheme)appTheme;
 				}
 
-				string formattedTradingViewString = tradingViewString.Replace("X0X", SelectedItem.SymbolString);
+				MarketModel selectedItem = MarketsList.First();
+				string formattedTradingViewString = tradingViewString.Replace("X0X", selectedItem.SymbolString);
 				formattedTradingViewString = formattedTradingViewString.Replace("X1X", theme == OSAppTheme.Dark ? "dark" : "light");
 				formattedTradingViewString = formattedTradingViewString.Replace("X2X", TimeZoneInfo.Local.ToString());
 				formattedTradingViewString = formattedTradingViewString.Replace("X3X", CultureInfo.CurrentCulture.IetfLanguageTag[..2]);

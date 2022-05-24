@@ -46,6 +46,16 @@ namespace LiLo.Lite.Views
 				_ = VM.SocketsService.WebSocket_Close(); // Close the connection
 				_ = VM.Init().ConfigureAwait(false); // Re-initialise the markets and sockets connections.
 			}
+
+			if (VM.MagazineView != Preferences.Get(Constants.Preferences.Settings.MarketsView, Constants.Preferences.Settings.MarketsViewDefaulyValue))
+			{
+				// The user selected view has changed.  To change the DisplayTemplate we weed to clear the ItemSource and re-populate it.
+				VM.IsBusy = true;
+				VM.MagazineView = Preferences.Get(Constants.Preferences.Settings.MarketsView, Constants.Preferences.Settings.MarketsViewDefaulyValue);
+				CollectionViewMarketsList.ItemsSource = "";
+				CollectionViewMarketsList.ItemsSource = VM.MarketsList;
+				VM.IsBusy = false;
+			}
 		}
 
 		/// <summary>Handle the device back button being pressed.</summary>

@@ -1049,8 +1049,8 @@
         <member name="M:LiLo.Lite.ViewModels.ChartViewModel.#ctor">
             <summary>Initialises a new instance of the <see cref="T:LiLo.Lite.ViewModels.ChartViewModel"/> class.</summary>
         </member>
-        <member name="P:LiLo.Lite.ViewModels.ChartViewModel.SelectedItem">
-            <summary>Gets or sets the selected market item.</summary>
+        <member name="P:LiLo.Lite.ViewModels.ChartViewModel.MarketsList">
+            <summary>Gets or sets a collection of values to be displayed in the markets view.</summary>
         </member>
         <member name="P:LiLo.Lite.ViewModels.ChartViewModel.Symbol">
             <summary>Sets the market symbol.</summary>
@@ -1096,6 +1096,9 @@
         </member>
         <member name="P:LiLo.Lite.ViewModels.HomeViewModel.FavouritesList">
             <summary>Gets or sets the users favourites list.</summary>
+        </member>
+        <member name="P:LiLo.Lite.ViewModels.HomeViewModel.MagazineView">
+            <summary>Gets or sets a value indicating whether the view is magazine.</summary>
         </member>
         <member name="P:LiLo.Lite.ViewModels.HomeViewModel.GoToSettingsCommand">
             <summary>Gets the navigate to settings command.</summary>
