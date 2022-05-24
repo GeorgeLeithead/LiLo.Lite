@@ -737,10 +737,9 @@
             </summary>
         </member>
         <member name="P:LiLo.Lite.Resources.AppResources.SettingsViewLabel">
-             <summary>
-               Looks up a localized string similar to Compact view
-            * Requires app restart.
-             </summary>
+            <summary>
+              Looks up a localized string similar to Compact view.
+            </summary>
         </member>
         <member name="P:LiLo.Lite.Resources.AppResources.TitleMarketsListError">
             <summary>
