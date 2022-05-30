@@ -37,12 +37,12 @@ namespace LiLo.Lite.Droid
 		protected override void OnResume()
 		{
 			base.OnResume();
-			Task startupWork = new Task(() => { SimulateStartup(); });
+			Task startupWork = new Task(() => { _ = SimulateStartup(); });
 			startupWork.Start();
 		}
 
 		/// <summary>Simulates background work that happens behind the splash screen.</summary>
-		private async void SimulateStartup()
+		private async Task SimulateStartup()
 		{
 			_ = Log.Debug(TAG, "Performing some start-up work that takes a bit of time.");
 			await Task.Delay(500); // Simulate a bit of start-up work.

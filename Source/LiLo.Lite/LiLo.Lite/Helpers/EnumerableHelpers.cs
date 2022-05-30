@@ -19,7 +19,7 @@ namespace LiLo.Lite.Helpers
 		{
 			if (source == null)
 			{
-				return null;
+				return new ObservableCollection<T>();
 			}
 
 			ObservableCollection<T> result = new();

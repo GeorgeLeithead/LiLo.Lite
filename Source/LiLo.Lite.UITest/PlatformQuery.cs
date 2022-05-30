@@ -30,9 +30,7 @@ namespace LiLo.Lite.UITest
 
 		/// <summary>Sets the query pattern for iOS.</summary>
 #pragma warning disable IDE1006 // Naming Styles
-#pragma warning disable SA1300 // Element should begin with upper-case letter
 		public Func<AppQuery, AppQuery> iOS
-#pragma warning restore SA1300 // Element should begin with upper-case letter
 #pragma warning restore IDE1006 // Naming Styles
 		{
 			set

@@ -3,7 +3,6 @@
     x:Class="LiLo.Lite.Views.ChartView"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:controls="clr-namespace:LiLo.Lite.Controls"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="clr-namespace:LiLo.Lite.ViewModels"
@@ -46,6 +45,7 @@
                 ItemSizingStrategy="MeasureFirstItem"
                 ItemTemplate="{x:StaticResource MagazineView}"
                 ItemsSource="{Binding MarketsList}"
+                SelectionMode="None"
                 Style="{StaticResource MarketsCollectionViewStyle}">
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout

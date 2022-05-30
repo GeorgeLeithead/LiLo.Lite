@@ -49,9 +49,8 @@ namespace LiLo.Lite.UITest.Pages
 
 		/// <summary>Assert pressing the back button to leave the app.</summary>
 		/// <param name="pageTitle">Page title.</param>
-		/// <param name="cancel">Cancel leave app.</param>
 		/// <returns>Application assertion.</returns>
-		public HomePage LeaveApp(string pageTitle, bool cancel = false)
+		public HomePage LeaveApp(string pageTitle)
 		{
 			_ = App.WaitForElement(this.pageTitle(pageTitle), $"Timed out waiting for page with the title '{pageTitle}'.");
 			_ = TapBackButton();
@@ -79,10 +78,8 @@ namespace LiLo.Lite.UITest.Pages
 		/// <returns>Application assertion.</returns>
 		public HomePage SearchBarSearch(string searchSymbol)
 		{
-			AppResult[] searchBarElement = App.WaitForElement(this.searchSymbol, "Timeout waiting for search bar.");
 			System.IO.File.Delete(@".\LiLo.Lite.UITest\Screenshots\Searchbar.png");
 			App.Screenshot("Search Bar").MoveTo(@".\LiLo.Lite.UITest\Screenshots\Searchbar.png");
-			AppResult searchBar = searchBarElement[0];
 			App.EnterText(searchSrcText, searchSymbol);
 			AppResult[] marketsListElement = App.WaitForElement(marketsList, "Timeout waiting for Markets list");
 			if (marketsListElement.Length != 1)
