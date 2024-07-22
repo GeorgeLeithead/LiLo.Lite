@@ -40,7 +40,7 @@ namespace LiLo.Lite.Services
 
 			foreach (string favourite in favourites.Where(f => !string.IsNullOrEmpty(f)))
 			{
-				UriImageSource symbolImage = marketsAllList.FirstOrDefault(f => f.SymbolString == favourite).SymbolImage;
+				UriImageSource symbolImage = marketsAllList.Find(f => f.SymbolString == favourite).SymbolImage;
 				marketsGroupedByFavourites.Add(new ItemViewModel { Category = Constants.Preferences.Favourites.FavouritesCategory, Symbol = favourite, SymbolImage = symbolImage });
 			}
 
@@ -65,7 +65,7 @@ namespace LiLo.Lite.Services
 				string iosSource = null;
 				HttpClientHandler httpClientHandler = new()
 				{
-					ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => { return true; }
+					ServerCertificateCustomValidationCallback = (_, _, _, _) => true
 				};
 				using HttpClient client = new(httpClientHandler);
 				HttpResponseMessage response = client.GetAsync(versionMarketsJsonFile).Result; // Want to do this synchronously to ensure that we don't start anything else until this is complete!
@@ -127,7 +127,7 @@ namespace LiLo.Lite.Services
 			}
 			catch (HttpRequestException)
 			{
-				throw;
+				throw new HttpRequestException(Resources.AppResources.ErrorNoMarkets);
 			}
 
 			throw new HttpRequestException(Resources.AppResources.ErrorNoMarkets);
@@ -166,7 +166,7 @@ namespace LiLo.Lite.Services
 			}
 
 			string marketWss = marketsString.ToString();
-			if (marketWss.ToString().EndsWith("/"))
+			if (marketWss.EndsWith('/'))
 			{
 				marketWss = marketWss[0..^1];
 			}

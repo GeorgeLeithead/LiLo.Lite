@@ -2,6 +2,8 @@
 // Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
 
+// Ignore Spelling: Defauly Droid Bary Wss
+
 namespace LiLo.Lite.Helpers
 {
 	/// <summary>Application constants.</summary>
@@ -44,9 +46,6 @@ namespace LiLo.Lite.Helpers
 		/// <summary>User preferences class constants.</summary>
 		public static class Preferences
 		{
-			/// <summary>Preferences analytics.</summary>
-			public const string Analytics = "Analytics";
-
 			/// <summary>Chart preferences class constants.</summary>
 			public static class Chart
 			{

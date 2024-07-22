@@ -211,9 +211,6 @@
         <member name="T:LiLo.Lite.Helpers.Constants.Preferences">
             <summary>User preferences class constants.</summary>
         </member>
-        <member name="F:LiLo.Lite.Helpers.Constants.Preferences.Analytics">
-            <summary>Preferences analytics.</summary>
-        </member>
         <member name="T:LiLo.Lite.Helpers.Constants.Preferences.Chart">
             <summary>Chart preferences class constants.</summary>
         </member>

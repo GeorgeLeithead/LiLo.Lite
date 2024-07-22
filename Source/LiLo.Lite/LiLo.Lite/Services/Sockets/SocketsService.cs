@@ -2,6 +2,8 @@
 // Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
 
+// Ignore Spelling: Dialog
+
 namespace LiLo.Lite.Services.Sockets
 {
 	using LiLo.Lite.Services.Dialog;
@@ -52,10 +54,7 @@ namespace LiLo.Lite.Services.Sockets
 				EmitOnPing = true,
 			};
 			webSocket.SslConfiguration.EnabledSslProtocols = System.Security.Authentication.SslProtocols.Tls12;
-			webSocket.SslConfiguration.ServerCertificateValidationCallback = (sender, certificate, chain, sslPolicyError) =>
-			{
-				return true;
-			};
+			webSocket.SslConfiguration.ServerCertificateValidationCallback = (_, _, _, _) => true;
 
 			await WebSocket_OnResume();
 		}
@@ -114,7 +113,7 @@ namespace LiLo.Lite.Services.Sockets
 				}
 				catch (System.Net.Sockets.SocketException)
 				{
-					numberOfTries += 1;
+					numberOfTries++;
 					Debug.WriteLine($"Lost connection, awaiting {numberOfTries}");
 					Task.Delay(numberOfTries * delayBetweenTries).Wait();
 					await WebSocket_OnConnect();
@@ -173,7 +172,7 @@ namespace LiLo.Lite.Services.Sockets
 				await DialogService.ShowToastAsync("Disconnected!");
 				while (!webSocket.IsAlive)
 				{
-					numberOfTries += 1;
+					numberOfTries++;
 					Debug.WriteLine($"Lost connection, awaiting {numberOfTries}");
 					Task.Delay(numberOfTries * delayBetweenTries).Wait();
 					await WebSocket_OnConnect();
