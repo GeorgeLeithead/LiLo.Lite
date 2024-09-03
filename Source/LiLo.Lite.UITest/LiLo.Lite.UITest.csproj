@@ -53,9 +53,9 @@
     <PackageReference Include="Xamarin.Forms">
       <Version>5.0.0.2662</Version>
     </PackageReference>
-    <PackageReference Include="NUnit" Version="4.1.0" />
-    <PackageReference Include="Xamarin.UITest" Version="4.3.7" />
-    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0">
+    <PackageReference Include="NUnit" Version="4.2.2" />
+    <PackageReference Include="Xamarin.UITest" Version="4.4.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.6.0">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>

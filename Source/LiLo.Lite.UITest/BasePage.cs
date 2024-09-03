@@ -1,6 +1,7 @@
 ﻿// <copyright file="BasePage.cs" company="InternetWideWorld.com">
 // Copyright (c) George Leithead, InternetWideWorld.com
 // </copyright>
+// Ignore Spelling: oni
 
 namespace LiLo.Lite.UITest
 {
@@ -37,7 +38,10 @@ namespace LiLo.Lite.UITest
 			string message = "Unable to verify on page: " + GetType().Name;
 			if (timeout == null)
 			{
-				Assert.IsNotEmpty(App.Query(Trait.Current), message);
+				if (App.Query(Trait.Current).Length == 0)
+				{
+					Assert.Fail(message);
+				}
 			}
 			else
 			{
